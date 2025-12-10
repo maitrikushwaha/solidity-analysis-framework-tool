@@ -36,3 +36,4 @@ hs_err_pid*
 # --- Local Binaries ---
 # Only ignore 'jpype' if it is a folder created by the library installation.
 jpype/
+.history/
