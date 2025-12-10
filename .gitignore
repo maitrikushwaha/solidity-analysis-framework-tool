@@ -1,0 +1,38 @@
+# --- Python Standard ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Environments (Crucial to ignore) ---
+.env
+.venv
+env/
+venv/
+ENV/
+safpy-env/
+
+# --- Datasets (Too large for GitHub) ---
+dataset/
+Qian_DATASET/
+Reentrancy_Dataset/
+SBCurated_dataset/
+
+# --- Generated Artifacts (Runtime outputs) ---
+gen/
+*.pyc
+filtered_analysis_output.txt
+
+# --- Logs & Java Errors (CRITICAL FOR ANONYMITY) ---
+*.log
+*.tmp
+hs_err_pid*
+
+# --- Local System/Editor Settings ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# --- Local Binaries ---
+# Only ignore 'jpype' if it is a folder created by the library installation.
+jpype/

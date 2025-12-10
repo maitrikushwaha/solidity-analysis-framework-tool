@@ -1,0 +1,2937 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+Contracts found: ('IntegerOverflowAdd',)
+Full timestamp dependency analysis (incl. annotations) completed in 0.0026 seconds.
+
+========== Reaching Definitions Output ==========
+
+Iteration 1
+Node ID                   Used Variables                 Defined Variables        
+--------------------------------------------------------------------------------
+SourceEntry_0             None                                               None                                
+SourceExit_0              None                                               None                                
+SourceUnit_0              None                                               None                                
+PragmaDirective_0         None                                               None                                
+ContractDefinition_0      None                                               None                                
+VariableDeclaration_0     None                                               BAL                                 
+VariableDeclaration_1     None                                               balanceOf                           
+DEBUG: FunctionDefinition - names: transfer, visibility: public, modifiers: []
+FunctionDefinition_0      None                                               None                                
+FunctionEntry_0           None                                               None                                
+FunctionExit_0            None                                               None                                
+ExpressionStatement_0     None                                               None                                
+STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'balanceOf'
+FunctionCall_0            _value, balanceOf (from VariableDeclaration_1)     None                                
+BinaryOperation_0         None                                               None                                
+Identifier_0              None                                               None                                
+Identifier_1              None                                               None                                
+Identifier_2              None                                               None                                
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_1     _value, balanceOf (from VariableDeclaration_1)     balanceOf                           
+Assignment_0              None                                               None                                
+Identifier_3              None                                               None                                
+BinaryOperation_1         None                                               None                                
+Identifier_4              None                                               None                                
+Identifier_5              None                                               None                                
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_2     _value, balanceOf (from ExpressionStatement_1)     balanceOf                           
+Assignment_1              None                                               None                                
+Identifier_6              None                                               None                                
+BinaryOperation_2         None                                               None                                
+Identifier_7              None                                               None                                
+Identifier_8              None                                               None                                
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration 2
+Node ID                   Used Variables                 Defined Variables        
+--------------------------------------------------------------------------------
+SourceEntry_0             None                                               None                                
+SourceExit_0              None                                               None                                
+SourceUnit_0              None                                               None                                
+PragmaDirective_0         None                                               None                                
+ContractDefinition_0      None                                               None                                
+VariableDeclaration_0     None                                               BAL                                 
+VariableDeclaration_1     None                                               balanceOf                           
+DEBUG: FunctionDefinition - names: transfer, visibility: public, modifiers: []
+FunctionDefinition_0      None                                               None                                
+FunctionEntry_0           None                                               None                                
+FunctionExit_0            None                                               None                                
+ExpressionStatement_0     None                                               None                                
+STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'balanceOf'
+FunctionCall_0            _value, balanceOf (from VariableDeclaration_1)     None                                
+BinaryOperation_0         None                                               None                                
+Identifier_0              None                                               None                                
+Identifier_1              None                                               None                                
+Identifier_2              None                                               None                                
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_1     _value, balanceOf (from VariableDeclaration_1)     balanceOf                           
+Assignment_0              None                                               None                                
+Identifier_3              None                                               None                                
+BinaryOperation_1         None                                               None                                
+Identifier_4              None                                               None                                
+Identifier_5              None                                               None                                
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_2     _value, balanceOf (from ExpressionStatement_1)     balanceOf                           
+Assignment_1              None                                               None                                
+Identifier_6              None                                               None                                
+BinaryOperation_2         None                                               None                                
+Identifier_7              None                                               None                                
+Identifier_8              None                                               None                                
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration 3
+Node ID                   Used Variables                 Defined Variables        
+--------------------------------------------------------------------------------
+SourceEntry_0             None                                               None                                
+SourceExit_0              None                                               None                                
+SourceUnit_0              None                                               None                                
+PragmaDirective_0         None                                               None                                
+ContractDefinition_0      None                                               None                                
+VariableDeclaration_0     None                                               BAL                                 
+VariableDeclaration_1     None                                               balanceOf                           
+DEBUG: FunctionDefinition - names: transfer, visibility: public, modifiers: []
+FunctionDefinition_0      None                                               None                                
+FunctionEntry_0           None                                               None                                
+FunctionExit_0            None                                               None                                
+ExpressionStatement_0     None                                               None                                
+STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'balanceOf'
+FunctionCall_0            _value, balanceOf (from VariableDeclaration_1)     None                                
+BinaryOperation_0         None                                               None                                
+Identifier_0              None                                               None                                
+Identifier_1              None                                               None                                
+Identifier_2              None                                               None                                
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_1     _value, balanceOf (from VariableDeclaration_1)     balanceOf                           
+Assignment_0              None                                               None                                
+Identifier_3              None                                               None                                
+BinaryOperation_1         None                                               None                                
+Identifier_4              None                                               None                                
+Identifier_5              None                                               None                                
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_2     _value, balanceOf (from ExpressionStatement_1)     balanceOf                           
+Assignment_1              None                                               None                                
+Identifier_6              None                                               None                                
+BinaryOperation_2         None                                               None                                
+Identifier_7              None                                               None                                
+Identifier_8              None                                               None                                
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration 4
+Node ID                   Used Variables                 Defined Variables        
+--------------------------------------------------------------------------------
+SourceEntry_0             None                                               None                                
+SourceExit_0              None                                               None                                
+SourceUnit_0              None                                               None                                
+PragmaDirective_0         None                                               None                                
+ContractDefinition_0      None                                               None                                
+VariableDeclaration_0     None                                               BAL                                 
+VariableDeclaration_1     None                                               balanceOf                           
+DEBUG: FunctionDefinition - names: transfer, visibility: public, modifiers: []
+FunctionDefinition_0      None                                               None                                
+FunctionEntry_0           None                                               None                                
+FunctionExit_0            None                                               None                                
+ExpressionStatement_0     None                                               None                                
+STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'balanceOf'
+FunctionCall_0            _value, balanceOf (from VariableDeclaration_1)     None                                
+BinaryOperation_0         None                                               None                                
+Identifier_0              None                                               None                                
+Identifier_1              None                                               None                                
+Identifier_2              None                                               None                                
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_1     _value, balanceOf (from VariableDeclaration_1)     balanceOf                           
+Assignment_0              None                                               None                                
+Identifier_3              None                                               None                                
+BinaryOperation_1         None                                               None                                
+Identifier_4              None                                               None                                
+Identifier_5              None                                               None                                
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_2     _value, balanceOf (from ExpressionStatement_1)     balanceOf                           
+Assignment_1              None                                               None                                
+Identifier_6              None                                               None                                
+BinaryOperation_2         None                                               None                                
+Identifier_7              None                                               None                                
+Identifier_8              None                                               None                                
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Fixed point reached. Reaching definitions have converged.
+
+Statement-Level Dependencies:
+STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'balanceOf'
+STATEMENT DEPENDENCY: Node 'ExpressionStatement_1' is data dependent on Node 'ExpressionStatement_1' for variable 'balanceOf'
+STATEMENT DEPENDENCY: Node 'ExpressionStatement_2' is data dependent on Node 'ExpressionStatement_2' for variable 'balanceOf'
+
+Control Structure Dependencies Only:
+
+Timestamp Influence Zones:
+
+Reaching Definition:
+
+Node 'FunctionCall_0' uses:
+  - Variable 'balanceOf' reached from Node 'VariableDeclaration_1'
+
+Node 'ExpressionStatement_1' uses:
+  - Variable 'balanceOf' reached from Node 'VariableDeclaration_1'
+
+Dependency Chains (computed inline):
+balanceOf [state] (defined in VariableDeclaration_1)
+  → used in FunctionCall_0 (FunctionDefinition_0: transfer) [redef=False]
+  → defined in ExpressionStatement_1 (FunctionDefinition_0: transfer)
+    → defined in ExpressionStatement_2 (FunctionDefinition_0: transfer)
+
+[📋 TOD Summary - Compact CLI Format]
+[DEBUG] Starting NEW intra-function TOD detection loop
+[DEBUG] Analyzing state variable 'BAL' for intra-function TOD
+[DEBUG] Analyzing state variable 'balanceOf' for intra-function TOD
+[DEBUG-TOD-CHECK] use_node=FunctionCall_0, def_node=ExpressionStatement_1, func=FunctionDefinition_0: transfer
+[DEBUG is_control_or_transfer_sensitive] Checking node: FunctionCall_0
+[DEBUG] Expression: FunctionCall, content: <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>
+[DEBUG DUMP] Node=FunctionCall | content=<control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>>
+[DEBUG DUMP] Node=method | content=<bound method FunctionCall.get_leaf_nodes of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa87f0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa87f0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa87f0>>
+[DEBUG DUMP] Node=method | content=<bound method Identifier.get_leaf_nodes of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa87f0>>
+[DEBUG DUMP] Node=BinaryOperation | content=<control_flow_graph.node_processor.nodes.BinaryOperation.BinaryOperation object at 0x70eb54fa8820>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.BinaryOperation.BinaryOperation object at 0x70eb54fa8820>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88e0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88e0>>
+[DEBUG DUMP] Node=method | content=<bound method Identifier.get_leaf_nodes of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88e0>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88b0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88b0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>>
+[DEBUG-TOD-CHECK] use_node=FunctionCall_0, def_node=ExpressionStatement_2, func=FunctionDefinition_0: transfer
+[DEBUG is_control_or_transfer_sensitive] Checking node: FunctionCall_0
+[DEBUG] Expression: FunctionCall, content: <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>
+[DEBUG DUMP] Node=FunctionCall | content=<control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>>
+[DEBUG DUMP] Node=method | content=<bound method FunctionCall.get_leaf_nodes of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa87f0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa87f0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa87f0>>
+[DEBUG DUMP] Node=method | content=<bound method Identifier.get_leaf_nodes of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa87f0>>
+[DEBUG DUMP] Node=BinaryOperation | content=<control_flow_graph.node_processor.nodes.BinaryOperation.BinaryOperation object at 0x70eb54fa8820>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.BinaryOperation.BinaryOperation object at 0x70eb54fa8820>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88e0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88e0>>
+[DEBUG DUMP] Node=method | content=<bound method Identifier.get_leaf_nodes of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88e0>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88b0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x70eb54fa88b0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x70eb54fa8730>>
+[DEBUG-TOD-CHECK] use_node=ExpressionStatement_1, def_node=ExpressionStatement_1, func=FunctionDefinition_0: transfer
+[DEBUG is_control_or_transfer_sensitive] Checking node: ExpressionStatement_1
+[DEBUG] Expression: Assignment, content: <control_flow_graph.node_processor.nodes.Assignment.Assignment object at 0x70eb54fa8850>
+[DEBUG-TOD-CHECK] use_node=ExpressionStatement_1, def_node=ExpressionStatement_2, func=FunctionDefinition_0: transfer
+[DEBUG is_control_or_transfer_sensitive] Checking node: ExpressionStatement_1
+[DEBUG] Expression: Assignment, content: <control_flow_graph.node_processor.nodes.Assignment.Assignment object at 0x70eb54fa8850>
+[DEBUG-TOD-CHECK] use_node=ExpressionStatement_2, def_node=ExpressionStatement_1, func=FunctionDefinition_0: transfer
+[DEBUG is_control_or_transfer_sensitive] Checking node: ExpressionStatement_2
+[DEBUG] Expression: Assignment, content: <control_flow_graph.node_processor.nodes.Assignment.Assignment object at 0x70eb54fa8b80>
+[DEBUG-TOD-CHECK] use_node=ExpressionStatement_2, def_node=ExpressionStatement_2, func=FunctionDefinition_0: transfer
+[DEBUG is_control_or_transfer_sensitive] Checking node: ExpressionStatement_2
+[DEBUG] Expression: Assignment, content: <control_flow_graph.node_processor.nodes.Assignment.Assignment object at 0x70eb54fa8b80>
+--------------------------------------
+✅ No transaction-ordering dependencies detected.
+--------------------------------------
+
+
+========== Running analysis for Box Abstract Domain ==========
+Running abstract collecting semantics analysis.
+Abstract collecting semantics analysis completed in 1.8766 seconds.
+VARIABLE-REGISTRY SourceEntry_0 set()
+VARIABLE-REGISTRY SourceUnit_0 set()
+VARIABLE-REGISTRY PragmaDirective_0 set()
+VARIABLE-REGISTRY SourceExit_0 set()
+VARIABLE-REGISTRY ContractDefinition_0 set()
+VARIABLE-REGISTRY VariableDeclaration_0 {'BAL'}
+VARIABLE-REGISTRY VariableDeclaration_1 {'balanceOf'}
+VARIABLE-REGISTRY FunctionDefinition_0 set()
+VARIABLE-REGISTRY FunctionEntry_0 set()
+VARIABLE-REGISTRY ExpressionStatement_0 set()
+VARIABLE-REGISTRY ExpressionStatement_1 {'balanceOf'}
+VARIABLE-REGISTRY ExpressionStatement_2 {'balanceOf'}
+VARIABLE-REGISTRY FunctionExit_0 set()
+dict_keys(['BAL', 'balanceOf'])
+Start Iter: 1
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV SourceExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+Updated variable BAL in registry with value: 100 and stateVariable: True
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+Updated variable balanceOf in registry with value: 40 and stateVariable: True
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 2
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 3
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 4
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 5
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 = 0;  1x1 -40.0 = 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 6
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 = 0;  1x1 -40.0 = 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 = 0;  1x1 -40.0 = 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 7
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 = 0;  1x1 -40.0 = 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 = 0;  1x1 -40.0 = 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[100.0,100.0], [-215.0,-215.0]]
+{  1x0 -100.0 = 0;  1x1 +215.0 = 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 8
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 = 0;  1x1 -40.0 = 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 = 0;  1x1 -40.0 = 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[100.0,100.0], [-215.0,-215.0]]
+{  1x0 -100.0 = 0;  1x1 +215.0 = 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+Start Iter: 9
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 = 0;  1x1 -40.0 = 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 = 0;  1x1 -40.0 = 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[100.0,100.0], [-215.0,-215.0]]
+{  1x0 -100.0 = 0;  1x1 +215.0 = 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+ENTRY 1 SourceEntry_0 [[0.0,0.0], [0.0,0.0]]
+EXIT 1 SourceEntry_0 [[0.0,0.0], [0.0,0.0]]
+ENTRY 1 SourceUnit_0 [[0.0,0.0], [0.0,0.0]]
+EXIT 1 SourceUnit_0 [[0.0,0.0], [0.0,0.0]]
+ENTRY 1 PragmaDirective_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 1 PragmaDirective_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 1 SourceExit_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 1 SourceExit_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 1 ContractDefinition_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 1 ContractDefinition_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 1 VariableDeclaration_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 1 VariableDeclaration_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 1 VariableDeclaration_1 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 1 VariableDeclaration_1 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 1 FunctionDefinition_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 1 FunctionDefinition_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 1 FunctionEntry_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 1 FunctionEntry_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 1 ExpressionStatement_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 1 ExpressionStatement_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 1 ExpressionStatement_1 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 1 ExpressionStatement_1 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 1 ExpressionStatement_2 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 1 ExpressionStatement_2 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 1 FunctionExit_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 1 FunctionExit_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 2 SourceEntry_0 [[0.0,0.0], [0.0,0.0]]
+EXIT 2 SourceEntry_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 2 SourceUnit_0 [[0.0,0.0], [0.0,0.0]]
+EXIT 2 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 2 PragmaDirective_0 [[0.0,0.0], [0.0,0.0]]
+EXIT 2 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 2 SourceExit_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 2 SourceExit_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 2 ContractDefinition_0 [[0.0,0.0], [0.0,0.0]]
+EXIT 2 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 2 VariableDeclaration_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 2 VariableDeclaration_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 2 VariableDeclaration_1 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 2 VariableDeclaration_1 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 2 FunctionDefinition_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 2 FunctionDefinition_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 2 FunctionEntry_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 2 FunctionEntry_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 2 ExpressionStatement_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 2 ExpressionStatement_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 2 ExpressionStatement_1 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 2 ExpressionStatement_1 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 2 ExpressionStatement_2 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 2 ExpressionStatement_2 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 2 FunctionExit_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 2 FunctionExit_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 3 SourceEntry_0 [[0.0,0.0], [0.0,0.0]]
+EXIT 3 SourceEntry_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 3 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 3 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 3 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 3 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 3 SourceExit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 3 SourceExit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 3 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 3 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 3 VariableDeclaration_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 3 VariableDeclaration_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 3 VariableDeclaration_1 [[100.0,100.0], [40.0,40.0]]
+EXIT 3 VariableDeclaration_1 [[100.0,100.0], [40.0,40.0]]
+ENTRY 3 FunctionDefinition_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 3 FunctionDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 3 FunctionEntry_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 3 FunctionEntry_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 3 ExpressionStatement_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 3 ExpressionStatement_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 3 ExpressionStatement_1 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 3 ExpressionStatement_1 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 3 ExpressionStatement_2 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 3 ExpressionStatement_2 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 3 FunctionExit_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 3 FunctionExit_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 4 SourceEntry_0 [[0.0,0.0], [0.0,0.0]]
+EXIT 4 SourceEntry_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 4 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 4 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 4 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 4 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 4 SourceExit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 4 SourceExit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 4 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 4 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 4 VariableDeclaration_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 4 VariableDeclaration_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 4 VariableDeclaration_1 [[100.0,100.0], [40.0,40.0]]
+EXIT 4 VariableDeclaration_1 [[100.0,100.0], [40.0,40.0]]
+ENTRY 4 FunctionDefinition_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 4 FunctionDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 4 FunctionEntry_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 4 FunctionEntry_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 4 ExpressionStatement_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 4 ExpressionStatement_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 4 ExpressionStatement_1 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 4 ExpressionStatement_1 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 4 ExpressionStatement_2 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 4 ExpressionStatement_2 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 4 FunctionExit_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 4 FunctionExit_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 5 SourceEntry_0 [[0.0,0.0], [0.0,0.0]]
+EXIT 5 SourceEntry_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 5 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 5 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 5 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 5 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 5 SourceExit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 5 SourceExit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 5 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 5 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 5 VariableDeclaration_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 5 VariableDeclaration_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 5 VariableDeclaration_1 [[100.0,100.0], [40.0,40.0]]
+EXIT 5 VariableDeclaration_1 [[100.0,100.0], [40.0,40.0]]
+ENTRY 5 FunctionDefinition_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 5 FunctionDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 5 FunctionEntry_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 5 FunctionEntry_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 5 ExpressionStatement_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 5 ExpressionStatement_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 5 ExpressionStatement_1 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 5 ExpressionStatement_1 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 5 ExpressionStatement_2 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 5 ExpressionStatement_2 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 5 FunctionExit_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 5 FunctionExit_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 6 SourceEntry_0 [[0.0,0.0], [0.0,0.0]]
+EXIT 6 SourceEntry_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 6 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 6 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 6 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 6 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 6 SourceExit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 6 SourceExit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 6 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 6 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 6 VariableDeclaration_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 6 VariableDeclaration_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 6 VariableDeclaration_1 [[100.0,100.0], [40.0,40.0]]
+EXIT 6 VariableDeclaration_1 [[100.0,100.0], [40.0,40.0]]
+ENTRY 6 FunctionDefinition_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 6 FunctionDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 6 FunctionEntry_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 6 FunctionEntry_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 6 ExpressionStatement_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 6 ExpressionStatement_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 6 ExpressionStatement_1 [[100.0,100.0], [40.0,40.0]]
+EXIT 6 ExpressionStatement_1 [[100.0,100.0], [-215.0,-215.0]]
+ENTRY 6 ExpressionStatement_2 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 6 ExpressionStatement_2 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 6 FunctionExit_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 6 FunctionExit_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 7 SourceEntry_0 [[0.0,0.0], [0.0,0.0]]
+EXIT 7 SourceEntry_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 7 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 7 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 7 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 7 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 7 SourceExit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 7 SourceExit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 7 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 7 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 7 VariableDeclaration_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 7 VariableDeclaration_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 7 VariableDeclaration_1 [[100.0,100.0], [40.0,40.0]]
+EXIT 7 VariableDeclaration_1 [[100.0,100.0], [40.0,40.0]]
+ENTRY 7 FunctionDefinition_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 7 FunctionDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 7 FunctionEntry_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 7 FunctionEntry_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 7 ExpressionStatement_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 7 ExpressionStatement_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 7 ExpressionStatement_1 [[100.0,100.0], [40.0,40.0]]
+EXIT 7 ExpressionStatement_1 [[100.0,100.0], [-215.0,-215.0]]
+ENTRY 7 ExpressionStatement_2 [[100.0,100.0], [-215.0,-215.0]]
+EXIT 7 ExpressionStatement_2 [[100.0,100.0], [40.0,40.0]]
+ENTRY 7 FunctionExit_0 [[1.0,-1.0], [1.0,-1.0]]
+EXIT 7 FunctionExit_0 [[1.0,-1.0], [1.0,-1.0]]
+ENTRY 8 SourceEntry_0 [[0.0,0.0], [0.0,0.0]]
+EXIT 8 SourceEntry_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 8 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 8 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 8 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 8 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 8 SourceExit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 8 SourceExit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 8 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 8 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 8 VariableDeclaration_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 8 VariableDeclaration_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 8 VariableDeclaration_1 [[100.0,100.0], [40.0,40.0]]
+EXIT 8 VariableDeclaration_1 [[100.0,100.0], [40.0,40.0]]
+ENTRY 8 FunctionDefinition_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 8 FunctionDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 8 FunctionEntry_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 8 FunctionEntry_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 8 ExpressionStatement_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 8 ExpressionStatement_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 8 ExpressionStatement_1 [[100.0,100.0], [40.0,40.0]]
+EXIT 8 ExpressionStatement_1 [[100.0,100.0], [-215.0,-215.0]]
+ENTRY 8 ExpressionStatement_2 [[100.0,100.0], [-215.0,-215.0]]
+EXIT 8 ExpressionStatement_2 [[100.0,100.0], [40.0,40.0]]
+ENTRY 8 FunctionExit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 8 FunctionExit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 9 SourceEntry_0 [[0.0,0.0], [0.0,0.0]]
+EXIT 9 SourceEntry_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 9 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 9 SourceUnit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 9 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 9 PragmaDirective_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 9 SourceExit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 9 SourceExit_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 9 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 9 ContractDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 9 VariableDeclaration_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 9 VariableDeclaration_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 9 VariableDeclaration_1 [[100.0,100.0], [40.0,40.0]]
+EXIT 9 VariableDeclaration_1 [[100.0,100.0], [40.0,40.0]]
+ENTRY 9 FunctionDefinition_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 9 FunctionDefinition_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 9 FunctionEntry_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 9 FunctionEntry_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 9 ExpressionStatement_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 9 ExpressionStatement_0 [[100.0,100.0], [40.0,40.0]]
+ENTRY 9 ExpressionStatement_1 [[100.0,100.0], [40.0,40.0]]
+EXIT 9 ExpressionStatement_1 [[100.0,100.0], [-215.0,-215.0]]
+ENTRY 9 ExpressionStatement_2 [[100.0,100.0], [-215.0,-215.0]]
+EXIT 9 ExpressionStatement_2 [[100.0,100.0], [40.0,40.0]]
+ENTRY 9 FunctionExit_0 [[100.0,100.0], [40.0,40.0]]
+EXIT 9 FunctionExit_0 [[100.0,100.0], [40.0,40.0]]
+{'BAL': 'uint8', 'balanceOf': 'uint8'}
+{'BAL': {'id': 0, 'name': 'BAL', 'stateVariable': True, 'value': <java object 'apron.Texpr0Intern'>}, 'balanceOf': {'id': 1, 'name': 'balanceOf', 'stateVariable': True, 'value': <java object 'apron.Texpr0Intern'>}}
+
+--- Checking node: SourceEntry_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: SourceExit_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: SourceUnit_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: PragmaDirective_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: ContractDefinition_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: VariableDeclaration_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: VariableDeclaration_1 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: FunctionDefinition_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: FunctionEntry_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: FunctionExit_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: ExpressionStatement_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: FunctionCall_0 ---
+Skipping node FunctionCall_0 due to error: Node with id FunctionCall_0 is not registered!
+
+--- Checking node: BinaryOperation_0 ---
+Skipping node BinaryOperation_0 due to error: Node with id BinaryOperation_0 is not registered!
+
+--- Checking node: Identifier_0 ---
+Skipping node Identifier_0 due to error: Node with id Identifier_0 is not registered!
+
+--- Checking node: Identifier_1 ---
+Skipping node Identifier_1 due to error: Node with id Identifier_1 is not registered!
+
+--- Checking node: Identifier_2 ---
+Skipping node Identifier_2 due to error: Node with id Identifier_2 is not registered!
+
+--- Checking node: ExpressionStatement_1 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [-215.0, -215.0], Allowed Limits: [0, 255]
+Underflow Detected for state variable balanceOf at node ExpressionStatement_1!
+Expected range: [0, 255] but found: [-215.0, -215.0]
+
+--- Checking node: Assignment_0 ---
+Skipping node Assignment_0 due to error: Node with id Assignment_0 is not registered!
+
+--- Checking node: Identifier_3 ---
+Skipping node Identifier_3 due to error: Node with id Identifier_3 is not registered!
+
+--- Checking node: BinaryOperation_1 ---
+Skipping node BinaryOperation_1 due to error: Node with id BinaryOperation_1 is not registered!
+
+--- Checking node: Identifier_4 ---
+Skipping node Identifier_4 due to error: Node with id Identifier_4 is not registered!
+
+--- Checking node: Identifier_5 ---
+Skipping node Identifier_5 due to error: Node with id Identifier_5 is not registered!
+
+--- Checking node: ExpressionStatement_2 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: Assignment_1 ---
+Skipping node Assignment_1 due to error: Node with id Assignment_1 is not registered!
+
+--- Checking node: Identifier_6 ---
+Skipping node Identifier_6 due to error: Node with id Identifier_6 is not registered!
+
+--- Checking node: BinaryOperation_2 ---
+Skipping node BinaryOperation_2 due to error: Node with id BinaryOperation_2 is not registered!
+
+--- Checking node: Identifier_7 ---
+Skipping node Identifier_7 due to error: Node with id Identifier_7 is not registered!
+
+--- Checking node: Identifier_8 ---
+Skipping node Identifier_8 due to error: Node with id Identifier_8 is not registered!
+
+
+Filtered abstract interpretation output saved to SBCurated_dataset/modified_dataset/arithmetic/insecure_transfer_analysis.txt
+
+========== Running analysis for Polka Abstract Domain ==========
+Running abstract collecting semantics analysis.
+Abstract collecting semantics analysis completed in 1.8373 seconds.
+VARIABLE-REGISTRY SourceEntry_0 set()
+VARIABLE-REGISTRY SourceUnit_0 set()
+VARIABLE-REGISTRY PragmaDirective_0 set()
+VARIABLE-REGISTRY SourceExit_0 set()
+VARIABLE-REGISTRY ContractDefinition_0 set()
+VARIABLE-REGISTRY VariableDeclaration_0 {'BAL'}
+VARIABLE-REGISTRY VariableDeclaration_1 {'balanceOf'}
+VARIABLE-REGISTRY FunctionDefinition_0 set()
+VARIABLE-REGISTRY FunctionEntry_0 set()
+VARIABLE-REGISTRY ExpressionStatement_0 set()
+VARIABLE-REGISTRY ExpressionStatement_1 {'balanceOf'}
+VARIABLE-REGISTRY ExpressionStatement_2 {'balanceOf'}
+VARIABLE-REGISTRY FunctionExit_0 set()
+dict_keys(['BAL', 'balanceOf'])
+Start Iter: 1
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0,0], [0,0]]
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[0,0], [0,0]]
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV SourceExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+Updated variable BAL in registry with value: 100 and stateVariable: True
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+Updated variable balanceOf in registry with value: 40 and stateVariable: True
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 2
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0,0], [0,0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[0,0], [0,0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[0,0], [0,0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[0,0], [0,0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 3
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0,0], [0,0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100,100], [40,40]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100,100], [40,40]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100,100], [40,40]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 4
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0,0], [0,0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100,100], [40,40]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100,100], [40,40]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100,100], [40,40]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100,100], [40,40]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 5
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0,0], [0,0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100,100], [40,40]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100,100], [40,40]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100,100], [40,40]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100,100], [40,40]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100,100], [40,40]]
+{  1x1 -40 = 0;  1x0 -100 = 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 6
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0,0], [0,0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100,100], [40,40]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100,100], [40,40]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100,100], [40,40]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100,100], [40,40]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100,100], [40,40]]
+{  1x1 -40 = 0;  1x0 -100 = 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[100,100], [40,40]]
+{  1x1 -40 = 0;  1x0 -100 = 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 7
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0,0], [0,0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100,100], [40,40]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100,100], [40,40]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100,100], [40,40]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100,100], [40,40]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100,100], [40,40]]
+{  1x1 -40 = 0;  1x0 -100 = 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[100,100], [40,40]]
+{  1x1 -40 = 0;  1x0 -100 = 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[100,100], [-215,-215]]
+{  1x1 +215 = 0;  1x0 -100 = 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 8
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0,0], [0,0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100,100], [40,40]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100,100], [40,40]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100,100], [40,40]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100,100], [40,40]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100,100], [40,40]]
+{  1x1 -40 = 0;  1x0 -100 = 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[100,100], [40,40]]
+{  1x1 -40 = 0;  1x0 -100 = 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[100,100], [-215,-215]]
+{  1x1 +215 = 0;  1x0 -100 = 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[100,100], [40,40]]
+Start Iter: 9
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0,0], [0,0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100,100], [40,40]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100,100], [40,40]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100,100], [40,40]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100,100], [40,40]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100,100], [40,40]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100,100], [40,40]]
+{  1x1 -40 = 0;  1x0 -100 = 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[100,100], [40,40]]
+{  1x1 -40 = 0;  1x0 -100 = 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[100,100], [-215,-215]]
+{  1x1 +215 = 0;  1x0 -100 = 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[100,100], [40,40]]
+ENTRY 1 SourceEntry_0 [ 1x1 = 0,  1x0 = 0]
+EXIT 1 SourceEntry_0 [ 1x1 = 0,  1x0 = 0]
+ENTRY 1 SourceUnit_0 [ 1x1 = 0,  1x0 = 0]
+EXIT 1 SourceUnit_0 [ 1x1 = 0,  1x0 = 0]
+ENTRY 1 PragmaDirective_0 [ -1.0 >= 0]
+EXIT 1 PragmaDirective_0 [ -1.0 >= 0]
+ENTRY 1 SourceExit_0 [ -1.0 >= 0]
+EXIT 1 SourceExit_0 [ -1.0 >= 0]
+ENTRY 1 ContractDefinition_0 [ -1.0 >= 0]
+EXIT 1 ContractDefinition_0 [ -1.0 >= 0]
+ENTRY 1 VariableDeclaration_0 [ -1.0 >= 0]
+EXIT 1 VariableDeclaration_0 [ -1.0 >= 0]
+ENTRY 1 VariableDeclaration_1 [ -1.0 >= 0]
+EXIT 1 VariableDeclaration_1 [ -1.0 >= 0]
+ENTRY 1 FunctionDefinition_0 [ -1.0 >= 0]
+EXIT 1 FunctionDefinition_0 [ -1.0 >= 0]
+ENTRY 1 FunctionEntry_0 [ -1.0 >= 0]
+EXIT 1 FunctionEntry_0 [ -1.0 >= 0]
+ENTRY 1 ExpressionStatement_0 [ -1.0 >= 0]
+EXIT 1 ExpressionStatement_0 [ -1.0 >= 0]
+ENTRY 1 ExpressionStatement_1 [ -1.0 >= 0]
+EXIT 1 ExpressionStatement_1 [ -1.0 >= 0]
+ENTRY 1 ExpressionStatement_2 [ -1.0 >= 0]
+EXIT 1 ExpressionStatement_2 [ -1.0 >= 0]
+ENTRY 1 FunctionExit_0 [ -1.0 >= 0]
+EXIT 1 FunctionExit_0 [ -1.0 >= 0]
+ENTRY 2 SourceEntry_0 [ 1x1 = 0,  1x0 = 0]
+EXIT 2 SourceEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 2 SourceUnit_0 [ 1x1 = 0,  1x0 = 0]
+EXIT 2 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 2 PragmaDirective_0 [ 1x1 = 0,  1x0 = 0]
+EXIT 2 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 2 SourceExit_0 [ -1.0 >= 0]
+EXIT 2 SourceExit_0 [ -1.0 >= 0]
+ENTRY 2 ContractDefinition_0 [ 1x1 = 0,  1x0 = 0]
+EXIT 2 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 2 VariableDeclaration_0 [ -1.0 >= 0]
+EXIT 2 VariableDeclaration_0 [ -1.0 >= 0]
+ENTRY 2 VariableDeclaration_1 [ -1.0 >= 0]
+EXIT 2 VariableDeclaration_1 [ -1.0 >= 0]
+ENTRY 2 FunctionDefinition_0 [ -1.0 >= 0]
+EXIT 2 FunctionDefinition_0 [ -1.0 >= 0]
+ENTRY 2 FunctionEntry_0 [ -1.0 >= 0]
+EXIT 2 FunctionEntry_0 [ -1.0 >= 0]
+ENTRY 2 ExpressionStatement_0 [ -1.0 >= 0]
+EXIT 2 ExpressionStatement_0 [ -1.0 >= 0]
+ENTRY 2 ExpressionStatement_1 [ -1.0 >= 0]
+EXIT 2 ExpressionStatement_1 [ -1.0 >= 0]
+ENTRY 2 ExpressionStatement_2 [ -1.0 >= 0]
+EXIT 2 ExpressionStatement_2 [ -1.0 >= 0]
+ENTRY 2 FunctionExit_0 [ -1.0 >= 0]
+EXIT 2 FunctionExit_0 [ -1.0 >= 0]
+ENTRY 3 SourceEntry_0 [ 1x1 = 0,  1x0 = 0]
+EXIT 3 SourceEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 3 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 3 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 3 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 3 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 3 SourceExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 3 SourceExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 3 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 3 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 3 VariableDeclaration_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 3 VariableDeclaration_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 3 VariableDeclaration_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 3 VariableDeclaration_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 3 FunctionDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 3 FunctionDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 3 FunctionEntry_0 [ -1.0 >= 0]
+EXIT 3 FunctionEntry_0 [ -1.0 >= 0]
+ENTRY 3 ExpressionStatement_0 [ -1.0 >= 0]
+EXIT 3 ExpressionStatement_0 [ -1.0 >= 0]
+ENTRY 3 ExpressionStatement_1 [ -1.0 >= 0]
+EXIT 3 ExpressionStatement_1 [ -1.0 >= 0]
+ENTRY 3 ExpressionStatement_2 [ -1.0 >= 0]
+EXIT 3 ExpressionStatement_2 [ -1.0 >= 0]
+ENTRY 3 FunctionExit_0 [ -1.0 >= 0]
+EXIT 3 FunctionExit_0 [ -1.0 >= 0]
+ENTRY 4 SourceEntry_0 [ 1x1 = 0,  1x0 = 0]
+EXIT 4 SourceEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 4 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 4 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 4 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 4 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 4 SourceExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 4 SourceExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 4 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 4 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 4 VariableDeclaration_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 4 VariableDeclaration_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 4 VariableDeclaration_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 4 VariableDeclaration_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 4 FunctionDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 4 FunctionDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 4 FunctionEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 4 FunctionEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 4 ExpressionStatement_0 [ -1.0 >= 0]
+EXIT 4 ExpressionStatement_0 [ -1.0 >= 0]
+ENTRY 4 ExpressionStatement_1 [ -1.0 >= 0]
+EXIT 4 ExpressionStatement_1 [ -1.0 >= 0]
+ENTRY 4 ExpressionStatement_2 [ -1.0 >= 0]
+EXIT 4 ExpressionStatement_2 [ -1.0 >= 0]
+ENTRY 4 FunctionExit_0 [ -1.0 >= 0]
+EXIT 4 FunctionExit_0 [ -1.0 >= 0]
+ENTRY 5 SourceEntry_0 [ 1x1 = 0,  1x0 = 0]
+EXIT 5 SourceEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 5 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 5 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 5 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 5 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 5 SourceExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 5 SourceExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 5 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 5 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 5 VariableDeclaration_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 5 VariableDeclaration_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 5 VariableDeclaration_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 5 VariableDeclaration_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 5 FunctionDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 5 FunctionDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 5 FunctionEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 5 FunctionEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 5 ExpressionStatement_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 5 ExpressionStatement_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 5 ExpressionStatement_1 [ -1.0 >= 0]
+EXIT 5 ExpressionStatement_1 [ -1.0 >= 0]
+ENTRY 5 ExpressionStatement_2 [ -1.0 >= 0]
+EXIT 5 ExpressionStatement_2 [ -1.0 >= 0]
+ENTRY 5 FunctionExit_0 [ -1.0 >= 0]
+EXIT 5 FunctionExit_0 [ -1.0 >= 0]
+ENTRY 6 SourceEntry_0 [ 1x1 = 0,  1x0 = 0]
+EXIT 6 SourceEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 6 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 6 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 6 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 6 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 6 SourceExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 6 SourceExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 6 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 6 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 6 VariableDeclaration_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 6 VariableDeclaration_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 6 VariableDeclaration_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 6 VariableDeclaration_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 6 FunctionDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 6 FunctionDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 6 FunctionEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 6 FunctionEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 6 ExpressionStatement_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 6 ExpressionStatement_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 6 ExpressionStatement_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 6 ExpressionStatement_1 [ 1x1 +215 = 0,  1x0 -100 = 0]
+ENTRY 6 ExpressionStatement_2 [ -1.0 >= 0]
+EXIT 6 ExpressionStatement_2 [ -1.0 >= 0]
+ENTRY 6 FunctionExit_0 [ -1.0 >= 0]
+EXIT 6 FunctionExit_0 [ -1.0 >= 0]
+ENTRY 7 SourceEntry_0 [ 1x1 = 0,  1x0 = 0]
+EXIT 7 SourceEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 7 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 7 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 7 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 7 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 7 SourceExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 7 SourceExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 7 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 7 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 7 VariableDeclaration_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 7 VariableDeclaration_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 7 VariableDeclaration_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 7 VariableDeclaration_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 7 FunctionDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 7 FunctionDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 7 FunctionEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 7 FunctionEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 7 ExpressionStatement_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 7 ExpressionStatement_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 7 ExpressionStatement_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 7 ExpressionStatement_1 [ 1x1 +215 = 0,  1x0 -100 = 0]
+ENTRY 7 ExpressionStatement_2 [ 1x1 +215 = 0,  1x0 -100 = 0]
+EXIT 7 ExpressionStatement_2 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 7 FunctionExit_0 [ -1.0 >= 0]
+EXIT 7 FunctionExit_0 [ -1.0 >= 0]
+ENTRY 8 SourceEntry_0 [ 1x1 = 0,  1x0 = 0]
+EXIT 8 SourceEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 8 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 8 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 8 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 8 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 8 SourceExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 8 SourceExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 8 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 8 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 8 VariableDeclaration_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 8 VariableDeclaration_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 8 VariableDeclaration_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 8 VariableDeclaration_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 8 FunctionDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 8 FunctionDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 8 FunctionEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 8 FunctionEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 8 ExpressionStatement_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 8 ExpressionStatement_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 8 ExpressionStatement_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 8 ExpressionStatement_1 [ 1x1 +215 = 0,  1x0 -100 = 0]
+ENTRY 8 ExpressionStatement_2 [ 1x1 +215 = 0,  1x0 -100 = 0]
+EXIT 8 ExpressionStatement_2 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 8 FunctionExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 8 FunctionExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 9 SourceEntry_0 [ 1x1 = 0,  1x0 = 0]
+EXIT 9 SourceEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 9 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 9 SourceUnit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 9 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 9 PragmaDirective_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 9 SourceExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 9 SourceExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 9 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 9 ContractDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 9 VariableDeclaration_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 9 VariableDeclaration_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 9 VariableDeclaration_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 9 VariableDeclaration_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 9 FunctionDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 9 FunctionDefinition_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 9 FunctionEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 9 FunctionEntry_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 9 ExpressionStatement_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 9 ExpressionStatement_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 9 ExpressionStatement_1 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 9 ExpressionStatement_1 [ 1x1 +215 = 0,  1x0 -100 = 0]
+ENTRY 9 ExpressionStatement_2 [ 1x1 +215 = 0,  1x0 -100 = 0]
+EXIT 9 ExpressionStatement_2 [ 1x1 -40 = 0,  1x0 -100 = 0]
+ENTRY 9 FunctionExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+EXIT 9 FunctionExit_0 [ 1x1 -40 = 0,  1x0 -100 = 0]
+{'BAL': 'uint8', 'balanceOf': 'uint8'}
+{'BAL': {'id': 0, 'name': 'BAL', 'stateVariable': True, 'value': <java object 'apron.Texpr0Intern'>}, 'balanceOf': {'id': 1, 'name': 'balanceOf', 'stateVariable': True, 'value': <java object 'apron.Texpr0Intern'>}}
+
+--- Checking node: SourceEntry_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40, 40], Allowed Limits: [0, 255]
+
+--- Checking node: SourceExit_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40, 40], Allowed Limits: [0, 255]
+
+--- Checking node: SourceUnit_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40, 40], Allowed Limits: [0, 255]
+
+--- Checking node: PragmaDirective_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40, 40], Allowed Limits: [0, 255]
+
+--- Checking node: ContractDefinition_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40, 40], Allowed Limits: [0, 255]
+
+--- Checking node: VariableDeclaration_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40, 40], Allowed Limits: [0, 255]
+
+--- Checking node: VariableDeclaration_1 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40, 40], Allowed Limits: [0, 255]
+
+--- Checking node: FunctionDefinition_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40, 40], Allowed Limits: [0, 255]
+
+--- Checking node: FunctionEntry_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40, 40], Allowed Limits: [0, 255]
+
+--- Checking node: FunctionExit_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40, 40], Allowed Limits: [0, 255]
+
+--- Checking node: ExpressionStatement_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40, 40], Allowed Limits: [0, 255]
+
+--- Checking node: FunctionCall_0 ---
+Skipping node FunctionCall_0 due to error: Node with id FunctionCall_0 is not registered!
+
+--- Checking node: BinaryOperation_0 ---
+Skipping node BinaryOperation_0 due to error: Node with id BinaryOperation_0 is not registered!
+
+--- Checking node: Identifier_0 ---
+Skipping node Identifier_0 due to error: Node with id Identifier_0 is not registered!
+
+--- Checking node: Identifier_1 ---
+Skipping node Identifier_1 due to error: Node with id Identifier_1 is not registered!
+
+--- Checking node: Identifier_2 ---
+Skipping node Identifier_2 due to error: Node with id Identifier_2 is not registered!
+
+--- Checking node: ExpressionStatement_1 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [-215, -215], Allowed Limits: [0, 255]
+Underflow Detected for state variable balanceOf at node ExpressionStatement_1!
+Expected range: [0, 255] but found: [-215, -215]
+
+--- Checking node: Assignment_0 ---
+Skipping node Assignment_0 due to error: Node with id Assignment_0 is not registered!
+
+--- Checking node: Identifier_3 ---
+Skipping node Identifier_3 due to error: Node with id Identifier_3 is not registered!
+
+--- Checking node: BinaryOperation_1 ---
+Skipping node BinaryOperation_1 due to error: Node with id BinaryOperation_1 is not registered!
+
+--- Checking node: Identifier_4 ---
+Skipping node Identifier_4 due to error: Node with id Identifier_4 is not registered!
+
+--- Checking node: Identifier_5 ---
+Skipping node Identifier_5 due to error: Node with id Identifier_5 is not registered!
+
+--- Checking node: ExpressionStatement_2 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40, 40], Allowed Limits: [0, 255]
+
+--- Checking node: Assignment_1 ---
+Skipping node Assignment_1 due to error: Node with id Assignment_1 is not registered!
+
+--- Checking node: Identifier_6 ---
+Skipping node Identifier_6 due to error: Node with id Identifier_6 is not registered!
+
+--- Checking node: BinaryOperation_2 ---
+Skipping node BinaryOperation_2 due to error: Node with id BinaryOperation_2 is not registered!
+
+--- Checking node: Identifier_7 ---
+Skipping node Identifier_7 due to error: Node with id Identifier_7 is not registered!
+
+--- Checking node: Identifier_8 ---
+Skipping node Identifier_8 due to error: Node with id Identifier_8 is not registered!
+
+
+Filtered abstract interpretation output saved to SBCurated_dataset/modified_dataset/arithmetic/insecure_transfer_analysis.txt
+
+========== Running analysis for Octagon Abstract Domain ==========
+Running abstract collecting semantics analysis.
+Abstract collecting semantics analysis completed in 1.8358 seconds.
+VARIABLE-REGISTRY SourceEntry_0 set()
+VARIABLE-REGISTRY SourceUnit_0 set()
+VARIABLE-REGISTRY PragmaDirective_0 set()
+VARIABLE-REGISTRY SourceExit_0 set()
+VARIABLE-REGISTRY ContractDefinition_0 set()
+VARIABLE-REGISTRY VariableDeclaration_0 {'BAL'}
+VARIABLE-REGISTRY VariableDeclaration_1 {'balanceOf'}
+VARIABLE-REGISTRY FunctionDefinition_0 set()
+VARIABLE-REGISTRY FunctionEntry_0 set()
+VARIABLE-REGISTRY ExpressionStatement_0 set()
+VARIABLE-REGISTRY ExpressionStatement_1 {'balanceOf'}
+VARIABLE-REGISTRY ExpressionStatement_2 {'balanceOf'}
+VARIABLE-REGISTRY FunctionExit_0 set()
+dict_keys(['BAL', 'balanceOf'])
+Start Iter: 1
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV SourceExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+Updated variable BAL in registry with value: 100 and stateVariable: True
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+Updated variable balanceOf in registry with value: 40 and stateVariable: True
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 2
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 3
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 4
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 5
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 6
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+<empty>
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 7
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[100.0,100.0], [-215.0,-215.0]]
+{  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +315.0 >= 0;  1x0 +1x1 +115.0 >= 0;  1x1 +215.0 >= 0;  -1x0 -1x1 -115.0 >= 0;  1x0 -1x1 -315.0 >= 0;  -1x1 -215.0 >= 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[1.0,-1.0], [1.0,-1.0]]
+Start Iter: 8
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[100.0,100.0], [-215.0,-215.0]]
+{  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +315.0 >= 0;  1x0 +1x1 +115.0 >= 0;  1x1 +215.0 >= 0;  -1x0 -1x1 -115.0 >= 0;  1x0 -1x1 -315.0 >= 0;  -1x1 -215.0 >= 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+Start Iter: 9
+COLLSEM-TRV SourceEntry_0
+ABSTATE [[0.0,0.0], [0.0,0.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceUnit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV PragmaDirective_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV SourceExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV ContractDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+[GET_VALUE] Retrieved value 100 for variable 'BAL'
+[GET_VALUE] Retrieved value 40 for variable 'balanceOf'
+COLLSEM-TRV VariableDeclaration_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable BAL
+Computed expression for global variable BAL: 100
+[GET_ID] Retrieved ID 0 for variable 'BAL'
+Global variable BAL has index 0 in the variable registry.
+Adding new state to exit set for global variable BAL.
+COLLSEM-TRV VariableDeclaration_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+kk, this function 1 is running
+Processing global variable balanceOf
+Computed expression for global variable balanceOf: 40
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+Global variable balanceOf has index 1 in the variable registry.
+Adding new state to exit set for global variable balanceOf.
+COLLSEM-TRV FunctionDefinition_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV FunctionEntry_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+COLLSEM-TRV ExpressionStatement_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0 }
+COLLSEM-TRV ExpressionStatement_1
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+{  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV ExpressionStatement_2
+ABSTATE [[100.0,100.0], [-215.0,-215.0]]
+{  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +315.0 >= 0;  1x0 +1x1 +115.0 >= 0;  1x1 +215.0 >= 0;  -1x0 -1x1 -115.0 >= 0;  1x0 -1x1 -315.0 >= 0;  -1x1 -215.0 >= 0 }
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+[GET_VALUE] Retrieved value (255, 255) for variable '_value'
+[GET_ID] Retrieved ID 1 for variable 'balanceOf'
+COLLSEM-TRV FunctionExit_0
+ABSTATE [[100.0,100.0], [40.0,40.0]]
+ENTRY 1 SourceEntry_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+EXIT 1 SourceEntry_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+ENTRY 1 SourceUnit_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+EXIT 1 SourceUnit_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+ENTRY 1 PragmaDirective_0 [ -1.0 >= 0]
+EXIT 1 PragmaDirective_0 [ -1.0 >= 0]
+ENTRY 1 SourceExit_0 [ -1.0 >= 0]
+EXIT 1 SourceExit_0 [ -1.0 >= 0]
+ENTRY 1 ContractDefinition_0 [ -1.0 >= 0]
+EXIT 1 ContractDefinition_0 [ -1.0 >= 0]
+ENTRY 1 VariableDeclaration_0 [ -1.0 >= 0]
+EXIT 1 VariableDeclaration_0 [ -1.0 >= 0]
+ENTRY 1 VariableDeclaration_1 [ -1.0 >= 0]
+EXIT 1 VariableDeclaration_1 [ -1.0 >= 0]
+ENTRY 1 FunctionDefinition_0 [ -1.0 >= 0]
+EXIT 1 FunctionDefinition_0 [ -1.0 >= 0]
+ENTRY 1 FunctionEntry_0 [ -1.0 >= 0]
+EXIT 1 FunctionEntry_0 [ -1.0 >= 0]
+ENTRY 1 ExpressionStatement_0 [ -1.0 >= 0]
+EXIT 1 ExpressionStatement_0 [ -1.0 >= 0]
+ENTRY 1 ExpressionStatement_1 [ -1.0 >= 0]
+EXIT 1 ExpressionStatement_1 [ -1.0 >= 0]
+ENTRY 1 ExpressionStatement_2 [ -1.0 >= 0]
+EXIT 1 ExpressionStatement_2 [ -1.0 >= 0]
+ENTRY 1 FunctionExit_0 [ -1.0 >= 0]
+EXIT 1 FunctionExit_0 [ -1.0 >= 0]
+ENTRY 2 SourceEntry_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+EXIT 2 SourceEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 2 SourceUnit_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+EXIT 2 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 2 PragmaDirective_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+EXIT 2 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 2 SourceExit_0 [ -1.0 >= 0]
+EXIT 2 SourceExit_0 [ -1.0 >= 0]
+ENTRY 2 ContractDefinition_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+EXIT 2 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 2 VariableDeclaration_0 [ -1.0 >= 0]
+EXIT 2 VariableDeclaration_0 [ -1.0 >= 0]
+ENTRY 2 VariableDeclaration_1 [ -1.0 >= 0]
+EXIT 2 VariableDeclaration_1 [ -1.0 >= 0]
+ENTRY 2 FunctionDefinition_0 [ -1.0 >= 0]
+EXIT 2 FunctionDefinition_0 [ -1.0 >= 0]
+ENTRY 2 FunctionEntry_0 [ -1.0 >= 0]
+EXIT 2 FunctionEntry_0 [ -1.0 >= 0]
+ENTRY 2 ExpressionStatement_0 [ -1.0 >= 0]
+EXIT 2 ExpressionStatement_0 [ -1.0 >= 0]
+ENTRY 2 ExpressionStatement_1 [ -1.0 >= 0]
+EXIT 2 ExpressionStatement_1 [ -1.0 >= 0]
+ENTRY 2 ExpressionStatement_2 [ -1.0 >= 0]
+EXIT 2 ExpressionStatement_2 [ -1.0 >= 0]
+ENTRY 2 FunctionExit_0 [ -1.0 >= 0]
+EXIT 2 FunctionExit_0 [ -1.0 >= 0]
+ENTRY 3 SourceEntry_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+EXIT 3 SourceEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 3 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 3 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 3 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 3 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 3 SourceExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 3 SourceExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 3 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 3 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 3 VariableDeclaration_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 3 VariableDeclaration_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 3 VariableDeclaration_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 3 VariableDeclaration_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 3 FunctionDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 3 FunctionDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 3 FunctionEntry_0 [ -1.0 >= 0]
+EXIT 3 FunctionEntry_0 [ -1.0 >= 0]
+ENTRY 3 ExpressionStatement_0 [ -1.0 >= 0]
+EXIT 3 ExpressionStatement_0 [ -1.0 >= 0]
+ENTRY 3 ExpressionStatement_1 [ -1.0 >= 0]
+EXIT 3 ExpressionStatement_1 [ -1.0 >= 0]
+ENTRY 3 ExpressionStatement_2 [ -1.0 >= 0]
+EXIT 3 ExpressionStatement_2 [ -1.0 >= 0]
+ENTRY 3 FunctionExit_0 [ -1.0 >= 0]
+EXIT 3 FunctionExit_0 [ -1.0 >= 0]
+ENTRY 4 SourceEntry_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+EXIT 4 SourceEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 4 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 4 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 4 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 4 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 4 SourceExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 4 SourceExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 4 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 4 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 4 VariableDeclaration_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 4 VariableDeclaration_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 4 VariableDeclaration_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 4 VariableDeclaration_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 4 FunctionDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 4 FunctionDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 4 FunctionEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 4 FunctionEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 4 ExpressionStatement_0 [ -1.0 >= 0]
+EXIT 4 ExpressionStatement_0 [ -1.0 >= 0]
+ENTRY 4 ExpressionStatement_1 [ -1.0 >= 0]
+EXIT 4 ExpressionStatement_1 [ -1.0 >= 0]
+ENTRY 4 ExpressionStatement_2 [ -1.0 >= 0]
+EXIT 4 ExpressionStatement_2 [ -1.0 >= 0]
+ENTRY 4 FunctionExit_0 [ -1.0 >= 0]
+EXIT 4 FunctionExit_0 [ -1.0 >= 0]
+ENTRY 5 SourceEntry_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+EXIT 5 SourceEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 5 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 5 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 5 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 5 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 5 SourceExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 5 SourceExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 5 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 5 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 5 VariableDeclaration_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 5 VariableDeclaration_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 5 VariableDeclaration_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 5 VariableDeclaration_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 5 FunctionDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 5 FunctionDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 5 FunctionEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 5 FunctionEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 5 ExpressionStatement_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 5 ExpressionStatement_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 5 ExpressionStatement_1 [ -1.0 >= 0]
+EXIT 5 ExpressionStatement_1 [ -1.0 >= 0]
+ENTRY 5 ExpressionStatement_2 [ -1.0 >= 0]
+EXIT 5 ExpressionStatement_2 [ -1.0 >= 0]
+ENTRY 5 FunctionExit_0 [ -1.0 >= 0]
+EXIT 5 FunctionExit_0 [ -1.0 >= 0]
+ENTRY 6 SourceEntry_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+EXIT 6 SourceEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 6 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 6 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 6 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 6 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 6 SourceExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 6 SourceExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 6 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 6 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 6 VariableDeclaration_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 6 VariableDeclaration_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 6 VariableDeclaration_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 6 VariableDeclaration_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 6 FunctionDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 6 FunctionDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 6 FunctionEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 6 FunctionEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 6 ExpressionStatement_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 6 ExpressionStatement_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 6 ExpressionStatement_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 6 ExpressionStatement_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +315.0 >= 0,  1x0 +1x1 +115.0 >= 0,  1x1 +215.0 >= 0,  -1x0 -1x1 -115.0 >= 0,  1x0 -1x1 -315.0 >= 0,  -1x1 -215.0 >= 0]
+ENTRY 6 ExpressionStatement_2 [ -1.0 >= 0]
+EXIT 6 ExpressionStatement_2 [ -1.0 >= 0]
+ENTRY 6 FunctionExit_0 [ -1.0 >= 0]
+EXIT 6 FunctionExit_0 [ -1.0 >= 0]
+ENTRY 7 SourceEntry_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+EXIT 7 SourceEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 7 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 7 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 7 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 7 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 7 SourceExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 7 SourceExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 7 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 7 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 7 VariableDeclaration_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 7 VariableDeclaration_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 7 VariableDeclaration_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 7 VariableDeclaration_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 7 FunctionDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 7 FunctionDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 7 FunctionEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 7 FunctionEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 7 ExpressionStatement_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 7 ExpressionStatement_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 7 ExpressionStatement_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 7 ExpressionStatement_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +315.0 >= 0,  1x0 +1x1 +115.0 >= 0,  1x1 +215.0 >= 0,  -1x0 -1x1 -115.0 >= 0,  1x0 -1x1 -315.0 >= 0,  -1x1 -215.0 >= 0]
+ENTRY 7 ExpressionStatement_2 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +315.0 >= 0,  1x0 +1x1 +115.0 >= 0,  1x1 +215.0 >= 0,  -1x0 -1x1 -115.0 >= 0,  1x0 -1x1 -315.0 >= 0,  -1x1 -215.0 >= 0]
+EXIT 7 ExpressionStatement_2 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 7 FunctionExit_0 [ -1.0 >= 0]
+EXIT 7 FunctionExit_0 [ -1.0 >= 0]
+ENTRY 8 SourceEntry_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+EXIT 8 SourceEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 8 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 8 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 8 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 8 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 8 SourceExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 8 SourceExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 8 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 8 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 8 VariableDeclaration_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 8 VariableDeclaration_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 8 VariableDeclaration_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 8 VariableDeclaration_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 8 FunctionDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 8 FunctionDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 8 FunctionEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 8 FunctionEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 8 ExpressionStatement_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 8 ExpressionStatement_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 8 ExpressionStatement_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 8 ExpressionStatement_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +315.0 >= 0,  1x0 +1x1 +115.0 >= 0,  1x1 +215.0 >= 0,  -1x0 -1x1 -115.0 >= 0,  1x0 -1x1 -315.0 >= 0,  -1x1 -215.0 >= 0]
+ENTRY 8 ExpressionStatement_2 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +315.0 >= 0,  1x0 +1x1 +115.0 >= 0,  1x1 +215.0 >= 0,  -1x0 -1x1 -115.0 >= 0,  1x0 -1x1 -315.0 >= 0,  -1x1 -215.0 >= 0]
+EXIT 8 ExpressionStatement_2 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 8 FunctionExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 8 FunctionExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 9 SourceEntry_0 [ 1x0 >= 0,  -1x0 >= 0,  -1x0 +1x1 >= 0,  1x0 +1x1 >= 0,  1x1 >= 0,  -1x0 -1x1 >= 0,  1x0 -1x1 >= 0,  -1x1 >= 0]
+EXIT 9 SourceEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 9 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 9 SourceUnit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 9 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 9 PragmaDirective_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 9 SourceExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 9 SourceExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 9 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 9 ContractDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 9 VariableDeclaration_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 9 VariableDeclaration_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 9 VariableDeclaration_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 9 VariableDeclaration_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 9 FunctionDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 9 FunctionDefinition_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 9 FunctionEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 9 FunctionEntry_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 9 ExpressionStatement_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 9 ExpressionStatement_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 9 ExpressionStatement_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 9 ExpressionStatement_1 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +315.0 >= 0,  1x0 +1x1 +115.0 >= 0,  1x1 +215.0 >= 0,  -1x0 -1x1 -115.0 >= 0,  1x0 -1x1 -315.0 >= 0,  -1x1 -215.0 >= 0]
+ENTRY 9 ExpressionStatement_2 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +315.0 >= 0,  1x0 +1x1 +115.0 >= 0,  1x1 +215.0 >= 0,  -1x0 -1x1 -115.0 >= 0,  1x0 -1x1 -315.0 >= 0,  -1x1 -215.0 >= 0]
+EXIT 9 ExpressionStatement_2 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+ENTRY 9 FunctionExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+EXIT 9 FunctionExit_0 [ 1x0 -100.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +60.0 >= 0,  1x0 +1x1 -140.0 >= 0,  1x1 -40.0 >= 0,  -1x0 -1x1 +140.0 >= 0,  1x0 -1x1 -60.0 >= 0,  -1x1 +40.0 >= 0]
+{'BAL': 'uint8', 'balanceOf': 'uint8'}
+{'BAL': {'id': 0, 'name': 'BAL', 'stateVariable': True, 'value': <java object 'apron.Texpr0Intern'>}, 'balanceOf': {'id': 1, 'name': 'balanceOf', 'stateVariable': True, 'value': <java object 'apron.Texpr0Intern'>}}
+
+--- Checking node: SourceEntry_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: SourceExit_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: SourceUnit_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: PragmaDirective_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: ContractDefinition_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: VariableDeclaration_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: VariableDeclaration_1 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: FunctionDefinition_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: FunctionEntry_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: FunctionExit_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: ExpressionStatement_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: FunctionCall_0 ---
+Skipping node FunctionCall_0 due to error: Node with id FunctionCall_0 is not registered!
+
+--- Checking node: BinaryOperation_0 ---
+Skipping node BinaryOperation_0 due to error: Node with id BinaryOperation_0 is not registered!
+
+--- Checking node: Identifier_0 ---
+Skipping node Identifier_0 due to error: Node with id Identifier_0 is not registered!
+
+--- Checking node: Identifier_1 ---
+Skipping node Identifier_1 due to error: Node with id Identifier_1 is not registered!
+
+--- Checking node: Identifier_2 ---
+Skipping node Identifier_2 due to error: Node with id Identifier_2 is not registered!
+
+--- Checking node: ExpressionStatement_1 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [-215.0, -215.0], Allowed Limits: [0, 255]
+Underflow Detected for state variable balanceOf at node ExpressionStatement_1!
+Expected range: [0, 255] but found: [-215.0, -215.0]
+
+--- Checking node: Assignment_0 ---
+Skipping node Assignment_0 due to error: Node with id Assignment_0 is not registered!
+
+--- Checking node: Identifier_3 ---
+Skipping node Identifier_3 due to error: Node with id Identifier_3 is not registered!
+
+--- Checking node: BinaryOperation_1 ---
+Skipping node BinaryOperation_1 due to error: Node with id BinaryOperation_1 is not registered!
+
+--- Checking node: Identifier_4 ---
+Skipping node Identifier_4 due to error: Node with id Identifier_4 is not registered!
+
+--- Checking node: Identifier_5 ---
+Skipping node Identifier_5 due to error: Node with id Identifier_5 is not registered!
+
+--- Checking node: ExpressionStatement_2 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 255]
+Checking variable: balanceOf (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 255]
+
+--- Checking node: Assignment_1 ---
+Skipping node Assignment_1 due to error: Node with id Assignment_1 is not registered!
+
+--- Checking node: Identifier_6 ---
+Skipping node Identifier_6 due to error: Node with id Identifier_6 is not registered!
+
+--- Checking node: BinaryOperation_2 ---
+Skipping node BinaryOperation_2 due to error: Node with id BinaryOperation_2 is not registered!
+
+--- Checking node: Identifier_7 ---
+Skipping node Identifier_7 due to error: Node with id Identifier_7 is not registered!
+
+--- Checking node: Identifier_8 ---
+Skipping node Identifier_8 due to error: Node with id Identifier_8 is not registered!
+
+
+Filtered abstract interpretation output saved to SBCurated_dataset/modified_dataset/arithmetic/insecure_transfer_analysis.txt
