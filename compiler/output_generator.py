@@ -1,6 +1,3 @@
-'''
-sdfsd
-'''
 import solcx
 from copy import deepcopy
 from typing import List
