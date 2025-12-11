@@ -16,7 +16,7 @@ from control_flow_graph.node_processor.nodes import FunctionCall
 from control_flow_graph.node_processor.nodes import VariableDeclarationStatement
 from control_flow_graph.node_processor.nodes import IfStatement, ExpressionStatement  # Import the node classes
 from control_flow_graph.node_processor.nodes.extra_nodes.if_statement.join import IfConditionJoin
-from reachingdefinitionnew import ReachingDefinitionsWithUsage
+from dependency_analysis import DependencyAnalysisEngine
 
 # Set up logging to capture both terminal and file output
 # log_file = "output.txt"
@@ -101,9 +101,9 @@ def save_filtered_analysis_output(raw_output, solidity_filepath):
 def run_static_analysis(source_code, solidity_filepath, annotate_dependencies=False):
 
     logging.info("Starting Solidity compilation and static analysis.")
-    transformed_source = transform_mappings(source_code)
+    # transformed_source = transform_mappings(source_code)
     # save_transformed_source(transformed_source)
-    compiler = SolCompiler(transformed_source)
+    compiler = SolCompiler(source_code)
     output = compiler.compile()
     contracts = output.get_contracts_list()
 
@@ -122,7 +122,7 @@ def run_static_analysis(source_code, solidity_filepath, annotate_dependencies=Fa
     with open('./gen/ast.json', 'w', encoding='utf8') as f:
         json.dump(ast, f, indent=4)
 
-    cfg = ControlFlowGraph(transformed_source, ast)
+    cfg = ControlFlowGraph(source_code, ast)
     cfg.build_cfg()
     cfg.generate_dot()
     cfg.generate_dot_bottom_up()
@@ -171,26 +171,26 @@ def run_static_analysis(source_code, solidity_filepath, annotate_dependencies=Fa
     cfg.generate_dot()
     cfg.generate_dot_bottom_up()
 
-    # Perform Reaching Definitions Analysis first and log output
+    # Perform Dependency Analysis first and log output
     start_time = time.time()
-    reaching_analysis = ReachingDefinitionsWithUsage(cfg, annotate_dependencies==annotate_dependencies)
+    reaching_analysis = DependencyAnalysisEngine(cfg, annotate_dependencies==annotate_dependencies)
     reaching_analysis.compute_reaching_definitions_and_dependencies()
     end_time = time.time()
     duration = end_time - start_time
     logging.info(f"Full timestamp dependency analysis (incl. annotations) completed in {duration:.4f} seconds.")
-    print("\n========== Reaching Definitions Output ==========\n")
-    with open("reaching_definitions_output.txt", "r") as output:
+    print("\n========== Dependency Analysis Output ==========\n")
+    with open("dependency_analysis_output.txt", "r") as output:  # <--- Update filename here
         print(output.read())
 
-    # Log output from reaching definitions file
-    reaching_output_file = "reaching_definitions_output.txt"
+    # Log output from Dependency Analysis file
+    reaching_output_file = "dependency_analysis_output.txt"
     if os.path.exists(reaching_output_file):
-        logging.info("\n========== Reaching Definitions Output ==========")
+        logging.info("\n========== Dependency Analysis Output ==========")
         with open(reaching_output_file, "r") as f:
             reaching_output = f.read()
             logging.info(reaching_output)
     else:
-        logging.warning("Reaching definitions output file not found.")
+        logging.warning("Dependency Analysis output file not found.")
     
     # Perform Abstract Collecting Semantics Analysis
     domains = ["Box", "Polka", "Octagon"]

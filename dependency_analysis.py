@@ -22,11 +22,12 @@ from control_flow_graph.node_processor.nodes import (
 )
 
 # Save output to a file
-output_file_path = "reaching_definitions_output.txt"
+output_file_path = "dependency_analysis_output.txt"
 
-class ReachingDefinitionsWithUsage:
+class DependencyAnalysisEngine:
     """
-    Class to compute reaching definitions and track variable dependencies in a given CFG.
+    Dependency Analysis Engine: Computes dataflow (reaching definitions), control dependencies, 
+    and detects TOD/Timestamp vulnerabilities.
     """
 
     def __init__(self, cfg: ControlFlowGraph, annotate_dependencies=False):
@@ -863,7 +864,7 @@ class ReachingDefinitionsWithUsage:
         """
         Correctly print reaching definitions grouped by node, classifying defs vs. uses.
         """
-        output_file.write("\nReaching Definition:\n")
+        output_file.write("\nDataflow Analysis (Reaching Definitions):\n")
 
         node_dependencies = defaultdict(list)
 
@@ -939,7 +940,7 @@ class ReachingDefinitionsWithUsage:
             current_func_id = None
             current_func_name = None
             try:
-                with open("reaching_definitions_output.txt", "r") as f:
+                with open("dependency_analysis_output.txt", "r") as f:
                     for line in f:
                         if "DEBUG: FunctionDefinition" in line:
                             parts = line.split("names:")
