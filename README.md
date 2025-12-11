@@ -13,27 +13,15 @@ The tool detects various vulnerabilities, including:
 The tool takes a Solidity smart contract (`.sol`) as input, compiles it using `solcx`, and constructs an Augmented Control Flow Graph (CFG). It utilizes the **APRON** numerical library (via JPype) to perform Fixpoint Abstract Semantics evaluation.
 
 ## Semantic Preprocessing & Normalization
-To ensure maximum precision in Abstract Interpretation, our framework includes a Semantic Preprocessing (mapping_transformer.py). Standard static analysis tools often lose context when encountering complex Ethereum storage structures (like sparse mappings) or low-level external calls.
+To ensure high precision in Abstract Interpretation, the framework employs a **Semantic Preprocessing** module (`mapping_transformer.py`). This engine normalizes complex Solidity constructs into explicit numerical constraints compatible with the **APRON** domain.
 
-Our tool overcomes this by normalizing these constructs into explicit numerical constraints before the Control Flow Graph (CFG) construction. This step ensures that the underlying numerical domains (Box, Octagon, Polyhedra) can mathematically prove the presence or absence of vulnerabilities without semantics loss.
+Key transformations include:
 
-Key transformation advantages include:
+* **Abstract State Modeling:** Transforms sparse `mappings` and nested `structs` into representative scalar variables. This allows the numerical engine to track constraints on state variables (like user balances) that are usually invisible to abstract domains.
 
-* Abstract State Modeling. Solidity mappings are transformed into representative abstract variables. This allows the APRON engine to track data flow and constraints on state variables (e.g., user balances) that are otherwise invisible to numerical domains.
+* **External Call Normalization:** Converts low-level operations (`call.value`, `transfer`, `send`) into explicit conditional logic blocks. This exposes the control flow and state changes (e.g., balance deductions) necessary for detecting **Reentrancy** and **TOD**.
 
-* Explicit Control Flow for External Calls. Low-level operations like call.value, send, and transfer are normalized into conditional logic blocks that model the exact state changes (such as balance deductions). This exposes the logical flow to the analyzer, allowing it to detect Reentrancy and Transaction Ordering Dependencies (TOD) by observing how state variables change relative to external interaction points.
-
-* Struct Flattening. Nested structures are flattened into scalar variables, preventing information loss during the conversion to the abstract domain.
-
-* No semantic loss. All transformations are sound over-approximations:
-
-- No feasible execution path of the original contract is removed.
-
-- No behaviour relevant to vulnerability detection is lost.
-
-- The transformation simply removes syntactic irregularities that hinder abstract interpretation engines.
-
-As a result, the preprocessed program preserves all behaviours detectable at the semantic level, while enabling the analysis engine to operate on a uniform program representation.
+* **Semantics Preservation:** The normalization is a **sound over-approximation**; it removes syntactic irregularities while preserving all execution paths and behaviors relevant to vulnerability detection.
 
 ## Installation
 
