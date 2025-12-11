@@ -2,9 +2,9 @@ Starting Solidity compilation and static analysis.
 solc 0.5.17 already installed at: /home/maitri/.solcx/solc-v0.5.17
 Using solc version 0.5.17
 Contracts found: ('Reentrancy_insecure',)
-Full timestamp dependency analysis (incl. annotations) completed in 0.0061 seconds.
+Full timestamp dependency analysis (incl. annotations) completed in 0.0025 seconds.
 
-========== Reaching Definitions Output ==========
+========== Dependency Analysis Output ==========
 
 Iteration 1
 Node ID                   Used Variables                 Defined Variables        
@@ -27,15 +27,15 @@ Identifier_0              None                                               Non
 VariableDeclarationStatement_1 None                                               success                             
 VariableDeclaration_3     None                                               success                             
 Literal_0                 None                                               None                                
-STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_1' for variable 'userBalances'
 STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_2' for variable 'amountToWithdraw'
 STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_0' for variable 'BAL'
+STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_1' for variable 'userBalances'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_0' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_1' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'IfStatement_0' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_2' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_2' is control dependent on 'IfStatement_0'
-IfStatement_0             userBalances, amountToWithdraw, BAL                None                                
+IfStatement_0             amountToWithdraw, BAL, userBalances                None                                
 BinaryOperation_0         None                                               None                                
 BinaryOperation_1         None                                               None                                
 Identifier_1              None                                               None                                
@@ -92,15 +92,15 @@ Identifier_0              None                                               Non
 VariableDeclarationStatement_1 None                                               success                             
 VariableDeclaration_3     None                                               success                             
 Literal_0                 None                                               None                                
-STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_1' for variable 'userBalances'
 STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_2' for variable 'amountToWithdraw'
 STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_0' for variable 'BAL'
+STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_1' for variable 'userBalances'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_0' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_1' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'IfStatement_0' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_2' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_2' is control dependent on 'IfStatement_0'
-IfStatement_0             userBalances, amountToWithdraw, BAL                None                                
+IfStatement_0             amountToWithdraw, BAL, userBalances                None                                
 BinaryOperation_0         None                                               None                                
 BinaryOperation_1         None                                               None                                
 Identifier_1              None                                               None                                
@@ -157,15 +157,15 @@ Identifier_0              None                                               Non
 VariableDeclarationStatement_1 None                                               success                             
 VariableDeclaration_3     None                                               success                             
 Literal_0                 None                                               None                                
-STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_1' for variable 'userBalances'
 STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_2' for variable 'amountToWithdraw'
 STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_0' for variable 'BAL'
+STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_1' for variable 'userBalances'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_0' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_1' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'IfStatement_0' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_2' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_2' is control dependent on 'IfStatement_0'
-IfStatement_0             userBalances, amountToWithdraw, BAL                None                                
+IfStatement_0             amountToWithdraw, BAL, userBalances                None                                
 BinaryOperation_0         None                                               None                                
 BinaryOperation_1         None                                               None                                
 Identifier_1              None                                               None                                
@@ -222,15 +222,15 @@ Identifier_0              None                                               Non
 VariableDeclarationStatement_1 None                                               success                             
 VariableDeclaration_3     None                                               success                             
 Literal_0                 None                                               None                                
-STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_1' for variable 'userBalances'
 STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_2' for variable 'amountToWithdraw'
 STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_0' for variable 'BAL'
+STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_1' for variable 'userBalances'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_0' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_1' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'IfStatement_0' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_2' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_2' is control dependent on 'IfStatement_0'
-IfStatement_0             userBalances, amountToWithdraw, BAL                None                                
+IfStatement_0             amountToWithdraw, BAL, userBalances                None                                
 BinaryOperation_0         None                                               None                                
 BinaryOperation_1         None                                               None                                
 Identifier_1              None                                               None                                
@@ -287,15 +287,15 @@ Identifier_0              None                                               Non
 VariableDeclarationStatement_1 None                                               success                             
 VariableDeclaration_3     None                                               success                             
 Literal_0                 None                                               None                                
-STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_1' for variable 'userBalances'
 STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_2' for variable 'amountToWithdraw'
 STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_0' for variable 'BAL'
+STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_1' for variable 'userBalances'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_0' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_1' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'IfStatement_0' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_2' is control dependent on 'IfStatement_0'
 CONTROL DEPENDENCY: Node 'ExpressionStatement_2' is control dependent on 'IfStatement_0'
-IfStatement_0             userBalances, amountToWithdraw, BAL                None                                
+IfStatement_0             amountToWithdraw, BAL, userBalances                None                                
 BinaryOperation_0         None                                               None                                
 BinaryOperation_1         None                                               None                                
 Identifier_1              None                                               None                                
@@ -335,8 +335,8 @@ Fixed point reached. Reaching definitions have converged.
 
 Statement-Level Dependencies:
 STATEMENT DEPENDENCY: Node 'VariableDeclarationStatement_0' is data dependent on Node 'VariableDeclaration_1' for variable 'userBalances'
-STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_2' for variable 'amountToWithdraw'
 STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_1' for variable 'userBalances'
+STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_2' for variable 'amountToWithdraw'
 STATEMENT DEPENDENCY: Node 'IfStatement_0' is data dependent on Node 'VariableDeclaration_0' for variable 'BAL'
 STATEMENT DEPENDENCY: Node 'ExpressionStatement_0' is data dependent on Node 'VariableDeclaration_2' for variable 'amountToWithdraw'
 STATEMENT DEPENDENCY: Node 'ExpressionStatement_0' is data dependent on Node 'ExpressionStatement_0' for variable 'BAL'
@@ -350,7 +350,7 @@ ExpressionStatement_2 control depend on IfStatement_0
 
 Timestamp Influence Zones:
 
-Reaching Definition:
+Dataflow Analysis (Reaching Definitions):
 
 Node 'VariableDeclarationStatement_0' uses:
   - Variable 'userBalances' reached from Node 'VariableDeclaration_1'
@@ -377,82 +377,82 @@ userBalances [state] (defined in VariableDeclaration_1)
   → used in VariableDeclarationStatement_0 (FunctionDefinition_0: withdrawBalance) [redef=False]
   → defined in ExpressionStatement_4 (FunctionDefinition_0: withdrawBalance)
 
-[📋 TOD Summary - Compact CLI Format]
+[ TOD Summary - Compact CLI Format]
 [DEBUG] Starting NEW intra-function TOD detection loop
 [DEBUG] Analyzing state variable 'userBalances' for intra-function TOD
 [DEBUG-TOD-CHECK] use_node=VariableDeclarationStatement_0, def_node=ExpressionStatement_4, func=FunctionDefinition_0: withdrawBalance
 [DEBUG is_control_or_transfer_sensitive] Checking node: VariableDeclarationStatement_0
 [DEBUG-TOD-CHECK] use_node=IfStatement_0, def_node=ExpressionStatement_4, func=FunctionDefinition_0: withdrawBalance
 [DEBUG is_control_or_transfer_sensitive] Checking node: IfStatement_0
-[DEBUG] Analyzing state variable 'amountToWithdraw' for intra-function TOD
-[DEBUG-TOD-CHECK] use_node=IfStatement_0, def_node=VariableDeclarationStatement_0, func=FunctionDefinition_0: withdrawBalance
-[DEBUG is_control_or_transfer_sensitive] Checking node: IfStatement_0
-[DEBUG-TOD-CHECK] use_node=ExpressionStatement_0, def_node=VariableDeclarationStatement_0, func=FunctionDefinition_0: withdrawBalance
-[DEBUG is_control_or_transfer_sensitive] Checking node: ExpressionStatement_0
-[DEBUG] Expression: Assignment, content: <control_flow_graph.node_processor.nodes.Assignment.Assignment object at 0x72c05c271df0>
-[DEBUG] Analyzing state variable 'success' for intra-function TOD
-[DEBUG-TOD-CHECK] use_node=FunctionCall_0, def_node=VariableDeclarationStatement_1, func=FunctionDefinition_0: withdrawBalance
-[DEBUG is_control_or_transfer_sensitive] Checking node: FunctionCall_0
-[DEBUG] Expression: FunctionCall, content: <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>
-[DEBUG DUMP] Node=FunctionCall | content=<control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=method | content=<bound method FunctionCall.get_leaf_nodes of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271100>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271100>>
-[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271100>>
-[DEBUG DUMP] Node=method | content=<bound method Identifier.get_leaf_nodes of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271100>>
-[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271130>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271130>>
-[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=method | content=<bound method Node.add_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG-TOD-CHECK] use_node=FunctionCall_0, def_node=ExpressionStatement_1, func=FunctionDefinition_0: withdrawBalance
-[DEBUG is_control_or_transfer_sensitive] Checking node: FunctionCall_0
-[DEBUG] Expression: FunctionCall, content: <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>
-[DEBUG DUMP] Node=FunctionCall | content=<control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=method | content=<bound method FunctionCall.get_leaf_nodes of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271100>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271100>>
-[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271100>>
-[DEBUG DUMP] Node=method | content=<bound method Identifier.get_leaf_nodes of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271100>>
-[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271130>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271130>>
-[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=method | content=<bound method Node.add_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG-TOD-CHECK] use_node=FunctionCall_0, def_node=ExpressionStatement_2, func=FunctionDefinition_0: withdrawBalance
-[DEBUG is_control_or_transfer_sensitive] Checking node: FunctionCall_0
-[DEBUG] Expression: FunctionCall, content: <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>
-[DEBUG DUMP] Node=FunctionCall | content=<control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=method | content=<bound method FunctionCall.get_leaf_nodes of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271100>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271100>>
-[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271100>>
-[DEBUG DUMP] Node=method | content=<bound method Identifier.get_leaf_nodes of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271100>>
-[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271130>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271130>>
-[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
-[DEBUG DUMP] Node=method | content=<bound method Node.add_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x72c05c2a7c10>>
 [DEBUG] Analyzing state variable 'BAL' for intra-function TOD
 [DEBUG-TOD-CHECK] use_node=IfStatement_0, def_node=ExpressionStatement_0, func=FunctionDefinition_0: withdrawBalance
 [DEBUG is_control_or_transfer_sensitive] Checking node: IfStatement_0
 [DEBUG-TOD-CHECK] use_node=ExpressionStatement_0, def_node=ExpressionStatement_0, func=FunctionDefinition_0: withdrawBalance
 [DEBUG is_control_or_transfer_sensitive] Checking node: ExpressionStatement_0
-[DEBUG] Expression: Assignment, content: <control_flow_graph.node_processor.nodes.Assignment.Assignment object at 0x72c05c271df0>
+[DEBUG] Expression: Assignment, content: <control_flow_graph.node_processor.nodes.Assignment.Assignment object at 0x7298ce5e9fd0>
+[DEBUG] Analyzing state variable 'amountToWithdraw' for intra-function TOD
+[DEBUG-TOD-CHECK] use_node=IfStatement_0, def_node=VariableDeclarationStatement_0, func=FunctionDefinition_0: withdrawBalance
+[DEBUG is_control_or_transfer_sensitive] Checking node: IfStatement_0
+[DEBUG-TOD-CHECK] use_node=ExpressionStatement_0, def_node=VariableDeclarationStatement_0, func=FunctionDefinition_0: withdrawBalance
+[DEBUG is_control_or_transfer_sensitive] Checking node: ExpressionStatement_0
+[DEBUG] Expression: Assignment, content: <control_flow_graph.node_processor.nodes.Assignment.Assignment object at 0x7298ce5e9fd0>
+[DEBUG] Analyzing state variable 'success' for intra-function TOD
+[DEBUG-TOD-CHECK] use_node=FunctionCall_0, def_node=VariableDeclarationStatement_1, func=FunctionDefinition_0: withdrawBalance
+[DEBUG is_control_or_transfer_sensitive] Checking node: FunctionCall_0
+[DEBUG] Expression: FunctionCall, content: <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>
+[DEBUG DUMP] Node=FunctionCall | content=<control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=method | content=<bound method FunctionCall.get_leaf_nodes of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5b0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5b0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5b0>>
+[DEBUG DUMP] Node=method | content=<bound method Identifier.get_leaf_nodes of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5b0>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5e0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG-TOD-CHECK] use_node=FunctionCall_0, def_node=ExpressionStatement_1, func=FunctionDefinition_0: withdrawBalance
+[DEBUG is_control_or_transfer_sensitive] Checking node: FunctionCall_0
+[DEBUG] Expression: FunctionCall, content: <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>
+[DEBUG DUMP] Node=FunctionCall | content=<control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=method | content=<bound method FunctionCall.get_leaf_nodes of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5b0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5b0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5b0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5b0>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5e0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG-TOD-CHECK] use_node=FunctionCall_0, def_node=ExpressionStatement_2, func=FunctionDefinition_0: withdrawBalance
+[DEBUG is_control_or_transfer_sensitive] Checking node: FunctionCall_0
+[DEBUG] Expression: FunctionCall, content: <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>
+[DEBUG DUMP] Node=FunctionCall | content=<control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=method | content=<bound method FunctionCall.get_leaf_nodes of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5b0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5b0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5b0>>
+[DEBUG DUMP] Node=method | content=<bound method Identifier.get_leaf_nodes of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5b0>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5e0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5af5e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7298ce5af400>>
 --------------------------------------
-✅ No transaction-ordering dependencies detected.
+ No transaction-ordering dependencies detected.
 --------------------------------------
 
 
 ========== Running analysis for Box Abstract Domain ==========
 Running abstract collecting semantics analysis.
-Abstract collecting semantics analysis completed in 3.9263 seconds.
+Abstract collecting semantics analysis completed in 3.8672 seconds.
 VARIABLE-REGISTRY SourceEntry_0 set()
 VARIABLE-REGISTRY SourceUnit_0 set()
 VARIABLE-REGISTRY PragmaDirective_0 set()
@@ -508,13 +508,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': <empty>
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -591,13 +591,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': <empty>
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -674,13 +674,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': <empty>
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -757,13 +757,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': <empty>
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -840,13 +840,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -923,13 +923,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -1006,13 +1006,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -1089,13 +1089,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -1172,13 +1172,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -1255,13 +1255,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -1338,13 +1338,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -1421,13 +1421,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -1504,13 +1504,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -1587,13 +1587,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -1670,13 +1670,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -1753,13 +1753,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -1836,13 +1836,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -1919,13 +1919,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -2002,13 +2002,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 = 0;  1x1 -40.0 = 0;  1x2 -40.0 = 0;  1x3 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -2783,13 +2783,246 @@ ENTRY 19 ExpressionStatement_4 [[20.0,100.0], [40.0,40.0], [40.0,40.0], [0.0,1.0
 EXIT 19 ExpressionStatement_4 [[20.0,100.0], [0.0,0.0], [40.0,40.0], [0.0,1.0]]
 ENTRY 19 FunctionExit_0 [[20.0,100.0], [0.0,0.0], [40.0,40.0], [0.0,1.0]]
 EXIT 19 FunctionExit_0 [[20.0,100.0], [0.0,0.0], [40.0,40.0], [0.0,1.0]]
+{'BAL': 'uint256', 'userBalances': 'uint256', 'amountToWithdraw': 'uint256', 'success': 'bool'}
+{'BAL': {'id': 0, 'name': 'BAL', 'stateVariable': True, 'value': <java object 'apron.Texpr0Intern'>}, 'userBalances': {'id': 1, 'name': 'userBalances', 'stateVariable': True, 'value': <java object 'apron.Texpr0Intern'>}, 'amountToWithdraw': {'id': 2, 'name': 'amountToWithdraw', 'stateVariable': False, 'value': None}, 'success': {'id': 3, 'name': 'success', 'stateVariable': False, 'value': None}}
+
+--- Checking node: SourceEntry_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: SourceExit_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: SourceUnit_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: PragmaDirective_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: ContractDefinition_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclaration_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclaration_1 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: FunctionDefinition_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: FunctionEntry_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: FunctionExit_0 ---
+Checking variable: BAL (State)
+Interval: [20.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclarationStatement_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclaration_2 ---
+Skipping node VariableDeclaration_2 due to error: Node with id VariableDeclaration_2 is not registered!
+
+--- Checking node: Identifier_0 ---
+Skipping node Identifier_0 due to error: Node with id Identifier_0 is not registered!
+
+--- Checking node: VariableDeclarationStatement_1 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclaration_3 ---
+Skipping node VariableDeclaration_3 due to error: Node with id VariableDeclaration_3 is not registered!
+
+--- Checking node: Literal_0 ---
+Skipping node Literal_0 due to error: Node with id Literal_0 is not registered!
+
+--- Checking node: IfStatement_0 ---
+Skipping node IfStatement_0 due to error: 'dict' object has no attribute 'toBox'
+
+--- Checking node: BinaryOperation_0 ---
+Skipping node BinaryOperation_0 due to error: Node with id BinaryOperation_0 is not registered!
+
+--- Checking node: BinaryOperation_1 ---
+Skipping node BinaryOperation_1 due to error: Node with id BinaryOperation_1 is not registered!
+
+--- Checking node: Identifier_1 ---
+Skipping node Identifier_1 due to error: Node with id Identifier_1 is not registered!
+
+--- Checking node: Identifier_2 ---
+Skipping node Identifier_2 due to error: Node with id Identifier_2 is not registered!
+
+--- Checking node: BinaryOperation_2 ---
+Skipping node BinaryOperation_2 due to error: Node with id BinaryOperation_2 is not registered!
+
+--- Checking node: Identifier_3 ---
+Skipping node Identifier_3 due to error: Node with id Identifier_3 is not registered!
+
+--- Checking node: Identifier_4 ---
+Skipping node Identifier_4 due to error: Node with id Identifier_4 is not registered!
+
+--- Checking node: IfConditionJoin_0 ---
+Checking variable: BAL (State)
+Interval: [20.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: ExpressionStatement_0 ---
+Checking variable: BAL (State)
+Interval: [20.0, 60.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: Assignment_0 ---
+Skipping node Assignment_0 due to error: Node with id Assignment_0 is not registered!
+
+--- Checking node: Identifier_5 ---
+Skipping node Identifier_5 due to error: Node with id Identifier_5 is not registered!
+
+--- Checking node: BinaryOperation_3 ---
+Skipping node BinaryOperation_3 due to error: Node with id BinaryOperation_3 is not registered!
+
+--- Checking node: Identifier_6 ---
+Skipping node Identifier_6 due to error: Node with id Identifier_6 is not registered!
+
+--- Checking node: Identifier_7 ---
+Skipping node Identifier_7 due to error: Node with id Identifier_7 is not registered!
+
+--- Checking node: ExpressionStatement_1 ---
+Checking variable: BAL (State)
+Interval: [20.0, 60.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: Assignment_1 ---
+Skipping node Assignment_1 due to error: Node with id Assignment_1 is not registered!
+
+--- Checking node: Identifier_8 ---
+Skipping node Identifier_8 due to error: Node with id Identifier_8 is not registered!
+
+--- Checking node: Literal_1 ---
+Skipping node Literal_1 due to error: Node with id Literal_1 is not registered!
+
+--- Checking node: ExpressionStatement_2 ---
+Checking variable: BAL (State)
+Interval: [20.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: Assignment_2 ---
+Skipping node Assignment_2 due to error: Node with id Assignment_2 is not registered!
+
+--- Checking node: Identifier_9 ---
+Skipping node Identifier_9 due to error: Node with id Identifier_9 is not registered!
+
+--- Checking node: Literal_2 ---
+Skipping node Literal_2 due to error: Node with id Literal_2 is not registered!
+
+--- Checking node: ExpressionStatement_3 ---
+Checking variable: BAL (State)
+Interval: [20.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: FunctionCall_0 ---
+Skipping node FunctionCall_0 due to error: Node with id FunctionCall_0 is not registered!
+
+--- Checking node: Identifier_10 ---
+Skipping node Identifier_10 due to error: Node with id Identifier_10 is not registered!
+
+--- Checking node: Identifier_11 ---
+Skipping node Identifier_11 due to error: Node with id Identifier_11 is not registered!
+
+--- Checking node: ExpressionStatement_4 ---
+Checking variable: BAL (State)
+Interval: [20.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: Assignment_3 ---
+Skipping node Assignment_3 due to error: Node with id Assignment_3 is not registered!
+
+--- Checking node: Identifier_12 ---
+Skipping node Identifier_12 due to error: Node with id Identifier_12 is not registered!
+
+--- Checking node: Literal_3 ---
+Skipping node Literal_3 due to error: Node with id Literal_3 is not registered!
 
 
 Filtered abstract interpretation output saved to SBCurated_dataset/modified_dataset/reentrancy/reentrancy_insecure_analysis.txt
 
 ========== Running analysis for Polka Abstract Domain ==========
 Running abstract collecting semantics analysis.
-Abstract collecting semantics analysis completed in 4.1137 seconds.
+Abstract collecting semantics analysis completed in 4.0760 seconds.
 VARIABLE-REGISTRY SourceEntry_0 set()
 VARIABLE-REGISTRY SourceUnit_0 set()
 VARIABLE-REGISTRY PragmaDirective_0 set()
@@ -2845,13 +3078,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': <empty>
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -2928,13 +3161,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': <empty>
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -3011,13 +3244,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': <empty>
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -3094,13 +3327,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': <empty>
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -3177,13 +3410,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -3260,13 +3493,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -3343,13 +3576,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -3426,13 +3659,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -3509,13 +3742,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -3592,13 +3825,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -3675,13 +3908,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -3758,13 +3991,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -3841,13 +4074,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -3924,13 +4157,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -4007,13 +4240,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -4090,13 +4323,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -4173,13 +4406,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -4256,13 +4489,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -4339,13 +4572,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -4422,13 +4655,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100,100], [40,40], [0,0], [0,0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100,100], [40,40], [40,40], [0,0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x3 = 0;  1x2 -40 = 0;  1x1 -40 = 0;  1x0 -100 = 0 }
 COLLSEM-TRV IfStatement_0
@@ -5242,13 +5475,246 @@ ENTRY 20 ExpressionStatement_4 [ 1x2 -40 = 0,  1x1 -40 = 0,  -1x0 -40x3 +100 >= 
 EXIT 20 ExpressionStatement_4 [ 1x2 -40 = 0,  1x1 = 0,  -1x0 -40x3 +100 >= 0,  -1x3 +1 >= 0,  1x3 >= 0,  1x0 -20 >= 0]
 ENTRY 20 FunctionExit_0 [ 1x2 -40 = 0,  1x1 = 0,  -1x0 -40x3 +100 >= 0,  -1x3 +1 >= 0,  1x3 >= 0,  1x0 -20 >= 0]
 EXIT 20 FunctionExit_0 [ 1x2 -40 = 0,  1x1 = 0,  -1x0 -40x3 +100 >= 0,  -1x3 +1 >= 0,  1x3 >= 0,  1x0 -20 >= 0]
+{'BAL': 'uint256', 'userBalances': 'uint256', 'amountToWithdraw': 'uint256', 'success': 'bool'}
+{'BAL': {'id': 0, 'name': 'BAL', 'stateVariable': True, 'value': <java object 'apron.Texpr0Intern'>}, 'userBalances': {'id': 1, 'name': 'userBalances', 'stateVariable': True, 'value': <java object 'apron.Texpr0Intern'>}, 'amountToWithdraw': {'id': 2, 'name': 'amountToWithdraw', 'stateVariable': False, 'value': None}, 'success': {'id': 3, 'name': 'success', 'stateVariable': False, 'value': None}}
+
+--- Checking node: SourceEntry_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0, 0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: SourceExit_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: SourceUnit_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0, 0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: PragmaDirective_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0, 0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: ContractDefinition_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0, 0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclaration_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0, 0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclaration_1 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0, 0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: FunctionDefinition_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0, 0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: FunctionEntry_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0, 0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: FunctionExit_0 ---
+Checking variable: BAL (State)
+Interval: [20, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [0, 0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclarationStatement_0 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclaration_2 ---
+Skipping node VariableDeclaration_2 due to error: Node with id VariableDeclaration_2 is not registered!
+
+--- Checking node: Identifier_0 ---
+Skipping node Identifier_0 due to error: Node with id Identifier_0 is not registered!
+
+--- Checking node: VariableDeclarationStatement_1 ---
+Checking variable: BAL (State)
+Interval: [100, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclaration_3 ---
+Skipping node VariableDeclaration_3 due to error: Node with id VariableDeclaration_3 is not registered!
+
+--- Checking node: Literal_0 ---
+Skipping node Literal_0 due to error: Node with id Literal_0 is not registered!
+
+--- Checking node: IfStatement_0 ---
+Skipping node IfStatement_0 due to error: 'dict' object has no attribute 'toBox'
+
+--- Checking node: BinaryOperation_0 ---
+Skipping node BinaryOperation_0 due to error: Node with id BinaryOperation_0 is not registered!
+
+--- Checking node: BinaryOperation_1 ---
+Skipping node BinaryOperation_1 due to error: Node with id BinaryOperation_1 is not registered!
+
+--- Checking node: Identifier_1 ---
+Skipping node Identifier_1 due to error: Node with id Identifier_1 is not registered!
+
+--- Checking node: Identifier_2 ---
+Skipping node Identifier_2 due to error: Node with id Identifier_2 is not registered!
+
+--- Checking node: BinaryOperation_2 ---
+Skipping node BinaryOperation_2 due to error: Node with id BinaryOperation_2 is not registered!
+
+--- Checking node: Identifier_3 ---
+Skipping node Identifier_3 due to error: Node with id Identifier_3 is not registered!
+
+--- Checking node: Identifier_4 ---
+Skipping node Identifier_4 due to error: Node with id Identifier_4 is not registered!
+
+--- Checking node: IfConditionJoin_0 ---
+Checking variable: BAL (State)
+Interval: [20, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: ExpressionStatement_0 ---
+Checking variable: BAL (State)
+Interval: [20, 60], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: Assignment_0 ---
+Skipping node Assignment_0 due to error: Node with id Assignment_0 is not registered!
+
+--- Checking node: Identifier_5 ---
+Skipping node Identifier_5 due to error: Node with id Identifier_5 is not registered!
+
+--- Checking node: BinaryOperation_3 ---
+Skipping node BinaryOperation_3 due to error: Node with id BinaryOperation_3 is not registered!
+
+--- Checking node: Identifier_6 ---
+Skipping node Identifier_6 due to error: Node with id Identifier_6 is not registered!
+
+--- Checking node: Identifier_7 ---
+Skipping node Identifier_7 due to error: Node with id Identifier_7 is not registered!
+
+--- Checking node: ExpressionStatement_1 ---
+Checking variable: BAL (State)
+Interval: [20, 60], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: Assignment_1 ---
+Skipping node Assignment_1 due to error: Node with id Assignment_1 is not registered!
+
+--- Checking node: Identifier_8 ---
+Skipping node Identifier_8 due to error: Node with id Identifier_8 is not registered!
+
+--- Checking node: Literal_1 ---
+Skipping node Literal_1 due to error: Node with id Literal_1 is not registered!
+
+--- Checking node: ExpressionStatement_2 ---
+Checking variable: BAL (State)
+Interval: [20, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: Assignment_2 ---
+Skipping node Assignment_2 due to error: Node with id Assignment_2 is not registered!
+
+--- Checking node: Identifier_9 ---
+Skipping node Identifier_9 due to error: Node with id Identifier_9 is not registered!
+
+--- Checking node: Literal_2 ---
+Skipping node Literal_2 due to error: Node with id Literal_2 is not registered!
+
+--- Checking node: ExpressionStatement_3 ---
+Checking variable: BAL (State)
+Interval: [20, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: FunctionCall_0 ---
+Skipping node FunctionCall_0 due to error: Node with id FunctionCall_0 is not registered!
+
+--- Checking node: Identifier_10 ---
+Skipping node Identifier_10 due to error: Node with id Identifier_10 is not registered!
+
+--- Checking node: Identifier_11 ---
+Skipping node Identifier_11 due to error: Node with id Identifier_11 is not registered!
+
+--- Checking node: ExpressionStatement_4 ---
+Checking variable: BAL (State)
+Interval: [20, 100], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [0, 0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40, 40], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: Assignment_3 ---
+Skipping node Assignment_3 due to error: Node with id Assignment_3 is not registered!
+
+--- Checking node: Identifier_12 ---
+Skipping node Identifier_12 due to error: Node with id Identifier_12 is not registered!
+
+--- Checking node: Literal_3 ---
+Skipping node Literal_3 due to error: Node with id Literal_3 is not registered!
 
 
 Filtered abstract interpretation output saved to SBCurated_dataset/modified_dataset/reentrancy/reentrancy_insecure_analysis.txt
 
 ========== Running analysis for Octagon Abstract Domain ==========
 Running abstract collecting semantics analysis.
-Abstract collecting semantics analysis completed in 4.3234 seconds.
+Abstract collecting semantics analysis completed in 4.1002 seconds.
 VARIABLE-REGISTRY SourceEntry_0 set()
 VARIABLE-REGISTRY SourceUnit_0 set()
 VARIABLE-REGISTRY PragmaDirective_0 set()
@@ -5304,13 +5770,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': <empty>
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -5387,13 +5853,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': <empty>
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -5470,13 +5936,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': <empty>
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -5553,13 +6019,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': <empty>
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -5636,13 +6102,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[1.0,-1.0], [1.0,-1.0], [1.0,-1.0], [1.0,-1.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': <empty>
 COLLSEM-TRV IfStatement_0
@@ -5719,13 +6185,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -5802,13 +6268,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -5885,13 +6351,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -5968,13 +6434,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -6051,13 +6517,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -6134,13 +6600,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -6217,13 +6683,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -6300,13 +6766,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -6383,13 +6849,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -6466,13 +6932,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -6549,13 +7015,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -6632,13 +7098,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -6715,13 +7181,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -6798,13 +7264,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -6881,13 +7347,13 @@ COLLSEM-TRV FunctionEntry_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
 COLLSEM-TRV VariableDeclarationStatement_0
 ABSTATE [[100.0,100.0], [40.0,40.0], [0.0,0.0], [0.0,0.0]]
-Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x72c05c271850>
+Processing variable 'amountToWithdraw' with initial value <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7298ce5e9a30>
 [GET_ID] Retrieved ID 1 for variable 'userBalances'
 [GET_ID] Retrieved ID 2 for variable 'amountToWithdraw'
 New state created for variable 'amountToWithdraw': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV VariableDeclarationStatement_1
 ABSTATE [[100.0,100.0], [40.0,40.0], [40.0,40.0], [-0.0,0.0]]
-Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x72c05c271970>
+Processing variable 'success' with initial value <control_flow_graph.node_processor.nodes.Literal.Literal object at 0x7298ce5e9b50>
 [GET_ID] Retrieved ID 3 for variable 'success'
 New state created for variable 'success': {  1x0 -100.0 >= 0;  -1x0 +100.0 >= 0;  -1x0 +1x1 +60.0 >= 0;  1x0 +1x1 -140.0 >= 0;  1x1 -40.0 >= 0;  -1x0 -1x1 +140.0 >= 0;  1x0 -1x1 -60.0 >= 0;  -1x1 +40.0 >= 0;  -1x0 +1x2 +60.0 >= 0;  1x0 +1x2 -140.0 >= 0;  -1x1 +1x2 >= 0;  1x1 +1x2 -80.0 >= 0;  1x2 -40.0 >= 0;  -1x0 -1x2 +140.0 >= 0;  1x0 -1x2 -60.0 >= 0;  -1x1 -1x2 +80.0 >= 0;  1x1 -1x2 >= 0;  -1x2 +40.0 >= 0;  -1x0 +1x3 +100.0 >= 0;  1x0 +1x3 -100.0 >= 0;  -1x1 +1x3 +40.0 >= 0;  1x1 +1x3 -40.0 >= 0;  -1x2 +1x3 +40.0 >= 0;  1x2 +1x3 -40.0 >= 0;  1x3 >= 0;  -1x0 -1x3 +100.0 >= 0;  1x0 -1x3 -100.0 >= 0;  -1x1 -1x3 +40.0 >= 0;  1x1 -1x3 -40.0 >= 0;  -1x2 -1x3 +40.0 >= 0;  1x2 -1x3 -40.0 >= 0;  -1x3 >= 0 }
 COLLSEM-TRV IfStatement_0
@@ -7701,6 +8167,239 @@ ENTRY 20 ExpressionStatement_4 [ 1x0 -20.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +
 EXIT 20 ExpressionStatement_4 [ 1x0 -20.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +100.0 >= 0,  1x0 +1x1 -20.0 >= 0,  1x1 >= 0,  -1x0 -1x1 +100.0 >= 0,  1x0 -1x1 -20.0 >= 0,  -1x1 >= 0,  -1x0 +1x2 +60.0 >= 0,  1x0 +1x2 -60.0 >= 0,  -1x1 +1x2 -40.0 >= 0,  1x1 +1x2 -40.0 >= 0,  1x2 -40.0 >= 0,  -1x0 -1x2 +140.0 >= 0,  1x0 -1x2 +20.0 >= 0,  -1x1 -1x2 +40.0 >= 0,  1x1 -1x2 +40.0 >= 0,  -1x2 +40.0 >= 0,  -1x0 +1x3 +100.0 >= 0,  1x0 +1x3 -20.0 >= 0,  -1x1 +1x3 >= 0,  1x1 +1x3 >= 0,  -1x2 +1x3 +40.0 >= 0,  1x2 +1x3 -40.0 >= 0,  1x3 >= 0,  -1x0 -1x3 +100.0 >= 0,  1x0 -1x3 -19.0 >= 0,  -1x1 -1x3 +1.0 >= 0,  1x1 -1x3 +1.0 >= 0,  -1x2 -1x3 +41.0 >= 0,  1x2 -1x3 -39.0 >= 0,  -1x3 +1.0 >= 0]
 ENTRY 20 FunctionExit_0 [ 1x0 -20.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +100.0 >= 0,  1x0 +1x1 -20.0 >= 0,  1x1 >= 0,  -1x0 -1x1 +100.0 >= 0,  1x0 -1x1 -20.0 >= 0,  -1x1 >= 0,  -1x0 +1x2 +60.0 >= 0,  1x0 +1x2 -60.0 >= 0,  -1x1 +1x2 -40.0 >= 0,  1x1 +1x2 -40.0 >= 0,  1x2 -40.0 >= 0,  -1x0 -1x2 +140.0 >= 0,  1x0 -1x2 +20.0 >= 0,  -1x1 -1x2 +40.0 >= 0,  1x1 -1x2 +40.0 >= 0,  -1x2 +40.0 >= 0,  -1x0 +1x3 +100.0 >= 0,  1x0 +1x3 -20.0 >= 0,  -1x1 +1x3 >= 0,  1x1 +1x3 >= 0,  -1x2 +1x3 +40.0 >= 0,  1x2 +1x3 -40.0 >= 0,  1x3 >= 0,  -1x0 -1x3 +100.0 >= 0,  1x0 -1x3 -19.0 >= 0,  -1x1 -1x3 +1.0 >= 0,  1x1 -1x3 +1.0 >= 0,  -1x2 -1x3 +41.0 >= 0,  1x2 -1x3 -39.0 >= 0,  -1x3 +1.0 >= 0]
 EXIT 20 FunctionExit_0 [ 1x0 -20.0 >= 0,  -1x0 +100.0 >= 0,  -1x0 +1x1 +100.0 >= 0,  1x0 +1x1 -20.0 >= 0,  1x1 >= 0,  -1x0 -1x1 +100.0 >= 0,  1x0 -1x1 -20.0 >= 0,  -1x1 >= 0,  -1x0 +1x2 +60.0 >= 0,  1x0 +1x2 -60.0 >= 0,  -1x1 +1x2 -40.0 >= 0,  1x1 +1x2 -40.0 >= 0,  1x2 -40.0 >= 0,  -1x0 -1x2 +140.0 >= 0,  1x0 -1x2 +20.0 >= 0,  -1x1 -1x2 +40.0 >= 0,  1x1 -1x2 +40.0 >= 0,  -1x2 +40.0 >= 0,  -1x0 +1x3 +100.0 >= 0,  1x0 +1x3 -20.0 >= 0,  -1x1 +1x3 >= 0,  1x1 +1x3 >= 0,  -1x2 +1x3 +40.0 >= 0,  1x2 +1x3 -40.0 >= 0,  1x3 >= 0,  -1x0 -1x3 +100.0 >= 0,  1x0 -1x3 -19.0 >= 0,  -1x1 -1x3 +1.0 >= 0,  1x1 -1x3 +1.0 >= 0,  -1x2 -1x3 +41.0 >= 0,  1x2 -1x3 -39.0 >= 0,  -1x3 +1.0 >= 0]
+{'BAL': 'uint256', 'userBalances': 'uint256', 'amountToWithdraw': 'uint256', 'success': 'bool'}
+{'BAL': {'id': 0, 'name': 'BAL', 'stateVariable': True, 'value': <java object 'apron.Texpr0Intern'>}, 'userBalances': {'id': 1, 'name': 'userBalances', 'stateVariable': True, 'value': <java object 'apron.Texpr0Intern'>}, 'amountToWithdraw': {'id': 2, 'name': 'amountToWithdraw', 'stateVariable': False, 'value': None}, 'success': {'id': 3, 'name': 'success', 'stateVariable': False, 'value': None}}
+
+--- Checking node: SourceEntry_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: SourceExit_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: SourceUnit_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: PragmaDirective_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: ContractDefinition_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclaration_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclaration_1 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: FunctionDefinition_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: FunctionEntry_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: FunctionExit_0 ---
+Checking variable: BAL (State)
+Interval: [20.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [-0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclarationStatement_0 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclaration_2 ---
+Skipping node VariableDeclaration_2 due to error: Node with id VariableDeclaration_2 is not registered!
+
+--- Checking node: Identifier_0 ---
+Skipping node Identifier_0 due to error: Node with id Identifier_0 is not registered!
+
+--- Checking node: VariableDeclarationStatement_1 ---
+Checking variable: BAL (State)
+Interval: [100.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: VariableDeclaration_3 ---
+Skipping node VariableDeclaration_3 due to error: Node with id VariableDeclaration_3 is not registered!
+
+--- Checking node: Literal_0 ---
+Skipping node Literal_0 due to error: Node with id Literal_0 is not registered!
+
+--- Checking node: IfStatement_0 ---
+Skipping node IfStatement_0 due to error: 'dict' object has no attribute 'toBox'
+
+--- Checking node: BinaryOperation_0 ---
+Skipping node BinaryOperation_0 due to error: Node with id BinaryOperation_0 is not registered!
+
+--- Checking node: BinaryOperation_1 ---
+Skipping node BinaryOperation_1 due to error: Node with id BinaryOperation_1 is not registered!
+
+--- Checking node: Identifier_1 ---
+Skipping node Identifier_1 due to error: Node with id Identifier_1 is not registered!
+
+--- Checking node: Identifier_2 ---
+Skipping node Identifier_2 due to error: Node with id Identifier_2 is not registered!
+
+--- Checking node: BinaryOperation_2 ---
+Skipping node BinaryOperation_2 due to error: Node with id BinaryOperation_2 is not registered!
+
+--- Checking node: Identifier_3 ---
+Skipping node Identifier_3 due to error: Node with id Identifier_3 is not registered!
+
+--- Checking node: Identifier_4 ---
+Skipping node Identifier_4 due to error: Node with id Identifier_4 is not registered!
+
+--- Checking node: IfConditionJoin_0 ---
+Checking variable: BAL (State)
+Interval: [20.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: ExpressionStatement_0 ---
+Checking variable: BAL (State)
+Interval: [20.0, 60.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: Assignment_0 ---
+Skipping node Assignment_0 due to error: Node with id Assignment_0 is not registered!
+
+--- Checking node: Identifier_5 ---
+Skipping node Identifier_5 due to error: Node with id Identifier_5 is not registered!
+
+--- Checking node: BinaryOperation_3 ---
+Skipping node BinaryOperation_3 due to error: Node with id BinaryOperation_3 is not registered!
+
+--- Checking node: Identifier_6 ---
+Skipping node Identifier_6 due to error: Node with id Identifier_6 is not registered!
+
+--- Checking node: Identifier_7 ---
+Skipping node Identifier_7 due to error: Node with id Identifier_7 is not registered!
+
+--- Checking node: ExpressionStatement_1 ---
+Checking variable: BAL (State)
+Interval: [20.0, 60.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: Assignment_1 ---
+Skipping node Assignment_1 due to error: Node with id Assignment_1 is not registered!
+
+--- Checking node: Identifier_8 ---
+Skipping node Identifier_8 due to error: Node with id Identifier_8 is not registered!
+
+--- Checking node: Literal_1 ---
+Skipping node Literal_1 due to error: Node with id Literal_1 is not registered!
+
+--- Checking node: ExpressionStatement_2 ---
+Checking variable: BAL (State)
+Interval: [20.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: Assignment_2 ---
+Skipping node Assignment_2 due to error: Node with id Assignment_2 is not registered!
+
+--- Checking node: Identifier_9 ---
+Skipping node Identifier_9 due to error: Node with id Identifier_9 is not registered!
+
+--- Checking node: Literal_2 ---
+Skipping node Literal_2 due to error: Node with id Literal_2 is not registered!
+
+--- Checking node: ExpressionStatement_3 ---
+Checking variable: BAL (State)
+Interval: [20.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: FunctionCall_0 ---
+Skipping node FunctionCall_0 due to error: Node with id FunctionCall_0 is not registered!
+
+--- Checking node: Identifier_10 ---
+Skipping node Identifier_10 due to error: Node with id Identifier_10 is not registered!
+
+--- Checking node: Identifier_11 ---
+Skipping node Identifier_11 due to error: Node with id Identifier_11 is not registered!
+
+--- Checking node: ExpressionStatement_4 ---
+Checking variable: BAL (State)
+Interval: [20.0, 100.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: userBalances (State)
+Interval: [-0.0, 0.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+Checking variable: amountToWithdraw (Local)
+Interval: [40.0, 40.0], Allowed Limits: [0, 115792089237316195423570985008687907853269984665640564039457584007913129639935]
+
+--- Checking node: Assignment_3 ---
+Skipping node Assignment_3 due to error: Node with id Assignment_3 is not registered!
+
+--- Checking node: Identifier_12 ---
+Skipping node Identifier_12 due to error: Node with id Identifier_12 is not registered!
+
+--- Checking node: Literal_3 ---
+Skipping node Literal_3 due to error: Node with id Literal_3 is not registered!
 
 
 Filtered abstract interpretation output saved to SBCurated_dataset/modified_dataset/reentrancy/reentrancy_insecure_analysis.txt
