@@ -1,8 +1,5 @@
 '''
 Solc Version Selector and Installer
-
-Created on May 22, 2022 by Akshay Fajge
-Refactored and Documented on May 7, 2024 by Arnab Mukherjee
 '''
 import solcx
 import operator

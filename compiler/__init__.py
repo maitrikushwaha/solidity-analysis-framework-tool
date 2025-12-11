@@ -1,6 +1,4 @@
-'''
-SADA
-'''
+
 import solcx
 from typing import Union
 from compiler.solc_selector import SolcSelector
