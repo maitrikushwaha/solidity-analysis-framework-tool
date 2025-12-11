@@ -101,9 +101,9 @@ def save_filtered_analysis_output(raw_output, solidity_filepath):
 def run_static_analysis(source_code, solidity_filepath, annotate_dependencies=False):
 
     logging.info("Starting Solidity compilation and static analysis.")
-    # transformed_source = transform_mappings(source_code)
+    transformed_source = transform_mappings(source_code)
     # save_transformed_source(transformed_source)
-    compiler = SolCompiler(source_code)
+    compiler = SolCompiler(transformed_source)
     output = compiler.compile()
     contracts = output.get_contracts_list()
 
@@ -122,19 +122,19 @@ def run_static_analysis(source_code, solidity_filepath, annotate_dependencies=Fa
     with open('./gen/ast.json', 'w', encoding='utf8') as f:
         json.dump(ast, f, indent=4)
 
-    cfg = ControlFlowGraph(source_code, ast)
+    cfg = ControlFlowGraph(transformed_source, ast)
     cfg.build_cfg()
     cfg.generate_dot()
     cfg.generate_dot_bottom_up()
     
     # add connection for re-entrancy function call only 
-    # function_call = cfg.cfg_metadata.get_node(
-    # 'ExpressionStatement_1')
-    # # reset next nodes for this statement
-    # function_call.next_nodes = dict()
-    # function_call.add_next_node('IfStatement_0')
-    # cfg.cfg_metadata.get_node('IfStatement_0').add_prev_node(
-    # 'ExpressionStatement_1')
+    function_call = cfg.cfg_metadata.get_node(
+    'ExpressionStatement_1')
+    # reset next nodes for this statement
+    function_call.next_nodes = dict()
+    function_call.add_next_node('IfStatement_0')
+    cfg.cfg_metadata.get_node('IfStatement_0').add_prev_node(
+    'ExpressionStatement_1')
 
     # function_call = cfg.cfg_metadata.get_node(
     # 'ExpressionStatement_3')
