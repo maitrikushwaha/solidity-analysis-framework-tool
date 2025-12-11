@@ -10,7 +10,7 @@ def transform_mappings(solidity_source):
     # Function to inject `BAL` variable into contract declarations
     def inject_bal_variable(match):
         contract_declaration = match.group(1)
-        injected_line = "   uint8 public BAL = 100;\n"
+        injected_line = "   uint256 public BAL = 100;\n"
         return f"{contract_declaration}\n{injected_line}"
     
     # Regular expression to match any mapping declaration
