@@ -40,7 +40,13 @@ conda activate safpy
 
 
 ## Usage
-To run the analysis, execute the main script:
+First, ensure your Conda environment is active:
+```bash
+conda activate safpy
+```
+
+Then, navigate to the source directory and  execute the main analysis script:
 
 ```bash
+cd sourcecode
 python main.py path/to/your_contract.sol
