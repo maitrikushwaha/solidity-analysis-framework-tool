@@ -21,6 +21,7 @@ SBCurated_dataset/
 gen/
 *.pyc
 filtered_analysis_output.txt
+dependency_analysis_output.txt
 
 # --- Logs & Java Errors (CRITICAL FOR ANONYMITY) ---
 *.log
