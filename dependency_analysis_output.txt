@@ -7,66 +7,33 @@ SourceExit_0              None                                               Non
 SourceUnit_0              None                                               None                                
 PragmaDirective_0         None                                               None                                
 ContractDefinition_0      None                                               None                                
-VariableDeclaration_0     None                                               owner                               
-VariableDeclaration_1     None                                               claimed                             
-VariableDeclaration_2     None                                               reward                              
-VariableDeclaration_3     None                                               msgvalue                            
-DEBUG: FunctionDefinition - names: setReward, visibility: public, modifiers: []
+VariableDeclaration_0     None                                               BAL                                 
+VariableDeclaration_1     None                                               balanceOf                           
+DEBUG: FunctionDefinition - names: transfer, visibility: public, modifiers: []
 FunctionDefinition_0      None                                               None                                
 FunctionEntry_0           None                                               None                                
 FunctionExit_0            None                                               None                                
 ExpressionStatement_0     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'claimed'
-FunctionCall_0            claimed (from VariableDeclaration_1)               None                                
-UnaryOperation_0          None                                               None                                
+STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'balanceOf'
+FunctionCall_0            balanceOf (from VariableDeclaration_1), _value     None                                
+BinaryOperation_0         None                                               None                                
 Identifier_0              None                                               None                                
 Identifier_1              None                                               None                                
-ExpressionStatement_1     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_1' is data dependent on Node 'VariableDeclaration_0' for variable 'owner'
-FunctionCall_1            owner (from VariableDeclaration_0)                 None                                
-BinaryOperation_0         None                                               None                                
-MemberAccess_0            None                                               None                                
 Identifier_2              None                                               None                                
-Identifier_3              None                                               None                                
-Identifier_4              None                                               None                                
-ExpressionStatement_2     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_2' is data dependent on Node 'VariableDeclaration_2' for variable 'reward'
-FunctionCall_2            reward (from VariableDeclaration_2)                None                                
-Identifier_5              None                                               None                                
-MemberAccess_1            None                                               None                                
-Identifier_6              None                                               None                                
-DATA DEPENDENCY: reward is data dependent on msgvalue
-ExpressionStatement_3     msgvalue (from VariableDeclaration_3)              reward                              
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_1     balanceOf (from VariableDeclaration_1), _value     balanceOf                           
 Assignment_0              None                                               None                                
+Identifier_3              None                                               None                                
+BinaryOperation_1         None                                               None                                
+Identifier_4              None                                               None                                
+Identifier_5              None                                               None                                
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_2     balanceOf (from ExpressionStatement_1), _value     balanceOf                           
+Assignment_1              None                                               None                                
+Identifier_6              None                                               None                                
+BinaryOperation_2         None                                               None                                
 Identifier_7              None                                               None                                
 Identifier_8              None                                               None                                
-DEBUG: FunctionDefinition - names: claimReward, visibility: public, modifiers: []
-FunctionDefinition_1      None                                               None                                
-FunctionEntry_1           None                                               None                                
-FunctionExit_1            None                                               None                                
-ExpressionStatement_4     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_3' is data dependent on Node 'VariableDeclaration_1' for variable 'claimed'
-FunctionCall_3            claimed (from VariableDeclaration_1)               None                                
-UnaryOperation_1          None                                               None                                
-Identifier_9              None                                               None                                
-Identifier_10             None                                               None                                
-ExpressionStatement_5     None                                               None                                
-FunctionCall_4            submission                                         None                                
-BinaryOperation_1         None                                               None                                
-Identifier_11             None                                               None                                
-Literal_0                 None                                               None                                
-Identifier_12             None                                               None                                
-ExpressionStatement_6     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_5' is data dependent on Node 'ExpressionStatement_3' for variable 'reward'
-FunctionCall_5            reward (from ExpressionStatement_3)                None                                
-Identifier_13             None                                               None                                
-MemberAccess_2            None                                               None                                
-MemberAccess_3            None                                               None                                
-Identifier_14             None                                               None                                
-ExpressionStatement_7     None                                               claimed                             
-Assignment_1              None                                               None                                
-Identifier_15             None                                               None                                
-Literal_1                 None                                               None                                
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Iteration 2
@@ -77,66 +44,33 @@ SourceExit_0              None                                               Non
 SourceUnit_0              None                                               None                                
 PragmaDirective_0         None                                               None                                
 ContractDefinition_0      None                                               None                                
-VariableDeclaration_0     None                                               owner                               
-VariableDeclaration_1     None                                               claimed                             
-VariableDeclaration_2     None                                               reward                              
-VariableDeclaration_3     None                                               msgvalue                            
-DEBUG: FunctionDefinition - names: setReward, visibility: public, modifiers: []
+VariableDeclaration_0     None                                               BAL                                 
+VariableDeclaration_1     None                                               balanceOf                           
+DEBUG: FunctionDefinition - names: transfer, visibility: public, modifiers: []
 FunctionDefinition_0      None                                               None                                
 FunctionEntry_0           None                                               None                                
 FunctionExit_0            None                                               None                                
 ExpressionStatement_0     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'claimed'
-FunctionCall_0            claimed (from VariableDeclaration_1)               None                                
-UnaryOperation_0          None                                               None                                
+STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'balanceOf'
+FunctionCall_0            balanceOf (from VariableDeclaration_1), _value     None                                
+BinaryOperation_0         None                                               None                                
 Identifier_0              None                                               None                                
 Identifier_1              None                                               None                                
-ExpressionStatement_1     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_1' is data dependent on Node 'VariableDeclaration_0' for variable 'owner'
-FunctionCall_1            owner (from VariableDeclaration_0)                 None                                
-BinaryOperation_0         None                                               None                                
-MemberAccess_0            None                                               None                                
 Identifier_2              None                                               None                                
-Identifier_3              None                                               None                                
-Identifier_4              None                                               None                                
-ExpressionStatement_2     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_2' is data dependent on Node 'VariableDeclaration_2' for variable 'reward'
-FunctionCall_2            reward (from VariableDeclaration_2)                None                                
-Identifier_5              None                                               None                                
-MemberAccess_1            None                                               None                                
-Identifier_6              None                                               None                                
-DATA DEPENDENCY: reward is data dependent on msgvalue
-ExpressionStatement_3     msgvalue (from VariableDeclaration_3)              reward                              
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_1     balanceOf (from VariableDeclaration_1), _value     balanceOf                           
 Assignment_0              None                                               None                                
+Identifier_3              None                                               None                                
+BinaryOperation_1         None                                               None                                
+Identifier_4              None                                               None                                
+Identifier_5              None                                               None                                
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_2     balanceOf (from ExpressionStatement_1), _value     balanceOf                           
+Assignment_1              None                                               None                                
+Identifier_6              None                                               None                                
+BinaryOperation_2         None                                               None                                
 Identifier_7              None                                               None                                
 Identifier_8              None                                               None                                
-DEBUG: FunctionDefinition - names: claimReward, visibility: public, modifiers: []
-FunctionDefinition_1      None                                               None                                
-FunctionEntry_1           None                                               None                                
-FunctionExit_1            None                                               None                                
-ExpressionStatement_4     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_3' is data dependent on Node 'VariableDeclaration_1' for variable 'claimed'
-FunctionCall_3            claimed (from VariableDeclaration_1)               None                                
-UnaryOperation_1          None                                               None                                
-Identifier_9              None                                               None                                
-Identifier_10             None                                               None                                
-ExpressionStatement_5     None                                               None                                
-FunctionCall_4            submission                                         None                                
-BinaryOperation_1         None                                               None                                
-Identifier_11             None                                               None                                
-Literal_0                 None                                               None                                
-Identifier_12             None                                               None                                
-ExpressionStatement_6     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_5' is data dependent on Node 'ExpressionStatement_3' for variable 'reward'
-FunctionCall_5            reward (from ExpressionStatement_3)                None                                
-Identifier_13             None                                               None                                
-MemberAccess_2            None                                               None                                
-MemberAccess_3            None                                               None                                
-Identifier_14             None                                               None                                
-ExpressionStatement_7     None                                               claimed                             
-Assignment_1              None                                               None                                
-Identifier_15             None                                               None                                
-Literal_1                 None                                               None                                
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Iteration 3
@@ -147,66 +81,33 @@ SourceExit_0              None                                               Non
 SourceUnit_0              None                                               None                                
 PragmaDirective_0         None                                               None                                
 ContractDefinition_0      None                                               None                                
-VariableDeclaration_0     None                                               owner                               
-VariableDeclaration_1     None                                               claimed                             
-VariableDeclaration_2     None                                               reward                              
-VariableDeclaration_3     None                                               msgvalue                            
-DEBUG: FunctionDefinition - names: setReward, visibility: public, modifiers: []
+VariableDeclaration_0     None                                               BAL                                 
+VariableDeclaration_1     None                                               balanceOf                           
+DEBUG: FunctionDefinition - names: transfer, visibility: public, modifiers: []
 FunctionDefinition_0      None                                               None                                
 FunctionEntry_0           None                                               None                                
 FunctionExit_0            None                                               None                                
 ExpressionStatement_0     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'claimed'
-FunctionCall_0            claimed (from VariableDeclaration_1)               None                                
-UnaryOperation_0          None                                               None                                
+STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'balanceOf'
+FunctionCall_0            balanceOf (from VariableDeclaration_1), _value     None                                
+BinaryOperation_0         None                                               None                                
 Identifier_0              None                                               None                                
 Identifier_1              None                                               None                                
-ExpressionStatement_1     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_1' is data dependent on Node 'VariableDeclaration_0' for variable 'owner'
-FunctionCall_1            owner (from VariableDeclaration_0)                 None                                
-BinaryOperation_0         None                                               None                                
-MemberAccess_0            None                                               None                                
 Identifier_2              None                                               None                                
-Identifier_3              None                                               None                                
-Identifier_4              None                                               None                                
-ExpressionStatement_2     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_2' is data dependent on Node 'VariableDeclaration_2' for variable 'reward'
-FunctionCall_2            reward (from VariableDeclaration_2)                None                                
-Identifier_5              None                                               None                                
-MemberAccess_1            None                                               None                                
-Identifier_6              None                                               None                                
-DATA DEPENDENCY: reward is data dependent on msgvalue
-ExpressionStatement_3     msgvalue (from VariableDeclaration_3)              reward                              
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_1     balanceOf (from VariableDeclaration_1), _value     balanceOf                           
 Assignment_0              None                                               None                                
+Identifier_3              None                                               None                                
+BinaryOperation_1         None                                               None                                
+Identifier_4              None                                               None                                
+Identifier_5              None                                               None                                
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_2     balanceOf (from ExpressionStatement_1), _value     balanceOf                           
+Assignment_1              None                                               None                                
+Identifier_6              None                                               None                                
+BinaryOperation_2         None                                               None                                
 Identifier_7              None                                               None                                
 Identifier_8              None                                               None                                
-DEBUG: FunctionDefinition - names: claimReward, visibility: public, modifiers: []
-FunctionDefinition_1      None                                               None                                
-FunctionEntry_1           None                                               None                                
-FunctionExit_1            None                                               None                                
-ExpressionStatement_4     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_3' is data dependent on Node 'VariableDeclaration_1' for variable 'claimed'
-FunctionCall_3            claimed (from VariableDeclaration_1)               None                                
-UnaryOperation_1          None                                               None                                
-Identifier_9              None                                               None                                
-Identifier_10             None                                               None                                
-ExpressionStatement_5     None                                               None                                
-FunctionCall_4            submission                                         None                                
-BinaryOperation_1         None                                               None                                
-Identifier_11             None                                               None                                
-Literal_0                 None                                               None                                
-Identifier_12             None                                               None                                
-ExpressionStatement_6     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_5' is data dependent on Node 'ExpressionStatement_3' for variable 'reward'
-FunctionCall_5            reward (from ExpressionStatement_3)                None                                
-Identifier_13             None                                               None                                
-MemberAccess_2            None                                               None                                
-MemberAccess_3            None                                               None                                
-Identifier_14             None                                               None                                
-ExpressionStatement_7     None                                               claimed                             
-Assignment_1              None                                               None                                
-Identifier_15             None                                               None                                
-Literal_1                 None                                               None                                
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Iteration 4
@@ -217,77 +118,41 @@ SourceExit_0              None                                               Non
 SourceUnit_0              None                                               None                                
 PragmaDirective_0         None                                               None                                
 ContractDefinition_0      None                                               None                                
-VariableDeclaration_0     None                                               owner                               
-VariableDeclaration_1     None                                               claimed                             
-VariableDeclaration_2     None                                               reward                              
-VariableDeclaration_3     None                                               msgvalue                            
-DEBUG: FunctionDefinition - names: setReward, visibility: public, modifiers: []
+VariableDeclaration_0     None                                               BAL                                 
+VariableDeclaration_1     None                                               balanceOf                           
+DEBUG: FunctionDefinition - names: transfer, visibility: public, modifiers: []
 FunctionDefinition_0      None                                               None                                
 FunctionEntry_0           None                                               None                                
 FunctionExit_0            None                                               None                                
 ExpressionStatement_0     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'claimed'
-FunctionCall_0            claimed (from VariableDeclaration_1)               None                                
-UnaryOperation_0          None                                               None                                
+STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'balanceOf'
+FunctionCall_0            balanceOf (from VariableDeclaration_1), _value     None                                
+BinaryOperation_0         None                                               None                                
 Identifier_0              None                                               None                                
 Identifier_1              None                                               None                                
-ExpressionStatement_1     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_1' is data dependent on Node 'VariableDeclaration_0' for variable 'owner'
-FunctionCall_1            owner (from VariableDeclaration_0)                 None                                
-BinaryOperation_0         None                                               None                                
-MemberAccess_0            None                                               None                                
 Identifier_2              None                                               None                                
-Identifier_3              None                                               None                                
-Identifier_4              None                                               None                                
-ExpressionStatement_2     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_2' is data dependent on Node 'VariableDeclaration_2' for variable 'reward'
-FunctionCall_2            reward (from VariableDeclaration_2)                None                                
-Identifier_5              None                                               None                                
-MemberAccess_1            None                                               None                                
-Identifier_6              None                                               None                                
-DATA DEPENDENCY: reward is data dependent on msgvalue
-ExpressionStatement_3     msgvalue (from VariableDeclaration_3)              reward                              
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_1     balanceOf (from VariableDeclaration_1), _value     balanceOf                           
 Assignment_0              None                                               None                                
+Identifier_3              None                                               None                                
+BinaryOperation_1         None                                               None                                
+Identifier_4              None                                               None                                
+Identifier_5              None                                               None                                
+DATA DEPENDENCY: balanceOf is data dependent on balanceOf
+ExpressionStatement_2     balanceOf (from ExpressionStatement_1), _value     balanceOf                           
+Assignment_1              None                                               None                                
+Identifier_6              None                                               None                                
+BinaryOperation_2         None                                               None                                
 Identifier_7              None                                               None                                
 Identifier_8              None                                               None                                
-DEBUG: FunctionDefinition - names: claimReward, visibility: public, modifiers: []
-FunctionDefinition_1      None                                               None                                
-FunctionEntry_1           None                                               None                                
-FunctionExit_1            None                                               None                                
-ExpressionStatement_4     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_3' is data dependent on Node 'VariableDeclaration_1' for variable 'claimed'
-FunctionCall_3            claimed (from VariableDeclaration_1)               None                                
-UnaryOperation_1          None                                               None                                
-Identifier_9              None                                               None                                
-Identifier_10             None                                               None                                
-ExpressionStatement_5     None                                               None                                
-FunctionCall_4            submission                                         None                                
-BinaryOperation_1         None                                               None                                
-Identifier_11             None                                               None                                
-Literal_0                 None                                               None                                
-Identifier_12             None                                               None                                
-ExpressionStatement_6     None                                               None                                
-STATEMENT DEPENDENCY: Node 'FunctionCall_5' is data dependent on Node 'ExpressionStatement_3' for variable 'reward'
-FunctionCall_5            reward (from ExpressionStatement_3)                None                                
-Identifier_13             None                                               None                                
-MemberAccess_2            None                                               None                                
-MemberAccess_3            None                                               None                                
-Identifier_14             None                                               None                                
-ExpressionStatement_7     None                                               claimed                             
-Assignment_1              None                                               None                                
-Identifier_15             None                                               None                                
-Literal_1                 None                                               None                                
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Fixed point reached. Reaching definitions have converged.
 
 Statement-Level Dependencies:
-STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'claimed'
-STATEMENT DEPENDENCY: Node 'FunctionCall_1' is data dependent on Node 'VariableDeclaration_0' for variable 'owner'
-STATEMENT DEPENDENCY: Node 'FunctionCall_2' is data dependent on Node 'VariableDeclaration_2' for variable 'reward'
-STATEMENT DEPENDENCY: Node 'ExpressionStatement_3' is data dependent on Node 'VariableDeclaration_3' for variable 'msgvalue'
-STATEMENT DEPENDENCY: Node 'FunctionCall_3' is data dependent on Node 'VariableDeclaration_1' for variable 'claimed'
-STATEMENT DEPENDENCY: Node 'FunctionCall_5' is data dependent on Node 'ExpressionStatement_3' for variable 'reward'
+STATEMENT DEPENDENCY: Node 'FunctionCall_0' is data dependent on Node 'VariableDeclaration_1' for variable 'balanceOf'
+STATEMENT DEPENDENCY: Node 'ExpressionStatement_1' is data dependent on Node 'ExpressionStatement_1' for variable 'balanceOf'
+STATEMENT DEPENDENCY: Node 'ExpressionStatement_2' is data dependent on Node 'ExpressionStatement_2' for variable 'balanceOf'
 
 Control Structure Dependencies Only:
 
@@ -296,89 +161,81 @@ Timestamp Influence Zones:
 Dataflow Analysis (Reaching Definitions):
 
 Node 'FunctionCall_0' uses:
-  - Variable 'claimed' reached from Node 'VariableDeclaration_1'
+  - Variable 'balanceOf' reached from Node 'VariableDeclaration_1'
 
-Node 'FunctionCall_1' uses:
-  - Variable 'owner' reached from Node 'VariableDeclaration_0'
-
-Node 'FunctionCall_2' uses:
-  - Variable 'reward' reached from Node 'VariableDeclaration_2'
-
-Node 'FunctionCall_3' uses:
-  - Variable 'claimed' reached from Node 'VariableDeclaration_1'
-
-Node 'ExpressionStatement_3' uses:
-  - Variable 'msgvalue' reached from Node 'VariableDeclaration_3'
-
-Node 'FunctionCall_5' uses:
-  - Variable 'reward' reached from Node 'ExpressionStatement_3'
+Node 'ExpressionStatement_1' uses:
+  - Variable 'balanceOf' reached from Node 'VariableDeclaration_1'
 
 Dependency Chains (computed inline):
-claimed [state] (defined in VariableDeclaration_1)
-  → used in FunctionCall_0 (FunctionDefinition_0: setReward) [redef=False]
-  → used in FunctionCall_3 (FunctionDefinition_1: claimReward) [redef=False]
-  → defined in ExpressionStatement_7 (FunctionDefinition_1: claimReward)
-msgvalue [state] (defined in VariableDeclaration_3)
-  → used in ExpressionStatement_3 (FunctionDefinition_0: setReward) [redef=False]
-owner [state] (defined in VariableDeclaration_0)
-  → used in FunctionCall_1 (FunctionDefinition_0: setReward) [redef=False]
-reward [state] (defined in VariableDeclaration_2)
-  → used in FunctionCall_2 (FunctionDefinition_0: setReward) [redef=False]
-  → defined in ExpressionStatement_3 (FunctionDefinition_0: setReward)
-    → used in FunctionCall_5 (FunctionDefinition_1: claimReward) [redef=False]
+balanceOf [state] (defined in VariableDeclaration_1)
+  → used in FunctionCall_0 (FunctionDefinition_0: transfer) [redef=False]
+  → defined in ExpressionStatement_1 (FunctionDefinition_0: transfer)
+    → defined in ExpressionStatement_2 (FunctionDefinition_0: transfer)
 
 [ TOD Summary - Compact CLI Format]
 [DEBUG] Starting NEW intra-function TOD detection loop
-[DEBUG] Analyzing state variable 'owner' for intra-function TOD
-[DEBUG] Analyzing state variable 'reward' for intra-function TOD
-[DEBUG-TOD-CHECK] use_node=FunctionCall_2, def_node=ExpressionStatement_3, func=FunctionDefinition_0: setReward
-[DEBUG is_control_or_transfer_sensitive] Checking node: FunctionCall_2
-[DEBUG] Expression: FunctionCall, content: <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84bd220>
-[DEBUG DUMP] Node=FunctionCall | content=<control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84bd220>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84bd220>>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84bd220>>
-[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84bd220>>
-[DEBUG DUMP] Node=method | content=<bound method FunctionCall.get_leaf_nodes of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84bd220>>
-[DEBUG DUMP] Node=MemberAccess | content=<control_flow_graph.node_processor.nodes.MemberAccess.MemberAccess object at 0x75eba84bdd30>
-[DEBUG MEMBER] memberName=transfer
-[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.MemberAccess.MemberAccess object at 0x75eba84bdd30>>
-[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.MemberAccess.MemberAccess object at 0x75eba84bdd30>>
-[DEBUG DUMP] Node=method | content=<bound method MemberAccess.get_leaf_nodes of <control_flow_graph.node_processor.nodes.MemberAccess.MemberAccess object at 0x75eba84bdd30>>
-[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84bde20>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84bde20>>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84bde20>>
-[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84bde20>>
-[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84bdd60>
-[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84bd220>>
-[DEBUG DUMP] Node=method | content=<bound method Node.add_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84bd220>>
-[DEBUG] Analyzing state variable 'msgvalue' for intra-function TOD
-[DEBUG] Analyzing state variable 'claimed' for intra-function TOD
-[DEBUG-TOD-CHECK] use_node=FunctionCall_3, def_node=ExpressionStatement_7, func=FunctionDefinition_1: claimReward
-[DEBUG is_control_or_transfer_sensitive] Checking node: FunctionCall_3
-[DEBUG] Expression: FunctionCall, content: <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84f0490>
-[DEBUG DUMP] Node=FunctionCall | content=<control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84f0490>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84f0490>>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84f0490>>
-[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84f0490>>
-[DEBUG DUMP] Node=method | content=<bound method FunctionCall.get_leaf_nodes of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84f0490>>
-[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84f0550>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84f0550>>
-[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84f0550>>
-[DEBUG DUMP] Node=method | content=<bound method Identifier.get_leaf_nodes of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84f0550>>
-[DEBUG DUMP] Node=UnaryOperation | content=<control_flow_graph.node_processor.nodes.UnaryOperation.UnaryOperation object at 0x75eba84f0580>
-[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84f0610>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84f0610>>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84f0610>>
-[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84f0610>>
-[DEBUG DUMP] Node=method | content=<bound method Identifier.get_leaf_nodes of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84f0610>>
-[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84f0610>>
-[DEBUG DUMP] Node=method | content=<bound method Node.add_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x75eba84f0610>>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.UnaryOperation.UnaryOperation object at 0x75eba84f0580>>
-[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.UnaryOperation.UnaryOperation object at 0x75eba84f0580>>
-[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84f0490>>
-[DEBUG DUMP] Node=method | content=<bound method Node.add_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x75eba84f0490>>
-[DEBUG TOD PATH] var=reward, def_node=ExpressionStatement_3 (FunctionDefinition_0: setReward), use_node=FunctionCall_5 (FunctionDefinition_1: claimReward)
+[DEBUG] Analyzing state variable 'balanceOf' for intra-function TOD
+[DEBUG-TOD-CHECK] use_node=FunctionCall_0, def_node=ExpressionStatement_1, func=FunctionDefinition_0: transfer
+[DEBUG is_control_or_transfer_sensitive] Checking node: FunctionCall_0
+[DEBUG] Expression: FunctionCall, content: <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>
+[DEBUG DUMP] Node=FunctionCall | content=<control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>>
+[DEBUG DUMP] Node=method | content=<bound method FunctionCall.get_leaf_nodes of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd7f0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd7f0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd7f0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd7f0>>
+[DEBUG DUMP] Node=BinaryOperation | content=<control_flow_graph.node_processor.nodes.BinaryOperation.BinaryOperation object at 0x7d98346cd820>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.BinaryOperation.BinaryOperation object at 0x7d98346cd820>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8e0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8e0>>
+[DEBUG DUMP] Node=method | content=<bound method Identifier.get_leaf_nodes of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8e0>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8b0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8b0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>>
+[DEBUG-TOD-CHECK] use_node=FunctionCall_0, def_node=ExpressionStatement_2, func=FunctionDefinition_0: transfer
+[DEBUG is_control_or_transfer_sensitive] Checking node: FunctionCall_0
+[DEBUG] Expression: FunctionCall, content: <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>
+[DEBUG DUMP] Node=FunctionCall | content=<control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>>
+[DEBUG DUMP] Node=method | content=<bound method FunctionCall.get_leaf_nodes of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd7f0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd7f0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd7f0>>
+[DEBUG DUMP] Node=method | content=<bound method Identifier.get_leaf_nodes of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd7f0>>
+[DEBUG DUMP] Node=BinaryOperation | content=<control_flow_graph.node_processor.nodes.BinaryOperation.BinaryOperation object at 0x7d98346cd820>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.BinaryOperation.BinaryOperation object at 0x7d98346cd820>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8e0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_entry_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.get_whois_next_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8e0>>
+[DEBUG DUMP] Node=method | content=<bound method Identifier.get_leaf_nodes of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8e0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8e0>>
+[DEBUG DUMP] Node=Identifier | content=<control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8b0>
+[DEBUG DUMP] Node=method | content=<bound method Node.set_exit_node of <control_flow_graph.node_processor.nodes.Identifier.Identifier object at 0x7d98346cd8b0>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_prev_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>>
+[DEBUG DUMP] Node=method | content=<bound method Node.add_next_node of <control_flow_graph.node_processor.nodes.FunctionCall.FunctionCall object at 0x7d98346cd730>>
+[DEBUG-TOD-CHECK] use_node=ExpressionStatement_1, def_node=ExpressionStatement_1, func=FunctionDefinition_0: transfer
+[DEBUG is_control_or_transfer_sensitive] Checking node: ExpressionStatement_1
+[DEBUG] Expression: Assignment, content: <control_flow_graph.node_processor.nodes.Assignment.Assignment object at 0x7d98346cd850>
+[DEBUG-TOD-CHECK] use_node=ExpressionStatement_1, def_node=ExpressionStatement_2, func=FunctionDefinition_0: transfer
+[DEBUG is_control_or_transfer_sensitive] Checking node: ExpressionStatement_1
+[DEBUG] Expression: Assignment, content: <control_flow_graph.node_processor.nodes.Assignment.Assignment object at 0x7d98346cd850>
+[DEBUG-TOD-CHECK] use_node=ExpressionStatement_2, def_node=ExpressionStatement_1, func=FunctionDefinition_0: transfer
+[DEBUG is_control_or_transfer_sensitive] Checking node: ExpressionStatement_2
+[DEBUG] Expression: Assignment, content: <control_flow_graph.node_processor.nodes.Assignment.Assignment object at 0x7d98346cdb80>
+[DEBUG-TOD-CHECK] use_node=ExpressionStatement_2, def_node=ExpressionStatement_2, func=FunctionDefinition_0: transfer
+[DEBUG is_control_or_transfer_sensitive] Checking node: ExpressionStatement_2
+[DEBUG] Expression: Assignment, content: <control_flow_graph.node_processor.nodes.Assignment.Assignment object at 0x7d98346cdb80>
+[DEBUG] Analyzing state variable 'BAL' for intra-function TOD
 --------------------------------------
-  TOD Detected
+ No transaction-ordering dependencies detected.
 --------------------------------------
- - reward: defined in ExpressionStatement_3 (FunctionDefinition_0: setReward), used in FunctionCall_5 (FunctionDefinition_1: claimReward)
