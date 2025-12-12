@@ -37,3 +37,10 @@ To reproduce our environment:
 conda env create -f safpy-env.yml
 conda activate safpy
 
+
+## Usage
+To run the analysis, navigate to the source directory and execute the main script:
+
+```bash
+cd sourcecode
+python main.py ../path_to_your_contract.sol
