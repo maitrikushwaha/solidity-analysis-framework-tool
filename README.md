@@ -3,7 +3,7 @@
 ## Overview
 This tool is a static analysis framework for Solidity smart contracts. It follows a modular, layered architecture that separates Solidity parsing, control-flow construction, dependency analysis, and abstract semantics evaluation.
 
-Functionally, it serves as a semantics-aware smart contract vulnerability detection (SCVD) framework by extending the **Abstract Interpretation** theory. This is a unifying framework for computing safe approximations of dynamic behavioral properties of Solidity smart contracts at different levels of abstraction. The tool achieves this by substituting the concrete domains of computations and their basic concrete semantic operations with appropriate abstract domains and corresponding abstract semantics operations. This provides a systematic approach offering tuning at different levels of abstractions to achieve a trade-off between precision and computation cost. Consequently, the framework demonstrates sound vulnerability detection in smart contracts prior to deployment.
+Functionally, it serves as a semantics-aware smart contract vulnerability detection (SCVD) framework by extending the **Abstract Interpretation** theory. This is a unifying framework for computing safe approximations of dynamic behavioral properties of Solidity smart contracts at different levels of abstraction. 
 
 The tool detects various vulnerabilities, including:
 * Reentrancy
@@ -105,5 +105,5 @@ conda activate safpy
 Then, navigate to the source directory and  execute the main analysis script:
 
 ```bash
-cd sourcecode
+cd src
 python main.py path/to/your_contract.sol
