@@ -1,7 +1,9 @@
-# Solidity Analysis Framework
+# Abstract Interpretation based Solidity Analysis Framework
 
 ## Overview
 This tool is a static analysis framework for Solidity smart contracts. It follows a modular, layered architecture that separates Solidity parsing, control-flow construction, dependency analysis, and abstract semantics evaluation.
+
+Functionally, it serves as a semantics-aware smart contract vulnerability detection (SCVD) framework by extending the **Abstract Interpretation** theory. This is a unifying framework for computing safe approximations of dynamic behavioral properties of Solidity smart contracts at different levels of abstraction. The tool achieves this by substituting the concrete domains of computations and their basic concrete semantic operations with appropriate abstract domains and corresponding abstract semantics operations. This provides a systematic approach offering tuning at different levels of abstractions to achieve a trade-off between precision and computation cost. Consequently, the framework demonstrates sound vulnerability detection in smart contracts prior to deployment.
 
 The tool detects various vulnerabilities, including:
 * Reentrancy
@@ -23,6 +25,61 @@ Key transformations include:
 
 * **Semantics Preservation:** The normalization is a **sound over-approximation**; it removes syntactic irregularities while preserving all execution paths and behaviors relevant to vulnerability detection.
 
+## Repository Structure
+
+All source code of the framework is located in the `src/` directory.
+The implementation follows a modular design that mirrors the analysis pipeline described in the paper, from Solidity compilation to abstract semantics evaluation.
+
+```text
+src/
+├── compiler/
+├── control_flow_graph/
+├── static_analysis/
+├── dependency_analysis.py
+├── invariant_generator/
+├── java_wrapper/
+├── utils/
+└── main.py
+```
+
+Module Overview
+
+- **`compiler/`** 
+Handles Solidity compilation and compiler version selection using `solcx`.
+
+- **`control_flow_graph/`**  
+  Constructs an **augmented Control Flow Graph (CFG)** from the Solidity AST.
+
+  - **`node_processor/`**  
+    Contains handlers for individual Solidity AST nodes. Each file corresponds to a specific language construct (e.g., `IfStatement`, `FunctionDefinition`, `WhileStatement`).
+
+  - **`extra_nodes/`**  
+    Introduces auxiliary CFG nodes such as entry, exit, and join nodes to represent structured control flow and looping constructs.
+
+- **`static_analysis/`** 
+Contains the semantic analysis core of the framework.
+    - **`collecting_semantics/`** 
+    implements the concrete collecting semantics of Solidity constructs
+    - **`abstract_collecting_semantics/`**
+    defines the corresponding abstract semantics used for static analysis and performs fixpoint-based abstract interpretation over numerical domains, including Intervals, Octagons, and Polyhedra.
+
+- **`dependency_analysis.py`**
+Implements flow- and context-sensitive `data and control dependency analysis` over the CFG.
+This information is used to detect vulnerabilities such as timestamp dependency and Transaction Ordering Dependency (TOD).
+
+- **`invariant_generator/`**
+Includes utilities for generating and managing invariants derived from abstract states, supporting semantic vulnerability detection.
+
+- **`java_wrapper/`**
+Provides a lightweight interface between Python and APRON via JPype, enabling numerical abstract domain operations used during abstract semantics evaluation.
+
+- **`utils/`**
+Contains shared helper functions for expression handling and internal transformations.
+
+- **`main.py`**
+Entry point of the framework.
+It orchestrates compilation, CFG construction, dependency analysis, and abstract semantics evaluation for a given Solidity contract.
+
 ## Installation
 
 ### Prerequisites
@@ -39,7 +96,7 @@ conda activate safpy
 ```
 
 
-## Usage
+## Execution
 First, ensure your Conda environment is active:
 ```bash
 conda activate safpy
