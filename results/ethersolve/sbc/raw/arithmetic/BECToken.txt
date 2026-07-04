@@ -1,0 +1,21 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/arithmetic/BECToken.sol:BasicToken
+offset,opcode,detection
+
+# contract /work/datasets/sbc/arithmetic/BECToken.sol:BecToken
+offset,opcode,detection
+
+# contract /work/datasets/sbc/arithmetic/BECToken.sol:Ownable
+offset,opcode,detection
+
+# contract /work/datasets/sbc/arithmetic/BECToken.sol:Pausable
+offset,opcode,detection
+
+# contract /work/datasets/sbc/arithmetic/BECToken.sol:PausableToken
+offset,opcode,detection
+
+# contract /work/datasets/sbc/arithmetic/BECToken.sol:SafeMath
+offset,opcode,detection
+
+# contract /work/datasets/sbc/arithmetic/BECToken.sol:StandardToken
+offset,opcode,detection

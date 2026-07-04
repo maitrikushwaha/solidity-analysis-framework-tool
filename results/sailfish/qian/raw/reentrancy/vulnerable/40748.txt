@@ -1,0 +1,34 @@
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Analysis started at: 2026-06-21 07:14:15 PM
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Callgraph generation started!
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Value Range Analysis started
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Generating return summary for buyOne
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Return summary generated for buyOne
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Range graph generated
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Processed function buyOne
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Value Range Analysis took 0.000354 seconds
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Dependency detection started!
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Dependency detection finished!
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Static Analysis took 0.031853 seconds
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Dependency does not exist
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Analysis finished!
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Analysis took 0.031980 seconds
+[INFO] | 2026-06-21 07:14:15 PM | analyzer.40748  | Analysis finished at: 2026-06-21 07:14:15 PM
+[36m[#] Analysing started: 40748.sol[0m
+[36m[#] Interprocedural CFG generation started for buyOne[0m
+[36m[#] Interprocedural CFG generated for buyOne[0m
+[36m[#] SDG generation started for buyOne[0m
+[36m[#] SDG generated for buyOne[0m
+[36m[#] Analysis took 0.031980 seconds[0m
+[36m[#] Analysis completed: 40748.sol [0m
+
+=== dependency_info.json ===
+{}

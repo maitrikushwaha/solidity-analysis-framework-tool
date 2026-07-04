@@ -1,0 +1,126 @@
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Analysis started at: 2026-06-21 07:16:14 PM
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Callgraph generation started!
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Callgraph generation finished!
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Value Range Analysis started
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Processed function transfer
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Processed function transfer
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Generating return summary for burnCoins
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Return summary generated for burnCoins
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Range graph generated
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Processed function burnCoins
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Generating return summary for toWei
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Return summary generated for toWei
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Processed function toWei
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Range graph generated
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Range graph generated
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Processed function transfer
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Range graph generated
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Processed function constructor
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Value Range Analysis took 0.002725 seconds
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Value Range Analysis finished
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Dependency detection started!
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Dependency detection finished!
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Static Analysis took 0.102494 seconds
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Dependency does not exist
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Analysis finished!
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Analysis took 0.102593 seconds
+[INFO] | 2026-06-21 07:16:14 PM | analyzer.4      | Analysis finished at: 2026-06-21 07:16:14 PM
+[36m[#] Analysing started: 4.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier isOwner[0m
+[36m[#] Interprocedural CFG generated for modifer isOwner[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for burnCoins[0m
+[36m[#] Interprocedural CFG generated for burnCoins[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for burnCoins[0m
+[36m[#] SDG generated for burnCoins[0m
+[36m[#] SDG generation started for modifier isOwner[0m
+[36m[#] SDG generated for modifier isOwner[0m
+[36m[#] Analysis took 0.102593 seconds[0m
+[36m[#] Analysis completed: 4.sol [0m
+
+=== dependency_info.json ===
+{}

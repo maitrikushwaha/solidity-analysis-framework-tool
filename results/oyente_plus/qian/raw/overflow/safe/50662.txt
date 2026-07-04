@@ -1,0 +1,49 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50662.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.wtIfypqGQQ' running
+INFO:CryticCompile:Compilation warnings/errors on 50662.sol:
+50662.sol:22:49: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function transfer(address _to, uint _value, bytes _data) public returns (bool) {
+                                                ^---------^
+
+INFO:root:contract 50662.sol:HiroyukiCoinDark:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 90.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:50662.sol:22:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balanceOf[_to] = 32904357849969604108326124411307847926853940149303245441320792664104113018687
+    balanceOf[msg.sender] = 58800670315824630488532140824724328206738664088020598926287054379018386145280
+    _value = 58010966443909480715839844707802439738858000862588005976360636792194902165700
+INFO:symExec:50662.sol:12:21: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balanceOf[msg.sender] = 58800670315824630488532140824724328206738664088020598926287054379018386145280
+    _value = 58010966443909480715839844707802439738858000862588005976360636792194902165700
+    balanceOf[_to] = 58914694946072930789272470044513113790954467891552735071436748190961490556734
+50662.sol:22:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balanceOf[_to] = 32904357849969604108326124411307847926853940149303245441320792664104113018687
+    balanceOf[msg.sender] = 58800670315824630488532140824724328206738664088020598926287054379018386145280
+    _value = 58010966443909480715839844707802439738858000862588005976360636792194902165700
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50662.sol:HiroyukiCoinDark.json.
+INFO:root:contract 50662.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50662.sol:SafeMath.json.

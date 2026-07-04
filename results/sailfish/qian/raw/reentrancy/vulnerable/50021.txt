@@ -1,0 +1,91 @@
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Analysis started at: 2026-06-21 07:15:23 PM
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Callgraph generation started!
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Value Range Analysis started
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Generating return summary for claim
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Return summary generated for claim
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Range graph generated
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Processed function claim
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Value Range Analysis took 0.000332 seconds
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Dependency detection started!
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | DAO dependency detected in file 50021.sol in contract Escrow in by composing functions claim and claim
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | TOD dependency detected in file 50021.sol in contract Escrow in by composing functions claim and claim
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Dependency detection finished!
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Static Analysis took 0.068235 seconds
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Dependency exists
+[INFO] | 2026-06-21 07:15:23 PM | analyzer.50021  | Invoking symbolic executor!
+[36m[#] Analysing started: 50021.sol[0m
+[36m[#] Interprocedural CFG generation started for claim[0m
+[36m[#] Interprocedural CFG generated for claim[0m
+[36m[#] SDG generation started for claim[0m
+[36m[#] SDG generated for claim[0m
+[INFO] | 2026-06-21 07:15:24 PM | analyzer.50021  | Symbolic execution took 1.154631 seconds
+[INFO] | 2026-06-21 07:15:24 PM | analyzer.50021  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:15:24 PM | analyzer.50021  | Analysis finished!
+[INFO] | 2026-06-21 07:15:24 PM | analyzer.50021  | Analysis took 1.223255 seconds
+[INFO] | 2026-06-21 07:15:24 PM | analyzer.50021  | Analysis finished at: 2026-06-21 07:15:24 PM
+[36m[#] Analysis took 1.223255 seconds[0m
+[36m[#] Analysis completed: 50021.sol [0m
+
+=== dependency_info.json ===
+{
+    "50021.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "claim",
+                "claim"
+            ],
+            "from_function": "claim",
+            "to_function": "claim",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 6\nFunction: claim\nNode: \nEXPRESSION require(bool)(balance > 0)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\"",
+                        "\"BlockID: 4\nFunction: claim\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: claim\nNode: \nNEW VARIABLE claimed = msg.sender.call.value(balance)()\nIRS: \nTMP_3(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:balance \"",
+                        "\"BlockID: 4\nFunction: claim\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claim",
+                "claim"
+            ],
+            "First_function": "claim",
+            "Second_function": "claim",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: claim\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 2\nFunction: claim\nNode: \nEXPRESSION require(bool)(balance > 0)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: claim\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 3\nFunction: claim\nNode: \nNEW VARIABLE claimed = msg.sender.call.value(balance)()\nIRS: \nTMP_3(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:balance \""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 1182.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.ygaQJxfjy4' running
+INFO:root:contract 1182.sol:BitSongCrowdsale:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 87.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:1182.sol:17:23: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    duration = 10210804204137155155800185180592188719307585637463966872051322102064641786380
+    owner = 0
+    openingTime = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 1182.sol:BitSongCrowdsale.json.

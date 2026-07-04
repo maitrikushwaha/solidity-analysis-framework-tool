@@ -1,0 +1,35 @@
+{
+ "evm_code_coverage": "95.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:73:2: Warning: Integer Underflow.\n",
+   "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:86:40: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    approvedPlayers[msg.sender] = 1\n    owner = 0"
+  ],
+  "integer_overflow": [
+   "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:110:2: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    approvedPlayers[msg.sender] = 64\n    _index = 65374921959587683254786282635419885514707946659104283049243775229656056250536\n    seed[_index] = 65375612136223296053735666427804282998944507252542799292365811687419182923953",
+   "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:28:1: Warning: Integer Overflow.\n",
+   "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:2:21: Warning: Integer Overflow.\n",
+   "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:73:2: Warning: Integer Overflow.\n",
+   "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:27:1: Warning: Integer Overflow.\n",
+   "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:118:27: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    approvedPlayers[msg.sender] = 1\n    seed[1] = 2",
+   "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:14:1: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    approvedPlayers[msg.sender] = 64\n    _add = 0",
+   "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:22:1: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:100:2: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:106:2: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [
+   "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:133:2: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

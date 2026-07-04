@@ -1,0 +1,40 @@
+/work/datasets/qian/timestamp/vulnerable/212.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_EXTRA_GAS_IN_LOOPS
+patternId: d3j11j
+severity: 1
+line: 14
+column: 6
+content: for(uintj=0;j<allocations[sender].length;j++){if(allocations[sender][j].releaseTime<block.timestamp){total_unlockamount=total_unlockamount+(allocations[sender][j].balance);}}
+
+ruleId: SOLIDITY_GAS_LIMIT_IN_LOOPS
+patternId: f6f853
+severity: 2
+line: 14
+column: 6
+content: for(uintj=0;j<allocations[sender].length;j++){if(allocations[sender][j].releaseTime<block.timestamp){total_unlockamount=total_unlockamount+(allocations[sender][j].balance);}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 9
+column: 2
+content: uint256total_lockamount=0;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 10
+column: 2
+content: uint256total_unlockamount=0;
+
+SOLIDITY_VISIBILITY :2
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_EXTRA_GAS_IN_LOOPS :1
+SOLIDITY_GAS_LIMIT_IN_LOOPS :1

@@ -1,0 +1,47 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 02_CrossMutex_ree2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.Pzlz99nkf6' running
+INFO:root:contract 02_CrossMutex_ree2.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 78.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:02_CrossMutex_ree2.sol:6:5: Warning: Integer Underflow.
+
+02_CrossMutex_ree2.sol:32:2656: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+02_CrossMutex_ree2.sol:19:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+02_CrossMutex_ree2.sol:9:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 58800670315824630488532140824724328206738664088020598926905912889301962588224
+02_CrossMutex_ree2.sol:28:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 18544937651319942494369143188809830132228085618314405667261865196588244156544
+INFO:symExec:02_CrossMutex_ree2.sol:32:492: Warning: Integer Overflow.
+
+02_CrossMutex_ree2.sol:20:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+02_CrossMutex_ree2.sol:10:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 17116524413346006975995306636925998892008039514112
+    balances[msg.sender] = 0
+INFO:symExec:02_CrossMutex_ree2.sol:20:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:02_CrossMutex_ree2.sol:20:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 02_CrossMutex_ree2.sol:C.json.

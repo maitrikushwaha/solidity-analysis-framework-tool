@@ -1,0 +1,25 @@
+{
+ "evm_code_coverage": "39.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1381:39: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    paused = 0"
+  ],
+  "integer_overflow": [
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1235:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _startingPrice = 0\n    paused = 0\n    _endingPrice = 0\n    _duration = 64",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1326:17: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1343:19: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1348:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1349:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1350:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0"
+  ],
+  "callstack": [
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1496:20: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

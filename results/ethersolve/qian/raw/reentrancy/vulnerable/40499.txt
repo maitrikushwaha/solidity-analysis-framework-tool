@@ -1,0 +1,5 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/qian/reentrancy/vulnerable/40499.sol:Wallet
+offset,opcode,detection
+480,480: SLOAD,Store read after unsafe call
+487,487: SSTORE,Store write after unsafe call

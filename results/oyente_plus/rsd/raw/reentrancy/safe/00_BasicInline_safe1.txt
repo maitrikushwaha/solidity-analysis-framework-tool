@@ -1,0 +1,32 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 00_BasicInline_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.euHKvmAHoT' running
+INFO:root:contract 00_BasicInline_safe1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 64.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:00_BasicInline_safe1.sol:9:5: Warning: Integer Underflow.
+
+00_BasicInline_safe1.sol:13:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 29188313510140561063498834118893785556206618534223524024265090437450081241088
+INFO:symExec:00_BasicInline_safe1.sol:24:920: Warning: Integer Overflow.
+
+00_BasicInline_safe1.sol:21:33: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 72370055773322622139731865630429942408293740416025352524660990004945706024960
+    flag = 45671926166590716193865151022383844364247891968
+00_BasicInline_safe1.sol:20:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+    flag = 199367224377045598573972756351109256904538047395856129423015976
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 00_BasicInline_safe1.sol:C.json.

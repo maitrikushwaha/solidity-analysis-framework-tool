@@ -1,0 +1,126 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc buggy_43.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.olBZdwedgh' running
+INFO:root:contract buggy_43.sol:EventMetadata:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 88.2%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:Flow1
+buggy_43.sol:45:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_43.sol:21:8: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_43.sol:EventMetadata.json.
+INFO:root:contract buggy_43.sol:MultiHashWrapper:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 87.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:Flow1
+buggy_43.sol:383:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_43.sol:342:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_43.sol:MultiHashWrapper.json.
+INFO:root:contract buggy_43.sol:Operated:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 95.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:Flow1
+buggy_43.sol:80:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_43.sol:287:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_43.sol:Operated.json.
+INFO:root:contract buggy_43.sol:Post:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 77.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:buggy_43.sol:28:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    metadata = 2948691849
+INFO:symExec:buggy_43.sol:528:19: Warning: Integer Overflow.
+
+buggy_43.sol:28:14: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    metadata = 2786985286
+buggy_43.sol:5:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    metadata = 2934499507
+INFO:symExec:Flow1
+buggy_43.sol:383:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_43.sol:45:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_43.sol:Post.json.
+INFO:root:contract buggy_43.sol:ProofHash:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 80.2%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:Flow1
+buggy_43.sol:383:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_43.sol:342:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_43.sol:ProofHash.json.
+INFO:root:contract buggy_43.sol:Template:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 93.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:buggy_43.sol:528:19: Warning: Integer Overflow.
+
+INFO:symExec:Flow1
+buggy_43.sol:545:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_43.sol:537:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_43.sol:Template.json.

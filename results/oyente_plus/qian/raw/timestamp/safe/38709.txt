@@ -1,0 +1,40 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 38709.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.mGxICUcbLK' running
+INFO:CryticCompile:Compilation warnings/errors on 38709.sol:
+38709.sol:15:48: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (_section_index >= sections.length) throw;
+                                               ^---^
+38709.sol:17:41: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(section.owner != msg.sender) throw;
+                                        ^---^
+38709.sol:16:9: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+        Section section = sections[_section_index];
+        ^-------------^
+38709.sol:14:5: Warning: No visibility specified. Defaulting to "public". 
+    function setImageDataCloud(uint _section_index, uint _image_id, string _md5) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 38709.sol:Pixel:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 41.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:38709.sol:3:1: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _section_index = 0
+INFO:symExec:38709.sol:14:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _md5 = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+38709.sol:3:1: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _section_index = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 38709.sol:Pixel.json.

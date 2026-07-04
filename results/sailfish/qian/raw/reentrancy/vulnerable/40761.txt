@@ -1,0 +1,81 @@
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Analysis started at: 2026-06-21 07:14:30 PM
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Callgraph generation started!
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Value Range Analysis started
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Generating return summary for withdrawBalance
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Return summary generated for withdrawBalance
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Range graph generated
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Processed function withdrawBalance
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Range graph generated
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Value Range Analysis took 0.000514 seconds
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Dependency detection started!
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | DAO dependency detected in file 40761.sol in contract SendBalance in by composing functions withdrawBalance and withdrawBalance
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | TOD dependency detected in file 40761.sol in contract SendBalance in by composing functions withdrawBalance and withdrawBalance
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Dependency detection finished!
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Static Analysis took 0.058579 seconds
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Dependency exists
+[INFO] | 2026-06-21 07:14:30 PM | analyzer.40761  | Invoking symbolic executor!
+[36m[#] Analysing started: 40761.sol[0m
+[36m[#] Interprocedural CFG generation started for withdrawBalance[0m
+[36m[#] Interprocedural CFG generated for withdrawBalance[0m
+[36m[#] SDG generation started for withdrawBalance[0m
+[36m[#] SDG generated for withdrawBalance[0m
+[INFO] | 2026-06-21 07:14:31 PM | analyzer.40761  | Symbolic execution took 0.965850 seconds
+[INFO] | 2026-06-21 07:14:31 PM | analyzer.40761  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:14:31 PM | analyzer.40761  | Analysis finished!
+[INFO] | 2026-06-21 07:14:31 PM | analyzer.40761  | Analysis took 1.024969 seconds
+[INFO] | 2026-06-21 07:14:31 PM | analyzer.40761  | Analysis finished at: 2026-06-21 07:14:31 PM
+[36m[#] Analysis took 1.024969 seconds[0m
+[36m[#] Analysis completed: 40761.sol [0m
+
+=== dependency_info.json ===
+{
+    "40761.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawBalance",
+                "withdrawBalance"
+            ],
+            "from_function": "withdrawBalance",
+            "to_function": "withdrawBalance",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 6\nFunction: withdrawBalance\nNode: \nIF ! (msg.sender.call.value(userBalances[msg.sender])())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:REF_2 \"",
+                        "\"BlockID: 4\nFunction: withdrawBalance\nNode: \nEXPRESSION userBalances[msg.sender] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "userBalances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawBalance",
+                "withdrawBalance"
+            ],
+            "First_function": "withdrawBalance",
+            "Second_function": "withdrawBalance",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: withdrawBalance\nNode: \nEXPRESSION userBalances[msg.sender] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 2\nFunction: withdrawBalance\nNode: \nIF ! (msg.sender.call.value(userBalances[msg.sender])())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:REF_2 \""
+                    ],
+                    "state_variable": "userBalances"
+                }
+            ]
+        }
+    ]
+}

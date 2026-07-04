@@ -1,0 +1,12 @@
+{
+  "filename": "simple_suicide.sol",
+  "reentrancy": 0,
+  "overflow": 0,
+  "timestamp": 0,
+  "tod": 0,
+  "duration_s": 0.76,
+  "error": null,
+  "reentrancy_domains": [
+    "Box"
+  ]
+}

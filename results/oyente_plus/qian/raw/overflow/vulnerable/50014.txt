@@ -1,0 +1,31 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50014.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.oPu0kFyVxD' running
+INFO:CryticCompile:Compilation warnings/errors on 50014.sol:
+50014.sol:8:5: Warning: No visibility specified. Defaulting to "public". 
+    function eT(address _pd, uint _tkA) returns (bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 50014.sol:LZLCoin:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:50014.sol:10:32: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+    _tkA = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+INFO:symExec:50014.sol:11:25: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[_pd] = 62094152296112971864103243168379150362976067995458940553813749143743808118076
+    _tkA = 77960304675817946857830488955567514628616252505170703073589319268629301715718
+INFO:symExec:50014.sol:9:14: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50014.sol:LZLCoin.json.

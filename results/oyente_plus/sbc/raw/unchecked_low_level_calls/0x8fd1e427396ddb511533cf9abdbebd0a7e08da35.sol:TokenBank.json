@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "95.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "0x8fd1e427396ddb511533cf9abdbebd0a7e08da35.sol:44:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    Holders[_to] = 1\n    owner = 0"
+  ],
+  "integer_overflow": [
+   "0x8fd1e427396ddb511533cf9abdbebd0a7e08da35.sol:72:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    MinDeposit = 938471868072630053515017695759341050810686932189157002939001061635417702383\n    Holders[msg.sender] = 57910800554033466336182183378680849660372255779797552842129772955244264272300"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

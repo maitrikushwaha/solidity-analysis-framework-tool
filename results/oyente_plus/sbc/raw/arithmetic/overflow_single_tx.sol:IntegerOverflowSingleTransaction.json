@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "89.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "overflow_single_tx.sol:30:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    count = 0\n    input = 1",
+   "overflow_single_tx.sol:48:20: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    count = 0\n    input = 1"
+  ],
+  "integer_overflow": [
+   "overflow_single_tx.sol:36:20: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    count = 95235721736379883315001763940616669011307430545820611921043079414295449969311\n    input = 87522543116091692642898991470747911540473016816853618691036649129099924882818",
+   "overflow_single_tx.sol:18:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    count = 31253780541446483561927260012123434002104182539218323246331473206330198589437\n    input = 87217991683654893347198037792800160252204899750517909271634179953897659957251"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

@@ -1,0 +1,11 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/qian/reentrancy/vulnerable/50009.sol:BoomerangLiquidity
+offset,opcode,detection
+440,440: SLOAD,Store read after unsafe call
+468,468: SLOAD,Store read after unsafe call
+481,481: SLOAD,Store read after unsafe call
+509,509: SLOAD,Store read after unsafe call
+534,534: SLOAD,Store read after unsafe call
+652,652: SLOAD,Store read after unsafe call
+684,684: SLOAD,Store read after unsafe call
+691,691: SSTORE,Store write after unsafe call

@@ -1,0 +1,17 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol:SafeMath
+offset,opcode,detection
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol:StandardToken
+offset,opcode,detection
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol:daoPOLSKAtokens
+offset,opcode,detection
+6454,6454: SLOAD,Store read after unsafe call
+6603,6603: SLOAD,Store read after unsafe call
+7172,7172: SLOAD,Store read after unsafe call
+7488,7488: SLOAD,Store read after unsafe call
+8659,8659: SLOAD,Store read after unsafe call
+8670,8670: SSTORE,Store write after unsafe call
+8956,8956: SLOAD,Store read after unsafe call
+8963,8963: SSTORE,Store write after unsafe call

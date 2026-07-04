@@ -1,0 +1,78 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc smart_billions.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.sGFqyUMeY1' running
+INFO:root:contract smart_billions.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to smart_billions.sol:SafeMath.json.
+INFO:root:contract smart_billions.sol:SmartBillions:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 18.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:smart_billions.sol:364:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    walletBalance = 0
+    investStart = 2
+    wallets[msg.sender].balance = 26959946667150639794667015087019630673637144422540572481103610249217
+smart_billions.sol:344:26: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    hashFirst = 5629500071608321
+    investStart = 1
+    wallets[msg.sender].balance = 14469345601094040673976707025790104299472521807177027746161481741617369972739
+smart_billions.sol:345:29: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    hashFirst = 5629500071608321
+    dividends.length = 0
+    investStart = 1
+    wallets[msg.sender].balance = 14469345601094040673976707025790104299472521807177027746161481741617369972739
+smart_billions.sol:723:23: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    investStart = 3618502788666131106986605254142910135171392945387417238023546521646677373011
+    hashFirst = 2475880078570760549798248450
+smart_billions.sol:728:23: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    hashFirst = 115792089237316195423570985008687907853269984665640564039457584007913056864266
+    investStart = 3618502788666131106986605254142910135171392945387417238023546521646677373009
+INFO:symExec:smart_billions.sol:339:47: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    investStart = 115792089237316195423570985008687907853269984665640564039457584007913129574400
+    wallets[msg.sender].balance = 6904949242374514617743641893003393558614398412202073220255000755656426782720
+smart_billions.sol:724:21: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    hashFirst = 16142965248633307794887856831031148087047262311546780063439526935368613595152
+    investStart = 3618502788666131106986605254142910135171392945387417238023546521646677373009
+smart_billions.sol:118:1: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    hashFirst = 64008354823655463758558983436362099044214875504419143809012149558878343790594
+    maxWin = 57896044618658097711785492504343953926634992332820282019728792003956564861472
+    dividends.length = 246334931613235582731063663997795492991088578189618924676568651987943296
+    investStart = 3221229198
+INFO:symExec:Flow1
+smart_billions.sol:382:13: Warning: Transaction-Ordering Dependency.
+
+Flow2
+smart_billions.sol:372:13: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to smart_billions.sol:SmartBillions.json.

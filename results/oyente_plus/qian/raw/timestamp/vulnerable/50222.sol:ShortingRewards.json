@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "81.7",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "50222.sol:12:27: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    rewardRate = 80308537194368933183742867739658940410037076506062352150627162308768551831590\n    periodFinish = 1\n    reward = 40205756455672401253232246477221181172241368118324941384377268061224996358840"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

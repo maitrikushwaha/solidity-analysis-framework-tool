@@ -1,0 +1,77 @@
+[INFO] | 2026-06-21 07:14:33 PM | analyzer.40764  | Analysis started at: 2026-06-21 07:14:33 PM
+[INFO] | 2026-06-21 07:14:33 PM | analyzer.40764  | Callgraph generation started!
+[INFO] | 2026-06-21 07:14:33 PM | analyzer.40764  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:14:33 PM | analyzer.40764  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:14:33 PM | analyzer.40764  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:14:33 PM | analyzer.40764  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Value Range Analysis started
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Generating return summary for withdraw
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Return summary generated for withdraw
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Range graph generated
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Processed function withdraw
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Value Range Analysis took 0.000295 seconds
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Dependency detection started!
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | DAO dependency detected in file 40764.sol in contract SimpleDAO in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | TOD dependency detected in file 40764.sol in contract SimpleDAO in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Dependency detection finished!
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Static Analysis took 0.062732 seconds
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Dependency exists
+[INFO] | 2026-06-21 07:14:34 PM | analyzer.40764  | Invoking symbolic executor!
+[36m[#] Analysing started: 40764.sol[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[INFO] | 2026-06-21 07:14:35 PM | analyzer.40764  | Symbolic execution took 1.162690 seconds
+[INFO] | 2026-06-21 07:14:35 PM | analyzer.40764  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:14:35 PM | analyzer.40764  | Analysis finished!
+[INFO] | 2026-06-21 07:14:35 PM | analyzer.40764  | Analysis took 1.226055 seconds
+[INFO] | 2026-06-21 07:14:35 PM | analyzer.40764  | Analysis finished at: 2026-06-21 07:14:35 PM
+[36m[#] Analysis took 1.226055 seconds[0m
+[36m[#] Analysis completed: 40764.sol [0m
+
+=== dependency_info.json ===
+{
+    "40764.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "from_function": "withdraw",
+            "to_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: withdraw\nNode: \nIF credit[msg.sender] >= amount\nIRS: \nCONDITION TMP_0\"",
+                        "\"BlockID: 5\nFunction: withdraw\nNode: \nEXPRESSION credit[msg.sender] -= amount\nIRS: \nREF_3 = REF_3 - amount\""
+                    ],
+                    "state_variable": "credit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 15\nFunction: withdraw\nNode: \nEXPRESSION credit[msg.sender] -= amount\nIRS: \nREF_3 = REF_3 - amount\"",
+                        "\"BlockID: 2\nFunction: withdraw\nNode: \nIF credit[msg.sender] >= amount\nIRS: \nCONDITION TMP_0\""
+                    ],
+                    "state_variable": "credit"
+                }
+            ]
+        }
+    ]
+}

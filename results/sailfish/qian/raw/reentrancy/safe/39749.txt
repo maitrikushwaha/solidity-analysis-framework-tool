@@ -1,0 +1,30 @@
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Analysis started at: 2026-06-21 07:12:31 PM
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Generating return summary for calcRefund
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Return summary generated for calcRefund
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Range graph generated
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Processed function calcRefund
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Value Range Analysis took 0.000558 seconds
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Static Analysis took 0.033577 seconds
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Dependency does not exist
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Analysis finished!
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Analysis took 0.033687 seconds
+[INFO] | 2026-06-21 07:12:31 PM | analyzer.39749  | Analysis finished at: 2026-06-21 07:12:31 PM
+[36m[#] Analysing started: 39749.sol[0m
+[36m[#] Analysis took 0.033687 seconds[0m
+[36m[#] Analysis completed: 39749.sol [0m
+
+=== dependency_info.json ===
+{}

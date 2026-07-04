@@ -1,0 +1,836 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/unchecked_low_level_calls' running
+Compilation warnings/errors on /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:35:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:770:9: Warning: Use of the "var" keyword is deprecated.
+        var outputString = new string(_stringLength);
+        ^--------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1474:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function ClockAuction(address _nftAddress, uint256 _cut) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1627:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function SiringClockAuction(address _nftAddr, uint256 _cut) public
+    ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1706:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function SaleClockAuction(address _nftAddr, uint256 _cut) public
+    ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1858:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function SaleClockAuctionERC20(address _nftAddr, uint256 _cut) public
+    ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2360:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function PandaCore() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:404:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _tokenId);
+        ^----------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:491:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Birth(
+        ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:662:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Approval(msg.sender, _to, _tokenId);
+        ^---------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1025:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Pregnant(pandaIndexToOwner[_matronId], _matronId, _sireId, matron.cooldownEndBlock);
+        ^---------------------------------------------------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1131:21: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        if (uint256(keccak256(block.blockhash(block.number - 2), now)) % 100 < probability) {
+                    ^-----------------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1136:13: Warning: Invoking events without "emit" prefix is deprecated.
+            Abortion(pandaIndexToOwner[_matronId], _matronId, sireId);
+            ^-------------------------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1152:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        msg.sender.send(autoBirthFee);
+        ^---------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1237:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AuctionCreated(
+        ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1249:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AuctionCancelled(_tokenId);
+        ^------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1310:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AuctionSuccessful(_tokenId, price, msg.sender);
+        ^--------------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1444:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Pause();
+    ^-----^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1453:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Unpause();
+    ^-------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1496:36: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        bool res = nftAddress.send(this.balance);
+                                   ^----------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1808:25: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        bytes32 bHash = keccak256(block.blockhash(block.number),block.blockhash(block.number-1));
+                        ^----------------------------------------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1918:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AuctionERC20Created(
+        ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2013:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AuctionSuccessful(_tokenId, price, msg.sender);
+        ^--------------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2398:9: Warning: Invoking events without "emit" prefix is deprecated.
+        ContractUpgrade(_v2Address);
+        ^-------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2461:27: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        uint256 balance = this.balance;
+                          ^----------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2467:13: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+            cfoAddress.send(balance - subtractFees);
+            ^-------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:11:5: Warning: No visibility specified. Defaulting to "public". 
+    function totalSupply() constant returns (uint supply);
+    ^----------------------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:12:5: Warning: No visibility specified. Defaulting to "public". 
+    function balanceOf( address who ) constant returns (uint value);
+    ^--------------------------------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:13:5: Warning: No visibility specified. Defaulting to "public". 
+    function allowance( address owner, address spender ) constant returns (uint _allowance);
+    ^--------------------------------------------------------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:15:5: Warning: No visibility specified. Defaulting to "public". 
+    function transfer( address to, uint value) returns (bool ok);
+    ^-----------------------------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:16:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferFrom( address from, address to, uint value) returns (bool ok);
+    ^-----------------------------------------------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:17:5: Warning: No visibility specified. Defaulting to "public". 
+    function approve( address spender, uint value ) returns (bool ok);
+    ^----------------------------------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:35:3: Warning: No visibility specified. Defaulting to "public". 
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:53:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferOwnership(address newOwner) onlyOwner {
+  ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1131:31: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        if (uint256(keccak256(block.blockhash(block.number - 2), now)) % 100 < probability) {
+                              ^-------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1442:3: Warning: No visibility specified. Defaulting to "public". 
+  function pause() onlyOwner whenNotPaused returns (bool) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1451:3: Warning: No visibility specified. Defaulting to "public". 
+  function unpause() onlyOwner whenPaused returns (bool) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1496:9: Warning: Unused local variable.
+        bool res = nftAddress.send(this.balance);
+        ^------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1808:35: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        bytes32 bHash = keccak256(block.blockhash(block.number),block.blockhash(block.number-1));
+                                  ^-------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1808:65: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        bytes32 bHash = keccak256(block.blockhash(block.number),block.blockhash(block.number-1));
+                                                                ^-------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1927:18: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function bid(uint256 _tokenId)
+                 ^--------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1939:9: Warning: Unused local variable.
+        address seller = tokenIdToAuction[_tokenId].seller;
+        ^------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1942:9: Warning: Unused local variable.
+        uint256 price = _bidERC20(_erc20address,msg.sender,_tokenId, _amount);
+        ^-----------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1958:88: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function withdrawERC20Balance(address _erc20Address, address _to) external returns(bool res)  {
+                                                                                       ^------^
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:516:5: Warning: Function state mutability can be restricted to pure
+    function getMetadata(uint256 _tokenId, string) public view returns (bytes32[4] buffer, uint256 count) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:747:5: Warning: Function state mutability can be restricted to pure
+    function _memcpy(uint _dest, uint _src, uint _len) private view {
+    ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:990:5: Warning: Function state mutability can be restricted to view
+    function _exchangeMatronSireId(uint256 _matronId, uint256 _sireId) internal returns(uint256, uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+
+ClockAuctionBase._bid(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1254-1313) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.transfer(bidExcess) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1307)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+SaleClockAuction (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1689-1836) contract sets array length with a user-controlled value:
+	- RarePanda.push(_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1800)
+SaleClockAuction (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1689-1836) contract sets array length with a user-controlled value:
+	- CommonPanda.push(_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1798)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#array-length-assignment
+
+PandaBreeding.giveBirth(uint256,uint256[2],uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091-1158) uses a weak PRNG: "uint256(keccak256()(block.blockhash(block.number - 2),now)) % 100 < probability (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1131)" 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#weak-PRNG
+
+Reentrancy in PandaAuction.bidOnSiringAuction(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2166-2186):
+	External calls:
+	- require(bool)(_canBreedWithViaAuction(_matronId,_sireId)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2177)
+		- geneScience.getSex(_matron.genes) + geneScience.getSex(_sire.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#953)
+	- currentPrice = siringAuction.getCurrentPrice(_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2180)
+	- siringAuction.bid.value(msg.value - autoBirthFee)(_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2184)
+	- _breedWith(uint32(_matronId),uint32(_sireId),msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2185)
+		- geneScience.getSex(pandas[_matronId].genes) == 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#991)
+		- _kitten.cooldownIndex < 8 && geneScience.getWizzType(_kitten.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#858)
+	External calls sending eth:
+	- siringAuction.bid.value(msg.value - autoBirthFee)(_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2184)
+	State variables written after the call(s):
+	- _breedWith(uint32(_matronId),uint32(_sireId),msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2185)
+		- matron.siringWithId = uint32(_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1008)
+	PandaBase.pandas (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#325) can be used in cross function reentrancies:
+	- PandaBreeding._breedWith(uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1000-1026)
+	- PandaBreeding._canBreedWithViaAuction(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#963-970)
+	- PandaBase._createPanda(uint256,uint256,uint256,uint256[2],address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#416-504)
+	- PandaBreeding._exchangeMatronSireId(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#990-996)
+	- PandaBreeding.breedWithAuto(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1033-1081)
+	- PandaBreeding.canBreedWith(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#978-988)
+	- PandaBase.getWizzTypeOf(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#384-387)
+	- PandaBreeding.giveBirth(uint256,uint256[2],uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091-1158)
+	- PandaBreeding.isPregnant(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#901-908)
+	- PandaBreeding.isReadyToBreed(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#890-897)
+	- PandaOwnership.totalSupply() (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#696-698)
+Reentrancy in PandaBreeding.giveBirth(uint256,uint256[2],uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091-1158):
+	External calls:
+	- probability = (geneScience.getPureFromGene(matron.genes) + geneScience.getPureFromGene(sire.genes)) / 2 + _factors[0] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1122)
+	- kittenId = _createPanda(_matronId,matron.siringWithId,parentGen + 1,childGenes,owner) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1134)
+		- pureDegree = uint16(geneScience.getPureFromGene(_genes)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#439)
+		- _tp = geneScience.getWizzType(_genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#453)
+		- _genes = geneScience.clearWizzType(_genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#455)
+	External calls sending eth:
+	- msg.sender.send(autoBirthFee) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1152)
+	State variables written after the call(s):
+	- delete childOwner[_matronId] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1154)
+	PandaBreeding.childOwner (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#810) can be used in cross function reentrancies:
+	- PandaBreeding._breedWith(uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1000-1026)
+	- PandaBreeding.giveBirth(uint256,uint256[2],uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091-1158)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+SaleClockAuctionERC20.withdrawERC20Balance(address,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1958-1962) ignores return value by ERC20(_erc20Address).transfer(_to,balances[_erc20Address]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1961)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-transfer
+
+PandaOwnership._memcpy(uint256,uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#747-764) is declared view but contains assembly code
+PandaOwnership._toString(bytes32[4],uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#769-782) is declared view but contains assembly code
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#constant-functions-using-assembly-code
+
+SaleClockAuction.bid(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1776-1791) uses a dangerous strict equality:
+	- isGen0 == 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1786)
+PandaBreeding._exchangeMatronSireId(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#990-996) uses a dangerous strict equality:
+	- geneScience.getSex(pandas[_matronId].genes) == 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#991)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+Reentrancy in PandaBreeding._breedWith(uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1000-1026):
+	External calls:
+	- (_matronId,_sireId) = _exchangeMatronSireId(_matronId,_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1002)
+		- geneScience.getSex(pandas[_matronId].genes) == 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#991)
+	State variables written after the call(s):
+	- matron.siringWithId = uint32(_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1008)
+	PandaBase.pandas (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#325) can be used in cross function reentrancies:
+	- PandaBreeding._breedWith(uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1000-1026)
+	- PandaBase._createPanda(uint256,uint256,uint256,uint256[2],address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#416-504)
+	- PandaBreeding._exchangeMatronSireId(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#990-996)
+	- PandaBreeding.breedWithAuto(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1033-1081)
+	- PandaBreeding.canBreedWith(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#978-988)
+	- PandaBase.getWizzTypeOf(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#384-387)
+	- PandaBreeding.giveBirth(uint256,uint256[2],uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091-1158)
+	- PandaBreeding.isPregnant(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#901-908)
+	- PandaBreeding.isReadyToBreed(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#890-897)
+	- PandaOwnership.totalSupply() (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#696-698)
+Reentrancy in PandaBase._createPanda(uint256,uint256,uint256,uint256[2],address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#416-504):
+	External calls:
+	- pureDegree = uint16(geneScience.getPureFromGene(_genes)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#439)
+	- _tp = geneScience.getWizzType(_genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#453)
+	- _genes = geneScience.clearWizzType(_genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#455)
+	State variables written after the call(s):
+	- newKittenId = pandas.push(_panda) - 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#484)
+	PandaBase.pandas (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#325) can be used in cross function reentrancies:
+	- PandaBase.getWizzTypeOf(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#384-387)
+	- wizzPandaCount[_tp] = wizzPandaCount[_tp] + 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#465)
+	PandaBase.wizzPandaCount (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#366) can be used in cross function reentrancies:
+	- PandaBase.getWizzPandaCountOf(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#374-376)
+	- PandaBase.wizzPandaCount (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#366)
+Reentrancy in SaleClockAuctionERC20.bidERC20(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1935-1945):
+	External calls:
+	- price = _bidERC20(_erc20address,msg.sender,_tokenId,_amount) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1942)
+		- require(bool)(ERC20(_erc20Address).transferFrom(_buyerAddress,seller,sellerProceeds)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2005)
+		- require(bool)(ERC20(_erc20Address).transferFrom(_buyerAddress,address(this),auctioneerCut)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2007)
+	- _transfer(msg.sender,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1943)
+		- nonFungibleContract.transfer(_receiver,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1223)
+	State variables written after the call(s):
+	- delete tokenIdToErc20Address[_tokenId] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1944)
+	SaleClockAuctionERC20.tokenIdToErc20Address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1851) can be used in cross function reentrancies:
+	- SaleClockAuctionERC20._bidERC20(address,address,uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1966-2016)
+	- SaleClockAuctionERC20.bidERC20(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1935-1945)
+	- SaleClockAuctionERC20.cancelAuction(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1947-1956)
+	- SaleClockAuctionERC20.createAuction(uint256,address,uint256,uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1874-1905)
+	- SaleClockAuctionERC20.tokenIdToErc20Address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1851)
+Reentrancy in PandaBreeding.breedWithAuto(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1033-1081):
+	External calls:
+	- require(bool)(_isValidMatingPair(matron,_matronId,sire,_sireId)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1072-1077)
+		- geneScience.getSex(_matron.genes) + geneScience.getSex(_sire.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#953)
+	- _breedWith(_matronId,_sireId,msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1080)
+		- geneScience.getSex(pandas[_matronId].genes) == 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#991)
+		- _kitten.cooldownIndex < 8 && geneScience.getWizzType(_kitten.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#858)
+	State variables written after the call(s):
+	- _breedWith(_matronId,_sireId,msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1080)
+		- matron.siringWithId = uint32(_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1008)
+	PandaBase.pandas (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#325) can be used in cross function reentrancies:
+	- PandaBreeding._breedWith(uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1000-1026)
+	- PandaBase._createPanda(uint256,uint256,uint256,uint256[2],address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#416-504)
+	- PandaBreeding._exchangeMatronSireId(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#990-996)
+	- PandaBreeding.breedWithAuto(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1033-1081)
+	- PandaBreeding.canBreedWith(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#978-988)
+	- PandaBase.getWizzTypeOf(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#384-387)
+	- PandaBreeding.giveBirth(uint256,uint256[2],uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091-1158)
+	- PandaBreeding.isPregnant(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#901-908)
+	- PandaBreeding.isReadyToBreed(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#890-897)
+	- PandaOwnership.totalSupply() (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#696-698)
+	- _breedWith(_matronId,_sireId,msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1080)
+		- delete sireAllowedToAddress[_matronId] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1016)
+		- delete sireAllowedToAddress[_sireId] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1017)
+	PandaBase.sireAllowedToAddress (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#343) can be used in cross function reentrancies:
+	- PandaBreeding._breedWith(uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1000-1026)
+	- PandaBreeding._isSiringPermitted(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#838-845)
+	- PandaBase._transfer(address,address,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#390-405)
+	- PandaBreeding.approveSiring(address,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#867-872)
+	- PandaBase.sireAllowedToAddress (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#343)
+Reentrancy in PandaBreeding.giveBirth(uint256,uint256[2],uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091-1158):
+	External calls:
+	- probability = (geneScience.getPureFromGene(matron.genes) + geneScience.getPureFromGene(sire.genes)) / 2 + _factors[0] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1122)
+	- kittenId = _createPanda(_matronId,matron.siringWithId,parentGen + 1,childGenes,owner) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1134)
+		- pureDegree = uint16(geneScience.getPureFromGene(_genes)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#439)
+		- _tp = geneScience.getWizzType(_genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#453)
+		- _genes = geneScience.clearWizzType(_genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#455)
+	State variables written after the call(s):
+	- kittenId = _createPanda(_matronId,matron.siringWithId,parentGen + 1,childGenes,owner) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1134)
+		- newKittenId = pandas.push(_panda) - 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#484)
+	PandaBase.pandas (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#325) can be used in cross function reentrancies:
+	- PandaBreeding._breedWith(uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1000-1026)
+	- PandaBase._createPanda(uint256,uint256,uint256,uint256[2],address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#416-504)
+	- PandaBreeding._exchangeMatronSireId(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#990-996)
+	- PandaBreeding.breedWithAuto(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1033-1081)
+	- PandaBreeding.canBreedWith(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#978-988)
+	- PandaBase.getWizzTypeOf(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#384-387)
+	- PandaBreeding.giveBirth(uint256,uint256[2],uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091-1158)
+	- PandaBreeding.isPregnant(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#901-908)
+	- PandaBreeding.isReadyToBreed(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#890-897)
+	- PandaOwnership.totalSupply() (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#696-698)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-1
+
+PandaBreeding.giveBirth(uint256,uint256[2],uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091-1158) ignores return value by msg.sender.send(autoBirthFee) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1152)
+PandaCore.withdrawBalance() (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2460-2469) ignores return value by cfoAddress.send(balance - subtractFees) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2467)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-send
+
+PandaAuction.withdrawERC20Balance(address,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2197-2200) ignores return value by saleAuctionERC20.withdrawERC20Balance(_erc20Address,_to) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2199)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-return
+
+Ownable.transferOwnership(address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#53-57) should emit an event for: 
+	- owner = newOwner (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#55) 
+PandaAccessControl.setCEO(address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#168-172) should emit an event for: 
+	- ceoAddress = _newCEO (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#171) 
+	- ceoAddress = _newCEO (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#171) 
+PandaAccessControl.setCFO(address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#176-180) should emit an event for: 
+	- cfoAddress = _newCFO (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#179) 
+	- cfoAddress = _newCFO (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#179) 
+PandaAccessControl.setCOO(address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#184-188) should emit an event for: 
+	- cooAddress = _newCOO (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#187) 
+	- cooAddress = _newCOO (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#187) 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-events-access-control
+
+PandaCore.setNewAddress(address)._v2Address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2395) lacks a zero-check on :
+		- newContractAddress = _v2Address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2397)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+Reentrancy in SaleClockAuctionERC20._bidERC20(address,address,uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1966-2016):
+	External calls:
+	- require(bool)(ERC20(_erc20Address).transferFrom(_buyerAddress,seller,sellerProceeds)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2005)
+	- require(bool)(ERC20(_erc20Address).transferFrom(_buyerAddress,address(this),auctioneerCut)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2007)
+	State variables written after the call(s):
+	- balances[_erc20Address] += auctioneerCut (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2008)
+Reentrancy in PandaBreeding._breedWith(uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1000-1026):
+	External calls:
+	- (_matronId,_sireId) = _exchangeMatronSireId(_matronId,_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1002)
+		- geneScience.getSex(pandas[_matronId].genes) == 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#991)
+	- _triggerCooldown(sire) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1011)
+		- _kitten.cooldownIndex < 8 && geneScience.getWizzType(_kitten.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#858)
+	- _triggerCooldown(matron) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1012)
+		- _kitten.cooldownIndex < 8 && geneScience.getWizzType(_kitten.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#858)
+	State variables written after the call(s):
+	- childOwner[_matronId] = _owner (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1022)
+	- pregnantPandas ++ (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1020)
+	- delete sireAllowedToAddress[_matronId] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1016)
+	- delete sireAllowedToAddress[_sireId] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1017)
+Reentrancy in PandaBase._createPanda(uint256,uint256,uint256,uint256[2],address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#416-504):
+	External calls:
+	- pureDegree = uint16(geneScience.getPureFromGene(_genes)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#439)
+	- _tp = geneScience.getWizzType(_genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#453)
+	- _genes = geneScience.clearWizzType(_genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#455)
+	State variables written after the call(s):
+	- gen0CreatedCount ++ (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#470)
+	- _transfer(0,_owner,newKittenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#501)
+		- ownershipTokenCount[_to] ++ (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#392)
+		- ownershipTokenCount[_from] -- (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#397)
+	- _transfer(0,_owner,newKittenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#501)
+		- delete pandaIndexToApproved[_tokenId] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#401)
+	- _transfer(0,_owner,newKittenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#501)
+		- pandaIndexToOwner[_tokenId] = _to (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#394)
+	- _transfer(0,_owner,newKittenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#501)
+		- delete sireAllowedToAddress[_tokenId] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#399)
+Reentrancy in SaleClockAuction.bid(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1776-1791):
+	External calls:
+	- _transfer(msg.sender,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1783)
+		- nonFungibleContract.transfer(_receiver,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1223)
+	External calls sending eth:
+	- price = _bid(_tokenId,msg.value) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1782)
+		- seller.transfer(sellerProceeds) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1295)
+		- msg.sender.transfer(bidExcess) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1307)
+	State variables written after the call(s):
+	- gen0SaleCount ++ (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1789)
+	- lastGen0SalePrices[gen0SaleCount % 5] = price (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1788)
+Reentrancy in PandaAuction.bidOnSiringAuction(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2166-2186):
+	External calls:
+	- require(bool)(_canBreedWithViaAuction(_matronId,_sireId)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2177)
+		- geneScience.getSex(_matron.genes) + geneScience.getSex(_sire.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#953)
+	- currentPrice = siringAuction.getCurrentPrice(_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2180)
+	- siringAuction.bid.value(msg.value - autoBirthFee)(_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2184)
+	- _breedWith(uint32(_matronId),uint32(_sireId),msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2185)
+		- geneScience.getSex(pandas[_matronId].genes) == 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#991)
+		- _kitten.cooldownIndex < 8 && geneScience.getWizzType(_kitten.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#858)
+	External calls sending eth:
+	- siringAuction.bid.value(msg.value - autoBirthFee)(_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2184)
+	State variables written after the call(s):
+	- _breedWith(uint32(_matronId),uint32(_sireId),msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2185)
+		- childOwner[_matronId] = _owner (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1022)
+Reentrancy in PandaBreeding.breedWithAuto(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1033-1081):
+	External calls:
+	- require(bool)(_isValidMatingPair(matron,_matronId,sire,_sireId)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1072-1077)
+		- geneScience.getSex(_matron.genes) + geneScience.getSex(_sire.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#953)
+	- _breedWith(_matronId,_sireId,msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1080)
+		- geneScience.getSex(pandas[_matronId].genes) == 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#991)
+		- _kitten.cooldownIndex < 8 && geneScience.getWizzType(_kitten.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#858)
+	State variables written after the call(s):
+	- _breedWith(_matronId,_sireId,msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1080)
+		- childOwner[_matronId] = _owner (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1022)
+Reentrancy in SaleClockAuctionERC20.cancelAuction(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1947-1956):
+	External calls:
+	- _cancelAuction(_tokenId,seller) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1954)
+		- nonFungibleContract.transfer(_receiver,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1223)
+	State variables written after the call(s):
+	- delete tokenIdToErc20Address[_tokenId] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1955)
+Reentrancy in ClockAuction.createAuction(uint256,uint256,uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1506-1533):
+	External calls:
+	- require(bool)(_owns(msg.sender,_tokenId)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1522)
+		- (nonFungibleContract.ownerOf(_tokenId) == _claimant) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1205)
+	- _escrow(msg.sender,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1523)
+		- nonFungibleContract.transferFrom(_owner,this,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1214)
+	State variables written after the call(s):
+	- _addAuction(_tokenId,auction) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1532)
+		- tokenIdToAuction[_tokenId] = _auction (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1235)
+Reentrancy in SiringClockAuction.createAuction(uint256,uint256,uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1637-1663):
+	External calls:
+	- _escrow(_seller,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1653)
+		- nonFungibleContract.transferFrom(_owner,this,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1214)
+	State variables written after the call(s):
+	- _addAuction(_tokenId,auction) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1662)
+		- tokenIdToAuction[_tokenId] = _auction (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1235)
+Reentrancy in SaleClockAuction.createAuction(uint256,uint256,uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1718-1744):
+	External calls:
+	- _escrow(_seller,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1734)
+		- nonFungibleContract.transferFrom(_owner,this,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1214)
+	State variables written after the call(s):
+	- _addAuction(_tokenId,auction) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1743)
+		- tokenIdToAuction[_tokenId] = _auction (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1235)
+Reentrancy in SaleClockAuctionERC20.createAuction(uint256,address,uint256,uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1874-1905):
+	External calls:
+	- _escrow(_seller,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1894)
+		- nonFungibleContract.transferFrom(_owner,this,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1214)
+	State variables written after the call(s):
+	- _addAuctionERC20(_tokenId,auction,_erc20Address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1903)
+		- tokenIdToAuction[_tokenId] = _auction (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1916)
+	- tokenIdToErc20Address[_tokenId] = _erc20Address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1904)
+Reentrancy in SaleClockAuction.createGen0Auction(uint256,uint256,uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1746-1772):
+	External calls:
+	- _escrow(_seller,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1762)
+		- nonFungibleContract.transferFrom(_owner,this,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1214)
+	State variables written after the call(s):
+	- _addAuction(_tokenId,auction) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1771)
+		- tokenIdToAuction[_tokenId] = _auction (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1235)
+Reentrancy in PandaBreeding.giveBirth(uint256,uint256[2],uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091-1158):
+	External calls:
+	- probability = (geneScience.getPureFromGene(matron.genes) + geneScience.getPureFromGene(sire.genes)) / 2 + _factors[0] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1122)
+	- kittenId = _createPanda(_matronId,matron.siringWithId,parentGen + 1,childGenes,owner) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1134)
+		- pureDegree = uint16(geneScience.getPureFromGene(_genes)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#439)
+		- _tp = geneScience.getWizzType(_genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#453)
+		- _genes = geneScience.clearWizzType(_genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#455)
+	State variables written after the call(s):
+	- kittenId = _createPanda(_matronId,matron.siringWithId,parentGen + 1,childGenes,owner) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1134)
+		- pandaIndexToOwner[_tokenId] = _to (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#394)
+	- pregnantPandas -- (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1148)
+Reentrancy in PandaBreeding.setGeneScienceAddress(address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#815-823):
+	External calls:
+	- require(bool)(candidateContract.isGeneScience()) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#819)
+	State variables written after the call(s):
+	- geneScience = candidateContract (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#822)
+Reentrancy in PandaAuction.setSaleAuctionAddress(address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2032-2040):
+	External calls:
+	- require(bool)(candidateContract.isSaleClockAuction()) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2036)
+	State variables written after the call(s):
+	- saleAuction = candidateContract (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2039)
+Reentrancy in PandaAuction.setSaleAuctionERC20Address(address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2042-2050):
+	External calls:
+	- require(bool)(candidateContract.isSaleClockAuctionERC20()) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2046)
+	State variables written after the call(s):
+	- saleAuctionERC20 = candidateContract (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2049)
+Reentrancy in PandaAuction.setSiringAuctionAddress(address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2054-2062):
+	External calls:
+	- require(bool)(candidateContract.isSiringClockAuction()) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2058)
+	State variables written after the call(s):
+	- siringAuction = candidateContract (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2061)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2
+
+Reentrancy in SaleClockAuctionERC20._bidERC20(address,address,uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1966-2016):
+	External calls:
+	- require(bool)(ERC20(_erc20Address).transferFrom(_buyerAddress,seller,sellerProceeds)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2005)
+	- require(bool)(ERC20(_erc20Address).transferFrom(_buyerAddress,address(this),auctioneerCut)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2007)
+	Event emitted after the call(s):
+	- AuctionSuccessful(_tokenId,price,msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2013)
+Reentrancy in PandaBreeding._breedWith(uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1000-1026):
+	External calls:
+	- (_matronId,_sireId) = _exchangeMatronSireId(_matronId,_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1002)
+		- geneScience.getSex(pandas[_matronId].genes) == 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#991)
+	- _triggerCooldown(sire) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1011)
+		- _kitten.cooldownIndex < 8 && geneScience.getWizzType(_kitten.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#858)
+	- _triggerCooldown(matron) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1012)
+		- _kitten.cooldownIndex < 8 && geneScience.getWizzType(_kitten.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#858)
+	Event emitted after the call(s):
+	- Pregnant(pandaIndexToOwner[_matronId],_matronId,_sireId,matron.cooldownEndBlock) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1025)
+Reentrancy in ClockAuctionBase._cancelAuction(uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1246-1250):
+	External calls:
+	- _transfer(_seller,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1248)
+		- nonFungibleContract.transfer(_receiver,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1223)
+	Event emitted after the call(s):
+	- AuctionCancelled(_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1249)
+Reentrancy in PandaBase._createPanda(uint256,uint256,uint256,uint256[2],address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#416-504):
+	External calls:
+	- pureDegree = uint16(geneScience.getPureFromGene(_genes)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#439)
+	- _tp = geneScience.getWizzType(_genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#453)
+	- _genes = geneScience.clearWizzType(_genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#455)
+	Event emitted after the call(s):
+	- Birth(_owner,newKittenId,uint256(_panda.matronId),uint256(_panda.sireId),_panda.genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#491-497)
+	- Transfer(_from,_to,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#404)
+		- _transfer(0,_owner,newKittenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#501)
+Reentrancy in PandaAuction.bidOnSiringAuction(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2166-2186):
+	External calls:
+	- require(bool)(_canBreedWithViaAuction(_matronId,_sireId)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2177)
+		- geneScience.getSex(_matron.genes) + geneScience.getSex(_sire.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#953)
+	- currentPrice = siringAuction.getCurrentPrice(_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2180)
+	- siringAuction.bid.value(msg.value - autoBirthFee)(_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2184)
+	- _breedWith(uint32(_matronId),uint32(_sireId),msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2185)
+		- geneScience.getSex(pandas[_matronId].genes) == 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#991)
+		- _kitten.cooldownIndex < 8 && geneScience.getWizzType(_kitten.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#858)
+	External calls sending eth:
+	- siringAuction.bid.value(msg.value - autoBirthFee)(_sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2184)
+	Event emitted after the call(s):
+	- Pregnant(pandaIndexToOwner[_matronId],_matronId,_sireId,matron.cooldownEndBlock) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1025)
+		- _breedWith(uint32(_matronId),uint32(_sireId),msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2185)
+Reentrancy in PandaBreeding.breedWithAuto(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1033-1081):
+	External calls:
+	- require(bool)(_isValidMatingPair(matron,_matronId,sire,_sireId)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1072-1077)
+		- geneScience.getSex(_matron.genes) + geneScience.getSex(_sire.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#953)
+	- _breedWith(_matronId,_sireId,msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1080)
+		- geneScience.getSex(pandas[_matronId].genes) == 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#991)
+		- _kitten.cooldownIndex < 8 && geneScience.getWizzType(_kitten.genes) != 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#858)
+	Event emitted after the call(s):
+	- Pregnant(pandaIndexToOwner[_matronId],_matronId,_sireId,matron.cooldownEndBlock) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1025)
+		- _breedWith(_matronId,_sireId,msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1080)
+Reentrancy in ClockAuction.createAuction(uint256,uint256,uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1506-1533):
+	External calls:
+	- require(bool)(_owns(msg.sender,_tokenId)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1522)
+		- (nonFungibleContract.ownerOf(_tokenId) == _claimant) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1205)
+	- _escrow(msg.sender,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1523)
+		- nonFungibleContract.transferFrom(_owner,this,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1214)
+	Event emitted after the call(s):
+	- AuctionCreated(uint256(_tokenId),uint256(_auction.startingPrice),uint256(_auction.endingPrice),uint256(_auction.duration)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1237-1242)
+		- _addAuction(_tokenId,auction) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1532)
+Reentrancy in SiringClockAuction.createAuction(uint256,uint256,uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1637-1663):
+	External calls:
+	- _escrow(_seller,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1653)
+		- nonFungibleContract.transferFrom(_owner,this,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1214)
+	Event emitted after the call(s):
+	- AuctionCreated(uint256(_tokenId),uint256(_auction.startingPrice),uint256(_auction.endingPrice),uint256(_auction.duration)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1237-1242)
+		- _addAuction(_tokenId,auction) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1662)
+Reentrancy in SaleClockAuction.createAuction(uint256,uint256,uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1718-1744):
+	External calls:
+	- _escrow(_seller,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1734)
+		- nonFungibleContract.transferFrom(_owner,this,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1214)
+	Event emitted after the call(s):
+	- AuctionCreated(uint256(_tokenId),uint256(_auction.startingPrice),uint256(_auction.endingPrice),uint256(_auction.duration)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1237-1242)
+		- _addAuction(_tokenId,auction) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1743)
+Reentrancy in SaleClockAuctionERC20.createAuction(uint256,address,uint256,uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1874-1905):
+	External calls:
+	- _escrow(_seller,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1894)
+		- nonFungibleContract.transferFrom(_owner,this,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1214)
+	Event emitted after the call(s):
+	- AuctionERC20Created(uint256(_tokenId),uint256(_auction.startingPrice),uint256(_auction.endingPrice),uint256(_auction.duration),_erc20address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1918-1924)
+		- _addAuctionERC20(_tokenId,auction,_erc20Address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1903)
+Reentrancy in SaleClockAuction.createGen0Auction(uint256,uint256,uint256,uint256,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1746-1772):
+	External calls:
+	- _escrow(_seller,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1762)
+		- nonFungibleContract.transferFrom(_owner,this,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1214)
+	Event emitted after the call(s):
+	- AuctionCreated(uint256(_tokenId),uint256(_auction.startingPrice),uint256(_auction.endingPrice),uint256(_auction.duration)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1237-1242)
+		- _addAuction(_tokenId,auction) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1771)
+Reentrancy in PandaBreeding.giveBirth(uint256,uint256[2],uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091-1158):
+	External calls:
+	- probability = (geneScience.getPureFromGene(matron.genes) + geneScience.getPureFromGene(sire.genes)) / 2 + _factors[0] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1122)
+	- kittenId = _createPanda(_matronId,matron.siringWithId,parentGen + 1,childGenes,owner) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1134)
+		- pureDegree = uint16(geneScience.getPureFromGene(_genes)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#439)
+		- _tp = geneScience.getWizzType(_genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#453)
+		- _genes = geneScience.clearWizzType(_genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#455)
+	Event emitted after the call(s):
+	- Birth(_owner,newKittenId,uint256(_panda.matronId),uint256(_panda.sireId),_panda.genes) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#491-497)
+		- kittenId = _createPanda(_matronId,matron.siringWithId,parentGen + 1,childGenes,owner) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1134)
+	- Transfer(_from,_to,_tokenId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#404)
+		- kittenId = _createPanda(_matronId,matron.siringWithId,parentGen + 1,childGenes,owner) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1134)
+Reentrancy in PandaBreeding.giveBirth(uint256,uint256[2],uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091-1158):
+	External calls:
+	- probability = (geneScience.getPureFromGene(matron.genes) + geneScience.getPureFromGene(sire.genes)) / 2 + _factors[0] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1122)
+	Event emitted after the call(s):
+	- Abortion(pandaIndexToOwner[_matronId],_matronId,sireId) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1136)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3
+
+PandaBase._createPanda(uint256,uint256,uint256,uint256[2],address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#416-504) uses timestamp for comparisons
+	Dangerous comparisons:
+	- pandas.length > 0 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#438)
+PandaOwnership.tokensOfOwner(address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#718-742) uses timestamp for comparisons
+	Dangerous comparisons:
+	- catId <= totalCats (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#733)
+PandaBreeding.isPregnant(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#901-908) uses timestamp for comparisons
+	Dangerous comparisons:
+	- pandas[_pandaId].siringWithId != 0 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#907)
+PandaBreeding._exchangeMatronSireId(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#990-996) uses timestamp for comparisons
+	Dangerous comparisons:
+	- geneScience.getSex(pandas[_matronId].genes) == 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#991)
+PandaBreeding.giveBirth(uint256,uint256[2],uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091-1158) uses timestamp for comparisons
+	Dangerous comparisons:
+	- uint256(keccak256()(block.blockhash(block.number - 2),now)) % 100 < probability (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1131)
+ClockAuctionBase._bid(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1254-1313) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(_bidAmount >= price) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1269)
+	- price > 0 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1280)
+ClockAuctionBase._currentPrice(ClockAuctionBase.Auction) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1333-1353) uses timestamp for comparisons
+	Dangerous comparisons:
+	- now > _auction.startedAt (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1343)
+ClockAuctionBase._computeCurrentPrice(uint256,uint256,uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1359-1394) uses timestamp for comparisons
+	Dangerous comparisons:
+	- _secondsPassed >= _duration (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1374)
+SaleClockAuction.bid(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1776-1791) uses timestamp for comparisons
+	Dangerous comparisons:
+	- isGen0 == 1 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1786)
+SaleClockAuctionERC20._addAuctionERC20(uint256,ClockAuctionBase.Auction,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1911-1925) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(_auction.duration >= 60) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1914)
+SaleClockAuctionERC20.withdrawERC20Balance(address,address) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1958-1962) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(balances[_erc20Address] > 0) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1959)
+SaleClockAuctionERC20._bidERC20(address,address,uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1966-2016) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(_bidAmount >= price) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1985)
+	- price > 0 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1996)
+	- require(bool)(ERC20(_erc20Address).transferFrom(_buyerAddress,seller,sellerProceeds)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2005)
+	- auctioneerCut > 0 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2006)
+	- require(bool)(ERC20(_erc20Address).transferFrom(_buyerAddress,address(this),auctioneerCut)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2007)
+PandaCore.init() (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2379-2387) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(pandas.length == 0) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2381)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+PandaOwnership._memcpy(uint256,uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#747-764) uses assembly
+	- INLINE ASM (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#750-753)
+	- INLINE ASM (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#759-764)
+PandaOwnership._toString(bytes32[4],uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#769-782) uses assembly
+	- INLINE ASM (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#774-779)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage
+
+PandaOwnership._memcpy(uint256,uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#747-764) is never used and should be removed
+PandaOwnership._toString(bytes32[4],uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#769-782) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+
+Deprecated standard detected uint256(keccak256()(block.blockhash(block.number - 2),now)) % 100 < probability (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1131):
+	- Usage of "block.blockhash()" should be replaced with "blockhash()"
+Deprecated standard detected bHash = keccak256()(block.blockhash(block.number),block.blockhash(block.number - 1)) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1808):
+	- Usage of "block.blockhash()" should be replaced with "blockhash()"
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#deprecated-standards
+
+Version constraint ^0.4.24 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x
+	- ExpExponentCleanup
+	- EventStructWrongData.
+It is used by:
+	- ^0.4.24 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#7)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Parameter PandaAccessControl.setCEO(address)._newCEO (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#168) is not in mixedCase
+Parameter PandaAccessControl.setCFO(address)._newCFO (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#176) is not in mixedCase
+Parameter PandaAccessControl.setCOO(address)._newCOO (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#184) is not in mixedCase
+Parameter PandaBase.getWizzPandaQuotaOf(uint256)._tp (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#370) is not in mixedCase
+Parameter PandaBase.getWizzPandaCountOf(uint256)._tp (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#374) is not in mixedCase
+Parameter PandaBase.setTotalWizzPandaOf(uint256,uint256)._tp (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#378) is not in mixedCase
+Parameter PandaBase.setTotalWizzPandaOf(uint256,uint256)._total (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#378) is not in mixedCase
+Parameter PandaBase.getWizzTypeOf(uint256)._id (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#384) is not in mixedCase
+Parameter ERC721Metadata.getMetadata(uint256,string)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#516) is not in mixedCase
+Parameter PandaOwnership.supportsInterface(bytes4)._interfaceID (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#568) is not in mixedCase
+Parameter PandaOwnership.balanceOf(address)._owner (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#606) is not in mixedCase
+Parameter PandaOwnership.transfer(address,uint256)._to (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#617) is not in mixedCase
+Parameter PandaOwnership.transfer(address,uint256)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#618) is not in mixedCase
+Parameter PandaOwnership.approve(address,uint256)._to (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#649) is not in mixedCase
+Parameter PandaOwnership.approve(address,uint256)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#650) is not in mixedCase
+Parameter PandaOwnership.transferFrom(address,address,uint256)._from (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#673) is not in mixedCase
+Parameter PandaOwnership.transferFrom(address,address,uint256)._to (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#674) is not in mixedCase
+Parameter PandaOwnership.transferFrom(address,address,uint256)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#675) is not in mixedCase
+Parameter PandaOwnership.ownerOf(uint256)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#702) is not in mixedCase
+Parameter PandaOwnership.tokensOfOwner(address)._owner (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#718) is not in mixedCase
+Constant PandaOwnership.InterfaceSignature_ERC165 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#550-551) is not in UPPER_CASE_WITH_UNDERSCORES
+Constant PandaOwnership.InterfaceSignature_ERC721 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#553-563) is not in UPPER_CASE_WITH_UNDERSCORES
+Parameter PandaBreeding.setGeneScienceAddress(address)._address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#815) is not in mixedCase
+Parameter PandaBreeding.approveSiring(address,uint256)._addr (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#867) is not in mixedCase
+Parameter PandaBreeding.approveSiring(address,uint256)._sireId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#867) is not in mixedCase
+Parameter PandaBreeding.isReadyToBreed(uint256)._pandaId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#890) is not in mixedCase
+Parameter PandaBreeding.isPregnant(uint256)._pandaId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#901) is not in mixedCase
+Parameter PandaBreeding.canBreedWith(uint256,uint256)._matronId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#978) is not in mixedCase
+Parameter PandaBreeding.canBreedWith(uint256,uint256)._sireId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#978) is not in mixedCase
+Parameter PandaBreeding.breedWithAuto(uint256,uint256)._matronId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1033) is not in mixedCase
+Parameter PandaBreeding.breedWithAuto(uint256,uint256)._sireId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1033) is not in mixedCase
+Parameter PandaBreeding.giveBirth(uint256,uint256[2],uint256[2])._matronId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091) is not in mixedCase
+Parameter PandaBreeding.giveBirth(uint256,uint256[2],uint256[2])._childGenes (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091) is not in mixedCase
+Parameter PandaBreeding.giveBirth(uint256,uint256[2],uint256[2])._factors (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091) is not in mixedCase
+Parameter ClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1507) is not in mixedCase
+Parameter ClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._startingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1508) is not in mixedCase
+Parameter ClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._endingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1509) is not in mixedCase
+Parameter ClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._duration (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1510) is not in mixedCase
+Parameter ClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._seller (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1511) is not in mixedCase
+Parameter ClockAuction.bid(uint256)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1538) is not in mixedCase
+Parameter ClockAuction.cancelAuction(uint256)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1553) is not in mixedCase
+Parameter ClockAuction.cancelAuctionWhenPaused(uint256)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1567) is not in mixedCase
+Parameter ClockAuction.getAuction(uint256)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1579) is not in mixedCase
+Parameter ClockAuction.getCurrentPrice(uint256)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1603) is not in mixedCase
+Constant ClockAuction.InterfaceSignature_ERC721 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1466) is not in UPPER_CASE_WITH_UNDERSCORES
+Parameter SiringClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1638) is not in mixedCase
+Parameter SiringClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._startingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1639) is not in mixedCase
+Parameter SiringClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._endingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1640) is not in mixedCase
+Parameter SiringClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._duration (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1641) is not in mixedCase
+Parameter SiringClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._seller (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1642) is not in mixedCase
+Parameter SiringClockAuction.bid(uint256)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1669) is not in mixedCase
+Parameter SaleClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1719) is not in mixedCase
+Parameter SaleClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._startingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1720) is not in mixedCase
+Parameter SaleClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._endingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1721) is not in mixedCase
+Parameter SaleClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._duration (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1722) is not in mixedCase
+Parameter SaleClockAuction.createAuction(uint256,uint256,uint256,uint256,address)._seller (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1723) is not in mixedCase
+Parameter SaleClockAuction.createGen0Auction(uint256,uint256,uint256,uint256,address)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1747) is not in mixedCase
+Parameter SaleClockAuction.createGen0Auction(uint256,uint256,uint256,uint256,address)._startingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1748) is not in mixedCase
+Parameter SaleClockAuction.createGen0Auction(uint256,uint256,uint256,uint256,address)._endingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1749) is not in mixedCase
+Parameter SaleClockAuction.createGen0Auction(uint256,uint256,uint256,uint256,address)._duration (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1750) is not in mixedCase
+Parameter SaleClockAuction.createGen0Auction(uint256,uint256,uint256,uint256,address)._seller (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1751) is not in mixedCase
+Parameter SaleClockAuction.bid(uint256)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1776) is not in mixedCase
+Parameter SaleClockAuction.createPanda(uint256,uint256)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1793) is not in mixedCase
+Parameter SaleClockAuction.createPanda(uint256,uint256)._type (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1793) is not in mixedCase
+Variable SaleClockAuction.CommonPanda (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1700) is not in mixedCase
+Variable SaleClockAuction.RarePanda (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1701) is not in mixedCase
+Variable SaleClockAuction.CommonPandaIndex (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1702) is not in mixedCase
+Variable SaleClockAuction.RarePandaIndex (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1703) is not in mixedCase
+Parameter SaleClockAuctionERC20.erc20ContractSwitch(address,uint256)._erc20address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1861) is not in mixedCase
+Parameter SaleClockAuctionERC20.erc20ContractSwitch(address,uint256)._onoff (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1861) is not in mixedCase
+Parameter SaleClockAuctionERC20.createAuction(uint256,address,uint256,uint256,uint256,address)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1875) is not in mixedCase
+Parameter SaleClockAuctionERC20.createAuction(uint256,address,uint256,uint256,uint256,address)._erc20Address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1876) is not in mixedCase
+Parameter SaleClockAuctionERC20.createAuction(uint256,address,uint256,uint256,uint256,address)._startingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1877) is not in mixedCase
+Parameter SaleClockAuctionERC20.createAuction(uint256,address,uint256,uint256,uint256,address)._endingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1878) is not in mixedCase
+Parameter SaleClockAuctionERC20.createAuction(uint256,address,uint256,uint256,uint256,address)._duration (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1879) is not in mixedCase
+Parameter SaleClockAuctionERC20.createAuction(uint256,address,uint256,uint256,uint256,address)._seller (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1880) is not in mixedCase
+Parameter SaleClockAuctionERC20.bidERC20(uint256,uint256)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1935) is not in mixedCase
+Parameter SaleClockAuctionERC20.bidERC20(uint256,uint256)._amount (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1935) is not in mixedCase
+Parameter SaleClockAuctionERC20.cancelAuction(uint256)._tokenId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1947) is not in mixedCase
+Parameter SaleClockAuctionERC20.withdrawERC20Balance(address,address)._erc20Address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1958) is not in mixedCase
+Parameter SaleClockAuctionERC20.withdrawERC20Balance(address,address)._to (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1958) is not in mixedCase
+Parameter PandaAuction.setSaleAuctionAddress(address)._address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2032) is not in mixedCase
+Parameter PandaAuction.setSaleAuctionERC20Address(address)._address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2042) is not in mixedCase
+Parameter PandaAuction.setSiringAuctionAddress(address)._address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2054) is not in mixedCase
+Parameter PandaAuction.createSaleAuction(uint256,uint256,uint256,uint256)._pandaId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2067) is not in mixedCase
+Parameter PandaAuction.createSaleAuction(uint256,uint256,uint256,uint256)._startingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2068) is not in mixedCase
+Parameter PandaAuction.createSaleAuction(uint256,uint256,uint256,uint256)._endingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2069) is not in mixedCase
+Parameter PandaAuction.createSaleAuction(uint256,uint256,uint256,uint256)._duration (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2070) is not in mixedCase
+Parameter PandaAuction.createSaleAuctionERC20(uint256,address,uint256,uint256,uint256)._pandaId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2098) is not in mixedCase
+Parameter PandaAuction.createSaleAuctionERC20(uint256,address,uint256,uint256,uint256)._erc20address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2099) is not in mixedCase
+Parameter PandaAuction.createSaleAuctionERC20(uint256,address,uint256,uint256,uint256)._startingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2100) is not in mixedCase
+Parameter PandaAuction.createSaleAuctionERC20(uint256,address,uint256,uint256,uint256)._endingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2101) is not in mixedCase
+Parameter PandaAuction.createSaleAuctionERC20(uint256,address,uint256,uint256,uint256)._duration (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2102) is not in mixedCase
+Parameter PandaAuction.switchSaleAuctionERC20For(address,uint256)._erc20address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2128) is not in mixedCase
+Parameter PandaAuction.switchSaleAuctionERC20For(address,uint256)._onoff (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2128) is not in mixedCase
+Parameter PandaAuction.createSiringAuction(uint256,uint256,uint256,uint256)._pandaId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2137) is not in mixedCase
+Parameter PandaAuction.createSiringAuction(uint256,uint256,uint256,uint256)._startingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2138) is not in mixedCase
+Parameter PandaAuction.createSiringAuction(uint256,uint256,uint256,uint256)._endingPrice (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2139) is not in mixedCase
+Parameter PandaAuction.createSiringAuction(uint256,uint256,uint256,uint256)._duration (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2140) is not in mixedCase
+Parameter PandaAuction.bidOnSiringAuction(uint256,uint256)._sireId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2167) is not in mixedCase
+Parameter PandaAuction.bidOnSiringAuction(uint256,uint256)._matronId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2168) is not in mixedCase
+Parameter PandaAuction.withdrawERC20Balance(address,address)._erc20Address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2197) is not in mixedCase
+Parameter PandaAuction.withdrawERC20Balance(address,address)._to (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2197) is not in mixedCase
+Parameter PandaMinting.createWizzPanda(uint256[2],uint256,address)._genes (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2228) is not in mixedCase
+Parameter PandaMinting.createWizzPanda(uint256[2],uint256,address)._generation (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2228) is not in mixedCase
+Parameter PandaMinting.createWizzPanda(uint256[2],uint256,address)._owner (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2228) is not in mixedCase
+Parameter PandaMinting.createPanda(uint256[2],uint256,uint256)._genes (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2240) is not in mixedCase
+Parameter PandaMinting.createPanda(uint256[2],uint256,uint256)._generation (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2240) is not in mixedCase
+Parameter PandaMinting.createPanda(uint256[2],uint256,uint256)._type (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2240) is not in mixedCase
+Parameter PandaMinting.createGen0Auction(uint256)._pandaId (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2277) is not in mixedCase
+Parameter PandaCore.setNewAddress(address)._v2Address (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2395) is not in mixedCase
+Parameter PandaCore.getPanda(uint256)._id (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#2414) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Reentrancy in ClockAuctionBase._bid(uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1254-1313):
+	External calls:
+	- seller.transfer(sellerProceeds) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1295)
+	- msg.sender.transfer(bidExcess) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1307)
+	Event emitted after the call(s):
+	- AuctionSuccessful(_tokenId,price,msg.sender) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1310)
+Reentrancy in SaleClockAuction.bid(uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1776-1791):
+	External calls:
+	- price = _bid(_tokenId,msg.value) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1782)
+		- seller.transfer(sellerProceeds) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1295)
+		- msg.sender.transfer(bidExcess) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1307)
+	State variables written after the call(s):
+	- gen0SaleCount ++ (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1789)
+	- lastGen0SalePrices[gen0SaleCount % 5] = price (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1788)
+Reentrancy in PandaBreeding.giveBirth(uint256,uint256[2],uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1091-1158):
+	External calls:
+	- msg.sender.send(autoBirthFee) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1152)
+	State variables written after the call(s):
+	- delete childOwner[_matronId] (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1154)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4
+
+SaleClockAuction.isSaleClockAuction (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1693) should be constant 
+SaleClockAuctionERC20.isSaleClockAuctionERC20 (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1849) should be constant 
+SiringClockAuction.isSiringClockAuction (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#1624) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+
+mixGenes(uint256[2],uint256[2],uint256,uint256,uint256) should be declared external:
+	- GeneScienceInterface.mixGenes(uint256[2],uint256[2],uint256,uint256,uint256) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#94)
+getPureFromGene(uint256[2]) should be declared external:
+	- GeneScienceInterface.getPureFromGene(uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#96)
+getSex(uint256[2]) should be declared external:
+	- GeneScienceInterface.getSex(uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#99)
+getWizzType(uint256[2]) should be declared external:
+	- GeneScienceInterface.getWizzType(uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#102)
+clearWizzType(uint256[2]) should be declared external:
+	- GeneScienceInterface.clearWizzType(uint256[2]) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#104)
+getMetadata(uint256,string) should be declared external:
+	- ERC721Metadata.getMetadata(uint256,string) (datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol#516-531)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external
+/work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol analyzed (18 contracts with 93 detectors), 199 result(s) found

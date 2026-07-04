@@ -1,0 +1,15 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/09_ERC20Staking_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/09_ERC20Staking_safe1.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+StakableToken.totalSupply (datasets/rsd/reentrancy/safe/09_ERC20Staking_safe1.sol#16) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/rsd/reentrancy/safe/09_ERC20Staking_safe1.sol analyzed (2 contracts with 93 detectors), 2 result(s) found

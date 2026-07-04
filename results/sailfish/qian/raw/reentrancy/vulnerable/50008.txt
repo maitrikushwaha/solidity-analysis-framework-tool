@@ -1,0 +1,95 @@
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Analysis started at: 2026-06-21 07:15:04 PM
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Callgraph generation started!
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Value Range Analysis started
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Generating return summary for collectOwedDividends
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Return summary generated for collectOwedDividends
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Range graph generated
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Processed function collectOwedDividends
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Range graph generated
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Value Range Analysis took 0.000916 seconds
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Dependency detection started!
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | DAO dependency detected in file 50008.sol in contract DividendToken in by composing functions collectOwedDividends and collectOwedDividends
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | TOD dependency detected in file 50008.sol in contract DividendToken in by composing functions collectOwedDividends and collectOwedDividends
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Dependency detection finished!
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Static Analysis took 0.123008 seconds
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Dependency exists
+[INFO] | 2026-06-21 07:15:04 PM | analyzer.50008  | Invoking symbolic executor!
+[36m[#] Analysing started: 50008.sol[0m
+[36m[#] Interprocedural CFG generation started for collectOwedDividends[0m
+[36m[#] Interprocedural CFG generated for collectOwedDividends[0m
+[36m[#] SDG generation started for collectOwedDividends[0m
+[36m[#] SDG generated for collectOwedDividends[0m
+[INFO] | 2026-06-21 07:15:05 PM | analyzer.50008  | Symbolic execution took 0.970004 seconds
+[INFO] | 2026-06-21 07:15:05 PM | analyzer.50008  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:15:05 PM | analyzer.50008  | Analysis finished!
+[INFO] | 2026-06-21 07:15:05 PM | analyzer.50008  | Analysis took 1.093528 seconds
+[INFO] | 2026-06-21 07:15:05 PM | analyzer.50008  | Analysis finished at: 2026-06-21 07:15:05 PM
+[36m[#] Analysis took 1.093528 seconds[0m
+[36m[#] Analysis completed: 50008.sol [0m
+
+=== dependency_info.json ===
+{
+    "50008.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "collectOwedDividends",
+                "collectOwedDividends"
+            ],
+            "from_function": "collectOwedDividends",
+            "to_function": "collectOwedDividends",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: collectOwedDividends\nNode: \nEXPRESSION creditedPoints[msg.sender] -= amount\nIRS: \nREF_3 = REF_3 - amount\"",
+                        "\"BlockID: 5\nFunction: collectOwedDividends\nNode: \nEXPRESSION dividendsCollected += amount\nIRS: \ndividendsCollected = dividendsCollected + amount\""
+                    ],
+                    "state_variable": "creditedPoints"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: collectOwedDividends\nNode: \nEXPRESSION require(bool)(msg.sender.call.value(amount)())\nIRS: \nTMP_2(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:amount \"",
+                        "\"BlockID: 4\nFunction: collectOwedDividends\nNode: \nEXPRESSION creditedPoints[msg.sender] -= amount\nIRS: \nREF_3 = REF_3 - amount\""
+                    ],
+                    "state_variable": "creditedPoints"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: collectOwedDividends\nNode: \nEXPRESSION dividendsCollected += amount\nIRS: \ndividendsCollected = dividendsCollected + amount\"",
+                        "\"BlockID: 4\nFunction: collectOwedDividends\nNode: \nEXPRESSION creditedPoints[msg.sender] -= amount\nIRS: \nREF_3 = REF_3 - amount\""
+                    ],
+                    "state_variable": "creditedPoints"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "collectOwedDividends",
+                "collectOwedDividends"
+            ],
+            "First_function": "collectOwedDividends",
+            "Second_function": "collectOwedDividends",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: collectOwedDividends\nNode: \nEXPRESSION creditedPoints[msg.sender] -= amount\nIRS: \nREF_3 = REF_3 - amount\"",
+                        "\"BlockID: 2\nFunction: collectOwedDividends\nNode: \nEXPRESSION require(bool)(msg.sender.call.value(amount)())\nIRS: \nTMP_2(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:amount \""
+                    ],
+                    "state_variable": "creditedPoints"
+                }
+            ]
+        }
+    ]
+}

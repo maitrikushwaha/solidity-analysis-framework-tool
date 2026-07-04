@@ -1,0 +1,47 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 00_BasicFold_safe2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.8dwcYUhsBR' running
+INFO:CryticCompile:Compilation warnings/errors on 00_BasicFold_safe2.sol:
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> 00_BasicFold_safe2.sol:12:23:
+   |
+12 |     function withdraw(uint256 amt) public {
+   |                       ^^^^^^^^^^^
+
+Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  --> 00_BasicFold_safe2.sol:18:21:
+   |
+18 |     function update(uint256 amt) internal {
+   |                     ^^^^^^^^^^^
+
+
+INFO:root:contract 00_BasicFold_safe2.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 84.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:00_BasicFold_safe2.sol:5:5: Warning: Integer Underflow.
+
+00_BasicFold_safe2.sol:26:2539: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+00_BasicFold_safe2.sol:13:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+INFO:symExec:00_BasicFold_safe2.sol:26:855: Warning: Integer Overflow.
+
+00_BasicFold_safe2.sol:8:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 43422033463993573283839119378257965444976244249615211514796594002967423614978
+    balances[msg.sender] = 75557863725914323419136
+INFO:symExec:00_BasicFold_safe2.sol:8:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 00_BasicFold_safe2.sol:C.json.

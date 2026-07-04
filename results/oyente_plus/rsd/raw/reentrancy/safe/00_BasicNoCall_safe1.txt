@@ -1,0 +1,26 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 00_BasicNoCall_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.oaHBP7WBVK' running
+INFO:root:contract 00_BasicNoCall_safe1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:00_BasicNoCall_safe1.sol:5:5: Warning: Integer Underflow.
+
+00_BasicNoCall_safe1.sol:17:2213: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+00_BasicNoCall_safe1.sol:9:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+INFO:symExec:00_BasicNoCall_safe1.sol:17:1137: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 00_BasicNoCall_safe1.sol:C.json.

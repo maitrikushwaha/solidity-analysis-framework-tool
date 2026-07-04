@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "79.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "21890.sol:7:68: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

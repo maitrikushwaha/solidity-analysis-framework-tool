@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "87.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "14872.sol:9:19: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    phase2StartTime = 1"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

@@ -1,0 +1,7 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/access_control/FibonacciBalance.sol:FibonacciBalance
+offset,opcode,detection
+793,793: SLOAD,Store read after unsafe call
+
+# contract /work/datasets/sbc/access_control/FibonacciBalance.sol:FibonacciLib
+offset,opcode,detection

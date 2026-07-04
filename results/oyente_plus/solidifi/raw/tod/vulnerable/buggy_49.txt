@@ -1,0 +1,18 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc buggy_49.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.bHYNClcxDe' running
+INFO:root:contract buggy_49.sol:TAMC:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 6.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:buggy_49.sol:46:3: Warning: Integer Underflow.
+
+INFO:symExec:buggy_49.sol:46:3: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_49.sol:TAMC.json.

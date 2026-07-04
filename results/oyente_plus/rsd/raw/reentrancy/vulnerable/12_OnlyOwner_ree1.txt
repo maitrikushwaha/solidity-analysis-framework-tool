@@ -1,0 +1,60 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 12_OnlyOwner_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.jiye13qtww' running
+INFO:root:contract 12_OnlyOwner_ree1.sol:ControlledPayout:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 40.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:12_OnlyOwner_ree1.sol:42:1789: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    pendingPayments[i].amount = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+    pendingPayments.length = 1
+12_OnlyOwner_ree1.sol:42:2896: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    pendingPayments[i].amount = 65486250293315376248394281269085596153686516642246123196389721033149975101441
+    pendingPayments[i].amount = 61061978705475452304395296406925510760308630867818966226387052649280343900160
+    pendingPayments[i].amount = 86893538645801404133341185658917472581503096275836698872475570128152638291970
+    pendingPayments[i].amount = 86892571523815317796661789645467565781032482784231499590711358891563135318015
+    pendingPayments[i].amount = 86843590215470159204512186196897001746007740778817352855945504694100549435392
+    pendingPayments.length = 140737488355333
+12_OnlyOwner_ree1.sol:37:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    pendingPayments[i].amount = 86898825383183112439711139579545384525910590463045630303466539341436270851751
+    pendingPayments[i].amount = 28935668210634715639169945392123659731164797216709508056299392071693594787840
+    pendingPayments[i].amount = 115735543229497370993856393463324960407924057344758752153589720788996280287233
+    pendingPayments[i].amount = 58149587150943490325792509611603013847631927210024122099675327240376433013681
+    pendingPayments[i].amount = 115733783284073196423827342846063755647665816759461640083871174409371686666234
+    pendingPayments.length = 24519928653854221733733552434404946937899825954937634823
+INFO:symExec:PC 882: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    pendingPayments[i].amount = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+    pendingPayments.length = 1
+12_OnlyOwner_ree1.sol:39:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    pendingPayments[i].amount = 86898839186596832979945215822237688308156385626997290859615864036920947898877
+    pendingPayments[i].amount = 28935681130935388113226066636400912801061891782545519332336359994945076985856
+    pendingPayments[i].amount = 58075369022795064619565104895935723261138771540780202476612986663281411257264
+    pendingPayments[i].amount = 115733782852763209223265913296917312182558069082446526586564309350122442458837
+    pendingPayments.length = 24519928653854221733733552434404946937899825954937634819
+INFO:symExec:12_OnlyOwner_ree1.sol:39:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:Flow1
+12_OnlyOwner_ree1.sol:39:28: Warning: Transaction-Ordering Dependency.
+
+Flow2
+12_OnlyOwner_ree1.sol:39:28: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:12_OnlyOwner_ree1.sol:39:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 12_OnlyOwner_ree1.sol:ControlledPayout.json.

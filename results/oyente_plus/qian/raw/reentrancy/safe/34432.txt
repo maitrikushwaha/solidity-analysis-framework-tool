@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 34432.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.7Kc0N1UUfN' running
+INFO:CryticCompile:Compilation warnings/errors on 34432.sol:
+34432.sol:9:9: Warning: Use of the "var" keyword is deprecated.
+        var _amount = this.balance;
+        ^---------^
+34432.sol:9:23: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        var _amount = this.balance;
+                      ^----------^
+
+INFO:root:contract 34432.sol:Campaign:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 75.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:34432.sol:10:17: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 34432.sol:Campaign.json.

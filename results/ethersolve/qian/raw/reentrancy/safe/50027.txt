@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/qian/reentrancy/safe/50027.sol:generic_holder
+offset,opcode,detection

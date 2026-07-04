@@ -1,0 +1,467 @@
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Analysis started at: 2026-06-21 07:16:18 PM
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Callgraph generation started!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Callgraph generation finished!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Value Range Analysis started
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _setMetadata
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _setMetadata
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _setMetadata
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getOperator
+[WARNING] | 2026-06-21 07:16:18 PM | analyzer.44     | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for hasActiveOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for hasActiveOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function hasActiveOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _setMultiHashFormat
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _setMultiHashFormat
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _setMultiHashFormat
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _submitHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _submitHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _submitHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _combineMultiHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _combineMultiHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _combineMultiHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _splitMultiHash
+[WARNING] | 2026-06-21 07:16:18 PM | analyzer.44     | Can there be this kind of variables
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _splitMultiHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _splitMultiHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for create
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for create
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function create
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for createSalty
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for createSalty
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function createSalty
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getInitSelector
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getInitSelector
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getInitSelector
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getInstanceRegistry
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getInstanceRegistry
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getInstanceRegistry
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getTemplate
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getTemplate
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getTemplate
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getSaltyInstance
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getSaltyInstance
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getSaltyInstance
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getNextInstance
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getNextInstance
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getNextInstance
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getInstanceCreator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getInstanceCreator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getInstanceCreator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getInstanceType
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getInstanceType
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getInstanceType
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getInstanceCount
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getInstanceCount
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getInstanceCount
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getInstance
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getInstance
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getInstance
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getInstances
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getInstances
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getInstances
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getPaginatedInstances
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getPaginatedInstances
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getPaginatedInstances
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getFactory
+[WARNING] | 2026-06-21 07:16:18 PM | analyzer.44     | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getFactory
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getFactory
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getFactory
+[WARNING] | 2026-06-21 07:16:18 PM | analyzer.44     | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getFactory
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getFactory
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _setMetadata
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _setMetadata
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _setMetadata
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getOperator
+[WARNING] | 2026-06-21 07:16:18 PM | analyzer.44     | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for hasActiveOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for hasActiveOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function hasActiveOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _combineMultiHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _combineMultiHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _combineMultiHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _splitMultiHash
+[WARNING] | 2026-06-21 07:16:18 PM | analyzer.44     | Can there be this kind of variables
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _splitMultiHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _splitMultiHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _setMultiHashFormat
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _setMultiHashFormat
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _setMultiHashFormat
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _submitHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _submitHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _submitHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for initializeTemplate
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for initializeTemplate
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Range graph generated
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function initializeTemplate
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for isOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for isOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function isOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _setOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _setOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Range graph generated
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _setOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _renounceOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _renounceOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Range graph generated
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _renounceOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _activateOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _activateOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Range graph generated
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _activateOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _deactivateOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _deactivateOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Range graph generated
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _deactivateOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getCreator
+[WARNING] | 2026-06-21 07:16:18 PM | analyzer.44     | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getCreator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getCreator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for getCreator
+[WARNING] | 2026-06-21 07:16:18 PM | analyzer.44     | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for getCreator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function getCreator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for isOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for isOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function isOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _setOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _setOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Range graph generated
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _setOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _renounceOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _renounceOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Range graph generated
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _renounceOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _activateOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _activateOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Range graph generated
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _activateOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _deactivateOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _deactivateOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Range graph generated
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _deactivateOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for isActiveOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for isActiveOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function isActiveOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _transferOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _transferOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Range graph generated
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _transferOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for isCreator
+[WARNING] | 2026-06-21 07:16:18 PM | analyzer.44     | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for isCreator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function isCreator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for isCreator
+[WARNING] | 2026-06-21 07:16:18 PM | analyzer.44     | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for isCreator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function isCreator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for isActiveOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for isActiveOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function isActiveOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for _transferOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for _transferOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Range graph generated
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function _transferOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for initialize
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for initialize
+[WARNING] | 2026-06-21 07:16:18 PM | analyzer.44     | Can there be this kind of variables
+[WARNING] | 2026-06-21 07:16:18 PM | analyzer.44     | Can there be this kind of variables
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Range graph generated
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function initialize
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for submitHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for submitHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function submitHash
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for setMetadata
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for setMetadata
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function setMetadata
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for renounceOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for renounceOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Range graph generated
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function renounceOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Generating return summary for transferOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Return summary generated for transferOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Range graph generated
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Processed function transferOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Value Range Analysis took 0.007024 seconds
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Value Range Analysis finished
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Dependency detection started!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | DAO dependency detected in file 44.sol in contract Feed in by composing functions submitHash and initialize
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | DAO dependency detected in file 44.sol in contract Feed in by composing functions submitHash and renounceOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | DAO dependency detected in file 44.sol in contract Feed in by composing functions setMetadata and initialize
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | DAO dependency detected in file 44.sol in contract Feed in by composing functions setMetadata and renounceOperator
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Dependency detection finished!
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Static Analysis took 0.358893 seconds
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Dependency exists
+[INFO] | 2026-06-21 07:16:18 PM | analyzer.44     | Invoking symbolic executor!
+[36m[#] Analysing started: 44.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier initializeTemplate[0m
+[36m[#] Interprocedural CFG generated for modifer initializeTemplate[0m
+[36m[#] Interprocedural CFG generation started for modifier initializeTemplate[0m
+[36m[#] Interprocedural CFG generated for modifer initializeTemplate[0m
+[36m[#] Interprocedural CFG generation started for getOperator[0m
+[36m[#] Interprocedural CFG generated for getOperator[0m
+[36m[#] Interprocedural CFG generation started for isOperator[0m
+[36m[#] Interprocedural CFG generated for isOperator[0m
+[36m[#] Interprocedural CFG generation started for hasActiveOperator[0m
+[36m[#] Interprocedural CFG generated for hasActiveOperator[0m
+[36m[#] Interprocedural CFG generation started for isActiveOperator[0m
+[36m[#] Interprocedural CFG generated for isActiveOperator[0m
+[36m[#] Interprocedural CFG generation started for create[0m
+[36m[#] Interprocedural CFG generated for create[0m
+[36m[#] Interprocedural CFG generation started for createSalty[0m
+[36m[#] Interprocedural CFG generated for createSalty[0m
+[36m[#] Interprocedural CFG generation started for getInitSelector[0m
+[36m[#] Interprocedural CFG generated for getInitSelector[0m
+[36m[#] Interprocedural CFG generation started for getInstanceRegistry[0m
+[36m[#] Interprocedural CFG generated for getInstanceRegistry[0m
+[36m[#] Interprocedural CFG generation started for getTemplate[0m
+[36m[#] Interprocedural CFG generated for getTemplate[0m
+[36m[#] Interprocedural CFG generation started for getSaltyInstance[0m
+[36m[#] Interprocedural CFG generated for getSaltyInstance[0m
+[36m[#] Interprocedural CFG generation started for getNextInstance[0m
+[36m[#] Interprocedural CFG generated for getNextInstance[0m
+[36m[#] Interprocedural CFG generation started for getInstanceCreator[0m
+[36m[#] Interprocedural CFG generated for getInstanceCreator[0m
+[36m[#] Interprocedural CFG generation started for getInstanceType[0m
+[36m[#] Interprocedural CFG generated for getInstanceType[0m
+[36m[#] Interprocedural CFG generation started for getInstanceCount[0m
+[36m[#] Interprocedural CFG generated for getInstanceCount[0m
+[36m[#] Interprocedural CFG generation started for getInstance[0m
+[36m[#] Interprocedural CFG generated for getInstance[0m
+[36m[#] Interprocedural CFG generation started for getInstances[0m
+[36m[#] Interprocedural CFG generated for getInstances[0m
+[36m[#] Interprocedural CFG generation started for getPaginatedInstances[0m
+[36m[#] Interprocedural CFG generated for getPaginatedInstances[0m
+[36m[#] Interprocedural CFG generation started for getCreator[0m
+[36m[#] Interprocedural CFG generated for getCreator[0m
+[36m[#] Interprocedural CFG generation started for isCreator[0m
+[36m[#] Interprocedural CFG generated for isCreator[0m
+[36m[#] Interprocedural CFG generation started for getFactory[0m
+[36m[#] Interprocedural CFG generated for getFactory[0m
+[36m[#] Interprocedural CFG generation started for getCreator[0m
+[36m[#] Interprocedural CFG generated for getCreator[0m
+[36m[#] Interprocedural CFG generation started for isCreator[0m
+[36m[#] Interprocedural CFG generated for isCreator[0m
+[36m[#] Interprocedural CFG generation started for getFactory[0m
+[36m[#] Interprocedural CFG generated for getFactory[0m
+[36m[#] Interprocedural CFG generation started for getOperator[0m
+[36m[#] Interprocedural CFG generated for getOperator[0m
+[36m[#] Interprocedural CFG generation started for isOperator[0m
+[36m[#] Interprocedural CFG generated for isOperator[0m
+[36m[#] Interprocedural CFG generation started for hasActiveOperator[0m
+[36m[#] Interprocedural CFG generated for hasActiveOperator[0m
+[36m[#] Interprocedural CFG generation started for isActiveOperator[0m
+[36m[#] Interprocedural CFG generated for isActiveOperator[0m
+[36m[#] Interprocedural CFG generation started for initialize[0m
+[36m[#] Interprocedural CFG generated for initialize[0m
+[36m[#] Interprocedural CFG generation started for submitHash[0m
+[36m[#] Interprocedural CFG generated for submitHash[0m
+[36m[#] Interprocedural CFG generation started for setMetadata[0m
+[36m[#] Interprocedural CFG generated for setMetadata[0m
+[36m[#] Interprocedural CFG generation started for transferOperator[0m
+[36m[#] Interprocedural CFG generated for transferOperator[0m
+[36m[#] Interprocedural CFG generation started for renounceOperator[0m
+[36m[#] Interprocedural CFG generated for renounceOperator[0m
+[36m[#] SDG generation started for getOperator[0m
+[36m[#] SDG generated for getOperator[0m
+[36m[#] SDG generation started for isOperator[0m
+[36m[#] SDG generated for isOperator[0m
+[36m[#] SDG generation started for hasActiveOperator[0m
+[36m[#] SDG generated for hasActiveOperator[0m
+[36m[#] SDG generation started for isActiveOperator[0m
+[36m[#] SDG generated for isActiveOperator[0m
+[36m[#] SDG generation started for create[0m
+[36m[#] SDG generated for create[0m
+[36m[#] SDG generation started for createSalty[0m
+[36m[#] SDG generated for createSalty[0m
+[36m[#] SDG generation started for getInitSelector[0m
+[36m[#] SDG generated for getInitSelector[0m
+[36m[#] SDG generation started for getInstanceRegistry[0m
+[36m[#] SDG generated for getInstanceRegistry[0m
+[36m[#] SDG generation started for getTemplate[0m
+[36m[#] SDG generated for getTemplate[0m
+[36m[#] SDG generation started for getSaltyInstance[0m
+[36m[#] SDG generated for getSaltyInstance[0m
+[36m[#] SDG generation started for getNextInstance[0m
+[36m[#] SDG generated for getNextInstance[0m
+[36m[#] SDG generation started for getInstanceCreator[0m
+[36m[#] SDG generated for getInstanceCreator[0m
+[36m[#] SDG generation started for getInstanceType[0m
+[36m[#] SDG generated for getInstanceType[0m
+[36m[#] SDG generation started for getInstanceCount[0m
+[36m[#] SDG generated for getInstanceCount[0m
+[36m[#] SDG generation started for getInstance[0m
+[36m[#] SDG generated for getInstance[0m
+[36m[#] SDG generation started for getInstances[0m
+[36m[#] SDG generated for getInstances[0m
+[36m[#] SDG generation started for getPaginatedInstances[0m
+[36m[#] SDG generated for getPaginatedInstances[0m
+[36m[#] SDG generation started for getCreator[0m
+[36m[#] SDG generated for getCreator[0m
+[36m[#] SDG generation started for isCreator[0m
+[36m[#] SDG generated for isCreator[0m
+[36m[#] SDG generation started for getFactory[0m
+[36m[#] SDG generated for getFactory[0m
+[36m[#] SDG generation started for modifier initializeTemplate[0m
+[36m[#] SDG generated for modifier initializeTemplate[0m
+[36m[#] SDG generation started for getCreator[0m
+[36m[#] SDG generated for getCreator[0m
+[36m[#] SDG generation started for isCreator[0m
+[36m[#] SDG generated for isCreator[0m
+[36m[#] SDG generation started for getFactory[0m
+[36m[#] SDG generated for getFactory[0m
+[36m[#] SDG generation started for getOperator[0m
+[36m[#] SDG generated for getOperator[0m
+[36m[#] SDG generation started for isOperator[0m
+[36m[#] SDG generated for isOperator[0m
+[36m[#] SDG generation started for hasActiveOperator[0m
+[36m[#] SDG generated for hasActiveOperator[0m
+[36m[#] SDG generation started for isActiveOperator[0m
+[36m[#] SDG generated for isActiveOperator[0m
+[36m[#] SDG generation started for initialize[0m
+[36m[#] SDG generated for initialize[0m
+[36m[#] SDG generation started for submitHash[0m
+[36m[#] SDG generated for submitHash[0m
+[36m[#] SDG generation started for setMetadata[0m
+[36m[#] SDG generated for setMetadata[0m
+[36m[#] SDG generation started for transferOperator[0m
+[36m[#] SDG generated for transferOperator[0m
+[36m[#] SDG generation started for renounceOperator[0m
+[36m[#] SDG generated for renounceOperator[0m
+[36m[#] SDG generation started for modifier initializeTemplate[0m
+[36m[#] SDG generated for modifier initializeTemplate[0m
+[INFO] | 2026-06-21 07:16:19 PM | analyzer.44     | Symbolic execution took 0.529727 seconds
+[INFO] | 2026-06-21 07:16:19 PM | analyzer.44     | Symbolic execution finished!
+[INFO] | 2026-06-21 07:16:19 PM | analyzer.44     | Analysis finished!
+[INFO] | 2026-06-21 07:16:19 PM | analyzer.44     | Analysis took 0.889023 seconds
+[INFO] | 2026-06-21 07:16:19 PM | analyzer.44     | Analysis finished at: 2026-06-21 07:16:19 PM
+[36m[#] Analysis took 0.889023 seconds[0m
+[36m[#] Analysis completed: 44.sol [0m
+
+=== dependency_info.json ===
+{
+    "44.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "submitHash",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "submitHash",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: _activateOperator\nNode: \nEXPRESSION _status = true\nIRS: \n_status := true\"",
+                        "\"BlockID: 43\nFunction: submitHash\nNode: \nEXPRESSION require(bool,string)(Template.isCreator(msg.sender) || Operated.isActiveOperator(msg.sender),only active operator or creator)\nIRS: \nTMP_108 = SOLIDITY_CALL require(bool,string)(TMP_107,only active operator or creator)\""
+                    ],
+                    "state_variable": "_status"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "submitHash",
+                "renounceOperator"
+            ],
+            "from_function": "renounceOperator",
+            "to_function": "submitHash",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: _renounceOperator\nNode: \nEXPRESSION _status = false\nIRS: \n_status := false\"",
+                        "\"BlockID: 43\nFunction: submitHash\nNode: \nEXPRESSION require(bool,string)(Template.isCreator(msg.sender) || Operated.isActiveOperator(msg.sender),only active operator or creator)\nIRS: \nTMP_108 = SOLIDITY_CALL require(bool,string)(TMP_107,only active operator or creator)\""
+                    ],
+                    "state_variable": "_status"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "setMetadata",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "setMetadata",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: _activateOperator\nNode: \nEXPRESSION _status = true\nIRS: \n_status := true\"",
+                        "\"BlockID: 47\nFunction: setMetadata\nNode: \nEXPRESSION require(bool,string)(Template.isCreator(msg.sender) || Operated.isActiveOperator(msg.sender),only active operator or creator)\nIRS: \nTMP_113 = SOLIDITY_CALL require(bool,string)(TMP_112,only active operator or creator)\""
+                    ],
+                    "state_variable": "_status"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "setMetadata",
+                "renounceOperator"
+            ],
+            "from_function": "renounceOperator",
+            "to_function": "setMetadata",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: _renounceOperator\nNode: \nEXPRESSION _status = false\nIRS: \n_status := false\"",
+                        "\"BlockID: 47\nFunction: setMetadata\nNode: \nEXPRESSION require(bool,string)(Template.isCreator(msg.sender) || Operated.isActiveOperator(msg.sender),only active operator or creator)\nIRS: \nTMP_113 = SOLIDITY_CALL require(bool,string)(TMP_112,only active operator or creator)\""
+                    ],
+                    "state_variable": "_status"
+                }
+            ]
+        }
+    ]
+}

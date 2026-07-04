@@ -1,0 +1,25 @@
+{
+ "evm_code_coverage": "88.5",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol:20:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    depositsCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol:28:9: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol:28:9: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [
+   "0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol:33:9: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

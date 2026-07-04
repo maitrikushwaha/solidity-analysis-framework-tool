@@ -1,0 +1,30 @@
+{
+ "evm_code_coverage": "49.3",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1808:81: Warning: Integer Underflow.\n",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1800:13: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _type = 1\n    nonFungibleContract = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1798:13: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _type = 0\n    nonFungibleContract = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1381:39: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    tokenIdToAuction[_tokenId].isGen0 = 5316911983139663491615228241121378305"
+  ],
+  "integer_overflow": [
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1235:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _startingPrice = 0\n    _endingPrice = 0\n    _duration = 64\n    nonFungibleContract = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2:21: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _type = 1\n    nonFungibleContract = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1800:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _type = 25711008708143844408671393477458601640355247900524685364822016\n    nonFungibleContract = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1798:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _type = 0\n    nonFungibleContract = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1789:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    gen0SaleCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    tokenIdToAuction[_tokenId].isGen0 = 510423550381407695195061911147652317184",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1344:35: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    tokenIdToAuction[_tokenId].isGen0 = 345599278904078126954989835672889589760"
+  ],
+  "callstack": [
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1496:20: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1343:9: Warning: Timestamp Dependency.\n"
+  ],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

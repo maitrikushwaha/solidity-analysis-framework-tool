@@ -1,0 +1,32 @@
+/work/datasets/qian/overflow/safe/50337.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_SAFEMATH
+patternId: 837cac
+severity: 1
+line: 14
+column: 4
+content: usingSafeMathforuint;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: 910067
+severity: 1
+line: 18
+column: 4
+content: functionadd(uintvalue)returns(uint){sellerBalance=sellerBalance.add(value);returnsellerBalance;}
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 16
+column: 4
+content: uintsellerBalance=0;
+
+SOLIDITY_VISIBILITY :2
+SOLIDITY_SAFEMATH :1
+SOLIDITY_PRAGMAS_VERSION :1

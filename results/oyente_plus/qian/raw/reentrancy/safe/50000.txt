@@ -1,0 +1,27 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50000.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.Jv8qy9XyxZ' running
+INFO:CryticCompile:Compilation warnings/errors on 50000.sol:
+50000.sol:6:41: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(msg.sender != address(this)) throw;
+                                        ^---^
+50000.sol:11:42: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(!target.call.value(amount)()) throw;
+                                         ^---^
+50000.sol:10:5: Warning: No visibility specified. Defaulting to "public". 
+    function loggedTransfer(uint amount, address target) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 50000.sol:DividendDistributorv3:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 71.2%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:50000.sol:11:13: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50000.sol:DividendDistributorv3.json.

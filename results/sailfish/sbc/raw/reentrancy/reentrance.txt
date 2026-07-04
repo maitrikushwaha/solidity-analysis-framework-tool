@@ -1,0 +1,120 @@
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Analysis started at: 2026-06-21 07:04:26 PM
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Callgraph generation started!
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Callgraph generation finished!
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Value Range Analysis started
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Generating return summary for donate
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Return summary generated for donate
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Range graph generated
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Processed function donate
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | State variable assignement do not exist
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Processed function balanceOf
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Generating return summary for withdraw
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Return summary generated for withdraw
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Range graph generated
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Processed function withdraw
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Generating return summary for fallback
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Return summary generated for fallback
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | State variable assignement do not exist
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Processed function fallback
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Value Range Analysis took 0.002863 seconds
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Value Range Analysis finished
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Dependency detection started!
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | DAO dependency detected in file reentrance.sol in contract Reentrance in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | TOD dependency detected in file reentrance.sol in contract Reentrance in by composing functions withdraw and donate
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | TOD dependency detected in file reentrance.sol in contract Reentrance in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Dependency detection finished!
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Static Analysis took 0.168674 seconds
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Dependency exists
+[INFO] | 2026-06-21 07:04:26 PM | analyzer.reentrance | Invoking symbolic executor!
+[36m[#] Analysing started: reentrance.sol[0m
+[36m[#] Interprocedural CFG generation started for donate[0m
+[36m[#] Interprocedural CFG generated for donate[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] SDG generation started for donate[0m
+[36m[#] SDG generated for donate[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[INFO] | 2026-06-21 07:04:29 PM | analyzer.reentrance | Symbolic execution took 3.248727 seconds
+[INFO] | 2026-06-21 07:04:29 PM | analyzer.reentrance | Symbolic execution finished!
+[INFO] | 2026-06-21 07:04:29 PM | analyzer.reentrance | Analysis finished!
+[INFO] | 2026-06-21 07:04:29 PM | analyzer.reentrance | Analysis took 3.418638 seconds
+[INFO] | 2026-06-21 07:04:29 PM | analyzer.reentrance | Analysis finished at: 2026-06-21 07:04:29 PM
+[36m[#] Analysis took 3.418638 seconds[0m
+[36m[#] Analysis completed: reentrance.sol [0m
+
+=== dependency_info.json ===
+{
+    "reentrance.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "from_function": "withdraw",
+            "to_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: withdraw\nNode: \nIF balances[msg.sender] >= _amount\nIRS: \nCONDITION TMP_0\"",
+                        "\"BlockID: 9\nFunction: withdraw\nNode: \nEXPRESSION balances[msg.sender] -= _amount\nIRS: \nREF_5 = REF_5 - _amount\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "donate"
+            ],
+            "First_function": "donate",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 2\nFunction: donate\nNode: \nEXPRESSION balances[_to] += msg.value\nIRS: \nREF_0 = REF_0 + msg.value\"",
+                        "\"BlockID: 5\nFunction: withdraw\nNode: \nIF balances[msg.sender] >= _amount\nIRS: \nCONDITION TMP_0\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: withdraw\nNode: \nEXPRESSION balances[msg.sender] -= _amount\nIRS: \nREF_5 = REF_5 - _amount\"",
+                        "\"BlockID: 5\nFunction: withdraw\nNode: \nIF balances[msg.sender] >= _amount\nIRS: \nCONDITION TMP_0\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        }
+    ]
+}

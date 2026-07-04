@@ -1,0 +1,11 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/qian/reentrancy/safe/39867.sol:NinjaToken
+offset,opcode,detection
+991,991: SLOAD,Store read after unsafe call
+1177,1177: SLOAD,Store read after unsafe call
+1184,1184: SSTORE,Store write after unsafe call
+1312,1312: SLOAD,Store read after unsafe call
+1369,1369: SSTORE,Store write after unsafe call
+1382,1382: SSTORE,Store write after unsafe call
+1404,1404: SSTORE,Store write after unsafe call
+1458,1458: SSTORE,Store write after unsafe call

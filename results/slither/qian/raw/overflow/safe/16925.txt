@@ -1,0 +1,39 @@
+
+'solc --version' running
+'solc /work/datasets/qian/overflow/safe/16925.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/overflow/safe' running
+
+Reentrancy in PoormansHoneyPot.withdraw() (datasets/qian/overflow/safe/16925.sol#8-11):
+	External calls:
+	- assert(bool)(msg.sender.call.value(balances[msg.sender])()) (datasets/qian/overflow/safe/16925.sol#9)
+	State variables written after the call(s):
+	- balances[msg.sender] = 0 (datasets/qian/overflow/safe/16925.sol#10)
+	PoormansHoneyPot.balances (datasets/qian/overflow/safe/16925.sol#6) can be used in cross function reentrancies:
+	- PoormansHoneyPot.balances (datasets/qian/overflow/safe/16925.sol#6)
+	- PoormansHoneyPot.withdraw() (datasets/qian/overflow/safe/16925.sol#8-11)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/overflow/safe/16925.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in PoormansHoneyPot.withdraw() (datasets/qian/overflow/safe/16925.sol#8-11):
+	- assert(bool)(msg.sender.call.value(balances[msg.sender])()) (datasets/qian/overflow/safe/16925.sol#9)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/work/datasets/qian/overflow/safe/16925.sol analyzed (1 contracts with 93 detectors), 4 result(s) found

@@ -1,0 +1,34 @@
+
+'solc --version' running
+'solc /work/datasets/qian/reentrancy/safe/21886.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/reentrancy/safe' running
+Compilation warnings/errors on /work/datasets/qian/reentrancy/safe/21886.sol:
+/work/datasets/qian/reentrancy/safe/21886.sol:6:18: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function buy(address recipient, uint256 value) public payable {
+                 ^---------------^
+
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/reentrancy/safe/21886.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in AutomobileCyberchainToken.buy(address,uint256) (datasets/qian/reentrancy/safe/21886.sol#6-10):
+	- require(bool)(msg.sender.call.value(msg.value - value)()) (datasets/qian/reentrancy/safe/21886.sol#8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/work/datasets/qian/reentrancy/safe/21886.sol analyzed (1 contracts with 93 detectors), 3 result(s) found

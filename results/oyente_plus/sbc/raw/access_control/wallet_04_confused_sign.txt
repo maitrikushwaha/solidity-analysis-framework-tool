@@ -1,0 +1,34 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc wallet_04_confused_sign.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.GoL41nvomU' running
+INFO:CryticCompile:Compilation warnings/errors on wallet_04_confused_sign.sol:
+wallet_04_confused_sign.sol:39:22: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+         to.transfer(this.balance);
+                     ^----------^
+
+INFO:root:contract wallet_04_confused_sign.sol:Wallet:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:wallet_04_confused_sign.sol:32:10: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    amount = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+INFO:symExec:wallet_04_confused_sign.sol:24:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 75330192924713224967619494070566466192932062421080463386485572151689267069237
+INFO:symExec:Flow1
+wallet_04_confused_sign.sol:31:10: Warning: Transaction-Ordering Dependency.
+
+Flow2
+wallet_04_confused_sign.sol:39:10: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to wallet_04_confused_sign.sol:Wallet.json.

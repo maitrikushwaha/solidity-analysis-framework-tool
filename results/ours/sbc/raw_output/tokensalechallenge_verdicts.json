@@ -1,0 +1,12 @@
+{
+  "filename": "tokensalechallenge.sol",
+  "reentrancy": 0,
+  "overflow": 1,
+  "timestamp": 0,
+  "tod": 0,
+  "duration_s": 1.48,
+  "error": null,
+  "reentrancy_domains": [
+    "Box"
+  ]
+}

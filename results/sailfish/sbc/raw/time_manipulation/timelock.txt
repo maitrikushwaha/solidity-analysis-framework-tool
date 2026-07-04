@@ -1,0 +1,133 @@
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Analysis started at: 2026-06-21 07:07:38 PM
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Callgraph generation started!
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Callgraph generation finished!
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Value Range Analysis started
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Generating return summary for deposit
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Return summary generated for deposit
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Range graph generated
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Processed function deposit
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Generating return summary for increaseLockTime
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Return summary generated for increaseLockTime
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Range graph generated
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Processed function increaseLockTime
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Generating return summary for withdraw
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Return summary generated for withdraw
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Range graph generated
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Processed function withdraw
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Value Range Analysis took 0.001622 seconds
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Value Range Analysis finished
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Dependency detection started!
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | TOD dependency detected in file timelock.sol in contract TimeLock in by composing functions withdraw and deposit
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | TOD dependency detected in file timelock.sol in contract TimeLock in by composing functions withdraw and increaseLockTime
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | TOD dependency detected in file timelock.sol in contract TimeLock in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Dependency detection finished!
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Static Analysis took 0.182959 seconds
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Dependency exists
+[INFO] | 2026-06-21 07:07:38 PM | analyzer.timelock | Invoking symbolic executor!
+[36m[#] Analysing started: timelock.sol[0m
+[36m[#] Interprocedural CFG generation started for deposit[0m
+[36m[#] Interprocedural CFG generated for deposit[0m
+[36m[#] Interprocedural CFG generation started for increaseLockTime[0m
+[36m[#] Interprocedural CFG generated for increaseLockTime[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] SDG generation started for deposit[0m
+[36m[#] SDG generated for deposit[0m
+[36m[#] SDG generation started for increaseLockTime[0m
+[36m[#] SDG generated for increaseLockTime[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[INFO] | 2026-06-21 07:07:40 PM | analyzer.timelock | Symbolic execution took 2.174269 seconds
+[INFO] | 2026-06-21 07:07:40 PM | analyzer.timelock | Symbolic execution finished!
+[INFO] | 2026-06-21 07:07:40 PM | analyzer.timelock | Analysis finished!
+[INFO] | 2026-06-21 07:07:40 PM | analyzer.timelock | Analysis took 2.358284 seconds
+[INFO] | 2026-06-21 07:07:40 PM | analyzer.timelock | Analysis finished at: 2026-06-21 07:07:40 PM
+[36m[#] Analysis took 2.358284 seconds[0m
+[36m[#] Analysis completed: timelock.sol [0m
+
+=== dependency_info.json ===
+{
+    "timelock.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "deposit"
+            ],
+            "First_function": "deposit",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 2\nFunction: deposit\nNode: \nEXPRESSION balances[msg.sender] += msg.value\nIRS: \nREF_0 = REF_0 + msg.value\"",
+                        "\"BlockID: 7\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(balances[msg.sender] > 0)\nIRS: \nTMP_2 = SOLIDITY_CALL require(bool)(TMP_1)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 2\nFunction: deposit\nNode: \nEXPRESSION balances[msg.sender] += msg.value\nIRS: \nREF_0 = REF_0 + msg.value\"",
+                        "\"BlockID: 10\nFunction: withdraw\nNode: \nEXPRESSION msg.sender.transfer(transferValue)\nIRS: \nTransfer dest:msg.sender value:transferValue\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 3\nFunction: deposit\nNode: \nEXPRESSION lockTime[msg.sender] = now + 604800\nIRS: \nREF_1 := TMP_0\"",
+                        "\"BlockID: 8\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(now > lockTime[msg.sender])\nIRS: \nTMP_4 = SOLIDITY_CALL require(bool)(TMP_3)\""
+                    ],
+                    "state_variable": "lockTime"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "increaseLockTime"
+            ],
+            "First_function": "increaseLockTime",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: increaseLockTime\nNode: \nEXPRESSION lockTime[msg.sender] += _secondsToIncrease\nIRS: \nREF_2 = REF_2 + _secondsToIncrease\"",
+                        "\"BlockID: 8\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(now > lockTime[msg.sender])\nIRS: \nTMP_4 = SOLIDITY_CALL require(bool)(TMP_3)\""
+                    ],
+                    "state_variable": "lockTime"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: withdraw\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_6 := 0\"",
+                        "\"BlockID: 7\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(balances[msg.sender] > 0)\nIRS: \nTMP_2 = SOLIDITY_CALL require(bool)(TMP_1)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: withdraw\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_6 := 0\"",
+                        "\"BlockID: 10\nFunction: withdraw\nNode: \nEXPRESSION msg.sender.transfer(transferValue)\nIRS: \nTransfer dest:msg.sender value:transferValue\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        }
+    ]
+}

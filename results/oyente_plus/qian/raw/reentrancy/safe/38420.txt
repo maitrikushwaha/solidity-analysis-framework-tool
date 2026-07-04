@@ -1,0 +1,27 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 38420.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.RrGvgGK3dv' running
+INFO:CryticCompile:Compilation warnings/errors on 38420.sol:
+38420.sol:10:55: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(!sale.call.value(this.balance - bounty)()) throw;
+                                                      ^---^
+38420.sol:10:29: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        if(!sale.call.value(this.balance - bounty)()) throw;
+                            ^----------^
+38420.sol:9:5: Warning: No visibility specified. Defaulting to "public". 
+    function claim_bounty(){
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 38420.sol:CoinDashBuyer:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 79.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:38420.sol:10:13: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 38420.sol:CoinDashBuyer.json.

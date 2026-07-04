@@ -1,0 +1,130 @@
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Analysis started at: 2026-06-21 07:04:37 PM
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Callgraph generation started!
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Callgraph generation finished!
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Value Range Analysis started
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Generating return summary for transfer
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Return summary generated for transfer
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Range graph generated
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Processed function transfer
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Generating return summary for withdrawBalance
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Return summary generated for withdrawBalance
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Range graph generated
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Processed function withdrawBalance
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Value Range Analysis took 0.001200 seconds
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Value Range Analysis finished
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Dependency detection started!
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | DAO dependency detected in file reentrancy_cross_function.sol in contract Reentrancy_cross_function in by composing functions withdrawBalance and transfer
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | DAO dependency detected in file reentrancy_cross_function.sol in contract Reentrancy_cross_function in by composing functions withdrawBalance and withdrawBalance
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | TOD dependency detected in file reentrancy_cross_function.sol in contract Reentrancy_cross_function in by composing functions withdrawBalance and transfer
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | TOD dependency detected in file reentrancy_cross_function.sol in contract Reentrancy_cross_function in by composing functions withdrawBalance and withdrawBalance
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Dependency detection finished!
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Static Analysis took 0.187326 seconds
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Dependency exists
+[INFO] | 2026-06-21 07:04:37 PM | analyzer.reentrancy_cross_function | Invoking symbolic executor!
+[36m[#] Analysing started: reentrancy_cross_function.sol[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for withdrawBalance[0m
+[36m[#] Interprocedural CFG generated for withdrawBalance[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for withdrawBalance[0m
+[36m[#] SDG generated for withdrawBalance[0m
+[INFO] | 2026-06-21 07:04:39 PM | analyzer.reentrancy_cross_function | Symbolic execution took 2.043541 seconds
+[INFO] | 2026-06-21 07:04:39 PM | analyzer.reentrancy_cross_function | Symbolic execution finished!
+[INFO] | 2026-06-21 07:04:39 PM | analyzer.reentrancy_cross_function | Analysis finished!
+[INFO] | 2026-06-21 07:04:39 PM | analyzer.reentrancy_cross_function | Analysis took 2.231911 seconds
+[INFO] | 2026-06-21 07:04:39 PM | analyzer.reentrancy_cross_function | Analysis finished at: 2026-06-21 07:04:39 PM
+[36m[#] Analysis took 2.231911 seconds[0m
+[36m[#] Analysis completed: reentrancy_cross_function.sol [0m
+
+=== dependency_info.json ===
+{
+    "reentrancy_cross_function.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawBalance",
+                "transfer"
+            ],
+            "from_function": "transfer",
+            "to_function": "withdrawBalance",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 2\nFunction: transfer\nNode: \nIF userBalances[msg.sender] >= amount\nIRS: \nCONDITION TMP_0\"",
+                        "\"BlockID: 9\nFunction: withdrawBalance\nNode: \nEXPRESSION userBalances[msg.sender] = 0\nIRS: \nREF_6 := 0\""
+                    ],
+                    "state_variable": "userBalances"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawBalance",
+                "withdrawBalance"
+            ],
+            "from_function": "withdrawBalance",
+            "to_function": "withdrawBalance",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 11\nFunction: withdrawBalance\nNode: \nEXPRESSION (success) = msg.sender.call.value(amountToWithdraw)()\nIRS: \nTMP_2(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:amountToWithdraw \"",
+                        "\"BlockID: 9\nFunction: withdrawBalance\nNode: \nEXPRESSION userBalances[msg.sender] = 0\nIRS: \nREF_6 := 0\""
+                    ],
+                    "state_variable": "userBalances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawBalance",
+                "transfer"
+            ],
+            "First_function": "transfer",
+            "Second_function": "withdrawBalance",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 3\nFunction: transfer\nNode: \nEXPRESSION userBalances[to] += amount\nIRS: \nREF_1 = REF_1 + amount\"",
+                        "\"BlockID: 7\nFunction: withdrawBalance\nNode: \nEXPRESSION (success) = msg.sender.call.value(amountToWithdraw)()\nIRS: \nTMP_2(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "userBalances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 4\nFunction: transfer\nNode: \nEXPRESSION userBalances[msg.sender] -= amount\nIRS: \nREF_2 = REF_2 - amount\"",
+                        "\"BlockID: 7\nFunction: withdrawBalance\nNode: \nEXPRESSION (success) = msg.sender.call.value(amountToWithdraw)()\nIRS: \nTMP_2(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "userBalances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawBalance",
+                "withdrawBalance"
+            ],
+            "First_function": "withdrawBalance",
+            "Second_function": "withdrawBalance",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: withdrawBalance\nNode: \nEXPRESSION userBalances[msg.sender] = 0\nIRS: \nREF_6 := 0\"",
+                        "\"BlockID: 7\nFunction: withdrawBalance\nNode: \nEXPRESSION (success) = msg.sender.call.value(amountToWithdraw)()\nIRS: \nTMP_2(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "userBalances"
+                }
+            ]
+        }
+    ]
+}

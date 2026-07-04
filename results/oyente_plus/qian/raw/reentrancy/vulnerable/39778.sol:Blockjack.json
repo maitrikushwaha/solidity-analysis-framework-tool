@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "88.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "39778.sol:17:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[ADMIN_CONTRACT] = 0\n    initialBankroll = 28253637039115160488994114029176261092336863071845216822811623423421387374592\n    currentBankroll = 42763440005928310371249593581892601470608012397017910821146912255342395567288"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "39778.sol:15:14: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

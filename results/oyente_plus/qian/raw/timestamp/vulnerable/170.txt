@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 170.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.UpzWpL47wx' running
+INFO:CryticCompile:Compilation warnings/errors on 170.sol:
+170.sol:7:25: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function vestedAmount(address token) public view returns (uint256) {
+                        ^-----------^
+
+INFO:root:contract 170.sol:TokenVesting:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:170.sol:11:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    duration = 25650671635628077330008020994425597968451114935058687386511328258514137670005
+    start = 90612310279450192762509999569073406819412893354215485307353007253607489118476
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 170.sol:TokenVesting.json.

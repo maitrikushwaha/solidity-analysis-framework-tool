@@ -1,0 +1,46 @@
+{
+ "evm_code_coverage": "55.3",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "buggy_25.sol:340:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _odd = 1\n    gameList[_fixtureId].timestamp = 57896044618658097711785492504343953926634992332820282019728792003956564820553\n    gameList[_fixtureId].open_status = 3\n    _selectedTeam = 8\n    gameList[_fixtureId].odd_awayTeamAndDraw = 26959946667150639794667015087019630673637144422540572481103610249216"
+  ],
+  "integer_overflow": [
+   "buggy_25.sol:242:5: Warning: Integer Overflow.\n",
+   "buggy_25.sol:243:5: Warning: Integer Overflow.\n",
+   "buggy_25.sol:244:5: Warning: Integer Overflow.\n",
+   "buggy_25.sol:245:5: Warning: Integer Overflow.\n",
+   "buggy_25.sol:246:5: Warning: Integer Overflow.\n",
+   "buggy_25.sol:247:5: Warning: Integer Overflow.\n",
+   "buggy_25.sol:248:5: Warning: Integer Overflow.\n",
+   "buggy_25.sol:249:5: Warning: Integer Overflow.\n",
+   "buggy_25.sol:2:20: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _odd = 1\n    gameList[_fixtureId].timestamp = 57896044618658097711785492504343953926634992332820282019728792003956564820553\n    gameList[_fixtureId].open_status = 3\n    _selectedTeam = 8\n    gameList[_fixtureId].odd_awayTeamAndDraw = 26959946667150639794667015087019630673637144422540572481103610249216",
+   "buggy_25.sol:340:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _odd = 524288\n    gameList[_fixtureId].timestamp = 3730256751415333683884441817290871547440205564647538392348831623736570413258\n    gameList[_fixtureId].open_status = 3\n    _selectedTeam = 8\n    gameList[_fixtureId].odd_awayTeamAndDraw = 14134776518227074636666380005943348126619871175004951664972849610340958208",
+   "buggy_25.sol:82:3: Warning: Integer Overflow.\n",
+   "buggy_25.sol:59:3: Warning: Integer Overflow.\n",
+   "buggy_25.sol:374:29: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 1\n    betList[_fixtureId][0].player = 1",
+   "buggy_25.sol:375:59: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 1\n    betList[_fixtureId][0].player = 1",
+   "buggy_25.sol:375:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 1\n    betList[_fixtureId][0].player = 1",
+   "buggy_25.sol:390:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 1\n    betList[_fixtureId][0].player = 1",
+   "buggy_25.sol:392:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 1\n    betList[_fixtureId][0].player = 1",
+   "buggy_25.sol:374:29: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    betList[_fixtureId][0].player = 1",
+   "buggy_25.sol:375:59: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    betList[_fixtureId][0].player = 1",
+   "buggy_25.sol:375:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    betList[_fixtureId][0].player = 1"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "buggy_25.sol:482:27: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "buggy_25.sol:359:9: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [
+   "buggy_25.sol:385:9: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

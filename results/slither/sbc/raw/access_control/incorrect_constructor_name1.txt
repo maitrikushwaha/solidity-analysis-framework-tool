@@ -1,0 +1,38 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/access_control/incorrect_constructor_name1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/access_control' running
+Compilation warnings/errors on /work/datasets/sbc/access_control/incorrect_constructor_name1.sol:
+/work/datasets/sbc/access_control/incorrect_constructor_name1.sol:32:23: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+       owner.transfer(this.balance);
+                      ^----------^
+/work/datasets/sbc/access_control/incorrect_constructor_name1.sol:26:5: Warning: No visibility specified. Defaulting to "public". 
+    function () payable {}
+    ^--------------------^
+
+
+Version constraint ^0.4.24 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x
+	- ExpExponentCleanup
+	- EventStructWrongData.
+It is used by:
+	- ^0.4.24 (datasets/sbc/access_control/incorrect_constructor_name1.sol#7)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Function Missing.IamMissing() (datasets/sbc/access_control/incorrect_constructor_name1.sol#20-24) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+/work/datasets/sbc/access_control/incorrect_constructor_name1.sol analyzed (1 contracts with 93 detectors), 3 result(s) found

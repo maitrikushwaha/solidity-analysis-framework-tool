@@ -1,0 +1,63 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/vulnerable' running
+
+C.pay(uint256) (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#10-14) sends eth to arbitrary user
+	Dangerous calls:
+	- (success2,None) = msg.sender.call{value: amt}() (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#11)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+Reentrancy in C.withdraw() (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#16-23):
+	External calls:
+	- pay(0) (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#21)
+		- (success2,None) = msg.sender.call{value: amt}() (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#11)
+	External calls sending eth:
+	- success1 = address(msg.sender).send(balances[msg.sender]) (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#18)
+	- pay(0) (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#21)
+		- (success2,None) = msg.sender.call{value: amt}() (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#11)
+	State variables written after the call(s):
+	- balances[msg.sender] = 0 (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#22)
+	C.balances (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#5) can be used in cross function reentrancies:
+	- C.balances (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#5)
+	- C.deposit() (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#25-27)
+	- C.withdraw() (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#16-23)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+Reentrancy in C.pay(uint256) (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#10-14):
+	External calls:
+	- (success2,None) = msg.sender.call{value: amt}() (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#11)
+	Event emitted after the call(s):
+	- Paid(amt) (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#13)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#1)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in C.pay(uint256) (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#10-14):
+	- (success2,None) = msg.sender.call{value: amt}() (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#11)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Reentrancy in C.withdraw() (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#16-23):
+	External calls:
+	- success1 = address(msg.sender).send(balances[msg.sender]) (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#18)
+	Event emitted after the call(s):
+	- Sent(balances[msg.sender]) (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#20)
+Reentrancy in C.withdraw() (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#16-23):
+	External calls:
+	- success1 = address(msg.sender).send(balances[msg.sender]) (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#18)
+	External calls sending eth:
+	- success1 = address(msg.sender).send(balances[msg.sender]) (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#18)
+	- pay(0) (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#21)
+		- (success2,None) = msg.sender.call{value: amt}() (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#11)
+	State variables written after the call(s):
+	- balances[msg.sender] = 0 (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#22)
+	Event emitted after the call(s):
+	- Paid(amt) (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#13)
+		- pay(0) (datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol#21)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4
+/work/datasets/rsd/reentrancy/vulnerable/07_MixedSendFoldEmit_ree1.sol analyzed (1 contracts with 93 detectors), 7 result(s) found

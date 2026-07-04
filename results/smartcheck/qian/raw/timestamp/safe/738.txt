@@ -1,0 +1,24 @@
+/work/datasets/qian/timestamp/safe/738.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_ADDRESS_HARDCODED
+patternId: adc165
+severity: 1
+line: 8
+column: 53
+content: 0x57Cdd07287f668eC4D58f3E362b4FCC2bC54F5b8
+
+ruleId: SOLIDITY_ADDRESS_HARDCODED
+patternId: adc165
+severity: 1
+line: 15
+column: 24
+content: 0x3d220cfDdc45900C78FF47D3D2f4302A2e994370
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_ADDRESS_HARDCODED :2

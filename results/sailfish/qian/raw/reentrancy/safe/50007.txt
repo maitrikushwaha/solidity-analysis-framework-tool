@@ -1,0 +1,46 @@
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Analysis started at: 2026-06-21 07:13:26 PM
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Range graph generated
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Processed function onlyOwner
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Generating return summary for collectOwedDividends
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Return summary generated for collectOwedDividends
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Range graph generated
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Processed function collectOwedDividends
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Value Range Analysis took 0.001041 seconds
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Static Analysis took 0.041159 seconds
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Dependency does not exist
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Analysis finished!
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Analysis took 0.041327 seconds
+[INFO] | 2026-06-21 07:13:26 PM | analyzer.50007  | Analysis finished at: 2026-06-21 07:13:26 PM
+[36m[#] Analysing started: 50007.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for collectOwedDividends[0m
+[36m[#] Interprocedural CFG generated for collectOwedDividends[0m
+[36m[#] SDG generation started for collectOwedDividends[0m
+[36m[#] SDG generated for collectOwedDividends[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.041327 seconds[0m
+[36m[#] Analysis completed: 50007.sol [0m
+
+=== dependency_info.json ===
+{}

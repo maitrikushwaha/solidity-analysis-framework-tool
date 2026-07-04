@@ -1,0 +1,38 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+[CFG] No reentrancy back-edge: no external-call encoding detected.
+Dependency analysis completed in 0.0063s.
+[DOMAIN] Reentrancy encoding detected → Box + Octagon + Polka
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] Modifier-based reentrancy detected.
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW ==========
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+
+========== PIPELINE 3: TIMESTAMP DEPENDENCY ==========
+
+========== PIPELINE 4: TOD ==========
+
+===== VERDICTS (Box) =====
+[REENTRANCY] Modifier-based reentrancy in function 'airDrop' (line ~11). Modifier 'supportsToken' makes external call Bank(msg.sender).supportsToken() which allows re-entry before function body completes. State-modifying function body can execute multiple times.
+
+===== VERDICTS (Octagon) =====
+[REENTRANCY] Modifier-based reentrancy in function 'airDrop' (line ~11). Modifier 'supportsToken' makes external call Bank(msg.sender).supportsToken() which allows re-entry before function body completes. State-modifying function body can execute multiple times.
+
+===== VERDICTS (Polka) =====
+[REENTRANCY] Modifier-based reentrancy in function 'airDrop' (line ~11). Modifier 'supportsToken' makes external call Bank(msg.sender).supportsToken() which allows re-entry before function body completes. State-modifying function body can execute multiple times.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: VULNERABLE
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: NOT VULNERABLE
+[SUMMARY] TOD: NOT VULNERABLE
+
+Total analysis time: 1.08s

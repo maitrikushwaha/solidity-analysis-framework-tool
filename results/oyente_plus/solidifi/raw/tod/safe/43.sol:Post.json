@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "46.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "43.sol:15:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    metadata = 16785457"
+  ],
+  "integer_overflow": [
+   "43.sol:215:19: Warning: Integer Overflow.\n",
+   "43.sol:15:14: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    metadata = 4294967296",
+   "43.sol:5:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    metadata = 917759941"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

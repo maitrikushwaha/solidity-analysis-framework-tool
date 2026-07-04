@@ -1,0 +1,19 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0xf29ebe930a539a60279ace72c707cba851a57707.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.cD91HMHBvS' running
+INFO:CryticCompile:Compilation warnings/errors on 0xf29ebe930a539a60279ace72c707cba851a57707.sol:
+0xf29ebe930a539a60279ace72c707cba851a57707.sol:16:9: Warning: Return value of low-level calls not used.
+        target.call.value(msg.value)();
+        ^----------------------------^
+
+INFO:root:contract 0xf29ebe930a539a60279ace72c707cba851a57707.sol:B:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 75.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xf29ebe930a539a60279ace72c707cba851a57707.sol:B.json.

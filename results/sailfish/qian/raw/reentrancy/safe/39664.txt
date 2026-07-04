@@ -1,0 +1,42 @@
+[INFO] | 2026-06-21 07:12:28 PM | analyzer.39664  | Analysis started at: 2026-06-21 07:12:28 PM
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Processed function onlyOwner
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Generating return summary for migrateBlockjack
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Return summary generated for migrateBlockjack
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Processed function migrateBlockjack
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Value Range Analysis took 0.000496 seconds
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Static Analysis took 0.045228 seconds
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Dependency does not exist
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Analysis finished!
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Analysis took 0.045460 seconds
+[INFO] | 2026-06-21 07:12:29 PM | analyzer.39664  | Analysis finished at: 2026-06-21 07:12:29 PM
+[36m[#] Analysing started: 39664.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for migrateBlockjack[0m
+[36m[#] Interprocedural CFG generated for migrateBlockjack[0m
+[36m[#] SDG generation started for migrateBlockjack[0m
+[36m[#] SDG generated for migrateBlockjack[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.045460 seconds[0m
+[36m[#] Analysis completed: 39664.sol [0m
+
+=== dependency_info.json ===
+{}

@@ -1,0 +1,50 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+[CFG] Reentrancy back-edge inserted: ExpressionStatement_5 → IfStatement_3
+Dependency analysis completed in 0.0191s.
+[DOMAIN] Reentrancy encoding detected → Box + Octagon + Polka
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] Only gas-limited calls (transfer/send) detected — reentrancy infeasible.
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW ==========
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+
+========== PIPELINE 3: TIMESTAMP DEPENDENCY ==========
+
+========== PIPELINE 4: TOD ==========
+
+===== VERDICTS (Box) =====
+[NO REENTRANCY] Contract uses only gas-limited external calls (transfer/send); reentrancy infeasible.
+[TIMESTAMP] block.timestamp/now compared against a timestamp-derived expression in condition — outcome is manipulable by miner.
+[TOD] Function FunctionDefinition_2: resetInvestment reads storage variable jackpot which is written by externally callable function FunctionDefinition_1: invest. Reordering may affect FunctionDefinition_2: resetInvestment's behavior.
+[TOD] Variable 'jackpot' is assigned in invest() and used as ether transfer amount in resetInvestment(). Transaction reordering may change the transferred amount.
+[TOD] Variable 'lastInvestor' is assigned in invest() and used as ether transfer recipient in resetInvestment(). Transaction reordering may change the transfer target.
+
+===== VERDICTS (Octagon) =====
+[NO REENTRANCY] Contract uses only gas-limited external calls (transfer/send); reentrancy infeasible.
+[TIMESTAMP] block.timestamp/now compared against a timestamp-derived expression in condition — outcome is manipulable by miner.
+[TOD] Function FunctionDefinition_2: resetInvestment reads storage variable jackpot which is written by externally callable function FunctionDefinition_1: invest. Reordering may affect FunctionDefinition_2: resetInvestment's behavior.
+[TOD] Variable 'jackpot' is assigned in invest() and used as ether transfer amount in resetInvestment(). Transaction reordering may change the transferred amount.
+[TOD] Variable 'lastInvestor' is assigned in invest() and used as ether transfer recipient in resetInvestment(). Transaction reordering may change the transfer target.
+
+===== VERDICTS (Polka) =====
+[NO REENTRANCY] Contract uses only gas-limited external calls (transfer/send); reentrancy infeasible.
+[TIMESTAMP] block.timestamp/now compared against a timestamp-derived expression in condition — outcome is manipulable by miner.
+[TOD] Function FunctionDefinition_2: resetInvestment reads storage variable jackpot which is written by externally callable function FunctionDefinition_1: invest. Reordering may affect FunctionDefinition_2: resetInvestment's behavior.
+[TOD] Variable 'jackpot' is assigned in invest() and used as ether transfer amount in resetInvestment(). Transaction reordering may change the transferred amount.
+[TOD] Variable 'lastInvestor' is assigned in invest() and used as ether transfer recipient in resetInvestment(). Transaction reordering may change the transfer target.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: NOT VULNERABLE
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: VULNERABLE
+[SUMMARY] TOD: VULNERABLE
+
+Total analysis time: 1.50s

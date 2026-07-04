@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "88.7",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "15566.sol:11:3: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    deadLine = 57896044618658097711785492504343953926634992332820282019728792003956564819968"
+  ],
+  "integer_overflow": [
+   "15566.sol:1:24: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    deadLine = 57896044618658097711785492504343953926634992332820282019728792003956564819968",
+   "15566.sol:11:3: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    deadLine = 57896044618658097711785492504343953926634992332820282019728792003956564819968",
+   "15566.sol:4:2: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

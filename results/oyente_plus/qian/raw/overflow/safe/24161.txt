@@ -1,0 +1,23 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 24161.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.HMLxy9dFge' running
+INFO:CryticCompile:Compilation warnings/errors on 24161.sol:
+24161.sol:10:13: Warning: Return value of low-level calls not used.
+            msg.sender.call.value(ExtractDepositTime[msg.sender])();
+            ^-----------------------------------------------------^
+
+INFO:root:contract 24161.sol:FREE_FOR_FUN:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 81.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:24161.sol:10:13: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:24161.sol:10:13: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 24161.sol:FREE_FOR_FUN.json.

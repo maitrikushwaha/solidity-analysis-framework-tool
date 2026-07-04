@@ -1,0 +1,58 @@
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Analysis started at: 2026-06-21 07:13:01 PM
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Generating return summary for untrustedWithdrawReward
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Return summary generated for untrustedWithdrawReward
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Range graph generated
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Processed function untrustedWithdrawReward
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Value Range Analysis took 0.000298 seconds
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | TOD dependency detected in file 40733.sol in contract Owner in by composing functions untrustedWithdrawReward and untrustedWithdrawReward
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Static Analysis took 0.051725 seconds
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Dependency exists
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Invoking symbolic executor!
+[36m[#] Analysing started: 40733.sol[0m
+[36m[#] Interprocedural CFG generation started for untrustedWithdrawReward[0m
+[36m[#] Interprocedural CFG generated for untrustedWithdrawReward[0m
+[36m[#] SDG generation started for untrustedWithdrawReward[0m
+[36m[#] SDG generated for untrustedWithdrawReward[0m
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Symbolic execution took 0.436221 seconds
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Analysis finished!
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Analysis took 0.488490 seconds
+[INFO] | 2026-06-21 07:13:01 PM | analyzer.40733  | Analysis finished at: 2026-06-21 07:13:01 PM
+[36m[#] Analysis took 0.488490 seconds[0m
+[36m[#] Analysis completed: 40733.sol [0m
+
+=== dependency_info.json ===
+{
+    "40733.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "untrustedWithdrawReward",
+                "untrustedWithdrawReward"
+            ],
+            "First_function": "untrustedWithdrawReward",
+            "Second_function": "untrustedWithdrawReward",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: untrustedWithdrawReward\nNode: \nEXPRESSION rewardsForA[recipient] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 3\nFunction: untrustedWithdrawReward\nNode: \nIF recipient.call.value(amountToWithdraw)() == false\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "rewardsForA"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "83.5",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "29089.sol:10:16: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

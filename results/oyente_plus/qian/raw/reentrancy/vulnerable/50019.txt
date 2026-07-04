@@ -1,0 +1,26 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50019.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.ec5712Ary8' running
+INFO:CryticCompile:Compilation warnings/errors on 50019.sol:
+50019.sol:12:5: Warning: No visibility specified. Defaulting to "public". 
+    function buyRecipient(address recipient) payable {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 50019.sol:MoldCoin:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:50019.sol:18:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[founder] = 0
+    coinAllocation = 57896044618658097711785492504343953926634992332820282019728792003956564820024
+INFO:symExec:50019.sol:14:9: Warning: Timestamp Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50019.sol:MoldCoin.json.

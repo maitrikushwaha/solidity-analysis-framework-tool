@@ -1,0 +1,27 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 14928.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.FyJilwS6e1' running
+INFO:CryticCompile:Compilation warnings/errors on 14928.sol:
+14928.sol:12:34: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        uint minedHashRel = uint(sha256(minedAtBlock + randomNumber + uint(msg.sender))) % 100000;
+                                 ^----------------------------------------------------^
+14928.sol:12:34: Warning: The provided argument of type uint256 is not implicitly convertible to expected type bytes memory.
+        uint minedHashRel = uint(sha256(minedAtBlock + randomNumber + uint(msg.sender))) % 100000;
+                                 ^----------------------------------------------------^
+14928.sol:11:34: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        uint minedAtBlock = uint(block.blockhash(block.number - 1));
+                                 ^-------------^
+
+INFO:root:contract 14928.sol:W4T:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 75.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:14928.sol:12:34: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 14928.sol:W4T.json.

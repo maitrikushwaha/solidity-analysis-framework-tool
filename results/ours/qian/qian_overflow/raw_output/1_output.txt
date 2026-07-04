@@ -1,0 +1,26 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+[CFG] No reentrancy back-edge: no external-call encoding detected.
+Dependency analysis completed in 0.0029s.
+[DOMAIN] No reentrancy encoding → Box only
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW ==========
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+
+===== VERDICTS (Box) =====
+[OVERFLOW] Variable sellerBalance (uint8) at ExpressionStatement_0: compound '+=' with {'value'} can exceed type max 255.
+[OVERFLOW] Variable sellerBalance (uint8) in add(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: NOT VULNERABLE
+[SUMMARY] Integer Overflow: VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: NOT VULNERABLE
+[SUMMARY] TOD: NOT VULNERABLE
+
+Total analysis time: 0.87s

@@ -1,0 +1,89 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 09_ERC20Staking_safe2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.qQdzbgX6vw' running
+INFO:root:contract 09_ERC20Staking_safe2.sol:StakableToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:09_ERC20Staking_safe2.sol:37:14: Warning: Integer Underflow.
+
+09_ERC20Staking_safe2.sol:35:5: Warning: Integer Underflow.
+
+09_ERC20Staking_safe2.sol:20:5: Warning: Integer Underflow.
+
+09_ERC20Staking_safe2.sol:16:5: Warning: Integer Underflow.
+
+09_ERC20Staking_safe2.sol:75:3743: Warning: Integer Underflow.
+
+09_ERC20Staking_safe2.sol:49:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[to] = 3356165474358979973796631003773035217262177063538519405278317600867090442
+09_ERC20Staking_safe2.sol:43:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[to] = 3618509744395736720683534469354947854216246413703295591515965898683344184050
+09_ERC20Staking_safe2.sol:75:3244: Warning: Integer Underflow.
+
+09_ERC20Staking_safe2.sol:45:9: Warning: Integer Underflow.
+
+09_ERC20Staking_safe2.sol:75:2273: Warning: Integer Underflow.
+
+09_ERC20Staking_safe2.sol:44:9: Warning: Integer Underflow.
+
+09_ERC20Staking_safe2.sol:32:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 81757535111386906641255420920569861722843120523565036269335197187882762242048
+    stakedAmounts[msg.sender] = 27138770914995983302399449611411228403110152656009507196747871251854639759360
+    balances[msg.sender] = 72370055773322622139731865630429942408293740416025352524660990004945706024960
+    balances[to] = 33189339258964217706215148406265176117293845989146283126758045242250017545736
+09_ERC20Staking_safe2.sol:71:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 81768138338015299739867513552634482886466630375290728696274478791862068969480
+    stakedAmounts[msg.sender] = 27138770915186861946004984211883510452185578007884775744040055604371953033807
+    stakedAmounts[msg.sender] = 61545053289178875475936138253221423999797009557537976263317693770630937182208
+    balances[msg.sender] = 72370055773336750565906121512039791934337153720019385255150781689688281327849
+    balances[to] = 33154002009689529393367854698897632958510852143177497224218161591889372509987
+09_ERC20Staking_safe2.sol:29:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stakedAmounts[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    balances[msg.sender] = 0
+09_ERC20Staking_safe2.sol:75:5768: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stakedAmounts[msg.sender] = 0
+09_ERC20Staking_safe2.sol:65:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stakedAmounts[msg.sender] = 0
+09_ERC20Staking_safe2.sol:64:9: Warning: Integer Underflow.
+
+09_ERC20Staking_safe2.sol:25:5: Warning: Integer Underflow.
+
+09_ERC20Staking_safe2.sol:60:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[to] = 72155835555377334605582418702196924309081004164839576170159632197934919979009
+    stakedAmounts[msg.sender] = 67318118681736164170016625816851757871816665435754669764733345796645376262251
+09_ERC20Staking_safe2.sol:54:9: Warning: Integer Underflow.
+
+09_ERC20Staking_safe2.sol:28:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 15406906404867511353966354206478249458015659580755397314820406075271644446720
+    balances[msg.sender] = 3675069677808232184875419821342117138960924590997658098004250086665550299136
+    balances[to] = 58294866417146517379806706186281197341952366030047573809303054410799842984964
+09_ERC20Staking_safe2.sol:40:5: Warning: Integer Underflow.
+
+INFO:symExec:09_ERC20Staking_safe2.sol:45:20: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 09_ERC20Staking_safe2.sol:StakableToken.json.

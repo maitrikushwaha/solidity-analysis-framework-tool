@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39114.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.Anq3UNPZ7y' running
+INFO:CryticCompile:Compilation warnings/errors on 39114.sol:
+39114.sol:8:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function ICO() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+39114.sol:8:5: Warning: No visibility specified. Defaulting to "public". 
+    function ICO() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 39114.sol:ICO:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 78.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:39114.sol:6:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39114.sol:ICO.json.

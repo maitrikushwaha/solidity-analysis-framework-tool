@@ -1,0 +1,6 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/qian/reentrancy/safe/50031.sol:AddressOwnershipVerification
+offset,opcode,detection
+526,526: SLOAD,Store read after unsafe call
+734,734: SLOAD,Store read after unsafe call
+755,755: SSTORE,Store write after unsafe call

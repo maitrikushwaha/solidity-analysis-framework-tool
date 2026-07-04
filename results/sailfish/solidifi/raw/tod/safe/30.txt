@@ -1,0 +1,1305 @@
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Analysis started at: 2026-06-21 07:16:01 PM
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Callgraph generation started!
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Callgraph generation finished!
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Interprocedural CFG generation started!
+[36m[#] Analysing started: 30.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyMinter[0m
+[36m[#] Interprocedural CFG generated for modifer onlyMinter[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyPauser[0m
+[36m[#] Interprocedural CFG generated for modifer onlyPauser[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyPauser[0m
+[36m[#] Interprocedural CFG generated for modifer onlyPauser[0m
+[36m[#] Interprocedural CFG generation started for modifier whenNotPaused[0m
+[36m[#] Interprocedural CFG generated for modifer whenNotPaused[0m
+[36m[#] Interprocedural CFG generation started for modifier whenPaused[0m
+[36m[#] Interprocedural CFG generated for modifer whenPaused[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyPauser[0m
+[36m[#] Interprocedural CFG generated for modifer onlyPauser[0m
+[36m[#] Interprocedural CFG generation started for modifier whenNotPaused[0m
+[36m[#] Interprocedural CFG generated for modifer whenNotPaused[0m
+[36m[#] Interprocedural CFG generation started for modifier whenPaused[0m
+[36m[#] Interprocedural CFG generated for modifer whenPaused[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyMinter[0m
+[36m[#] Interprocedural CFG generated for modifer onlyMinter[0m
+[36m[#] Interprocedural CFG generation started for name[0m
+[36m[#] Interprocedural CFG generated for name[0m
+[36m[#] Interprocedural CFG generation started for symbol[0m
+[36m[#] Interprocedural CFG generated for symbol[0m
+[36m[#] Interprocedural CFG generation started for granularity[0m
+[36m[#] Interprocedural CFG generated for granularity[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for send[0m
+[36m[#] Interprocedural CFG generated for send[0m
+[36m[#] Interprocedural CFG generation started for burn[0m
+[36m[#] Interprocedural CFG generated for burn[0m
+[36m[#] Interprocedural CFG generation started for isOperatorFor[0m
+[36m[#] Interprocedural CFG generated for isOperatorFor[0m
+[36m[#] Interprocedural CFG generation started for authorizeOperator[0m
+[36m[#] Interprocedural CFG generated for authorizeOperator[0m
+[36m[#] Interprocedural CFG generation started for revokeOperator[0m
+[36m[#] Interprocedural CFG generated for revokeOperator[0m
+[36m[#] Interprocedural CFG generation started for defaultOperators[0m
+[36m[#] Interprocedural CFG generated for defaultOperators[0m
+[36m[#] Interprocedural CFG generation started for operatorSend[0m
+[36m[#] Interprocedural CFG generated for operatorSend[0m
+[36m[#] Interprocedural CFG generation started for operatorBurn[0m
+[36m[#] Interprocedural CFG generated for operatorBurn[0m
+[36m[#] Interprocedural CFG generation started for tokensReceived[0m
+[36m[#] Interprocedural CFG generated for tokensReceived[0m
+[36m[#] Interprocedural CFG generation started for tokensToSend[0m
+[36m[#] Interprocedural CFG generated for tokensToSend[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for setManager[0m
+[36m[#] Interprocedural CFG generated for setManager[0m
+[36m[#] Interprocedural CFG generation started for getManager[0m
+[36m[#] Interprocedural CFG generated for getManager[0m
+[36m[#] Interprocedural CFG generation started for setInterfaceImplementer[0m
+[36m[#] Interprocedural CFG generated for setInterfaceImplementer[0m
+[36m[#] Interprocedural CFG generation started for getInterfaceImplementer[0m
+[36m[#] Interprocedural CFG generated for getInterfaceImplementer[0m
+[36m[#] Interprocedural CFG generation started for interfaceHash[0m
+[36m[#] Interprocedural CFG generated for interfaceHash[0m
+[36m[#] Interprocedural CFG generation started for updateERC165Cache[0m
+[36m[#] Interprocedural CFG generated for updateERC165Cache[0m
+[36m[#] Interprocedural CFG generation started for implementsERC165Interface[0m
+[36m[#] Interprocedural CFG generated for implementsERC165Interface[0m
+[36m[#] Interprocedural CFG generation started for implementsERC165InterfaceNoCache[0m
+[36m[#] Interprocedural CFG generated for implementsERC165InterfaceNoCache[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for name[0m
+[36m[#] Interprocedural CFG generated for name[0m
+[36m[#] Interprocedural CFG generation started for symbol[0m
+[36m[#] Interprocedural CFG generated for symbol[0m
+[36m[#] Interprocedural CFG generation started for granularity[0m
+[36m[#] Interprocedural CFG generated for granularity[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for send[0m
+[36m[#] Interprocedural CFG generated for send[0m
+[36m[#] Interprocedural CFG generation started for burn[0m
+[36m[#] Interprocedural CFG generated for burn[0m
+[36m[#] Interprocedural CFG generation started for isOperatorFor[0m
+[36m[#] Interprocedural CFG generated for isOperatorFor[0m
+[36m[#] Interprocedural CFG generation started for authorizeOperator[0m
+[36m[#] Interprocedural CFG generated for authorizeOperator[0m
+[36m[#] Interprocedural CFG generation started for revokeOperator[0m
+[36m[#] Interprocedural CFG generated for revokeOperator[0m
+[36m[#] Interprocedural CFG generation started for defaultOperators[0m
+[36m[#] Interprocedural CFG generated for defaultOperators[0m
+[36m[#] Interprocedural CFG generation started for operatorSend[0m
+[36m[#] Interprocedural CFG generated for operatorSend[0m
+[36m[#] Interprocedural CFG generation started for operatorBurn[0m
+[36m[#] Interprocedural CFG generated for operatorBurn[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for name[0m
+[36m[#] Interprocedural CFG generated for name[0m
+[36m[#] Interprocedural CFG generation started for symbol[0m
+[36m[#] Interprocedural CFG generated for symbol[0m
+[36m[#] Interprocedural CFG generation started for decimals[0m
+[36m[#] Interprocedural CFG generated for decimals[0m
+[36m[#] Interprocedural CFG generation started for granularity[0m
+[36m[#] Interprocedural CFG generated for granularity[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for send[0m
+[36m[#] Interprocedural CFG generated for send[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for burn[0m
+[36m[#] Interprocedural CFG generated for burn[0m
+[36m[#] Interprocedural CFG generation started for isOperatorFor[0m
+[36m[#] Interprocedural CFG generated for isOperatorFor[0m
+[36m[#] Interprocedural CFG generation started for authorizeOperator[0m
+[36m[#] Interprocedural CFG generated for authorizeOperator[0m
+[36m[#] Interprocedural CFG generation started for revokeOperator[0m
+[36m[#] Interprocedural CFG generated for revokeOperator[0m
+[36m[#] Interprocedural CFG generation started for defaultOperators[0m
+[36m[#] Interprocedural CFG generated for defaultOperators[0m
+[36m[#] Interprocedural CFG generation started for operatorSend[0m
+[36m[#] Interprocedural CFG generated for operatorSend[0m
+[36m[#] Interprocedural CFG generation started for operatorBurn[0m
+[36m[#] Interprocedural CFG generated for operatorBurn[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for isMinter[0m
+[36m[#] Interprocedural CFG generated for isMinter[0m
+[36m[#] Interprocedural CFG generation started for addMinter[0m
+[36m[#] Interprocedural CFG generated for addMinter[0m
+[36m[#] Interprocedural CFG generation started for renounceMinter[0m
+[36m[#] Interprocedural CFG generated for renounceMinter[0m
+[36m[#] Interprocedural CFG generation started for isPauser[0m
+[36m[#] Interprocedural CFG generated for isPauser[0m
+[36m[#] Interprocedural CFG generation started for addPauser[0m
+[36m[#] Interprocedural CFG generated for addPauser[0m
+[36m[#] Interprocedural CFG generation started for renouncePauser[0m
+[36m[#] Interprocedural CFG generated for renouncePauser[0m
+[36m[#] Interprocedural CFG generation started for isPauser[0m
+[36m[#] Interprocedural CFG generated for isPauser[0m
+[36m[#] Interprocedural CFG generation started for addPauser[0m
+[36m[#] Interprocedural CFG generated for addPauser[0m
+[36m[#] Interprocedural CFG generation started for renouncePauser[0m
+[36m[#] Interprocedural CFG generated for renouncePauser[0m
+[36m[#] Interprocedural CFG generation started for paused[0m
+[36m[#] Interprocedural CFG generated for paused[0m
+[36m[#] Interprocedural CFG generation started for pause[0m
+[36m[#] Interprocedural CFG generated for pause[0m
+[36m[#] Interprocedural CFG generation started for unpause[0m
+[36m[#] Interprocedural CFG generated for unpause[0m
+[36m[#] Interprocedural CFG generation started for isPauser[0m
+[36m[#] Interprocedural CFG generated for isPauser[0m
+[36m[#] Interprocedural CFG generation started for addPauser[0m
+[36m[#] Interprocedural CFG generated for addPauser[0m
+[36m[#] Interprocedural CFG generation started for renouncePauser[0m
+[36m[#] Interprocedural CFG generated for renouncePauser[0m
+[36m[#] Interprocedural CFG generation started for paused[0m
+[36m[#] Interprocedural CFG generated for paused[0m
+[36m[#] Interprocedural CFG generation started for pause[0m
+[36m[#] Interprocedural CFG generated for pause[0m
+[36m[#] Interprocedural CFG generation started for unpause[0m
+[36m[#] Interprocedural CFG generated for unpause[0m
+[36m[#] Interprocedural CFG generation started for isMinter[0m
+[36m[#] Interprocedural CFG generated for isMinter[0m
+[36m[#] Interprocedural CFG generation started for addMinter[0m
+[36m[#] Interprocedural CFG generated for addMinter[0m
+[36m[#] Interprocedural CFG generation started for renounceMinter[0m
+[36m[#] Interprocedural CFG generated for renounceMinter[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for name[0m
+[36m[#] Interprocedural CFG generated for name[0m
+[36m[#] Interprocedural CFG generation started for symbol[0m
+[36m[#] Interprocedural CFG generated for symbol[0m
+[36m[#] Interprocedural CFG generation started for granularity[0m
+[36m[#] Interprocedural CFG generated for granularity[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for send[0m
+[36m[#] Interprocedural CFG generated for send[0m
+[36m[#] Interprocedural CFG generation started for burn[0m
+[36m[#] Interprocedural CFG generated for burn[0m
+[36m[#] Interprocedural CFG generation started for isOperatorFor[0m
+[36m[#] Interprocedural CFG generated for isOperatorFor[0m
+[36m[#] Interprocedural CFG generation started for authorizeOperator[0m
+[36m[#] Interprocedural CFG generated for authorizeOperator[0m
+[36m[#] Interprocedural CFG generation started for revokeOperator[0m
+[36m[#] Interprocedural CFG generated for revokeOperator[0m
+[36m[#] Interprocedural CFG generation started for defaultOperators[0m
+[36m[#] Interprocedural CFG generated for defaultOperators[0m
+[36m[#] Interprocedural CFG generation started for operatorSend[0m
+[36m[#] Interprocedural CFG generated for operatorSend[0m
+[36m[#] Interprocedural CFG generation started for operatorBurn[0m
+[36m[#] Interprocedural CFG generated for operatorBurn[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for name[0m
+[36m[#] Interprocedural CFG generated for name[0m
+[36m[#] Interprocedural CFG generation started for symbol[0m
+[36m[#] Interprocedural CFG generated for symbol[0m
+[36m[#] Interprocedural CFG generation started for decimals[0m
+[36m[#] Interprocedural CFG generated for decimals[0m
+[36m[#] Interprocedural CFG generation started for granularity[0m
+[36m[#] Interprocedural CFG generated for granularity[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for send[0m
+[36m[#] Interprocedural CFG generated for send[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for burn[0m
+[36m[#] Interprocedural CFG generated for burn[0m
+[36m[#] Interprocedural CFG generation started for isOperatorFor[0m
+[36m[#] Interprocedural CFG generated for isOperatorFor[0m
+[36m[#] Interprocedural CFG generation started for authorizeOperator[0m
+[36m[#] Interprocedural CFG generated for authorizeOperator[0m
+[36m[#] Interprocedural CFG generation started for revokeOperator[0m
+[36m[#] Interprocedural CFG generated for revokeOperator[0m[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Storage dependency graph generation started!
+
+[36m[#] Interprocedural CFG generation started for defaultOperators[0m
+[36m[#] Interprocedural CFG generated for defaultOperators[0m
+[36m[#] Interprocedural CFG generation started for operatorSend[0m
+[36m[#] Interprocedural CFG generated for operatorSend[0m
+[36m[#] Interprocedural CFG generation started for operatorBurn[0m
+[36m[#] Interprocedural CFG generated for operatorBurn[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for mint[0m
+[36m[#] Interprocedural CFG generated for mint[0m
+[36m[#] SDG generation started for name[0m
+[36m[#] SDG generated for name[0m
+[36m[#] SDG generation started for symbol[0m
+[36m[#] SDG generated for symbol[0m
+[36m[#] SDG generation started for granularity[0m
+[36m[#] SDG generated for granularity[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for send[0m
+[36m[#] SDG generated for send[0m
+[36m[#] SDG generation started for burn[0m
+[36m[#] SDG generated for burn[0m
+[36m[#] SDG generation started for isOperatorFor[0m
+[36m[#] SDG generated for isOperatorFor[0m
+[36m[#] SDG generation started for authorizeOperator[0m
+[36m[#] SDG generated for authorizeOperator[0m
+[36m[#] SDG generation started for revokeOperator[0m
+[36m[#] SDG generated for revokeOperator[0m
+[36m[#] SDG generation started for defaultOperators[0m
+[36m[#] SDG generated for defaultOperators[0m
+[36m[#] SDG generation started for operatorSend[0m
+[36m[#] SDG generated for operatorSend[0m
+[36m[#] SDG generation started for operatorBurn[0m
+[36m[#] SDG generated for operatorBurn[0m
+[36m[#] SDG generation started for tokensReceived[0m
+[36m[#] SDG generated for tokensReceived[0m
+[36m[#] SDG generation started for tokensToSend[0m
+[36m[#] SDG generated for tokensToSend[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for setManager[0m
+[36m[#] SDG generated for setManager[0m
+[36m[#] SDG generation started for getManager[0m
+[36m[#] SDG generated for getManager[0m
+[36m[#] SDG generation started for setInterfaceImplementer[0m
+[36m[#] SDG generated for setInterfaceImplementer[0m
+[36m[#] SDG generation started for getInterfaceImplementer[0m
+[36m[#] SDG generated for getInterfaceImplementer[0m
+[36m[#] SDG generation started for interfaceHash[0m
+[36m[#] SDG generated for interfaceHash[0m
+[36m[#] SDG generation started for updateERC165Cache[0m
+[36m[#] SDG generated for updateERC165Cache[0m
+[36m[#] SDG generation started for implementsERC165Interface[0m
+[36m[#] SDG generated for implementsERC165Interface[0m
+[36m[#] SDG generation started for implementsERC165InterfaceNoCache[0m
+[36m[#] SDG generated for implementsERC165InterfaceNoCache[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for name[0m
+[36m[#] SDG generated for name[0m
+[36m[#] SDG generation started for symbol[0m
+[36m[#] SDG generated for symbol[0m
+[36m[#] SDG generation started for granularity[0m
+[36m[#] SDG generated for granularity[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for send[0m
+[36m[#] SDG generated for send[0m
+[36m[#] SDG generation started for burn[0m
+[36m[#] SDG generated for burn[0m
+[36m[#] SDG generation started for isOperatorFor[0m
+[36m[#] SDG generated for isOperatorFor[0m
+[36m[#] SDG generation started for authorizeOperator[0m
+[36m[#] SDG generated for authorizeOperator[0m
+[36m[#] SDG generation started for revokeOperator[0m
+[36m[#] SDG generated for revokeOperator[0m
+[36m[#] SDG generation started for defaultOperators[0m
+[36m[#] SDG generated for defaultOperators[0m
+[36m[#] SDG generation started for operatorSend[0m
+[36m[#] SDG generated for operatorSend[0m
+[36m[#] SDG generation started for operatorBurn[0m
+[36m[#] SDG generated for operatorBurn[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for name[0m
+[36m[#] SDG generated for name[0m
+[36m[#] SDG generation started for symbol[0m
+[36m[#] SDG generated for symbol[0m
+[36m[#] SDG generation started for decimals[0m
+[36m[#] SDG generated for decimals[0m
+[36m[#] SDG generation started for granularity[0m
+[36m[#] SDG generated for granularity[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for send[0m
+[36m[#] SDG generated for send[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for burn[0m
+[36m[#] SDG generated for burn[0m
+[36m[#] SDG generation started for isOperatorFor[0m
+[36m[#] SDG generated for isOperatorFor[0m
+[36m[#] SDG generation started for authorizeOperator[0m
+[36m[#] SDG generated for authorizeOperator[0m
+[36m[#] SDG generation started for revokeOperator[0m
+[36m[#] SDG generated for revokeOperator[0m
+[36m[#] SDG generation started for defaultOperators[0m
+[36m[#] SDG generated for defaultOperators[0m
+[36m[#] SDG generation started for operatorSend[0m
+[36m[#] SDG generated for operatorSend[0m
+[36m[#] SDG generation started for operatorBurn[0m
+[36m[#] SDG generated for operatorBurn[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for isMinter[0m
+[36m[#] SDG generated for isMinter[0m
+[36m[#] SDG generation started for addMinter[0m
+[36m[#] SDG generated for addMinter[0m
+[36m[#] SDG generation started for renounceMinter[0m
+[36m[#] SDG generated for renounceMinter[0m
+[36m[#] SDG generation started for modifier onlyMinter[0m
+[36m[#] SDG generated for modifier onlyMinter[0m
+[36m[#] SDG generation started for isPauser[0m
+[36m[#] SDG generated for isPauser[0m
+[36m[#] SDG generation started for addPauser[0m
+[36m[#] SDG generated for addPauser[0m
+[36m[#] SDG generation started for renouncePauser[0m
+[36m[#] SDG generated for renouncePauser[0m
+[36m[#] SDG generation started for modifier onlyPauser[0m
+[36m[#] SDG generated for modifier onlyPauser[0m
+[36m[#] SDG generation started for isPauser[0m[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Value Range Analysis started
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for tokensReceived
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for tokensReceived
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function tokensReceived
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for tokensToSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for tokensToSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function tokensToSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for add
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for add
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function add
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for sub
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for sub
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function sub
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for mul
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for mul
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function mul
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for div
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for div
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function div
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for mod
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for mod
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function mod
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for isContract
+[WARNING] | 2026-06-21 07:16:01 PM | analyzer.30     | Can there be this kind of variables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for isContract
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function isContract
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for setManager
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for setManager
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function setManager
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for getManager
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for getManager
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function getManager
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for setInterfaceImplementer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for setInterfaceImplementer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function setInterfaceImplementer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for getInterfaceImplementer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for getInterfaceImplementer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function getInterfaceImplementer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for interfaceHash
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for interfaceHash
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function interfaceHash
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for updateERC165Cache
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for updateERC165Cache
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function updateERC165Cache
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for implementsERC165Interface
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for implementsERC165Interface
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function implementsERC165Interface
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for implementsERC165InterfaceNoCache
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for implementsERC165InterfaceNoCache
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function implementsERC165InterfaceNoCache
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for decimals
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for decimals
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function decimals
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for has
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for has
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function has
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for onlyMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for onlyMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function onlyMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for onlyPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for onlyPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function onlyPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for paused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for paused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function paused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for onlyPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for onlyPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function onlyPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for whenNotPaused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for whenNotPaused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function whenNotPaused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for whenPaused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for whenPaused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function whenPaused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for paused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for paused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function paused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function name
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function symbol
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for decimals
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for decimals
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function decimals
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function granularity
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function isOperatorFor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function authorizeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function revokeOperator
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function defaultOperators
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function allowance
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for onlyPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for onlyPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function onlyPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for whenNotPaused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for whenNotPaused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function whenNotPaused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for whenPaused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for whenPaused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function whenPaused
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for onlyMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for onlyMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function onlyMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _callTokensReceived
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _callTokensReceived
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _callTokensReceived
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _callTokensReceived
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _callTokensReceived
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _callTokensReceived
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _callTokensToSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _callTokensToSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _callTokensToSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _callTokensToSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _callTokensToSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _callTokensToSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _move
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _move
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _move
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _move
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _move
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _move
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for add
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for add
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function add
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for remove
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for remove
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function remove
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for isMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for isMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function isMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for isPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for isPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function isPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for isPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for isPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function isPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for isPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for isPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function isPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for isMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for isMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function isMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for pause
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for pause
+[WARNING] | 2026-06-21 07:16:01 PM | analyzer.30     | Can there be this kind of variables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function pause
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for unpause
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for unpause
+[WARNING] | 2026-06-21 07:16:01 PM | analyzer.30     | Can there be this kind of variables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function unpause
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function approve
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for pause
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for pause
+[WARNING] | 2026-06-21 07:16:01 PM | analyzer.30     | Can there be this kind of variables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function pause
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for unpause
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for unpause
+[WARNING] | 2026-06-21 07:16:01 PM | analyzer.30     | Can there be this kind of variables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function unpause
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _mint
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _mint
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _mint
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _mint
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _mint
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _mint
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function transfer
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _addMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _addMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _addMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _addMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _addMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _addMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _removeMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _removeMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _removeMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _removePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _removePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _removePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _removePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _removePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _removePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _removePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _removePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _removePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for _removeMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for _removeMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function _removeMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for mint
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for mint
+[WARNING] | 2026-06-21 07:16:01 PM | analyzer.30     | Can there be this kind of variables
+[WARNING] | 2026-06-21 07:16:01 PM | analyzer.30     | Can there be this kind of variables
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function mint
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function burn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function operatorBurn
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function send
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Range graph generated
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function operatorSend
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for addMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for addMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function addMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function addPauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function constructor
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for addMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for addMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function addMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for renounceMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for renounceMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function renounceMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for renouncePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for renouncePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function renouncePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for renouncePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for renouncePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function renouncePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for renouncePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for renouncePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function renouncePauser
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Generating return summary for renounceMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Return summary generated for renounceMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Processed function renounceMinter
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Value Range Analysis took 0.023906 seconds
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Value Range Analysis finished
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Dependency detection started!
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Dependency detection finished!
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Static Analysis took 0.818632 seconds
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Dependency does not exist
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Analysis finished!
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Analysis took 0.818742 seconds
+[INFO] | 2026-06-21 07:16:01 PM | analyzer.30     | Analysis finished at: 2026-06-21 07:16:01 PM
+
+[36m[#] SDG generated for isPauser[0m
+[36m[#] SDG generation started for addPauser[0m
+[36m[#] SDG generated for addPauser[0m
+[36m[#] SDG generation started for renouncePauser[0m
+[36m[#] SDG generated for renouncePauser[0m
+[36m[#] SDG generation started for paused[0m
+[36m[#] SDG generated for paused[0m
+[36m[#] SDG generation started for pause[0m
+[36m[#] SDG generated for pause[0m
+[36m[#] SDG generation started for unpause[0m
+[36m[#] SDG generated for unpause[0m
+[36m[#] SDG generation started for modifier onlyPauser[0m
+[36m[#] SDG generated for modifier onlyPauser[0m
+[36m[#] SDG generation started for modifier whenNotPaused[0m
+[36m[#] SDG generated for modifier whenNotPaused[0m
+[36m[#] SDG generation started for modifier whenPaused[0m
+[36m[#] SDG generated for modifier whenPaused[0m
+[36m[#] SDG generation started for isPauser[0m
+[36m[#] SDG generated for isPauser[0m
+[36m[#] SDG generation started for addPauser[0m
+[36m[#] SDG generated for addPauser[0m
+[36m[#] SDG generation started for renouncePauser[0m
+[36m[#] SDG generated for renouncePauser[0m
+[36m[#] SDG generation started for paused[0m
+[36m[#] SDG generated for paused[0m
+[36m[#] SDG generation started for pause[0m
+[36m[#] SDG generated for pause[0m
+[36m[#] SDG generation started for unpause[0m
+[36m[#] SDG generated for unpause[0m
+[36m[#] SDG generation started for isMinter[0m
+[36m[#] SDG generated for isMinter[0m
+[36m[#] SDG generation started for addMinter[0m
+[36m[#] SDG generated for addMinter[0m
+[36m[#] SDG generation started for renounceMinter[0m
+[36m[#] SDG generated for renounceMinter[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for name[0m
+[36m[#] SDG generated for name[0m
+[36m[#] SDG generation started for symbol[0m
+[36m[#] SDG generated for symbol[0m
+[36m[#] SDG generation started for granularity[0m
+[36m[#] SDG generated for granularity[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for send[0m
+[36m[#] SDG generated for send[0m
+[36m[#] SDG generation started for burn[0m
+[36m[#] SDG generated for burn[0m
+[36m[#] SDG generation started for isOperatorFor[0m
+[36m[#] SDG generated for isOperatorFor[0m
+[36m[#] SDG generation started for authorizeOperator[0m
+[36m[#] SDG generated for authorizeOperator[0m
+[36m[#] SDG generation started for revokeOperator[0m
+[36m[#] SDG generated for revokeOperator[0m
+[36m[#] SDG generation started for defaultOperators[0m
+[36m[#] SDG generated for defaultOperators[0m
+[36m[#] SDG generation started for operatorSend[0m
+[36m[#] SDG generated for operatorSend[0m
+[36m[#] SDG generation started for operatorBurn[0m
+[36m[#] SDG generated for operatorBurn[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for name[0m
+[36m[#] SDG generated for name[0m
+[36m[#] SDG generation started for symbol[0m
+[36m[#] SDG generated for symbol[0m
+[36m[#] SDG generation started for decimals[0m
+[36m[#] SDG generated for decimals[0m
+[36m[#] SDG generation started for granularity[0m
+[36m[#] SDG generated for granularity[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for send[0m
+[36m[#] SDG generated for send[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for burn[0m
+[36m[#] SDG generated for burn[0m
+[36m[#] SDG generation started for isOperatorFor[0m
+[36m[#] SDG generated for isOperatorFor[0m
+[36m[#] SDG generation started for authorizeOperator[0m
+[36m[#] SDG generated for authorizeOperator[0m
+[36m[#] SDG generation started for revokeOperator[0m
+[36m[#] SDG generated for revokeOperator[0m
+[36m[#] SDG generation started for defaultOperators[0m
+[36m[#] SDG generated for defaultOperators[0m
+[36m[#] SDG generation started for operatorSend[0m
+[36m[#] SDG generated for operatorSend[0m
+[36m[#] SDG generation started for operatorBurn[0m
+[36m[#] SDG generated for operatorBurn[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for mint[0m
+[36m[#] SDG generated for mint[0m
+[36m[#] SDG generation started for modifier onlyPauser[0m
+[36m[#] SDG generated for modifier onlyPauser[0m
+[36m[#] SDG generation started for modifier whenNotPaused[0m
+[36m[#] SDG generated for modifier whenNotPaused[0m
+[36m[#] SDG generation started for modifier whenPaused[0m
+[36m[#] SDG generated for modifier whenPaused[0m
+[36m[#] SDG generation started for modifier onlyMinter[0m
+[36m[#] SDG generated for modifier onlyMinter[0m
+[36m[#] Analysis took 0.818742 seconds[0m
+[36m[#] Analysis completed: 30.sol [0m
+
+=== dependency_info.json ===
+{}

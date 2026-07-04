@@ -1,0 +1,20 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50795.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.snO0dr444J' running
+INFO:root:contract 50795.sol:SnooKarma:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 79.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:50795.sol:8:23: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    karma = 94081515080646395059915012031554240386707988114301397500921316227128758370305
+    totalSupply = 37994279334967340693559246315457507221924274758668263551558705936371082592255
+    sigExp = 1
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50795.sol:SnooKarma.json.

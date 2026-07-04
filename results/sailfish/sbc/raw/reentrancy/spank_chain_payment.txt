@@ -1,0 +1,466 @@
+[INFO] | 2026-06-21 07:04:59 PM | analyzer.spank_chain_payment | Analysis started at: 2026-06-21 07:04:59 PM
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Callgraph generation started!
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Callgraph generation finished!
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Storage dependency graph generation started!
+[36m[#] Analysing started: spank_chain_payment.sol[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for recoverSigner[0m
+[36m[#] Interprocedural CFG generated for recoverSigner[0m
+[36m[#] Interprocedural CFG generation started for isSignedBy[0m
+[36m[#] Interprocedural CFG generated for isSignedBy[0m
+[36m[#] Interprocedural CFG generation started for hexstrToBytes[0m
+[36m[#] Interprocedural CFG generated for hexstrToBytes[0m
+[36m[#] Interprocedural CFG generation started for parseInt16Char[0m
+[36m[#] Interprocedural CFG generated for parseInt16Char[0m
+[36m[#] Interprocedural CFG generation started for uintToBytes32[0m
+[36m[#] Interprocedural CFG generated for uintToBytes32[0m
+[36m[#] Interprocedural CFG generation started for toEthereumSignedMessage[0m
+[36m[#] Interprocedural CFG generated for toEthereumSignedMessage[0m
+[36m[#] Interprocedural CFG generation started for uintToString[0m
+[36m[#] Interprocedural CFG generated for uintToString[0m
+[36m[#] Interprocedural CFG generation started for substring[0m
+[36m[#] Interprocedural CFG generated for substring[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for approveAndCall[0m
+[36m[#] Interprocedural CFG generated for approveAndCall[0m
+[36m[#] Interprocedural CFG generation started for createChannel[0m
+[36m[#] Interprocedural CFG generated for createChannel[0m
+[36m[#] Interprocedural CFG generation started for LCOpenTimeout[0m
+[36m[#] Interprocedural CFG generated for LCOpenTimeout[0m
+[36m[#] Interprocedural CFG generation started for joinChannel[0m
+[36m[#] Interprocedural CFG generated for joinChannel[0m
+[36m[#] Interprocedural CFG generation started for deposit[0m
+[36m[#] Interprocedural CFG generated for deposit[0m
+[36m[#] Interprocedural CFG generation started for consensusCloseChannel[0m
+[36m[#] Interprocedural CFG generated for consensusCloseChannel[0m
+[36m[#] Interprocedural CFG generation started for updateLCstate[0m
+[36m[#] Interprocedural CFG generated for updateLCstate[0m
+[36m[#] Interprocedural CFG generation started for initVCstate[0m
+[36m[#] Interprocedural CFG generated for initVCstate[0m
+[36m[#] Interprocedural CFG generation started for settleVC[0m
+[36m[#] Interprocedural CFG generated for settleVC[0m
+[36m[#] Interprocedural CFG generation started for closeVirtualChannel[0m
+[36m[#] Interprocedural CFG generated for closeVirtualChannel[0m
+[36m[#] Interprocedural CFG generation started for byzantineCloseChannel[0m
+[36m[#] Interprocedural CFG generated for byzantineCloseChannel[0m
+[36m[#] Interprocedural CFG generation started for getChannel[0m
+[36m[#] Interprocedural CFG generated for getChannel[0m
+[36m[#] Interprocedural CFG generation started for getVirtualChannel[0m
+[36m[#] Interprocedural CFG generated for getVirtualChannel[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for recoverSigner[0m
+[36m[#] SDG generated for recoverSigner[0m
+[36m[#] SDG generation started for isSignedBy[0m
+[36m[#] SDG generated for isSignedBy[0m
+[36m[#] SDG generation started for hexstrToBytes[0m
+[36m[#] SDG generated for hexstrToBytes[0m
+[36m[#] SDG generation started for parseInt16Char[0m
+[36m[#] SDG generated for parseInt16Char[0m
+[36m[#] SDG generation started for uintToBytes32[0m
+[36m[#] SDG generated for uintToBytes32[0m
+[36m[#] SDG generation started for toEthereumSignedMessage[0m
+[36m[#] SDG generated for toEthereumSignedMessage[0m
+[36m[#] SDG generation started for uintToString[0m
+[36m[#] SDG generated for uintToString[0m
+[36m[#] SDG generation started for substring[0m
+[36m[#] SDG generated for substring[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Value Range Analysis started
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for parseInt16Char
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for parseInt16Char
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function parseInt16Char
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for uintToBytes32
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for uintToBytes32
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function uintToBytes32
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for uintToString
+[WARNING] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for uintToString
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function uintToString
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for substring
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for substring
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function substring
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function transfer
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function transferFrom
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function balanceOf
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function approve
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function allowance
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for constructor
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for constructor
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function constructor
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for approveAndCall
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for approveAndCall
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function approveAndCall
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for closeVirtualChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for closeVirtualChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function closeVirtualChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for _isContained
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for _isContained
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function _isContained
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for getChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for getChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function getChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for getVirtualChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for getVirtualChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function getVirtualChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for hexstrToBytes
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for hexstrToBytes
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function hexstrToBytes
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for toEthereumSignedMessage
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for toEthereumSignedMessage
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function toEthereumSignedMessage
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for LCOpenTimeout
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for LCOpenTimeout
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function LCOpenTimeout
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for byzantineCloseChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for byzantineCloseChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function byzantineCloseChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for createChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for createChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function createChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for joinChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for joinChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function joinChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for deposit
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for deposit
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function deposit
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for recoverSigner
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for recoverSigner
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function recoverSigner
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for isSignedBy
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for isSignedBy
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function isSignedBy
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for consensusCloseChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for consensusCloseChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function consensusCloseChannel
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for updateLCstate
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for updateLCstate
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | State variable assignement do not exist
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function updateLCstate
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for initVCstate
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for initVCstate
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function initVCstate
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Generating return summary for settleVC
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Return summary generated for settleVC
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Range graph generated
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Processed function settleVC
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Value Range Analysis took 0.154845 seconds
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Value Range Analysis finished
+[INFO] | 2026-06-21 07:05:02 PM | analyzer.spank_chain_payment | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:05:03 PM | analyzer.spank_chain_payment | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:05:03 PM | analyzer.spank_chain_payment | Dependency detection started!
+[INFO] | 2026-06-21 07:05:04 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions createChannel and LCOpenTimeout
+[INFO] | 2026-06-21 07:05:07 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions createChannel and consensusCloseChannel
+[INFO] | 2026-06-21 07:05:07 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions createChannel and initVCstate
+[INFO] | 2026-06-21 07:05:08 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions createChannel and settleVC
+[INFO] | 2026-06-21 07:05:09 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions LCOpenTimeout and createChannel
+[INFO] | 2026-06-21 07:05:14 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions LCOpenTimeout and LCOpenTimeout
+[INFO] | 2026-06-21 07:05:17 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions LCOpenTimeout and joinChannel
+[INFO] | 2026-06-21 07:05:23 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions LCOpenTimeout and deposit
+[INFO] | 2026-06-21 07:05:33 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions LCOpenTimeout and consensusCloseChannel
+[INFO] | 2026-06-21 07:05:36 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions LCOpenTimeout and initVCstate
+[INFO] | 2026-06-21 07:05:39 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions LCOpenTimeout and settleVC
+[INFO] | 2026-06-21 07:05:45 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions LCOpenTimeout and closeVirtualChannel
+[INFO] | 2026-06-21 07:05:49 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions joinChannel and LCOpenTimeout
+[INFO] | 2026-06-21 07:05:50 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions joinChannel and joinChannel
+[INFO] | 2026-06-21 07:05:50 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions joinChannel and deposit
+[INFO] | 2026-06-21 07:05:55 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions joinChannel and consensusCloseChannel
+[INFO] | 2026-06-21 07:05:56 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions joinChannel and initVCstate
+[INFO] | 2026-06-21 07:05:56 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions joinChannel and settleVC
+[INFO] | 2026-06-21 07:05:57 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions joinChannel and closeVirtualChannel
+[INFO] | 2026-06-21 07:05:59 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions deposit and createChannel
+[INFO] | 2026-06-21 07:05:59 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions deposit and LCOpenTimeout
+[INFO] | 2026-06-21 07:06:05 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions deposit and LCOpenTimeout
+[INFO] | 2026-06-21 07:06:06 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions deposit and consensusCloseChannel
+[INFO] | 2026-06-21 07:06:08 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions deposit and consensusCloseChannel
+[INFO] | 2026-06-21 07:06:11 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions consensusCloseChannel and createChannel
+[INFO] | 2026-06-21 07:06:12 PM | analyzer.spank_chain_payment | DAO dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions consensusCloseChannel and LCOpenTimeout
+[INFO] | 2026-06-21 07:06:16 PM | analyzer.spank_chain_payment | TOD dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions LCOpenTimeout and createChannel
+[INFO] | 2026-06-21 07:06:18 PM | analyzer.spank_chain_payment | TOD dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions LCOpenTimeout and LCOpenTimeout
+[INFO] | 2026-06-21 07:06:20 PM | analyzer.spank_chain_payment | TOD dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions LCOpenTimeout and joinChannel
+[INFO] | 2026-06-21 07:06:21 PM | analyzer.spank_chain_payment | TOD dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions LCOpenTimeout and deposit
+[INFO] | 2026-06-21 07:06:21 PM | analyzer.spank_chain_payment | TOD dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions LCOpenTimeout and consensusCloseChannel
+[INFO] | 2026-06-21 07:06:24 PM | analyzer.spank_chain_payment | TOD dependency detected in file spank_chain_payment.sol in contract LedgerChannel in by composing functions LCOpenTimeout and closeVirtualChannel
+Traceback (most recent call last):
+  File "contractlint.py", line 111, in analyze_contracts
+    detection = Detection(slither_obj, contract_name, composed_sdg, sdg_objects, icfg_objects, graph_dir, dump_graph, dao, tod, generated_vrg, log)
+  File "/root/sailfish/code/static_analysis/analysis/detection.py", line 63, in __init__
+    self.setup()
+  File "/root/sailfish/code/static_analysis/analysis/detection.py", line 71, in setup
+    self.detect_tod_patterns()
+  File "/root/sailfish/code/static_analysis/analysis/detection.py", line 116, in detect_tod_patterns
+    tod_composed_sdg_to_predecessors[composed_graph[0]], str(count))
+  File "/root/sailfish/code/static_analysis/analysis/detection.py", line 417, in detect_tod_read_write_dependencies
+    self.generate_symex_json(var_node, tuple_pair, tod_type)
+  File "/root/sailfish/code/static_analysis/analysis/detection.py", line 607, in generate_symex_json
+    self.tod_count, self.tod_per_function_paths, self.tod_symex_paths, dao_or_tod)
+  File "/root/sailfish/code/static_analysis/analysis/symex_helper.py", line 1053, in output_tod_amount_or_receiver_paths
+    new_addrs[json_blocks_mapping[successor].get_block_dict()['addr']] = addrs[hex(successor._block_id)]
+KeyError: '0x3726'
+
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for approveAndCall[0m
+[36m[#] SDG generated for approveAndCall[0m
+[36m[#] SDG generation started for createChannel[0m
+[36m[#] SDG generated for createChannel[0m
+[36m[#] SDG generation started for LCOpenTimeout[0m
+[36m[#] SDG generated for LCOpenTimeout[0m
+[36m[#] SDG generation started for joinChannel[0m
+[36m[#] SDG generated for joinChannel[0m
+[36m[#] SDG generation started for deposit[0m
+[36m[#] SDG generated for deposit[0m
+[36m[#] SDG generation started for consensusCloseChannel[0m
+[36m[#] SDG generated for consensusCloseChannel[0m
+[36m[#] SDG generation started for updateLCstate[0m
+[36m[#] SDG generated for updateLCstate[0m
+[36m[#] SDG generation started for initVCstate[0m
+[36m[#] SDG generated for initVCstate[0m
+[36m[#] SDG generation started for settleVC[0m
+[36m[#] SDG generated for settleVC[0m
+[36m[#] SDG generation started for closeVirtualChannel[0m
+[36m[#] SDG generated for closeVirtualChannel[0m
+[36m[#] SDG generation started for byzantineCloseChannel[0m
+[36m[#] SDG generated for byzantineCloseChannel[0m
+[36m[#] SDG generation started for getChannel[0m
+[36m[#] SDG generated for getChannel[0m
+[36m[#] SDG generation started for getVirtualChannel[0m
+[36m[#] SDG generated for getVirtualChannel[0m
+
+
+
+
+
+
+
+
+
+
+

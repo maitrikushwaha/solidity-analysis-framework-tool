@@ -1,0 +1,39 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 08_MixedTransfer_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.cOiznxa9gr' running
+INFO:root:contract 08_MixedTransfer_safe1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:08_MixedTransfer_safe1.sol:5:5: Warning: Integer Underflow.
+
+08_MixedTransfer_safe1.sol:21:2054: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+08_MixedTransfer_safe1.sol:9:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+INFO:symExec:08_MixedTransfer_safe1.sol:21:978: Warning: Integer Overflow.
+
+08_MixedTransfer_safe1.sol:13:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 110346727819374908217481612763323177235781965564341052591779538679366803894205
+    balances[msg.sender] = 8
+INFO:symExec:Flow1
+08_MixedTransfer_safe1.sol:10:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+08_MixedTransfer_safe1.sol:10:9: Warning: Transaction-Ordering Dependency.
+
+08_MixedTransfer_safe1.sol:13:28: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 08_MixedTransfer_safe1.sol:C.json.

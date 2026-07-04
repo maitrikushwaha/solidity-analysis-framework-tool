@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 8099.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.QVFDdffGxL' running
+INFO:root:contract 8099.sol:tipbot:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:8099.sol:14:9: Warning: Integer Underflow.
+
+8099.sol:15:9: Warning: Integer Underflow.
+
+INFO:symExec:8099.sol:1:24: Warning: Integer Overflow.
+
+8099.sol:14:9: Warning: Integer Overflow.
+
+8099.sol:15:9: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 8099.sol:tipbot.json.

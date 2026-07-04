@@ -1,0 +1,30 @@
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Analysis started at: 2026-06-21 07:11:37 PM
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Callgraph generation started!
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Value Range Analysis started
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Generating return summary for authorizePayment
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Return summary generated for authorizePayment
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Processed function authorizePayment
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Value Range Analysis took 0.000310 seconds
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Dependency detection started!
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Dependency detection finished!
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Static Analysis took 0.035681 seconds
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Dependency does not exist
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Analysis finished!
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Analysis took 0.035863 seconds
+[INFO] | 2026-06-21 07:11:37 PM | analyzer.34668  | Analysis finished at: 2026-06-21 07:11:37 PM
+[36m[#] Analysing started: 34668.sol[0m
+[36m[#] Analysis took 0.035863 seconds[0m
+[36m[#] Analysis completed: 34668.sol [0m
+
+=== dependency_info.json ===
+{}

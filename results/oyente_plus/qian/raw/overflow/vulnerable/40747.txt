@@ -1,0 +1,21 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40747.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.AyV7v7xTX8' running
+INFO:root:contract 40747.sol:PIGGY_BANK:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 81.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:40747.sol:10:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    Accounts[msg.sender] = 0
+    _am = 57896044618710753857619771097692912940476827548979729567429066559583720308737
+INFO:symExec:40747.sol:9:12: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40747.sol:PIGGY_BANK.json.

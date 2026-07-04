@@ -1,0 +1,29 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/12_OnlyOwner_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+ControlledPayout.pay(address,uint256).recipient (datasets/rsd/reentrancy/safe/12_OnlyOwner_safe1.sol#44) lacks a zero-check on :
+		- (success,None) = recipient.call{value: amount}() (datasets/rsd/reentrancy/safe/12_OnlyOwner_safe1.sol#47)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+ControlledPayout.pay(address,uint256) (datasets/rsd/reentrancy/safe/12_OnlyOwner_safe1.sol#44-49) has external calls inside a loop: (success,None) = recipient.call{value: amount}() (datasets/rsd/reentrancy/safe/12_OnlyOwner_safe1.sol#47)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation/#calls-inside-a-loop
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/12_OnlyOwner_safe1.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in ControlledPayout.pay(address,uint256) (datasets/rsd/reentrancy/safe/12_OnlyOwner_safe1.sol#44-49):
+	- (success,None) = recipient.call{value: amount}() (datasets/rsd/reentrancy/safe/12_OnlyOwner_safe1.sol#47)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Loop condition i < pendingPayments.length (datasets/rsd/reentrancy/safe/12_OnlyOwner_safe1.sol#39) should use cached array length instead of referencing `length` member of the storage array.
+ Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#cache-array-length
+
+ControlledPayout.owner (datasets/rsd/reentrancy/safe/12_OnlyOwner_safe1.sol#11) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+/work/datasets/rsd/reentrancy/safe/12_OnlyOwner_safe1.sol analyzed (1 contracts with 93 detectors), 6 result(s) found

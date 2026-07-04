@@ -1,0 +1,77 @@
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Analysis started at: 2026-06-21 07:15:02 PM
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Callgraph generation started!
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Value Range Analysis started
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Generating return summary for withdraw
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Return summary generated for withdraw
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Range graph generated
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Processed function withdraw
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Value Range Analysis took 0.000586 seconds
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Dependency detection started!
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | DAO dependency detected in file 50006.sol in contract ELTWagerLedger in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | TOD dependency detected in file 50006.sol in contract ELTWagerLedger in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Dependency detection finished!
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Static Analysis took 0.072745 seconds
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Dependency exists
+[INFO] | 2026-06-21 07:15:02 PM | analyzer.50006  | Invoking symbolic executor!
+[36m[#] Analysing started: 50006.sol[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[INFO] | 2026-06-21 07:15:03 PM | analyzer.50006  | Symbolic execution took 1.362676 seconds
+[INFO] | 2026-06-21 07:15:03 PM | analyzer.50006  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:15:03 PM | analyzer.50006  | Analysis finished!
+[INFO] | 2026-06-21 07:15:03 PM | analyzer.50006  | Analysis took 1.436001 seconds
+[INFO] | 2026-06-21 07:15:03 PM | analyzer.50006  | Analysis finished at: 2026-06-21 07:15:03 PM
+[36m[#] Analysis took 1.436001 seconds[0m
+[36m[#] Analysis completed: 50006.sol [0m
+
+=== dependency_info.json ===
+{
+    "50006.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "from_function": "withdraw",
+            "to_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: withdraw\nNode: \nIF tokens[0][msg.sender] < amount\nIRS: \nCONDITION TMP_0\"",
+                        "\"BlockID: 5\nFunction: withdraw\nNode: \nEXPRESSION tokens[0][msg.sender] = tokens[0][msg.sender] - amount\nIRS: \nREF_5 := TMP_4\""
+                    ],
+                    "state_variable": "tokens"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 15\nFunction: withdraw\nNode: \nEXPRESSION tokens[0][msg.sender] = tokens[0][msg.sender] - amount\nIRS: \nREF_5 := TMP_4\"",
+                        "\"BlockID: 2\nFunction: withdraw\nNode: \nIF tokens[0][msg.sender] < amount\nIRS: \nCONDITION TMP_0\""
+                    ],
+                    "state_variable": "tokens"
+                }
+            ]
+        }
+    ]
+}

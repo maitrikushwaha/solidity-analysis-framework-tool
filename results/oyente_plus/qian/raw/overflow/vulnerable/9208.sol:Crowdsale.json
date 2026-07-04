@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "76.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "9208.sol:7:27: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    startsAt = 1"
+  ],
+  "integer_overflow": [
+   "9208.sol:8:26: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    startsAt = 9357710400807469101310923625686178102944106840933728154517245604120892391226"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

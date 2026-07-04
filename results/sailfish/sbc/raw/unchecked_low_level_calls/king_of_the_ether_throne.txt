@@ -1,0 +1,2475 @@
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Analysis started at: 2026-06-21 07:10:14 PM
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Callgraph generation started!
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Callgraph generation finished!
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Value Range Analysis started
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Range graph generated
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Generating return summary for KingOfTheEtherThrone
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Return summary generated for KingOfTheEtherThrone
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Range graph generated
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Processed function KingOfTheEtherThrone
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Generating return summary for numberOfMonarchs
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Return summary generated for numberOfMonarchs
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Processed function numberOfMonarchs
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Generating return summary for claimThrone
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Return summary generated for claimThrone
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Range graph generated
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Processed function claimThrone
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Generating return summary for onlywizard
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Return summary generated for onlywizard
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Processed function onlywizard
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Generating return summary for fallback
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Return summary generated for fallback
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Range graph generated
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Processed function fallback
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Generating return summary for sweepCommission
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Return summary generated for sweepCommission
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Processed function sweepCommission
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Generating return summary for transferOwnership
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Return summary generated for transferOwnership
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Range graph generated
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Processed function transferOwnership
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Value Range Analysis took 0.009486 seconds
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Value Range Analysis finished
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | Dependency detection started!
+[INFO] | 2026-06-21 07:10:14 PM | analyzer.king_of_the_ether_throne | TOD dependency detected in file king_of_the_ether_throne.sol in contract KingOfTheEtherThrone in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:10:15 PM | analyzer.king_of_the_ether_throne | TOD dependency detected in file king_of_the_ether_throne.sol in contract KingOfTheEtherThrone in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:10:17 PM | analyzer.king_of_the_ether_throne | TOD dependency detected in file king_of_the_ether_throne.sol in contract KingOfTheEtherThrone in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:10:17 PM | analyzer.king_of_the_ether_throne | TOD dependency detected in file king_of_the_ether_throne.sol in contract KingOfTheEtherThrone in by composing functions fallback and claimThrone
+[INFO] | 2026-06-21 07:10:18 PM | analyzer.king_of_the_ether_throne | TOD dependency detected in file king_of_the_ether_throne.sol in contract KingOfTheEtherThrone in by composing functions fallback and claimThrone
+[INFO] | 2026-06-21 07:10:20 PM | analyzer.king_of_the_ether_throne | TOD dependency detected in file king_of_the_ether_throne.sol in contract KingOfTheEtherThrone in by composing functions fallback and claimThrone
+[INFO] | 2026-06-21 07:10:20 PM | analyzer.king_of_the_ether_throne | TOD dependency detected in file king_of_the_ether_throne.sol in contract KingOfTheEtherThrone in by composing functions claimThrone and fallback
+[INFO] | 2026-06-21 07:10:21 PM | analyzer.king_of_the_ether_throne | TOD dependency detected in file king_of_the_ether_throne.sol in contract KingOfTheEtherThrone in by composing functions claimThrone and fallback
+[INFO] | 2026-06-21 07:10:22 PM | analyzer.king_of_the_ether_throne | TOD dependency detected in file king_of_the_ether_throne.sol in contract KingOfTheEtherThrone in by composing functions claimThrone and fallback
+[INFO] | 2026-06-21 07:10:23 PM | analyzer.king_of_the_ether_throne | TOD dependency detected in file king_of_the_ether_throne.sol in contract KingOfTheEtherThrone in by composing functions claimThrone and claimThrone
+[INFO] | 2026-06-21 07:10:24 PM | analyzer.king_of_the_ether_throne | TOD dependency detected in file king_of_the_ether_throne.sol in contract KingOfTheEtherThrone in by composing functions claimThrone and claimThrone
+[INFO] | 2026-06-21 07:10:25 PM | analyzer.king_of_the_ether_throne | TOD dependency detected in file king_of_the_ether_throne.sol in contract KingOfTheEtherThrone in by composing functions claimThrone and claimThrone
+[INFO] | 2026-06-21 07:10:25 PM | analyzer.king_of_the_ether_throne | Dependency detection finished!
+[INFO] | 2026-06-21 07:10:25 PM | analyzer.king_of_the_ether_throne | Static Analysis took 11.596280 seconds
+[INFO] | 2026-06-21 07:10:25 PM | analyzer.king_of_the_ether_throne | Dependency exists
+[INFO] | 2026-06-21 07:10:25 PM | analyzer.king_of_the_ether_throne | Invoking symbolic executor!
+[36m[#] Analysing started: king_of_the_ether_throne.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlywizard[0m
+[36m[#] Interprocedural CFG generated for modifer onlywizard[0m
+[36m[#] Interprocedural CFG generation started for KingOfTheEtherThrone[0m
+[36m[#] Interprocedural CFG generated for KingOfTheEtherThrone[0m
+[36m[#] Interprocedural CFG generation started for numberOfMonarchs[0m
+[36m[#] Interprocedural CFG generated for numberOfMonarchs[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for claimThrone[0m
+[36m[#] Interprocedural CFG generated for claimThrone[0m
+[36m[#] Interprocedural CFG generation started for sweepCommission[0m
+[36m[#] Interprocedural CFG generated for sweepCommission[0m
+[36m[#] Interprocedural CFG generation started for transferOwnership[0m
+[36m[#] Interprocedural CFG generated for transferOwnership[0m
+[36m[#] SDG generation started for KingOfTheEtherThrone[0m
+[36m[#] SDG generated for KingOfTheEtherThrone[0m
+[36m[#] SDG generation started for numberOfMonarchs[0m
+[36m[#] SDG generated for numberOfMonarchs[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for claimThrone[0m
+[36m[#] SDG generated for claimThrone[0m
+[36m[#] SDG generation started for sweepCommission[0m
+[36m[#] SDG generated for sweepCommission[0m
+[36m[#] SDG generation started for transferOwnership[0m
+[36m[#] SDG generated for transferOwnership[0m
+[36m[#] SDG generation started for modifier onlywizard[0m
+[36m[#] SDG generated for modifier onlywizard[0m
+[INFO] | 2026-06-21 07:10:28 PM | analyzer.king_of_the_ether_throne | Symbolic execution took 2.271255 seconds
+[INFO] | 2026-06-21 07:10:28 PM | analyzer.king_of_the_ether_throne | Symbolic execution finished!
+[INFO] | 2026-06-21 07:10:28 PM | analyzer.king_of_the_ether_throne | Analysis finished!
+[INFO] | 2026-06-21 07:10:28 PM | analyzer.king_of_the_ether_throne | Analysis took 13.868351 seconds
+[INFO] | 2026-06-21 07:10:28 PM | analyzer.king_of_the_ether_throne | Analysis finished at: 2026-06-21 07:10:28 PM
+[36m[#] Analysis took 13.868351 seconds[0m
+[36m[#] Analysis completed: king_of_the_ether_throne.sol [0m
+
+=== dependency_info.json ===
+{
+    "king_of_the_ether_throne.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 96\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 98\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 100\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 102\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 104\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 106\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 108\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 109\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 96\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 98\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 100\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 102\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 104\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 106\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 108\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 109\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 130\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 132\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 134\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 136\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 138\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 140\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 142\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 143\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 130\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 132\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 134\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 136\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 138\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 140\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 142\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 143\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 130\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 132\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 134\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 136\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 138\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 140\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 142\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 143\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 164\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 168\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 170\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 172\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 174\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 176\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 177\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 164\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 168\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 170\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 172\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 174\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 176\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 177\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 164\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 168\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 170\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 172\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 174\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 176\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 177\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 164\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 168\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 170\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 172\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 174\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 176\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 177\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 164\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 168\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 170\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 172\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 174\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 176\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 177\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "claimThrone"
+            ],
+            "First_function": "claimThrone",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 62\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 64\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 62\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 64\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 8\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "claimThrone"
+            ],
+            "First_function": "claimThrone",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 62\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 64\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 62\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 64\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 62\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 64\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "claimThrone"
+            ],
+            "First_function": "claimThrone",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 62\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 64\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 7\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 62\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 64\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 9\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 62\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 64\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 10\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 62\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 64\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 12\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 56\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 62\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 64\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 13\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimThrone",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "claimThrone",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimThrone",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "claimThrone",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimThrone",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "claimThrone",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimThrone",
+                "claimThrone"
+            ],
+            "First_function": "claimThrone",
+            "Second_function": "claimThrone",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 198\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 200\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 202\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 204\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 206\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 208\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 210\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 211\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 198\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 200\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 202\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 204\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 206\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 208\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 210\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 211\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 42\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(valuePaid)\nIRS: \nTMP_4 = SEND dest:msg.sender value:valuePaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimThrone",
+                "claimThrone"
+            ],
+            "First_function": "claimThrone",
+            "Second_function": "claimThrone",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 232\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 234\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 236\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 238\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 240\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 242\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 244\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 245\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 232\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 234\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 236\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 238\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 240\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 242\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 244\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 245\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 232\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 234\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 236\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 238\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 240\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 242\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 244\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 245\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimThrone",
+                "claimThrone"
+            ],
+            "First_function": "claimThrone",
+            "Second_function": "claimThrone",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 266\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 268\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 270\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 272\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 274\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 276\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 278\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 279\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 41\nFunction: claimThrone\nNode: \nIF valuePaid < currentClaimPrice\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 266\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 268\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 270\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 272\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 274\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 276\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 278\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 279\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 43\nFunction: claimThrone\nNode: \nIF valuePaid > currentClaimPrice\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 266\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 268\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 270\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 272\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 274\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 276\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 278\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 279\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 44\nFunction: claimThrone\nNode: \nEXPRESSION msg.sender.send(excessPaid)\nIRS: \nTMP_7 = SEND dest:msg.sender value:excessPaid\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 266\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 268\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 270\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 272\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 274\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 276\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 278\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 279\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 46\nFunction: claimThrone\nNode: \nIF currentMonarch.etherAddress != wizardAddress\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 266\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 268\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000 * (rawNewClaimPrice \/ 100000000000000)\nIRS: \ncurrentClaimPrice := TMP_21\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 270\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000 * (rawNewClaimPrice \/ 1000000000000000)\nIRS: \ncurrentClaimPrice := TMP_24\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 272\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000 * (rawNewClaimPrice \/ 10000000000000000)\nIRS: \ncurrentClaimPrice := TMP_27\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 274\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 100000000000000000 * (rawNewClaimPrice \/ 100000000000000000)\nIRS: \ncurrentClaimPrice := TMP_30\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 276\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 1000000000000000000 * (rawNewClaimPrice \/ 1000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_33\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 278\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = 10000000000000000000 * (rawNewClaimPrice \/ 10000000000000000000)\nIRS: \ncurrentClaimPrice := TMP_36\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 279\nFunction: claimThrone\nNode: \nEXPRESSION currentClaimPrice = rawNewClaimPrice\nIRS: \ncurrentClaimPrice := rawNewClaimPrice\"",
+                        "\"BlockID: 47\nFunction: claimThrone\nNode: \nEXPRESSION currentMonarch.etherAddress.send(compensation)\nIRS: \nTMP_13 = SEND dest:REF_4 value:compensation\""
+                    ],
+                    "state_variable": "currentClaimPrice"
+                }
+            ]
+        }
+    ]
+}

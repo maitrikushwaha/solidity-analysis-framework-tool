@@ -1,0 +1,34 @@
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Analysis started at: 2026-06-21 07:01:56 PM
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Callgraph generation started!
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Callgraph generation finished!
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Value Range Analysis started
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Generating return summary for ifillArray
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Return summary generated for ifillArray
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Range graph generated
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Processed function ifillArray
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Value Range Analysis took 0.000952 seconds
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Value Range Analysis finished
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Dependency detection started!
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Dependency detection finished!
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Static Analysis took 0.082175 seconds
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Dependency does not exist
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Analysis finished!
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Analysis took 0.082369 seconds
+[INFO] | 2026-06-21 07:01:56 PM | analyzer.dos_simple | Analysis finished at: 2026-06-21 07:01:56 PM
+[36m[#] Analysing started: dos_simple.sol[0m
+[36m[#] Interprocedural CFG generation started for ifillArray[0m
+[36m[#] Interprocedural CFG generated for ifillArray[0m
+[36m[#] SDG generation started for ifillArray[0m
+[36m[#] SDG generated for ifillArray[0m
+[36m[#] Analysis took 0.082369 seconds[0m
+[36m[#] Analysis completed: dos_simple.sol [0m
+
+=== dependency_info.json ===
+{}

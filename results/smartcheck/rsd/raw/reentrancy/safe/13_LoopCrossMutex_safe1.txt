@@ -1,0 +1,43 @@
+/work/datasets/rsd/reentrancy/safe/13_LoopCrossMutex_safe1.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlline 24:37 no viable alternative at input '.call{'
+line 24:37 missing ';' at '{'
+ruleId: SOLIDITY_EXTRA_GAS_IN_LOOPS
+patternId: d3j11j
+severity: 1
+line: 20
+column: 8
+content: for(uinti=0;i<recipients.length;++i){addressr=recipients[i];require(balances[r]>0,"Insufficient funds");balances[r]=0;(boolsuccess,)=r.call<missing ';'>{value:balances[r]}("");require(success,"Call failed");}
+
+ruleId: SOLIDITY_GAS_LIMIT_IN_LOOPS
+patternId: f6f853
+severity: 2
+line: 20
+column: 8
+content: for(uinti=0;i<recipients.length;++i){addressr=recipients[i];require(balances[r]>0,"Insufficient funds");balances[r]=0;(boolsuccess,)=r.call<missing ';'>{value:balances[r]}("");require(success,"Call failed");}
+
+ruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 4
+column: 0
+content: contractC{mapping(address=>uint256)publicbalances;boolprivateflag;functiontransfer(addressto,uint256amt)public{require(!flag,"Locked");require(balances[msg.sender]>=amt,"Insufficient funds");balances[to]+=amt;balances[msg.sender]-=amt;}functionpayAll(address[]memoryrecipients)public{require(!flag,"Locked");flag=true;for(uinti=0;i<recipients.length;++i){addressr=recipients[i];require(balances[r]>0,"Insufficient funds");balances[r]=0;(boolsuccess,)=r.call<missing ';'>{value:balances[r]}("");require(success,"Call failed");}flag=false;}functiondeposit()publicpayable{require(!flag,"Locked");balances[msg.sender]+=msg.value;}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+patternId: 5616b2
+severity: 1
+line: 7
+column: 9
+content: private
+
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_LOCKED_MONEY :1
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA :1
+SOLIDITY_EXTRA_GAS_IN_LOOPS :1
+SOLIDITY_GAS_LIMIT_IN_LOOPS :1

@@ -1,0 +1,33 @@
+
+'solc --version' running
+'solc /work/datasets/qian/timestamp/vulnerable/12919.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/timestamp/vulnerable' running
+Compilation warnings/errors on /work/datasets/qian/timestamp/vulnerable/12919.sol:
+/work/datasets/qian/timestamp/vulnerable/12919.sol:7:39: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        uint256 randomValue = uint256(keccak256(block.timestamp, uint256(randomSeed * block.difficulty)));
+                                      ^----------------------------------------------------------------^
+
+
+Variation.random() (datasets/qian/timestamp/vulnerable/12919.sol#6-10) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/timestamp/vulnerable/12919.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+/work/datasets/qian/timestamp/vulnerable/12919.sol analyzed (1 contracts with 93 detectors), 3 result(s) found

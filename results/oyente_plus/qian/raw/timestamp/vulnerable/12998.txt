@@ -1,0 +1,29 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 12998.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.UMslFvh3In' running
+INFO:CryticCompile:Compilation warnings/errors on 12998.sol:
+12998.sol:9:20: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function place(uint8 cell) external returns (uint){
+                   ^--------^
+
+INFO:root:contract 12998.sol:LOTT:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:12998.sol:11:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    rand2 = 0
+INFO:symExec:12998.sol:10:18: Warning: Integer Overflow.
+
+12998.sol:10:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    rand1 = 80916556076635067600067039503894434814101781998807562410068227070792254357504
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 12998.sol:LOTT.json.

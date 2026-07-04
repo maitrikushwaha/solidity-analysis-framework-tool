@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "90.7",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "etherstore.sol:17:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 61741224443091889604112992288238345887775767117944644398339277770511991426007"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [
+   "etherstore.sol:25:9: Warning: Timestamp Dependency.\n"
+  ],
+  "reentrancy": [
+   "etherstore.sol:27:17: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

@@ -1,0 +1,22 @@
+{
+ "evm_code_coverage": "80.7",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "39559.sol:11:24: Warning: Integer Underflow.\n",
+   "39559.sol:7:12: Warning: Integer Underflow.\n",
+   "39559.sol:8:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    proofs[sha256] = 1"
+  ],
+  "integer_overflow": [
+   "39559.sol:6:3: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    sha256 = 115792089237316195423570985008687907853269984665640564039457584007913129639932",
+   "39559.sol:8:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    proofs[sha256] = 1",
+   "39559.sol:4:36: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    proofs[sha256] = 1361129467683753853853498429727072845824"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

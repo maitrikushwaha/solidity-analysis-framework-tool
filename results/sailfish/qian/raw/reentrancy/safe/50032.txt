@@ -1,0 +1,46 @@
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Analysis started at: 2026-06-21 07:13:31 PM
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Range graph generated
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Processed function onlyOwner
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Generating return summary for refund
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Return summary generated for refund
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Range graph generated
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Processed function refund
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Value Range Analysis took 0.000616 seconds
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Static Analysis took 0.036308 seconds
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Dependency does not exist
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Analysis finished!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Analysis took 0.036404 seconds
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50032  | Analysis finished at: 2026-06-21 07:13:31 PM
+[36m[#] Analysing started: 50032.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for refund[0m
+[36m[#] Interprocedural CFG generated for refund[0m
+[36m[#] SDG generation started for refund[0m
+[36m[#] SDG generated for refund[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.036404 seconds[0m
+[36m[#] Analysis completed: 50032.sol [0m
+
+=== dependency_info.json ===
+{}

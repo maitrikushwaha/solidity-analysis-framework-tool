@@ -1,0 +1,70 @@
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Analysis started at: 2026-06-21 07:07:31 PM
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Callgraph generation started!
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Callgraph generation finished!
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Value Range Analysis started
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Generating return summary for payOut
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Return summary generated for payOut
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Generating return summary for randomGen
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Return summary generated for randomGen
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Range graph generated
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Processed function payOut
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Processed function randomGen
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Generating return summary for draw
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Return summary generated for draw
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Range graph generated
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Processed function draw
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Value Range Analysis took 0.001754 seconds
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Value Range Analysis finished
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Dependency detection started!
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | TOD dependency detected in file lottopollo.sol in contract lottopollo in by composing functions draw and draw
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Dependency detection finished!
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Static Analysis took 0.119168 seconds
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Dependency exists
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Invoking symbolic executor!
+[36m[#] Analysing started: lottopollo.sol[0m
+[36m[#] Interprocedural CFG generation started for randomGen[0m
+[36m[#] Interprocedural CFG generated for randomGen[0m
+[36m[#] Interprocedural CFG generation started for draw[0m
+[36m[#] Interprocedural CFG generated for draw[0m
+[36m[#] SDG generation started for randomGen[0m
+[36m[#] SDG generated for randomGen[0m
+[36m[#] SDG generation started for draw[0m
+[36m[#] SDG generated for draw[0m
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Symbolic execution took 0.763118 seconds
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Symbolic execution finished!
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Analysis finished!
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Analysis took 0.883437 seconds
+[INFO] | 2026-06-21 07:07:31 PM | analyzer.lottopollo | Analysis finished at: 2026-06-21 07:07:31 PM
+[36m[#] Analysis took 0.883437 seconds[0m
+[36m[#] Analysis completed: lottopollo.sol [0m
+
+=== dependency_info.json ===
+{
+    "lottopollo.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "draw",
+                "draw"
+            ],
+            "First_function": "draw",
+            "Second_function": "draw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: payOut\nNode: \nEXPRESSION leader = msg.sender\nIRS: \nleader := msg.sender\"",
+                        "\"BlockID: 11\nFunction: payOut\nNode: \nEXPRESSION leader.send(this.balance)\nIRS: \nTMP_6 = SEND dest:leader value:REF_3\""
+                    ],
+                    "state_variable": "leader"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 13_LoopCrossMutex_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.yb1oe1Flw9' running
+INFO:root:contract 13_LoopCrossMutex_ree1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 62.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:13_LoopCrossMutex_ree1.sol:5:5: Warning: Integer Underflow.
+
+13_LoopCrossMutex_ree1.sol:16:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 72822368621905888528129853390730942751767054486990255467489369453040736875314
+13_LoopCrossMutex_ree1.sol:36:8985: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[r] = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+    flag = 36248066578201496717523149381245545473756009417154461662590821507729025336832
+    balances[r] = 383123885216472214589586756787577295904684780545900544
+13_LoopCrossMutex_ree1.sol:36:6493: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[r] = 0
+    balances[r] = 93981950917731083326886414203090998515214322516151480181373609072537701973758
+    flag = 57898695000465148134311089178985558205480267601525620548947339252746271334402
+    balances[r] = 696898287454081973172991196020261297061888
+    balances[r] = 28945205823592141897189038703141717691203024123940554810557612700068547001973
+    balances[r] = 21682745884869725168765964833995522065944216914972408736018697354238541954992
+    balances[r] = 2361183241434822606848
+    balances[r] = 42535295865117307932921825928971026432
+    balances[r] = 128
+    balances[r] = 69640230874301310116422290318882151846324407629900499845650681336240623582880
+13_LoopCrossMutex_ree1.sol:21:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[r] = 0
+    balances[r] = 115692200262007456367501638815113338210695034173835896872747106978300737613310
+    flag = 1766847064778390643464925885331987264688754328848887100720731234326544384
+    balances[r] = 205688069665150755269371147819668813122841983204197482918576128
+    balances[r] = 115791191875366240169112596696587511388451599497113974751448187352150385319541
+    balances[r] = 28919724717944769560522334276317541225165047328755421622907151074585762332592
+    balances[r] = 4
+    balances[r] = 32768
+    balances[r] = 4096
+    balances[r] = 58200067123369766018076098636116700958161503124270224908603623154626086351840
+INFO:symExec:13_LoopCrossMutex_ree1.sol:36:570: Warning: Integer Overflow.
+
+13_LoopCrossMutex_ree1.sol:22:32: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[r] = 108469826331435748952340035841373835505450754609757334702002570344561511489022
+    flag = 21202272617130494519467017037360082593886051295815300139806872800868696064
+    balances[r] = 7237005577332262213973186563042994240829374041602535252466099000494570602496
+    balances[r] = 86843687173439290915784511763124480898581277173568074850923794548891209121013
+    balances[r] = 28905452278780614637383291395719066990361451423161010917681141974977180860336
+    balances[r] = 65536
+    balances[r] = 13803492693581127574869511724554050904902217944340773110325048447598592
+    balances[r] = 87112285931760246646623899502532662132736
+    balances[r] = 94444285164725252970445852819175632334427242914360992558489793477213990249888
+INFO:symExec:13_LoopCrossMutex_ree1.sol:22:32: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:Flow1
+13_LoopCrossMutex_ree1.sol:22:32: Warning: Transaction-Ordering Dependency.
+
+Flow2
+13_LoopCrossMutex_ree1.sol:22:32: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:13_LoopCrossMutex_ree1.sol:22:32: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 13_LoopCrossMutex_ree1.sol:C.json.

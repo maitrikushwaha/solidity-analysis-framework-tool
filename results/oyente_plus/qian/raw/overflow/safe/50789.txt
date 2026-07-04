@@ -1,0 +1,31 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50789.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.cdqnGBOS6f' running
+INFO:CryticCompile:Compilation warnings/errors on 50789.sol:
+50789.sol:18:5: Warning: No visibility specified. Defaulting to "public". 
+    function createRandomNumber() returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 50789.sol:PPBC_API:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 76.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50789.sol:PPBC_API.json.
+INFO:root:contract 50789.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50789.sol:SafeMath.json.

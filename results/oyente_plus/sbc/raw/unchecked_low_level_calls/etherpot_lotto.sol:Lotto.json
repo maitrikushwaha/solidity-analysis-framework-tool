@@ -1,0 +1,24 @@
+{
+ "evm_code_coverage": "30.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "etherpot_lotto.sol:119:6: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    return rounds[roundIndex].buyers = 0"
+  ],
+  "integer_overflow": [
+   "etherpot_lotto.sol:128:17: Warning: Integer Overflow.\n",
+   "etherpot_lotto.sol:124:17: Warning: Integer Overflow.\n",
+   "etherpot_lotto.sol:43:17: Warning: Integer Overflow.\n",
+   "etherpot_lotto.sol:120:10: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    return rounds[roundIndex].buyers = 3618502788666131106986593281521497120414687020801267626233049500247285301247"
+  ],
+  "callstack": [
+   "etherpot_lotto.sol:141:14: Warning: Callstack Depth Attack Vulnerability.\n",
+   "etherpot_lotto.sol:109:10: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

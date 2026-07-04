@@ -1,0 +1,16 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/00_BasicFold_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/00_BasicFold_safe1.sol#1)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in C.pay(uint256) (datasets/rsd/reentrancy/safe/00_BasicFold_safe1.sol#7-10):
+	- (success,None) = msg.sender.call{value: amt}() (datasets/rsd/reentrancy/safe/00_BasicFold_safe1.sol#8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/work/datasets/rsd/reentrancy/safe/00_BasicFold_safe1.sol analyzed (1 contracts with 93 detectors), 2 result(s) found

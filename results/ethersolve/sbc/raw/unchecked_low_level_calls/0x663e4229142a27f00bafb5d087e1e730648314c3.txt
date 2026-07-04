@@ -1,0 +1,413 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:ClockAuction
+offset,opcode,detection
+3414,3414: SLOAD,Store read after unsafe call
+4043,4043: SLOAD,Store read after unsafe call
+4072,4072: SSTORE,Store write after unsafe call
+4652,4652: SLOAD,Store read after unsafe call
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:ClockAuctionBase
+offset,opcode,detection
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:ERC721Metadata
+offset,opcode,detection
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:Ownable
+offset,opcode,detection
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaAccessControl
+offset,opcode,detection
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaAuction
+offset,opcode,detection
+6377,6377: SLOAD,Store read after unsafe call
+6430,6430: SSTORE,Store write after unsafe call
+7725,7725: SLOAD,Store read after unsafe call
+7778,7778: SSTORE,Store write after unsafe call
+8340,8340: SLOAD,Store read after unsafe call
+8998,8998: SLOAD,Store read after unsafe call
+9038,9038: SLOAD,Store read after unsafe call
+9754,9754: SLOAD,Store read after unsafe call
+9833,9833: SLOAD,Store read after unsafe call
+10146,10146: SLOAD,Store read after unsafe call
+11153,11153: SLOAD,Store read after unsafe call
+11206,11206: SSTORE,Store write after unsafe call
+11509,11509: SLOAD,Store read after unsafe call
+12962,12962: SLOAD,Store read after unsafe call
+13450,13450: SLOAD,Store read after unsafe call
+13503,13503: SSTORE,Store write after unsafe call
+15252,15252: SLOAD,Store read after unsafe call
+15455,15455: SLOAD,Store read after unsafe call
+15536,15536: SLOAD,Store read after unsafe call
+16960,16960: SLOAD,Store read after unsafe call
+17085,17085: SLOAD,Store read after unsafe call
+17308,17308: SLOAD,Store read after unsafe call
+17451,17451: SLOAD,Store read after unsafe call
+17548,17548: SLOAD,Store read after unsafe call
+17784,17784: SLOAD,Store read after unsafe call
+17811,17811: SSTORE,Store write after unsafe call
+17953,17953: SLOAD,Store read after unsafe call
+18038,18038: SLOAD,Store read after unsafe call
+18320,18320: SLOAD,Store read after unsafe call
+18364,18364: SLOAD,Store read after unsafe call
+18449,18449: SLOAD,Store read after unsafe call
+18731,18731: SLOAD,Store read after unsafe call
+18952,18952: SLOAD,Store read after unsafe call
+19005,19005: SSTORE,Store write after unsafe call
+19225,19225: SLOAD,Store read after unsafe call
+19278,19278: SSTORE,Store write after unsafe call
+19494,19494: SLOAD,Store read after unsafe call
+19521,19521: SSTORE,Store write after unsafe call
+19714,19714: SLOAD,Store read after unsafe call
+19749,19749: SLOAD,Store read after unsafe call
+19793,19793: SLOAD,Store read after unsafe call
+19828,19828: SLOAD,Store read after unsafe call
+19873,19873: SLOAD,Store read after unsafe call
+19909,19909: SLOAD,Store read after unsafe call
+19979,19979: SLOAD,Store read after unsafe call
+20040,20040: SLOAD,Store read after unsafe call
+20110,20110: SLOAD,Store read after unsafe call
+20171,20171: SLOAD,Store read after unsafe call
+20214,20214: SLOAD,Store read after unsafe call
+20339,20339: SLOAD,Store read after unsafe call
+20453,20453: SLOAD,Store read after unsafe call
+20578,20578: SLOAD,Store read after unsafe call
+20798,20798: SLOAD,Store read after unsafe call
+20928,20928: SLOAD,Store read after unsafe call
+21059,21059: SLOAD,Store read after unsafe call
+21090,21090: SLOAD,Store read after unsafe call
+21164,21164: SLOAD,Store read after unsafe call
+21195,21195: SLOAD,Store read after unsafe call
+21234,21234: SLOAD,Store read after unsafe call
+21255,21255: SSTORE,Store write after unsafe call
+21481,21481: SSTORE,Store write after unsafe call
+21577,21577: SLOAD,Store read after unsafe call
+21840,21840: SLOAD,Store read after unsafe call
+21854,21854: SLOAD,Store read after unsafe call
+22238,22238: SLOAD,Store read after unsafe call
+22529,22529: SLOAD,Store read after unsafe call
+22543,22543: SLOAD,Store read after unsafe call
+22838,22838: SLOAD,Store read after unsafe call
+22861,22861: SSTORE,Store write after unsafe call
+22892,22892: SLOAD,Store read after unsafe call
+22910,22910: SLOAD,Store read after unsafe call
+22921,22921: SSTORE,Store write after unsafe call
+23044,23044: SLOAD,Store read after unsafe call
+23048,23048: SSTORE,Store write after unsafe call
+23368,23368: SLOAD,Store read after unsafe call
+23385,23385: SSTORE,Store write after unsafe call
+23707,23707: SLOAD,Store read after unsafe call
+23799,23799: SLOAD,Store read after unsafe call
+23952,23952: SLOAD,Store read after unsafe call
+23994,23994: SLOAD,Store read after unsafe call
+24065,24065: SSTORE,Store write after unsafe call
+24076,24076: SLOAD,Store read after unsafe call
+24107,24107: SLOAD,Store read after unsafe call
+24232,24232: SLOAD,Store read after unsafe call
+24381,24381: SLOAD,Store read after unsafe call
+24398,24398: SSTORE,Store write after unsafe call
+24590,24590: SSTORE,Store write after unsafe call
+24678,24678: SSTORE,Store write after unsafe call
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaBase
+offset,opcode,detection
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaBreeding
+offset,opcode,detection
+5915,5915: SLOAD,Store read after unsafe call
+5968,5968: SSTORE,Store write after unsafe call
+7215,7215: SLOAD,Store read after unsafe call
+7294,7294: SLOAD,Store read after unsafe call
+7607,7607: SLOAD,Store read after unsafe call
+11912,11912: SLOAD,Store read after unsafe call
+12037,12037: SLOAD,Store read after unsafe call
+12260,12260: SLOAD,Store read after unsafe call
+12403,12403: SLOAD,Store read after unsafe call
+12500,12500: SLOAD,Store read after unsafe call
+12736,12736: SLOAD,Store read after unsafe call
+12763,12763: SSTORE,Store write after unsafe call
+12905,12905: SLOAD,Store read after unsafe call
+12990,12990: SLOAD,Store read after unsafe call
+13272,13272: SLOAD,Store read after unsafe call
+13316,13316: SLOAD,Store read after unsafe call
+13401,13401: SLOAD,Store read after unsafe call
+13683,13683: SLOAD,Store read after unsafe call
+14177,14177: SLOAD,Store read after unsafe call
+14230,14230: SSTORE,Store write after unsafe call
+14446,14446: SLOAD,Store read after unsafe call
+14473,14473: SSTORE,Store write after unsafe call
+14666,14666: SLOAD,Store read after unsafe call
+14701,14701: SLOAD,Store read after unsafe call
+14745,14745: SLOAD,Store read after unsafe call
+14780,14780: SLOAD,Store read after unsafe call
+14825,14825: SLOAD,Store read after unsafe call
+14861,14861: SLOAD,Store read after unsafe call
+14931,14931: SLOAD,Store read after unsafe call
+14992,14992: SLOAD,Store read after unsafe call
+15062,15062: SLOAD,Store read after unsafe call
+15123,15123: SLOAD,Store read after unsafe call
+15166,15166: SLOAD,Store read after unsafe call
+15291,15291: SLOAD,Store read after unsafe call
+15405,15405: SLOAD,Store read after unsafe call
+15530,15530: SLOAD,Store read after unsafe call
+15750,15750: SLOAD,Store read after unsafe call
+15880,15880: SLOAD,Store read after unsafe call
+16144,16144: SLOAD,Store read after unsafe call
+16158,16158: SLOAD,Store read after unsafe call
+16542,16542: SLOAD,Store read after unsafe call
+16833,16833: SLOAD,Store read after unsafe call
+16847,16847: SLOAD,Store read after unsafe call
+17142,17142: SLOAD,Store read after unsafe call
+17165,17165: SSTORE,Store write after unsafe call
+17196,17196: SLOAD,Store read after unsafe call
+17214,17214: SLOAD,Store read after unsafe call
+17225,17225: SSTORE,Store write after unsafe call
+17348,17348: SLOAD,Store read after unsafe call
+17352,17352: SSTORE,Store write after unsafe call
+17672,17672: SLOAD,Store read after unsafe call
+17689,17689: SSTORE,Store write after unsafe call
+17965,17965: SLOAD,Store read after unsafe call
+17996,17996: SLOAD,Store read after unsafe call
+18035,18035: SLOAD,Store read after unsafe call
+18056,18056: SSTORE,Store write after unsafe call
+18282,18282: SSTORE,Store write after unsafe call
+18378,18378: SLOAD,Store read after unsafe call
+18570,18570: SLOAD,Store read after unsafe call
+18662,18662: SLOAD,Store read after unsafe call
+18815,18815: SLOAD,Store read after unsafe call
+18857,18857: SLOAD,Store read after unsafe call
+18928,18928: SSTORE,Store write after unsafe call
+18939,18939: SLOAD,Store read after unsafe call
+18970,18970: SLOAD,Store read after unsafe call
+19095,19095: SLOAD,Store read after unsafe call
+19244,19244: SLOAD,Store read after unsafe call
+19261,19261: SSTORE,Store write after unsafe call
+19453,19453: SSTORE,Store write after unsafe call
+19541,19541: SSTORE,Store write after unsafe call
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaCore
+offset,opcode,detection
+7849,7849: SLOAD,Store read after unsafe call
+7902,7902: SSTORE,Store write after unsafe call
+9204,9204: SLOAD,Store read after unsafe call
+9257,9257: SSTORE,Store write after unsafe call
+9819,9819: SLOAD,Store read after unsafe call
+10833,10833: SLOAD,Store read after unsafe call
+10873,10873: SLOAD,Store read after unsafe call
+11589,11589: SLOAD,Store read after unsafe call
+11668,11668: SLOAD,Store read after unsafe call
+11981,11981: SLOAD,Store read after unsafe call
+12983,12983: SLOAD,Store read after unsafe call
+13514,13514: SLOAD,Store read after unsafe call
+13567,13567: SSTORE,Store write after unsafe call
+14155,14155: SLOAD,Store read after unsafe call
+15608,15608: SLOAD,Store read after unsafe call
+15999,15999: SLOAD,Store read after unsafe call
+16510,16510: SLOAD,Store read after unsafe call
+16563,16563: SSTORE,Store write after unsafe call
+17908,17908: SLOAD,Store read after unsafe call
+19018,19018: SLOAD,Store read after unsafe call
+19221,19221: SLOAD,Store read after unsafe call
+19302,19302: SLOAD,Store read after unsafe call
+20726,20726: SLOAD,Store read after unsafe call
+20851,20851: SLOAD,Store read after unsafe call
+21074,21074: SLOAD,Store read after unsafe call
+21217,21217: SLOAD,Store read after unsafe call
+21314,21314: SLOAD,Store read after unsafe call
+21550,21550: SLOAD,Store read after unsafe call
+21577,21577: SSTORE,Store write after unsafe call
+21719,21719: SLOAD,Store read after unsafe call
+21804,21804: SLOAD,Store read after unsafe call
+22086,22086: SLOAD,Store read after unsafe call
+22130,22130: SLOAD,Store read after unsafe call
+22215,22215: SLOAD,Store read after unsafe call
+22497,22497: SLOAD,Store read after unsafe call
+22718,22718: SLOAD,Store read after unsafe call
+22771,22771: SSTORE,Store write after unsafe call
+22991,22991: SLOAD,Store read after unsafe call
+23044,23044: SSTORE,Store write after unsafe call
+23260,23260: SLOAD,Store read after unsafe call
+23287,23287: SSTORE,Store write after unsafe call
+23627,23627: SLOAD,Store read after unsafe call
+23662,23662: SLOAD,Store read after unsafe call
+23706,23706: SLOAD,Store read after unsafe call
+23741,23741: SLOAD,Store read after unsafe call
+23786,23786: SLOAD,Store read after unsafe call
+23822,23822: SLOAD,Store read after unsafe call
+23892,23892: SLOAD,Store read after unsafe call
+23953,23953: SLOAD,Store read after unsafe call
+24023,24023: SLOAD,Store read after unsafe call
+24084,24084: SLOAD,Store read after unsafe call
+24127,24127: SLOAD,Store read after unsafe call
+24252,24252: SLOAD,Store read after unsafe call
+24366,24366: SLOAD,Store read after unsafe call
+24491,24491: SLOAD,Store read after unsafe call
+24711,24711: SLOAD,Store read after unsafe call
+24841,24841: SLOAD,Store read after unsafe call
+24988,24988: SLOAD,Store read after unsafe call
+25002,25002: SLOAD,Store read after unsafe call
+25386,25386: SLOAD,Store read after unsafe call
+25677,25677: SLOAD,Store read after unsafe call
+25691,25691: SLOAD,Store read after unsafe call
+25986,25986: SLOAD,Store read after unsafe call
+26009,26009: SSTORE,Store write after unsafe call
+26040,26040: SLOAD,Store read after unsafe call
+26058,26058: SLOAD,Store read after unsafe call
+26069,26069: SSTORE,Store write after unsafe call
+26192,26192: SLOAD,Store read after unsafe call
+26196,26196: SSTORE,Store write after unsafe call
+26516,26516: SLOAD,Store read after unsafe call
+26533,26533: SSTORE,Store write after unsafe call
+26794,26794: SLOAD,Store read after unsafe call
+27136,27136: SLOAD,Store read after unsafe call
+27167,27167: SLOAD,Store read after unsafe call
+27241,27241: SLOAD,Store read after unsafe call
+27272,27272: SLOAD,Store read after unsafe call
+27311,27311: SLOAD,Store read after unsafe call
+27332,27332: SSTORE,Store write after unsafe call
+27558,27558: SSTORE,Store write after unsafe call
+27654,27654: SLOAD,Store read after unsafe call
+27905,27905: SLOAD,Store read after unsafe call
+27997,27997: SLOAD,Store read after unsafe call
+28150,28150: SLOAD,Store read after unsafe call
+28192,28192: SLOAD,Store read after unsafe call
+28263,28263: SSTORE,Store write after unsafe call
+28274,28274: SLOAD,Store read after unsafe call
+28305,28305: SLOAD,Store read after unsafe call
+28430,28430: SLOAD,Store read after unsafe call
+28579,28579: SLOAD,Store read after unsafe call
+28596,28596: SSTORE,Store write after unsafe call
+28788,28788: SSTORE,Store write after unsafe call
+28876,28876: SSTORE,Store write after unsafe call
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaMinting
+offset,opcode,detection
+6822,6822: SLOAD,Store read after unsafe call
+6875,6875: SSTORE,Store write after unsafe call
+8177,8177: SLOAD,Store read after unsafe call
+8230,8230: SSTORE,Store write after unsafe call
+8792,8792: SLOAD,Store read after unsafe call
+9450,9450: SLOAD,Store read after unsafe call
+9490,9490: SLOAD,Store read after unsafe call
+10206,10206: SLOAD,Store read after unsafe call
+10285,10285: SLOAD,Store read after unsafe call
+10598,10598: SLOAD,Store read after unsafe call
+11857,11857: SLOAD,Store read after unsafe call
+11910,11910: SSTORE,Store write after unsafe call
+12213,12213: SLOAD,Store read after unsafe call
+13666,13666: SLOAD,Store read after unsafe call
+14057,14057: SLOAD,Store read after unsafe call
+14568,14568: SLOAD,Store read after unsafe call
+14621,14621: SSTORE,Store write after unsafe call
+15966,15966: SLOAD,Store read after unsafe call
+16797,16797: SLOAD,Store read after unsafe call
+17000,17000: SLOAD,Store read after unsafe call
+17081,17081: SLOAD,Store read after unsafe call
+18505,18505: SLOAD,Store read after unsafe call
+18630,18630: SLOAD,Store read after unsafe call
+18853,18853: SLOAD,Store read after unsafe call
+18996,18996: SLOAD,Store read after unsafe call
+19093,19093: SLOAD,Store read after unsafe call
+19329,19329: SLOAD,Store read after unsafe call
+19356,19356: SSTORE,Store write after unsafe call
+19498,19498: SLOAD,Store read after unsafe call
+19583,19583: SLOAD,Store read after unsafe call
+19865,19865: SLOAD,Store read after unsafe call
+19909,19909: SLOAD,Store read after unsafe call
+19994,19994: SLOAD,Store read after unsafe call
+20276,20276: SLOAD,Store read after unsafe call
+20497,20497: SLOAD,Store read after unsafe call
+20550,20550: SSTORE,Store write after unsafe call
+20770,20770: SLOAD,Store read after unsafe call
+20823,20823: SSTORE,Store write after unsafe call
+21039,21039: SLOAD,Store read after unsafe call
+21066,21066: SSTORE,Store write after unsafe call
+21259,21259: SLOAD,Store read after unsafe call
+21294,21294: SLOAD,Store read after unsafe call
+21338,21338: SLOAD,Store read after unsafe call
+21373,21373: SLOAD,Store read after unsafe call
+21418,21418: SLOAD,Store read after unsafe call
+21454,21454: SLOAD,Store read after unsafe call
+21524,21524: SLOAD,Store read after unsafe call
+21585,21585: SLOAD,Store read after unsafe call
+21655,21655: SLOAD,Store read after unsafe call
+21716,21716: SLOAD,Store read after unsafe call
+21759,21759: SLOAD,Store read after unsafe call
+21884,21884: SLOAD,Store read after unsafe call
+21998,21998: SLOAD,Store read after unsafe call
+22123,22123: SLOAD,Store read after unsafe call
+22343,22343: SLOAD,Store read after unsafe call
+22473,22473: SLOAD,Store read after unsafe call
+22620,22620: SLOAD,Store read after unsafe call
+22634,22634: SLOAD,Store read after unsafe call
+23018,23018: SLOAD,Store read after unsafe call
+23309,23309: SLOAD,Store read after unsafe call
+23323,23323: SLOAD,Store read after unsafe call
+23618,23618: SLOAD,Store read after unsafe call
+23641,23641: SSTORE,Store write after unsafe call
+23672,23672: SLOAD,Store read after unsafe call
+23690,23690: SLOAD,Store read after unsafe call
+23701,23701: SSTORE,Store write after unsafe call
+23824,23824: SLOAD,Store read after unsafe call
+23828,23828: SSTORE,Store write after unsafe call
+24148,24148: SLOAD,Store read after unsafe call
+24165,24165: SSTORE,Store write after unsafe call
+24426,24426: SLOAD,Store read after unsafe call
+24768,24768: SLOAD,Store read after unsafe call
+24799,24799: SLOAD,Store read after unsafe call
+24873,24873: SLOAD,Store read after unsafe call
+24904,24904: SLOAD,Store read after unsafe call
+24943,24943: SLOAD,Store read after unsafe call
+24964,24964: SSTORE,Store write after unsafe call
+25190,25190: SSTORE,Store write after unsafe call
+25286,25286: SLOAD,Store read after unsafe call
+25537,25537: SLOAD,Store read after unsafe call
+25629,25629: SLOAD,Store read after unsafe call
+25782,25782: SLOAD,Store read after unsafe call
+25824,25824: SLOAD,Store read after unsafe call
+25895,25895: SSTORE,Store write after unsafe call
+25906,25906: SLOAD,Store read after unsafe call
+25937,25937: SLOAD,Store read after unsafe call
+26062,26062: SLOAD,Store read after unsafe call
+26211,26211: SLOAD,Store read after unsafe call
+26228,26228: SSTORE,Store write after unsafe call
+26420,26420: SSTORE,Store write after unsafe call
+26508,26508: SSTORE,Store write after unsafe call
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaOwnership
+offset,opcode,detection
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:Pausable
+offset,opcode,detection
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:SaleClockAuction
+offset,opcode,detection
+2791,2791: SLOAD,Store read after unsafe call
+2824,2824: SLOAD,Store read after unsafe call
+2835,2835: SSTORE,Store write after unsafe call
+4873,4873: SLOAD,Store read after unsafe call
+5727,5727: SLOAD,Store read after unsafe call
+5756,5756: SSTORE,Store write after unsafe call
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:SaleClockAuctionERC20
+offset,opcode,detection
+4202,4202: SLOAD,Store read after unsafe call
+4229,4229: SSTORE,Store write after unsafe call
+4971,4971: SLOAD,Store read after unsafe call
+5024,5024: SSTORE,Store write after unsafe call
+5512,5512: SLOAD,Store read after unsafe call
+5539,5539: SSTORE,Store write after unsafe call
+5812,5812: SLOAD,Store read after unsafe call
+6441,6441: SLOAD,Store read after unsafe call
+6470,6470: SSTORE,Store write after unsafe call
+7340,7340: SLOAD,Store read after unsafe call
+7369,7369: SSTORE,Store write after unsafe call
+8530,8530: SLOAD,Store read after unsafe call
+8537,8537: SSTORE,Store write after unsafe call
+8677,8677: SLOAD,Store read after unsafe call
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol:SiringClockAuction
+offset,opcode,detection
+4027,4027: SLOAD,Store read after unsafe call
+4056,4056: SSTORE,Store write after unsafe call
+4636,4636: SLOAD,Store read after unsafe call

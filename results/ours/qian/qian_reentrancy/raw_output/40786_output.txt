@@ -1,0 +1,31 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+[CFG] No reentrancy back-edge: no external-call encoding detected.
+Dependency analysis completed in 0.0017s.
+[DOMAIN] Reentrancy encoding detected → Box + Octagon + Polka
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] Running Box domain.
+[TIMING] reentrancy domain=Box fixpoint=0.8385s
+
+===== VERDICTS (Box) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+
+===== VERDICTS (Octagon) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+
+===== VERDICTS (Polka) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: NOT VULNERABLE
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: NOT VULNERABLE
+[SUMMARY] TOD: NOT VULNERABLE
+
+Total analysis time: 1.01s

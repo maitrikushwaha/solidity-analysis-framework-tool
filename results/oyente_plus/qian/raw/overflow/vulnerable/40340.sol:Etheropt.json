@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "78.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "40340.sol:16:13: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    accounts[accountIDs[msg.sender]].capital = 0\n    amount = 1\n    accountIDs[msg.sender] = 1"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "40340.sol:17:13: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

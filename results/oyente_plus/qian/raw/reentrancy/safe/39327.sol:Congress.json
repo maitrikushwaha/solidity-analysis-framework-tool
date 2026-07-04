@@ -1,0 +1,27 @@
+{
+ "evm_code_coverage": "84.3",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "39327.sol:21:18: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    majorityMargin = 0\n    proposals[id] = 2\n    id = 0"
+  ],
+  "integer_overflow": [
+   "39327.sol:7:5: Warning: Integer Overflow.\n",
+   "39327.sol:17:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    transactionBytecode = 115792089237316195423570985008687907853269984665640564039457584007913129639932",
+   "39327.sol:18:22: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    proposals[id] = 35909400666358905682514721682884269739949275170738095011956039520101960671581\n    id = 20884409294335581046830075856103119250180168295534781480806341367770361364488",
+   "39327.sol:20:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    proposals[id] = 35856271468735439429288084652500871334999687210959392628355587785288814584157\n    id = 1837183238832819434043982902869181042618277379048465426251398619465500327936",
+   "39327.sol:24:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    majorityMargin = 0\n    proposals[id] = 35856271468735439429288084652512289316541334890007858916111183746379876557149\n    id = 1837183238832819434043982902880599024159925058096931714006994580556562300928",
+   "39327.sol:21:41: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    majorityMargin = 0\n    proposals[id] = 35856271468735439429288084652512289317902464357691612769964682176106949402973\n    id = 1837183238832819434043982902880599025521054525780685567860493010283635146752",
+   "39327.sol:22:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    majorityMargin = 0\n    proposals[id] = 35856271468735439429288084652512289317902464357691612769964682176106949402973\n    id = 1837183238832819434043982902880599025521054525780685567860493010283635146752",
+   "39327.sol:6:24: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    majorityMargin = 0\n    proposals[id] = 1\n    id = 0"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "39327.sol:21:18: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

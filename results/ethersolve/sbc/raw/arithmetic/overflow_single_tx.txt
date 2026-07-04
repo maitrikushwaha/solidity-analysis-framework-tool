@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/arithmetic/overflow_single_tx.sol:IntegerOverflowSingleTransaction
+offset,opcode,detection

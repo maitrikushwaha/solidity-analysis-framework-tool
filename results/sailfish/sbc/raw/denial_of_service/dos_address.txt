@@ -1,0 +1,62 @@
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Analysis started at: 2026-06-21 07:01:52 PM
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Callgraph generation started!
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Callgraph generation finished!
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Value Range Analysis started
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Generating return summary for emptyCreditors
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Return summary generated for emptyCreditors
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Range graph generated
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Processed function emptyCreditors
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Generating return summary for addCreditors
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Return summary generated for addCreditors
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Range graph generated
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Processed function addCreditors
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Generating return summary for iWin
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Return summary generated for iWin
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Processed function iWin
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Generating return summary for numberCreditors
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Return summary generated for numberCreditors
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Processed function numberCreditors
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Range graph generated
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Value Range Analysis took 0.002433 seconds
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Value Range Analysis finished
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Dependency detection started!
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Dependency detection finished!
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Static Analysis took 0.063554 seconds
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Dependency does not exist
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Analysis finished!
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Analysis took 0.063803 seconds
+[INFO] | 2026-06-21 07:01:52 PM | analyzer.dos_address | Analysis finished at: 2026-06-21 07:01:52 PM
+[36m[#] Analysing started: dos_address.sol[0m
+[36m[#] Interprocedural CFG generation started for emptyCreditors[0m
+[36m[#] Interprocedural CFG generated for emptyCreditors[0m
+[36m[#] Interprocedural CFG generation started for addCreditors[0m
+[36m[#] Interprocedural CFG generated for addCreditors[0m
+[36m[#] Interprocedural CFG generation started for iWin[0m
+[36m[#] Interprocedural CFG generated for iWin[0m
+[36m[#] Interprocedural CFG generation started for numberCreditors[0m
+[36m[#] Interprocedural CFG generated for numberCreditors[0m
+[36m[#] SDG generation started for emptyCreditors[0m
+[36m[#] SDG generated for emptyCreditors[0m
+[36m[#] SDG generation started for addCreditors[0m
+[36m[#] SDG generated for addCreditors[0m
+[36m[#] SDG generation started for iWin[0m
+[36m[#] SDG generated for iWin[0m
+[36m[#] SDG generation started for numberCreditors[0m
+[36m[#] SDG generated for numberCreditors[0m
+[36m[#] Analysis took 0.063803 seconds[0m
+[36m[#] Analysis completed: dos_address.sol [0m
+
+=== dependency_info.json ===
+{}

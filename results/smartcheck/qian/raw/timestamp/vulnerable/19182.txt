@@ -1,0 +1,40 @@
+/work/datasets/qian/timestamp/vulnerable/19182.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 3
+column: 0
+content: contractSend69Wei{uint256constantHowMuchWei=69;mapping(uint256=>address)targets;function()payablepublic{if(msg.value>=HowMuchWei){uint256seed1=uint256(block.timestamp);uint256seed2=uint256(block.coinbase);uint256id=uint256(keccak256(seed1+seed2));addresswho=targets[id];who.transfer(HowMuchWei);}}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_UPGRADE_TO_050
+patternId: 91h3sa
+severity: 1
+line: 7
+column: 23
+content: public
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 4
+column: 4
+content: uint256constantHowMuchWei=69;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 5
+column: 4
+content: mapping(uint256=>address)targets;
+
+SOLIDITY_VISIBILITY :2
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_LOCKED_MONEY :1
+SOLIDITY_UPGRADE_TO_050 :1

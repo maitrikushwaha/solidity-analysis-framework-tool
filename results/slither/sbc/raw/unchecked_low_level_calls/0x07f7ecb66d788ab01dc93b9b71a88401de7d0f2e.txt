@@ -1,0 +1,102 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/unchecked_low_level_calls' running
+Compilation warnings/errors on /work/datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol:
+/work/datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol:201:9: Warning: Return value of low-level calls not used.
+        whale.call.value(amount)(bytes4(keccak256("donate()")));
+        ^-----------------------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol:213:9: Warning: Return value of low-level calls not used.
+        whale.call.value(amount)(bytes4(keccak256("donate()")));
+        ^-----------------------------------------------------^
+
+
+PoCGame.payout(address) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#185-192) sends eth to arbitrary user
+	Dangerous calls:
+	- winner.transfer(ethToTransfer) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#190)
+PoCGame.loseWager(uint256) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#209-216) sends eth to arbitrary user
+	Dangerous calls:
+	- whale.call.value(amount)(bytes4(keccak256()(donate()))) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#213)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+PoCGame.play() (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#141-169) uses a weak PRNG: "winningNumber = uint256(keccak256()(abi.encodePacked(blockhash(uint256)(blockNumber),msg.sender))) % difficulty + 1 (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#153)" 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#weak-PRNG
+
+PoCGame.donateToWhale(uint256) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#197-204) ignores return value by whale.call.value(amount)(bytes4(keccak256()(donate()))) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#201)
+PoCGame.loseWager(uint256) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#209-216) ignores return value by whale.call.value(amount)(bytes4(keccak256()(donate()))) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#213)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-low-level-calls
+
+PoCGame.constructor(address,uint256).whaleAddress (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#67) lacks a zero-check on :
+		- whale = whaleAddress (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#73)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+Reentrancy in PoCGame.donateToWhale(uint256) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#197-204):
+	External calls:
+	- whale.call.value(amount)(bytes4(keccak256()(donate()))) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#201)
+	State variables written after the call(s):
+	- totalDonated += amount (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#202)
+Reentrancy in PoCGame.loseWager(uint256) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#209-216):
+	External calls:
+	- whale.call.value(amount)(bytes4(keccak256()(donate()))) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#213)
+	State variables written after the call(s):
+	- totalDonated += amount (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#214)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2
+
+Reentrancy in PoCGame.donateToWhale(uint256) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#197-204):
+	External calls:
+	- whale.call.value(amount)(bytes4(keccak256()(donate()))) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#201)
+	Event emitted after the call(s):
+	- Donate(amount,whale,msg.sender) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#203)
+Reentrancy in PoCGame.loseWager(uint256) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#209-216):
+	External calls:
+	- whale.call.value(amount)(bytes4(keccak256()(donate()))) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#213)
+	Event emitted after the call(s):
+	- Lose(amount,msg.sender) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#215)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3
+
+Version constraint ^0.4.24 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x
+	- ExpExponentCleanup
+	- EventStructWrongData.
+It is used by:
+	- ^0.4.24 (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#7)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in PoCGame.donateToWhale(uint256) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#197-204):
+	- whale.call.value(amount)(bytes4(keccak256()(donate()))) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#201)
+Low level call in PoCGame.loseWager(uint256) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#209-216):
+	- whale.call.value(amount)(bytes4(keccak256()(donate()))) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#213)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Function PoCGame.OpenToThePublic() (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#83-88) is not in mixedCase
+Function PoCGame.AdjustBetAmounts(uint256) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#93-100) is not in mixedCase
+Function PoCGame.AdjustDifficulty(uint256) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#105-112) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Reentrancy in PoCGame.payout(address) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#185-192):
+	External calls:
+	- winner.transfer(ethToTransfer) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#190)
+	Event emitted after the call(s):
+	- Win(ethToTransfer,winner) (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#191)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4
+
+PoCGame.randomSeed (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#57) is never used in PoCGame (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#9-291)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-state-variable
+
+PoCGame.randomSeed (datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol#57) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/sbc/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol analyzed (2 contracts with 93 detectors), 20 result(s) found

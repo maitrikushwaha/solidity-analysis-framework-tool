@@ -1,0 +1,50 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/vulnerable' running
+
+A.withdraw() (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#36-52) sends eth to arbitrary user
+	Dangerous calls:
+	- (success,None) = address(msg.sender).call{value: amountETH}() (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#48)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+A.withdraw() (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#36-52) performs a multiplication on the result of a division:
+	- rate = t1 * 1e18 / t2 (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#45)
+	- amountETH = rate * 1000 / 1e18 (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#46)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#divide-before-multiply
+
+Contract locking ether found:
+	Contract B (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#58-74) has payable functions:
+	 - IAlpha.work(address) (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#7)
+	 - B.work(address) (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#62-66)
+	But does not have a function to withdraw the ether
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#contracts-that-lock-ether
+
+A.withdraw().data (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#37) is written in both
+	(success,data) = address(alpha).staticcall(totalETHView) (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#37)
+	(success,data) = address(alpha).staticcall(totalSupplyView) (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#41)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#write-after-write
+
+Reentrancy in B.work(address) (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#62-66):
+	External calls:
+	- IStrategy(strategy).execute() (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#64)
+	State variables written after the call(s):
+	- totalSupply += msg.value (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#65)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in A.withdraw() (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#36-52):
+	- (success,data) = address(alpha).staticcall(totalETHView) (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#37)
+	- (success,data) = address(alpha).staticcall(totalSupplyView) (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#41)
+	- (success,None) = address(msg.sender).call{value: amountETH}() (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#48)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+A.alpha (datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol#22) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+/work/datasets/rsd/reentrancy/vulnerable/15_ReadOnlyStaticcall_ree1.sol analyzed (5 contracts with 93 detectors), 8 result(s) found

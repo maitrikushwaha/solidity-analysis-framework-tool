@@ -1,0 +1,33 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40252.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.KtApN36PZY' running
+INFO:CryticCompile:Compilation warnings/errors on 40252.sol:
+40252.sol:8:38: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (msg.sender != recipient) throw;
+                                     ^---^
+40252.sol:9:41: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (block.timestamp < birthday) throw;
+                                        ^---^
+40252.sol:10:45: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (!recipient.send (this.balance)) throw;
+                                            ^---^
+40252.sol:10:30: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        if (!recipient.send (this.balance)) throw;
+                             ^----------^
+40252.sol:7:5: Warning: No visibility specified. Defaulting to "public". 
+    function Take () {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 40252.sol:BirthdayGift:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:40252.sol:9:9: Warning: Timestamp Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40252.sol:BirthdayGift.json.

@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "86.3",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "39019.sol:15:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[tokenCreateContract] = 0\n    amountRaised = 78751831081191969302733498870692811697756356941071659973676654985350985658946\n    rewardPercentage = 94230390100885583264893015725174689738056251803902290087029588896816406986753"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "39019.sol:14:14: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

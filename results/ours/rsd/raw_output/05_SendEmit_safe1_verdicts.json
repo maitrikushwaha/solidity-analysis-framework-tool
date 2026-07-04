@@ -1,0 +1,14 @@
+{
+  "filename": "05_SendEmit_safe1.sol",
+  "reentrancy": 0,
+  "overflow": 0,
+  "timestamp": 0,
+  "tod": 1,
+  "duration_s": 0.82,
+  "error": null,
+  "reentrancy_domains": [
+    "Box",
+    "Octagon",
+    "Polka"
+  ]
+}

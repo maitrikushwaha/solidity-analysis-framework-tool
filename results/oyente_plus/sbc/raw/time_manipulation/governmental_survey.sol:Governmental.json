@@ -1,0 +1,21 @@
+{
+ "evm_code_coverage": "91.7",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "governmental_survey.sol:35:16: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    jackpot = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    ONE_MINUTE = 257\n    lastInvestmentTimestamp = 0"
+  ],
+  "integer_overflow": [],
+  "callstack": [
+   "governmental_survey.sol:34:5: Warning: Callstack Depth Attack Vulnerability.\n",
+   "governmental_survey.sol:35:5: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [
+   "governmental_survey.sol:31:5: Warning: Timestamp Dependency.\n"
+  ],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

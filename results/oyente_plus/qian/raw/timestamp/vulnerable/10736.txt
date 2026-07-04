@@ -1,0 +1,25 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 10736.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.tNuO8d4orW' running
+INFO:CryticCompile:Compilation warnings/errors on 10736.sol:
+10736.sol:14:9: Warning: Unused local variable.
+        uint256 iNotValid = holded[_owner].length;
+        ^---------------^
+
+INFO:root:contract 10736.sol:LescovexERC20:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 83.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:10736.sol:12:32: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    holdTime = 1
+INFO:symExec:10736.sol:14:29: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 10736.sol:LescovexERC20.json.

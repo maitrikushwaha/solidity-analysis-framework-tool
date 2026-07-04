@@ -1,0 +1,42 @@
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Analysis started at: 2026-06-21 07:11:14 PM
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Callgraph generation started!
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Callgraph generation finished!
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Value Range Analysis started
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Processed function onlyOwner
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Generating return summary for transfer
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Return summary generated for transfer
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Range graph generated
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Processed function transfer
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Value Range Analysis took 0.000519 seconds
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Value Range Analysis finished
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Dependency detection started!
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Dependency detection finished!
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Static Analysis took 0.036165 seconds
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Dependency does not exist
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Analysis finished!
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Analysis took 0.036278 seconds
+[INFO] | 2026-06-21 07:11:14 PM | analyzer.3      | Analysis finished at: 2026-06-21 07:11:14 PM
+[36m[#] Analysing started: 3.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.036278 seconds[0m
+[36m[#] Analysis completed: 3.sol [0m
+
+=== dependency_info.json ===
+{}

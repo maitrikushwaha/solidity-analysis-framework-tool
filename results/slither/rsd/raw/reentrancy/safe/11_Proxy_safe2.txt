@@ -1,0 +1,28 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/11_Proxy_safe2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+Proxy.forward(address,address,bytes) (datasets/rsd/reentrancy/safe/11_Proxy_safe2.sol#5-12) sends eth to arbitrary user
+	Dangerous calls:
+	- (success,None) = msgSender.call{value: ethBalance}() (datasets/rsd/reentrancy/safe/11_Proxy_safe2.sol#9)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+Proxy.forward(address,address,bytes).target (datasets/rsd/reentrancy/safe/11_Proxy_safe2.sol#5) lacks a zero-check on :
+		- (success,None) = target.call{value: msg.value}(callData) (datasets/rsd/reentrancy/safe/11_Proxy_safe2.sol#6)
+Proxy.forward(address,address,bytes).msgSender (datasets/rsd/reentrancy/safe/11_Proxy_safe2.sol#5) lacks a zero-check on :
+		- (success,None) = msgSender.call{value: ethBalance}() (datasets/rsd/reentrancy/safe/11_Proxy_safe2.sol#9)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/11_Proxy_safe2.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in Proxy.forward(address,address,bytes) (datasets/rsd/reentrancy/safe/11_Proxy_safe2.sol#5-12):
+	- (success,None) = target.call{value: msg.value}(callData) (datasets/rsd/reentrancy/safe/11_Proxy_safe2.sol#6)
+	- (success,None) = msgSender.call{value: ethBalance}() (datasets/rsd/reentrancy/safe/11_Proxy_safe2.sol#9)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/work/datasets/rsd/reentrancy/safe/11_Proxy_safe2.sol analyzed (1 contracts with 93 detectors), 5 result(s) found

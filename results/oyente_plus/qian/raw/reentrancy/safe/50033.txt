@@ -1,0 +1,27 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50033.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.65biFF1Vip' running
+INFO:CryticCompile:Compilation warnings/errors on 50033.sol:
+50033.sol:13:48: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (!owner.call.value(this.balance)()) throw;
+                                               ^---^
+50033.sol:13:31: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        if (!owner.call.value(this.balance)()) throw;
+                              ^----------^
+50033.sol:12:5: Warning: No visibility specified. Defaulting to "public". 
+    function withdraw() onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 50033.sol:FunFairSale:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 77.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:50033.sol:13:14: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50033.sol:FunFairSale.json.

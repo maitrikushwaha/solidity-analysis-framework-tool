@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39095.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.KL18WGzif3' running
+INFO:CryticCompile:Compilation warnings/errors on 39095.sol:
+39095.sol:9:42: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (block.timestamp < partyTime) throw;
+                                         ^---^
+39095.sol:8:5: Warning: No visibility specified. Defaulting to "public". 
+    function party() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 39095.sol:holdEthereum:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 72.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:39095.sol:9:9: Warning: Timestamp Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39095.sol:holdEthereum.json.

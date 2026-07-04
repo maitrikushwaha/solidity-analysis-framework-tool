@@ -1,0 +1,26 @@
+{
+ "evm_code_coverage": "89.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol:2:1: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    Owner = 0"
+  ],
+  "integer_overflow": [
+   "0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol:33:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639932",
+   "0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol:5:1: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    Owner = 0"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol:30:9: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol:30:9: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

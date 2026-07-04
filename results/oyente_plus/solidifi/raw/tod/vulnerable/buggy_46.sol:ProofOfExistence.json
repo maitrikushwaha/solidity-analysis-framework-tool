@@ -1,0 +1,35 @@
+{
+ "evm_code_coverage": "23.7",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "buggy_46.sol:79:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    filePathHash = 3972862721\n    fileExistenceProofs[dappBoxOrigin].length = 0\n    fileHash = 3517260034",
+   "buggy_46.sol:84:22: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    filePathHash = 3972862721\n    fileExistenceProofs[dappBoxOrigin].length = 75557863725914323419136\n    fileHash = 3517260034",
+   "buggy_46.sol:124:52: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    filePathHash = 3167990145\n    fileExistenceProofs[dappBoxOrigin].length = 75557863725914323419136\n    fileHash = 2281707040",
+   "buggy_46.sol:2:23: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    filePathHash = 803024961\n    fileExistenceProofs[dappBoxOrigin].length = 883423532389192164791648750371459257913741948437809479060803100646309888\n    fileHash = 2168623146",
+   "buggy_46.sol:124:24: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    filePathHash = 3209428097\n    fileExistenceProofs[dappBoxOrigin].length = 664613997892457936451903530140172288\n    fileHash = 151281718",
+   "buggy_46.sol:85:11: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    filePathHash = 2722843016\n    fileExistenceProofs[dappBoxOrigin].length = 27606985387162255149739023449108101809804435888681546220650096895197199\n    fileHash = 1648409203"
+  ],
+  "integer_overflow": [
+   "buggy_46.sol:79:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 25200662\n    fileHash = 1730228993",
+   "buggy_46.sol:5:15: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 24705\n    fileHash = 540508309",
+   "buggy_46.sol:9:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 3972862721\n    fileHash = 3517260034",
+   "buggy_46.sol:84:46: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 3972862721\n    fileExistenceProofs[dappBoxOrigin].length = 75557863725914323419136\n    fileHash = 3517260034",
+   "buggy_46.sol:84:22: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 3972862721\n    fileExistenceProofs[dappBoxOrigin].length = 75557863725914323419136\n    fileHash = 3517260034",
+   "buggy_46.sol:124:52: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 3972862721\n    fileExistenceProofs[dappBoxOrigin].length = 75557863725914323419136\n    fileHash = 3517260034",
+   "buggy_46.sol:124:42: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 1784452225\n    fileExistenceProofs[dappBoxOrigin].length = 100433627766186892221372630771322662657637687111424552206336\n    fileHash = 2369540358",
+   "buggy_46.sol:124:24: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 4275762305\n    fileExistenceProofs[dappBoxOrigin].length = 226156424291633194186662080095093570025917938800079226639565593765455331328\n    fileHash = 221001064",
+   "buggy_46.sol:124:14: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 1130499400\n    fileExistenceProofs[dappBoxOrigin].length = 12554203470773361527671578846415332832204710888928069025792\n    fileHash = 297313814",
+   "buggy_46.sol:84:46: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 1716501762\n    fileExistenceProofs[dappBoxOrigin].length = 1125899906842625\n    fileHash = 50659350",
+   "buggy_46.sol:85:39: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 2722843016\n    fileExistenceProofs[dappBoxOrigin].length = 27606985387162255149739023449108101809804435888681546220650096895197199\n    fileHash = 1648409203",
+   "buggy_46.sol:85:39: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 2722843016\n    fileExistenceProofs[dappBoxOrigin].length = 27606985387162255149739023449108101809804435888681546220650096895197199\n    fileHash = 1648409203",
+   "buggy_46.sol:85:11: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 2722843016\n    fileExistenceProofs[dappBoxOrigin].length = 27606985387162255149739023449108101809804435888681546220650096895197199\n    fileHash = 1648409203"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

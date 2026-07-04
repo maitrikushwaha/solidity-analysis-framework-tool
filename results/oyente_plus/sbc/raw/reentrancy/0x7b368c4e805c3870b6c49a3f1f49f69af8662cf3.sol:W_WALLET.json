@@ -1,0 +1,21 @@
+{
+ "evm_code_coverage": "91.0",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3.sol:50:5: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [
+   "0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3.sol:26:9: Warning: Timestamp Dependency.\n"
+  ],
+  "reentrancy": [
+   "0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3.sol:29:16: Warning: Re-Entrancy Vulnerability.\n",
+   "0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3.sol:32:17: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

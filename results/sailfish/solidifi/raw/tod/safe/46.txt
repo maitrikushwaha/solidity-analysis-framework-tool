@@ -1,0 +1,66 @@
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.46     | Analysis started at: 2026-06-21 07:16:20 PM
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Callgraph generation started!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Callgraph generation finished!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Value Range Analysis started
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Generating return summary for compareStrings
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Return summary generated for compareStrings
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Processed function compareStrings
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Generating return summary for generateQRCodeForFile
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Return summary generated for generateQRCodeForFile
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Processed function generateQRCodeForFile
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Generating return summary for searchExistenceProoUsngQRf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Return summary generated for searchExistenceProoUsngQRf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Processed function searchExistenceProoUsngQRf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Generating return summary for GetFileExistenceProof
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Return summary generated for GetFileExistenceProof
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Processed function GetFileExistenceProof
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Generating return summary for getQRCode
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Return summary generated for getQRCode
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Processed function getQRCode
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Generating return summary for SetFileExistenceProof
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Return summary generated for SetFileExistenceProof
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Processed function SetFileExistenceProof
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Value Range Analysis took 0.001436 seconds
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Value Range Analysis finished
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Dependency detection started!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Dependency detection finished!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Static Analysis took 0.086645 seconds
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Dependency does not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Analysis finished!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Analysis took 0.086745 seconds
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.46     | Analysis finished at: 2026-06-21 07:16:21 PM
+[36m[#] Analysing started: 46.sol[0m
+[36m[#] Interprocedural CFG generation started for SetFileExistenceProof[0m
+[36m[#] Interprocedural CFG generated for SetFileExistenceProof[0m
+[36m[#] Interprocedural CFG generation started for GetFileExistenceProof[0m
+[36m[#] Interprocedural CFG generated for GetFileExistenceProof[0m
+[36m[#] Interprocedural CFG generation started for getQRCode[0m
+[36m[#] Interprocedural CFG generated for getQRCode[0m
+[36m[#] Interprocedural CFG generation started for searchExistenceProoUsngQRf[0m
+[36m[#] Interprocedural CFG generated for searchExistenceProoUsngQRf[0m
+[36m[#] SDG generation started for SetFileExistenceProof[0m
+[36m[#] SDG generated for SetFileExistenceProof[0m
+[36m[#] SDG generation started for GetFileExistenceProof[0m
+[36m[#] SDG generated for GetFileExistenceProof[0m
+[36m[#] SDG generation started for getQRCode[0m
+[36m[#] SDG generated for getQRCode[0m
+[36m[#] SDG generation started for searchExistenceProoUsngQRf[0m
+[36m[#] SDG generated for searchExistenceProoUsngQRf[0m
+[36m[#] Analysis took 0.086745 seconds[0m
+[36m[#] Analysis completed: 46.sol [0m
+
+=== dependency_info.json ===
+{}

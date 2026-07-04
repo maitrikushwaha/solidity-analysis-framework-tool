@@ -1,0 +1,40 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40451.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.05LlXv3cUf' running
+INFO:CryticCompile:Compilation warnings/errors on 40451.sol:
+40451.sol:13:50: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+            if (!participant.send(this.balance)) throw;
+                                                 ^---^
+40451.sol:10:32: Warning: "sha3" has been deprecated in favour of "keccak256"
+        uint32 hash32 = uint32(sha3(msg.value,participant,participant.balance,block.blockhash(block.number-1),block.timestamp,block.number));  
+                               ^----------------------------------------------------------------------------------------------------------^
+40451.sol:10:32: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        uint32 hash32 = uint32(sha3(msg.value,participant,participant.balance,block.blockhash(block.number-1),block.timestamp,block.number));  
+                               ^----------------------------------------------------------------------------------------------------------^
+40451.sol:11:60: Warning: "sha3" has been deprecated in favour of "keccak256"
+        uint64 hash64 = uint64(hash32) * shift_32 + uint32(sha3(hash32));
+                                                           ^----------^
+40451.sol:11:60: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        uint64 hash64 = uint64(hash32) * shift_32 + uint32(sha3(hash32));
+                                                           ^----------^
+40451.sol:11:60: Warning: The provided argument of type uint32 is not implicitly convertible to expected type bytes memory.
+        uint64 hash64 = uint64(hash32) * shift_32 + uint32(sha3(hash32));
+                                                           ^----------^
+40451.sol:13:35: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            if (!participant.send(this.balance)) throw;
+                                  ^----------^
+40451.sol:10:79: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        uint32 hash32 = uint32(sha3(msg.value,participant,participant.balance,block.blockhash(block.number-1),block.timestamp,block.number));  
+                                                                              ^-------------^
+
+INFO:root:contract 40451.sol:PRNG_Challenge:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 72.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40451.sol:PRNG_Challenge.json.

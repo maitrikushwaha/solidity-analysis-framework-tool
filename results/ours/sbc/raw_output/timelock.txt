@@ -1,0 +1,51 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+[CFG] Reentrancy back-edge inserted: ExpressionStatement_6 → IfStatement_0
+Dependency analysis completed in 0.0145s.
+[DOMAIN] Reentrancy encoding detected → Box + Octagon + Polka
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] Only gas-limited calls (transfer/send) detected — reentrancy infeasible.
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW ==========
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+
+========== PIPELINE 3: TIMESTAMP DEPENDENCY ==========
+
+========== PIPELINE 4: TOD ==========
+
+===== VERDICTS (Box) =====
+[NO REENTRANCY] Contract uses only gas-limited external calls (transfer/send); reentrancy infeasible.
+[OVERFLOW] Variable lockTime (uint256) at ExpressionStatement_1: '+' with block.timestamp/now can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[OVERFLOW] Variable lockTime[msg.sender] (uint256) in deposit(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable lockTime[msg.sender] (uint256) in increaseLockTime(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[TIMESTAMP] block.timestamp/now used in arithmetic that computes a value.
+
+===== VERDICTS (Octagon) =====
+[NO REENTRANCY] Contract uses only gas-limited external calls (transfer/send); reentrancy infeasible.
+[OVERFLOW] Variable lockTime (uint256) at ExpressionStatement_1: '+' with block.timestamp/now can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[OVERFLOW] Variable lockTime[msg.sender] (uint256) in deposit(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable lockTime[msg.sender] (uint256) in increaseLockTime(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[TIMESTAMP] block.timestamp/now used in arithmetic that computes a value.
+
+===== VERDICTS (Polka) =====
+[NO REENTRANCY] Contract uses only gas-limited external calls (transfer/send); reentrancy infeasible.
+[OVERFLOW] Variable lockTime (uint256) at ExpressionStatement_1: '+' with block.timestamp/now can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[OVERFLOW] Variable lockTime[msg.sender] (uint256) in deposit(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable lockTime[msg.sender] (uint256) in increaseLockTime(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[TIMESTAMP] block.timestamp/now used in arithmetic that computes a value.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: NOT VULNERABLE
+[SUMMARY] Integer Overflow: VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: VULNERABLE
+[SUMMARY] TOD: NOT VULNERABLE
+
+Total analysis time: 1.16s
+

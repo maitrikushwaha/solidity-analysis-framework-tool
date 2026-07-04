@@ -1,0 +1,33 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc etherbank.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.o87A4lGRcy' running
+INFO:CryticCompile:Compilation warnings/errors on etherbank.sol:
+etherbank.sol:21:55: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if (!(msg.sender.call.value(amountToWithdraw)())) { throw; }
+		                                                    ^---^
+etherbank.sol:10:5: Warning: No visibility specified. Defaulting to "public". 
+    function getBalance(address user) constant returns(uint) {  
+    ^ (Relevant source part starts here and spans across multiple lines).
+etherbank.sol:14:2: Warning: No visibility specified. Defaulting to "public". 
+	function addToBalance() {  
+ ^ (Relevant source part starts here and spans across multiple lines).
+etherbank.sol:15:31: Warning: "msg.value" used in non-payable function. Do you want to add the "payable" modifier to this function?
+		userBalances[msg.sender] += msg.value;
+		                            ^-------^
+etherbank.sol:18:2: Warning: No visibility specified. Defaulting to "public". 
+	function withdrawBalance() {  
+ ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract etherbank.sol:EtherBank:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 84.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:etherbank.sol:21:9: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to etherbank.sol:EtherBank.json.

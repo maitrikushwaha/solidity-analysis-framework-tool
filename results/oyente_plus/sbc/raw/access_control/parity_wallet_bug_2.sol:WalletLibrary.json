@@ -1,0 +1,27 @@
+{
+ "evm_code_coverage": "19.4",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "parity_wallet_bug_2.sol:166:55: Warning: Integer Underflow.\n",
+   "parity_wallet_bug_2.sol:169:22: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 105312291668557186697918027683670432318895095400549111254310977536\n    m_ownerIndex[uint(_owner)] = 128\n    m_numOwners = 0\n    m_pendingIndex[m_pending[_operation].index] = 149879804394983129089\n    m_pending[_operation].index = 0",
+   "parity_wallet_bug_2.sol:70:1: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    m_ownerIndex[uint(_owner)] = 1\n    m_numOwners = 1809251394333065553493296640760748560207343510400633813116542764522152132608\n    m_pending[_operation].index = 0\n    m_ownerIndex[uint(msg.sender)] = 401734511064747568885490523085290650630550748445698208825344\n    m_required = 22067181596800494\n    m_pendingIndex[m_pending[_operation].index] = 4"
+  ],
+  "integer_overflow": [
+   "parity_wallet_bug_2.sol:166:55: Warning: Integer Overflow.\n",
+   "parity_wallet_bug_2.sol:316:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 1",
+   "parity_wallet_bug_2.sol:329:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 1",
+   "parity_wallet_bug_2.sol:321:31: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 1",
+   "parity_wallet_bug_2.sol:321:16: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 1\n    m_pendingIndex[m_pending[_operation].index] = 34701828751804833578786153866810098600589486836002517483910826919497385771154\n    m_pending[_operation].index = 34676807648658360715407098490393134810547296607066290603248795531033767837849",
+   "parity_wallet_bug_2.sol:322:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    m_ownerIndex[uint(msg.sender)] = 1809251394333065553493296640760748560207343510400633813116524750123642650624\n    m_pendingIndex[m_pending[_operation].index] = 32892575578115284766883247131502694745264204848406785555807671117153814053010\n    m_pending[_operation].index = 52656145834278593348959013841835216159447547700274555627155488768",
+   "parity_wallet_bug_2.sol:373:7: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    m_ownerIndex[uint(_owner)] = 2\n    m_numOwners = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    m_pending[_operation].index = 0\n    m_ownerIndex[uint(msg.sender)] = 27606985387162255149739023449108101809804435888681546220650096895197184\n    m_required = 1\n    m_pendingIndex[m_pending[_operation].index] = 4",
+   "parity_wallet_bug_2.sol:70:1: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    m_ownerIndex[uint(_owner)] = 1\n    m_numOwners = 28948022309329048855892746252171976963317496166410141009864397127878189252608\n    m_pending[_operation].index = 0\n    m_ownerIndex[uint(msg.sender)] = 107839786668602559178668060348078522694548577690162289924414440996864\n    m_required = 27728398928147950\n    m_pendingIndex[m_pending[_operation].index] = 4"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

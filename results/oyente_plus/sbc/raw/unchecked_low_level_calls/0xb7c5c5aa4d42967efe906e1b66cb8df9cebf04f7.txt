@@ -1,0 +1,27 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.KoI6KZRDI1' running
+INFO:CryticCompile:Compilation warnings/errors on 0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol:
+0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol:25:9: Warning: Return value of low-level calls not used.
+        msg.sender.call.value(balances[msg.sender])();
+        ^-------------------------------------------^
+
+INFO:root:contract 0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol:keepMyEther:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol:20:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 44003389216611062881802136768617308369931017170843339695577957164778379063982
+INFO:symExec:0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol:25:9: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol:25:9: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol:keepMyEther.json.

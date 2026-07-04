@@ -1,0 +1,28 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 05_Send_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.tyCaJ5s0GF' running
+INFO:root:contract 05_Send_safe1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 79.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:05_Send_safe1.sol:5:5: Warning: Integer Underflow.
+
+05_Send_safe1.sol:19:2101: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+05_Send_safe1.sol:9:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+INFO:symExec:05_Send_safe1.sol:19:1025: Warning: Integer Overflow.
+
+INFO:symExec:05_Send_safe1.sol:10:24: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 05_Send_safe1.sol:C.json.

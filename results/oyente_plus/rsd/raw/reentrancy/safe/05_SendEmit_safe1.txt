@@ -1,0 +1,33 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 05_SendEmit_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.YZusQpZKyA' running
+INFO:root:contract 05_SendEmit_safe1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 80.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:05_SendEmit_safe1.sol:5:5: Warning: Integer Underflow.
+
+05_SendEmit_safe1.sol:14:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+    balances[msg.sender] = 79228162514264337593543950336
+05_SendEmit_safe1.sol:21:2029: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+05_SendEmit_safe1.sol:10:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+INFO:symExec:05_SendEmit_safe1.sol:21:953: Warning: Integer Overflow.
+
+INFO:symExec:05_SendEmit_safe1.sol:11:25: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 05_SendEmit_safe1.sol:C.json.

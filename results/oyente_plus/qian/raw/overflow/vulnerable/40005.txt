@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40005.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.w5XCc7FXWU' running
+INFO:CryticCompile:Compilation warnings/errors on 40005.sol:
+40005.sol:8:5: Warning: No visibility specified. Defaulting to "public". 
+    function createRandomNumber() returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 40005.sol:PPBC_API:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 71.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:40005.sol:10:25: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    lastBlock = 0
+    lastRandom = 68778669511449316343673722668221480495344636449890724470959154851861705523483
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40005.sol:PPBC_API.json.

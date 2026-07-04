@@ -1,0 +1,25 @@
+/work/datasets/qian/timestamp/vulnerable/4590.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_EXTRA_GAS_IN_LOOPS
+patternId: d3j11j
+severity: 1
+line: 12
+column: 6
+content: for(uintj=0;j<allocations[sender].length;j++){if(allocations[sender][j].time<block.timestamp){allocations[sender][j].balance=0;returntrue;}}
+
+ruleId: SOLIDITY_GAS_LIMIT_IN_LOOPS
+patternId: f6f853
+severity: 2
+line: 12
+column: 6
+content: for(uintj=0;j<allocations[sender].length;j++){if(allocations[sender][j].time<block.timestamp){allocations[sender][j].balance=0;returntrue;}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_EXTRA_GAS_IN_LOOPS :1
+SOLIDITY_GAS_LIMIT_IN_LOOPS :1

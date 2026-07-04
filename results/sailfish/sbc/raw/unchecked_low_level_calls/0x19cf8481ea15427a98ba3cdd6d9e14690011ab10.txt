@@ -1,0 +1,767 @@
+[INFO] | 2026-06-21 07:07:45 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Analysis started at: 2026-06-21 07:07:45 PM
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Callgraph generation started!
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Callgraph generation finished!
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Storage dependency graph generation started!
+[36m[#] Analysing started: 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol[0m
+[36m[#] Interprocedural CFG generation started for receiveApproval[0m
+[36m[#] Interprocedural CFG generated for receiveApproval[0m
+[36m[#] Interprocedural CFG generation started for migrateFrom[0m
+[36m[#] Interprocedural CFG generated for migrateFrom[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for isToken[0m
+[36m[#] Interprocedural CFG generated for isToken[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for daoPOLSKAtokens[0m
+[36m[#] Interprocedural CFG generated for daoPOLSKAtokens[0m
+[36m[#] Interprocedural CFG generation started for setSupply[0m
+[36m[#] Interprocedural CFG generated for setSupply[0m
+[36m[#] Interprocedural CFG generation started for setotherchainstotalsupply[0m
+[36m[#] Interprocedural CFG generated for setotherchainstotalsupply[0m
+[36m[#] Interprocedural CFG generation started for approveAndCall[0m
+[36m[#] Interprocedural CFG generated for approveAndCall[0m
+[36m[#] Interprocedural CFG generation started for burn[0m
+[36m[#] Interprocedural CFG generated for burn[0m
+[36m[#] Interprocedural CFG generation started for burnFrom[0m
+[36m[#] Interprocedural CFG generated for burnFrom[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for setTokenInformation[0m
+[36m[#] Interprocedural CFG generated for setTokenInformation[0m
+[36m[#] Interprocedural CFG generation started for setChainsAddresses[0m
+[36m[#] Interprocedural CFG generated for setChainsAddresses[0m
+[36m[#] Interprocedural CFG generation started for DAOPolskaTokenICOregulations[0m
+[36m[#] Interprocedural CFG generated for DAOPolskaTokenICOregulations[0m
+[36m[#] Interprocedural CFG generation started for sendTokenAw[0m
+[36m[#] Interprocedural CFG generated for sendTokenAw[0m
+[36m[#] Interprocedural CFG generation started for createDaoPOLSKAtokens[0m
+[36m[#] Interprocedural CFG generated for createDaoPOLSKAtokens[0m
+[36m[#] Interprocedural CFG generation started for setBonusCreationRate[0m
+[36m[#] Interprocedural CFG generated for setBonusCreationRate[0m
+[36m[#] Interprocedural CFG generation started for FundsTransfer[0m
+[36m[#] Interprocedural CFG generated for FundsTransfer[0m
+[36m[#] Interprocedural CFG generation started for PartialFundsTransfer[0m
+[36m[#] Interprocedural CFG generated for PartialFundsTransfer[0m
+[36m[#] Interprocedural CFG generation started for turnrefund[0m
+[36m[#] Interprocedural CFG generated for turnrefund[0m
+[36m[#] Interprocedural CFG generation started for fundingState[0m
+[36m[#] Interprocedural CFG generated for fundingState[0m
+[36m[#] Interprocedural CFG generation started for turnmigrate[0m
+[36m[#] Interprocedural CFG generated for turnmigrate[0m
+[36m[#] Interprocedural CFG generation started for finalize[0m
+[36m[#] Interprocedural CFG generated for finalize[0m
+[36m[#] Interprocedural CFG generation started for migrate[0m
+[36m[#] Interprocedural CFG generated for migrate[0m
+[36m[#] Interprocedural CFG generation started for refundTRA[0m
+[36m[#] Interprocedural CFG generated for refundTRA[0m
+[36m[#] Interprocedural CFG generation started for preICOregulations[0m
+[36m[#] Interprocedural CFG generated for preICOregulations[0m
+[36m[#] SDG generation started for receiveApproval[0m
+[36m[#] SDG generated for receiveApproval[0m
+[36m[#] SDG generation started for migrateFrom[0m
+[36m[#] SDG generated for migrateFrom[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for isToken[0m
+[36m[#] SDG generated for isToken[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for daoPOLSKAtokens[0m
+[36m[#] SDG generated for daoPOLSKAtokens[0m
+[36m[#] SDG generation started for setSupply[0m
+[36m[#] SDG generated for setSupply[0m
+[36m[#] SDG generation started for setotherchainstotalsupply[0m
+[36m[#] SDG generated for setotherchainstotalsupply[0m
+[36m[#] SDG generation started for approveAndCall[0m
+[36m[#] SDG generated for approveAndCall[0m
+[36m[#] SDG generation started for burn[0m
+[36m[#] SDG generated for burn[0m
+[36m[#] SDG generation started for burnFrom[0m
+[36m[#] SDG generated for burnFrom[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Value Range Analysis started
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for receiveApproval
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for receiveApproval
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function receiveApproval
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for migrateFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for migrateFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function migrateFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function balanceOf
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for allowance
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for allowance
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function allowance
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for transfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for transfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function transfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function transferFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for approve
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for approve
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function approve
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for max64
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for max64
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function max64
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for min64
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for min64
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function min64
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for max256
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for max256
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function max256
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for min256
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for min256
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function min256
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for assert
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for assert
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function assert
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for max64
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for max64
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function max64
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for min64
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for min64
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function min64
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for max256
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for max256
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function max256
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for min256
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for min256
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function min256
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for assert
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for assert
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function assert
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function balanceOf
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for allowance
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for allowance
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function allowance
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for transfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for transfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function transfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function transferFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for approve
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for approve
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function approve
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for isToken
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for isToken
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function isToken
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function balanceOf
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for approve
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for approve
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function approve
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for allowance
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for allowance
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function allowance
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for daoPOLSKAtokens
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for daoPOLSKAtokens
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function daoPOLSKAtokens
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for setSupply
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for setSupply
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function setSupply
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for setotherchainstotalsupply
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for setotherchainstotalsupply
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function setotherchainstotalsupply
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for burn
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for burn
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function burn
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for burnFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for burnFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function burnFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for transfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for transfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function transfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function transferFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function balanceOf
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for approve
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for approve
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function approve
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for allowance
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for allowance
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function allowance
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for fallback
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for fallback
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function fallback
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for setTokenInformation
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for setTokenInformation
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function setTokenInformation
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for setChainsAddresses
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for setChainsAddresses
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function setChainsAddresses
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for DAOPolskaTokenICOregulations
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for DAOPolskaTokenICOregulations
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function DAOPolskaTokenICOregulations
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for createDaoPOLSKAtokens
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for createDaoPOLSKAtokens
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function createDaoPOLSKAtokens
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for setBonusCreationRate
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for setBonusCreationRate
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function setBonusCreationRate
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for FundsTransfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for FundsTransfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function FundsTransfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for PartialFundsTransfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for PartialFundsTransfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function PartialFundsTransfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for turnrefund
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for turnrefund
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function turnrefund
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for fundingState
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for fundingState
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function fundingState
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for turnmigrate
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for turnmigrate
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function turnmigrate
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for finalize
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for finalize
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function finalize
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for refundTRA
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for refundTRA
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function refundTRA
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for preICOregulations
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for preICOregulations
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function preICOregulations
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for approveAndCall
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for approveAndCall
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function approveAndCall
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for migrate
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for migrate
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function migrate
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for safeMul
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for safeMul
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function safeMul
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for safeDiv
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for safeDiv
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function safeDiv
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for safeSub
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for safeSub
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function safeSub
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for safeAdd
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for safeAdd
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function safeAdd
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for safeMul
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for safeMul
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function safeMul
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for safeDiv
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for safeDiv
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function safeDiv
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for safeSub
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for safeSub
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function safeSub
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for safeAdd
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for safeAdd
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function safeAdd
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for transfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for transfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function transfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function transferFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Generating return summary for sendTokenAw
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Return summary generated for sendTokenAw
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Range graph generated
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Processed function sendTokenAw
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Value Range Analysis took 0.021914 seconds
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Value Range Analysis finished
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Dependency detection started!
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | TOD dependency detected in file 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol in contract daoPOLSKAtokens in by composing functions FundsTransfer and fundingState
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | TOD dependency detected in file 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol in contract daoPOLSKAtokens in by composing functions FundsTransfer and finalize
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | TOD dependency detected in file 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol in contract daoPOLSKAtokens in by composing functions refundTRA and burn
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | TOD dependency detected in file 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol in contract daoPOLSKAtokens in by composing functions refundTRA and burnFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | TOD dependency detected in file 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol in contract daoPOLSKAtokens in by composing functions refundTRA and transfer
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | TOD dependency detected in file 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol in contract daoPOLSKAtokens in by composing functions refundTRA and transferFrom
+[INFO] | 2026-06-21 07:07:46 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | TOD dependency detected in file 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol in contract daoPOLSKAtokens in by composing functions refundTRA and fallback
+[INFO] | 2026-06-21 07:07:47 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | TOD dependency detected in file 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol in contract daoPOLSKAtokens in by composing functions refundTRA and createDaoPOLSKAtokens
+[INFO] | 2026-06-21 07:07:47 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | TOD dependency detected in file 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol in contract daoPOLSKAtokens in by composing functions refundTRA and turnrefund
+[INFO] | 2026-06-21 07:07:47 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | TOD dependency detected in file 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol in contract daoPOLSKAtokens in by composing functions refundTRA and fundingState
+[INFO] | 2026-06-21 07:07:47 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | TOD dependency detected in file 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol in contract daoPOLSKAtokens in by composing functions refundTRA and finalize
+[INFO] | 2026-06-21 07:07:47 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | TOD dependency detected in file 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol in contract daoPOLSKAtokens in by composing functions refundTRA and migrate
+[INFO] | 2026-06-21 07:07:47 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | TOD dependency detected in file 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol in contract daoPOLSKAtokens in by composing functions refundTRA and refundTRA
+[INFO] | 2026-06-21 07:07:47 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Dependency detection finished!
+[INFO] | 2026-06-21 07:07:47 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Static Analysis took 2.059558 seconds
+[INFO] | 2026-06-21 07:07:47 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Dependency exists
+[INFO] | 2026-06-21 07:07:47 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Invoking symbolic executor!
+
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for setTokenInformation[0m
+[36m[#] SDG generated for setTokenInformation[0m
+[36m[#] SDG generation started for setChainsAddresses[0m
+[36m[#] SDG generated for setChainsAddresses[0m
+[36m[#] SDG generation started for DAOPolskaTokenICOregulations[0m
+[36m[#] SDG generated for DAOPolskaTokenICOregulations[0m
+[36m[#] SDG generation started for sendTokenAw[0m
+[36m[#] SDG generated for sendTokenAw[0m
+[36m[#] SDG generation started for createDaoPOLSKAtokens[0m
+[36m[#] SDG generated for createDaoPOLSKAtokens[0m
+[36m[#] SDG generation started for setBonusCreationRate[0m
+[36m[#] SDG generated for setBonusCreationRate[0m
+[36m[#] SDG generation started for FundsTransfer[0m
+[36m[#] SDG generated for FundsTransfer[0m
+[36m[#] SDG generation started for PartialFundsTransfer[0m
+[36m[#] SDG generated for PartialFundsTransfer[0m
+[36m[#] SDG generation started for turnrefund[0m
+[36m[#] SDG generated for turnrefund[0m
+[36m[#] SDG generation started for fundingState[0m
+[36m[#] SDG generated for fundingState[0m
+[36m[#] SDG generation started for turnmigrate[0m
+[36m[#] SDG generated for turnmigrate[0m
+[36m[#] SDG generation started for finalize[0m
+[36m[#] SDG generated for finalize[0m
+[36m[#] SDG generation started for migrate[0m
+[36m[#] SDG generated for migrate[0m
+[36m[#] SDG generation started for refundTRA[0m
+[36m[#] SDG generated for refundTRA[0m
+[36m[#] SDG generation started for preICOregulations[0m
+[36m[#] SDG generated for preICOregulations[0m
+[INFO] | 2026-06-21 07:07:53 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Symbolic execution took 5.985964 seconds
+[INFO] | 2026-06-21 07:07:53 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Symbolic execution finished!
+[INFO] | 2026-06-21 07:07:53 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Analysis finished!
+[INFO] | 2026-06-21 07:07:53 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Analysis took 8.046175 seconds
+[INFO] | 2026-06-21 07:07:53 PM | analyzer.0x19cf8481ea15427a98ba3cdd6d9e14690011ab10 | Analysis finished at: 2026-06-21 07:07:53 PM
+[36m[#] Analysis took 8.046175 seconds[0m
+[36m[#] Analysis completed: 0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol [0m
+
+=== dependency_info.json ===
+{
+    "0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "FundsTransfer",
+                "fundingState"
+            ],
+            "First_function": "fundingState",
+            "Second_function": "FundsTransfer",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 129\nFunction: fundingState\nNode: \nEXPRESSION funding = ! funding\nIRS: \nfunding := TMP_131\"",
+                        "\"BlockID: 118\nFunction: FundsTransfer\nNode: \nIF funding == true\nIRS: \nCONDITION TMP_122\""
+                    ],
+                    "state_variable": "funding"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "FundsTransfer",
+                "finalize"
+            ],
+            "First_function": "finalize",
+            "Second_function": "FundsTransfer",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 135\nFunction: finalize\nNode: \nEXPRESSION funding = false\nIRS: \nfunding := false\"",
+                        "\"BlockID: 118\nFunction: FundsTransfer\nNode: \nIF funding == true\nIRS: \nCONDITION TMP_122\""
+                    ],
+                    "state_variable": "funding"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refundTRA",
+                "burn"
+            ],
+            "First_function": "burn",
+            "Second_function": "refundTRA",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 47\nFunction: burn\nNode: \nEXPRESSION balances[msg.sender] -= _value\nIRS: \nREF_21 = REF_21 - _value\"",
+                        "\"BlockID: 154\nFunction: refundTRA\nNode: \nEXPRESSION totalSupply -= DAOPLTokenValue\nIRS: \ntotalSupply = totalSupply - DAOPLTokenValue\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refundTRA",
+                "burnFrom"
+            ],
+            "First_function": "burnFrom",
+            "Second_function": "refundTRA",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 53\nFunction: burnFrom\nNode: \nEXPRESSION balances[_from] -= _value\nIRS: \nREF_25 = REF_25 - _value\"",
+                        "\"BlockID: 154\nFunction: refundTRA\nNode: \nEXPRESSION totalSupply -= DAOPLTokenValue\nIRS: \ntotalSupply = totalSupply - DAOPLTokenValue\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refundTRA",
+                "transfer"
+            ],
+            "First_function": "transfer",
+            "Second_function": "refundTRA",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: transfer\nNode: \nEXPRESSION balances[msg.sender] -= _value\nIRS: \nREF_31 = REF_31 - _value\"",
+                        "\"BlockID: 154\nFunction: refundTRA\nNode: \nEXPRESSION totalSupply -= DAOPLTokenValue\nIRS: \ntotalSupply = totalSupply - DAOPLTokenValue\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: transfer\nNode: \nEXPRESSION balances[_to] += _value\nIRS: \nREF_32 = REF_32 + _value\"",
+                        "\"BlockID: 154\nFunction: refundTRA\nNode: \nEXPRESSION totalSupply -= DAOPLTokenValue\nIRS: \ntotalSupply = totalSupply - DAOPLTokenValue\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refundTRA",
+                "transferFrom"
+            ],
+            "First_function": "transferFrom",
+            "Second_function": "refundTRA",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 64\nFunction: transferFrom\nNode: \nEXPRESSION balances[_to] += _value\nIRS: \nREF_38 = REF_38 + _value\"",
+                        "\"BlockID: 154\nFunction: refundTRA\nNode: \nEXPRESSION totalSupply -= DAOPLTokenValue\nIRS: \ntotalSupply = totalSupply - DAOPLTokenValue\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: transferFrom\nNode: \nEXPRESSION balances[_from] -= _value\nIRS: \nREF_39 = REF_39 - _value\"",
+                        "\"BlockID: 154\nFunction: refundTRA\nNode: \nEXPRESSION totalSupply -= DAOPLTokenValue\nIRS: \ntotalSupply = totalSupply - DAOPLTokenValue\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refundTRA",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "refundTRA",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: fallback\nNode: \nEXPRESSION balances[msg.sender] = balances[msg.sender] + msg.value\nIRS: \nREF_47 := TMP_98\"",
+                        "\"BlockID: 154\nFunction: refundTRA\nNode: \nEXPRESSION totalSupply -= DAOPLTokenValue\nIRS: \ntotalSupply = totalSupply - DAOPLTokenValue\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refundTRA",
+                "createDaoPOLSKAtokens"
+            ],
+            "First_function": "createDaoPOLSKAtokens",
+            "Second_function": "refundTRA",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 107\nFunction: createDaoPOLSKAtokens\nNode: \nEXPRESSION balancesRAW[holder] += numTokensRAW\nIRS: \nREF_56 = REF_56 + numTokensRAW\"",
+                        "\"BlockID: 152\nFunction: refundTRA\nNode: \nIF ETHValue == 0\nIRS: \nCONDITION TMP_146\""
+                    ],
+                    "state_variable": "balancesRAW"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 107\nFunction: createDaoPOLSKAtokens\nNode: \nEXPRESSION balancesRAW[holder] += numTokensRAW\nIRS: \nREF_56 = REF_56 + numTokensRAW\"",
+                        "\"BlockID: 156\nFunction: refundTRA\nNode: \nEXPRESSION msg.sender.transfer(ETHValue)\nIRS: \nTransfer dest:msg.sender value:ETHValue\""
+                    ],
+                    "state_variable": "balancesRAW"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 106\nFunction: createDaoPOLSKAtokens\nNode: \nEXPRESSION balances[holder] += numTokens\nIRS: \nREF_55 = REF_55 + numTokens\"",
+                        "\"BlockID: 154\nFunction: refundTRA\nNode: \nEXPRESSION totalSupply -= DAOPLTokenValue\nIRS: \ntotalSupply = totalSupply - DAOPLTokenValue\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 110\nFunction: createDaoPOLSKAtokens\nNode: \nEXPRESSION balances[migrationMaster] += additionalTokens\nIRS: \nREF_57 = REF_57 + additionalTokens\"",
+                        "\"BlockID: 154\nFunction: refundTRA\nNode: \nEXPRESSION totalSupply -= DAOPLTokenValue\nIRS: \ntotalSupply = totalSupply - DAOPLTokenValue\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refundTRA",
+                "turnrefund"
+            ],
+            "First_function": "turnrefund",
+            "Second_function": "refundTRA",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 126\nFunction: turnrefund\nNode: \nEXPRESSION refundstate = ! refundstate\nIRS: \nrefundstate := TMP_129\"",
+                        "\"BlockID: 151\nFunction: refundTRA\nNode: \nIF ! refundstate\nIRS: \nCONDITION TMP_145\""
+                    ],
+                    "state_variable": "refundstate"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refundTRA",
+                "fundingState"
+            ],
+            "First_function": "fundingState",
+            "Second_function": "refundTRA",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 129\nFunction: fundingState\nNode: \nEXPRESSION funding = ! funding\nIRS: \nfunding := TMP_131\"",
+                        "\"BlockID: 150\nFunction: refundTRA\nNode: \nIF funding\nIRS: \nCONDITION funding\""
+                    ],
+                    "state_variable": "funding"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refundTRA",
+                "finalize"
+            ],
+            "First_function": "finalize",
+            "Second_function": "refundTRA",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 135\nFunction: finalize\nNode: \nEXPRESSION funding = false\nIRS: \nfunding := false\"",
+                        "\"BlockID: 150\nFunction: refundTRA\nNode: \nIF funding\nIRS: \nCONDITION funding\""
+                    ],
+                    "state_variable": "funding"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 136\nFunction: finalize\nNode: \nEXPRESSION refundstate = ! refundstate\nIRS: \nrefundstate := TMP_137\"",
+                        "\"BlockID: 151\nFunction: refundTRA\nNode: \nIF ! refundstate\nIRS: \nCONDITION TMP_145\""
+                    ],
+                    "state_variable": "refundstate"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refundTRA",
+                "migrate"
+            ],
+            "First_function": "migrate",
+            "Second_function": "refundTRA",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 144\nFunction: migrate\nNode: \nEXPRESSION balances[msg.sender] -= _value\nIRS: \nREF_65 = REF_65 - _value\"",
+                        "\"BlockID: 154\nFunction: refundTRA\nNode: \nEXPRESSION totalSupply -= DAOPLTokenValue\nIRS: \ntotalSupply = totalSupply - DAOPLTokenValue\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refundTRA",
+                "refundTRA"
+            ],
+            "First_function": "refundTRA",
+            "Second_function": "refundTRA",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 185\nFunction: refundTRA\nNode: \nEXPRESSION balancesRAW[msg.sender] = 0\nIRS: \nREF_69 := 0\"",
+                        "\"BlockID: 152\nFunction: refundTRA\nNode: \nIF ETHValue == 0\nIRS: \nCONDITION TMP_146\""
+                    ],
+                    "state_variable": "balancesRAW"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 185\nFunction: refundTRA\nNode: \nEXPRESSION balancesRAW[msg.sender] = 0\nIRS: \nREF_69 := 0\"",
+                        "\"BlockID: 156\nFunction: refundTRA\nNode: \nEXPRESSION msg.sender.transfer(ETHValue)\nIRS: \nTransfer dest:msg.sender value:ETHValue\""
+                    ],
+                    "state_variable": "balancesRAW"
+                }
+            ]
+        }
+    ]
+}

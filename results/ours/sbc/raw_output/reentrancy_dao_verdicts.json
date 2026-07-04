@@ -1,0 +1,17 @@
+{
+  "filename": "reentrancy_dao.sol",
+  "reentrancy": 1,
+  "overflow": 1,
+  "timestamp": 0,
+  "tod": 0,
+  "duration_s": 11.01,
+  "error": null,
+  "reentrancy_domains": [
+    "Box",
+    "Octagon",
+    "Polka"
+  ],
+  "reentrancy_fixpoint_times": {
+    "Box": 10.2131
+  }
+}

@@ -1,0 +1,42 @@
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Analysis started at: 2026-06-21 06:59:07 PM
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Callgraph generation started!
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Callgraph generation finished!
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Value Range Analysis started
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Generating return summary for constructor
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Return summary generated for constructor
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Range graph generated
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Processed function constructor
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Generating return summary for forward
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Return summary generated for forward
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Processed function forward
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Value Range Analysis took 0.001499 seconds
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Value Range Analysis finished
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Dependency detection started!
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Dependency detection finished!
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Static Analysis took 0.111456 seconds
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Dependency does not exist
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Analysis finished!
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Analysis took 0.112013 seconds
+[INFO] | 2026-06-21 06:59:07 PM | analyzer.proxy  | Analysis finished at: 2026-06-21 06:59:07 PM
+[36m[#] Analysing started: proxy.sol[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for forward[0m
+[36m[#] Interprocedural CFG generated for forward[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for forward[0m
+[36m[#] SDG generated for forward[0m
+[36m[#] Analysis took 0.112013 seconds[0m
+[36m[#] Analysis completed: proxy.sol [0m
+
+=== dependency_info.json ===
+{}

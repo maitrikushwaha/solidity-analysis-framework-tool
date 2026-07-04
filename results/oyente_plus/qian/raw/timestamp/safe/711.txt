@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 711.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.NUqLm7ZSNw' running
+INFO:root:contract 711.sol:H2OC:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 76.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:711.sol:7:19: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _burntAmount = 1
+    totalToken = 0
+INFO:symExec:711.sol:7:19: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _burntAmount = 13744955419911683396954365040336613195405465632064735881520470368989839503039
+    totalToken = 7472649234803522640929378247011710774584941139982294608110069270810818928960
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 711.sol:H2OC.json.

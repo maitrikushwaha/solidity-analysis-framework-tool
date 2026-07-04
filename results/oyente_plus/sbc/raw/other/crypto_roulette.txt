@@ -1,0 +1,50 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc crypto_roulette.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.MBYZKUf8zZ' running
+INFO:CryticCompile:Compilation warnings/errors on crypto_roulette.sol:
+crypto_roulette.sol:40:9: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+        Game game; //Uninitialized storage pointer
+        ^-------^
+crypto_roulette.sol:34:30: Warning: "sha3" has been deprecated in favour of "keccak256"
+        secretNumber = uint8(sha3(now, block.blockhash(block.number-1))) % 20 + 1;
+                             ^----------------------------------------^
+crypto_roulette.sol:40:9: Warning: Uninitialized storage pointer. Did you mean '<type> memory game'?
+        Game game; //Uninitialized storage pointer
+        ^-------^
+crypto_roulette.sol:56:13: Warning: "suicide" has been deprecated in favour of "selfdestruct"
+            suicide(msg.sender);
+            ^-----------------^
+
+INFO:root:contract crypto_roulette.sol:CryptoRoulette:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 93.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:crypto_roulette.sol:34:56: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    betPrice = 30765596347038050480493215779158148831592314157842590787868127361000299036673
+    number = 0
+INFO:symExec:crypto_roulette.sol:25:5: Warning: Integer Overflow.
+
+crypto_roulette.sol:55:46: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    lastPlayed = 115792089237316195423570985008687907853269984665640564039457584007913129612288
+    ownerAddr = 0
+crypto_roulette.sol:43:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    number = 0
+    betPrice = 115053477284057069519346818876474262358771390329268212089798881595215048605697
+crypto_roulette.sol:14:1: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    betPrice = 30765596347038050480493215779158148831592314157842590787868127361000299036673
+    number = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to crypto_roulette.sol:CryptoRoulette.json.

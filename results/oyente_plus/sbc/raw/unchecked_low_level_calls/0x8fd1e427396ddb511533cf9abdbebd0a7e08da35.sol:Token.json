@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "88.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "0x8fd1e427396ddb511533cf9abdbebd0a7e08da35.sol:44:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    owner = 0"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

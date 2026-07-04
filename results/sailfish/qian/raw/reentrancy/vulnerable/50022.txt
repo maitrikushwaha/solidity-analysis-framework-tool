@@ -1,0 +1,77 @@
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Analysis started at: 2026-06-21 07:15:25 PM
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Callgraph generation started!
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Value Range Analysis started
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Generating return summary for revoke
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Return summary generated for revoke
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Range graph generated
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Processed function revoke
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Value Range Analysis took 0.000322 seconds
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Dependency detection started!
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | DAO dependency detected in file 50022.sol in contract AddressOwnershipVerification in by composing functions revoke and revoke
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | TOD dependency detected in file 50022.sol in contract AddressOwnershipVerification in by composing functions revoke and revoke
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Dependency detection finished!
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Static Analysis took 0.058260 seconds
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Dependency exists
+[INFO] | 2026-06-21 07:15:25 PM | analyzer.50022  | Invoking symbolic executor!
+[36m[#] Analysing started: 50022.sol[0m
+[36m[#] Interprocedural CFG generation started for revoke[0m
+[36m[#] Interprocedural CFG generated for revoke[0m
+[36m[#] SDG generation started for revoke[0m
+[36m[#] SDG generated for revoke[0m
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50022  | Symbolic execution took 0.856302 seconds
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50022  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50022  | Analysis finished!
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50022  | Analysis took 0.915053 seconds
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50022  | Analysis finished at: 2026-06-21 07:15:26 PM
+[36m[#] Analysis took 0.915053 seconds[0m
+[36m[#] Analysis completed: 50022.sol [0m
+
+=== dependency_info.json ===
+{
+    "50022.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "revoke",
+                "revoke"
+            ],
+            "from_function": "revoke",
+            "to_function": "revoke",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 6\nFunction: revoke\nNode: \nIF ! transactee.call.value(deposit).gas(23000)()\nIRS: \nTMP_2(bool) = LOW_LEVEL_CALL, dest:transactee, function:call, arguments:[] value:deposit gas:23000\"",
+                        "\"BlockID: 4\nFunction: revoke\nNode: \nEXPRESSION verifications[transactor][transactee] = 0\nIRS: \nREF_6 := 0\""
+                    ],
+                    "state_variable": "verifications"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "revoke",
+                "revoke"
+            ],
+            "First_function": "revoke",
+            "Second_function": "revoke",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: revoke\nNode: \nEXPRESSION verifications[transactor][transactee] = 0\nIRS: \nREF_6 := 0\"",
+                        "\"BlockID: 2\nFunction: revoke\nNode: \nIF ! transactee.call.value(deposit).gas(23000)()\nIRS: \nTMP_2(bool) = LOW_LEVEL_CALL, dest:transactee, function:call, arguments:[] value:deposit gas:23000\""
+                    ],
+                    "state_variable": "verifications"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Analysis started at: 2026-06-21 07:02:41 PM
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Callgraph generation started!
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Callgraph generation finished!
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Value Range Analysis started
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Generating return summary for register
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Return summary generated for register
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Range graph generated
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Processed function register
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Range graph generated
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Value Range Analysis took 0.000967 seconds
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Value Range Analysis finished
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Dependency detection started!
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Dependency detection finished!
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Static Analysis took 0.047337 seconds
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Dependency does not exist
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Analysis finished!
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Analysis took 0.047552 seconds
+[INFO] | 2026-06-21 07:02:41 PM | analyzer.name_registrar | Analysis finished at: 2026-06-21 07:02:41 PM
+[36m[#] Analysing started: name_registrar.sol[0m
+[36m[#] Interprocedural CFG generation started for register[0m
+[36m[#] Interprocedural CFG generated for register[0m
+[36m[#] SDG generation started for register[0m
+[36m[#] SDG generated for register[0m
+[36m[#] Analysis took 0.047552 seconds[0m
+[36m[#] Analysis completed: name_registrar.sol [0m
+
+=== dependency_info.json ===
+{}

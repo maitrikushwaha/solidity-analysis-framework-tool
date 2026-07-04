@@ -1,0 +1,12 @@
+{
+  "filename": "BECToken.sol",
+  "reentrancy": 0,
+  "overflow": 1,
+  "timestamp": 0,
+  "tod": 1,
+  "duration_s": 2.11,
+  "error": null,
+  "reentrancy_domains": [
+    "Box"
+  ]
+}

@@ -1,0 +1,26 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/vulnerable/03_SingleModFold_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/vulnerable' running
+
+Reentrancy in C.withdraw() (datasets/rsd/reentrancy/vulnerable/03_SingleModFold_ree1.sol#15-20):
+	External calls:
+	- (success,None) = msg.sender.call{value: balances[msg.sender]}() (datasets/rsd/reentrancy/vulnerable/03_SingleModFold_ree1.sol#17)
+	State variables written after the call(s):
+	- update() (datasets/rsd/reentrancy/vulnerable/03_SingleModFold_ree1.sol#19)
+		- balances[msg.sender] = 0 (datasets/rsd/reentrancy/vulnerable/03_SingleModFold_ree1.sol#27)
+	C.balances (datasets/rsd/reentrancy/vulnerable/03_SingleModFold_ree1.sol#6) can be used in cross function reentrancies:
+	- C.balances (datasets/rsd/reentrancy/vulnerable/03_SingleModFold_ree1.sol#6)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/vulnerable/03_SingleModFold_ree1.sol#1)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in C.withdraw() (datasets/rsd/reentrancy/vulnerable/03_SingleModFold_ree1.sol#15-20):
+	- (success,None) = msg.sender.call{value: balances[msg.sender]}() (datasets/rsd/reentrancy/vulnerable/03_SingleModFold_ree1.sol#17)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/work/datasets/rsd/reentrancy/vulnerable/03_SingleModFold_ree1.sol analyzed (1 contracts with 93 detectors), 3 result(s) found

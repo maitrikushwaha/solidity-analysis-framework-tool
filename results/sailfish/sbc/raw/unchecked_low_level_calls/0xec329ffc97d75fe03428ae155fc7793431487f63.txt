@@ -1,0 +1,157 @@
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Analysis started at: 2026-06-21 07:09:58 PM
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Callgraph generation started!
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Callgraph generation finished!
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Value Range Analysis started
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Range graph generated
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for Owned
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for Owned
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Range graph generated
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function Owned
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function onlyOwner
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for transfer
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for transfer
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function transfer
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function balanceOf
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for Owned
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for Owned
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Range graph generated
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function Owned
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for TokenSender
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for TokenSender
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Range graph generated
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function TokenSender
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for hasTerminated
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for hasTerminated
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function hasTerminated
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for nTransfers
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for nTransfers
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function nTransfers
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for gas
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for gas
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function gas
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function onlyOwner
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for changeOwner
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for changeOwner
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Range graph generated
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function changeOwner
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for execute
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for execute
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function execute
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for run
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for run
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for gas
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for gas
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Range graph generated
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function run
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for changeOwner
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for changeOwner
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Range graph generated
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function changeOwner
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for execute
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for execute
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function execute
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Generating return summary for fill
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Return summary generated for fill
+[WARNING] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Range graph generated
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Processed function fill
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Value Range Analysis took 0.009356 seconds
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Value Range Analysis finished
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Dependency detection started!
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Dependency detection finished!
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Static Analysis took 0.170292 seconds
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Dependency does not exist
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Analysis finished!
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Analysis took 0.170555 seconds
+[INFO] | 2026-06-21 07:09:58 PM | analyzer.0xec329ffc97d75fe03428ae155fc7793431487f63 | Analysis finished at: 2026-06-21 07:09:58 PM
+[36m[#] Analysing started: 0xec329ffc97d75fe03428ae155fc7793431487f63.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for Owned[0m
+[36m[#] Interprocedural CFG generated for Owned[0m
+[36m[#] Interprocedural CFG generation started for changeOwner[0m
+[36m[#] Interprocedural CFG generated for changeOwner[0m
+[36m[#] Interprocedural CFG generation started for execute[0m
+[36m[#] Interprocedural CFG generated for execute[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for Owned[0m
+[36m[#] Interprocedural CFG generated for Owned[0m
+[36m[#] Interprocedural CFG generation started for changeOwner[0m
+[36m[#] Interprocedural CFG generated for changeOwner[0m
+[36m[#] Interprocedural CFG generation started for execute[0m
+[36m[#] Interprocedural CFG generated for execute[0m
+[36m[#] Interprocedural CFG generation started for TokenSender[0m
+[36m[#] Interprocedural CFG generated for TokenSender[0m
+[36m[#] Interprocedural CFG generation started for fill[0m
+[36m[#] Interprocedural CFG generated for fill[0m
+[36m[#] Interprocedural CFG generation started for run[0m
+[36m[#] Interprocedural CFG generated for run[0m
+[36m[#] Interprocedural CFG generation started for hasTerminated[0m
+[36m[#] Interprocedural CFG generated for hasTerminated[0m
+[36m[#] Interprocedural CFG generation started for nTransfers[0m
+[36m[#] Interprocedural CFG generated for nTransfers[0m
+[36m[#] SDG generation started for Owned[0m
+[36m[#] SDG generated for Owned[0m
+[36m[#] SDG generation started for changeOwner[0m
+[36m[#] SDG generated for changeOwner[0m
+[36m[#] SDG generation started for execute[0m
+[36m[#] SDG generated for execute[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for Owned[0m
+[36m[#] SDG generated for Owned[0m
+[36m[#] SDG generation started for changeOwner[0m
+[36m[#] SDG generated for changeOwner[0m
+[36m[#] SDG generation started for execute[0m
+[36m[#] SDG generated for execute[0m
+[36m[#] SDG generation started for TokenSender[0m
+[36m[#] SDG generated for TokenSender[0m
+[36m[#] SDG generation started for fill[0m
+[36m[#] SDG generated for fill[0m
+[36m[#] SDG generation started for run[0m
+[36m[#] SDG generated for run[0m
+[36m[#] SDG generation started for hasTerminated[0m
+[36m[#] SDG generated for hasTerminated[0m
+[36m[#] SDG generation started for nTransfers[0m
+[36m[#] SDG generated for nTransfers[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.170555 seconds[0m
+[36m[#] Analysis completed: 0xec329ffc97d75fe03428ae155fc7793431487f63.sol [0m
+
+=== dependency_info.json ===
+{}

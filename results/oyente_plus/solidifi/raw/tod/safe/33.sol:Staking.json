@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "75.7",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "33.sol:48:17: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    basePercent = 87432547781297140027737132986763873843542798940286759673444773526332146784621\n    minstakeTokens = 30179646726687130050312541015292704755293991546264334350173753385902959220735\n    stakeTokens = 87937748944946369101174008237033460432825686807267554815492769635181046090900",
+   "33.sol:106:41: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 19903539194844749172224006438155086732574315356335499197008546989369793970248\n    staker[msg.sender].redeem = 0\n    staker[msg.sender].time = 74663443970355484392698068600391054943455363144611474823538803164208812786113",
+   "33.sol:106:68: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 29854425328082155273599904834403105307167221412109504556727961689274851439810\n    staker[msg.sender].redeem = 0\n    staker[msg.sender].time = 2293388202309147043012258623363032921655409235293140438085501599619483697153",
+   "33.sol:107:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 3792558105552059566460197584159904263415637690603433630366596913518865292465\n    staker[msg.sender].redeem = 0\n    staker[msg.sender].time = 911978545798865543965046011695345116098945478775115825159977450176291811360",
+   "33.sol:108:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 63499621774564369097070788216070432813380308429736985505822951150828599642371\n    staker[msg.sender].redeem = 0\n    staker[msg.sender].time = 31944602084013928305766195434573584494154620058553371191988460229423479666944"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

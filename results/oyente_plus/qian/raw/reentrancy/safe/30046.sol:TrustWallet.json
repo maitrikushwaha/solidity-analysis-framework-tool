@@ -1,0 +1,27 @@
+{
+ "evm_code_coverage": "30.7",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "30046.sol:16:56: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    transactions.length = 0",
+   "30046.sol:17:44: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    transactions.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984"
+  ],
+  "integer_overflow": [
+   "30046.sol:16:43: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    transactions.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984",
+   "30046.sol:17:79: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    transactions.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984",
+   "30046.sol:17:98: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    transactions.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984",
+   "30046.sol:17:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    transactions.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984",
+   "30046.sol:17:44: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    transactions.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984"
+  ],
+  "callstack": [
+   "30046.sol:17:44: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "30046.sol:17:44: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

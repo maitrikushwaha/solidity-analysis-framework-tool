@@ -1,0 +1,13 @@
+{
+  "filename": "old_blockhash.sol",
+  "reentrancy": -1,
+  "overflow": 0,
+  "timestamp": -1,
+  "tod": 0,
+  "duration_s": 0.86,
+  "error": "transform_failed: An error occurred during execution\n> command: `/home/maitri/.solcx/solc-v0.4.26 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc -`\n> return code: `1`\n> stdout:\n\n> stderr:\n<stdin>:11:5: Warning: This declaration shadows a builtin symbol.\n    uint block = 80;  // from struct guess\n    ^-------------^\n<stdin>:19:17: Error: Undeclared identifier. Did you mean \"guess\"?\n        require(guesses.block == 0);\n                ^-----^\n<stdin>:22:9: Error: Undeclared identifier. Did you mean \"guess\"?\n        guesses.guess = hash;\n        ^-----^\n<stdin>:23:9: Error: Undeclared identifier. Did you mean \"guess\"?\n        guesses.block  = block.number + 1;\n        ^-----^\n<stdin>:27:32: Error: Undeclared identifier. Did you mean \"guess\"?\n        require(block.number > guesses.block);\n                               ^-----^\n<stdin>:29:36: Error: Undeclared identifier. Did you mean \"guess\"?\n        bytes32 answer = blockhash(guesses.block);\n                                   ^-----^\n<stdin>:31:9: Error: Undeclared identifier. Did you mean \"guess\"?\n        guesses.block = 0;\n        ^-----^\n<stdin>:32:13: Error: Undeclared identifier. Did you mean \"guess\"?\n        if (guesses.guess == answer) {\n            ^-----^",
+  "skipped_pipelines": [
+    "reentrancy",
+    "timestamp"
+  ]
+}

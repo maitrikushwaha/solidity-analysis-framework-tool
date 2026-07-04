@@ -1,0 +1,30 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50550.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.DNriqWsd6q' running
+INFO:root:contract 50550.sol:BitSongCrowdsale:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 84.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:50550.sol:7:21: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    duration = 62038670770013693028366934248877808923314709773637423698855446470043989005727
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50550.sol:BitSongCrowdsale.json.
+INFO:root:contract 50550.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50550.sol:SafeMath.json.

@@ -1,0 +1,12 @@
+{
+  "filename": "09_ERC20Staking_safe1.sol",
+  "reentrancy": 0,
+  "overflow": 0,
+  "timestamp": 0,
+  "tod": 1,
+  "duration_s": 1.0,
+  "error": null,
+  "reentrancy_domains": [
+    "Box"
+  ]
+}

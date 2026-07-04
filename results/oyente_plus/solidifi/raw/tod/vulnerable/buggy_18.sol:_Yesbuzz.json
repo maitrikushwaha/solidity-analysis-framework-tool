@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "4.2",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "buggy_18.sol:327:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "buggy_18.sol:327:5: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

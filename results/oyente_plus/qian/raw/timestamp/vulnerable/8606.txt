@@ -1,0 +1,21 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 8606.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.ubbMroVgFV' running
+INFO:CryticCompile:Compilation warnings/errors on 8606.sol:
+8606.sol:8:21: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function YunMin(address _operator) public returns(uint256){
+                    ^---------------^
+
+INFO:root:contract 8606.sol:YunMint:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 84.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:8606.sol:12:16: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 8606.sol:YunMint.json.

@@ -1,0 +1,31 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50446.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.hxX3uP2wLK' running
+INFO:root:contract 50446.sol:H2OC:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:50446.sol:7:21: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _burntAmount = 103002298116114250264488295101066432245814908669404484443203603032367431680
+    totalToken = 107580751283870858734315130248366178758808125261315404405433276415994041587031
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50446.sol:H2OC.json.
+INFO:root:contract 50446.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50446.sol:SafeMath.json.

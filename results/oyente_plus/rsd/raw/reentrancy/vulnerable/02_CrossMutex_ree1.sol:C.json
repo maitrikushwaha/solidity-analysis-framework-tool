@@ -1,0 +1,29 @@
+{
+ "evm_code_coverage": "87.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "02_CrossMutex_ree1.sol:6:5: Warning: Integer Underflow.\n",
+   "02_CrossMutex_ree1.sol:33:3350: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 62473715801891046026478931833176195360\n    balances[msg.sender] = 0",
+   "02_CrossMutex_ree1.sol:15:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 3622039935381858858154188428165644283699997583739984081801927623701539323968",
+   "02_CrossMutex_ree1.sol:33:6072: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    balances[msg.sender] = 0\n    balances[to] = 75940167466209285624974786948193458880734139103151868093885024272313437634669",
+   "02_CrossMutex_ree1.sol:9:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0",
+   "02_CrossMutex_ree1.sol:29:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 84249833361131112875266147845498714064798196277826789347496013725700"
+  ],
+  "integer_overflow": [
+   "02_CrossMutex_ree1.sol:33:563: Warning: Integer Overflow.\n",
+   "02_CrossMutex_ree1.sol:20:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 72240651944832384396946038872600328\n    balances[msg.sender] = 1\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969",
+   "02_CrossMutex_ree1.sol:19:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 0\n    balances[msg.sender] = 0"
+  ],
+  "callstack": [
+   "02_CrossMutex_ree1.sol:20:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "02_CrossMutex_ree1.sol:20:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

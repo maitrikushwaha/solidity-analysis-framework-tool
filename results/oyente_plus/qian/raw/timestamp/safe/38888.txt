@@ -1,0 +1,25 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 38888.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.mAdTuLUiyJ' running
+INFO:CryticCompile:Compilation warnings/errors on 38888.sol:
+38888.sol:9:39: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    	if (tx.gasprice > MAX_GAS_PRICE) throw;
+    	                                 ^---^
+38888.sol:10:73: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (block.timestamp < startTime || block.timestamp >= deadline) throw;
+                                                                        ^---^
+38888.sol:8:5: Warning: No visibility specified. Defaulting to "public". 
+    function () payable {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 38888.sol:FunFairSale:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 75.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 38888.sol:FunFairSale.json.

@@ -1,0 +1,65 @@
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Analysis started at: 2026-06-21 07:13:54 PM
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Generating return summary for shareProfits
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Return summary generated for shareProfits
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Range graph generated
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Processed function shareProfits
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Value Range Analysis took 0.000508 seconds
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | TOD dependency detected in file 39778.sol in contract Blockjack in by composing functions shareProfits and shareProfits
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Static Analysis took 0.066026 seconds
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Dependency exists
+[INFO] | 2026-06-21 07:13:54 PM | analyzer.39778  | Invoking symbolic executor!
+[36m[#] Analysing started: 39778.sol[0m
+[36m[#] Interprocedural CFG generation started for shareProfits[0m
+[36m[#] Interprocedural CFG generated for shareProfits[0m
+[36m[#] SDG generation started for shareProfits[0m
+[36m[#] SDG generated for shareProfits[0m
+[INFO] | 2026-06-21 07:13:55 PM | analyzer.39778  | Symbolic execution took 0.842717 seconds
+[INFO] | 2026-06-21 07:13:55 PM | analyzer.39778  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:13:55 PM | analyzer.39778  | Analysis finished!
+[INFO] | 2026-06-21 07:13:55 PM | analyzer.39778  | Analysis took 0.909350 seconds
+[INFO] | 2026-06-21 07:13:55 PM | analyzer.39778  | Analysis finished at: 2026-06-21 07:13:55 PM
+[36m[#] Analysis took 0.909350 seconds[0m
+[36m[#] Analysis completed: 39778.sol [0m
+
+=== dependency_info.json ===
+{
+    "39778.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "shareProfits",
+                "shareProfits"
+            ],
+            "First_function": "shareProfits",
+            "Second_function": "shareProfits",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 11\nFunction: shareProfits\nNode: \nEXPRESSION currentBankroll -= profit\nIRS: \ncurrentBankroll = currentBankroll - profit\"",
+                        "\"BlockID: 2\nFunction: shareProfits\nNode: \nIF currentBankroll <= initialBankroll\nIRS: \nCONDITION TMP_0\""
+                    ],
+                    "state_variable": "currentBankroll"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 11\nFunction: shareProfits\nNode: \nEXPRESSION currentBankroll -= profit\nIRS: \ncurrentBankroll = currentBankroll - profit\"",
+                        "\"BlockID: 3\nFunction: shareProfits\nNode: \nIF ! ADMIN_CONTRACT.call.value(profit)()\nIRS: \nTMP_3(bool) = LOW_LEVEL_CALL, dest:ADMIN_CONTRACT, function:call, arguments:[] value:profit \""
+                    ],
+                    "state_variable": "currentBankroll"
+                }
+            ]
+        }
+    ]
+}

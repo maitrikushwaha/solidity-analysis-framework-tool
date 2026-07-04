@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "71.3",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "31867.sol:10:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lastUpdate = 115792089237316195423570985008687907853269984665640564039457439892725053288704\n    totalSupply = 106580675416907195054546110884744643921182196144928976433322696977737559736405\n    amount = 10036574969042225285814349610438517355425674974716180367532503508895622070203"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

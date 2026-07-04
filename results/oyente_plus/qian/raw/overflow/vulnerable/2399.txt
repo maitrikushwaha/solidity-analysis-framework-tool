@@ -1,0 +1,23 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 2399.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.Vd6czjiiim' running
+INFO:CryticCompile:Compilation warnings/errors on 2399.sol:
+2399.sol:8:3: Warning: Function state mutability can be restricted to view
+  function ComputeVestSpend(address target) public returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 2399.sol:BasicToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 87.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:2399.sol:10:32: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    mVestingBegins[target] = 1
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 2399.sol:BasicToken.json.

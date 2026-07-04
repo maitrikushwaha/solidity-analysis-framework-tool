@@ -1,0 +1,53 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 07_MixedSendFoldEmit_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.XVXx6aOdRB' running
+INFO:root:contract 07_MixedSendFoldEmit_ree1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 77.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:07_MixedSendFoldEmit_ree1.sol:5:5: Warning: Integer Underflow.
+
+07_MixedSendFoldEmit_ree1.sol:20:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+    balances[msg.sender] = 1427247692705959881058285969449495136382746624
+07_MixedSendFoldEmit_ree1.sol:13:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 71286039000794218792549773829756774278193957988937091835445496700585103175151
+    balances[msg.sender] = 93536104789177786765035829293842113257979682750464
+07_MixedSendFoldEmit_ree1.sol:29:1776: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+07_MixedSendFoldEmit_ree1.sol:17:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+INFO:symExec:07_MixedSendFoldEmit_ree1.sol:29:700: Warning: Integer Overflow.
+
+07_MixedSendFoldEmit_ree1.sol:11:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 107974548838623548936692992525166484077884608365695492004094583407915772674048
+    balances[msg.sender] = 288230376151711744
+INFO:symExec:07_MixedSendFoldEmit_ree1.sol:18:25: Warning: Callstack Depth Attack Vulnerability.
+
+07_MixedSendFoldEmit_ree1.sol:11:29: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:Flow1
+07_MixedSendFoldEmit_ree1.sol:18:25: Warning: Transaction-Ordering Dependency.
+
+Flow2
+07_MixedSendFoldEmit_ree1.sol:18:25: Warning: Transaction-Ordering Dependency.
+
+07_MixedSendFoldEmit_ree1.sol:11:29: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 07_MixedSendFoldEmit_ree1.sol:C.json.

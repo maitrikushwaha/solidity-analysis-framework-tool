@@ -1,0 +1,121 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 09_ERC20InheritMod_ree2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.u8xyv6s8e7' running
+INFO:root:contract 09_ERC20InheritMod_ree2.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 92.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:09_ERC20InheritMod_ree2.sol:100:685: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 0
+09_ERC20InheritMod_ree2.sol:100:2114: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 0
+    received[to] = 62237872614944921281210731552280444762413576703902726336241815873199973692712
+09_ERC20InheritMod_ree2.sol:97:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 0
+    received[to] = 33596146615144504495131950216861030848534733828032321462282557077503918568744
+09_ERC20InheritMod_ree2.sol:87:31: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 100433627766186892221372630771322662657637687111424552206336
+09_ERC20InheritMod_ree2.sol:94:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 18889465931478580854784
+09_ERC20InheritMod_ree2.sol:82:5: Warning: Integer Underflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 09_ERC20InheritMod_ree2.sol:C.json.
+INFO:root:contract 09_ERC20InheritMod_ree2.sol:MyERC20:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 87.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:09_ERC20InheritMod_ree2.sol:40:14: Warning: Integer Underflow.
+
+09_ERC20InheritMod_ree2.sol:38:5: Warning: Integer Underflow.
+
+09_ERC20InheritMod_ree2.sol:100:5836: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    balances[msg.sender] = 0
+09_ERC20InheritMod_ree2.sol:100:4552: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+    balances[msg.sender] = 0
+09_ERC20InheritMod_ree2.sol:18:5: Warning: Integer Underflow.
+
+09_ERC20InheritMod_ree2.sol:54:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[to] = 66750242184712686767852145501749159968662762868041658920873503669045862451780
+09_ERC20InheritMod_ree2.sol:48:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[to] = 66750241321994393419031672071673843793308014147639794988115358273593743147263
+09_ERC20InheritMod_ree2.sol:100:5523: Warning: Integer Underflow.
+
+09_ERC20InheritMod_ree2.sol:50:9: Warning: Integer Underflow.
+
+09_ERC20InheritMod_ree2.sol:49:9: Warning: Integer Underflow.
+
+09_ERC20InheritMod_ree2.sol:26:5: Warning: Integer Underflow.
+
+09_ERC20InheritMod_ree2.sol:75:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[to] = 14672782636127929207770583898456767580220151825380925786994454641142510629815
+09_ERC20InheritMod_ree2.sol:64:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+09_ERC20InheritMod_ree2.sol:34:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 104936638081219900727464090692050597816855244445387172231983052805966726608896
+    balances[msg.sender] = 86920069444235318136949368950719803058796693348171618136724202395045433704992
+    balances[to] = 59821066988884460592989434189844655183806533934613631764601268593170451742720
+09_ERC20InheritMod_ree2.sol:30:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 57896044672578196746906810807553483980723641431432666479459496543914519691264
+    balances[msg.sender] = 86904167766732082577622432634715815874994125433613444928984750935635054830758
+    balances[to] = 45347055834219875496258929415457774406887238985987839615118068236076888582656
+09_ERC20InheritMod_ree2.sol:31:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+09_ERC20InheritMod_ree2.sol:44:5: Warning: Integer Underflow.
+
+INFO:symExec:09_ERC20InheritMod_ree2.sol:60:28: Warning: Integer Overflow.
+
+09_ERC20InheritMod_ree2.sol:50:23: Warning: Integer Overflow.
+
+09_ERC20InheritMod_ree2.sol:60:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+09_ERC20InheritMod_ree2.sol:100:3528: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 09_ERC20InheritMod_ree2.sol:MyERC20.json.

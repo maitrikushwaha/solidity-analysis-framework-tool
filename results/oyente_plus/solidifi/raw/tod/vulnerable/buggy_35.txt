@@ -1,0 +1,54 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc buggy_35.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.2TJCMTwHEu' running
+INFO:root:contract buggy_35.sol:BitpayerDEX:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 94.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:buggy_35.sol:625:1: Warning: Integer Underflow.
+
+INFO:symExec:buggy_35.sol:737:27: Warning: Integer Overflow.
+
+INFO:symExec:Flow1
+buggy_35.sol:723:61: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_35.sol:343:19: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_35.sol:BitpayerDEX.json.
+INFO:root:contract buggy_35.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_35.sol:SafeMath.json.
+INFO:root:contract buggy_35.sol:owned:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 93.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:Flow1
+buggy_35.sol:178:40: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_35.sol:262:70: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_35.sol:owned.json.

@@ -1,0 +1,5 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x7a4349a749e59a5736efb7826ee3496a2dfd5489.sol:WhaleGiveaway1
+offset,opcode,detection
+584,584: SLOAD,Store read after unsafe call
+729,729: SLOAD,Store read after unsafe call

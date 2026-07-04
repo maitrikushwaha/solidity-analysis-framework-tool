@@ -1,0 +1,26 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree3.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/vulnerable' running
+
+Reentrancy in StakableToken.stake(uint256) (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree3.sol#30-37):
+	External calls:
+	- success = token.transferFrom(msg.sender,address(this),amount) (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree3.sol#34)
+	State variables written after the call(s):
+	- stakedAmounts[msg.sender] += amount (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree3.sol#36)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree3.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+StakableToken.balances (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree3.sol#19) is never used in StakableToken (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree3.sol#15-48)
+StakableToken.allowances (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree3.sol#20) is never used in StakableToken (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree3.sol#15-48)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-state-variable
+
+StakableToken.totalSupply (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree3.sol#16) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree3.sol analyzed (2 contracts with 93 detectors), 5 result(s) found

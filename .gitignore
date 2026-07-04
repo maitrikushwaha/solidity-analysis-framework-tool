@@ -1,0 +1,65 @@
+# ── Python ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.ipynb_checkpoints/
+
+# ── Virtual envs / tooling caches ────────────────────────────────────
+.venv/
+venv/
+.env
+.mypy_cache/
+.pytest_cache/
+_minted/          # LaTeX minted package cache (regenerated on compile)
+
+# ── Editor / local history (NOT for the repo) ────────────────────────
+.history/
+.vscode/
+.idea/
+*.swp
+
+# ── Project backups & scratch (large, local-only) ────────────────────
+backups/
+/tmp/
+*.zip            # stray local backup archives (e.g. backup1.zip)
+*.bak            # per-file backups (e.g. Foo.py.bak)
+*.bak_*          # timestamped backups (e.g. main.py.bak_overflow_20260615)
+.cmp_backup_*/   # comparison-table snapshots
+.timing_backup_*/ # timing snapshots
+
+# ── Stray run artifacts ──────────────────────────────────────────────
+# main.py writes results/ relative to its CWD; running it from src/ creates
+# a duplicate src/results/. The canonical outputs live in the top-level results/.
+src/results/
+gen/
+invariants_output.txt
+dependency_analysis_output.txt
+reentrancy_detection.txt
+
+# Default per-run output directory (used when --output-dir is omitted).
+analysis_output/
+# Per-contract result files must never be committed into the datasets.
+**/gen/ast.json
+datasets/**/*_analysis.txt
+datasets/**/*_output.txt
+datasets/**/*_verdicts.json
+
+# ── Large raw experiment data (regenerable; summaries are kept) ───────
+# Per-run timing JSONs (~4 GB). The evidence that ships is
+# results/ours/timing/timing_runs_*.csv and results/summary/.
+results/ours/timing/raw/
+# Per-contract raw analysis dumps (~278 MB; two files exceed GitHub's 100 MB
+# limit). Regenerable from the pipeline; standardized CSV/JSON evidence is kept.
+results/ours/solidifi/raw_output/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ── Internal documents — DO NOT publish on the public artifact repo ───
+# Reviewer comments / internal review PDFs must never be committed.
+ACM_DLT_Review.pdf

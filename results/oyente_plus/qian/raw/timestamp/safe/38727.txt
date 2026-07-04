@@ -1,0 +1,19 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 38727.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.MOdtOAvNnj' running
+INFO:CryticCompile:Compilation warnings/errors on 38727.sol:
+38727.sol:14:3: Warning: No visibility specified. Defaulting to "public". 
+  function setPrice(uint _newPrice) onlyOwner {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 38727.sol:CardboardUnicornAssembler:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 84.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 38727.sol:CardboardUnicornAssembler.json.

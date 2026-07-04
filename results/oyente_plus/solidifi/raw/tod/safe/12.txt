@@ -1,0 +1,37 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 12.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.MRENOrJZKL' running
+INFO:root:contract 12.sol:ERC223Token:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 49.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:12.sol:126:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _to = 0
+    balances[_to] = 30338842541124061828035261440109774235397552443888896741360442357926352457394
+    _value = 42049891370350371213883647752402718647725875775550238266431105688530132736147
+    balances[msg.sender] = 88653318322320212133725738868050040977831410856046389676242822279575705225217
+12.sol:144:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _to = 0
+    balances[_to] = 30338842541124061828035261440109774235397552443888896741360442357926352457394
+    _value = 42049891370350371213883647752402718647725875775550238266431105688530132736147
+    balances[msg.sender] = 88653318322320212121171535397276679450159832009631056842709712756059563624448
+INFO:symExec:12.sol:126:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _to = 0
+    balances[_to] = 30338818609746640509725830815603546586466426310823830025337945095429115940530
+    _value = 42049918922678675842799404717282058056789617572435983376251026362560667523219
+    balances[msg.sender] = 45231284858336512279185737148677262229044635766661447704794181730150223686145
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 12.sol:ERC223Token.json.
+INFO:root:contract 12.sol:Grand:
+INFO:symExec:	============ Results ===========

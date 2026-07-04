@@ -1,0 +1,29 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 2252.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.ElNm6GcE1S' running
+INFO:CryticCompile:Compilation warnings/errors on 2252.sol:
+2252.sol:15:42: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+    raffleTicketThatWon = addmod(uint256(block.blockhash(block.number-1)), seed, raffleTicketsBought);
+                                         ^-------------^
+
+INFO:root:contract 2252.sol:CardsRaffle:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 80.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:2252.sol:15:58: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    owner = 0
+    raffleTicketsBought = 1
+INFO:symExec:2252.sol:14:20: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner = 0
+    raffleTicketsBought = 66641087174358818163062227740702012211728032212072388996919585167904923265703
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 2252.sol:CardsRaffle.json.

@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract datasets/rsd/reentrancy/safe/12_OnlyOwner_safe1.sol:ControlledPayout
+offset,opcode,detection

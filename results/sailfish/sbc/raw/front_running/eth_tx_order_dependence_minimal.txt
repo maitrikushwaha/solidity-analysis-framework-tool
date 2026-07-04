@@ -1,0 +1,131 @@
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Analysis started at: 2026-06-21 07:02:29 PM
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Callgraph generation started!
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Callgraph generation finished!
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Value Range Analysis started
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Generating return summary for EthTxOrderDependenceMinimal
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Return summary generated for EthTxOrderDependenceMinimal
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Range graph generated
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Processed function EthTxOrderDependenceMinimal
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Generating return summary for setReward
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Return summary generated for setReward
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Range graph generated
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Processed function setReward
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Generating return summary for claimReward
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Return summary generated for claimReward
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Range graph generated
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Processed function claimReward
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Value Range Analysis took 0.002291 seconds
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Value Range Analysis finished
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Dependency detection started!
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | TOD dependency detected in file eth_tx_order_dependence_minimal.sol in contract EthTxOrderDependenceMinimal in by composing functions setReward and setReward
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | TOD dependency detected in file eth_tx_order_dependence_minimal.sol in contract EthTxOrderDependenceMinimal in by composing functions setReward and claimReward
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | TOD dependency detected in file eth_tx_order_dependence_minimal.sol in contract EthTxOrderDependenceMinimal in by composing functions claimReward and setReward
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | TOD dependency detected in file eth_tx_order_dependence_minimal.sol in contract EthTxOrderDependenceMinimal in by composing functions claimReward and claimReward
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Dependency detection finished!
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Static Analysis took 0.141765 seconds
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Dependency exists
+[INFO] | 2026-06-21 07:02:29 PM | analyzer.eth_tx_order_dependence_minimal | Invoking symbolic executor!
+[36m[#] Analysing started: eth_tx_order_dependence_minimal.sol[0m
+[36m[#] Interprocedural CFG generation started for EthTxOrderDependenceMinimal[0m
+[36m[#] Interprocedural CFG generated for EthTxOrderDependenceMinimal[0m
+[36m[#] Interprocedural CFG generation started for setReward[0m
+[36m[#] Interprocedural CFG generated for setReward[0m
+[36m[#] Interprocedural CFG generation started for claimReward[0m
+[36m[#] Interprocedural CFG generated for claimReward[0m
+[36m[#] SDG generation started for EthTxOrderDependenceMinimal[0m
+[36m[#] SDG generated for EthTxOrderDependenceMinimal[0m
+[36m[#] SDG generation started for setReward[0m
+[36m[#] SDG generated for setReward[0m
+[36m[#] SDG generation started for claimReward[0m
+[36m[#] SDG generated for claimReward[0m
+[INFO] | 2026-06-21 07:02:31 PM | analyzer.eth_tx_order_dependence_minimal | Symbolic execution took 2.182805 seconds
+[INFO] | 2026-06-21 07:02:31 PM | analyzer.eth_tx_order_dependence_minimal | Symbolic execution finished!
+[INFO] | 2026-06-21 07:02:31 PM | analyzer.eth_tx_order_dependence_minimal | Analysis finished!
+[INFO] | 2026-06-21 07:02:31 PM | analyzer.eth_tx_order_dependence_minimal | Analysis took 2.325762 seconds
+[INFO] | 2026-06-21 07:02:31 PM | analyzer.eth_tx_order_dependence_minimal | Analysis finished at: 2026-06-21 07:02:31 PM
+[36m[#] Analysis took 2.325762 seconds[0m
+[36m[#] Analysis completed: eth_tx_order_dependence_minimal.sol [0m
+
+=== dependency_info.json ===
+{
+    "eth_tx_order_dependence_minimal.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward",
+                "setReward"
+            ],
+            "First_function": "setReward",
+            "Second_function": "setReward",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: setReward\nNode: \nEXPRESSION reward = msg.value\nIRS: \nreward := msg.value\"",
+                        "\"BlockID: 6\nFunction: setReward\nNode: \nEXPRESSION owner.transfer(reward)\nIRS: \nTransfer dest:owner value:reward\""
+                    ],
+                    "state_variable": "reward"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward",
+                "claimReward"
+            ],
+            "First_function": "claimReward",
+            "Second_function": "setReward",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: claimReward\nNode: \nEXPRESSION claimed = true\nIRS: \nclaimed := true\"",
+                        "\"BlockID: 4\nFunction: setReward\nNode: \nEXPRESSION require(bool)(! claimed)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+                    ],
+                    "state_variable": "claimed"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward",
+                "setReward"
+            ],
+            "First_function": "setReward",
+            "Second_function": "claimReward",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: setReward\nNode: \nEXPRESSION reward = msg.value\nIRS: \nreward := msg.value\"",
+                        "\"BlockID: 11\nFunction: claimReward\nNode: \nEXPRESSION msg.sender.transfer(reward)\nIRS: \nTransfer dest:msg.sender value:reward\""
+                    ],
+                    "state_variable": "reward"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward",
+                "claimReward"
+            ],
+            "First_function": "claimReward",
+            "Second_function": "claimReward",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: claimReward\nNode: \nEXPRESSION claimed = true\nIRS: \nclaimed := true\"",
+                        "\"BlockID: 9\nFunction: claimReward\nNode: \nEXPRESSION require(bool)(! claimed)\nIRS: \nTMP_6 = SOLIDITY_CALL require(bool)(TMP_5)\""
+                    ],
+                    "state_variable": "claimed"
+                }
+            ]
+        }
+    ]
+}

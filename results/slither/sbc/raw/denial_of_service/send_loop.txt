@@ -1,0 +1,40 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/denial_of_service/send_loop.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/denial_of_service' running
+Compilation warnings/errors on /work/datasets/sbc/denial_of_service/send_loop.sol:
+/work/datasets/sbc/denial_of_service/send_loop.sol:8:1: Error: Source file requires different compiler version (current compiler is 0.4.26+commit.4563c3fc.Linux.g++ - note that nightly builds are considered to be strictly less than the released version
+pragma solidity 0.4.24;
+^---------------------^
+/work/datasets/sbc/denial_of_service/send_loop.sol:17:30: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'. Correct checksummed address: '0x79B483371E87d664cd39491b5f06250165e4b185'. For more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals
+        refundAddresses.push(0x79B483371E87d664cd39491b5F06250165e4b185);
+                             ^----------------------------------------^
+
+Traceback (most recent call last):
+  File "/home/ethsec/.local/bin/slither", line 8, in <module>
+    sys.exit(main())
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/__main__.py", line 776, in main
+    main_impl(all_detector_classes=detectors, all_printer_classes=printers)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/__main__.py", line 882, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/__main__.py", line 96, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "/home/ethsec/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 722, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "/home/ethsec/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 211, in __init__
+    self._compile(**kwargs)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/crytic_compile/crytic_compile.py", line 633, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/crytic_compile/platform/solc.py", line 151, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/crytic_compile/platform/solc.py", line 268, in _get_targets_json
+    return _run_solcs_env(
+  File "/home/ethsec/.local/lib/python3.10/site-packages/crytic_compile/platform/solc.py", line 757, in _run_solcs_env
+    raise InvalidCompilation(
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation, none of the solc versions provided worked:
+0.4.26: Invalid solc compilation /work/datasets/sbc/denial_of_service/send_loop.sol:8:1: Error: Source file requires different compiler version (current compiler is 0.4.26+commit.4563c3fc.Linux.g++ - note that nightly builds are considered to be strictly less than the released version
+pragma solidity 0.4.24;
+^---------------------^
+/work/datasets/sbc/denial_of_service/send_loop.sol:17:30: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'. Correct checksummed address: '0x79B483371E87d664cd39491b5f06250165e4b185'. For more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals
+        refundAddresses.push(0x79B483371E87d664cd39491b5F06250165e4b185);
+                             ^----------------------------------------^
+

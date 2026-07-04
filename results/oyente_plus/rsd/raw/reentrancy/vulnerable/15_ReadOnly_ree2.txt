@@ -1,0 +1,4 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 15_ReadOnly_ree2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.sl9c5WZpvK' running
+INFO:root:contract 15_ReadOnly_ree2.sol:A:
+INFO:symExec:	============ Results ===========

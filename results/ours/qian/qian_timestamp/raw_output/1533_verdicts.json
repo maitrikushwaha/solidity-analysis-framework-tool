@@ -1,0 +1,19 @@
+{
+  "filename": "1533.sol",
+  "reentrancy": -1,
+  "overflow": -1,
+  "timestamp": 1,
+  "tod": -1,
+  "duration_s": 0.39,
+  "error": null,
+  "skipped_pipelines": [
+    "overflow",
+    "tod",
+    "reentrancy"
+  ],
+  "reentrancy_domains": [
+    "Box",
+    "Octagon",
+    "Polka"
+  ]
+}

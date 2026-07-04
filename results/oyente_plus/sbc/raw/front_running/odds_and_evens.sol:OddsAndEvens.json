@@ -1,0 +1,26 @@
+{
+ "evm_code_coverage": "93.0",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "odds_and_evens.sol:36:14: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    tot = 1\n    players[1].number = 60373226545577530331518837846126442086170146149441209342680576745514071130752\n    players[0].number = 63739086369732976365162596263284212086002798484365468887259142861349055554176"
+  ],
+  "callstack": [
+   "odds_and_evens.sol:38:13: Warning: Callstack Depth Attack Vulnerability.\n",
+   "odds_and_evens.sol:41:13: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [
+   [
+    "odds_and_evens.sol:50:16: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "odds_and_evens.sol:41:13: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

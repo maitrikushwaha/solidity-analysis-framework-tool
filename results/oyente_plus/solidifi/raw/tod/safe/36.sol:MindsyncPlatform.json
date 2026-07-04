@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "8.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "36.sol:127:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "36.sol:127:5: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [
+   "36.sol:375:32: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

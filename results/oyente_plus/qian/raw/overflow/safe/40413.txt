@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40413.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.AG7FjNIYgJ' running
+INFO:CryticCompile:Compilation warnings/errors on 40413.sol:
+40413.sol:8:18: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if (!result) { throw; }
+		               ^---^
+40413.sol:6:2: Warning: No visibility specified. Defaulting to "public". 
+	function withdrawEtherOrThrow(uint256 amount) {
+ ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 40413.sol:DaoChallenge:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 66.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:40413.sol:7:17: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40413.sol:DaoChallenge.json.

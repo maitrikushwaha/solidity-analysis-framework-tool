@@ -1,0 +1,567 @@
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Analysis started at: 2026-06-21 07:16:21 PM
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Callgraph generation started!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Callgraph generation finished!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Storage dependency graph generation started!
+[36m[#] Analysing started: 47.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyAdmin[0m
+[36m[#] Interprocedural CFG generated for modifer onlyAdmin[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for halt[0m
+[36m[#] Interprocedural CFG generated for halt[0m
+[36m[#] Interprocedural CFG generation started for unhalt[0m
+[36m[#] Interprocedural CFG generated for unhalt[0m
+[36m[#] Interprocedural CFG generation started for changeDepositAddress[0m
+[36m[#] Interprocedural CFG generated for changeDepositAddress[0m
+[36m[#] Interprocedural CFG generation started for getCurrentState[0m
+[36m[#] Interprocedural CFG generated for getCurrentState[0m
+[36m[#] Interprocedural CFG generation started for invest[0m
+[36m[#] Interprocedural CFG generated for invest[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for burn[0m
+[36m[#] Interprocedural CFG generated for burn[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Value Range Analysis started
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function constructor
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function constructor
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function allowance
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function approve
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function constructor
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for getCurrentState
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for getCurrentState
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function getCurrentState
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for onlyAdmin
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for onlyAdmin
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function onlyAdmin
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function transfer
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for invest
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for invest
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function invest
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for burn
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for burn
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function burn
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for halt
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for halt
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function halt
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for unhalt
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for unhalt
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function unhalt
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for changeDepositAddress
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for changeDepositAddress
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function changeDepositAddress
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Generating return summary for fallback
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Return summary generated for fallback
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Range graph generated
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Processed function fallback
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Value Range Analysis took 0.010740 seconds
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Value Range Analysis finished
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:16:21 PM | analyzer.47     | Dependency detection started!
+[INFO] | 2026-06-21 07:16:22 PM | analyzer.47     | TOD dependency detected in file 47.sol in contract AcunarIEO in by composing functions invest and invest
+[INFO] | 2026-06-21 07:16:22 PM | analyzer.47     | TOD dependency detected in file 47.sol in contract AcunarIEO in by composing functions invest and fallback
+[INFO] | 2026-06-21 07:16:22 PM | analyzer.47     | TOD dependency detected in file 47.sol in contract AcunarIEO in by composing functions invest and burn
+[INFO] | 2026-06-21 07:16:22 PM | analyzer.47     | TOD dependency detected in file 47.sol in contract AcunarIEO in by composing functions fallback and invest
+[INFO] | 2026-06-21 07:16:22 PM | analyzer.47     | TOD dependency detected in file 47.sol in contract AcunarIEO in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:16:22 PM | analyzer.47     | TOD dependency detected in file 47.sol in contract AcunarIEO in by composing functions fallback and burn
+[INFO] | 2026-06-21 07:16:22 PM | analyzer.47     | Dependency detection finished!
+[INFO] | 2026-06-21 07:16:22 PM | analyzer.47     | Static Analysis took 0.684248 seconds
+[INFO] | 2026-06-21 07:16:22 PM | analyzer.47     | Dependency exists
+[INFO] | 2026-06-21 07:16:22 PM | analyzer.47     | Invoking symbolic executor!
+
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for halt[0m
+[36m[#] SDG generated for halt[0m
+[36m[#] SDG generation started for unhalt[0m
+[36m[#] SDG generated for unhalt[0m
+[36m[#] SDG generation started for changeDepositAddress[0m
+[36m[#] SDG generated for changeDepositAddress[0m
+[36m[#] SDG generation started for getCurrentState[0m
+[36m[#] SDG generated for getCurrentState[0m
+[36m[#] SDG generation started for invest[0m
+[36m[#] SDG generated for invest[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for burn[0m
+[36m[#] SDG generated for burn[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for modifier onlyAdmin[0m
+[36m[#] SDG generated for modifier onlyAdmin[0m
+[INFO] | 2026-06-21 07:16:24 PM | analyzer.47     | Symbolic execution took 2.541901 seconds
+[INFO] | 2026-06-21 07:16:24 PM | analyzer.47     | Symbolic execution finished!
+[INFO] | 2026-06-21 07:16:24 PM | analyzer.47     | Analysis finished!
+[INFO] | 2026-06-21 07:16:24 PM | analyzer.47     | Analysis took 3.226581 seconds
+[INFO] | 2026-06-21 07:16:24 PM | analyzer.47     | Analysis finished at: 2026-06-21 07:16:24 PM
+[36m[#] Analysis took 3.226581 seconds[0m
+[36m[#] Analysis completed: 47.sol [0m
+
+=== dependency_info.json ===
+{
+    "47.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "invest",
+                "invest"
+            ],
+            "First_function": "invest",
+            "Second_function": "invest",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 116\nFunction: invest\nNode: \nEXPRESSION ieoState = getCurrentState()\nIRS: \nieoState := TMP_39\"",
+                        "\"BlockID: 66\nFunction: invest\nNode: \nEXPRESSION require(bool)(ieoState == State.running)\nIRS: \nTMP_41 = SOLIDITY_CALL require(bool)(TMP_40)\""
+                    ],
+                    "state_variable": "ieoState"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 116\nFunction: invest\nNode: \nEXPRESSION ieoState = getCurrentState()\nIRS: \nieoState := TMP_39\"",
+                        "\"BlockID: 74\nFunction: getCurrentState\nNode: \nIF ieoState == State.halted\nIRS: \nCONDITION TMP_34\""
+                    ],
+                    "state_variable": "ieoState"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 120\nFunction: invest\nNode: \nEXPRESSION raisedAmount += msg.value\nIRS: \nraisedAmount = raisedAmount + msg.value\"",
+                        "\"BlockID: 68\nFunction: invest\nNode: \nEXPRESSION require(bool)(raisedAmount + msg.value <= hardCap)\nIRS: \nTMP_49 = SOLIDITY_CALL require(bool)(TMP_48)\""
+                    ],
+                    "state_variable": "raisedAmount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "invest",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "invest",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 79\nFunction: invest\nNode: \nEXPRESSION ieoState = getCurrentState()\nIRS: \nieoState := TMP_39\"",
+                        "\"BlockID: 66\nFunction: invest\nNode: \nEXPRESSION require(bool)(ieoState == State.running)\nIRS: \nTMP_41 = SOLIDITY_CALL require(bool)(TMP_40)\""
+                    ],
+                    "state_variable": "ieoState"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 79\nFunction: invest\nNode: \nEXPRESSION ieoState = getCurrentState()\nIRS: \nieoState := TMP_39\"",
+                        "\"BlockID: 74\nFunction: getCurrentState\nNode: \nIF ieoState == State.halted\nIRS: \nCONDITION TMP_34\""
+                    ],
+                    "state_variable": "ieoState"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 83\nFunction: invest\nNode: \nEXPRESSION raisedAmount += msg.value\nIRS: \nraisedAmount = raisedAmount + msg.value\"",
+                        "\"BlockID: 68\nFunction: invest\nNode: \nEXPRESSION require(bool)(raisedAmount + msg.value <= hardCap)\nIRS: \nTMP_49 = SOLIDITY_CALL require(bool)(TMP_48)\""
+                    ],
+                    "state_variable": "raisedAmount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "invest",
+                "burn"
+            ],
+            "First_function": "burn",
+            "Second_function": "invest",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 93\nFunction: burn\nNode: \nEXPRESSION ieoState = getCurrentState()\nIRS: \nieoState := TMP_53\"",
+                        "\"BlockID: 66\nFunction: invest\nNode: \nEXPRESSION require(bool)(ieoState == State.running)\nIRS: \nTMP_41 = SOLIDITY_CALL require(bool)(TMP_40)\""
+                    ],
+                    "state_variable": "ieoState"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 93\nFunction: burn\nNode: \nEXPRESSION ieoState = getCurrentState()\nIRS: \nieoState := TMP_53\"",
+                        "\"BlockID: 74\nFunction: getCurrentState\nNode: \nIF ieoState == State.halted\nIRS: \nCONDITION TMP_34\""
+                    ],
+                    "state_variable": "ieoState"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "invest"
+            ],
+            "First_function": "invest",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: invest\nNode: \nEXPRESSION ieoState = getCurrentState()\nIRS: \nieoState := TMP_39\"",
+                        "\"BlockID: 80\nFunction: invest\nNode: \nEXPRESSION require(bool)(ieoState == State.running)\nIRS: \nTMP_41 = SOLIDITY_CALL require(bool)(TMP_40)\""
+                    ],
+                    "state_variable": "ieoState"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: invest\nNode: \nEXPRESSION ieoState = getCurrentState()\nIRS: \nieoState := TMP_39\"",
+                        "\"BlockID: 88\nFunction: getCurrentState\nNode: \nIF ieoState == State.halted\nIRS: \nCONDITION TMP_34\""
+                    ],
+                    "state_variable": "ieoState"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: invest\nNode: \nEXPRESSION raisedAmount += msg.value\nIRS: \nraisedAmount = raisedAmount + msg.value\"",
+                        "\"BlockID: 82\nFunction: invest\nNode: \nEXPRESSION require(bool)(raisedAmount + msg.value <= hardCap)\nIRS: \nTMP_49 = SOLIDITY_CALL require(bool)(TMP_48)\""
+                    ],
+                    "state_variable": "raisedAmount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 130\nFunction: invest\nNode: \nEXPRESSION ieoState = getCurrentState()\nIRS: \nieoState := TMP_39\"",
+                        "\"BlockID: 80\nFunction: invest\nNode: \nEXPRESSION require(bool)(ieoState == State.running)\nIRS: \nTMP_41 = SOLIDITY_CALL require(bool)(TMP_40)\""
+                    ],
+                    "state_variable": "ieoState"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 130\nFunction: invest\nNode: \nEXPRESSION ieoState = getCurrentState()\nIRS: \nieoState := TMP_39\"",
+                        "\"BlockID: 88\nFunction: getCurrentState\nNode: \nIF ieoState == State.halted\nIRS: \nCONDITION TMP_34\""
+                    ],
+                    "state_variable": "ieoState"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 134\nFunction: invest\nNode: \nEXPRESSION raisedAmount += msg.value\nIRS: \nraisedAmount = raisedAmount + msg.value\"",
+                        "\"BlockID: 82\nFunction: invest\nNode: \nEXPRESSION require(bool)(raisedAmount + msg.value <= hardCap)\nIRS: \nTMP_49 = SOLIDITY_CALL require(bool)(TMP_48)\""
+                    ],
+                    "state_variable": "raisedAmount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "burn"
+            ],
+            "First_function": "burn",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 93\nFunction: burn\nNode: \nEXPRESSION ieoState = getCurrentState()\nIRS: \nieoState := TMP_53\"",
+                        "\"BlockID: 80\nFunction: invest\nNode: \nEXPRESSION require(bool)(ieoState == State.running)\nIRS: \nTMP_41 = SOLIDITY_CALL require(bool)(TMP_40)\""
+                    ],
+                    "state_variable": "ieoState"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 93\nFunction: burn\nNode: \nEXPRESSION ieoState = getCurrentState()\nIRS: \nieoState := TMP_53\"",
+                        "\"BlockID: 88\nFunction: getCurrentState\nNode: \nIF ieoState == State.halted\nIRS: \nCONDITION TMP_34\""
+                    ],
+                    "state_variable": "ieoState"
+                }
+            ]
+        }
+    ]
+}

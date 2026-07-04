@@ -1,0 +1,46 @@
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Analysis started at: 2026-06-21 07:02:27 PM
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Callgraph generation started!
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Callgraph generation finished!
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Value Range Analysis started
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Range graph generated
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Generating return summary for constructor
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Return summary generated for constructor
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | State variable assignement do not exist
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Processed function constructor
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Generating return summary for solve
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Return summary generated for solve
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | State variable assignement do not exist
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Processed function solve
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Value Range Analysis took 0.000864 seconds
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Value Range Analysis finished
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Dependency detection started!
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Dependency detection finished!
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Static Analysis took 0.076503 seconds
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Dependency does not exist
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Analysis finished!
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Analysis took 0.076725 seconds
+[INFO] | 2026-06-21 07:02:27 PM | analyzer.FindThisHash | Analysis finished at: 2026-06-21 07:02:27 PM
+[36m[#] Analysing started: FindThisHash.sol[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for solve[0m
+[36m[#] Interprocedural CFG generated for solve[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for solve[0m
+[36m[#] SDG generated for solve[0m
+[36m[#] Analysis took 0.076725 seconds[0m
+[36m[#] Analysis completed: FindThisHash.sol [0m
+
+=== dependency_info.json ===
+{}

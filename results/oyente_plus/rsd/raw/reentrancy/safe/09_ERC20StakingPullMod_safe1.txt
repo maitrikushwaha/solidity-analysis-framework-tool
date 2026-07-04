@@ -1,0 +1,107 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 09_ERC20StakingPullMod_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.NYMLUhOuYO' running
+INFO:root:contract 09_ERC20StakingPullMod_safe1.sol:StakableToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 75.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:09_ERC20StakingPullMod_safe1.sol:22:5: Warning: Integer Underflow.
+
+09_ERC20StakingPullMod_safe1.sol:16:5: Warning: Integer Underflow.
+
+09_ERC20StakingPullMod_safe1.sol:53:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stakedAmounts[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    flag = 0
+09_ERC20StakingPullMod_safe1.sol:67:3180: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stakedAmounts[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    stakedAmounts[msg.sender] = 0
+    flag = 0
+09_ERC20StakingPullMod_safe1.sol:67:2681: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stakedAmounts[msg.sender] = 0
+    flag = 0
+09_ERC20StakingPullMod_safe1.sol:51:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stakedAmounts[msg.sender] = 0
+    flag = 0
+09_ERC20StakingPullMod_safe1.sol:50:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 0
+09_ERC20StakingPullMod_safe1.sol:34:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 23384026197294446691258957323460528314494920687616
+09_ERC20StakingPullMod_safe1.sol:62:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 0
+    pendingWithdrawals[msg.sender] = 79228162514264337593543950336
+09_ERC20StakingPullMod_safe1.sol:67:4236: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 70368744177664
+    pendingWithdrawals[msg.sender] = 0
+09_ERC20StakingPullMod_safe1.sol:60:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 0
+    pendingWithdrawals[msg.sender] = 0
+09_ERC20StakingPullMod_safe1.sol:43:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 1645504557321206042154969182557350504982735865633579863348609024
+09_ERC20StakingPullMod_safe1.sol:41:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 73501039560714045548166006695587263786459890519772676110278709769691205730304
+09_ERC20StakingPullMod_safe1.sol:23:5: Warning: Integer Underflow.
+
+INFO:symExec:09_ERC20StakingPullMod_safe1.sol:63:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 0
+    pendingWithdrawals[msg.sender] = 79228162514264337593543950336
+09_ERC20StakingPullMod_safe1.sol:67:4686: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 0
+    pendingWithdrawals[msg.sender] = 55213970774324510299478046898216203619608871777363092441300193790394368
+09_ERC20StakingPullMod_safe1.sol:67:4848: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 0
+    pendingWithdrawals[msg.sender] = 36893488147419103232
+09_ERC20StakingPullMod_safe1.sol:45:24: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    stakedAmounts[msg.sender] = 2233710614456685110662889238989338617609075190963675573123461906098953958121
+    flag = 0
+09_ERC20StakingPullMod_safe1.sol:67:6732: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    stakedAmounts[msg.sender] = 23693198577301872913953646432986094614415214722070671104364834453221993771177
+    flag = 0
+09_ERC20StakingPullMod_safe1.sol:67:6894: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    stakedAmounts[msg.sender] = 23806276765481754636478913302879550579645780032895093290358052986557626778948
+    flag = 0
+09_ERC20StakingPullMod_safe1.sol:67:6976: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    stakedAmounts[msg.sender] = 23806276765481754635301956727494547936426569516043655837338861340720620307780
+    flag = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 09_ERC20StakingPullMod_safe1.sol:StakableToken.json.

@@ -1,0 +1,91 @@
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Analysis started at: 2026-06-21 07:13:45 PM
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Generating return summary for WithdrawToHolder
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Return summary generated for WithdrawToHolder
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Range graph generated
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Processed function WithdrawToHolder
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Value Range Analysis took 0.000396 seconds
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | DAO dependency detected in file 26742.sol in contract TokenBank in by composing functions WithdrawToHolder and WithdrawToHolder
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | TOD dependency detected in file 26742.sol in contract TokenBank in by composing functions WithdrawToHolder and WithdrawToHolder
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Static Analysis took 0.081490 seconds
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Dependency exists
+[INFO] | 2026-06-21 07:13:45 PM | analyzer.26742  | Invoking symbolic executor!
+[36m[#] Analysing started: 26742.sol[0m
+[36m[#] Interprocedural CFG generation started for WithdrawToHolder[0m
+[36m[#] Interprocedural CFG generated for WithdrawToHolder[0m
+[36m[#] SDG generation started for WithdrawToHolder[0m
+[36m[#] SDG generated for WithdrawToHolder[0m
+[INFO] | 2026-06-21 07:13:47 PM | analyzer.26742  | Symbolic execution took 1.462706 seconds
+[INFO] | 2026-06-21 07:13:47 PM | analyzer.26742  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:13:47 PM | analyzer.26742  | Analysis finished!
+[INFO] | 2026-06-21 07:13:47 PM | analyzer.26742  | Analysis took 1.544778 seconds
+[INFO] | 2026-06-21 07:13:47 PM | analyzer.26742  | Analysis finished at: 2026-06-21 07:13:47 PM
+[36m[#] Analysis took 1.544778 seconds[0m
+[36m[#] Analysis completed: 26742.sol [0m
+
+=== dependency_info.json ===
+{
+    "26742.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "WithdrawToHolder",
+                "WithdrawToHolder"
+            ],
+            "from_function": "WithdrawToHolder",
+            "to_function": "WithdrawToHolder",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: WithdrawToHolder\nNode: \nIF Holders[msg.sender] > 0\nIRS: \nCONDITION TMP_0\"",
+                        "\"BlockID: 7\nFunction: WithdrawToHolder\nNode: \nEXPRESSION Holders[_addr] -= _wei\nIRS: \nREF_4 = REF_4 - _wei\""
+                    ],
+                    "state_variable": "Holders"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: WithdrawToHolder\nNode: \nIF Holders[_addr] >= _wei\nIRS: \nCONDITION TMP_1\"",
+                        "\"BlockID: 7\nFunction: WithdrawToHolder\nNode: \nEXPRESSION Holders[_addr] -= _wei\nIRS: \nREF_4 = REF_4 - _wei\""
+                    ],
+                    "state_variable": "Holders"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "WithdrawToHolder",
+                "WithdrawToHolder"
+            ],
+            "First_function": "WithdrawToHolder",
+            "Second_function": "WithdrawToHolder",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: WithdrawToHolder\nNode: \nEXPRESSION Holders[_addr] -= _wei\nIRS: \nREF_4 = REF_4 - _wei\"",
+                        "\"BlockID: 2\nFunction: WithdrawToHolder\nNode: \nIF Holders[msg.sender] > 0\nIRS: \nCONDITION TMP_0\""
+                    ],
+                    "state_variable": "Holders"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: WithdrawToHolder\nNode: \nEXPRESSION Holders[_addr] -= _wei\nIRS: \nREF_4 = REF_4 - _wei\"",
+                        "\"BlockID: 3\nFunction: WithdrawToHolder\nNode: \nIF Holders[_addr] >= _wei\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "Holders"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "77.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "711.sol:7:19: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _burntAmount = 1\n    totalToken = 0"
+  ],
+  "integer_overflow": [
+   "711.sol:8:19: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _burntAmount = 14488261049931702342167860636487733203632652401180169394487009857788612478961\n    totalToken = 4612263946880609337688775785122223301945743024108032091062059036263887962096"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

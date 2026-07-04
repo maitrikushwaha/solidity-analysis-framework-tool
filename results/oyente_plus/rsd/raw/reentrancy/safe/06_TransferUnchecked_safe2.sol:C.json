@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "89.2",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "06_TransferUnchecked_safe2.sol:5:5: Warning: Integer Underflow.\n",
+   "06_TransferUnchecked_safe2.sol:19:2120: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0",
+   "06_TransferUnchecked_safe2.sol:8:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0"
+  ],
+  "integer_overflow": [
+   "06_TransferUnchecked_safe2.sol:19:1044: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

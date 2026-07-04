@@ -1,0 +1,41 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.7Qn5Vnmznz' running
+INFO:CryticCompile:Compilation warnings/errors on 0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol:
+0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol:201:9: Warning: Return value of low-level calls not used.
+        whale.call.value(amount)(bytes4(keccak256("donate()")));
+        ^-----------------------------------------------------^
+0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol:213:9: Warning: Return value of low-level calls not used.
+        whale.call.value(amount)(bytes4(keccak256("donate()")));
+        ^-----------------------------------------------------^
+
+INFO:root:contract 0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol:PoCGame:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol:153:45: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    timestamps[msg.sender] = 0
+    openToPublic = 1
+    wagers[msg.sender] = 1
+INFO:symExec:0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol:289:16: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner = 0
+0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol:202:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    openToPublic = 1
+    totalDonated = 102465987426995446661800820267271012637978171190822875002532269215794482315508
+INFO:symExec:0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol:213:9: Warning: Callstack Depth Attack Vulnerability.
+
+0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol:201:9: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol:PoCGame.json.

@@ -1,0 +1,139 @@
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Analysis started at: 2026-06-21 07:03:34 PM
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Callgraph generation started!
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Callgraph generation finished!
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Value Range Analysis started
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Generating return summary for ETH_FUND
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Return summary generated for ETH_FUND
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Range graph generated
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Processed function ETH_FUND
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Generating return summary for fallback
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Return summary generated for fallback
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | State variable assignement do not exist
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Processed function fallback
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Range graph generated
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Generating return summary for AddMessage
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Return summary generated for AddMessage
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Range graph generated
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Processed function AddMessage
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Generating return summary for Deposit
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Return summary generated for Deposit
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Range graph generated
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Processed function Deposit
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Generating return summary for CashOut
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Return summary generated for CashOut
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Range graph generated
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Processed function CashOut
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Value Range Analysis took 0.007300 seconds
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Value Range Analysis finished
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:03:34 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Dependency detection started!
+[INFO] | 2026-06-21 07:03:35 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | DAO dependency detected in file 0x941d225236464a25eb18076df7da6a91d0f95e9e.sol in contract ETH_FUND in by composing functions CashOut and CashOut
+[INFO] | 2026-06-21 07:03:35 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | TOD dependency detected in file 0x941d225236464a25eb18076df7da6a91d0f95e9e.sol in contract ETH_FUND in by composing functions CashOut and Deposit
+[INFO] | 2026-06-21 07:03:35 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | TOD dependency detected in file 0x941d225236464a25eb18076df7da6a91d0f95e9e.sol in contract ETH_FUND in by composing functions CashOut and CashOut
+[INFO] | 2026-06-21 07:03:35 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Dependency detection finished!
+[INFO] | 2026-06-21 07:03:35 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Static Analysis took 0.342592 seconds
+[INFO] | 2026-06-21 07:03:35 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Dependency exists
+[INFO] | 2026-06-21 07:03:35 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Invoking symbolic executor!
+[36m[#] Analysing started: 0x941d225236464a25eb18076df7da6a91d0f95e9e.sol[0m
+[36m[#] Interprocedural CFG generation started for ETH_FUND[0m
+[36m[#] Interprocedural CFG generated for ETH_FUND[0m
+[36m[#] Interprocedural CFG generation started for Deposit[0m
+[36m[#] Interprocedural CFG generated for Deposit[0m
+[36m[#] Interprocedural CFG generation started for CashOut[0m
+[36m[#] Interprocedural CFG generated for CashOut[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for AddMessage[0m
+[36m[#] Interprocedural CFG generated for AddMessage[0m
+[36m[#] SDG generation started for ETH_FUND[0m
+[36m[#] SDG generated for ETH_FUND[0m
+[36m[#] SDG generation started for Deposit[0m
+[36m[#] SDG generated for Deposit[0m
+[36m[#] SDG generation started for CashOut[0m
+[36m[#] SDG generated for CashOut[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for AddMessage[0m
+[36m[#] SDG generated for AddMessage[0m
+[INFO] | 2026-06-21 07:03:38 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Symbolic execution took 3.027322 seconds
+[INFO] | 2026-06-21 07:03:38 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Symbolic execution finished!
+[INFO] | 2026-06-21 07:03:38 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Analysis finished!
+[INFO] | 2026-06-21 07:03:38 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Analysis took 3.371221 seconds
+[INFO] | 2026-06-21 07:03:38 PM | analyzer.0x941d225236464a25eb18076df7da6a91d0f95e9e | Analysis finished at: 2026-06-21 07:03:38 PM
+[36m[#] Analysis took 3.371221 seconds[0m
+[36m[#] Analysis completed: 0x941d225236464a25eb18076df7da6a91d0f95e9e.sol [0m
+
+=== dependency_info.json ===
+{
+    "0x941d225236464a25eb18076df7da6a91d0f95e9e.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "CashOut",
+                "CashOut"
+            ],
+            "from_function": "CashOut",
+            "to_function": "CashOut",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: CashOut\nNode: \nIF _am <= balances[msg.sender] && block.number > lastBlock\nIRS: \nCONDITION TMP_5\"",
+                        "\"BlockID: 14\nFunction: CashOut\nNode: \nEXPRESSION balances[msg.sender] -= _am\nIRS: \nREF_5 = REF_5 - _am\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "CashOut",
+                "Deposit"
+            ],
+            "First_function": "Deposit",
+            "Second_function": "CashOut",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: Deposit\nNode: \nEXPRESSION balances[msg.sender] += msg.value\nIRS: \nREF_0 = REF_0 + msg.value\"",
+                        "\"BlockID: 10\nFunction: CashOut\nNode: \nIF _am <= balances[msg.sender] && block.number > lastBlock\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: Deposit\nNode: \nEXPRESSION lastBlock = block.number\nIRS: \nlastBlock := block.number\"",
+                        "\"BlockID: 10\nFunction: CashOut\nNode: \nIF _am <= balances[msg.sender] && block.number > lastBlock\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "lastBlock"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "CashOut",
+                "CashOut"
+            ],
+            "First_function": "CashOut",
+            "Second_function": "CashOut",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 37\nFunction: CashOut\nNode: \nEXPRESSION balances[msg.sender] -= _am\nIRS: \nREF_5 = REF_5 - _am\"",
+                        "\"BlockID: 10\nFunction: CashOut\nNode: \nIF _am <= balances[msg.sender] && block.number > lastBlock\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        }
+    ]
+}

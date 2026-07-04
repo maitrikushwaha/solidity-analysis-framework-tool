@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "58.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "18975.sol:7:47: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    depositors.length = 1"
+  ],
+  "integer_overflow": [
+   "18975.sol:12:25: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    depositors.length = 95235721736379883315001763940616669011307430545820611921043079414295449969311",
+   "18975.sol:13:25: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    depositors.length = 29968155644519448311202134365033111179106856695473362458061307931592245939505",
+   "18975.sol:4:5: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

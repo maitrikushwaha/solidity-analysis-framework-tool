@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "79.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "12393.sol:8:19: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stageDuration = 28948022309329048855892746252171976963317496166410179695490623670111873009665\n    startTime = 57896044618658097711785492504343953926634992332820282019728792003956564819968"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

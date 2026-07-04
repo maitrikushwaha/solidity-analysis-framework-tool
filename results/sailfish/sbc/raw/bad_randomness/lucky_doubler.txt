@@ -1,0 +1,306 @@
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Analysis started at: 2026-06-21 07:01:28 PM
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Callgraph generation started!
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Callgraph generation finished!
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Value Range Analysis started
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Range graph generated
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for LuckyDoubler
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for LuckyDoubler
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Range graph generated
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function LuckyDoubler
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for rand
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for rand
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function rand
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for multiplierFactor
+[WARNING] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for multiplierFactor
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function multiplierFactor
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for currentFee
+[WARNING] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for currentFee
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function currentFee
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for totalEntries
+[WARNING] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for totalEntries
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function totalEntries
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for userStats
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for userStats
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function userStats
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for entryDetails
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for entryDetails
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function entryDetails
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Range graph generated
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for onlyowner
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for onlyowner
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function onlyowner
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for join
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for join
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Range graph generated
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function join
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for changeOwner
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for changeOwner
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Range graph generated
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function changeOwner
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for changeMultiplier
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for changeMultiplier
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Range graph generated
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function changeMultiplier
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for changeFee
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for changeFee
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Range graph generated
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function changeFee
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for init
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for init
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Range graph generated
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function init
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Generating return summary for fallback
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Return summary generated for fallback
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Range graph generated
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Processed function fallback
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Value Range Analysis took 0.008352 seconds
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Value Range Analysis finished
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | Dependency detection started!
+[INFO] | 2026-06-21 07:01:28 PM | analyzer.lucky_doubler | TOD dependency detected in file lucky_doubler.sol in contract LuckyDoubler in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:01:30 PM | analyzer.lucky_doubler | TOD dependency detected in file lucky_doubler.sol in contract LuckyDoubler in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:01:30 PM | analyzer.lucky_doubler | Dependency detection finished!
+[INFO] | 2026-06-21 07:01:30 PM | analyzer.lucky_doubler | Static Analysis took 2.036625 seconds
+[INFO] | 2026-06-21 07:01:30 PM | analyzer.lucky_doubler | Dependency exists
+[INFO] | 2026-06-21 07:01:30 PM | analyzer.lucky_doubler | Invoking symbolic executor!
+[36m[#] Analysing started: lucky_doubler.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyowner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyowner[0m
+[36m[#] Interprocedural CFG generation started for LuckyDoubler[0m
+[36m[#] Interprocedural CFG generated for LuckyDoubler[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for changeOwner[0m
+[36m[#] Interprocedural CFG generated for changeOwner[0m
+[36m[#] Interprocedural CFG generation started for changeMultiplier[0m
+[36m[#] Interprocedural CFG generated for changeMultiplier[0m
+[36m[#] Interprocedural CFG generation started for changeFee[0m
+[36m[#] Interprocedural CFG generated for changeFee[0m
+[36m[#] Interprocedural CFG generation started for multiplierFactor[0m
+[36m[#] Interprocedural CFG generated for multiplierFactor[0m
+[36m[#] Interprocedural CFG generation started for currentFee[0m
+[36m[#] Interprocedural CFG generated for currentFee[0m
+[36m[#] Interprocedural CFG generation started for totalEntries[0m
+[36m[#] Interprocedural CFG generated for totalEntries[0m
+[36m[#] Interprocedural CFG generation started for userStats[0m
+[36m[#] Interprocedural CFG generated for userStats[0m
+[36m[#] Interprocedural CFG generation started for entryDetails[0m
+[36m[#] Interprocedural CFG generated for entryDetails[0m
+[36m[#] SDG generation started for LuckyDoubler[0m
+[36m[#] SDG generated for LuckyDoubler[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for changeOwner[0m
+[36m[#] SDG generated for changeOwner[0m
+[36m[#] SDG generation started for changeMultiplier[0m
+[36m[#] SDG generated for changeMultiplier[0m
+[36m[#] SDG generation started for changeFee[0m
+[36m[#] SDG generated for changeFee[0m
+[36m[#] SDG generation started for multiplierFactor[0m
+[36m[#] SDG generated for multiplierFactor[0m
+[36m[#] SDG generation started for currentFee[0m
+[36m[#] SDG generated for currentFee[0m
+[36m[#] SDG generation started for totalEntries[0m
+[36m[#] SDG generated for totalEntries[0m
+[36m[#] SDG generation started for userStats[0m
+[36m[#] SDG generated for userStats[0m
+[36m[#] SDG generation started for entryDetails[0m
+[36m[#] SDG generated for entryDetails[0m
+[36m[#] SDG generation started for modifier onlyowner[0m
+[36m[#] SDG generated for modifier onlyowner[0m
+[INFO] | 2026-06-21 07:01:34 PM | analyzer.lucky_doubler | Symbolic execution took 4.805563 seconds
+[INFO] | 2026-06-21 07:01:34 PM | analyzer.lucky_doubler | Symbolic execution finished!
+[INFO] | 2026-06-21 07:01:34 PM | analyzer.lucky_doubler | Analysis finished!
+[INFO] | 2026-06-21 07:01:34 PM | analyzer.lucky_doubler | Analysis took 6.843190 seconds
+[INFO] | 2026-06-21 07:01:34 PM | analyzer.lucky_doubler | Analysis finished at: 2026-06-21 07:01:34 PM
+[36m[#] Analysis took 6.843190 seconds[0m
+[36m[#] Analysis completed: lucky_doubler.sol [0m
+
+=== dependency_info.json ===
+{
+    "lucky_doubler.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 123\nFunction: join\nNode: \nEXPRESSION users[msg.sender].id = msg.sender\nIRS: \nREF_5 := msg.sender\"",
+                        "\"BlockID: 9\nFunction: join\nNode: \nIF users[msg.sender].id == address(0)\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "users.id"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 127\nFunction: join\nNode: \nEXPRESSION entries.push(Entry(msg.sender,dValue,(dValue * (multiplier) \/ 100),false))\nIRS: \nPUSH TMP_11 in entries\"",
+                        "\"BlockID: 16\nFunction: join\nNode: \nEXPRESSION unpaidEntries.push(entries.length - 1)\nIRS: \nPUSH TMP_14 in unpaidEntries\""
+                    ],
+                    "state_variable": "entries"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 129\nFunction: join\nNode: \nEXPRESSION unpaidEntries.push(entries.length - 1)\nIRS: \nPUSH TMP_14 in unpaidEntries\"",
+                        "\"BlockID: 18\nFunction: join\nNode: \nIF unpaidEntries.length > 1\nIRS: \nCONDITION TMP_29\""
+                    ],
+                    "state_variable": "unpaidEntries"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 142\nFunction: join\nNode: \nEXPRESSION unpaidEntries[index] = unpaidEntries[unpaidEntries.length - 1]\nIRS: \nREF_26 := REF_28\"",
+                        "\"BlockID: 18\nFunction: join\nNode: \nIF unpaidEntries.length > 1\nIRS: \nCONDITION TMP_29\""
+                    ],
+                    "state_variable": "unpaidEntries"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 130\nFunction: join\nNode: \nEXPRESSION balance += (dValue * (100 - fee)) \/ 100\nIRS: \nbalance = balance + TMP_18\"",
+                        "\"BlockID: 20\nFunction: join\nNode: \nIF balance > theEntry.payout\nIRS: \nCONDITION TMP_19\""
+                    ],
+                    "state_variable": "balance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 140\nFunction: join\nNode: \nEXPRESSION balance -= payout\nIRS: \nbalance = balance - payout\"",
+                        "\"BlockID: 20\nFunction: join\nNode: \nIF balance > theEntry.payout\nIRS: \nCONDITION TMP_19\""
+                    ],
+                    "state_variable": "balance"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 153\nFunction: join\nNode: \nEXPRESSION users[msg.sender].id = msg.sender\nIRS: \nREF_5 := msg.sender\"",
+                        "\"BlockID: 9\nFunction: join\nNode: \nIF users[msg.sender].id == address(0)\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "users.id"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 157\nFunction: join\nNode: \nEXPRESSION entries.push(Entry(msg.sender,dValue,(dValue * (multiplier) \/ 100),false))\nIRS: \nPUSH TMP_11 in entries\"",
+                        "\"BlockID: 16\nFunction: join\nNode: \nEXPRESSION unpaidEntries.push(entries.length - 1)\nIRS: \nPUSH TMP_14 in unpaidEntries\""
+                    ],
+                    "state_variable": "entries"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 159\nFunction: join\nNode: \nEXPRESSION unpaidEntries.push(entries.length - 1)\nIRS: \nPUSH TMP_14 in unpaidEntries\"",
+                        "\"BlockID: 18\nFunction: join\nNode: \nIF unpaidEntries.length > 1\nIRS: \nCONDITION TMP_29\""
+                    ],
+                    "state_variable": "unpaidEntries"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 172\nFunction: join\nNode: \nEXPRESSION unpaidEntries[index] = unpaidEntries[unpaidEntries.length - 1]\nIRS: \nREF_26 := REF_28\"",
+                        "\"BlockID: 18\nFunction: join\nNode: \nIF unpaidEntries.length > 1\nIRS: \nCONDITION TMP_29\""
+                    ],
+                    "state_variable": "unpaidEntries"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 159\nFunction: join\nNode: \nEXPRESSION unpaidEntries.push(entries.length - 1)\nIRS: \nPUSH TMP_14 in unpaidEntries\"",
+                        "\"BlockID: 28\nFunction: join\nNode: \nIF index < unpaidEntries.length - 1\nIRS: \nCONDITION TMP_23\""
+                    ],
+                    "state_variable": "unpaidEntries"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 172\nFunction: join\nNode: \nEXPRESSION unpaidEntries[index] = unpaidEntries[unpaidEntries.length - 1]\nIRS: \nREF_26 := REF_28\"",
+                        "\"BlockID: 28\nFunction: join\nNode: \nIF index < unpaidEntries.length - 1\nIRS: \nCONDITION TMP_23\""
+                    ],
+                    "state_variable": "unpaidEntries"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 159\nFunction: join\nNode: \nEXPRESSION unpaidEntries.push(entries.length - 1)\nIRS: \nPUSH TMP_14 in unpaidEntries\"",
+                        "\"BlockID: 31\nFunction: join\nNode: \nEXPRESSION unpaidEntries.length --\nIRS: \nREF_29 = REF_29 - 1\""
+                    ],
+                    "state_variable": "unpaidEntries"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 172\nFunction: join\nNode: \nEXPRESSION unpaidEntries[index] = unpaidEntries[unpaidEntries.length - 1]\nIRS: \nREF_26 := REF_28\"",
+                        "\"BlockID: 31\nFunction: join\nNode: \nEXPRESSION unpaidEntries.length --\nIRS: \nREF_29 = REF_29 - 1\""
+                    ],
+                    "state_variable": "unpaidEntries"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 160\nFunction: join\nNode: \nEXPRESSION balance += (dValue * (100 - fee)) \/ 100\nIRS: \nbalance = balance + TMP_18\"",
+                        "\"BlockID: 20\nFunction: join\nNode: \nIF balance > theEntry.payout\nIRS: \nCONDITION TMP_19\""
+                    ],
+                    "state_variable": "balance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 170\nFunction: join\nNode: \nEXPRESSION balance -= payout\nIRS: \nbalance = balance - payout\"",
+                        "\"BlockID: 20\nFunction: join\nNode: \nIF balance > theEntry.payout\nIRS: \nCONDITION TMP_19\""
+                    ],
+                    "state_variable": "balance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 160\nFunction: join\nNode: \nEXPRESSION balance += (dValue * (100 - fee)) \/ 100\nIRS: \nbalance = balance + TMP_18\"",
+                        "\"BlockID: 23\nFunction: join\nNode: \nIF fees > 0\nIRS: \nCONDITION TMP_27\""
+                    ],
+                    "state_variable": "balance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 170\nFunction: join\nNode: \nEXPRESSION balance -= payout\nIRS: \nbalance = balance - payout\"",
+                        "\"BlockID: 23\nFunction: join\nNode: \nIF fees > 0\nIRS: \nCONDITION TMP_27\""
+                    ],
+                    "state_variable": "balance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 160\nFunction: join\nNode: \nEXPRESSION balance += (dValue * (100 - fee)) \/ 100\nIRS: \nbalance = balance + TMP_18\"",
+                        "\"BlockID: 24\nFunction: join\nNode: \nEXPRESSION owner.send(fees)\nIRS: \nTMP_28 = SEND dest:owner value:fees\""
+                    ],
+                    "state_variable": "balance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 170\nFunction: join\nNode: \nEXPRESSION balance -= payout\nIRS: \nbalance = balance - payout\"",
+                        "\"BlockID: 24\nFunction: join\nNode: \nEXPRESSION owner.send(fees)\nIRS: \nTMP_28 = SEND dest:owner value:fees\""
+                    ],
+                    "state_variable": "balance"
+                }
+            ]
+        }
+    ]
+}

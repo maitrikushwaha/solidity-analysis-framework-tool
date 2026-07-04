@@ -1,0 +1,39 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 01_SingleMutexFoldUnderflow_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.Ej2zg7tYLT' running
+INFO:root:contract 01_SingleMutexFoldUnderflow_safe1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 83.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:01_SingleMutexFoldUnderflow_safe1.sol:6:5: Warning: Integer Underflow.
+
+01_SingleMutexFoldUnderflow_safe1.sol:29:4978: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 57896046344094684409426439363032919495891355445597525062325430794587620769793
+    balances[msg.sender] = 0
+01_SingleMutexFoldUnderflow_safe1.sol:29:2453: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+01_SingleMutexFoldUnderflow_safe1.sol:16:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+01_SingleMutexFoldUnderflow_safe1.sol:25:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 15697953048334487949110955523104327121876376957008779888392298098016070417088
+INFO:symExec:01_SingleMutexFoldUnderflow_safe1.sol:29:769: Warning: Integer Overflow.
+
+INFO:symExec:01_SingleMutexFoldUnderflow_safe1.sol:17:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:01_SingleMutexFoldUnderflow_safe1.sol:17:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 01_SingleMutexFoldUnderflow_safe1.sol:C.json.

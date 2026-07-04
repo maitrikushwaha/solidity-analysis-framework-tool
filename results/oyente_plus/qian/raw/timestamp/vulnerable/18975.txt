@@ -1,0 +1,36 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 18975.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.rsCxa0q6Fi' running
+INFO:CryticCompile:Compilation warnings/errors on 18975.sol:
+18975.sol:7:31: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        return addmod(uint256(block.blockhash(block.number-1)), seed, contestants);
+                              ^-------------^
+18975.sol:10:5: Warning: Function state mutability can be restricted to view
+    function awardPrizes() external {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 18975.sol:NBAOnlineLaunchPromotion:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 58.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:18975.sol:7:47: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    depositors.length = 1
+INFO:symExec:18975.sol:12:25: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    depositors.length = 95235721736379883315001763940616669011307430545820611921043079414295449969311
+18975.sol:13:25: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    depositors.length = 29968155644519448311202134365033111179106856695473362458061307931592245939505
+18975.sol:4:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 18975.sol:NBAOnlineLaunchPromotion.json.

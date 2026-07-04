@@ -1,0 +1,21 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 22416.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.NhxemR6Rou' running
+INFO:root:contract 22416.sol:TokenBank:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 83.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:22416.sol:11:17: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _wei = 57896044618658097711785492504343953926634992332820282019728792004506320633857
+    Holders[_addr] = 549755813888
+INFO:symExec:22416.sol:10:16: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 22416.sol:TokenBank.json.

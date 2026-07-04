@@ -1,0 +1,27 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50787.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.v0eD41WU0k' running
+INFO:CryticCompile:Compilation warnings/errors on 50787.sol:
+50787.sol:13:49: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (currentBankroll <= initialBankroll) throw;
+                                                ^---^
+50787.sol:15:51: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (!ADMIN_CONTRACT.call.value(profit)()) throw;
+                                                  ^---^
+50787.sol:12:5: Warning: No visibility specified. Defaulting to "public". 
+    function shareProfits() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 50787.sol:Blockjack:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 87.2%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:50787.sol:15:14: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50787.sol:Blockjack.json.

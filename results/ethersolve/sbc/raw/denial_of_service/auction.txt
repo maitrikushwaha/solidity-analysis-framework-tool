@@ -1,0 +1,6 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/denial_of_service/auction.sol:DosAuction
+offset,opcode,detection
+223,223: SLOAD,Store read after unsafe call
+271,271: SLOAD,Store read after unsafe call
+331,331: SSTORE,Store write after unsafe call

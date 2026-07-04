@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/front_running/FindThisHash.sol:FindThisHash
+offset,opcode,detection

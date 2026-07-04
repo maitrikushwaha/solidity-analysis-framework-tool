@@ -1,0 +1,17 @@
+/work/datasets/qian/reentrancy/safe/30046.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 17
+column: 67
+content: call.value(transaction.value)(transaction.data)
+
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_UNCHECKED_CALL :1

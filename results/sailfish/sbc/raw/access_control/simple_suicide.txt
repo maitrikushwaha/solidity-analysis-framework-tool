@@ -1,0 +1,34 @@
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Analysis started at: 2026-06-21 06:59:15 PM
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Callgraph generation started!
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Callgraph generation finished!
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Value Range Analysis started
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Generating return summary for sudicideAnyone
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Return summary generated for sudicideAnyone
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Processed function sudicideAnyone
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Value Range Analysis took 0.000571 seconds
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Value Range Analysis finished
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Dependency detection started!
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Dependency detection finished!
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Static Analysis took 0.055378 seconds
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Dependency does not exist
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Symbolic execution is not needed!
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Analysis finished!
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Analysis took 0.055820 seconds
+[INFO] | 2026-06-21 06:59:15 PM | analyzer.simple_suicide | Analysis finished at: 2026-06-21 06:59:15 PM
+[36m[#] Analysing started: simple_suicide.sol[0m
+[36m[#] Interprocedural CFG generation started for sudicideAnyone[0m
+[36m[#] Interprocedural CFG generated for sudicideAnyone[0m
+[36m[#] SDG generation started for sudicideAnyone[0m
+[36m[#] SDG generated for sudicideAnyone[0m
+[36m[#] Analysis took 0.055820 seconds[0m
+[36m[#] Analysis completed: simple_suicide.sol [0m
+
+=== dependency_info.json ===
+{}

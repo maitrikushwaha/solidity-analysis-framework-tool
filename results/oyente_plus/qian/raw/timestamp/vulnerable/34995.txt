@@ -1,0 +1,19 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 34995.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.LjG2heCWtg' running
+INFO:root:contract 34995.sol:KingOfTheHill:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 74.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:34995.sol:11:8: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    timeLimit = 61966974620958956700613545647363778563455530453856521211904144552344496416258
+    lastKing = 72408089114664716902698690136660305954107292635268708640787665681798499116026
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 34995.sol:KingOfTheHill.json.

@@ -1,0 +1,112 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 25.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.CUfmsemKXD' running
+INFO:root:contract 25.sol:WhiteBetting:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 69.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:25.sol:128:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _odd = 1
+    gameList[_fixtureId].timestamp = 57896044618658097711785492504343953926634992332820282019728792003956564820553
+    gameList[_fixtureId].open_status = 3
+    _selectedTeam = 8
+    gameList[_fixtureId].odd_awayTeamAndDraw = 26959946667150639794667015087019630673637144422540572481103610249216
+INFO:symExec:25.sol:66:5: Warning: Integer Overflow.
+
+25.sol:67:5: Warning: Integer Overflow.
+
+25.sol:68:5: Warning: Integer Overflow.
+
+25.sol:69:5: Warning: Integer Overflow.
+
+25.sol:70:5: Warning: Integer Overflow.
+
+25.sol:71:5: Warning: Integer Overflow.
+
+25.sol:72:5: Warning: Integer Overflow.
+
+25.sol:73:5: Warning: Integer Overflow.
+
+25.sol:2:20: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _odd = 1
+    gameList[_fixtureId].timestamp = 57896044618658097711785492504343953926634992332820282019728792003956564820553
+    gameList[_fixtureId].open_status = 3
+    _selectedTeam = 8
+    gameList[_fixtureId].odd_awayTeamAndDraw = 26959946667150639794667015087019630673637144422540572481103610249216
+25.sol:128:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _odd = 1
+    gameList[_fixtureId].timestamp = 57896044618658097711785492504343953926634992332820282019728792003956564820553
+    gameList[_fixtureId].open_status = 3
+    _selectedTeam = 8
+    gameList[_fixtureId].odd_awayTeamAndDraw = 26959946667150639794667015087019630673637144422540572481103610249216
+25.sol:43:3: Warning: Integer Overflow.
+
+25.sol:33:3: Warning: Integer Overflow.
+
+25.sol:144:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    betList[_fixtureId][0].player = 1
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 1
+25.sol:145:59: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    betList[_fixtureId][0].player = 1
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 1
+25.sol:145:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    betList[_fixtureId][0].player = 1
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 1
+25.sol:160:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    betList[_fixtureId][0].player = 1
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 1
+25.sol:162:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    betList[_fixtureId][0].player = 1
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 1
+25.sol:144:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    betList[_fixtureId][0].player = 1
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+25.sol:145:59: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    betList[_fixtureId][0].player = 1
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+25.sol:145:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    betList[_fixtureId][0].player = 1
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+INFO:symExec:Flow1
+25.sol:190:27: Warning: Transaction-Ordering Dependency.
+
+Flow2
+25.sol:196:27: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 25.sol:WhiteBetting.json.

@@ -1,0 +1,31 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39631.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.qns13H1qmT' running
+INFO:CryticCompile:Compilation warnings/errors on 39631.sol:
+39631.sol:11:45: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+      if (profitDistributionContract > 0 && this.balance >= (bankrolLimit + profitLimit)) {
+                                            ^----------^
+39631.sol:10:4: Warning: No visibility specified. Defaulting to "public". 
+   function distributeProfits(uint256 gasValue){
+   ^ (Relevant source part starts here and spans across multiple lines).
+39631.sol:10:31: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+   function distributeProfits(uint256 gasValue){
+                              ^--------------^
+
+INFO:root:contract 39631.sol:SmartRoulette:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 71.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:39631.sol:11:62: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    profitDistributionContract = 87112285931760246646623899502532662132736
+    bankrolLimit = 7527294552367162368894811570280170750189384177331669444378874638579706289284
+    profitLimit = 109060622791456606992654373778003620468674111544825691836072117108158847591358
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39631.sol:SmartRoulette.json.

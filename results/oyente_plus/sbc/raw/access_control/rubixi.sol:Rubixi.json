@@ -1,0 +1,34 @@
+{
+ "evm_code_coverage": "56.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "rubixi.sol:153:26: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    payoutOrder = 1\n    participants.length = 0"
+  ],
+  "integer_overflow": [
+   "rubixi.sol:141:34: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    participants[payoutOrder] = 51343952033128413042497933911847902270502836040668240916351069703745354841983\n    payoutOrder = 51060814329193816323244965903946432034034849012582868084099846931738439556822",
+   "rubixi.sol:141:34: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    participants[payoutOrder] = 51393534178883756452746865197962500421353244807524312973363357277769128984447\n    payoutOrder = 51110396474949159733495429685601896073743616126466090450295753244884397301462",
+   "rubixi.sol:158:36: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    orderInPyramid = 14481301125930427735536001674052696052536313812295581847072018120581308219521\n    participants.length = 88653761786489986105288001688001034095428932954918830414231183061485512294400",
+   "rubixi.sol:159:35: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    orderInPyramid = 14481302872444745233951990563854139807471482427934220942502539787420647358594\n    participants.length = 30757720634723382352660638989838448768430158224154741205178983533224952660099",
+   "rubixi.sol:159:35: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    orderInPyramid = 14481302872444745233951990563854139818360518169404251773330527225237230125186\n    participants.length = 30757720634723382352660638989838448766728746389550048887862110496066111602819"
+  ],
+  "callstack": [
+   "rubixi.sol:103:18: Warning: Callstack Depth Attack Vulnerability.\n",
+   "rubixi.sol:85:18: Warning: Callstack Depth Attack Vulnerability.\n",
+   "rubixi.sol:95:18: Warning: Callstack Depth Attack Vulnerability.\n",
+   "rubixi.sol:74:26: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [
+   [
+    "rubixi.sol:85:18: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "rubixi.sol:95:18: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

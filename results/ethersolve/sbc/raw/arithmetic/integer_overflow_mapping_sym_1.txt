@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/arithmetic/integer_overflow_mapping_sym_1.sol:IntegerOverflowMappingSym1
+offset,opcode,detection

@@ -1,0 +1,43 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+[CFG] Reentrancy back-edge inserted: ExpressionStatement_9 → IfStatement_4
+Dependency analysis completed in 0.0168s.
+[DOMAIN] Reentrancy encoding detected → Box + Octagon + Polka
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] Running Box domain.
+[TIMING] reentrancy domain=Box fixpoint=10.4046s
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW ==========
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+
+========== PIPELINE 3: TIMESTAMP DEPENDENCY ==========
+
+========== PIPELINE 4: TOD ==========
+
+===== VERDICTS (Box) =====
+[REENTRANCY] Balance-preservation invariant violated.
+[UNDERFLOW] Variable Holders[_addr] (uint256) in WithdrawToHolder(): unguarded '-' over external input can underflow below 0 (augmented data-flow Algorithm 3).
+
+===== VERDICTS (Octagon) =====
+[REENTRANCY] Balance-preservation invariant violated.
+[UNDERFLOW] Variable Holders[_addr] (uint256) in WithdrawToHolder(): unguarded '-' over external input can underflow below 0 (augmented data-flow Algorithm 3).
+
+===== VERDICTS (Polka) =====
+[REENTRANCY] Balance-preservation invariant violated.
+[UNDERFLOW] Variable Holders[_addr] (uint256) in WithdrawToHolder(): unguarded '-' over external input can underflow below 0 (augmented data-flow Algorithm 3).
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: VULNERABLE
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: VULNERABLE
+[SUMMARY] Timestamp Dependency: NOT VULNERABLE
+[SUMMARY] TOD: NOT VULNERABLE
+
+Total analysis time: 11.66s
+

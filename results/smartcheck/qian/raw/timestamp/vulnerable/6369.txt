@@ -1,0 +1,41 @@
+/work/datasets/qian/timestamp/vulnerable/6369.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_DEPRECATED_CONSTRUCTIONS
+patternId: 28fa69
+severity: 1
+line: 10
+column: 4
+content: functionvalidBalanceOf(addressaddr)constantpublicreturns(uint){FreezingNode[]memorynodes=c_freezing_list[addr];for(uinti=0;i<nodes.length;++i){if(nodes[i].end_stamp>block.timestamp){total_lemos=total_lemos-nodes[i].end_stamp;}}returntotal_lemos;}
+
+ruleId: SOLIDITY_EXTRA_GAS_IN_LOOPS
+patternId: d3j11j
+severity: 1
+line: 12
+column: 8
+content: for(uinti=0;i<nodes.length;++i){if(nodes[i].end_stamp>block.timestamp){total_lemos=total_lemos-nodes[i].end_stamp;}}
+
+ruleId: SOLIDITY_GAS_LIMIT_IN_LOOPS
+patternId: f6f853
+severity: 2
+line: 12
+column: 8
+content: for(uinti=0;i<nodes.length;++i){if(nodes[i].end_stamp>block.timestamp){total_lemos=total_lemos-nodes[i].end_stamp;}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 8
+column: 4
+content: uinttotal_lemos=100;
+
+SOLIDITY_VISIBILITY :1
+SOLIDITY_DEPRECATED_CONSTRUCTIONS :1
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_EXTRA_GAS_IN_LOOPS :1
+SOLIDITY_GAS_LIMIT_IN_LOOPS :1

@@ -1,0 +1,35 @@
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Analysis started at: 2026-06-21 07:11:39 PM
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Callgraph generation started!
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Value Range Analysis started
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Generating return summary for transfer
+[WARNING] | 2026-06-21 07:11:39 PM | analyzer.35208  | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Return summary generated for transfer
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Processed function transfer
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Value Range Analysis took 0.000353 seconds
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Dependency detection started!
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Dependency detection finished!
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Static Analysis took 0.045197 seconds
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Dependency does not exist
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Analysis finished!
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Analysis took 0.045461 seconds
+[INFO] | 2026-06-21 07:11:39 PM | analyzer.35208  | Analysis finished at: 2026-06-21 07:11:39 PM
+[36m[#] Analysing started: 35208.sol[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] Analysis took 0.045461 seconds[0m
+[36m[#] Analysis completed: 35208.sol [0m
+
+=== dependency_info.json ===
+{}

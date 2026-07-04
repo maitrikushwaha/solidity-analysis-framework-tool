@@ -1,0 +1,38 @@
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Analysis started at: 2026-06-21 06:59:39 PM
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Callgraph generation started!
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Callgraph generation finished!
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Value Range Analysis started
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Generating return summary for run
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Return summary generated for run
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Processed function run
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Range graph generated
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Value Range Analysis took 0.001248 seconds
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Value Range Analysis finished
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Dependency detection started!
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Dependency detection finished!
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Static Analysis took 0.071470 seconds
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Dependency does not exist
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Symbolic execution is not needed!
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Analysis finished!
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Analysis took 0.071872 seconds
+[INFO] | 2026-06-21 06:59:39 PM | analyzer.integer_overflow_benign_1 | Analysis finished at: 2026-06-21 06:59:39 PM
+[36m[#] Analysing started: integer_overflow_benign_1.sol[0m
+[36m[#] Interprocedural CFG generation started for run[0m
+[36m[#] Interprocedural CFG generated for run[0m
+[36m[#] SDG generation started for run[0m
+[36m[#] SDG generated for run[0m
+[36m[#] Analysis took 0.071872 seconds[0m
+[36m[#] Analysis completed: integer_overflow_benign_1.sol [0m
+
+=== dependency_info.json ===
+{}

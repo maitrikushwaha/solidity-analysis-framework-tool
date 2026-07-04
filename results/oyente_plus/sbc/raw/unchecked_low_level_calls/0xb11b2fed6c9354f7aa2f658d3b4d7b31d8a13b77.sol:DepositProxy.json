@@ -1,0 +1,27 @@
+{
+ "evm_code_coverage": "91.4",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol:14:9: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol:33:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    Deposits[msg.sender] = 98491607308963660637215433860061380565333621956138333746471303678655763426677",
+   "0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol:12:5: Warning: Integer Overflow.\n",
+   "0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol:5:1: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol:39:13: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol:14:9: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

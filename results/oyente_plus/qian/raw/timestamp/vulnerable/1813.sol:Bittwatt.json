@@ -1,0 +1,17 @@
+{
+ "evm_code_coverage": "72.0",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "1813.sol:6:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _seconds = 87522543116091692642898991470747911540473016816853618691036649129099924882818",
+   "1813.sol:7:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _seconds = 8373322899400908053494396487360869399134213375292744451154638026247245922569\n    _minutes = 1170192282959968810686918288713449580912103923992821338736115007318116706990"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

@@ -1,0 +1,9 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol:ETH_FUND
+offset,opcode,detection
+510,510: SSTORE,Store write after unsafe call
+517,517: SLOAD,Store read after unsafe call
+1164,1164: SSTORE,Store write after unsafe call
+
+# contract /work/datasets/sbc/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol:Log
+offset,opcode,detection

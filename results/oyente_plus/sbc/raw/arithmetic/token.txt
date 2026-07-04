@@ -1,0 +1,30 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc token.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.XPIpY4N2CL' running
+INFO:CryticCompile:Compilation warnings/errors on token.sol:
+token.sol:14:4: Warning: No visibility specified. Defaulting to "public".
+   function Token(uint _initialSupply) {
+   ^
+Spanning multiple lines.
+
+INFO:root:contract token.sol:Token:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:token.sol:22:6: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _value = 1
+    balances[msg.sender] = 0
+INFO:symExec:token.sol:23:6: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[_to] = 9954213416465694884158333234283357949270119047261713061903225480195385073375
+    _value = 109484684196675394460098087156194687024136662164966117791088172068152111849764
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to token.sol:Token.json.

@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "81.5",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "40745.sol:10:7: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    credit[msg.sender] = 0\n    amount = 57896044618658097711785492504343953926634992332820282019728792003956564819969"
+  ],
+  "integer_overflow": [],
+  "callstack": [
+   "40745.sol:9:7: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "40745.sol:9:7: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

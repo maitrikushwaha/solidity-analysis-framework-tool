@@ -1,0 +1,81 @@
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Analysis started at: 2026-06-21 07:14:13 PM
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Callgraph generation started!
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Value Range Analysis started
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Generating return summary for Collect
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Return summary generated for Collect
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Range graph generated
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Processed function Collect
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Range graph generated
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Value Range Analysis took 0.000640 seconds
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Dependency detection started!
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | DAO dependency detected in file 40747.sol in contract PIGGY_BANK in by composing functions Collect and Collect
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | TOD dependency detected in file 40747.sol in contract PIGGY_BANK in by composing functions Collect and Collect
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Dependency detection finished!
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Static Analysis took 0.066262 seconds
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Dependency exists
+[INFO] | 2026-06-21 07:14:13 PM | analyzer.40747  | Invoking symbolic executor!
+[36m[#] Analysing started: 40747.sol[0m
+[36m[#] Interprocedural CFG generation started for Collect[0m
+[36m[#] Interprocedural CFG generated for Collect[0m
+[36m[#] SDG generation started for Collect[0m
+[36m[#] SDG generated for Collect[0m
+[INFO] | 2026-06-21 07:14:14 PM | analyzer.40747  | Symbolic execution took 1.164686 seconds
+[INFO] | 2026-06-21 07:14:14 PM | analyzer.40747  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:14:14 PM | analyzer.40747  | Analysis finished!
+[INFO] | 2026-06-21 07:14:14 PM | analyzer.40747  | Analysis took 1.231462 seconds
+[INFO] | 2026-06-21 07:14:14 PM | analyzer.40747  | Analysis finished at: 2026-06-21 07:14:14 PM
+[36m[#] Analysis took 1.231462 seconds[0m
+[36m[#] Analysis completed: 40747.sol [0m
+
+=== dependency_info.json ===
+{
+    "40747.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "Collect",
+                "Collect"
+            ],
+            "from_function": "Collect",
+            "to_function": "Collect",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: Collect\nNode: \nIF Accounts[msg.sender] >= MinSum && _am <= Accounts[msg.sender]\nIRS: \nCONDITION TMP_2\"",
+                        "\"BlockID: 6\nFunction: Collect\nNode: \nEXPRESSION Accounts[msg.sender] -= _am\nIRS: \nREF_4 = REF_4 - _am\""
+                    ],
+                    "state_variable": "Accounts"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Collect",
+                "Collect"
+            ],
+            "First_function": "Collect",
+            "Second_function": "Collect",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: Collect\nNode: \nEXPRESSION Accounts[msg.sender] -= _am\nIRS: \nREF_4 = REF_4 - _am\"",
+                        "\"BlockID: 2\nFunction: Collect\nNode: \nIF Accounts[msg.sender] >= MinSum && _am <= Accounts[msg.sender]\nIRS: \nCONDITION TMP_2\""
+                    ],
+                    "state_variable": "Accounts"
+                }
+            ]
+        }
+    ]
+}

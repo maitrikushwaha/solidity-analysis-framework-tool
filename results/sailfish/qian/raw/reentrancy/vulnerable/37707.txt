@@ -1,0 +1,91 @@
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Analysis started at: 2026-06-21 07:13:51 PM
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Generating return summary for claimBounty
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Return summary generated for claimBounty
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Range graph generated
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Processed function claimBounty
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Value Range Analysis took 0.000595 seconds
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | DAO dependency detected in file 37707.sol in contract BountyHunt in by composing functions claimBounty and claimBounty
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | TOD dependency detected in file 37707.sol in contract BountyHunt in by composing functions claimBounty and claimBounty
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Static Analysis took 0.089915 seconds
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Dependency exists
+[INFO] | 2026-06-21 07:13:51 PM | analyzer.37707  | Invoking symbolic executor!
+[36m[#] Analysing started: 37707.sol[0m
+[36m[#] Interprocedural CFG generation started for claimBounty[0m
+[36m[#] Interprocedural CFG generated for claimBounty[0m
+[36m[#] SDG generation started for claimBounty[0m
+[36m[#] SDG generated for claimBounty[0m
+[INFO] | 2026-06-21 07:13:52 PM | analyzer.37707  | Symbolic execution took 1.061147 seconds
+[INFO] | 2026-06-21 07:13:52 PM | analyzer.37707  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:13:52 PM | analyzer.37707  | Analysis finished!
+[INFO] | 2026-06-21 07:13:52 PM | analyzer.37707  | Analysis took 1.151636 seconds
+[INFO] | 2026-06-21 07:13:52 PM | analyzer.37707  | Analysis finished at: 2026-06-21 07:13:52 PM
+[36m[#] Analysis took 1.151636 seconds[0m
+[36m[#] Analysis completed: 37707.sol [0m
+
+=== dependency_info.json ===
+{
+    "37707.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "claimBounty",
+                "claimBounty"
+            ],
+            "from_function": "claimBounty",
+            "to_function": "claimBounty",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 11\nFunction: claimBounty\nNode: \nEXPRESSION bountyAmount[msg.sender] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 4\nFunction: claimBounty\nNode: \nEXPRESSION totalBountyAmount -= balance\nIRS: \ntotalBountyAmount = totalBountyAmount - balance\""
+                    ],
+                    "state_variable": "bountyAmount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: claimBounty\nNode: \nIF msg.sender.call.value(balance)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:balance \"",
+                        "\"BlockID: 5\nFunction: claimBounty\nNode: \nEXPRESSION bountyAmount[msg.sender] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "bountyAmount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: claimBounty\nNode: \nEXPRESSION totalBountyAmount -= balance\nIRS: \ntotalBountyAmount = totalBountyAmount - balance\"",
+                        "\"BlockID: 5\nFunction: claimBounty\nNode: \nEXPRESSION bountyAmount[msg.sender] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "bountyAmount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimBounty",
+                "claimBounty"
+            ],
+            "First_function": "claimBounty",
+            "Second_function": "claimBounty",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: claimBounty\nNode: \nEXPRESSION bountyAmount[msg.sender] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 2\nFunction: claimBounty\nNode: \nIF msg.sender.call.value(balance)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:balance \""
+                    ],
+                    "state_variable": "bountyAmount"
+                }
+            ]
+        }
+    ]
+}

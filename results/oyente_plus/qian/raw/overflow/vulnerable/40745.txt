@@ -1,0 +1,31 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40745.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.Y7PTJWlNH7' running
+INFO:CryticCompile:Compilation warnings/errors on 40745.sol:
+40745.sol:9:7: Warning: Return value of low-level calls not used.
+      msg.sender.call.value(amount)();
+      ^-----------------------------^
+40745.sol:8:5: Warning: No visibility specified. Defaulting to "public". 
+    function withdraw(uint amount) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 40745.sol:SimpleDAO:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 81.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:40745.sol:10:7: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    credit[msg.sender] = 0
+    amount = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+INFO:symExec:40745.sol:9:7: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:40745.sol:9:7: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40745.sol:SimpleDAO.json.

@@ -1,0 +1,17 @@
+/work/datasets/qian/overflow/safe/26188.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 4
+column: 0
+content: contractEXPERIMENTAL_ETH_AUCTION{mapping(address=>uint)publicBids;functionRevokeBid()publicpayable{uinttoTransfer=Bids[msg.sender];Bids[msg.sender]=0;msg.sender.call.value(toTransfer);}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_LOCKED_MONEY :1

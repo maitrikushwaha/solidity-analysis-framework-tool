@@ -1,0 +1,34 @@
+{
+ "evm_code_coverage": "97.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "6.sol:161:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    channelId = 4294967296\n    _master = 0\n    stopped = 0",
+   "6.sol:163:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    channelId = 1073741824\n    _master = 0\n    stopped = 0",
+   "6.sol:150:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    to = 2097413399\n    addressMap[to] = 0\n    _master = 0\n    stopped = 0",
+   "6.sol:152:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    to = 3057884757\n    addressMap[to] = 0\n    _master = 0\n    stopped = 0",
+   "6.sol:154:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    to = 134217729\n    addressMap[to] = 0\n    _master = 0\n    stopped = 0",
+   "6.sol:139:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    channelId = 4294967296\n    _master = 0\n    stopped = 0",
+   "6.sol:141:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    channelId = 2147483648\n    _master = 0\n    stopped = 0",
+   "6.sol:132:16: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    channelId = 1434451985",
+   "6.sol:130:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    channelId = 1409286417"
+  ],
+  "integer_overflow": [
+   "6.sol:163:14: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    channelId = 4294967296\n    _master = 0\n    stopped = 0",
+   "6.sol:2:78: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    channelId = 4294967296\n    _master = 0\n    stopped = 0",
+   "6.sol:9:21: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    channelId = 1\n    _master = 0\n    stopped = 0",
+   "6.sol:2:42: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    to = 521310241\n    addressMap[to] = 0\n    _master = 0\n    stopped = 0",
+   "6.sol:150:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    to = 521310241\n    addressMap[to] = 0\n    _master = 0\n    stopped = 0",
+   "6.sol:152:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    to = 4294967296\n    addressMap[to] = 0\n    _master = 0\n    stopped = 0",
+   "6.sol:154:14: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    to = 4294967296\n    addressMap[to] = 0\n    _master = 0\n    stopped = 0",
+   "6.sol:141:14: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    channelId = 4294967296\n    _master = 0\n    stopped = 0",
+   "6.sol:130:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    channelId = 1434451985"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

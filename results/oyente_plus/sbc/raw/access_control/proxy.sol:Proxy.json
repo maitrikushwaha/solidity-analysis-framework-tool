@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "82.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "proxy.sol:19:13: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

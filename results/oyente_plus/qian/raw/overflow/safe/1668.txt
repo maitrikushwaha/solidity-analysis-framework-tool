@@ -1,0 +1,19 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 1668.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.aiViUoFRSQ' running
+INFO:CryticCompile:Compilation warnings/errors on 1668.sol:
+1668.sol:6:5: Warning: Function state mutability can be restricted to view
+    function withdrawERC20Token() external returns(bool){
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 1668.sol:JobsBounty:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 73.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 1668.sol:JobsBounty.json.

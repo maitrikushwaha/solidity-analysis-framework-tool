@@ -1,0 +1,69 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/time_manipulation/lottopollo.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/time_manipulation' running
+Compilation warnings/errors on /work/datasets/sbc/time_manipulation/lottopollo.sol:
+/work/datasets/sbc/time_manipulation/lottopollo.sol:14:7: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+      msg.sender.send( msg.value );
+      ^--------------------------^
+/work/datasets/sbc/time_manipulation/lottopollo.sol:16:12: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+      if ( this.balance > 0 ) {
+           ^----------^
+/work/datasets/sbc/time_manipulation/lottopollo.sol:17:22: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        leader.send( this.balance );
+                     ^----------^
+/work/datasets/sbc/time_manipulation/lottopollo.sol:17:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        leader.send( this.balance );
+        ^-------------------------^
+/work/datasets/sbc/time_manipulation/lottopollo.sol:25:3: Warning: No visibility specified. Defaulting to "public". 
+  function randomGen() constant returns (uint randomNumber) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/time_manipulation/lottopollo.sol:29:3: Warning: No visibility specified. Defaulting to "public". 
+  function draw(uint seed){
+  ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/time_manipulation/lottopollo.sol:29:17: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function draw(uint seed){
+                ^-------^
+
+
+lottopollo.payOut(uint256) (datasets/sbc/time_manipulation/lottopollo.sol#11-24) sends eth to arbitrary user
+	Dangerous calls:
+	- leader.send(this.balance) (datasets/sbc/time_manipulation/lottopollo.sol#17)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+lottopollo.payOut(uint256) (datasets/sbc/time_manipulation/lottopollo.sol#11-24) ignores return value by msg.sender.send(msg.value) (datasets/sbc/time_manipulation/lottopollo.sol#14)
+lottopollo.payOut(uint256) (datasets/sbc/time_manipulation/lottopollo.sol#11-24) ignores return value by leader.send(this.balance) (datasets/sbc/time_manipulation/lottopollo.sol#17)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-send
+
+lottopollo.payOut(uint256) (datasets/sbc/time_manipulation/lottopollo.sol#11-24) uses timestamp for comparisons
+	Dangerous comparisons:
+	- rand > 0 && now - rand > 86400 (datasets/sbc/time_manipulation/lottopollo.sol#13)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.4.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ExpExponentCleanup
+	- NestedArrayFunctionCallDecoder
+	- ZeroFunctionSelector
+	- DelegateCallReturnValue
+	- ECRecoverMalformedInput
+	- SkipEmptyStringLiteral
+	- ConstantOptimizerSubtraction
+	- IdentityPrecompileReturnIgnored
+	- HighOrderByteCleanStorage
+	- OptimizerStaleKnowledgeAboutSHA3
+	- LibrariesNotCallableFromPayableFunctions.
+It is used by:
+	- ^0.4.0 (datasets/sbc/time_manipulation/lottopollo.sol#7)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Contract lottopollo (datasets/sbc/time_manipulation/lottopollo.sol#8-34) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+/work/datasets/sbc/time_manipulation/lottopollo.sol analyzed (1 contracts with 93 detectors), 7 result(s) found

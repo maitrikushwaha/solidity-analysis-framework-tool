@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc name_registrar.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.3sfwvLaX9m' running
+INFO:CryticCompile:Compilation warnings/errors on name_registrar.sol:
+name_registrar.sol:23:9: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+        NameRecord newRecord;
+        ^------------------^
+name_registrar.sol:23:9: Warning: Uninitialized storage pointer. Did you mean '<type> memory newRecord'?
+        NameRecord newRecord;
+        ^------------------^
+
+INFO:root:contract name_registrar.sol:NameRegistrar:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 91.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:name_registrar.sol:17:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to name_registrar.sol:NameRegistrar.json.

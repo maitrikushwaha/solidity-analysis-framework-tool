@@ -1,0 +1,38 @@
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Analysis started at: 2026-06-21 07:12:17 PM
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Generating return summary for withdraw
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Return summary generated for withdraw
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Processed function withdraw
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Range graph generated
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Value Range Analysis took 0.000428 seconds
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Static Analysis took 0.038087 seconds
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Dependency does not exist
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Analysis finished!
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Analysis took 0.038247 seconds
+[INFO] | 2026-06-21 07:12:17 PM | analyzer.38876  | Analysis finished at: 2026-06-21 07:12:17 PM
+[36m[#] Analysing started: 38876.sol[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[36m[#] Analysis took 0.038247 seconds[0m
+[36m[#] Analysis completed: 38876.sol [0m
+
+=== dependency_info.json ===
+{}

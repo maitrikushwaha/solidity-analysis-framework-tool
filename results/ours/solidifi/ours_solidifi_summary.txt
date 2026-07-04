@@ -1,0 +1,268 @@
+=================================================================
+OUR TOOL SOLIDIFI — PER-VULNERABILITY RESULTS
+=================================================================
+Total files  : 100 unique contracts
+Analysis OK  : 40  |  Partial: 60  |  Timeout: 0  |  Error: 0  |  Skipped: 0
+Batch time   : 88s (1 min)
+=================================================================
+
+  REENTRANCY
+  -------------------------------------------------------
+  Ground truth : 0 positive + 100 negative
+  Evaluated    : 45  |  Excluded (N/A): 55
+  TP=0  FP=5  TN=40  FN=0  N/A=55
+  Precision : 0.0%  [TP/(TP+FP) = 0/5]
+  Recall    : N/A  [TP/(TP+FN) = 0/0]
+  F1        : N/A
+  Accuracy  : 88.9%  [(TP+TN)/evaluated = 40/45]
+  FP files (5):
+    - 33.sol
+    - 42.sol
+    - buggy_33.sol
+    - buggy_35.sol
+    - buggy_42.sol
+  N/A files (55) — excluded (tool could not decide):
+    - 10.sol
+    - 17.sol
+    - 18.sol
+    - 21.sol
+    - 22.sol
+    - 24.sol
+    - 25.sol
+    - 29.sol
+    - 30.sol
+    - 31.sol
+    - 34.sol
+    - 35.sol
+    - 36.sol
+    - 45.sol
+    - 46.sol
+    - 50.sol
+    - 6.sol
+    - 7.sol
+    - buggy_1.sol
+    - buggy_10.sol
+    - buggy_11.sol
+    - buggy_12.sol
+    - buggy_14.sol
+    - buggy_16.sol
+    - buggy_17.sol
+    - buggy_18.sol
+    - buggy_20.sol
+    - buggy_21.sol
+    - buggy_22.sol
+    - buggy_23.sol
+    - buggy_24.sol
+    - buggy_25.sol
+    - buggy_27.sol
+    - buggy_28.sol
+    - buggy_29.sol
+    - buggy_30.sol
+    - buggy_31.sol
+    - buggy_32.sol
+    - buggy_34.sol
+    - buggy_36.sol
+    - buggy_37.sol
+    - buggy_38.sol
+    - buggy_40.sol
+    - buggy_43.sol
+    - buggy_44.sol
+    - buggy_45.sol
+    - buggy_46.sol
+    - buggy_47.sol
+    - buggy_48.sol
+    - buggy_5.sol
+    - buggy_50.sol
+    - buggy_6.sol
+    - buggy_7.sol
+    - buggy_8.sol
+    - buggy_9.sol
+
+  OVERFLOW / UNDERFLOW
+  -------------------------------------------------------
+  Ground truth : 0 positive + 100 negative
+  Evaluated    : 100  |  Excluded (N/A): 0
+  TP=0  FP=48  TN=52  FN=0  N/A=0
+  Precision : 0.0%  [TP/(TP+FP) = 0/48]
+  Recall    : N/A  [TP/(TP+FN) = 0/0]
+  F1        : N/A
+  Accuracy  : 52.0%  [(TP+TN)/evaluated = 52/100]
+  FP files (48):
+    - 1.sol
+    - 12.sol
+    - 13.sol
+    - 14.sol
+    - 15.sol
+    - 2.sol
+    - 21.sol
+    - 24.sol
+    - 25.sol
+    - 27.sol
+    - 28.sol
+    - 3.sol
+    - 30.sol
+    - 37.sol
+    - 39.sol
+    - 4.sol
+    - 41.sol
+    - 42.sol
+    - 43.sol
+    - 44.sol
+    - 47.sol
+    - 49.sol
+    - 5.sol
+    - 8.sol
+    - buggy_1.sol
+    - buggy_12.sol
+    - buggy_13.sol
+    - buggy_14.sol
+    - buggy_15.sol
+    - buggy_2.sol
+    - buggy_21.sol
+    - buggy_24.sol
+    - buggy_25.sol
+    - buggy_27.sol
+    - buggy_28.sol
+    - buggy_3.sol
+    - buggy_30.sol
+    - buggy_37.sol
+    - buggy_39.sol
+    - buggy_4.sol
+    - buggy_41.sol
+    - buggy_42.sol
+    - buggy_43.sol
+    - buggy_44.sol
+    - buggy_47.sol
+    - buggy_49.sol
+    - buggy_5.sol
+    - buggy_8.sol
+
+  TIMESTAMP DEPENDENCE
+  -------------------------------------------------------
+  Ground truth : 0 positive + 100 negative
+  Evaluated    : 51  |  Excluded (N/A): 49
+  TP=0  FP=14  TN=37  FN=0  N/A=49
+  Precision : 0.0%  [TP/(TP+FP) = 0/14]
+  Recall    : N/A  [TP/(TP+FN) = 0/0]
+  F1        : N/A
+  Accuracy  : 72.5%  [(TP+TN)/evaluated = 37/51]
+  FP files (14):
+    - 17.sol
+    - 22.sol
+    - 24.sol
+    - 34.sol
+    - 36.sol
+    - 4.sol
+    - 47.sol
+    - buggy_17.sol
+    - buggy_22.sol
+    - buggy_24.sol
+    - buggy_34.sol
+    - buggy_36.sol
+    - buggy_4.sol
+    - buggy_47.sol
+  N/A files (49) — excluded (tool could not decide):
+    - 10.sol
+    - 18.sol
+    - 21.sol
+    - 25.sol
+    - 29.sol
+    - 30.sol
+    - 31.sol
+    - 33.sol
+    - 35.sol
+    - 42.sol
+    - 45.sol
+    - 46.sol
+    - 50.sol
+    - 6.sol
+    - 7.sol
+    - buggy_1.sol
+    - buggy_10.sol
+    - buggy_11.sol
+    - buggy_12.sol
+    - buggy_14.sol
+    - buggy_16.sol
+    - buggy_18.sol
+    - buggy_20.sol
+    - buggy_21.sol
+    - buggy_23.sol
+    - buggy_25.sol
+    - buggy_27.sol
+    - buggy_28.sol
+    - buggy_29.sol
+    - buggy_30.sol
+    - buggy_31.sol
+    - buggy_32.sol
+    - buggy_33.sol
+    - buggy_35.sol
+    - buggy_37.sol
+    - buggy_38.sol
+    - buggy_40.sol
+    - buggy_42.sol
+    - buggy_43.sol
+    - buggy_44.sol
+    - buggy_45.sol
+    - buggy_46.sol
+    - buggy_48.sol
+    - buggy_5.sol
+    - buggy_50.sol
+    - buggy_6.sol
+    - buggy_7.sol
+    - buggy_8.sol
+    - buggy_9.sol
+
+  TOD (FRONT-RUNNING)
+  -------------------------------------------------------
+  Ground truth : 50 positive + 50 negative
+  Evaluated    : 100  |  Excluded (N/A): 0
+  TP=50  FP=23  TN=27  FN=0  N/A=0
+  Precision : 68.5%  [TP/(TP+FP) = 50/73]
+  Recall    : 100.0%  [TP/(TP+FN) = 50/50]
+  F1        : 81.3%
+  Accuracy  : 77.0%  [(TP+TN)/evaluated = 77/100]
+  FP files (23):
+    - 1.sol
+    - 11.sol
+    - 12.sol
+    - 13.sol
+    - 15.sol
+    - 16.sol
+    - 17.sol
+    - 18.sol
+    - 2.sol
+    - 27.sol
+    - 28.sol
+    - 3.sol
+    - 32.sol
+    - 37.sol
+    - 38.sol
+    - 39.sol
+    - 4.sol
+    - 41.sol
+    - 47.sol
+    - 48.sol
+    - 49.sol
+    - 5.sol
+    - 8.sol
+
+=================================================================
+  AGGREGATE (all 4 vulnerabilities)
+=================================================================
+  TP=50  FP=90  TN=156  FN=0
+  Micro-Precision : 35.7%
+  Micro-Recall    : 100.0%
+  Micro-F1        : 52.6%
+  Micro-Accuracy  : 69.6%  [denominator = 296]
+
+  ─────────────────────────────────────────────────────────────
+  Vulnerability              TP   FP   TN   FN        P      R     F1
+  ─────────────────────────────────────────────────────────────
+  REENTRANCY                  0    5   40    0     0.0%    N/A    N/A
+  OVERFLOW / UNDERFLOW        0   48   52    0     0.0%    N/A    N/A
+  TIMESTAMP DEPENDENCE        0   14   37    0     0.0%    N/A    N/A
+  TOD (FRONT-RUNNING)        50   23   27    0    68.5% 100.0%  81.3%
+  ─────────────────────────────────────────────────────────────
+  MICRO-AVERAGE              50   90  156    0    35.7% 100.0%  52.6%
+
+=================================================================

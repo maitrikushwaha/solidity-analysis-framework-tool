@@ -1,0 +1,101 @@
+dataset,relpath,pragma,want_version,solc_used,fallback,exit_code,coverage_pct,reentrancy,timestamp,tod,int_overflow,int_underflow,callstack,global_timeout_hit,duration_s
+solidifi,"solidifi/tod/safe/13.sol",>=0.4.22 <0.6.0,0.4.22,0.5.17,bumped,0,10.3,False,False,False,True,True,False,no,119.83
+solidifi,"solidifi/tod/safe/17.sol",^0.5.6,0.5.6,0.5.6,floor,0,8.2,False,False,False,True,True,False,no,247.75
+solidifi,"solidifi/tod/safe/20.sol",^0.5.10,0.5.10,0.5.10,floor,1,96.7,False,False,True,False,False,False,no,1.43
+solidifi,"solidifi/tod/safe/24.sol",^0.5.0,0.5.0,0.5.0,floor,0,21.2,False,False,False,True,False,False,no,601.43
+solidifi,"solidifi/tod/safe/28.sol",^0.5.0,0.5.0,0.5.0,floor,0,7.0,False,False,False,True,True,False,no,119.96
+solidifi,"solidifi/tod/safe/31.sol",>=0.5.11,0.5.11,0.5.11,floor,0,98.4,False,False,False,False,True,False,no,2.51
+solidifi,"solidifi/tod/safe/35.sol",>=0.5.11,0.5.11,0.5.11,floor,1,95.0,False,False,True,True,True,False,no,322.61
+solidifi,"solidifi/tod/safe/39.sol",^0.5.10,0.5.10,0.5.10,floor,0,16.6,False,False,False,True,True,False,no,125.84
+solidifi,"solidifi/tod/safe/42.sol",^0.5.11,0.5.11,0.5.11,floor,0,80.6,False,False,False,True,False,False,no,11.64
+solidifi,"solidifi/tod/safe/46.sol",>=0.4.21 <0.6.0,0.4.21,0.5.17,bumped,0,25.7,False,False,False,True,True,False,no,601.43
+solidifi,"solidifi/tod/safe/4.sol",>= 0.5.0 < 0.6.0,0.5.0,0.5.0,floor,0,25.2,False,False,False,True,True,False,no,120.98
+solidifi,"solidifi/tod/safe/7.sol",^0.5.8,0.5.8,0.5.8,floor,0,25.2,False,False,False,True,True,False,no,447.95
+solidifi,"solidifi/tod/vulnerable/buggy_11.sol",^0.5.0,0.5.0,0.5.0,floor,1,5.4,False,False,True,True,True,False,no,129.98
+solidifi,"solidifi/tod/vulnerable/buggy_15.sol",^0.5.7,0.5.7,0.5.7,floor,0,5.9,False,False,False,True,True,False,no,122.72
+solidifi,"solidifi/tod/vulnerable/buggy_19.sol",^0.5.1,0.5.1,0.5.1,floor,1,98.1,False,False,True,False,False,False,no,8.46
+solidifi,"solidifi/tod/vulnerable/buggy_22.sol",>=0.5.1,0.5.1,0.5.1,floor,1,4.0,False,False,True,True,True,True,no,251.48
+solidifi,"solidifi/tod/vulnerable/buggy_26.sol",^0.5.2,0.5.2,0.5.2,floor,0,98.1,False,False,False,True,True,False,no,122.45
+solidifi,"solidifi/tod/vulnerable/buggy_2.sol",^0.5.1,0.5.1,0.5.1,floor,0,4.9,False,False,False,True,True,False,no,121.97
+solidifi,"solidifi/tod/vulnerable/buggy_33.sol",>=0.5.11,0.5.11,0.5.11,floor,1,92.9,False,False,True,True,False,False,no,24.34
+solidifi,"solidifi/tod/vulnerable/buggy_37.sol",^0.5.00,0.5.00,0.5.17,bumped,1,4.9,False,False,True,True,True,False,no,131.77
+solidifi,"solidifi/tod/vulnerable/buggy_40.sol",^0.5.0,0.5.0,0.5.0,floor,1,96.0,False,False,True,True,True,False,no,126.18
+solidifi,"solidifi/tod/vulnerable/buggy_44.sol",^0.5.0,0.5.0,0.5.0,floor,1,88.2,False,False,True,True,True,False,no,129.73
+solidifi,"solidifi/tod/vulnerable/buggy_48.sol",^0.5.11,0.5.11,0.5.11,floor,1,93.6,False,False,True,True,True,False,no,125.25
+solidifi,"solidifi/tod/vulnerable/buggy_5.sol",>=0.4.22 <0.6.0,0.4.22,0.5.17,bumped,1,92.7,False,False,True,True,True,False,no,234.95
+solidifi,"solidifi/tod/vulnerable/buggy_9.sol",>=0.4.22 <0.6.0,0.4.22,0.5.17,bumped,1,87.8,False,False,True,True,True,False,no,219.59
+solidifi,"solidifi/tod/safe/10.sol",>=0.4.21 < 0.6.0,0.4.21,0.5.17,bumped,0,28.6,False,False,False,True,True,False,no,130.92
+solidifi,"solidifi/tod/safe/14.sol",^0.5.1,0.5.1,0.5.1,floor,0,96.3,False,False,False,True,True,False,no,127.74
+solidifi,"solidifi/tod/safe/18.sol",>=0.5.9,0.5.9,0.5.9,floor,0,98.4,False,False,False,True,True,False,no,128.71
+solidifi,"solidifi/tod/safe/21.sol",^0.5.11,0.5.11,0.5.11,floor,0,98.4,False,False,False,True,True,False,no,125.94
+solidifi,"solidifi/tod/safe/25.sol",^0.5.11,0.5.11,0.5.11,floor,1,69.2,False,False,True,True,True,False,no,601.25
+solidifi,"solidifi/tod/safe/29.sol",>=0.5.11,0.5.11,0.5.11,floor,0,81.3,False,False,False,True,False,False,no,3.12
+solidifi,"solidifi/tod/safe/32.sol",^0.5.7,0.5.7,0.5.7,floor,0,13.1,False,False,False,True,True,False,no,123.67
+solidifi,"solidifi/tod/safe/36.sol",>=0.5.1,0.5.1,0.5.1,floor,1,8.9,False,False,False,True,True,True,no,252.07
+solidifi,"solidifi/tod/safe/3.sol",^0.5.1,0.5.1,0.5.1,floor,0,8.8,False,False,False,True,True,False,no,123.04
+solidifi,"solidifi/tod/safe/43.sol",^0.5.0,0.5.0,0.5.0,floor,0,98.0,False,False,False,True,True,False,no,126.32
+solidifi,"solidifi/tod/safe/47.sol",^0.5.11,0.5.11,0.5.11,floor,1,22.3,False,True,False,True,True,False,no,314.43
+solidifi,"solidifi/tod/safe/50.sol",^0.5.11,0.5.11,0.5.11,floor,0,96.2,False,False,False,True,True,False,no,2.12
+solidifi,"solidifi/tod/safe/8.sol",>=0.4.22 <0.6.0,0.4.22,0.4.22,floor,0,82.6,False,False,False,True,True,False,no,251.92
+solidifi,"solidifi/tod/vulnerable/buggy_12.sol",>=0.4.23 <0.6.0,0.4.23,0.5.17,bumped,124,64.0,False,False,True,True,True,False,no,660.04
+solidifi,"solidifi/tod/vulnerable/buggy_16.sol",^0.5.11,0.5.11,0.5.11,floor,1,8.4,False,False,True,True,True,False,no,227.90
+solidifi,"solidifi/tod/vulnerable/buggy_1.sol",>=0.4.22 <0.6.0,0.4.22,0.5.17,bumped,0,6.3,False,False,False,True,True,False,no,127.63
+solidifi,"solidifi/tod/vulnerable/buggy_23.sol",^0.5.2,0.5.2,0.5.2,floor,1,6.5,False,False,True,True,True,False,no,141.09
+solidifi,"solidifi/tod/vulnerable/buggy_27.sol",^0.5.0,0.5.0,0.5.0,floor,1,3.6,False,False,True,True,True,False,no,120.81
+solidifi,"solidifi/tod/vulnerable/buggy_30.sol",^0.5.11,0.5.11,0.5.11,floor,1,98.4,False,False,False,True,True,False,no,21.44
+solidifi,"solidifi/tod/vulnerable/buggy_34.sol",>=0.5.11,0.5.11,0.5.11,floor,1,4.6,False,False,True,True,True,False,no,124.89
+solidifi,"solidifi/tod/vulnerable/buggy_38.sol",^0.5.0,0.5.0,0.5.0,floor,0,5.2,False,False,False,True,True,False,no,122.17
+solidifi,"solidifi/tod/vulnerable/buggy_41.sol",>=0.4.22 <0.6.0,0.4.22,0.5.17,bumped,0,5.9,False,False,False,True,True,False,no,123.58
+solidifi,"solidifi/tod/vulnerable/buggy_45.sol",^0.5.11,0.5.11,0.5.11,floor,1,95.9,False,False,True,True,False,False,no,16.67
+solidifi,"solidifi/tod/vulnerable/buggy_49.sol",^0.5.11,0.5.11,0.5.11,floor,0,6.0,False,False,False,True,True,False,no,128.43
+solidifi,"solidifi/tod/vulnerable/buggy_6.sol",^0.5.8,0.5.8,0.5.8,floor,1,96.3,False,False,True,True,True,False,no,8.14
+solidifi,"solidifi/tod/safe/11.sol",^0.5.0,0.5.0,0.5.0,floor,0,9.0,False,False,False,True,True,False,no,118.71
+solidifi,"solidifi/tod/safe/15.sol",^0.5.7,0.5.7,0.5.7,floor,0,10.3,False,False,False,True,True,False,no,120.40
+solidifi,"solidifi/tod/safe/19.sol",^0.5.1,0.5.1,0.5.1,floor,1,98.1,False,False,True,False,False,False,no,2.22
+solidifi,"solidifi/tod/safe/22.sol",>=0.5.1,0.5.1,0.5.1,floor,1,8.9,False,False,False,True,True,True,no,243.99
+solidifi,"solidifi/tod/safe/26.sol",^0.5.2,0.5.2,0.5.2,floor,0,98.1,False,False,False,True,True,False,no,121.00
+solidifi,"solidifi/tod/safe/2.sol",^0.5.1,0.5.1,0.5.1,floor,0,8.5,False,False,False,True,True,False,no,119.22
+solidifi,"solidifi/tod/safe/33.sol",>=0.5.11,0.5.11,0.5.11,floor,0,80.6,False,False,False,True,False,False,no,11.80
+solidifi,"solidifi/tod/safe/37.sol",^0.5.00,0.5.00,0.5.17,bumped,0,8.0,False,False,False,True,True,False,no,128.84
+solidifi,"solidifi/tod/safe/40.sol",^0.5.0,0.5.0,0.5.0,floor,0,97.1,False,False,False,True,True,False,no,125.24
+solidifi,"solidifi/tod/safe/44.sol",^0.5.0,0.5.0,0.5.0,floor,0,98.0,False,False,False,True,True,False,no,146.09
+solidifi,"solidifi/tod/safe/48.sol",^0.5.11,0.5.11,0.5.11,floor,0,86.2,False,False,False,True,True,False,no,127.33
+solidifi,"solidifi/tod/safe/5.sol",>=0.4.22 <0.6.0,0.4.22,0.4.22,floor,0,82.6,False,False,False,True,True,False,no,255.12
+solidifi,"solidifi/tod/safe/9.sol",>=0.4.22 <0.6.0,0.4.22,0.4.22,floor,0,63.0,False,False,False,True,True,False,no,248.88
+solidifi,"solidifi/tod/vulnerable/buggy_13.sol",>=0.4.22 <0.6.0,0.4.22,0.5.17,bumped,0,5.9,False,False,False,True,True,False,no,120.35
+solidifi,"solidifi/tod/vulnerable/buggy_17.sol",^0.5.6,0.5.6,0.5.6,floor,1,5.3,False,False,True,True,True,False,no,248.65
+solidifi,"solidifi/tod/vulnerable/buggy_20.sol",^0.5.10,0.5.10,0.5.10,floor,1,96.0,False,False,True,False,False,False,no,6.53
+solidifi,"solidifi/tod/vulnerable/buggy_24.sol",^0.5.0,0.5.0,0.5.0,floor,1,32.6,False,False,True,True,False,False,no,602.16
+solidifi,"solidifi/tod/vulnerable/buggy_28.sol",^0.5.0,0.5.0,0.5.0,floor,0,5.2,False,False,False,True,True,False,no,124.37
+solidifi,"solidifi/tod/vulnerable/buggy_31.sol",>=0.5.11,0.5.11,0.5.11,floor,1,98.4,False,False,True,False,True,False,no,4.18
+solidifi,"solidifi/tod/vulnerable/buggy_35.sol",>=0.5.11,0.5.11,0.5.11,floor,1,94.1,False,False,True,True,True,False,no,356.42
+solidifi,"solidifi/tod/vulnerable/buggy_39.sol",^0.5.10,0.5.10,0.5.10,floor,0,6.0,False,False,False,True,True,False,no,125.67
+solidifi,"solidifi/tod/vulnerable/buggy_42.sol",^0.5.11,0.5.11,0.5.11,floor,1,92.9,False,False,True,True,False,False,no,17.60
+solidifi,"solidifi/tod/vulnerable/buggy_46.sol",>=0.4.21 <0.6.0,0.4.21,0.5.17,bumped,0,23.7,False,False,False,True,True,False,no,601.44
+solidifi,"solidifi/tod/vulnerable/buggy_4.sol",>= 0.5.0 < 0.6.0,0.5.0,0.5.0,floor,0,9.1,False,False,False,True,True,False,no,119.95
+solidifi,"solidifi/tod/vulnerable/buggy_7.sol",^0.5.8,0.5.8,0.5.8,floor,1,32.9,False,False,True,True,True,False,no,377.29
+solidifi,"solidifi/tod/safe/12.sol",>=0.4.23 <0.6.0,0.4.23,0.4.23,floor,124,49.9,False,False,False,True,True,False,no,660.04
+solidifi,"solidifi/tod/safe/16.sol",^0.5.11,0.5.11,0.5.11,floor,0,21.6,False,False,False,True,True,False,no,218.77
+solidifi,"solidifi/tod/safe/1.sol",>=0.4.22 <0.6.0,0.4.22,0.4.22,floor,0,14.1,False,False,False,True,True,False,no,123.71
+solidifi,"solidifi/tod/safe/23.sol",^0.5.2,0.5.2,0.5.2,floor,0,11.4,False,False,False,True,True,False,no,125.96
+solidifi,"solidifi/tod/safe/27.sol",^0.5.0,0.5.0,0.5.0,floor,0,4.7,False,False,False,True,True,False,no,124.68
+solidifi,"solidifi/tod/safe/30.sol",^0.5.11,0.5.11,0.5.11,floor,139,98.4,False,False,False,True,True,False,no,11.03
+solidifi,"solidifi/tod/safe/34.sol",>=0.5.11,0.5.11,0.5.11,floor,0,7.7,False,False,False,True,True,False,no,129.76
+solidifi,"solidifi/tod/safe/38.sol",^0.5.0,0.5.0,0.5.0,floor,0,7.0,False,False,False,True,True,False,no,123.09
+solidifi,"solidifi/tod/safe/41.sol",>=0.4.22 <0.6.0,0.4.22,0.5.17,bumped,0,10.3,False,False,False,True,True,False,no,123.74
+solidifi,"solidifi/tod/safe/45.sol",^0.5.11,0.5.11,0.5.11,floor,0,96.2,False,False,False,True,False,False,no,11.13
+solidifi,"solidifi/tod/safe/49.sol",^0.5.11,0.5.11,0.5.11,floor,0,16.6,False,False,False,True,True,False,no,122.74
+solidifi,"solidifi/tod/safe/6.sol",^0.5.8,0.5.8,0.5.8,floor,0,97.9,False,False,False,True,True,False,no,4.03
+solidifi,"solidifi/tod/vulnerable/buggy_10.sol",>=0.4.21 < 0.6.0,0.4.21,0.5.17,bumped,1,31.7,False,False,True,True,True,False,no,136.06
+solidifi,"solidifi/tod/vulnerable/buggy_14.sol",^0.5.1,0.5.1,0.5.1,floor,1,95.9,False,False,True,True,True,False,no,133.68
+solidifi,"solidifi/tod/vulnerable/buggy_18.sol",>=0.5.9,0.5.9,0.5.9,floor,1,98.4,False,False,True,True,True,False,no,127.89
+solidifi,"solidifi/tod/vulnerable/buggy_21.sol",^0.5.11,0.5.11,0.5.11,floor,1,98.4,False,False,True,True,True,False,no,124.29
+solidifi,"solidifi/tod/vulnerable/buggy_25.sol",^0.5.11,0.5.11,0.5.11,floor,1,55.3,True,False,True,True,True,False,no,601.74
+solidifi,"solidifi/tod/vulnerable/buggy_29.sol",>=0.5.11,0.5.11,0.5.11,floor,1,89.5,False,False,True,True,False,False,no,7.07
+solidifi,"solidifi/tod/vulnerable/buggy_32.sol",^0.5.7,0.5.7,0.5.7,floor,1,5.7,False,False,True,True,True,False,no,133.40
+solidifi,"solidifi/tod/vulnerable/buggy_36.sol",>=0.5.1,0.5.1,0.5.1,floor,1,4.0,False,False,True,True,True,True,no,266.55
+solidifi,"solidifi/tod/vulnerable/buggy_3.sol",^0.5.1,0.5.1,0.5.1,floor,0,4.9,False,False,False,True,True,False,no,123.70
+solidifi,"solidifi/tod/vulnerable/buggy_43.sol",^0.5.0,0.5.0,0.5.0,floor,1,88.2,False,False,True,True,True,False,no,128.64
+solidifi,"solidifi/tod/vulnerable/buggy_47.sol",^0.5.11,0.5.11,0.5.11,floor,1,7.8,False,True,True,True,True,False,no,314.74
+solidifi,"solidifi/tod/vulnerable/buggy_50.sol",^0.5.11,0.5.11,0.5.11,floor,1,95.9,False,False,True,True,True,False,no,5.39
+solidifi,"solidifi/tod/vulnerable/buggy_8.sol",>=0.4.22 <0.6.0,0.4.22,0.5.17,bumped,1,92.7,False,False,True,True,True,False,no,249.19

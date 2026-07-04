@@ -1,0 +1,841 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0x663e4229142a27f00bafb5d087e1e730648314c3.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.O5qunCYBQK' running
+INFO:CryticCompile:Compilation warnings/errors on 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:35:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:770:9: Warning: Use of the "var" keyword is deprecated.
+        var outputString = new string(_stringLength);
+        ^--------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1474:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function ClockAuction(address _nftAddress, uint256 _cut) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1627:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function SiringClockAuction(address _nftAddr, uint256 _cut) public
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1706:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function SaleClockAuction(address _nftAddr, uint256 _cut) public
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1858:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function SaleClockAuctionERC20(address _nftAddr, uint256 _cut) public
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2360:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function PandaCore() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:404:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(_from, _to, _tokenId);
+        ^----------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:491:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Birth(
+        ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:662:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Approval(msg.sender, _to, _tokenId);
+        ^---------------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1025:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Pregnant(pandaIndexToOwner[_matronId], _matronId, _sireId, matron.cooldownEndBlock);
+        ^---------------------------------------------------------------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1131:21: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        if (uint256(keccak256(block.blockhash(block.number - 2), now)) % 100 < probability) {
+                    ^-----------------------------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1136:13: Warning: Invoking events without "emit" prefix is deprecated.
+            Abortion(pandaIndexToOwner[_matronId], _matronId, sireId);
+            ^-------------------------------------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1152:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        msg.sender.send(autoBirthFee);
+        ^---------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1237:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AuctionCreated(
+        ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1249:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AuctionCancelled(_tokenId);
+        ^------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1310:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AuctionSuccessful(_tokenId, price, msg.sender);
+        ^--------------------------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1444:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Pause();
+    ^-----^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1453:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Unpause();
+    ^-------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1496:36: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        bool res = nftAddress.send(this.balance);
+                                   ^----------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1808:25: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        bytes32 bHash = keccak256(block.blockhash(block.number),block.blockhash(block.number-1));
+                        ^----------------------------------------------------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1918:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AuctionERC20Created(
+        ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2013:9: Warning: Invoking events without "emit" prefix is deprecated.
+        AuctionSuccessful(_tokenId, price, msg.sender);
+        ^--------------------------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2398:9: Warning: Invoking events without "emit" prefix is deprecated.
+        ContractUpgrade(_v2Address);
+        ^-------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2461:27: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        uint256 balance = this.balance;
+                          ^----------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2467:13: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+            cfoAddress.send(balance - subtractFees);
+            ^-------------------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:11:5: Warning: No visibility specified. Defaulting to "public". 
+    function totalSupply() constant returns (uint supply);
+    ^----------------------------------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:12:5: Warning: No visibility specified. Defaulting to "public". 
+    function balanceOf( address who ) constant returns (uint value);
+    ^--------------------------------------------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:13:5: Warning: No visibility specified. Defaulting to "public". 
+    function allowance( address owner, address spender ) constant returns (uint _allowance);
+    ^--------------------------------------------------------------------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:15:5: Warning: No visibility specified. Defaulting to "public". 
+    function transfer( address to, uint value) returns (bool ok);
+    ^-----------------------------------------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:16:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferFrom( address from, address to, uint value) returns (bool ok);
+    ^-----------------------------------------------------------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:17:5: Warning: No visibility specified. Defaulting to "public". 
+    function approve( address spender, uint value ) returns (bool ok);
+    ^----------------------------------------------------------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:35:3: Warning: No visibility specified. Defaulting to "public". 
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:53:3: Warning: No visibility specified. Defaulting to "public". 
+  function transferOwnership(address newOwner) onlyOwner {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1131:31: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        if (uint256(keccak256(block.blockhash(block.number - 2), now)) % 100 < probability) {
+                              ^-------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1442:3: Warning: No visibility specified. Defaulting to "public". 
+  function pause() onlyOwner whenNotPaused returns (bool) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1451:3: Warning: No visibility specified. Defaulting to "public". 
+  function unpause() onlyOwner whenPaused returns (bool) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1496:9: Warning: Unused local variable.
+        bool res = nftAddress.send(this.balance);
+        ^------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1808:35: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        bytes32 bHash = keccak256(block.blockhash(block.number),block.blockhash(block.number-1));
+                                  ^-------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1808:65: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        bytes32 bHash = keccak256(block.blockhash(block.number),block.blockhash(block.number-1));
+                                                                ^-------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1927:18: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function bid(uint256 _tokenId)
+                 ^--------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1939:9: Warning: Unused local variable.
+        address seller = tokenIdToAuction[_tokenId].seller;
+        ^------------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1942:9: Warning: Unused local variable.
+        uint256 price = _bidERC20(_erc20address,msg.sender,_tokenId, _amount);
+        ^-----------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1958:88: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function withdrawERC20Balance(address _erc20Address, address _to) external returns(bool res)  {
+                                                                                       ^------^
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:516:5: Warning: Function state mutability can be restricted to pure
+    function getMetadata(uint256 _tokenId, string) public view returns (bytes32[4] buffer, uint256 count) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:747:5: Warning: Function state mutability can be restricted to pure
+    function _memcpy(uint _dest, uint _src, uint _len) private view {
+    ^ (Relevant source part starts here and spans across multiple lines).
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:990:5: Warning: Function state mutability can be restricted to view
+    function _exchangeMatronSireId(uint256 _matronId, uint256 _sireId) internal returns(uint256, uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:ClockAuction:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 39.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1381:39: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    paused = 0
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1235:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _startingPrice = 0
+    paused = 0
+    _endingPrice = 0
+    _duration = 64
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1326:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1343:19: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1348:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1349:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1350:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1496:20: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:ClockAuction.json.
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:ClockAuctionBase:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 72.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:ClockAuctionBase.json.
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:ERC721Metadata:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 28.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:516:5: Warning: Integer Overflow.
+
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:514:1: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:ERC721Metadata.json.
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:Ownable:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 80.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:Ownable.json.
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaAccessControl:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 94.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaAccessControl.json.
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaAuction:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 68.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:697:16: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    pandas.length = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:397:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    ownershipTokenCount[_from] = 0
+    pandaIndexToApproved[_tokenId] = 0
+    paused = 0
+    pandaIndexToOwner[_tokenId] = 3213876088518711301902589636141427047460764129075413636874240
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2199:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    saleAuctionERC20 = 1
+    cooAddress = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:392:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    pandaIndexToApproved[_tokenId] = 0
+    paused = 0
+    pandaIndexToOwner[_tokenId] = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:725:39: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    ownershipTokenCount[_owner] = 3618502788666131106986593281521497120414687020801267626233049500247285301247
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:991:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    pandaIndexToOwner[_tokenId] = 309485009821345068724781056
+    paused = 0
+    autoBirthFee = 33532794267651365159752285513320234953363040258238334403835028702799645900800
+    _matronId = 57896044618658097711785492504343953926634992332820282019728792003958867536641
+    pandas[_pandaId] = 58178961894603890527285784693611078604477677329538987516933841902670263074511
+    _sireId = 28269579996401645007531607884226165030507667507722488115911806143696994304
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1004:30: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    pandaIndexToOwner[_tokenId] = 309485009821345068724781056
+    paused = 0
+    autoBirthFee = 33532794267651365159752285513320234953363040258238334403835028702799645900800
+    _matronId = 57896044618658097711785492504343953926634992332820282019728792003958867536641
+    pandas[_pandaId] = 58178961894603890527285784693611078604477677329538987516933841902669097057999
+    _sireId = 28269579996401645007531607884226165030507667507722488115911806145775271944
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1005:32: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    pandaIndexToOwner[_tokenId] = 309485009821345068724781056
+    paused = 0
+    autoBirthFee = 33532794267651365159752285513320234953363040258238334403835028702799645900800
+    _matronId = 57896044618658097711785492504343953926634992332820282019728792003956654298854
+    pandas[_pandaId] = 58178961894603890527285784693611078604477677329538987516933841902669164166895
+    _sireId = 28269579996401645007531607884226165030507667507722488115911806145775271944
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1008:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    pandaIndexToOwner[_tokenId] = 309485009821345068724781056
+    paused = 0
+    autoBirthFee = 33532794267651365159752285513320234953363040258238334403835028702799645900800
+    _matronId = 57896044618658097711785492504343953926634992332820282019728792003956654298854
+    pandas[_pandaId] = 58178961894603890527285784693611078604477677329538987516933841902669164166895
+    _sireId = 28269579996401645007531607884226165030507667507722488115911806145775271944
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:852:54: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    pandaIndexToOwner[_tokenId] = 309485009821345068724781056
+    paused = 0
+    autoBirthFee = 33532794267651365159752285513320234953363040258238334403835028702799645900800
+    _matronId = 57896044618658097711785492504343953926634992332820282019728792003956654298854
+    pandas[_pandaId] = 58178961894603890527285784693611078604477677329538987516933841902669164166895
+    _sireId = 28269579996401645007531607884226165030507667507722488115911806145775271947
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1060:32: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    pandas[_matronId] = 82773251724912572011502044928085875745865450244186728861056360065055309173426
+    pandaIndexToOwner[_tokenId] = 0
+    paused = 0
+    autoBirthFee = 1
+    pandaIndexToOwner[_sireId] = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1063:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    pandas[_matronId] = 32531190314413400426579729832075552316830365004399334224619125908405766912018
+    pandaIndexToOwner[_tokenId] = 0
+    paused = 0
+    autoBirthFee = 1
+    pandaIndexToOwner[_sireId] = 0
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1152:9: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2184:9: Warning: Re-Entrancy Vulnerability.
+
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:991:13: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaAuction.json.
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaBase:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 81.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaBase.json.
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaBreeding:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 65.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:697:16: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    pandas.length = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:397:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    pandaIndexToOwner[_tokenId] = 3064991812482596382168153156143034725378988072333475840
+    ownershipTokenCount[_from] = 0
+    paused = 0
+    pandaIndexToApproved[_tokenId] = 0
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:907:16: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _pandaId = 16983818854792910265084593905349890908178272698239655227212378393742698779489
+    pandas[_pandaId] = 33947539734409033596129581901488412409373370383702054389829702977538377044339
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:907:16: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _pandaId = 74879863473451007976870086409693844834813265031059937246941170397690067145569
+    pandas[_pandaId] = 91843584353067131307915074405832366336008362716522336409558494981486419038579
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:392:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    pandaIndexToOwner[_tokenId] = 0
+    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    paused = 0
+    pandaIndexToApproved[_tokenId] = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:725:39: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    ownershipTokenCount[_owner] = 3618502788666131106986593281521497120414687020801267626233049500247285301247
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:895:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _pandaId = 301800916883549745723304915168840472805470608700668105090918001142431498242
+    pandas[_pandaId] = 761441914558012655780546007843886668299429542461665564276671779494761121975
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:896:16: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _pandaId = 19105386518990576671490466145524567148409753244632796031536930733046120450
+    pandas[_pandaId] = 761441914558012655780546007843886668299429542461665564276671779494761121975
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:991:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 1
+    _matronId = 57898432205857429212652578091701697562081228787230064329252111121733799378944
+    pandaIndexToOwner[_sireId] = 0
+    pandas[_matronId] = 101379213334788077089486079987013890373700985887164606587589066865756101148674
+    _sireId = 6880908705516996359870681679404858264000073219377918920760492032
+    pandaIndexToOwner[_tokenId] = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1004:30: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 1
+    _matronId = 57898432205857429212652578091701697562081228787230064329252111121733799378944
+    pandaIndexToOwner[_sireId] = 0
+    pandas[_matronId] = 101379213334788077089486079987013890373700985887164606587589066865756101148674
+    _sireId = 6880908705516996359870681679404858264000073219377918920760492032
+    pandaIndexToOwner[_tokenId] = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1005:32: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 1
+    _matronId = 57898432205857429112218950325514805340708598015907401671614424010309247172608
+    pandaIndexToOwner[_sireId] = 0
+    pandas[_matronId] = 101379213334788077089486079987013890373700985887164606587589066865756101148674
+    _sireId = 6880908705516996359870681679404858264000073219377918920760492032
+    pandaIndexToOwner[_tokenId] = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1008:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 1
+    _matronId = 57898432205857686322739659530145784276016003373246467881731116368587447599104
+    pandaIndexToOwner[_sireId] = 0
+    pandas[_matronId] = 101379213334788077089486079987013890373700985887164606587589066865756101148674
+    _sireId = 6880908705516996359870681679404858264000073219377918920760492032
+    pandaIndexToOwner[_tokenId] = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:852:54: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 1
+    _matronId = 57898432205857686322739659530145784276016003373246467881731116368587447599104
+    pandaIndexToOwner[_sireId] = 0
+    pandas[_matronId] = 101379213334788077089486079987013890373700985887164606587589066865756101148674
+    _sireId = 6880908705516996359870681679404858264000073219377918920760492032
+    pandaIndexToOwner[_tokenId] = 0
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1152:9: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaBreeding.json.
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaCore:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 67.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:697:16: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    pandas.length = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:397:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    ownershipTokenCount[_from] = 0
+    pandaIndexToApproved[_tokenId] = 0
+    paused = 0
+    pandaIndexToOwner[_tokenId] = 93536104789178119072034775522810339209744752836608
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2199:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    saleAuctionERC20 = 1
+    cooAddress = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:392:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    pandaIndexToApproved[_tokenId] = 0
+    paused = 0
+    pandaIndexToOwner[_tokenId] = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2463:33: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    pregnantPandas = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    cfoAddress = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:725:39: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    ownershipTokenCount[_owner] = 3618502788666131106986593281521497120414687020801267626233049500247285301247
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:991:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 45545456827436348195407847306193467817759866352373222760958189599632741142096
+    pandaIndexToOwner[_tokenId] = 0
+    pandas[_pandaId] = 57896044618658097711785492504709329335967718062371203227907862758870547972101
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1004:30: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 18328886623732232126864699195916383442494314620423433166347485236635159756801
+    pandaIndexToOwner[_tokenId] = 0
+    pandas[_pandaId] = 57896044618658097711785492504709329335967718062371203227907862758870552955719
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1005:32: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 18328886623732232126864699195916383442494314620423433166347485236635159756801
+    pandaIndexToOwner[_tokenId] = 0
+    pandas[_pandaId] = 57896044618658097711785492504709329335967718062371203227907862758871089826631
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1008:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 18328886623732232126864699195916383442494314620423433166347485236635159756801
+    pandaIndexToOwner[_tokenId] = 0
+    pandas[_pandaId] = 57896044618658097711785492504709329335967718062371203227907862758871089826631
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:852:54: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 18328886623732232126864699195916383442494314620423433166347485236635159756801
+    pandaIndexToOwner[_tokenId] = 0
+    pandas[_pandaId] = 57896044618658097711785492504709329335967718062371203227907862758871089826631
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1060:32: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    pandas[_matronId] = 41626931289999780925960443128720024040646076431375464298833151459177808207327
+    paused = 0
+    autoBirthFee = 1
+    pandaIndexToOwner[_tokenId] = 0
+    pandaIndexToOwner[_sireId] = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1063:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    pandas[_matronId] = 7350083856877946483279442642112653016144541106666661254225636970872461918212
+    paused = 0
+    autoBirthFee = 1
+    pandaIndexToOwner[_tokenId] = 0
+    pandaIndexToOwner[_sireId] = 0
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2467:13: Warning: Callstack Depth Attack Vulnerability.
+
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1152:9: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2184:9: Warning: Re-Entrancy Vulnerability.
+
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:991:13: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaCore.json.
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaMinting:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 67.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:697:16: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    pandas.length = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:397:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    ownershipTokenCount[_from] = 0
+    pandaIndexToApproved[_tokenId] = 0
+    paused = 0
+    pandaIndexToOwner[_tokenId] = 210624583337114373395836055367340864637790190801386452884773666816
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2199:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    saleAuctionERC20 = 1
+    cooAddress = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:392:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    pandaIndexToApproved[_tokenId] = 0
+    paused = 0
+    pandaIndexToOwner[_tokenId] = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:725:39: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    ownershipTokenCount[_owner] = 3618502788666131106986593281521497120414687020801267626233049500247285301247
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:991:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 29688166707895398508961105066564705971633995669920462096547772692035136127056
+    pandas[_pandaId] = 86844068228804573307916487724873916365488129517116248592739727622884106240086
+    pandaIndexToOwner[_tokenId] = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1004:30: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 29688166707895398508961105066564705971633995669920462096547772692035136127056
+    pandas[_pandaId] = 86844068228804573307916487724873916365488129517116248592739727622884106244182
+    pandaIndexToOwner[_tokenId] = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1005:32: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 29688166707895398508961105066564705971633995669920462096547772692035136127056
+    pandas[_pandaId] = 86844068228804573307916487724873916365488129517116248592739727622884106244182
+    pandaIndexToOwner[_tokenId] = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1008:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 29688166707895398508961105066564705971633995669920462096547772692035136127056
+    pandas[_pandaId] = 86844068228804573307916487724873916365488129517116248592739727622884106244182
+    pandaIndexToOwner[_tokenId] = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:852:54: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    paused = 0
+    autoBirthFee = 29688166707895398508961105066564705971633995669920462096547772692035136127056
+    pandas[_pandaId] = 86844068228804573307916487724873916365488129517116248592739727622884106244182
+    pandaIndexToOwner[_tokenId] = 0
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1152:9: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2184:9: Warning: Re-Entrancy Vulnerability.
+
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:991:13: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaMinting.json.
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaOwnership:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:697:16: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    pandas.length = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:397:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    pandaIndexToApproved[_tokenId] = 0
+    pandaIndexToOwner[_tokenId] = 6129982163463555433433388108601236734763186864886120448
+    _from = 288230376151711744
+    _to = 72057594037927937
+    ownershipTokenCount[_from] = 0
+    paused = 0
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:392:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    pandaIndexToApproved[_tokenId] = 0
+    pandaIndexToOwner[_tokenId] = 0
+    _from = 0
+    _to = 72057594037927937
+    paused = 0
+    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:725:39: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    ownershipTokenCount[_owner] = 3618502788666131106986593281521497120414687020801267626233049500247285301247
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:PandaOwnership.json.
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:Pausable:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 91.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:Pausable.json.
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:SaleClockAuction:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 49.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1808:81: Warning: Integer Underflow.
+
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1800:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _type = 1
+    nonFungibleContract = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1798:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _type = 0
+    nonFungibleContract = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1381:39: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    tokenIdToAuction[_tokenId].isGen0 = 5316911983139663491615228241121378305
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1235:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _startingPrice = 0
+    _endingPrice = 0
+    _duration = 64
+    nonFungibleContract = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2:21: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _type = 1
+    nonFungibleContract = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1800:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _type = 25711008708143844408671393477458601640355247900524685364822016
+    nonFungibleContract = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1798:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _type = 0
+    nonFungibleContract = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1789:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    gen0SaleCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    tokenIdToAuction[_tokenId].isGen0 = 510423550381407695195061911147652317184
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1344:35: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    tokenIdToAuction[_tokenId].isGen0 = 345599278904078126954989835672889589760
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1496:20: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1343:9: Warning: Timestamp Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:SaleClockAuction.json.
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:SaleClockAuctionERC20:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 62.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1381:39: Warning: Integer Underflow.
+
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1961:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[_erc20Address] = 1
+    nonFungibleContract = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1235:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _startingPrice = 0
+    paused = 0
+    _endingPrice = 64
+    _erc20Address = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1594:13: Warning: Integer Overflow.
+
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1595:13: Warning: Integer Overflow.
+
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1596:13: Warning: Integer Overflow.
+
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1597:13: Warning: Integer Overflow.
+
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1343:19: Warning: Integer Overflow.
+
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1348:13: Warning: Integer Overflow.
+
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1349:13: Warning: Integer Overflow.
+
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1350:13: Warning: Integer Overflow.
+
+INFO:symExec:Flow1
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1496:20: Warning: Transaction-Ordering Dependency.
+
+Flow2
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1496:20: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:SaleClockAuctionERC20.json.
+INFO:root:contract 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:SiringClockAuction:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 52.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1381:39: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    nonFungibleContract = 0
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1235:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _startingPrice = 0
+    _endingPrice = 0
+    _duration = 64
+    nonFungibleContract = 0
+0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1344:35: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    nonFungibleContract = 0
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1496:20: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1343:9: Warning: Timestamp Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x663e4229142a27f00bafb5d087e1e730648314c3.sol:SiringClockAuction.json.

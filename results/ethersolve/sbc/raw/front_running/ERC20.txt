@@ -1,0 +1,6 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/front_running/ERC20.sol:ERC20
+offset,opcode,detection
+
+# contract /work/datasets/sbc/front_running/ERC20.sol:SafeMath
+offset,opcode,detection

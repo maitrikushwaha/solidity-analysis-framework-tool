@@ -1,0 +1,54 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+Transformed CFG build failed: An error occurred during execution
+> command: `/home/maitri/.solcx/solc-v0.4.26 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc -`
+> return code: `1`
+> stdout:
+
+> stderr:
+<stdin>:23:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function OpenAddressLottery() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+<stdin>:75:9: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+        SeedComponents s;
+        ^--------------^
+<stdin>:40:20: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            if(win>this.balance) 
+                   ^----------^
+<stdin>:41:21: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+                win=this.balance; 
+                    ^----------^
+<stdin>:42:16: Error: Operator >= not compatible with types bool and uint256
+if (BAL > 0 && winner >= win) {
+               ^-----------^
+<stdin>:53:18: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        n = uint(keccak256(uint(addr), secretSeed)[0]) % 8;
+                 ^-------------------------------^
+<stdin>:57:30: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        secretSeed = uint256(keccak256(
+                             ^ (Relevant source part starts here and spans across multiple lines).
+<stdin>:75:9: Warning: Uninitialized storage pointer. Did you mean '<type> memory s'?
+        SeedComponents s;
+        ^--------------^
+Falling back: skipping reentrancy/timestamp/TOD analysis, running overflow only.
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW (fallback) ==========
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+
+===== VERDICTS (Box) =====
+[REENTRANCY-SKIP] Transformed CFG unavailable.
+[TIMESTAMP-SKIP] Transformed CFG unavailable.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: ANALYSIS UNAVAILABLE (transformed CFG failed)
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: ANALYSIS UNAVAILABLE (transformed CFG failed)
+[SUMMARY] TOD: NOT VULNERABLE
+
+NOTE: Some pipelines were SKIPPED because the mapping transformer could not process this contract.  These vulnerabilities are recorded as -1 (N/A) in the JSON verdict — they are excluded from TP/TN/FP/FN counts rather than counted as negatives.
+
+Total analysis time: 1.29s

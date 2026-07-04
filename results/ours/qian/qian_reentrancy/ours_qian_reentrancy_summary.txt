@@ -1,0 +1,31 @@
+=================================================================
+OUR TOOL QIAN_REENTRANCY — PER-VULNERABILITY RESULTS
+=================================================================
+Total files  : 222 unique contracts
+Analysis OK  : 222  |  Partial: 0  |  Timeout: 0  |  Error: 0  |  Skipped: 0
+Batch time   : 146s (2 min)
+=================================================================
+
+  REENTRANCY
+  -------------------------------------------------------
+  Ground truth : 69 positive + 153 negative
+  Evaluated    : 222  |  Excluded (N/A): 0
+  TP=69  FP=11  TN=142  FN=0  N/A=0
+  Precision : 86.2%  [TP/(TP+FP) = 69/80]
+  Recall    : 100.0%  [TP/(TP+FN) = 69/69]
+  F1        : 92.6%
+  Accuracy  : 95.0%  [(TP+TN)/evaluated = 211/222]
+  FP files (11):
+    - reentrancy/29090.sol
+    - reentrancy/37708.sol
+    - reentrancy/38828.sol
+    - reentrancy/39151.sol
+    - reentrancy/39749.sol
+    - reentrancy/40336.sol
+    - reentrancy/40771.sol
+    - reentrancy/50007.sol
+    - reentrancy/50030.sol
+    - reentrancy/50035.sol
+    - reentrancy/50036.sol
+
+=================================================================

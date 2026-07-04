@@ -1,0 +1,28 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39019.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.kFxhQGQCd1' running
+INFO:CryticCompile:Compilation warnings/errors on 39019.sol:
+39019.sol:14:79: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (!tokenCreateContract.call.value(amount)(tokenCreateFunctionHash)) throw;
+                                                                              ^---^
+39019.sol:12:5: Warning: No visibility specified. Defaulting to "public". 
+    function CreateTokens() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 39019.sol:TokenPool:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 70.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:39019.sol:13:39: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    rewardPercentage = 229
+INFO:symExec:39019.sol:14:14: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39019.sol:TokenPool.json.

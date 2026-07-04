@@ -1,0 +1,73 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39327.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.VWcRWQEGjv' running
+INFO:CryticCompile:Compilation warnings/errors on 39327.sol:
+39327.sol:21:73: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+            if (!p.recipient.call.value(p.amount)(transactionBytecode)) throw;
+                                                                        ^---^
+39327.sol:18:9: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+        Proposal p = proposals[id];
+        ^--------^
+39327.sol:17:5: Warning: No visibility specified. Defaulting to "public". 
+    function executeProposal(uint256 id, bytes transactionBytecode) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 39327.sol:Congress:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 84.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:39327.sol:21:18: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    majorityMargin = 0
+    proposals[id] = 2
+    id = 0
+INFO:symExec:39327.sol:7:5: Warning: Integer Overflow.
+
+39327.sol:17:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    transactionBytecode = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+39327.sol:18:22: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    proposals[id] = 35909400666358905682514721682884269739949275170738095011956039520101960671581
+    id = 20884409294335581046830075856103119250180168295534781480806341367770361364488
+39327.sol:20:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    proposals[id] = 35856271468735439429288084652500871334999687210959392628355587785288814584157
+    id = 1837183238832819434043982902869181042618277379048465426251398619465500327936
+39327.sol:24:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    majorityMargin = 0
+    proposals[id] = 35856271468735439429288084652512289316541334890007858916111183746379876557149
+    id = 1837183238832819434043982902880599024159925058096931714006994580556562300928
+39327.sol:21:41: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    majorityMargin = 0
+    proposals[id] = 35856271468735439429288084652512289317902464357691612769964682176106949402973
+    id = 1837183238832819434043982902880599025521054525780685567860493010283635146752
+39327.sol:22:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    majorityMargin = 0
+    proposals[id] = 35856271468735439429288084652512289317902464357691612769964682176106949402973
+    id = 1837183238832819434043982902880599025521054525780685567860493010283635146752
+39327.sol:6:24: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    majorityMargin = 0
+    proposals[id] = 1
+    id = 0
+INFO:symExec:39327.sol:21:18: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39327.sol:Congress.json.

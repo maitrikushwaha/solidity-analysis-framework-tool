@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "79.7",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "49728.sol:11:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    totalBonusTokensIssued = 43506293781459965876291732631124366119718670827671737732685695108376871912620"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

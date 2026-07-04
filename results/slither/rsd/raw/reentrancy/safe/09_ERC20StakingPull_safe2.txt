@@ -1,0 +1,22 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/09_ERC20StakingPull_safe2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/09_ERC20StakingPull_safe2.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+StakableToken.balances (datasets/rsd/reentrancy/safe/09_ERC20StakingPull_safe2.sol#19) is never used in StakableToken (datasets/rsd/reentrancy/safe/09_ERC20StakingPull_safe2.sol#15-58)
+StakableToken.allowances (datasets/rsd/reentrancy/safe/09_ERC20StakingPull_safe2.sol#20) is never used in StakableToken (datasets/rsd/reentrancy/safe/09_ERC20StakingPull_safe2.sol#15-58)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-state-variable
+
+StakableToken.totalSupply (datasets/rsd/reentrancy/safe/09_ERC20StakingPull_safe2.sol#16) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+
+StakableToken.token (datasets/rsd/reentrancy/safe/09_ERC20StakingPull_safe2.sol#17) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+/work/datasets/rsd/reentrancy/safe/09_ERC20StakingPull_safe2.sol analyzed (2 contracts with 93 detectors), 5 result(s) found

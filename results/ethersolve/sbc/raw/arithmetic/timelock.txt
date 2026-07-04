@@ -1,0 +1,5 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/arithmetic/timelock.sol:TimeLock
+offset,opcode,detection
+608,608: SLOAD,Store read after unsafe call
+677,677: SSTORE,Store write after unsafe call

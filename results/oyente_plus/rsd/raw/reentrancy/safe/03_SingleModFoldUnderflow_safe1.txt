@@ -1,0 +1,62 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 03_SingleModFoldUnderflow_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.42NMaeGzar' running
+INFO:root:contract 03_SingleModFoldUnderflow_safe1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 81.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:03_SingleModFoldUnderflow_safe1.sol:6:5: Warning: Integer Underflow.
+
+03_SingleModFoldUnderflow_safe1.sol:31:6079: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 59849323381205851970197521066982367775278984893830421173511412372910683283456
+    balances[msg.sender] = 86844066927987146567678238756515930889952488499230423029593188005934847229953
+    balances[msg.sender] = 0
+03_SingleModFoldUnderflow_safe1.sol:31:3357: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 74139858155478392212305118115190261375989954728595555671413688123558
+    balances[msg.sender] = 0
+03_SingleModFoldUnderflow_safe1.sol:10:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 3646772341702585256259926041533383816667926763151277530791191319876911235200
+INFO:symExec:03_SingleModFoldUnderflow_safe1.sol:31:715: Warning: Integer Overflow.
+
+03_SingleModFoldUnderflow_safe1.sol:18:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 43422034326929074898444966216987514584180857044613281620628220260113279090688
+    balances[msg.sender] = 32566525098100903636964328757425739074082690773216935329846743012968868380679
+03_SingleModFoldUnderflow_safe1.sol:17:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 74139858155478392212305118115190261375989954728595555671413673558592
+    balances[msg.sender] = 0
+03_SingleModFoldUnderflow_safe1.sol:31:3303: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 74139858155478392212305118115190261375989954728595555671413637775458
+    balances[msg.sender] = 0
+03_SingleModFoldUnderflow_safe1.sol:31:1584: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 74139864583230569248266220283038630740640364817407530802584980816470
+    balances[msg.sender] = 0
+03_SingleModFoldUnderflow_safe1.sol:31:3090: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 74139864583230569248266220283038630740640364817407530802584980816470
+    balances[msg.sender] = 0
+INFO:symExec:03_SingleModFoldUnderflow_safe1.sol:18:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:03_SingleModFoldUnderflow_safe1.sol:18:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 03_SingleModFoldUnderflow_safe1.sol:C.json.

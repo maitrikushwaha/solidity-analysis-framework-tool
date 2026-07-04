@@ -1,0 +1,14 @@
+{
+  "filename": "27121.sol",
+  "reentrancy": -1,
+  "overflow": 0,
+  "timestamp": -1,
+  "tod": -1,
+  "duration_s": 0.03,
+  "error": "transform_failed: An error occurred during execution\n> command: `/home/maitri/.solcx/solc-v0.4.26 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc -`\n> return code: `1`\n> stdout:\n\n> stderr:\n<stdin>:17:13: Warning: This declaration shadows a builtin symbol.\n            Transaction tx = transactions;\n            ^------------^\n<stdin>:17:13: Error: Identifier not found or not unique.\n            Transaction tx = transactions;\n            ^---------^\n<stdin>:17:30: Error: Undeclared identifier. Did you mean \"transactionId\"?\n            Transaction tx = transactions;\n                             ^----------^",
+  "skipped_pipelines": [
+    "reentrancy",
+    "timestamp",
+    "tod"
+  ]
+}

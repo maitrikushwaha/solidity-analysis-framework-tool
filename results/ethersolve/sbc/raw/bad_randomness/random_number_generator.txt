@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/bad_randomness/random_number_generator.sol:RandomNumberGenerator
+offset,opcode,detection

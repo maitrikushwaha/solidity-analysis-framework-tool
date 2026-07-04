@@ -1,0 +1,40 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 29590.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.Verzxh5Z6m' running
+INFO:root:contract 29590.sol:TrustWallet:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 29.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:29590.sol:15:56: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    transactions.length = 0
+29590.sol:16:17: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    transactions.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+INFO:symExec:29590.sol:15:43: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    transactions.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+29590.sol:16:52: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    transactions.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+29590.sol:16:71: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    transactions.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+29590.sol:16:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    transactions.length = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+INFO:symExec:29590.sol:16:17: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 29590.sol:TrustWallet.json.

@@ -1,0 +1,41 @@
+{
+ "evm_code_coverage": "96.3",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "buggy_6.sol:608:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    channelId = 4294967296\n    stopped = 0\n    _master = 0",
+   "buggy_6.sol:610:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    channelId = 4294967296\n    stopped = 0\n    _master = 0",
+   "buggy_6.sol:579:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stopped = 0\n    addressMap[to] = 0\n    to = 4294967296\n    _master = 0",
+   "buggy_6.sol:581:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stopped = 0\n    addressMap[to] = 0\n    to = 1073742146\n    _master = 0",
+   "buggy_6.sol:583:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stopped = 0\n    addressMap[to] = 0\n    to = 1073744194\n    _master = 0",
+   "buggy_6.sol:550:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    channelId = 4294967296\n    stopped = 0\n    _master = 0",
+   "buggy_6.sol:552:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    channelId = 4294967296\n    stopped = 0\n    _master = 0",
+   "buggy_6.sol:525:16: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    channelId = 4294967296",
+   "buggy_6.sol:523:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    channelId = 67"
+  ],
+  "integer_overflow": [
+   "buggy_6.sol:610:14: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    channelId = 4294967296\n    stopped = 0\n    _master = 0",
+   "buggy_6.sol:2:78: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    channelId = 35905\n    stopped = 0\n    _master = 0",
+   "buggy_6.sol:9:21: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    channelId = 16911890\n    stopped = 0\n    _master = 0",
+   "buggy_6.sol:2:42: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    stopped = 0\n    addressMap[to] = 0\n    to = 490733542\n    _master = 0",
+   "buggy_6.sol:579:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    stopped = 0\n    addressMap[to] = 0\n    to = 490733542\n    _master = 0",
+   "buggy_6.sol:581:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    stopped = 0\n    addressMap[to] = 0\n    to = 1073742146\n    _master = 0",
+   "buggy_6.sol:583:14: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    stopped = 0\n    addressMap[to] = 0\n    to = 1073742146\n    _master = 0",
+   "buggy_6.sol:552:14: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    channelId = 4294967296\n    stopped = 0\n    _master = 0",
+   "buggy_6.sol:523:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    channelId = 4294967296"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "buggy_6.sol:421:9: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "buggy_6.sol:24:9: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

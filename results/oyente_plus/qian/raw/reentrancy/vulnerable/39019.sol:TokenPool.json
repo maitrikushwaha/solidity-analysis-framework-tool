@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "70.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "39019.sol:13:39: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    rewardPercentage = 229"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "39019.sol:14:14: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

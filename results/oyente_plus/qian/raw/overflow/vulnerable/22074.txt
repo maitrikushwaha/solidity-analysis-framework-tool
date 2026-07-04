@@ -1,0 +1,20 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 22074.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.BymdjCD20Q' running
+INFO:root:contract 22074.sol:SIMPLE_PIGGY_BANK:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 84.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:22074.sol:12:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    Bal[msg.sender] = 0
+    MinSum = 0
+    _am = 1
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 22074.sol:SIMPLE_PIGGY_BANK.json.

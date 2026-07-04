@@ -1,0 +1,78 @@
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Analysis started at: 2026-06-21 06:59:49 PM
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Callgraph generation started!
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Callgraph generation finished!
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Value Range Analysis started
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Generating return summary for overflowaddtostate
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Return summary generated for overflowaddtostate
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Range graph generated
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Processed function overflowaddtostate
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Generating return summary for overflowmultostate
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Return summary generated for overflowmultostate
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Range graph generated
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Processed function overflowmultostate
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Generating return summary for underflowtostate
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Return summary generated for underflowtostate
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Range graph generated
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Processed function underflowtostate
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Generating return summary for overflowlocalonly
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Return summary generated for overflowlocalonly
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Processed function overflowlocalonly
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Generating return summary for overflowmulocalonly
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Return summary generated for overflowmulocalonly
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Processed function overflowmulocalonly
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Generating return summary for underflowlocalonly
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Return summary generated for underflowlocalonly
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Processed function underflowlocalonly
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Range graph generated
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Value Range Analysis took 0.001822 seconds
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Value Range Analysis finished
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Dependency detection started!
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Dependency detection finished!
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Static Analysis took 0.058134 seconds
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Dependency does not exist
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Symbolic execution is not needed!
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Analysis finished!
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Analysis took 0.058330 seconds
+[INFO] | 2026-06-21 06:59:49 PM | analyzer.overflow_single_tx | Analysis finished at: 2026-06-21 06:59:49 PM
+[36m[#] Analysing started: overflow_single_tx.sol[0m
+[36m[#] Interprocedural CFG generation started for overflowaddtostate[0m
+[36m[#] Interprocedural CFG generated for overflowaddtostate[0m
+[36m[#] Interprocedural CFG generation started for overflowmultostate[0m
+[36m[#] Interprocedural CFG generated for overflowmultostate[0m
+[36m[#] Interprocedural CFG generation started for underflowtostate[0m
+[36m[#] Interprocedural CFG generated for underflowtostate[0m
+[36m[#] Interprocedural CFG generation started for overflowlocalonly[0m
+[36m[#] Interprocedural CFG generated for overflowlocalonly[0m
+[36m[#] Interprocedural CFG generation started for overflowmulocalonly[0m
+[36m[#] Interprocedural CFG generated for overflowmulocalonly[0m
+[36m[#] Interprocedural CFG generation started for underflowlocalonly[0m
+[36m[#] Interprocedural CFG generated for underflowlocalonly[0m
+[36m[#] SDG generation started for overflowaddtostate[0m
+[36m[#] SDG generated for overflowaddtostate[0m
+[36m[#] SDG generation started for overflowmultostate[0m
+[36m[#] SDG generated for overflowmultostate[0m
+[36m[#] SDG generation started for underflowtostate[0m
+[36m[#] SDG generated for underflowtostate[0m
+[36m[#] SDG generation started for overflowlocalonly[0m
+[36m[#] SDG generated for overflowlocalonly[0m
+[36m[#] SDG generation started for overflowmulocalonly[0m
+[36m[#] SDG generated for overflowmulocalonly[0m
+[36m[#] SDG generation started for underflowlocalonly[0m
+[36m[#] SDG generated for underflowlocalonly[0m
+[36m[#] Analysis took 0.058330 seconds[0m
+[36m[#] Analysis completed: overflow_single_tx.sol [0m
+
+=== dependency_info.json ===
+{}

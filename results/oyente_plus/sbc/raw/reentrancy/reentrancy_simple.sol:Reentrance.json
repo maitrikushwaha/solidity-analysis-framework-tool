@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "82.9",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "reentrancy_simple.sol:17:10: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    userBalance[msg.sender] = 58145359774152284933456109867463921104630326686651346578866921971682764303017"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "reentrancy_simple.sol:24:17: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

@@ -1,0 +1,34 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50785.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.voimDdVvcB' running
+INFO:CryticCompile:Compilation warnings/errors on 50785.sol:
+50785.sol:17:20: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function claim(address _payout, address _fee) public {
+                   ^-------------^
+50785.sol:17:37: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function claim(address _payout, address _fee) public {
+                                    ^----------^
+
+INFO:root:contract 50785.sol:OysterPearl:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50785.sol:OysterPearl.json.
+INFO:root:contract 50785.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50785.sol:SafeMath.json.

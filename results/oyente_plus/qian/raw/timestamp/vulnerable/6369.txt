@@ -1,0 +1,25 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 6369.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.gKoFcYjGUK' running
+INFO:CryticCompile:Compilation warnings/errors on 6369.sol:
+6369.sol:14:17: Warning: Function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.
+                total_lemos = total_lemos - nodes[i].end_stamp;
+                ^---------^
+
+INFO:root:contract 6369.sol:LemoCoin:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 74.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:6369.sol:10:5: Warning: Integer Underflow.
+
+INFO:symExec:6369.sol:11:9: Warning: Integer Overflow.
+
+6369.sol:10:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 6369.sol:LemoCoin.json.

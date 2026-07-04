@@ -1,0 +1,45 @@
+/work/datasets/rsd/reentrancy/vulnerable/00_BasicError_ree1.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlline 7:27 mismatched input '(' expecting {';', '='}
+line 7:36 missing ')' at 'caller'
+line 7:42 mismatched input ',' expecting {';', '='}
+line 7:55 extraneous input ')' expecting {';', '='}
+line 12:42 no viable alternative at input '.call{'
+line 12:42 missing ';' at '{'
+ruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 4
+column: 0
+content: contractC{mapping(address=>uint256)publicbalances;errorInsufficientFunds(address<missing ')'>caller,uint256amt);functionwithdraw()public{if(balances[msg.sender]<0)revertInsufficientFunds(msg.sender,balances[msg.sender]);(boolsuccess,)=msg.sender.call<missing ';'>{value:balances[msg.sender]}("");require(success,"Call failed");balances[msg.sender]=0;}functiondeposit()publicpayable{balances[msg.sender]+=msg.value;}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 7
+column: 4
+content: errorInsufficientFunds
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 7
+column: 27
+content: (address<missing ')'>caller,
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 7
+column: 44
+content: uint256amt);
+
+SOLIDITY_VISIBILITY :3
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_LOCKED_MONEY :1

@@ -1,0 +1,122 @@
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Analysis started at: 2026-06-21 07:04:18 PM
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Callgraph generation started!
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Callgraph generation finished!
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Value Range Analysis started
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Generating return summary for depositFunds
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Return summary generated for depositFunds
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Range graph generated
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Processed function depositFunds
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Generating return summary for withdrawFunds
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Return summary generated for withdrawFunds
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Range graph generated
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Processed function withdrawFunds
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Range graph generated
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Value Range Analysis took 0.003639 seconds
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Value Range Analysis finished
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Dependency detection started!
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | DAO dependency detected in file etherstore.sol in contract EtherStore in by composing functions withdrawFunds and withdrawFunds
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | TOD dependency detected in file etherstore.sol in contract EtherStore in by composing functions withdrawFunds and depositFunds
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | TOD dependency detected in file etherstore.sol in contract EtherStore in by composing functions withdrawFunds and withdrawFunds
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Dependency detection finished!
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Static Analysis took 0.340189 seconds
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Dependency exists
+[INFO] | 2026-06-21 07:04:18 PM | analyzer.etherstore | Invoking symbolic executor!
+[36m[#] Analysing started: etherstore.sol[0m
+[36m[#] Interprocedural CFG generation started for depositFunds[0m
+[36m[#] Interprocedural CFG generated for depositFunds[0m
+[36m[#] Interprocedural CFG generation started for withdrawFunds[0m
+[36m[#] Interprocedural CFG generated for withdrawFunds[0m
+[36m[#] SDG generation started for depositFunds[0m
+[36m[#] SDG generated for depositFunds[0m
+[36m[#] SDG generation started for withdrawFunds[0m
+[36m[#] SDG generated for withdrawFunds[0m
+[INFO] | 2026-06-21 07:04:21 PM | analyzer.etherstore | Symbolic execution took 3.044108 seconds
+[INFO] | 2026-06-21 07:04:21 PM | analyzer.etherstore | Symbolic execution finished!
+[INFO] | 2026-06-21 07:04:21 PM | analyzer.etherstore | Analysis finished!
+[INFO] | 2026-06-21 07:04:21 PM | analyzer.etherstore | Analysis took 3.385630 seconds
+[INFO] | 2026-06-21 07:04:21 PM | analyzer.etherstore | Analysis finished at: 2026-06-21 07:04:21 PM
+[36m[#] Analysis took 3.385630 seconds[0m
+[36m[#] Analysis completed: etherstore.sol [0m
+
+=== dependency_info.json ===
+{
+    "etherstore.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawFunds",
+                "withdrawFunds"
+            ],
+            "from_function": "withdrawFunds",
+            "to_function": "withdrawFunds",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: withdrawFunds\nNode: \nEXPRESSION require(bool)(balances[msg.sender] >= _weiToWithdraw)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\"",
+                        "\"BlockID: 9\nFunction: withdrawFunds\nNode: \nEXPRESSION balances[msg.sender] -= _weiToWithdraw\nIRS: \nREF_5 = REF_5 - _weiToWithdraw\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: withdrawFunds\nNode: \nEXPRESSION require(bool)(now >= lastWithdrawTime[msg.sender] + 604800)\nIRS: \nTMP_6 = SOLIDITY_CALL require(bool)(TMP_5)\"",
+                        "\"BlockID: 10\nFunction: withdrawFunds\nNode: \nEXPRESSION lastWithdrawTime[msg.sender] = now\nIRS: \nREF_6 := now\""
+                    ],
+                    "state_variable": "lastWithdrawTime"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawFunds",
+                "depositFunds"
+            ],
+            "First_function": "depositFunds",
+            "Second_function": "withdrawFunds",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 2\nFunction: depositFunds\nNode: \nEXPRESSION balances[msg.sender] += msg.value\nIRS: \nREF_0 = REF_0 + msg.value\"",
+                        "\"BlockID: 4\nFunction: withdrawFunds\nNode: \nEXPRESSION require(bool)(balances[msg.sender] >= _weiToWithdraw)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawFunds",
+                "withdrawFunds"
+            ],
+            "First_function": "withdrawFunds",
+            "Second_function": "withdrawFunds",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: withdrawFunds\nNode: \nEXPRESSION balances[msg.sender] -= _weiToWithdraw\nIRS: \nREF_5 = REF_5 - _weiToWithdraw\"",
+                        "\"BlockID: 4\nFunction: withdrawFunds\nNode: \nEXPRESSION require(bool)(balances[msg.sender] >= _weiToWithdraw)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: withdrawFunds\nNode: \nEXPRESSION lastWithdrawTime[msg.sender] = now\nIRS: \nREF_6 := now\"",
+                        "\"BlockID: 6\nFunction: withdrawFunds\nNode: \nEXPRESSION require(bool)(now >= lastWithdrawTime[msg.sender] + 604800)\nIRS: \nTMP_6 = SOLIDITY_CALL require(bool)(TMP_5)\""
+                    ],
+                    "state_variable": "lastWithdrawTime"
+                }
+            ]
+        }
+    ]
+}

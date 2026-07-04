@@ -1,0 +1,22 @@
+{
+ "evm_code_coverage": "75.7",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "14_DelegateCall_ree2.sol:6:5: Warning: Integer Underflow.\n",
+   "14_DelegateCall_ree2.sol:24:47: Warning: Integer Underflow.\n",
+   "14_DelegateCall_ree2.sol:28:3480: Warning: Integer Underflow.\n",
+   "14_DelegateCall_ree2.sol:25:9: Warning: Integer Underflow.\n",
+   "14_DelegateCall_ree2.sol:24:28: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "14_DelegateCall_ree2.sol:28:873: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

@@ -1,0 +1,29 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 10295.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.S2t0MCGq8I' running
+INFO:CryticCompile:Compilation warnings/errors on 10295.sol:
+10295.sol:27:5: Warning: Function state mutability can be restricted to view
+    function withdrawDirectDebit(address debtor) public returns (uint) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 10295.sol:ERC20Like:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 59.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:10295.sol:30:26: Warning: Integer Underflow.
+
+INFO:symExec:10295.sol:29:37: Warning: Integer Overflow.
+
+10295.sol:29:37: Warning: Integer Overflow.
+
+10295.sol:30:69: Warning: Integer Overflow.
+
+10295.sol:30:45: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 10295.sol:ERC20Like.json.

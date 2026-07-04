@@ -1,0 +1,73 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.7iz3kZf1G4' running
+INFO:CryticCompile:Compilation warnings/errors on 0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:87:5: Warning: This declaration shadows an existing declaration.
+    uint256 secret = uint256(hash);
+    ^------------^
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:26:1: The shadowed declaration is here:
+uint256 public secret;
+^-------------------^
+
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:100:2: Warning: Return value of low-level calls not used.
+	firstTarget.call.value(msg.value)();
+	^---------------------------------^
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:106:2: Warning: Return value of low-level calls not used.
+	secondTarget.call.value(msg.value)();
+	^----------------------------------^
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:133:2: Warning: Return value of low-level calls not used.
+	owner.call.value(1 wei)();
+	^-----------------------^
+
+INFO:root:contract 0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:DrainMe:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 95.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:73:2: Warning: Integer Underflow.
+
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:86:40: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    approvedPlayers[msg.sender] = 1
+    owner = 0
+INFO:symExec:0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:110:2: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    approvedPlayers[msg.sender] = 64
+    _index = 65374921959587683254786282635419885514707946659104283049243775229656056250536
+    seed[_index] = 65375612136223296053735666427804282998944507252542799292365811687419182923953
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:28:1: Warning: Integer Overflow.
+
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:2:21: Warning: Integer Overflow.
+
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:73:2: Warning: Integer Overflow.
+
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:27:1: Warning: Integer Overflow.
+
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:118:27: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    approvedPlayers[msg.sender] = 1
+    seed[1] = 2
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:14:1: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    approvedPlayers[msg.sender] = 64
+    _add = 0
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:22:1: Warning: Integer Overflow.
+
+INFO:symExec:Flow1
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:100:2: Warning: Transaction-Ordering Dependency.
+
+Flow2
+0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:106:2: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:133:2: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol:DrainMe.json.

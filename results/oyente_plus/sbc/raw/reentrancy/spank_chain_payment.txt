@@ -1,0 +1,88 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc spank_chain_payment.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.ceESK09Z10' running
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc spank_chain_payment.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --libraries ECTools:0x0000000000000000000000000000000000000001 --allow-paths .,/tmp/tmp.ceESK09Z10' running
+INFO:root:contract spank_chain_payment.sol:ECTools:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 16.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:spank_chain_payment.sol:7:57: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _hashedMsg = 1
+    _addr = 1
+spank_chain_payment.sol:2:24: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _hashedMsg = 1
+    _addr = 1024
+spank_chain_payment.sol:67:33: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _hashedMsg = 730750818665451459101842416358141509827966271488
+    _addr = 5316911983139663491615228241121378304
+spank_chain_payment.sol:91:6: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _hashedMsg = 81129638414606681695789005144064
+    _addr = 324518553658426726783156020576256
+INFO:symExec:spank_chain_payment.sol:91:6: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _sig = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+spank_chain_payment.sol:66:10: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _hashedMsg = 1
+    _addr = 1
+spank_chain_payment.sol:67:43: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _hashedMsg = 1
+    _addr = 1
+spank_chain_payment.sol:67:33: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _hashedMsg = 1
+    _addr = 1024
+spank_chain_payment.sol:173:32: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _hashedMsg = 81129638414606681695789005144064
+    _addr = 324518553658426726783156020576256
+spank_chain_payment.sol:2:87: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _hashedMsg = 401734511064747568885490523085290650630550748445698208825344
+    _addr = 5708990770823839524233143877797980545530986496
+spank_chain_payment.sol:2:112: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _hashedMsg = 401734511064747568885490523085290650630550748445698208825344
+    _addr = 5708990770823839524233143877797980545530986496
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to spank_chain_payment.sol:ECTools.json.
+INFO:root:contract spank_chain_payment.sol:HumanStandardToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 11.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:spank_chain_payment.sol:233:6: Warning: Integer Underflow.
+
+INFO:symExec:spank_chain_payment.sol:233:6: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to spank_chain_payment.sol:HumanStandardToken.json.
+INFO:root:contract spank_chain_payment.sol:LedgerChannel:
+INFO:symExec:	============ Results ===========

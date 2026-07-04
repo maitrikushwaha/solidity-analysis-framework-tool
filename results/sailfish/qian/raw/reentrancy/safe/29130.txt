@@ -1,0 +1,34 @@
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Analysis started at: 2026-06-21 07:11:08 PM
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Callgraph generation started!
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Value Range Analysis started
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Generating return summary for withdrawEther
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Return summary generated for withdrawEther
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Processed function withdrawEther
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Value Range Analysis took 0.000188 seconds
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Dependency detection started!
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Dependency detection finished!
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Static Analysis took 0.033314 seconds
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Dependency does not exist
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Analysis finished!
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Analysis took 0.033444 seconds
+[INFO] | 2026-06-21 07:11:08 PM | analyzer.29130  | Analysis finished at: 2026-06-21 07:11:08 PM
+[36m[#] Analysing started: 29130.sol[0m
+[36m[#] Interprocedural CFG generation started for withdrawEther[0m
+[36m[#] Interprocedural CFG generated for withdrawEther[0m
+[36m[#] SDG generation started for withdrawEther[0m
+[36m[#] SDG generated for withdrawEther[0m
+[36m[#] Analysis took 0.033444 seconds[0m
+[36m[#] Analysis completed: 29130.sol [0m
+
+=== dependency_info.json ===
+{}

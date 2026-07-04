@@ -1,0 +1,50 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 15_ReadOnlyStaticcall_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.tnyZwHRXKK' running
+INFO:root:contract 15_ReadOnlyStaticcall_safe1.sol:A:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 69.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:15_ReadOnlyStaticcall_safe1.sol:29:45: Warning: Integer Underflow.
+
+15_ReadOnlyStaticcall_safe1.sol:85:2287: Warning: Integer Underflow.
+
+15_ReadOnlyStaticcall_safe1.sol:33:27: Warning: Integer Underflow.
+
+15_ReadOnlyStaticcall_safe1.sol:85:1407: Warning: Integer Underflow.
+
+15_ReadOnlyStaticcall_safe1.sol:34:9: Warning: Integer Underflow.
+
+15_ReadOnlyStaticcall_safe1.sol:30:9: Warning: Integer Underflow.
+
+15_ReadOnlyStaticcall_safe1.sol:22:5: Warning: Integer Underflow.
+
+INFO:symExec:15_ReadOnlyStaticcall_safe1.sol:40:23: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 15_ReadOnlyStaticcall_safe1.sol:A.json.
+INFO:root:contract 15_ReadOnlyStaticcall_safe1.sol:B:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 88.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:15_ReadOnlyStaticcall_safe1.sol:52:5: Warning: Integer Underflow.
+
+15_ReadOnlyStaticcall_safe1.sol:51:5: Warning: Integer Underflow.
+
+15_ReadOnlyStaticcall_safe1.sol:63:5: Warning: Integer Underflow.
+
+15_ReadOnlyStaticcall_safe1.sol:60:5: Warning: Integer Underflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 15_ReadOnlyStaticcall_safe1.sol:B.json.

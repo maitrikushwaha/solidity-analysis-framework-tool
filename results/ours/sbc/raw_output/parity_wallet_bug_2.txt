@@ -1,0 +1,126 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+Transformed CFG build failed: An error occurred during execution
+> command: `/home/maitri/.solcx/solc-v0.4.26 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc -`
+> return code: `1`
+> stdout:
+
+> stderr:
+<stdin>:112:5: Warning: Use of the "var" keyword is deprecated.
+    var pending = m_pending;
+    ^---------^
+<stdin>:176:5: Warning: Use of the "var" keyword is deprecated.
+    var pending = m_pending;
+    ^---------^
+<stdin>:202:54: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+  modifier only_uninitialized { if (m_numOwners > 0) throw; _; }
+                                                     ^---^
+<stdin>:231:11: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+          throw;
+          ^---^
+<stdin>:262:11: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+          throw;
+          ^---^
+<stdin>:279:5: Warning: Use of the "var" keyword is deprecated.
+    var pending = m_pending;
+    ^---------^
+<stdin>:112:19: Error: Undeclared identifier. Did you mean "pending"?
+    var pending = m_pending;
+                  ^-------^
+<stdin>:176:19: Error: Undeclared identifier. Did you mean "pending"?
+    var pending = m_pending;
+                  ^-------^
+<stdin>:238:11: Error: Undeclared identifier.
+      if (m_txs.to == 0 && m_txs.value == 0 && m_txs.data.length == 0) {
+          ^---^
+<stdin>:238:28: Error: Undeclared identifier.
+      if (m_txs.to == 0 && m_txs.value == 0 && m_txs.data.length == 0) {
+                           ^---^
+<stdin>:238:48: Error: Undeclared identifier.
+      if (m_txs.to == 0 && m_txs.value == 0 && m_txs.data.length == 0) {
+                                               ^---^
+<stdin>:239:9: Error: Undeclared identifier.
+        m_txs.to = _to;
+        ^---^
+<stdin>:240:9: Error: Undeclared identifier.
+        m_txs.value = _value;
+        ^---^
+<stdin>:241:9: Error: Undeclared identifier.
+        m_txs.data = _data;
+        ^---^
+<stdin>:256:9: Error: Undeclared identifier.
+    if (m_txs.to != 0 || m_txs.value != 0 || m_txs.data.length != 0) {
+        ^---^
+<stdin>:256:26: Error: Undeclared identifier.
+    if (m_txs.to != 0 || m_txs.value != 0 || m_txs.data.length != 0) {
+                         ^---^
+<stdin>:256:46: Error: Undeclared identifier.
+    if (m_txs.to != 0 || m_txs.value != 0 || m_txs.data.length != 0) {
+                                             ^---^
+<stdin>:258:11: Error: Undeclared identifier.
+      if (m_txs.to == 0) {
+          ^---^
+<stdin>:259:26: Error: Undeclared identifier.
+        created = create(m_txs.value, m_txs.data);
+                         ^---^
+<stdin>:259:39: Error: Undeclared identifier.
+        created = create(m_txs.value, m_txs.data);
+                                      ^---^
+<stdin>:261:14: Error: Undeclared identifier.
+        if (!m_txs.to.value(m_txs.value)(m_txs.data))
+             ^---^
+<stdin>:261:29: Error: Undeclared identifier.
+        if (!m_txs.to.value(m_txs.value)(m_txs.data))
+                            ^---^
+<stdin>:261:42: Error: Undeclared identifier.
+        if (!m_txs.to.value(m_txs.value)(m_txs.data))
+                                         ^---^
+<stdin>:265:37: Error: Undeclared identifier.
+      MultiTransact(msg.sender, _h, m_txs.value, m_txs.to, m_txs.data, created);
+                                    ^---^
+<stdin>:265:50: Error: Undeclared identifier.
+      MultiTransact(msg.sender, _h, m_txs.value, m_txs.to, m_txs.data, created);
+                                                 ^---^
+<stdin>:265:60: Error: Undeclared identifier.
+      MultiTransact(msg.sender, _h, m_txs.value, m_txs.to, m_txs.data, created);
+                                                           ^---^
+<stdin>:266:14: Error: Undeclared identifier.
+      delete m_txs;
+             ^---^
+<stdin>:279:19: Error: Undeclared identifier. Did you mean "pending"?
+    var pending = m_pending;
+                  ^-------^
+<stdin>:297:31: Error: Undeclared identifier. Did you mean "pending"?
+        delete m_pendingIndex[m_pending[_operation].index];
+                              ^-------^
+<stdin>:298:16: Error: Undeclared identifier. Did you mean "pending"?
+        delete m_pending;
+               ^-------^
+<stdin>:349:14: Error: Undeclared identifier.
+      delete m_txs;
+             ^---^
+<stdin>:352:16: Error: Undeclared identifier.
+        delete m_pending;
+               ^-------^
+Falling back: skipping reentrancy/timestamp/TOD analysis, running overflow only.
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW (fallback) ==========
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+Overflow analysis also failed: 'statements'
+
+===== VERDICTS (Box) =====
+[REENTRANCY] State update after external call in function 'revoke'. The .call{value:} forwards unlimited gas, allowing re-entry before state is updated.
+[TIMESTAMP] block.timestamp/now used in arithmetic that computes a value.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: VULNERABLE
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: VULNERABLE
+[SUMMARY] TOD: NOT VULNERABLE
+
+Total analysis time: 0.56s
+

@@ -1,0 +1,71 @@
+/work/datasets/qian/reentrancy/safe/38250.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_BALANCE_EQUALITY
+patternId: 5094ad
+severity: 1
+line: 9
+column: 6
+content: 0==this.balance
+
+ruleId: SOLIDITY_CALL_WITHOUT_DATA
+patternId: om991k
+severity: 2
+line: 10
+column: 25
+content: call.value(this.balance)()
+
+ruleId: SOLIDITY_DEPRECATED_CONSTRUCTIONS
+patternId: 49bd2a
+severity: 1
+line: 9
+column: 25
+content: throw
+
+ruleId: SOLIDITY_DEPRECATED_CONSTRUCTIONS
+patternId: 49bd2a
+severity: 1
+line: 10
+column: 53
+content: throw
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_REVERT_REQUIRE
+patternId: c56b12
+severity: 1
+line: 9
+column: 2
+content: if(0==this.balance)throw;
+
+ruleId: SOLIDITY_REVERT_REQUIRE
+patternId: c56b12
+severity: 1
+line: 10
+column: 2
+content: if(!devETHDestination.call.value(this.balance)())throw;
+
+ruleId: SOLIDITY_UPGRADE_TO_050
+patternId: 83k1no
+severity: 1
+line: 10
+column: 25
+content: call.value(this.balance)()
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: 910067
+severity: 1
+line: 8
+column: 1
+content: functionwithdrawFunds(){if(0==this.balance)throw;if(!devETHDestination.call.value(this.balance)())throw;}
+
+SOLIDITY_VISIBILITY :1
+SOLIDITY_DEPRECATED_CONSTRUCTIONS :2
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_REVERT_REQUIRE :2
+SOLIDITY_UPGRADE_TO_050 :1
+SOLIDITY_CALL_WITHOUT_DATA :1
+SOLIDITY_BALANCE_EQUALITY :1

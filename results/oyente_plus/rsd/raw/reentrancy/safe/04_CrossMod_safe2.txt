@@ -1,0 +1,41 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 04_CrossMod_safe2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.dlwAcAfAyU' running
+INFO:root:contract 04_CrossMod_safe2.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 70.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:04_CrossMod_safe2.sol:6:5: Warning: Integer Underflow.
+
+04_CrossMod_safe2.sol:10:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 3399638138988523297709936530228542448311305487079783531700604108928
+INFO:symExec:04_CrossMod_safe2.sol:33:582: Warning: Integer Overflow.
+
+04_CrossMod_safe2.sol:23:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 20568806966515075526937114920206594141566049330645084057716654082
+    balances[msg.sender] = 0
+04_CrossMod_safe2.sol:17:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+    flag = 848086591093624478199982800356600887598521498496082015771274783680737837056
+04_CrossMod_safe2.sol:33:3315: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+    flag = 848086591093624478199982800356600887598521498496082015771274783680737837056
+INFO:symExec:04_CrossMod_safe2.sol:24:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:04_CrossMod_safe2.sol:24:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 04_CrossMod_safe2.sol:C.json.

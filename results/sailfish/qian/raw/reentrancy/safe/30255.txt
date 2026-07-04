@@ -1,0 +1,42 @@
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Analysis started at: 2026-06-21 07:11:20 PM
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Callgraph generation started!
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Value Range Analysis started
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Processed function onlyOwner
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Generating return summary for temporaryEscapeHatch
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Return summary generated for temporaryEscapeHatch
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Processed function temporaryEscapeHatch
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Value Range Analysis took 0.000279 seconds
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Dependency detection started!
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Dependency detection finished!
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Static Analysis took 0.039104 seconds
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Dependency does not exist
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Analysis finished!
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Analysis took 0.039219 seconds
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30255  | Analysis finished at: 2026-06-21 07:11:20 PM
+[36m[#] Analysing started: 30255.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for temporaryEscapeHatch[0m
+[36m[#] Interprocedural CFG generated for temporaryEscapeHatch[0m
+[36m[#] SDG generation started for temporaryEscapeHatch[0m
+[36m[#] SDG generated for temporaryEscapeHatch[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.039219 seconds[0m
+[36m[#] Analysis completed: 30255.sol [0m
+
+=== dependency_info.json ===
+{}

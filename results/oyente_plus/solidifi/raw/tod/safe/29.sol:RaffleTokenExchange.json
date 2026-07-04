@@ -1,0 +1,31 @@
+{
+ "evm_code_coverage": "81.3",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "29.sol:155:5: Warning: Integer Overflow.\n",
+   "29.sol:293:17: Warning: Integer Overflow.\n",
+   "29.sol:294:9: Warning: Integer Overflow.\n",
+   "29.sol:265:22: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0\n    listingIds = 3984605184\n    nextPurchaseId = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    amounts = 536870912",
+   "29.sol:268:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0\n    listingIds = 3984605184\n    amounts = 536870912",
+   "29.sol:269:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0\n    listingIds = 3984605184\n    amounts = 536870912",
+   "29.sol:257:16: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0\n    listingIds = 3984605184\n    amounts = 536870912",
+   "29.sol:257:43: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0\n    listingIds = 3984605184\n    amounts = 536870912",
+   "29.sol:278:22: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    initialAmount = 27992042416072687524494102977442349819058868148488002877005235593694616223745\n    paused = 0\n    nextListingId = 115792089237316195423570985008687907853269984665640564039457584007913129639935",
+   "29.sol:280:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    initialAmount = 42466053570737211952440476103528338300717616231693073381937433594683757428737\n    paused = 0",
+   "29.sol:281:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    initialAmount = 0\n    paused = 0",
+   "29.sol:283:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    initialAmount = 27992042416072687524494102977442349819058868148488002877005235593694616223745\n    paused = 0",
+   "29.sol:284:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    initialAmount = 27992042416072687524494102977442349819058868148488002877005235593694616223746\n    paused = 0",
+   "29.sol:285:48: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    initialAmount = 27992042631752260861699221334778470515215913537585158257329815442523498217474\n    paused = 0",
+   "29.sol:285:71: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    initialAmount = 27992042631752260861699221334778470515215913537585158257329815442523498217474\n    paused = 0",
+   "29.sol:159:5: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

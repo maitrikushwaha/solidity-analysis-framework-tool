@@ -1,0 +1,15 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/vulnerable/09_ERC20InheritMod_ree3.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/vulnerable' running
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/vulnerable/09_ERC20InheritMod_ree3.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+MyERC20.totalSupply (datasets/rsd/reentrancy/vulnerable/09_ERC20InheritMod_ree3.sol#18) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+/work/datasets/rsd/reentrancy/vulnerable/09_ERC20InheritMod_ree3.sol analyzed (3 contracts with 93 detectors), 2 result(s) found

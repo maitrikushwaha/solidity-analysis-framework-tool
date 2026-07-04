@@ -1,0 +1,60 @@
+[INFO] | 2026-06-21 07:11:20 PM | analyzer.30337  | Analysis started at: 2026-06-21 07:11:20 PM
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Callgraph generation started!
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Value Range Analysis started
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Generating return summary for withdrawPayments
+[WARNING] | 2026-06-21 07:11:21 PM | analyzer.30337  | No lvalue eligible assignment, is this some bug!
+[WARNING] | 2026-06-21 07:11:21 PM | analyzer.30337  | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Return summary generated for withdrawPayments
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Range graph generated
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Processed function withdrawPayments
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Value Range Analysis took 0.000347 seconds
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Dependency detection started!
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | TOD dependency detected in file 30337.sol in contract PullPaymentCapable in by composing functions withdrawPayments and withdrawPayments
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Dependency detection finished!
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Static Analysis took 0.053411 seconds
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Dependency exists
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Invoking symbolic executor!
+[36m[#] Analysing started: 30337.sol[0m
+[36m[#] Interprocedural CFG generation started for withdrawPayments[0m
+[36m[#] Interprocedural CFG generated for withdrawPayments[0m
+[36m[#] SDG generation started for withdrawPayments[0m
+[36m[#] SDG generated for withdrawPayments[0m
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Symbolic execution took 0.557032 seconds
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Analysis finished!
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Analysis took 0.610998 seconds
+[INFO] | 2026-06-21 07:11:21 PM | analyzer.30337  | Analysis finished at: 2026-06-21 07:11:21 PM
+[36m[#] Analysis took 0.610998 seconds[0m
+[36m[#] Analysis completed: 30337.sol [0m
+
+=== dependency_info.json ===
+{
+    "30337.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawPayments",
+                "withdrawPayments"
+            ],
+            "First_function": "withdrawPayments",
+            "Second_function": "withdrawPayments",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: withdrawPayments\nNode: \nEXPRESSION payments[msg.sender] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 3\nFunction: withdrawPayments\nNode: \nIF ! msg.sender.call.value(payment)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:payment \""
+                    ],
+                    "state_variable": "payments"
+                }
+            ]
+        }
+    ]
+}

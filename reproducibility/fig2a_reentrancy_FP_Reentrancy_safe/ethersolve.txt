@@ -1,0 +1,6 @@
+=== EtherSolve --re-entrancy on reentrancysafe.sol (Fig. 2 reentrancy figure) ===
+Runtime bytecode compiled with solc 0.8.20.
+Output CSV (offset,opcode,detection): header only, 0 finding rows.
+=> predicted = 0 (not reentrant).
+Meaning: correct TRUE NEGATIVE — EtherSolve does not flag the
+checks-effects-interactions-safe contract (balance zeroed before the call).

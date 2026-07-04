@@ -1,0 +1,30 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc lotto.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.52JxDCpnME' running
+INFO:CryticCompile:Compilation warnings/errors on lotto.sol:
+lotto.sol:20:10: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+         winner.send(winAmount);
+         ^--------------------^
+lotto.sol:27:10: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+         msg.sender.send(this.balance);
+         ^---------------------------^
+
+INFO:root:contract lotto.sol:Lotto:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 88.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:lotto.sol:20:10: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:Flow1
+lotto.sol:27:10: Warning: Transaction-Ordering Dependency.
+
+Flow2
+lotto.sol:20:10: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to lotto.sol:Lotto.json.

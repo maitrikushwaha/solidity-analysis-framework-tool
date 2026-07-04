@@ -1,0 +1,34 @@
+[INFO] | 2026-06-21 07:08:07 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Analysis started at: 2026-06-21 07:08:07 PM
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Callgraph generation started!
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Callgraph generation finished!
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Value Range Analysis started
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Generating return summary for transfer
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Return summary generated for transfer
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Processed function transfer
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Value Range Analysis took 0.000277 seconds
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Value Range Analysis finished
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Dependency detection started!
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Dependency detection finished!
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Static Analysis took 0.043712 seconds
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Dependency does not exist
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Analysis finished!
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Analysis took 0.043877 seconds
+[INFO] | 2026-06-21 07:08:08 PM | analyzer.0x524960d55174d912768678d8c606b4d50b79d7b1 | Analysis finished at: 2026-06-21 07:08:08 PM
+[36m[#] Analysing started: 0x524960d55174d912768678d8c606b4d50b79d7b1.sol[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] Analysis took 0.043877 seconds[0m
+[36m[#] Analysis completed: 0x524960d55174d912768678d8c606b4d50b79d7b1.sol [0m
+
+=== dependency_info.json ===
+{}

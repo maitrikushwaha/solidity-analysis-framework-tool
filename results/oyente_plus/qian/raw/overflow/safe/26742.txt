@@ -1,0 +1,23 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 26742.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.xxWmulM1xD' running
+INFO:CryticCompile:Compilation warnings/errors on 26742.sol:
+26742.sol:10:13: Warning: Return value of low-level calls not used.
+            _addr.call.value(_wei)();
+            ^----------------------^
+
+INFO:root:contract 26742.sol:TokenBank:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 83.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:26742.sol:10:13: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:26742.sol:10:13: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 26742.sol:TokenBank.json.

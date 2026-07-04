@@ -1,0 +1,49 @@
+/work/datasets/qian/overflow/safe/40425.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_CALL_WITHOUT_DATA
+patternId: om991k
+severity: 2
+line: 12
+column: 28
+content: call.value(amount_)()
+
+ruleId: SOLIDITY_DEPRECATED_CONSTRUCTIONS
+patternId: 49bd2a
+severity: 1
+line: 12
+column: 53
+content: throw
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+patternId: 5616b2
+severity: 1
+line: 6
+column: 12
+content: private
+
+ruleId: SOLIDITY_REVERT_REQUIRE
+patternId: c56b12
+severity: 1
+line: 12
+column: 12
+content: if(!msg.sender.call.value(amount_)()){throw;}
+
+ruleId: SOLIDITY_UPGRADE_TO_050
+patternId: 83k1no
+severity: 1
+line: 12
+column: 28
+content: call.value(amount_)()
+
+SOLIDITY_DEPRECATED_CONSTRUCTIONS :1
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_REVERT_REQUIRE :1
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA :1
+SOLIDITY_UPGRADE_TO_050 :1
+SOLIDITY_CALL_WITHOUT_DATA :1

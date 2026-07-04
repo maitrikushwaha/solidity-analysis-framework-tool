@@ -1,0 +1,94 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/time_manipulation' running
+Compilation warnings/errors on /work/datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol:
+/work/datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol:28:24: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(intitalized)throw;
+                       ^---^
+/work/datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol:35:24: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(intitalized)throw;
+                       ^---^
+
+
+LogFile (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#81-105) contract sets array length with a user-controlled value:
+	- History.push(LastMsg) (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#102)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#array-length-assignment
+
+Reentrancy in PENNY_BY_PENNY.Collect(uint256) (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#55-69):
+	External calls:
+	- msg.sender.call.value(_am)() (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#63)
+	State variables written after the call(s):
+	- acc.balance -= _am (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#65)
+	PENNY_BY_PENNY.Acc (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#17) can be used in cross function reentrancies:
+	- PENNY_BY_PENNY.Acc (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#17)
+	- PENNY_BY_PENNY.Collect(uint256) (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#55-69)
+	- PENNY_BY_PENNY.Put(uint256) (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#45-53)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+PENNY_BY_PENNY.Put(uint256) (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#45-53) uses timestamp for comparisons
+	Dangerous comparisons:
+	- now + _lockTime > acc.unlockTime (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#51)
+PENNY_BY_PENNY.Collect(uint256) (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#55-69) uses timestamp for comparisons
+	Dangerous comparisons:
+	- acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#60)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Deprecated standard detected THROW (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#28):
+	- Usage of "throw" should be replaced with "revert()"
+Deprecated standard detected THROW (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#35):
+	- Usage of "throw" should be replaced with "revert()"
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#deprecated-standards
+
+Version constraint ^0.4.19 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x
+	- ExpExponentCleanup
+	- EventStructWrongData
+	- NestedArrayFunctionCallDecoder.
+It is used by:
+	- ^0.4.19 (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#7)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in PENNY_BY_PENNY.Collect(uint256) (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#55-69):
+	- msg.sender.call.value(_am)() (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#63)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Contract PENNY_BY_PENNY (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#9-78) is not in CapWords
+Function PENNY_BY_PENNY.SetMinSum(uint256) (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#25-30) is not in mixedCase
+Parameter PENNY_BY_PENNY.SetMinSum(uint256)._val (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#25) is not in mixedCase
+Function PENNY_BY_PENNY.SetLogFile(address) (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#32-37) is not in mixedCase
+Parameter PENNY_BY_PENNY.SetLogFile(address)._log (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#32) is not in mixedCase
+Function PENNY_BY_PENNY.Initialized() (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#39-43) is not in mixedCase
+Function PENNY_BY_PENNY.Put(uint256) (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#45-53) is not in mixedCase
+Parameter PENNY_BY_PENNY.Put(uint256)._lockTime (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#45) is not in mixedCase
+Function PENNY_BY_PENNY.Collect(uint256) (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#55-69) is not in mixedCase
+Parameter PENNY_BY_PENNY.Collect(uint256)._am (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#55) is not in mixedCase
+Variable PENNY_BY_PENNY.Acc (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#17) is not in mixedCase
+Variable PENNY_BY_PENNY.MinSum (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#19) is not in mixedCase
+Variable PENNY_BY_PENNY.Log (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#21) is not in mixedCase
+Function LogFile.AddMessage(address,uint256,string) (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#95-103) is not in mixedCase
+Parameter LogFile.AddMessage(address,uint256,string)._adr (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#95) is not in mixedCase
+Parameter LogFile.AddMessage(address,uint256,string)._val (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#95) is not in mixedCase
+Parameter LogFile.AddMessage(address,uint256,string)._data (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#95) is not in mixedCase
+Variable LogFile.History (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#91) is not in mixedCase
+Variable LogFile.LastMsg (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#93) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+AddMessage(address,uint256,string) should be declared external:
+	- LogFile.AddMessage(address,uint256,string) (datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol#95-103)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external
+/work/datasets/sbc/time_manipulation/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol analyzed (2 contracts with 93 detectors), 29 result(s) found

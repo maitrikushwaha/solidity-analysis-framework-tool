@@ -1,0 +1,106 @@
+[INFO] | 2026-06-21 06:57:28 PM | analyzer.multiowned_vulnerable | Analysis started at: 2026-06-21 06:57:28 PM
+[INFO] | 2026-06-21 06:57:28 PM | analyzer.multiowned_vulnerable | Callgraph generation started!
+[INFO] | 2026-06-21 06:57:28 PM | analyzer.multiowned_vulnerable | Callgraph generation finished!
+[INFO] | 2026-06-21 06:57:28 PM | analyzer.multiowned_vulnerable | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:57:28 PM | analyzer.multiowned_vulnerable | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:57:28 PM | analyzer.multiowned_vulnerable | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:57:28 PM | analyzer.multiowned_vulnerable | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:57:28 PM | analyzer.multiowned_vulnerable | Value Range Analysis started
+[INFO] | 2026-06-21 06:57:28 PM | analyzer.multiowned_vulnerable | Generating return summary for constructor
+[INFO] | 2026-06-21 06:57:28 PM | analyzer.multiowned_vulnerable | Return summary generated for constructor
+[INFO] | 2026-06-21 06:57:28 PM | analyzer.multiowned_vulnerable | Range graph generated
+[INFO] | 2026-06-21 06:57:28 PM | analyzer.multiowned_vulnerable | Processed function constructor
+[INFO] | 2026-06-21 06:57:28 PM | analyzer.multiowned_vulnerable | Generating return summary for newOwner
+[INFO] | 2026-06-21 06:57:28 PM | analyzer.multiowned_vulnerable | Return summary generated for newOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Range graph generated
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Processed function newOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | State variable assignement do not exist
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Processed function onlyOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Generating return summary for constructor
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Return summary generated for constructor
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Range graph generated
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Processed function constructor
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Generating return summary for newOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Return summary generated for newOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Range graph generated
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Processed function newOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Generating return summary for fallback
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Return summary generated for fallback
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | State variable assignement do not exist
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Processed function fallback
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | State variable assignement do not exist
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Processed function onlyOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Generating return summary for deleteOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Return summary generated for deleteOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Range graph generated
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Processed function deleteOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Generating return summary for deleteOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Return summary generated for deleteOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Range graph generated
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Processed function deleteOwner
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Generating return summary for withdrawAll
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Return summary generated for withdrawAll
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | State variable assignement do not exist
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Processed function withdrawAll
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Value Range Analysis took 0.004148 seconds
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Value Range Analysis finished
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Dependency detection started!
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Dependency detection finished!
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Static Analysis took 0.100759 seconds
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Dependency does not exist
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Symbolic execution is not needed!
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Analysis finished!
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Analysis took 0.100963 seconds
+[INFO] | 2026-06-21 06:57:29 PM | analyzer.multiowned_vulnerable | Analysis finished at: 2026-06-21 06:57:29 PM
+[36m[#] Analysing started: multiowned_vulnerable.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for newOwner[0m
+[36m[#] Interprocedural CFG generated for newOwner[0m
+[36m[#] Interprocedural CFG generation started for deleteOwner[0m
+[36m[#] Interprocedural CFG generated for deleteOwner[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for newOwner[0m
+[36m[#] Interprocedural CFG generated for newOwner[0m
+[36m[#] Interprocedural CFG generation started for deleteOwner[0m
+[36m[#] Interprocedural CFG generated for deleteOwner[0m
+[36m[#] Interprocedural CFG generation started for withdrawAll[0m
+[36m[#] Interprocedural CFG generated for withdrawAll[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for newOwner[0m
+[36m[#] SDG generated for newOwner[0m
+[36m[#] SDG generation started for deleteOwner[0m
+[36m[#] SDG generated for deleteOwner[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for newOwner[0m
+[36m[#] SDG generated for newOwner[0m
+[36m[#] SDG generation started for deleteOwner[0m
+[36m[#] SDG generated for deleteOwner[0m
+[36m[#] SDG generation started for withdrawAll[0m
+[36m[#] SDG generated for withdrawAll[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.100963 seconds[0m
+[36m[#] Analysis completed: multiowned_vulnerable.sol [0m
+
+=== dependency_info.json ===
+{}

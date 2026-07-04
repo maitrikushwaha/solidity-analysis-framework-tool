@@ -1,0 +1,29 @@
+{
+ "evm_code_coverage": "86.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "04_CrossModFold_ree2.sol:6:5: Warning: Integer Underflow.\n",
+   "04_CrossModFold_ree2.sol:40:4760: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 86844066927987146567678238756515930889952488499230423029593188005934847229953\n    balances[msg.sender] = 0\n    balances[msg.sender] = 68719476736",
+   "04_CrossModFold_ree2.sol:40:4876: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 86844066927987146567678238756515930889952488499230423029593188005934847229953\n    balances[msg.sender] = 696898287454081973172991196020261297061888\n    balances[msg.sender] = 68719476736",
+   "04_CrossModFold_ree2.sol:40:6187: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    balances[msg.sender] = 28948022200641825731343871442770381425112655284429657312095228542621153492988\n    balances[a] = 0\n    balances[msg.sender] = 226156424291633194186662080095093570025917938800079226639565593765455331328",
+   "04_CrossModFold_ree2.sol:40:2191: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0",
+   "04_CrossModFold_ree2.sol:30:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0",
+   "04_CrossModFold_ree2.sol:24:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0",
+   "04_CrossModFold_ree2.sol:10:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 30085871819046328364929027559573751582989869473898997921521611963941204787328"
+  ],
+  "integer_overflow": [
+   "04_CrossModFold_ree2.sol:40:362: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [
+   "04_CrossModFold_ree2.sol:31:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "04_CrossModFold_ree2.sol:31:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

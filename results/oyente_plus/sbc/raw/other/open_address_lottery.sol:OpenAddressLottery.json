@@ -1,0 +1,24 @@
+{
+ "evm_code_coverage": "92.6",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "open_address_lottery.sol:63:12: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    owner = 0\n    LuckyNumber = 4096\n    lastReseed = 1\n    winner[msg.sender] = 0",
+   "open_address_lottery.sol:93:48: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    owner = 1"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "open_address_lottery.sol:60:13: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "open_address_lottery.sol:60:13: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

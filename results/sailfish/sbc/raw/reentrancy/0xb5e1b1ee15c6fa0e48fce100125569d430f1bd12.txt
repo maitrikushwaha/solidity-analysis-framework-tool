@@ -1,0 +1,132 @@
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Analysis started at: 2026-06-21 07:03:51 PM
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Callgraph generation started!
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Callgraph generation finished!
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Value Range Analysis started
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Generating return summary for Private_Bank
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Return summary generated for Private_Bank
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Range graph generated
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Processed function Private_Bank
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Generating return summary for fallback
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Return summary generated for fallback
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Processed function fallback
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Range graph generated
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Generating return summary for AddMessage
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Return summary generated for AddMessage
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Range graph generated
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Processed function AddMessage
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Generating return summary for Deposit
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Return summary generated for Deposit
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Range graph generated
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Processed function Deposit
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Generating return summary for CashOut
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Return summary generated for CashOut
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Range graph generated
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Processed function CashOut
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Value Range Analysis took 0.004344 seconds
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Value Range Analysis finished
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Dependency detection started!
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | DAO dependency detected in file 0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12.sol in contract Private_Bank in by composing functions CashOut and CashOut
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | TOD dependency detected in file 0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12.sol in contract Private_Bank in by composing functions CashOut and Deposit
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | TOD dependency detected in file 0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12.sol in contract Private_Bank in by composing functions CashOut and CashOut
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Dependency detection finished!
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Static Analysis took 0.221421 seconds
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Dependency exists
+[INFO] | 2026-06-21 07:03:51 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Invoking symbolic executor!
+[36m[#] Analysing started: 0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12.sol[0m
+[36m[#] Interprocedural CFG generation started for Private_Bank[0m
+[36m[#] Interprocedural CFG generated for Private_Bank[0m
+[36m[#] Interprocedural CFG generation started for Deposit[0m
+[36m[#] Interprocedural CFG generated for Deposit[0m
+[36m[#] Interprocedural CFG generation started for CashOut[0m
+[36m[#] Interprocedural CFG generated for CashOut[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for AddMessage[0m
+[36m[#] Interprocedural CFG generated for AddMessage[0m
+[36m[#] SDG generation started for Private_Bank[0m
+[36m[#] SDG generated for Private_Bank[0m
+[36m[#] SDG generation started for Deposit[0m
+[36m[#] SDG generated for Deposit[0m
+[36m[#] SDG generation started for CashOut[0m
+[36m[#] SDG generated for CashOut[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for AddMessage[0m
+[36m[#] SDG generated for AddMessage[0m
+[INFO] | 2026-06-21 07:03:54 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Symbolic execution took 3.139610 seconds
+[INFO] | 2026-06-21 07:03:54 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Symbolic execution finished!
+[INFO] | 2026-06-21 07:03:54 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Analysis finished!
+[INFO] | 2026-06-21 07:03:54 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Analysis took 3.362555 seconds
+[INFO] | 2026-06-21 07:03:54 PM | analyzer.0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12 | Analysis finished at: 2026-06-21 07:03:54 PM
+[36m[#] Analysis took 3.362555 seconds[0m
+[36m[#] Analysis completed: 0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12.sol [0m
+
+=== dependency_info.json ===
+{
+    "0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "CashOut",
+                "CashOut"
+            ],
+            "from_function": "CashOut",
+            "to_function": "CashOut",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: CashOut\nNode: \nIF _am <= balances[msg.sender]\nIRS: \nCONDITION TMP_3\"",
+                        "\"BlockID: 13\nFunction: CashOut\nNode: \nEXPRESSION balances[msg.sender] -= _am\nIRS: \nREF_5 = REF_5 - _am\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "CashOut",
+                "Deposit"
+            ],
+            "First_function": "Deposit",
+            "Second_function": "CashOut",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: Deposit\nNode: \nEXPRESSION balances[msg.sender] += msg.value\nIRS: \nREF_0 = REF_0 + msg.value\"",
+                        "\"BlockID: 9\nFunction: CashOut\nNode: \nIF _am <= balances[msg.sender]\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "CashOut",
+                "CashOut"
+            ],
+            "First_function": "CashOut",
+            "Second_function": "CashOut",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 36\nFunction: CashOut\nNode: \nEXPRESSION balances[msg.sender] -= _am\nIRS: \nREF_5 = REF_5 - _am\"",
+                        "\"BlockID: 9\nFunction: CashOut\nNode: \nIF _am <= balances[msg.sender]\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        }
+    ]
+}

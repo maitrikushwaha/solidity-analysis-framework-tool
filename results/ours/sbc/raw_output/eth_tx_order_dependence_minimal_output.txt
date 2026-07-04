@@ -1,0 +1,47 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+[CFG] Reentrancy back-edge inserted: ExpressionStatement_4 → IfStatement_0
+Dependency analysis completed in 0.0245s.
+[DOMAIN] Reentrancy encoding detected → Box + Octagon + Polka
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] Only gas-limited calls (transfer/send) detected — reentrancy infeasible.
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW ==========
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+
+========== PIPELINE 3: TIMESTAMP DEPENDENCY ==========
+
+========== PIPELINE 4: TOD ==========
+
+===== VERDICTS (Box) =====
+[NO REENTRANCY] Contract uses only gas-limited external calls (transfer/send); reentrancy infeasible.
+[TOD] Function FunctionDefinition_2: claimReward reads storage variable reward which is written by externally callable function FunctionDefinition_1: setReward. Reordering may affect FunctionDefinition_2: claimReward's behavior.
+[TOD] Variable 'reward' is set in setReward() and used in claimReward()'s ether transfer. Transaction reordering may change the transferred amount.
+[TOD] Variable 'reward' is assigned in setReward() and used as ether transfer amount in claimReward(). Transaction reordering may change the transferred amount.
+
+===== VERDICTS (Octagon) =====
+[NO REENTRANCY] Contract uses only gas-limited external calls (transfer/send); reentrancy infeasible.
+[TOD] Function FunctionDefinition_2: claimReward reads storage variable reward which is written by externally callable function FunctionDefinition_1: setReward. Reordering may affect FunctionDefinition_2: claimReward's behavior.
+[TOD] Variable 'reward' is set in setReward() and used in claimReward()'s ether transfer. Transaction reordering may change the transferred amount.
+[TOD] Variable 'reward' is assigned in setReward() and used as ether transfer amount in claimReward(). Transaction reordering may change the transferred amount.
+
+===== VERDICTS (Polka) =====
+[NO REENTRANCY] Contract uses only gas-limited external calls (transfer/send); reentrancy infeasible.
+[TOD] Function FunctionDefinition_2: claimReward reads storage variable reward which is written by externally callable function FunctionDefinition_1: setReward. Reordering may affect FunctionDefinition_2: claimReward's behavior.
+[TOD] Variable 'reward' is set in setReward() and used in claimReward()'s ether transfer. Transaction reordering may change the transferred amount.
+[TOD] Variable 'reward' is assigned in setReward() and used as ether transfer amount in claimReward(). Transaction reordering may change the transferred amount.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: NOT VULNERABLE
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: NOT VULNERABLE
+[SUMMARY] TOD: VULNERABLE
+
+Total analysis time: 2.01s

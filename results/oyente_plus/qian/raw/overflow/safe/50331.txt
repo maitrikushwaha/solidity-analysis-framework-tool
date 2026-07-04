@@ -1,0 +1,25 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50331.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.kSybDhJtMM' running
+INFO:CryticCompile:Compilation warnings/errors on 50331.sol:
+50331.sol:14:5: Warning: No visibility specified. Defaulting to "public". 
+    function claimReward(uint256 submission) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 50331.sol:EthTxOrderDependenceMinimal:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 83.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:Flow1
+50331.sol:10:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+50331.sol:16:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50331.sol:EthTxOrderDependenceMinimal.json.

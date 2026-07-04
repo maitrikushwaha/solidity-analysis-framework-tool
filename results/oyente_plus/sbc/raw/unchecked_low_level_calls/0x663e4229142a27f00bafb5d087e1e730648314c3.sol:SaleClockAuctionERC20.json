@@ -1,0 +1,34 @@
+{
+ "evm_code_coverage": "62.4",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1381:39: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1961:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[_erc20Address] = 1\n    nonFungibleContract = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1235:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _startingPrice = 0\n    paused = 0\n    _endingPrice = 64\n    _erc20Address = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1594:13: Warning: Integer Overflow.\n",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1595:13: Warning: Integer Overflow.\n",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1596:13: Warning: Integer Overflow.\n",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1597:13: Warning: Integer Overflow.\n",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1343:19: Warning: Integer Overflow.\n",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1348:13: Warning: Integer Overflow.\n",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1349:13: Warning: Integer Overflow.\n",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1350:13: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1496:20: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1496:20: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

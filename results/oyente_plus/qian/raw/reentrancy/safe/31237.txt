@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 31237.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.CIgoIRKlTq' running
+INFO:root:contract 31237.sol:LPPCampaign:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:31237.sol:7:17: Warning: Integer Underflow.
+
+INFO:symExec:31237.sol:6:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+31237.sol:6:22: Warning: Integer Overflow.
+
+INFO:symExec:31237.sol:7:17: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 31237.sol:LPPCampaign.json.

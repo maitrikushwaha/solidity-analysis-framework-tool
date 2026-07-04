@@ -1,0 +1,66 @@
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Analysis started at: 2026-06-21 07:07:33 PM
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Callgraph generation started!
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Callgraph generation finished!
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Value Range Analysis started
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Generating return summary for constructor
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Return summary generated for constructor
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Processed function constructor
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Generating return summary for fallback
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Return summary generated for fallback
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Range graph generated
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Processed function fallback
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Value Range Analysis took 0.000737 seconds
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Value Range Analysis finished
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Dependency detection started!
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | TOD dependency detected in file roulette.sol in contract Roulette in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Dependency detection finished!
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Static Analysis took 0.094340 seconds
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Dependency exists
+[INFO] | 2026-06-21 07:07:33 PM | analyzer.roulette | Invoking symbolic executor!
+[36m[#] Analysing started: roulette.sol[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[INFO] | 2026-06-21 07:07:35 PM | analyzer.roulette | Symbolic execution took 1.490001 seconds
+[INFO] | 2026-06-21 07:07:35 PM | analyzer.roulette | Symbolic execution finished!
+[INFO] | 2026-06-21 07:07:35 PM | analyzer.roulette | Analysis finished!
+[INFO] | 2026-06-21 07:07:35 PM | analyzer.roulette | Analysis took 1.585346 seconds
+[INFO] | 2026-06-21 07:07:35 PM | analyzer.roulette | Analysis finished at: 2026-06-21 07:07:35 PM
+[36m[#] Analysis took 1.585346 seconds[0m
+[36m[#] Analysis completed: roulette.sol [0m
+
+=== dependency_info.json ===
+{
+    "roulette.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: fallback\nNode: \nEXPRESSION pastBlockTime = now\nIRS: \npastBlockTime := now\"",
+                        "\"BlockID: 4\nFunction: fallback\nNode: \nEXPRESSION require(bool)(now != pastBlockTime)\nIRS: \nTMP_3 = SOLIDITY_CALL require(bool)(TMP_2)\""
+                    ],
+                    "state_variable": "pastBlockTime"
+                }
+            ]
+        }
+    ]
+}

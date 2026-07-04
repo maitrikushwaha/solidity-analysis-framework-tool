@@ -1,0 +1,56 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.9s7Rw4ODP6' running
+INFO:CryticCompile:Compilation warnings/errors on 0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol:
+0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol:22:24: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(intitalized)throw;
+                       ^---^
+0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol:29:24: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(intitalized)throw;
+                       ^---^
+
+INFO:root:contract 0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol:DEP_BANK:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 93.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol:54:16: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    MinSum = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+    _am = 191561942608236107294793378393788647952342390272950273
+    balances[msg.sender] = 57896044618658097711785684066286562162742287126198675808376744346346837770240
+INFO:symExec:0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol:54:16: Warning: Re-Entrancy Vulnerability.
+
+0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol:57:17: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol:DEP_BANK.json.
+INFO:root:contract 0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol:LogFile:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 47.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol:72:1: Warning: Integer Underflow.
+
+INFO:symExec:0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol:86:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol:72:1: Warning: Integer Overflow.
+
+0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol:93:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    History.push(LastMsg) = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol:LogFile.json.

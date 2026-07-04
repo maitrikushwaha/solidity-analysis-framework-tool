@@ -1,0 +1,33 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 37645.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.6R1fMnkwpr' running
+INFO:CryticCompile:Compilation warnings/errors on 37645.sol:
+37645.sol:9:26: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if (0 == this.balance) throw;
+		                       ^---^
+37645.sol:10:54: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if (!devETHDestination.call.value(this.balance)()) throw;
+		                                                   ^---^
+37645.sol:9:12: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+		if (0 == this.balance) throw;
+		         ^----------^
+37645.sol:10:37: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+		if (!devETHDestination.call.value(this.balance)()) throw;
+		                                  ^----------^
+37645.sol:8:5: Warning: No visibility specified. Defaulting to "public". 
+    function withdrawFunds() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 37645.sol:SFTToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 76.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:37645.sol:10:8: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 37645.sol:SFTToken.json.

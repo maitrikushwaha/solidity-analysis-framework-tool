@@ -1,0 +1,24 @@
+{
+ "evm_code_coverage": "96.2",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "50.sol:166:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    contractactive = 1461501637330902918203684832716283019655932542976\n    HashList[hash].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    changehashownerfee = 0"
+  ],
+  "integer_overflow": [
+   "50.sol:2:20: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    contractactive = 1461501637330902918203684832716283019655932542976\n    HashList[hash].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    changehashownerfee = 0",
+   "50.sol:166:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    contractactive = 1461501637330902918203684832716283019655932542976\n    HashList[hash].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    changehashownerfee = 0",
+   "50.sol:145:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    contractactive = 1461501637330902918203684832716283019655932542976\n    hashfee = 0\n    HashList[hash].length = 0",
+   "50.sol:147:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    contractactive = 1461501637330902918203684832716283019655932542976\n    hashfee = 0\n    HashListLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    HashList[hash].length = 0",
+   "50.sol:131:17: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    HashList[hash].length = 864713075044586861801082343424396669024533237361415038371674606730446144135\n    indx = 807284506411222871549863368142299434473261829808372240040752991958388998790",
+   "50.sol:131:44: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    HashList[hash].length = 29816269078503192486352995190597859469373684371743570651809552203303654294151\n    indx = 29757957086284628892050457110149979733361799254472800364812036407985914806918",
+   "50.sol:131:44: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    HashList[hash].length = 29816269078503192486352995190597859469373684371743570651809552203303654294151\n    indx = 29757957086284628892050457110149979733361799254472800364812036407985914806918"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

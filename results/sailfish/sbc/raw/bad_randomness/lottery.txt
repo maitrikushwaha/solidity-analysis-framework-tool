@@ -1,0 +1,66 @@
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Analysis started at: 2026-06-21 07:01:26 PM
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Callgraph generation started!
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Callgraph generation finished!
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Value Range Analysis started
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Generating return summary for Lottery
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Return summary generated for Lottery
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Range graph generated
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Processed function Lottery
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Generating return summary for fallback
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Return summary generated for fallback
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Processed function fallback
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Generating return summary for makeBet
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Return summary generated for makeBet
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Range graph generated
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Processed function makeBet
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Generating return summary for getBets
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Return summary generated for getBets
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Processed function getBets
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Generating return summary for destroy
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Return summary generated for destroy
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Processed function destroy
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Value Range Analysis took 0.002772 seconds
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Value Range Analysis finished
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Dependency detection started!
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Dependency detection finished!
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Static Analysis took 0.088897 seconds
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Dependency does not exist
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Analysis finished!
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Analysis took 0.089124 seconds
+[INFO] | 2026-06-21 07:01:26 PM | analyzer.lottery | Analysis finished at: 2026-06-21 07:01:26 PM
+[36m[#] Analysing started: lottery.sol[0m
+[36m[#] Interprocedural CFG generation started for Lottery[0m
+[36m[#] Interprocedural CFG generated for Lottery[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for makeBet[0m
+[36m[#] Interprocedural CFG generated for makeBet[0m
+[36m[#] Interprocedural CFG generation started for getBets[0m
+[36m[#] Interprocedural CFG generated for getBets[0m
+[36m[#] Interprocedural CFG generation started for destroy[0m
+[36m[#] Interprocedural CFG generated for destroy[0m
+[36m[#] SDG generation started for Lottery[0m
+[36m[#] SDG generated for Lottery[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for makeBet[0m
+[36m[#] SDG generated for makeBet[0m
+[36m[#] SDG generation started for getBets[0m
+[36m[#] SDG generated for getBets[0m
+[36m[#] SDG generation started for destroy[0m
+[36m[#] SDG generated for destroy[0m
+[36m[#] Analysis took 0.089124 seconds[0m
+[36m[#] Analysis completed: lottery.sol [0m
+
+=== dependency_info.json ===
+{}

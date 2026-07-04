@@ -1,0 +1,29 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+Transformed CFG build failed: An error occurred during execution
+> command: `/home/maitri/.solcx/solc-v0.4.26 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc -`
+> return code: `1`
+> stdout:
+
+> stderr:
+<stdin>:21:14: Error: Expected ';' but got 'uint'
+        uint uint simulated_token_balance = 60; /* call to token.balanceOf(this) */
+             ^--^
+Falling back: skipping reentrancy/timestamp/TOD analysis, running overflow only.
+
+===== VERDICTS (Box) =====
+[TIMESTAMP-SKIP] Transformed CFG unavailable.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: ANALYSIS UNAVAILABLE (transformed CFG failed)
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: ANALYSIS UNAVAILABLE (transformed CFG failed)
+[SUMMARY] TOD: ANALYSIS UNAVAILABLE (transformed CFG failed)
+
+NOTE: Some pipelines were SKIPPED because the mapping transformer could not process this contract.  These vulnerabilities are recorded as -1 (N/A) in the JSON verdict — they are excluded from TP/TN/FP/FN counts rather than counted as negatives.
+
+Total analysis time: 0.07s
+

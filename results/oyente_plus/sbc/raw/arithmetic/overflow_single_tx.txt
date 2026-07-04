@@ -1,0 +1,54 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc overflow_single_tx.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.O0CSae5qmr' running
+INFO:CryticCompile:Compilation warnings/errors on overflow_single_tx.sol:
+overflow_single_tx.sol:36:9: Warning: Unused local variable.
+        uint res = count + input;
+        ^------^
+overflow_single_tx.sol:42:9: Warning: Unused local variable.
+        uint res = count * input;
+        ^------^
+overflow_single_tx.sol:48:9: Warning: Unused local variable.
+       	uint res = count - input;
+       	^------^
+overflow_single_tx.sol:34:5: Warning: Function state mutability can be restricted to view
+    function overflowlocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+overflow_single_tx.sol:40:5: Warning: Function state mutability can be restricted to view
+    function overflowmulocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+overflow_single_tx.sol:46:5: Warning: Function state mutability can be restricted to view
+    function underflowlocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract overflow_single_tx.sol:IntegerOverflowSingleTransaction:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:overflow_single_tx.sol:30:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    count = 0
+    input = 1
+overflow_single_tx.sol:48:20: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    count = 0
+    input = 1
+INFO:symExec:overflow_single_tx.sol:36:20: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    count = 95235721736379883315001763940616669011307430545820611921043079414295449969311
+    input = 87522543116091692642898991470747911540473016816853618691036649129099924882818
+overflow_single_tx.sol:18:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    count = 31253780541446483561927260012123434002104182539218323246331473206330198589437
+    input = 87217991683654893347198037792800160252204899750517909271634179953897659957251
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to overflow_single_tx.sol:IntegerOverflowSingleTransaction.json.

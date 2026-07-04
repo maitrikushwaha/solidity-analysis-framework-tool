@@ -1,0 +1,4 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/qian/reentrancy/safe/35713.sol:MoldCoin
+offset,opcode,detection
+227,227: SLOAD,Store read after unsafe call

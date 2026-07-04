@@ -1,0 +1,23 @@
+{
+ "evm_code_coverage": "82.5",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "00_BasicFold_safe1.sol:5:5: Warning: Integer Underflow.\n",
+   "00_BasicFold_safe1.sol:22:2031: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0",
+   "00_BasicFold_safe1.sol:13:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0"
+  ],
+  "integer_overflow": [
+   "00_BasicFold_safe1.sol:22:955: Warning: Integer Overflow.\n",
+   "00_BasicFold_safe1.sol:8:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819970\n    balances[msg.sender] = 205688069665150755269371147819668813122841983204197482918576128"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "00_BasicFold_safe1.sol:8:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

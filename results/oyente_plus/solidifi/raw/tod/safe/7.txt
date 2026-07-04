@@ -1,0 +1,106 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 7.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.nPJtZyx9Bm' running
+INFO:root:contract 7.sol:AccountWallet:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 25.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:7.sol:151:19: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    to = 4294967296
+    _master = 0
+    stopped = 0
+7.sol:151:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    to = 68801411
+    _master = 0
+    stopped = 0
+7.sol:151:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    btc[to] = 1
+    to = 68801411
+    _master = 0
+    stopped = 0
+7.sol:117:1: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    to = 68801411
+    _master = 0
+    stopped = 0
+7.sol:152:19: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _master = 0
+    btc[to] = 57903224215165330047832886783274045513183542778322038004933879816320719949377
+    to = 1726716358
+    stopped = 0
+7.sol:152:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _master = 0
+    btc[to] = 61571088293914758158886686439206675983145681275151078891783590150467600925345
+    to = 2147483613
+    stopped = 0
+7.sol:154:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _master = 0
+    btc[to] = 79607450005252830625953921301364192639174092515994349805535263646381899647425
+    to = 3765338466
+    stopped = 0
+INFO:symExec:7.sol:2:42: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    to = 68797315
+    _master = 0
+    stopped = 0
+7.sol:151:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    to = 68797315
+    _master = 0
+    stopped = 0
+7.sol:117:1: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    to = 1952643
+    _master = 0
+    stopped = 0
+7.sol:152:19: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _master = 0
+    btc[to] = 59712365127541123414978465861749286905816374473619157684416860495636739311285
+    to = 3085870473
+    stopped = 0
+7.sol:152:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _master = 0
+    btc[to] = 61571088293914757930885639359051689300821417427517527882258751030740167574049
+    to = 2266566173
+    stopped = 0
+7.sol:154:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _master = 0
+    btc[to] = 61571088293914758158886686439206675983145681275151078891783590150467600925345
+    to = 2147483613
+    stopped = 0
+7.sol:154:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _master = 0
+    btc[to] = 86904583436835868421864742573983404627164372073293222654463225832929709003201
+    to = 2762474502
+    stopped = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 7.sol:AccountWallet.json.

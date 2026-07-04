@@ -1,0 +1,84 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.3Svv8jVuRA' running
+INFO:CryticCompile:Compilation warnings/errors on 0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:
+0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:48:38: Warning: This declaration shadows an existing declaration.
+	function newPuppet() public returns(address newPuppet){
+	                                    ^---------------^
+0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:48:2: The shadowed declaration is here:
+	function newPuppet() public returns(address newPuppet){
+ ^ (Relevant source part starts here and spans across multiple lines).
+
+0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:69:9: Warning: Return value of low-level calls not used.
+        extra[0].call.value(_share).gas(800000)();
+        ^---------------------------------------^
+0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:71:9: Warning: Return value of low-level calls not used.
+        extra[1].call.value(_share).gas(800000)();
+        ^---------------------------------------^
+0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:73:9: Warning: Return value of low-level calls not used.
+        extra[2].call.value(_share).gas(800000)();
+        ^---------------------------------------^
+0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:75:9: Warning: Return value of low-level calls not used.
+        extra[3].call.value(_share).gas(800000)();
+        ^---------------------------------------^
+0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:102:4: Warning: Return value of low-level calls not used.
+			target[0].call.value(msg.value).gas(600000)();
+			^-------------------------------------------^
+
+INFO:root:contract 0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:Puppet:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 88.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:Flow1
+0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:102:4: Warning: Transaction-Ordering Dependency.
+
+Flow2
+0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:109:3: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:Puppet.json.
+INFO:root:contract 0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:SafeMath.json.
+INFO:root:contract 0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:Splitter:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 54.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:12:2: Warning: Integer Overflow.
+
+INFO:symExec:0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:102:4: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:Flow1
+0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:69:9: Warning: Transaction-Ordering Dependency.
+
+0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:71:9: Warning: Transaction-Ordering Dependency.
+
+0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:73:9: Warning: Transaction-Ordering Dependency.
+
+0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:75:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:37:3: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:Splitter.json.

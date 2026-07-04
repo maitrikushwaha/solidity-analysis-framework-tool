@@ -1,0 +1,30 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 30255.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.pJ6iDOqS51' running
+INFO:root:contract 30255.sol:Distribution:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 71.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:30255.sol:15:17: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    owner = 2199023255552
+    admin = 2199023255552
+INFO:symExec:30255.sol:13:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+30255.sol:7:1: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner = 0
+    admin = 0
+INFO:symExec:30255.sol:15:17: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 30255.sol:Distribution.json.

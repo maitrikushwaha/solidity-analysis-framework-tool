@@ -1,0 +1,38 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 09_ERC20Mod_ree2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.34tPv3QRuF' running
+INFO:root:contract 09_ERC20Mod_ree2.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 92.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:09_ERC20Mod_ree2.sol:35:2938: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 0
+09_ERC20Mod_ree2.sol:35:4367: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 0
+    received[to] = 62237872614944921281210731552280444762413576703902726336241815873199973692712
+09_ERC20Mod_ree2.sol:32:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 0
+    received[to] = 33596146615144504495131950216861030848534733828032321462282557077503918568744
+09_ERC20Mod_ree2.sol:35:1842: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 100433627766186892221372630771322662657637687111424552206336
+09_ERC20Mod_ree2.sol:29:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 18889465931478580854784
+09_ERC20Mod_ree2.sol:17:5: Warning: Integer Underflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 09_ERC20Mod_ree2.sol:C.json.

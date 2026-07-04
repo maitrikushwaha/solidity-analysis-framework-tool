@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "82.4",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "50446.sol:7:21: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _burntAmount = 103002298116114250264488295101066432245814908669404484443203603032367431680\n    totalToken = 107580751283870858734315130248366178758808125261315404405433276415994041587031"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

@@ -1,0 +1,17 @@
+/work/datasets/qian/timestamp/vulnerable/44.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_DEPRECATED_CONSTRUCTIONS
+patternId: 28fa69
+severity: 1
+line: 7
+column: 4
+content: functiongetState()publicconstantreturns(State){if(block.timestamp<startsAt)returnState.PreFunding;elsereturnState.Failure;}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+SOLIDITY_DEPRECATED_CONSTRUCTIONS :1
+SOLIDITY_PRAGMAS_VERSION :1

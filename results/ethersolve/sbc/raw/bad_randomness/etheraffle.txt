@@ -1,0 +1,24 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/bad_randomness/etheraffle.sol:Ethraffle_v4b
+offset,opcode,detection
+752,752: SLOAD,Store read after unsafe call
+769,769: SLOAD,Store read after unsafe call
+790,790: SLOAD,Store read after unsafe call
+817,817: SLOAD,Store read after unsafe call
+846,846: SLOAD,Store read after unsafe call
+857,857: SSTORE,Store write after unsafe call
+1005,1005: SSTORE,Store write after unsafe call
+1044,1044: SLOAD,Store read after unsafe call
+1169,1169: SLOAD,Store read after unsafe call
+2395,2395: SLOAD,Store read after unsafe call
+2598,2598: SLOAD,Store read after unsafe call
+2994,2994: SLOAD,Store read after unsafe call
+3020,3020: SSTORE,Store write after unsafe call
+3110,3110: SLOAD,Store read after unsafe call
+3201,3201: SLOAD,Store read after unsafe call
+3720,3720: SLOAD,Store read after unsafe call
+3746,3746: SSTORE,Store write after unsafe call
+3831,3831: SLOAD,Store read after unsafe call
+3947,3947: SLOAD,Store read after unsafe call
+3950,3950: SSTORE,Store write after unsafe call
+4010,4010: SSTORE,Store write after unsafe call

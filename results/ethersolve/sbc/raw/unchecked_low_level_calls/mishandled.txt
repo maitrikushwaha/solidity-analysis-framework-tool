@@ -1,0 +1,5 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/unchecked_low_level_calls/mishandled.sol:SendBack
+offset,opcode,detection
+158,158: SLOAD,Store read after unsafe call
+227,227: SSTORE,Store write after unsafe call

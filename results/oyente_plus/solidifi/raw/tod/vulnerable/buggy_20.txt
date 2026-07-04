@@ -1,0 +1,38 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc buggy_20.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.YvOMadjqzq' running
+INFO:root:contract buggy_20.sol:RampInstantEthPool:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 96.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:Flow1
+buggy_20.sol:521:10: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_20.sol:130:10: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_20.sol:RampInstantEthPool.json.
+INFO:root:contract buggy_20.sol:Stoppable:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 94.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:Flow1
+buggy_20.sol:130:10: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_20.sol:146:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_20.sol:Stoppable.json.

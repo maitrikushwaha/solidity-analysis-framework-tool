@@ -1,0 +1,44 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/access_control/mycontract.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/access_control' running
+Compilation warnings/errors on /work/datasets/sbc/access_control/mycontract.sol:
+/work/datasets/sbc/access_control/mycontract.sol:14:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function MyContract() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+
+MyContract.sendTo(address,uint256) (datasets/sbc/access_control/mycontract.sol#18-22) sends eth to arbitrary user
+	Dangerous calls:
+	- receiver.transfer(amount) (datasets/sbc/access_control/mycontract.sol#21)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+MyContract.sendTo(address,uint256) (datasets/sbc/access_control/mycontract.sol#18-22) uses tx.origin for authorization: require(bool)(tx.origin == owner) (datasets/sbc/access_control/mycontract.sol#20)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-usage-of-txorigin
+
+MyContract.sendTo(address,uint256).receiver (datasets/sbc/access_control/mycontract.sol#18) lacks a zero-check on :
+		- receiver.transfer(amount) (datasets/sbc/access_control/mycontract.sol#21)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+Version constraint ^0.4.24 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x
+	- ExpExponentCleanup
+	- EventStructWrongData.
+It is used by:
+	- ^0.4.24 (datasets/sbc/access_control/mycontract.sol#8)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+/work/datasets/sbc/access_control/mycontract.sol analyzed (1 contracts with 93 detectors), 5 result(s) found

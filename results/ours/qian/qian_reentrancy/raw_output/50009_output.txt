@@ -1,0 +1,26 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+[CFG] No reentrancy back-edge: no external-call encoding detected.
+Dependency analysis completed in 0.0055s.
+[DOMAIN] No reentrancy encoding → Box only
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] Running Box domain.
+[TIMING] reentrancy domain=Box fixpoint=0.8418s
+[REENTRANCY] Structural call-value-state-after reentrancy detected (augmentation).
+
+===== VERDICTS (Box) =====
+[REENTRANCY] State update after external call in function 'payout'. The .call{value:} forwards unlimited gas, allowing re-entry before state is updated.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: VULNERABLE
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: NOT VULNERABLE
+[SUMMARY] TOD: NOT VULNERABLE
+
+Total analysis time: 1.00s

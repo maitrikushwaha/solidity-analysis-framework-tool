@@ -1,0 +1,240 @@
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Analysis started at: 2026-06-21 06:59:09 PM
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Callgraph generation started!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Callgraph generation finished!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Value Range Analysis started
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for DynamicPyramid
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for DynamicPyramid
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Range graph generated
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function DynamicPyramid
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for addPayout
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for addPayout
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Range graph generated
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function addPayout
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for currentMultiplier
+[WARNING] | 2026-06-21 06:59:09 PM | analyzer.rubixi | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for currentMultiplier
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function currentMultiplier
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for currentFeePercentage
+[WARNING] | 2026-06-21 06:59:09 PM | analyzer.rubixi | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for currentFeePercentage
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function currentFeePercentage
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for currentPyramidBalanceApproximately
+[WARNING] | 2026-06-21 06:59:09 PM | analyzer.rubixi | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for currentPyramidBalanceApproximately
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function currentPyramidBalanceApproximately
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for nextPayoutWhenPyramidBalanceTotalsApproximately
+[WARNING] | 2026-06-21 06:59:09 PM | analyzer.rubixi | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for nextPayoutWhenPyramidBalanceTotalsApproximately
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function nextPayoutWhenPyramidBalanceTotalsApproximately
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for feesSeperateFromBalanceApproximately
+[WARNING] | 2026-06-21 06:59:09 PM | analyzer.rubixi | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for feesSeperateFromBalanceApproximately
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function feesSeperateFromBalanceApproximately
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for totalParticipants
+[WARNING] | 2026-06-21 06:59:09 PM | analyzer.rubixi | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for totalParticipants
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function totalParticipants
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for numberOfParticipantsWaitingForPayout
+[WARNING] | 2026-06-21 06:59:09 PM | analyzer.rubixi | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for numberOfParticipantsWaitingForPayout
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function numberOfParticipantsWaitingForPayout
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for participantDetails
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for participantDetails
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function participantDetails
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Range graph generated
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for onlyowner
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for onlyowner
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function onlyowner
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for init
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for init
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Range graph generated
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function init
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for collectAllFees
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for collectAllFees
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Range graph generated
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function collectAllFees
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for collectPercentOfFees
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for collectPercentOfFees
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Range graph generated
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function collectPercentOfFees
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for changeOwner
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for changeOwner
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Range graph generated
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function changeOwner
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for changeMultiplier
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for changeMultiplier
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Range graph generated
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function changeMultiplier
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for changeFeePercentage
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for changeFeePercentage
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Range graph generated
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function changeFeePercentage
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for fallback
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for fallback
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Range graph generated
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function fallback
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Generating return summary for collectFeesInEther
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Return summary generated for collectFeesInEther
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Range graph generated
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Processed function collectFeesInEther
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Value Range Analysis took 0.008812 seconds
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Value Range Analysis finished
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:59:09 PM | analyzer.rubixi | Dependency detection started!
+[INFO] | 2026-06-21 06:59:10 PM | analyzer.rubixi | TOD dependency detected in file rubixi.sol in contract Rubixi in by composing functions fallback and fallback
+[INFO] | 2026-06-21 06:59:10 PM | analyzer.rubixi | Dependency detection finished!
+[INFO] | 2026-06-21 06:59:10 PM | analyzer.rubixi | Static Analysis took 0.553140 seconds
+[INFO] | 2026-06-21 06:59:10 PM | analyzer.rubixi | Dependency exists
+[INFO] | 2026-06-21 06:59:10 PM | analyzer.rubixi | Invoking symbolic executor!
+[36m[#] Analysing started: rubixi.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyowner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyowner[0m
+[36m[#] Interprocedural CFG generation started for DynamicPyramid[0m
+[36m[#] Interprocedural CFG generated for DynamicPyramid[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for collectAllFees[0m
+[36m[#] Interprocedural CFG generated for collectAllFees[0m
+[36m[#] Interprocedural CFG generation started for collectFeesInEther[0m
+[36m[#] Interprocedural CFG generated for collectFeesInEther[0m
+[36m[#] Interprocedural CFG generation started for collectPercentOfFees[0m
+[36m[#] Interprocedural CFG generated for collectPercentOfFees[0m
+[36m[#] Interprocedural CFG generation started for changeOwner[0m
+[36m[#] Interprocedural CFG generated for changeOwner[0m
+[36m[#] Interprocedural CFG generation started for changeMultiplier[0m
+[36m[#] Interprocedural CFG generated for changeMultiplier[0m
+[36m[#] Interprocedural CFG generation started for changeFeePercentage[0m
+[36m[#] Interprocedural CFG generated for changeFeePercentage[0m
+[36m[#] Interprocedural CFG generation started for currentMultiplier[0m
+[36m[#] Interprocedural CFG generated for currentMultiplier[0m
+[36m[#] Interprocedural CFG generation started for currentFeePercentage[0m
+[36m[#] Interprocedural CFG generated for currentFeePercentage[0m
+[36m[#] Interprocedural CFG generation started for currentPyramidBalanceApproximately[0m
+[36m[#] Interprocedural CFG generated for currentPyramidBalanceApproximately[0m
+[36m[#] Interprocedural CFG generation started for nextPayoutWhenPyramidBalanceTotalsApproximately[0m
+[36m[#] Interprocedural CFG generated for nextPayoutWhenPyramidBalanceTotalsApproximately[0m
+[36m[#] Interprocedural CFG generation started for feesSeperateFromBalanceApproximately[0m
+[36m[#] Interprocedural CFG generated for feesSeperateFromBalanceApproximately[0m
+[36m[#] Interprocedural CFG generation started for totalParticipants[0m
+[36m[#] Interprocedural CFG generated for totalParticipants[0m
+[36m[#] Interprocedural CFG generation started for numberOfParticipantsWaitingForPayout[0m
+[36m[#] Interprocedural CFG generated for numberOfParticipantsWaitingForPayout[0m
+[36m[#] Interprocedural CFG generation started for participantDetails[0m
+[36m[#] Interprocedural CFG generated for participantDetails[0m
+[36m[#] SDG generation started for DynamicPyramid[0m
+[36m[#] SDG generated for DynamicPyramid[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for collectAllFees[0m
+[36m[#] SDG generated for collectAllFees[0m
+[36m[#] SDG generation started for collectFeesInEther[0m
+[36m[#] SDG generated for collectFeesInEther[0m
+[36m[#] SDG generation started for collectPercentOfFees[0m
+[36m[#] SDG generated for collectPercentOfFees[0m
+[36m[#] SDG generation started for changeOwner[0m
+[36m[#] SDG generated for changeOwner[0m
+[36m[#] SDG generation started for changeMultiplier[0m
+[36m[#] SDG generated for changeMultiplier[0m
+[36m[#] SDG generation started for changeFeePercentage[0m
+[36m[#] SDG generated for changeFeePercentage[0m
+[36m[#] SDG generation started for currentMultiplier[0m
+[36m[#] SDG generated for currentMultiplier[0m
+[36m[#] SDG generation started for currentFeePercentage[0m
+[36m[#] SDG generated for currentFeePercentage[0m
+[36m[#] SDG generation started for currentPyramidBalanceApproximately[0m
+[36m[#] SDG generated for currentPyramidBalanceApproximately[0m
+[36m[#] SDG generation started for nextPayoutWhenPyramidBalanceTotalsApproximately[0m
+[36m[#] SDG generated for nextPayoutWhenPyramidBalanceTotalsApproximately[0m
+[36m[#] SDG generation started for feesSeperateFromBalanceApproximately[0m
+[36m[#] SDG generated for feesSeperateFromBalanceApproximately[0m
+[36m[#] SDG generation started for totalParticipants[0m
+[36m[#] SDG generated for totalParticipants[0m
+[36m[#] SDG generation started for numberOfParticipantsWaitingForPayout[0m
+[36m[#] SDG generated for numberOfParticipantsWaitingForPayout[0m
+[36m[#] SDG generation started for participantDetails[0m
+[36m[#] SDG generated for participantDetails[0m
+[36m[#] SDG generation started for modifier onlyowner[0m
+[36m[#] SDG generated for modifier onlyowner[0m
+[INFO] | 2026-06-21 06:59:14 PM | analyzer.rubixi | Symbolic execution took 4.103419 seconds
+[INFO] | 2026-06-21 06:59:14 PM | analyzer.rubixi | Symbolic execution finished!
+[INFO] | 2026-06-21 06:59:14 PM | analyzer.rubixi | Analysis finished!
+[INFO] | 2026-06-21 06:59:14 PM | analyzer.rubixi | Analysis took 4.657817 seconds
+[INFO] | 2026-06-21 06:59:14 PM | analyzer.rubixi | Analysis finished at: 2026-06-21 06:59:14 PM
+[36m[#] Analysis took 4.657817 seconds[0m
+[36m[#] Analysis completed: rubixi.sol [0m
+
+=== dependency_info.json ===
+{
+    "rubixi.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 74\nFunction: addPayout\nNode: \nEXPRESSION participants.push(Participant(msg.sender,(msg.value * pyramidMultiplier) \/ 100))\nIRS: \nPUSH TMP_6 in participants\"",
+                        "\"BlockID: 8\nFunction: addPayout\nNode: \nIF participants.length == 10\nIRS: \nCONDITION TMP_8\""
+                    ],
+                    "state_variable": "participants"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 74\nFunction: addPayout\nNode: \nEXPRESSION participants.push(Participant(msg.sender,(msg.value * pyramidMultiplier) \/ 100))\nIRS: \nPUSH TMP_6 in participants\"",
+                        "\"BlockID: 10\nFunction: addPayout\nNode: \nIF participants.length == 25\nIRS: \nCONDITION TMP_9\""
+                    ],
+                    "state_variable": "participants"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: addPayout\nNode: \nEXPRESSION pyramidMultiplier = 200\nIRS: \npyramidMultiplier := 200\"",
+                        "\"BlockID: 7\nFunction: addPayout\nNode: \nEXPRESSION participants.push(Participant(msg.sender,(msg.value * pyramidMultiplier) \/ 100))\nIRS: \nPUSH TMP_6 in participants\""
+                    ],
+                    "state_variable": "pyramidMultiplier"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 78\nFunction: addPayout\nNode: \nEXPRESSION pyramidMultiplier = 150\nIRS: \npyramidMultiplier := 150\"",
+                        "\"BlockID: 7\nFunction: addPayout\nNode: \nEXPRESSION participants.push(Participant(msg.sender,(msg.value * pyramidMultiplier) \/ 100))\nIRS: \nPUSH TMP_6 in participants\""
+                    ],
+                    "state_variable": "pyramidMultiplier"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 81\nFunction: addPayout\nNode: \nEXPRESSION balance += (msg.value * (100 - _fee)) \/ 100\nIRS: \nbalance = balance + TMP_12\"",
+                        "\"BlockID: 16\nFunction: addPayout\nNode: \nIF_LOOP balance > participants[payoutOrder].payout\nIRS: \nCONDITION TMP_15\""
+                    ],
+                    "state_variable": "balance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 85\nFunction: addPayout\nNode: \nEXPRESSION balance -= participants[payoutOrder].payout\nIRS: \nbalance = balance - REF_11\"",
+                        "\"BlockID: 16\nFunction: addPayout\nNode: \nIF_LOOP balance > participants[payoutOrder].payout\nIRS: \nCONDITION TMP_15\""
+                    ],
+                    "state_variable": "balance"
+                }
+            ]
+        }
+    ]
+}

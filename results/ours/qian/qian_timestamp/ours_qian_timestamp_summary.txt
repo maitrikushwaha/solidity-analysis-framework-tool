@@ -1,0 +1,49 @@
+=================================================================
+OUR TOOL QIAN_TIMESTAMP — PER-VULNERABILITY RESULTS
+=================================================================
+Total files  : 349 unique contracts
+Analysis OK  : 349  |  Partial: 0  |  Timeout: 0  |  Error: 0  |  Skipped: 0
+Batch time   : 50s (1 min)
+=================================================================
+
+  TIMESTAMP DEPENDENCE
+  -------------------------------------------------------
+  Ground truth : 173 positive + 176 negative
+  Evaluated    : 349  |  Excluded (N/A): 0
+  TP=173  FP=29  TN=147  FN=0  N/A=0
+  Precision : 85.6%  [TP/(TP+FP) = 173/202]
+  Recall    : 100.0%  [TP/(TP+FN) = 173/173]
+  F1        : 92.3%
+  Accuracy  : 91.7%  [(TP+TN)/evaluated = 320/349]
+  FP files (29):
+    - timestamp/11323.sol
+    - timestamp/14997.sol
+    - timestamp/16957.sol
+    - timestamp/17806.sol
+    - timestamp/17816.sol
+    - timestamp/19692.sol
+    - timestamp/20888.sol
+    - timestamp/21162.sol
+    - timestamp/22734.sol
+    - timestamp/28101.sol
+    - timestamp/33974.sol
+    - timestamp/34442.sol
+    - timestamp/34575.sol
+    - timestamp/3554.sol
+    - timestamp/3555.sol
+    - timestamp/36852.sol
+    - timestamp/37274.sol
+    - timestamp/37390.sol
+    - timestamp/37683.sol
+    - timestamp/38096.sol
+    - timestamp/3952.sol
+    - timestamp/40154.sol
+    - timestamp/40737.sol
+    - timestamp/40740.sol
+    - timestamp/40744.sol
+    - timestamp/578.sol
+    - timestamp/6149.sol
+    - timestamp/711.sol
+    - timestamp/798.sol
+
+=================================================================

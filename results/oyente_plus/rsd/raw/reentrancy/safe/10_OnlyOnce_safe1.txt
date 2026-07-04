@@ -1,0 +1,49 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 10_OnlyOnce_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.whgYs4OHPT' running
+INFO:root:contract 10_OnlyOnce_safe1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 74.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:10_OnlyOnce_safe1.sol:5:5: Warning: Integer Underflow.
+
+10_OnlyOnce_safe1.sol:22:4193: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    done[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    balances[msg.sender] = 0
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+10_OnlyOnce_safe1.sol:22:3880: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    done[msg.sender] = 22548652392185856
+    balances[msg.sender] = 0
+10_OnlyOnce_safe1.sol:22:2909: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    done[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+10_OnlyOnce_safe1.sol:9:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    done[msg.sender] = 57896044618658097711803882450834344592935292497146433900715839839214759837696
+INFO:symExec:10_OnlyOnce_safe1.sol:22:848: Warning: Integer Overflow.
+
+10_OnlyOnce_safe1.sol:10:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    done[msg.sender] = 61299821634635554334333881086012367344749564887344087040
+    balances[msg.sender] = 0
+10_OnlyOnce_safe1.sol:22:3826: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    done[msg.sender] = 61299821634635554334333881086012367344749564887344087040
+    balances[msg.sender] = 0
+INFO:symExec:10_OnlyOnce_safe1.sol:13:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 10_OnlyOnce_safe1.sol:C.json.

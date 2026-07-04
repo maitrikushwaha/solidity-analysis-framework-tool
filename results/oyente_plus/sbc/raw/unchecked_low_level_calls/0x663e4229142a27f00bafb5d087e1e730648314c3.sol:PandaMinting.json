@@ -1,0 +1,31 @@
+{
+ "evm_code_coverage": "67.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:697:16: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    pandas.length = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:397:13: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    ownershipTokenCount[_from] = 0\n    pandaIndexToApproved[_tokenId] = 0\n    paused = 0\n    pandaIndexToOwner[_tokenId] = 210624583337114373395836055367340864637790190801386452884773666816"
+  ],
+  "integer_overflow": [
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2199:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    saleAuctionERC20 = 1\n    cooAddress = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:392:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    ownershipTokenCount[_to] = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    pandaIndexToApproved[_tokenId] = 0\n    paused = 0\n    pandaIndexToOwner[_tokenId] = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:725:39: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    ownershipTokenCount[_owner] = 3618502788666131106986593281521497120414687020801267626233049500247285301247",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:991:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0\n    autoBirthFee = 29688166707895398508961105066564705971633995669920462096547772692035136127056\n    pandas[_pandaId] = 86844068228804573307916487724873916365488129517116248592739727622884106240086\n    pandaIndexToOwner[_tokenId] = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1004:30: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0\n    autoBirthFee = 29688166707895398508961105066564705971633995669920462096547772692035136127056\n    pandas[_pandaId] = 86844068228804573307916487724873916365488129517116248592739727622884106244182\n    pandaIndexToOwner[_tokenId] = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1005:32: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0\n    autoBirthFee = 29688166707895398508961105066564705971633995669920462096547772692035136127056\n    pandas[_pandaId] = 86844068228804573307916487724873916365488129517116248592739727622884106244182\n    pandaIndexToOwner[_tokenId] = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1008:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0\n    autoBirthFee = 29688166707895398508961105066564705971633995669920462096547772692035136127056\n    pandas[_pandaId] = 86844068228804573307916487724873916365488129517116248592739727622884106244182\n    pandaIndexToOwner[_tokenId] = 0",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:852:54: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    paused = 0\n    autoBirthFee = 29688166707895398508961105066564705971633995669920462096547772692035136127056\n    pandas[_pandaId] = 86844068228804573307916487724873916365488129517116248592739727622884106244182\n    pandaIndexToOwner[_tokenId] = 0"
+  ],
+  "callstack": [
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:1152:9: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:2184:9: Warning: Re-Entrancy Vulnerability.\n",
+   "0x663e4229142a27f00bafb5d087e1e730648314c3.sol:991:13: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

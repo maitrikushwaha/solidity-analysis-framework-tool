@@ -1,0 +1,26 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc reentrancy_dao.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.VfcZCnQeJN' running
+INFO:root:contract reentrancy_dao.sol:ReentrancyDAO:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 80.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:reentrancy_dao.sol:25:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    credit[msg.sender] = 14475211338696831865149128085623162571367268291922308058656014176828169564853
+reentrancy_dao.sol:26:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balance = 105981083245875735072581515911237207379087866796914542082848330067285313349732
+INFO:symExec:reentrancy_dao.sol:18:31: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:reentrancy_dao.sol:18:31: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to reentrancy_dao.sol:ReentrancyDAO.json.

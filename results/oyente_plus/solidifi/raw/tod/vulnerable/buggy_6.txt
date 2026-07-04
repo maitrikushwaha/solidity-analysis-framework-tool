@@ -1,0 +1,129 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc buggy_6.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.5N1QMtOAsx' running
+INFO:root:contract buggy_6.sol:ChannelWallet:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 96.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:buggy_6.sol:608:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    channelId = 4294967296
+    stopped = 0
+    _master = 0
+buggy_6.sol:610:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    channelId = 4294967296
+    stopped = 0
+    _master = 0
+buggy_6.sol:579:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stopped = 0
+    addressMap[to] = 0
+    to = 4294967296
+    _master = 0
+buggy_6.sol:581:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stopped = 0
+    addressMap[to] = 0
+    to = 1073742146
+    _master = 0
+buggy_6.sol:583:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stopped = 0
+    addressMap[to] = 0
+    to = 1073744194
+    _master = 0
+buggy_6.sol:550:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    channelId = 4294967296
+    stopped = 0
+    _master = 0
+buggy_6.sol:552:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    channelId = 4294967296
+    stopped = 0
+    _master = 0
+buggy_6.sol:525:16: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    channelId = 4294967296
+buggy_6.sol:523:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    channelId = 67
+INFO:symExec:buggy_6.sol:610:14: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    channelId = 4294967296
+    stopped = 0
+    _master = 0
+buggy_6.sol:2:78: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    channelId = 35905
+    stopped = 0
+    _master = 0
+buggy_6.sol:9:21: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    channelId = 16911890
+    stopped = 0
+    _master = 0
+buggy_6.sol:2:42: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    stopped = 0
+    addressMap[to] = 0
+    to = 490733542
+    _master = 0
+buggy_6.sol:579:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    stopped = 0
+    addressMap[to] = 0
+    to = 490733542
+    _master = 0
+buggy_6.sol:581:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    stopped = 0
+    addressMap[to] = 0
+    to = 1073742146
+    _master = 0
+buggy_6.sol:583:14: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    stopped = 0
+    addressMap[to] = 0
+    to = 1073742146
+    _master = 0
+buggy_6.sol:552:14: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    channelId = 4294967296
+    stopped = 0
+    _master = 0
+buggy_6.sol:523:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    channelId = 4294967296
+INFO:symExec:Flow1
+buggy_6.sol:421:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_6.sol:24:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_6.sol:ChannelWallet.json.

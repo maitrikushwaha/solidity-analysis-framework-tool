@@ -1,0 +1,19 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 6348.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.qZcPpxwEqm' running
+INFO:CryticCompile:Compilation warnings/errors on 6348.sol:
+6348.sol:13:9: Warning: Invoking events without "emit" prefix is deprecated.
+        BidSubmission(msg.sender, msg.value, missingFunds, block.timestamp);
+        ^-----------------------------------------------------------------^
+
+INFO:root:contract 6348.sol:DutchAuction:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 69.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 6348.sol:DutchAuction.json.

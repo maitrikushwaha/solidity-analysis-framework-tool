@@ -1,0 +1,29 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/09_ERC20_safe3.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+C.pullPayment(address,address,uint256) (datasets/rsd/reentrancy/safe/09_ERC20_safe3.sol#45-47) uses arbitrary from in transferFrom: IERC20(token).transferFrom(from,msg.sender,amount) (datasets/rsd/reentrancy/safe/09_ERC20_safe3.sol#46)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#arbitrary-from-in-transferfrom
+
+C.batchTransfer(address,address[],uint256) (datasets/rsd/reentrancy/safe/09_ERC20_safe3.sol#34-43) ignores return value by IERC20(token).transfer(recipients[i],amount) (datasets/rsd/reentrancy/safe/09_ERC20_safe3.sol#39)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-transfer
+
+C.batchTransfer(address,address[],uint256) (datasets/rsd/reentrancy/safe/09_ERC20_safe3.sol#34-43) has external calls inside a loop: IERC20(token).transfer(recipients[i],amount) (datasets/rsd/reentrancy/safe/09_ERC20_safe3.sol#39)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation/#calls-inside-a-loop
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/09_ERC20_safe3.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+C.decimals (datasets/rsd/reentrancy/safe/09_ERC20_safe3.sol#18) should be constant 
+C.name (datasets/rsd/reentrancy/safe/09_ERC20_safe3.sol#16) should be constant 
+C.symbol (datasets/rsd/reentrancy/safe/09_ERC20_safe3.sol#17) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+
+C.totalSupply (datasets/rsd/reentrancy/safe/09_ERC20_safe3.sol#19) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+/work/datasets/rsd/reentrancy/safe/09_ERC20_safe3.sol analyzed (2 contracts with 93 detectors), 8 result(s) found

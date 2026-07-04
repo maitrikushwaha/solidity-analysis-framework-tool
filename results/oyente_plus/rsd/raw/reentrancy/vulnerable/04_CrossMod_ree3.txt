@@ -1,0 +1,44 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 04_CrossMod_ree3.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.wRQdbFZXjV' running
+INFO:root:contract 04_CrossMod_ree3.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 75.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:04_CrossMod_ree3.sol:6:5: Warning: Integer Underflow.
+
+04_CrossMod_ree3.sol:33:2443: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+04_CrossMod_ree3.sol:23:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+04_CrossMod_ree3.sol:10:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 3760733977380791045518048730331302060938799474499754953590034919860285210752
+INFO:symExec:04_CrossMod_ree3.sol:33:614: Warning: Integer Overflow.
+
+04_CrossMod_ree3.sol:24:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 86844066927987146567678238756515930889952488499230423029593188005934847229954
+    balances[msg.sender] = 19807040628566084398385987584
+04_CrossMod_ree3.sol:17:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+    flag = 8635645764248906104766807269615019911981240980455649589133976212602880
+INFO:symExec:04_CrossMod_ree3.sol:24:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:04_CrossMod_ree3.sol:24:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 04_CrossMod_ree3.sol:C.json.

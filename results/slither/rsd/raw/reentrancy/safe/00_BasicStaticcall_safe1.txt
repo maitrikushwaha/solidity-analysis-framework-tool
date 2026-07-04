@@ -1,0 +1,22 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/00_BasicStaticcall_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+Contract locking ether found:
+	Contract C (datasets/rsd/reentrancy/safe/00_BasicStaticcall_safe1.sol#4-20) has payable functions:
+	 - C.deposit() (datasets/rsd/reentrancy/safe/00_BasicStaticcall_safe1.sol#15-17)
+	But does not have a function to withdraw the ether
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#contracts-that-lock-ether
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/00_BasicStaticcall_safe1.sol#1)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in C.withdraw() (datasets/rsd/reentrancy/safe/00_BasicStaticcall_safe1.sol#8-13):
+	- (success,None) = msg.sender.staticcall(myFunction) (datasets/rsd/reentrancy/safe/00_BasicStaticcall_safe1.sol#11)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/work/datasets/rsd/reentrancy/safe/00_BasicStaticcall_safe1.sol analyzed (1 contracts with 93 detectors), 3 result(s) found

@@ -1,0 +1,140 @@
+{
+  "dataset": "sbc",
+  "macro_average": {
+    "accuracy": 0.75,
+    "f1": 0.3166,
+    "precision": 0.6706,
+    "recall": 0.5034
+  },
+  "micro_average": {
+    "counts": {
+      "fn": 15,
+      "fp": 56,
+      "tn": 183,
+      "tp": 30
+    },
+    "metrics": {
+      "accuracy": 0.75,
+      "f1": 0.458,
+      "precision": 0.3488,
+      "recall": 0.6667
+    }
+  },
+  "per_vulnerability": {
+    "reentrancy": {
+      "accuracy": 0.5915,
+      "counts": {
+        "fn": 2,
+        "fp": 56,
+        "tn": 55,
+        "tp": 29
+      },
+      "evaluated": 142,
+      "excluded_na": 0,
+      "excluded_na_files": [],
+      "f1": 0.5,
+      "fn_files": [
+        "modifier_reentrancy.sol",
+        "spank_chain_payment.sol"
+      ],
+      "fp_files": [
+        "0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol",
+        "0x0cbe050f75bc8f8c2d6c0d249fea125fd6e1acc9.sol",
+        "0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol",
+        "0x2972d548497286d18e92b5fa1f8f9139e5653fd2.sol",
+        "0x39cfd754c85023648bf003bea2dd498c5612abfa.sol",
+        "0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01.sol",
+        "0x3e013fc32a54c4c5b6991ba539dcd0ec4355c859.sol",
+        "0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+        "0x4051334adc52057aca763453820cb0e045076ef3.sol",
+        "0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol",
+        "0x4b71ad9c1a84b9b643aa54fdd66e2dec96e8b152.sol",
+        "0x524960d55174d912768678d8c606b4d50b79d7b1.sol",
+        "0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+        "0x5aa88d2901c68fda244f1d0584400368d2c8e739.sol",
+        "0x610495793564aed0f9c7fc48dc4c7c9151d34fd6.sol",
+        "0x663e4229142a27f00bafb5d087e1e730648314c3.sol",
+        "0x70f9eddb3931491aab1aeafbc1e7f1ca2a012db4.sol",
+        "0x78c2a1e91b52bca4130b6ed9edd9fbcfd4671c37.sol",
+        "0x7a4349a749e59a5736efb7826ee3496a2dfd5489.sol",
+        "0x7d09edb07d23acb532a82be3da5c17d9d85806b4.sol",
+        "0x806a6bd219f162442d992bdc4ee6eba1f2c5a707.sol",
+        "0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8.sol",
+        "0x89c1b3807d4c67df034fffb62f3509561218d30b.sol",
+        "0x8fd1e427396ddb511533cf9abdbebd0a7e08da35.sol",
+        "0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol",
+        "0x9d06cbafa865037a01d322d3f4222fa3e04e5488.sol",
+        "0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+        "0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+        "0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol",
+        "0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol",
+        "0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol",
+        "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol",
+        "0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+        "0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
+        "0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+        "0xd2018bfaa266a9ec0a1a84b061640faa009def76.sol",
+        "0xd5967fed03e85d1cce44cab284695b41bc675b5c.sol",
+        "0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+        "0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol",
+        "0xe4eabdca81e31d9acbc4af76b30f532b6ed7f3bf.sol",
+        "0xe82f0742a71a02b9e9ffc142fdcb6eb1ed06fb87.sol",
+        "0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
+        "0xec329ffc97d75fe03428ae155fc7793431487f63.sol",
+        "0xf2570186500a46986f3139f65afedc2afe4f445d.sol",
+        "0xf29ebe930a539a60279ace72c707cba851a57707.sol",
+        "0xf70d589d76eebdd7c12cc5eec99f8f6fa4233b9e.sol",
+        "auction.sol",
+        "etherpot_lotto.sol",
+        "governmental_survey.sol",
+        "king_of_the_ether_throne.sol",
+        "lottery.sol",
+        "lotto.sol",
+        "mishandled.sol",
+        "rubixi.sol",
+        "send_loop.sol",
+        "unchecked_return_value.sol"
+      ],
+      "precision": 0.3412,
+      "recall": 0.9355,
+      "total": 142
+    },
+    "timestamp": {
+      "accuracy": 0.9085,
+      "counts": {
+        "fn": 13,
+        "fp": 0,
+        "tn": 128,
+        "tp": 1
+      },
+      "evaluated": 142,
+      "excluded_na": 0,
+      "excluded_na_files": [],
+      "f1": 0.1333,
+      "fn_files": [
+        "0x7541b76cb60f4c60af330c208b0623b7f54bf615.sol",
+        "0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3.sol",
+        "0x93c32845fae42c83a70e5f06214c8433665c2ab5.sol",
+        "0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+        "0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888.sol",
+        "0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+        "0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol",
+        "ether_lotto.sol",
+        "governmental_survey.sol",
+        "list_dos.sol",
+        "lottopollo.sol",
+        "timed_crowdsale.sol",
+        "timelock.sol"
+      ],
+      "fp_files": [],
+      "precision": 1.0,
+      "recall": 0.0714,
+      "total": 142
+    }
+  },
+  "summary": {
+    "excluded_na_total": 0,
+    "total_contracts": 142
+  },
+  "tool": "smartcheck"
+}

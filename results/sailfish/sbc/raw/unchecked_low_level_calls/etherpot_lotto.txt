@@ -1,0 +1,241 @@
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Analysis started at: 2026-06-21 07:10:04 PM
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Callgraph generation started!
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Callgraph generation finished!
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Value Range Analysis started
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Range graph generated
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for getBlocksPerRound
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for getBlocksPerRound
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function getBlocksPerRound
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for getTicketPrice
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for getTicketPrice
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function getTicketPrice
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for getRoundIndex
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for getRoundIndex
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function getRoundIndex
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for getIsCashed
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for getIsCashed
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function getIsCashed
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for getDecisionBlockNumber
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for getDecisionBlockNumber
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function getDecisionBlockNumber
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for getSubpotsCount
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for getSubpotsCount
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function getSubpotsCount
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for getHashOfBlock
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for getHashOfBlock
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function getHashOfBlock
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for getBuyers
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for getBuyers
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function getBuyers
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for getTicketsCountByBuyer
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for getTicketsCountByBuyer
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function getTicketsCountByBuyer
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for getPot
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for getPot
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function getPot
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for fallback
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for fallback
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Range graph generated
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function fallback
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for calculateWinner
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for calculateWinner
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function calculateWinner
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for getSubpot
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for getSubpot
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function getSubpot
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Generating return summary for cash
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Return summary generated for cash
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Range graph generated
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Processed function cash
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Value Range Analysis took 0.004015 seconds
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Value Range Analysis finished
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Dependency detection started!
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | TOD dependency detected in file etherpot_lotto.sol in contract Lotto in by composing functions cash and cash
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | TOD dependency detected in file etherpot_lotto.sol in contract Lotto in by composing functions cash and fallback
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Dependency detection finished!
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Static Analysis took 0.543749 seconds
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Dependency exists
+[INFO] | 2026-06-21 07:10:04 PM | analyzer.etherpot_lotto | Invoking symbolic executor!
+[36m[#] Analysing started: etherpot_lotto.sol[0m
+[36m[#] Interprocedural CFG generation started for getBlocksPerRound[0m
+[36m[#] Interprocedural CFG generated for getBlocksPerRound[0m
+[36m[#] Interprocedural CFG generation started for getTicketPrice[0m
+[36m[#] Interprocedural CFG generated for getTicketPrice[0m
+[36m[#] Interprocedural CFG generation started for getRoundIndex[0m
+[36m[#] Interprocedural CFG generated for getRoundIndex[0m
+[36m[#] Interprocedural CFG generation started for getIsCashed[0m
+[36m[#] Interprocedural CFG generated for getIsCashed[0m
+[36m[#] Interprocedural CFG generation started for calculateWinner[0m
+[36m[#] Interprocedural CFG generated for calculateWinner[0m
+[36m[#] Interprocedural CFG generation started for getDecisionBlockNumber[0m
+[36m[#] Interprocedural CFG generated for getDecisionBlockNumber[0m
+[36m[#] Interprocedural CFG generation started for getSubpotsCount[0m
+[36m[#] Interprocedural CFG generated for getSubpotsCount[0m
+[36m[#] Interprocedural CFG generation started for getSubpot[0m
+[36m[#] Interprocedural CFG generated for getSubpot[0m
+[36m[#] Interprocedural CFG generation started for cash[0m
+[36m[#] Interprocedural CFG generated for cash[0m
+[36m[#] Interprocedural CFG generation started for getHashOfBlock[0m
+[36m[#] Interprocedural CFG generated for getHashOfBlock[0m
+[36m[#] Interprocedural CFG generation started for getBuyers[0m
+[36m[#] Interprocedural CFG generated for getBuyers[0m
+[36m[#] Interprocedural CFG generation started for getTicketsCountByBuyer[0m
+[36m[#] Interprocedural CFG generated for getTicketsCountByBuyer[0m
+[36m[#] Interprocedural CFG generation started for getPot[0m
+[36m[#] Interprocedural CFG generated for getPot[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] SDG generation started for getBlocksPerRound[0m
+[36m[#] SDG generated for getBlocksPerRound[0m
+[36m[#] SDG generation started for getTicketPrice[0m
+[36m[#] SDG generated for getTicketPrice[0m
+[36m[#] SDG generation started for getRoundIndex[0m
+[36m[#] SDG generated for getRoundIndex[0m
+[36m[#] SDG generation started for getIsCashed[0m
+[36m[#] SDG generated for getIsCashed[0m
+[36m[#] SDG generation started for calculateWinner[0m
+[36m[#] SDG generated for calculateWinner[0m
+[36m[#] SDG generation started for getDecisionBlockNumber[0m
+[36m[#] SDG generated for getDecisionBlockNumber[0m
+[36m[#] SDG generation started for getSubpotsCount[0m
+[36m[#] SDG generated for getSubpotsCount[0m
+[36m[#] SDG generation started for getSubpot[0m
+[36m[#] SDG generated for getSubpot[0m
+[36m[#] SDG generation started for cash[0m
+[36m[#] SDG generated for cash[0m
+[36m[#] SDG generation started for getHashOfBlock[0m
+[36m[#] SDG generated for getHashOfBlock[0m
+[36m[#] SDG generation started for getBuyers[0m
+[36m[#] SDG generated for getBuyers[0m
+[36m[#] SDG generation started for getTicketsCountByBuyer[0m
+[36m[#] SDG generated for getTicketsCountByBuyer[0m
+[36m[#] SDG generation started for getPot[0m
+[36m[#] SDG generated for getPot[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[INFO] | 2026-06-21 07:10:12 PM | analyzer.etherpot_lotto | Symbolic execution took 8.276334 seconds
+[INFO] | 2026-06-21 07:10:12 PM | analyzer.etherpot_lotto | Symbolic execution finished!
+[INFO] | 2026-06-21 07:10:12 PM | analyzer.etherpot_lotto | Analysis finished!
+[INFO] | 2026-06-21 07:10:12 PM | analyzer.etherpot_lotto | Analysis took 8.820571 seconds
+[INFO] | 2026-06-21 07:10:12 PM | analyzer.etherpot_lotto | Analysis finished at: 2026-06-21 07:10:12 PM
+[36m[#] Analysis took 8.820571 seconds[0m
+[36m[#] Analysis completed: etherpot_lotto.sol [0m
+
+=== dependency_info.json ===
+{
+    "etherpot_lotto.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "cash",
+                "cash"
+            ],
+            "First_function": "cash",
+            "Second_function": "cash",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: cash\nNode: \nEXPRESSION rounds[roundIndex].isCashed[subpotIndex] = true\nIRS: \nREF_26 := true\"",
+                        "\"BlockID: 18\nFunction: cash\nNode: \nIF rounds[roundIndex].isCashed[subpotIndex]\nIRS: \nCONDITION REF_22\""
+                    ],
+                    "state_variable": "rounds.isCashed"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "cash",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "cash",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 45\nFunction: fallback\nNode: \nEXPRESSION rounds[roundIndex].pot += value\nIRS: \nREF_52 = REF_52 + value\"",
+                        "\"BlockID: 16\nFunction: cash\nNode: \nIF subpotIndex >= subpotsCount\nIRS: \nCONDITION TMP_19\""
+                    ],
+                    "state_variable": "rounds.pot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 45\nFunction: fallback\nNode: \nEXPRESSION rounds[roundIndex].pot += value\nIRS: \nREF_52 = REF_52 + value\"",
+                        "\"BlockID: 19\nFunction: cash\nNode: \nEXPRESSION winner.send(subpot)\nIRS: \nTMP_24 = SEND dest:winner value:subpot\""
+                    ],
+                    "state_variable": "rounds.pot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 45\nFunction: fallback\nNode: \nEXPRESSION rounds[roundIndex].pot += value\nIRS: \nREF_52 = REF_52 + value\"",
+                        "\"BlockID: 21\nFunction: getSubpotsCount\nNode: \nIF rounds[roundIndex].pot % blockReward > 0\nIRS: \nCONDITION TMP_14\""
+                    ],
+                    "state_variable": "rounds.pot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 45\nFunction: fallback\nNode: \nEXPRESSION rounds[roundIndex].pot += value\nIRS: \nREF_52 = REF_52 + value\"",
+                        "\"BlockID: 27\nFunction: getSubpotsCount\nNode: \nIF rounds[roundIndex].pot % blockReward > 0\nIRS: \nCONDITION TMP_14\""
+                    ],
+                    "state_variable": "rounds.pot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 41\nFunction: fallback\nNode: \nEXPRESSION rounds[roundIndex].buyers[buyersLength] = msg.sender\nIRS: \nREF_45 := msg.sender\"",
+                        "\"BlockID: 19\nFunction: cash\nNode: \nEXPRESSION winner.send(subpot)\nIRS: \nTMP_24 = SEND dest:winner value:subpot\""
+                    ],
+                    "state_variable": "rounds.buyers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 41\nFunction: fallback\nNode: \nEXPRESSION rounds[roundIndex].buyers[buyersLength] = msg.sender\nIRS: \nREF_45 := msg.sender\"",
+                        "\"BlockID: 23\nFunction: calculateWinner\nNode: \nIF_LOOP buyerIndex < rounds[roundIndex].buyers.length\nIRS: \nCONDITION TMP_6\""
+                    ],
+                    "state_variable": "rounds.buyers"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 38\nFunction: fallback\nNode: \nEXPRESSION rounds[roundIndex].ticketsCount += ticketsCount\nIRS: \nREF_36 = REF_36 + ticketsCount\"",
+                        "\"BlockID: 24\nFunction: calculateWinner\nNode: \nIF ticketIndex > winningTicketIndex\nIRS: \nCONDITION TMP_7\""
+                    ],
+                    "state_variable": "rounds.ticketsCount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: fallback\nNode: \nEXPRESSION rounds[roundIndex].ticketsCount += ticketsCount\nIRS: \nREF_50 = REF_50 + ticketsCount\"",
+                        "\"BlockID: 24\nFunction: calculateWinner\nNode: \nIF ticketIndex > winningTicketIndex\nIRS: \nCONDITION TMP_7\""
+                    ],
+                    "state_variable": "rounds.ticketsCount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 43\nFunction: fallback\nNode: \nEXPRESSION rounds[roundIndex].ticketsCountByBuyer[msg.sender] += ticketsCount\nIRS: \nREF_48 = REF_48 + ticketsCount\"",
+                        "\"BlockID: 24\nFunction: calculateWinner\nNode: \nIF ticketIndex > winningTicketIndex\nIRS: \nCONDITION TMP_7\""
+                    ],
+                    "state_variable": "rounds.ticketsCountByBuyer"
+                }
+            ]
+        }
+    ]
+}

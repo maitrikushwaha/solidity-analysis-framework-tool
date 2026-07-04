@@ -1,0 +1,58 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/reentrancy/etherstore.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/reentrancy' running
+
+Reentrancy in EtherStore.withdrawFunds(uint256) (datasets/sbc/reentrancy/etherstore.sol#20-30):
+	External calls:
+	- require(bool)(msg.sender.call.value(_weiToWithdraw)()) (datasets/sbc/reentrancy/etherstore.sol#27)
+	State variables written after the call(s):
+	- balances[msg.sender] -= _weiToWithdraw (datasets/sbc/reentrancy/etherstore.sol#28)
+	EtherStore.balances (datasets/sbc/reentrancy/etherstore.sol#14) can be used in cross function reentrancies:
+	- EtherStore.balances (datasets/sbc/reentrancy/etherstore.sol#14)
+	- EtherStore.depositFunds() (datasets/sbc/reentrancy/etherstore.sol#16-18)
+	- EtherStore.withdrawFunds(uint256) (datasets/sbc/reentrancy/etherstore.sol#20-30)
+	- lastWithdrawTime[msg.sender] = now (datasets/sbc/reentrancy/etherstore.sol#29)
+	EtherStore.lastWithdrawTime (datasets/sbc/reentrancy/etherstore.sol#13) can be used in cross function reentrancies:
+	- EtherStore.lastWithdrawTime (datasets/sbc/reentrancy/etherstore.sol#13)
+	- EtherStore.withdrawFunds(uint256) (datasets/sbc/reentrancy/etherstore.sol#20-30)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+EtherStore.withdrawFunds(uint256) (datasets/sbc/reentrancy/etherstore.sol#20-30) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(now >= lastWithdrawTime[msg.sender] + 604800) (datasets/sbc/reentrancy/etherstore.sol#25)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.4.10 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ExpExponentCleanup
+	- NestedArrayFunctionCallDecoder
+	- ZeroFunctionSelector
+	- DelegateCallReturnValue
+	- ECRecoverMalformedInput
+	- SkipEmptyStringLiteral
+	- ConstantOptimizerSubtraction.
+It is used by:
+	- ^0.4.10 (datasets/sbc/reentrancy/etherstore.sol#8)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in EtherStore.withdrawFunds(uint256) (datasets/sbc/reentrancy/etherstore.sol#20-30):
+	- require(bool)(msg.sender.call.value(_weiToWithdraw)()) (datasets/sbc/reentrancy/etherstore.sol#27)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Parameter EtherStore.withdrawFunds(uint256)._weiToWithdraw (datasets/sbc/reentrancy/etherstore.sol#20) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+EtherStore.withdrawalLimit (datasets/sbc/reentrancy/etherstore.sol#12) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/sbc/reentrancy/etherstore.sol analyzed (1 contracts with 93 detectors), 7 result(s) found

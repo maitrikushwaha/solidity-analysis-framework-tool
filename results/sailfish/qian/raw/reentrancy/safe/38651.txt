@@ -1,0 +1,58 @@
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Analysis started at: 2026-06-21 07:12:14 PM
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Generating return summary for cancelBuyOrder
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Return summary generated for cancelBuyOrder
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Processed function cancelBuyOrder
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Value Range Analysis took 0.000356 seconds
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | TOD dependency detected in file 38651.sol in contract Ethex in by composing functions cancelBuyOrder and cancelBuyOrder
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Static Analysis took 0.075454 seconds
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Dependency exists
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Invoking symbolic executor!
+[36m[#] Analysing started: 38651.sol[0m
+[36m[#] Interprocedural CFG generation started for cancelBuyOrder[0m
+[36m[#] Interprocedural CFG generated for cancelBuyOrder[0m
+[36m[#] SDG generation started for cancelBuyOrder[0m
+[36m[#] SDG generated for cancelBuyOrder[0m
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Symbolic execution took 0.450131 seconds
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Analysis finished!
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Analysis took 0.526073 seconds
+[INFO] | 2026-06-21 07:12:14 PM | analyzer.38651  | Analysis finished at: 2026-06-21 07:12:14 PM
+[36m[#] Analysis took 0.526073 seconds[0m
+[36m[#] Analysis completed: 38651.sol [0m
+
+=== dependency_info.json ===
+{
+    "38651.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "cancelBuyOrder",
+                "cancelBuyOrder"
+            ],
+            "First_function": "cancelBuyOrder",
+            "Second_function": "cancelBuyOrder",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 13\nFunction: cancelBuyOrder\nNode: \nEXPRESSION delete buyOrders[h]\nIRS: \nREF_1 = delete REF_1 \"",
+                        "\"BlockID: 4\nFunction: cancelBuyOrder\nNode: \nIF ! msg.sender.call.value(remain)()\nIRS: \nTMP_2(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:remain \""
+                    ],
+                    "state_variable": "buyOrders"
+                }
+            ]
+        }
+    ]
+}

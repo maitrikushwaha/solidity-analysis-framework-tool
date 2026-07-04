@@ -1,0 +1,21 @@
+{
+ "evm_code_coverage": "88.5",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:102:4: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:109:3: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

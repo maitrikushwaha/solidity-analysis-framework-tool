@@ -1,0 +1,17 @@
+{
+  "filename": "0x7541b76cb60f4c60af330c208b0623b7f54bf615.sol",
+  "reentrancy": 1,
+  "overflow": 0,
+  "timestamp": 1,
+  "tod": 0,
+  "duration_s": 11.67,
+  "error": null,
+  "reentrancy_domains": [
+    "Box",
+    "Octagon",
+    "Polka"
+  ],
+  "reentrancy_fixpoint_times": {
+    "Box": 10.512
+  }
+}

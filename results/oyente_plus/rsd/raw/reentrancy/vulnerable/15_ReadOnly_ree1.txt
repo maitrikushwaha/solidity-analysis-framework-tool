@@ -1,0 +1,40 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 15_ReadOnly_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.7CexDtonTW' running
+INFO:root:contract 15_ReadOnly_ree1.sol:A:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 61.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:15_ReadOnly_ree1.sol:78:271: Warning: Integer Underflow.
+
+15_ReadOnly_ree1.sol:22:5: Warning: Integer Underflow.
+
+INFO:symExec:15_ReadOnly_ree1.sol:33:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 15_ReadOnly_ree1.sol:A.json.
+INFO:root:contract 15_ReadOnly_ree1.sol:B:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 88.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:15_ReadOnly_ree1.sol:45:5: Warning: Integer Underflow.
+
+15_ReadOnly_ree1.sol:44:5: Warning: Integer Underflow.
+
+15_ReadOnly_ree1.sol:56:5: Warning: Integer Underflow.
+
+15_ReadOnly_ree1.sol:53:5: Warning: Integer Underflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 15_ReadOnly_ree1.sol:B.json.

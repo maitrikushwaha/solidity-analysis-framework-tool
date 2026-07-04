@@ -1,0 +1,22 @@
+{
+ "evm_code_coverage": "87.6",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "arbitrary_location_write_simple.sol:28:10: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    bonusCodes.length = 0",
+   "arbitrary_location_write_simple.sol:22:10: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "arbitrary_location_write_simple.sol:33:10: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    bonusCodes.length = 76189624550741644503551423152399723422768076887749655459090739549318933069819\n    idx = 43480424826355086054081184337208083592750205178177945329514723902259368034316",
+   "arbitrary_location_write_simple.sol:9:2: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    bonusCodes.length = 66957485486206312693506576740988669971785621551100731008301585977930260942080",
+   "arbitrary_location_write_simple.sol:2:21: Warning: Integer Overflow.\n",
+   "arbitrary_location_write_simple.sol:22:10: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

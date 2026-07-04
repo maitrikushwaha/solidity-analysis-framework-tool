@@ -1,0 +1,39 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 03_SingleMod_ree2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.dyRBEfqdI4' running
+INFO:root:contract 03_SingleMod_ree2.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 78.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:03_SingleMod_ree2.sol:6:5: Warning: Integer Underflow.
+
+03_SingleMod_ree2.sol:27:1900: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+03_SingleMod_ree2.sol:17:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+03_SingleMod_ree2.sol:10:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 57896044618658097711785492504343953926634992332820282019740693117815880549888
+INFO:symExec:03_SingleMod_ree2.sol:27:824: Warning: Integer Overflow.
+
+03_SingleMod_ree2.sol:18:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 86844066927987146567678238756515930889952488499230423029593188005934847229954
+    balances[msg.sender] = 19807040628566084398385987584
+INFO:symExec:03_SingleMod_ree2.sol:18:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:03_SingleMod_ree2.sol:18:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 03_SingleMod_ree2.sol:C.json.

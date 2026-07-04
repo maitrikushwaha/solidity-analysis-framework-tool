@@ -1,0 +1,31 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40499.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.wnssuP970F' running
+INFO:CryticCompile:Compilation warnings/errors on 40499.sol:
+40499.sol:11:13: Warning: Return value of low-level calls not used.
+            _h.call.value(value)(data);
+            ^------------------------^
+40499.sol:9:5: Warning: No visibility specified. Defaulting to "public". 
+    function confirm(address _h, uint value, byte data) returns (bool) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 40499.sol:Wallet:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:40499.sol:12:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    value = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+    m_txs[_h] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+INFO:symExec:40499.sol:11:13: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:40499.sol:11:13: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40499.sol:Wallet.json.

@@ -1,0 +1,77 @@
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Analysis started at: 2026-06-21 07:13:38 PM
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Generating return summary for Collect
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Return summary generated for Collect
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Range graph generated
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Processed function Collect
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Value Range Analysis took 0.000350 seconds
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | DAO dependency detected in file 22247.sol in contract PIGGY_BANK in by composing functions Collect and Collect
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | TOD dependency detected in file 22247.sol in contract PIGGY_BANK in by composing functions Collect and Collect
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Static Analysis took 0.063451 seconds
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Dependency exists
+[INFO] | 2026-06-21 07:13:38 PM | analyzer.22247  | Invoking symbolic executor!
+[36m[#] Analysing started: 22247.sol[0m
+[36m[#] Interprocedural CFG generation started for Collect[0m
+[36m[#] Interprocedural CFG generated for Collect[0m
+[36m[#] SDG generation started for Collect[0m
+[36m[#] SDG generated for Collect[0m
+[INFO] | 2026-06-21 07:13:40 PM | analyzer.22247  | Symbolic execution took 1.366777 seconds
+[INFO] | 2026-06-21 07:13:40 PM | analyzer.22247  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:13:40 PM | analyzer.22247  | Analysis finished!
+[INFO] | 2026-06-21 07:13:40 PM | analyzer.22247  | Analysis took 1.430820 seconds
+[INFO] | 2026-06-21 07:13:40 PM | analyzer.22247  | Analysis finished at: 2026-06-21 07:13:40 PM
+[36m[#] Analysis took 1.430820 seconds[0m
+[36m[#] Analysis completed: 22247.sol [0m
+
+=== dependency_info.json ===
+{
+    "22247.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "Collect",
+                "Collect"
+            ],
+            "from_function": "Collect",
+            "to_function": "Collect",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: Collect\nNode: \nIF _am <= Accounts[msg.sender]\nIRS: \nCONDITION TMP_0\"",
+                        "\"BlockID: 6\nFunction: Collect\nNode: \nEXPRESSION Accounts[msg.sender] -= _am\nIRS: \nREF_3 = REF_3 - _am\""
+                    ],
+                    "state_variable": "Accounts"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Collect",
+                "Collect"
+            ],
+            "First_function": "Collect",
+            "Second_function": "Collect",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: Collect\nNode: \nEXPRESSION Accounts[msg.sender] -= _am\nIRS: \nREF_3 = REF_3 - _am\"",
+                        "\"BlockID: 2\nFunction: Collect\nNode: \nIF _am <= Accounts[msg.sender]\nIRS: \nCONDITION TMP_0\""
+                    ],
+                    "state_variable": "Accounts"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Analysis started at: 2026-06-21 07:13:02 PM
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Generating return summary for WithdrawReward
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Return summary generated for WithdrawReward
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Range graph generated
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Processed function WithdrawReward
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Value Range Analysis took 0.000289 seconds
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | TOD dependency detected in file 40734.sol in contract crossFunctionReentrancy in by composing functions WithdrawReward and WithdrawReward
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Static Analysis took 0.053182 seconds
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Dependency exists
+[INFO] | 2026-06-21 07:13:02 PM | analyzer.40734  | Invoking symbolic executor!
+[36m[#] Analysing started: 40734.sol[0m
+[36m[#] Interprocedural CFG generation started for WithdrawReward[0m
+[36m[#] Interprocedural CFG generated for WithdrawReward[0m
+[36m[#] SDG generation started for WithdrawReward[0m
+[36m[#] SDG generated for WithdrawReward[0m
+[INFO] | 2026-06-21 07:13:03 PM | analyzer.40734  | Symbolic execution took 0.440361 seconds
+[INFO] | 2026-06-21 07:13:03 PM | analyzer.40734  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:13:03 PM | analyzer.40734  | Analysis finished!
+[INFO] | 2026-06-21 07:13:03 PM | analyzer.40734  | Analysis took 0.494101 seconds
+[INFO] | 2026-06-21 07:13:03 PM | analyzer.40734  | Analysis finished at: 2026-06-21 07:13:03 PM
+[36m[#] Analysis took 0.494101 seconds[0m
+[36m[#] Analysis completed: 40734.sol [0m
+
+=== dependency_info.json ===
+{
+    "40734.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "WithdrawReward",
+                "WithdrawReward"
+            ],
+            "First_function": "WithdrawReward",
+            "Second_function": "WithdrawReward",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: WithdrawReward\nNode: \nEXPRESSION rewardsForA[recipient] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 3\nFunction: WithdrawReward\nNode: \nEXPRESSION require(bool)(recipient.call.value(amountToWithdraw)())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "rewardsForA"
+                }
+            ]
+        }
+    ]
+}

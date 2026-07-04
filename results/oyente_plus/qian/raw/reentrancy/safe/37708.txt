@@ -1,0 +1,27 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 37708.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.63seRtTevK' running
+INFO:CryticCompile:Compilation warnings/errors on 37708.sol:
+37708.sol:15:5: Warning: No visibility specified. Defaulting to "public". 
+    function claimBounty() onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 37708.sol:BountyHunt:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:37708.sol:19:11: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    totalBountyAmount = 0
+    owner = 0
+    bountyAmount[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+INFO:symExec:37708.sol:18:13: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 37708.sol:BountyHunt.json.

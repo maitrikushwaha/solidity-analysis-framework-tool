@@ -1,0 +1,58 @@
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Analysis started at: 2026-06-21 07:12:08 PM
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Generating return summary for withdraw
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Return summary generated for withdraw
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Range graph generated
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Processed function withdraw
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Value Range Analysis took 0.000731 seconds
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | TOD dependency detected in file 38057.sol in contract TokenStore in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Static Analysis took 0.080760 seconds
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Dependency exists
+[INFO] | 2026-06-21 07:12:08 PM | analyzer.38057  | Invoking symbolic executor!
+[36m[#] Analysing started: 38057.sol[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[INFO] | 2026-06-21 07:12:09 PM | analyzer.38057  | Symbolic execution took 1.062784 seconds
+[INFO] | 2026-06-21 07:12:09 PM | analyzer.38057  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:12:09 PM | analyzer.38057  | Analysis finished!
+[INFO] | 2026-06-21 07:12:09 PM | analyzer.38057  | Analysis took 1.144223 seconds
+[INFO] | 2026-06-21 07:12:09 PM | analyzer.38057  | Analysis finished at: 2026-06-21 07:12:09 PM
+[36m[#] Analysis took 1.144223 seconds[0m
+[36m[#] Analysis completed: 38057.sol [0m
+
+=== dependency_info.json ===
+{
+    "38057.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 15\nFunction: withdraw\nNode: \nEXPRESSION tokens[0][msg.sender] = tokens[0][msg.sender] - _amount\nIRS: \nREF_3 := TMP_2\"",
+                        "\"BlockID: 2\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(tokens[0][msg.sender] >= _amount)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+                    ],
+                    "state_variable": "tokens"
+                }
+            ]
+        }
+    ]
+}

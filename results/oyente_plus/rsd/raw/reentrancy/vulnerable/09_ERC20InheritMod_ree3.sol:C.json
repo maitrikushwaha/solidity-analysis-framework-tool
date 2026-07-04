@@ -1,0 +1,22 @@
+{
+ "evm_code_coverage": "72.6",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "09_ERC20InheritMod_ree3.sol:100:1643: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    received[to] = 0\n    flag = 4241947657116780359935904571152055820256669890204210823169",
+   "09_ERC20InheritMod_ree3.sol:100:547: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    received[to] = 10384593717069655257060992658440192\n    flag = 79720139562800700950798383233520483434136073427028040533625434876152679235584",
+   "09_ERC20InheritMod_ree3.sol:87:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 10555304830588630865538677127511993154395158288545686331327653225233892369092",
+   "09_ERC20InheritMod_ree3.sol:82:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "09_ERC20InheritMod_ree3.sol:94:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    received[to] = 4503599627370496\n    flag = 2650270597206147249384819134507744799861984899829781565703086535807601157",
+   "09_ERC20InheritMod_ree3.sol:100:493: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    received[to] = 4503599627370496\n    flag = 79720139562800700950798383233520483434136073427028040533625434876152679235584"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

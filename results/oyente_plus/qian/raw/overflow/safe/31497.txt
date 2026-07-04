@@ -1,0 +1,31 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 31497.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.fkTFBWEw89' running
+INFO:CryticCompile:Compilation warnings/errors on 31497.sol:
+31497.sol:10:9: Warning: Return value of low-level calls not used.
+        adr.call.value(msg.value)(data);
+        ^-----------------------------^
+
+INFO:root:contract 31497.sol:MultiplicatorX4:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:31497.sol:10:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    Owner = 0
+INFO:symExec:31497.sol:8:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+31497.sol:6:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    Owner = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 31497.sol:MultiplicatorX4.json.

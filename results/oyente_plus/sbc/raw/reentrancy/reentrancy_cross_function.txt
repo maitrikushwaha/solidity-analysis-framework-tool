@@ -1,0 +1,32 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc reentrancy_cross_function.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.KOAemd1YOt' running
+INFO:CryticCompile:Compilation warnings/errors on reentrancy_cross_function.sol:
+reentrancy_cross_function.sol:24:9: Warning: Different number of components on the left hand side (2) than on the right hand side (1).
+        (bool success, ) = msg.sender.call.value(amountToWithdraw)(""); // At this point, the caller's code is executed, and can call transfer()
+        ^------------------------------------------------------------^
+reentrancy_cross_function.sol:14:5: Warning: No visibility specified. Defaulting to "public". 
+    function transfer(address to, uint amount) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract reentrancy_cross_function.sol:Reentrancy_cross_function:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 85.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:reentrancy_cross_function.sol:16:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    userBalances[msg.sender] = 72370055773322622139731865630429942408293740416025352524660990004945706024960
+    userBalances[to] = 85034810618709097980202955153625656073361385617869569410411828681734756902272
+    amount = 61514553459859435449340644153535456147666287048703161385732034683908658570241
+INFO:symExec:reentrancy_cross_function.sol:24:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:reentrancy_cross_function.sol:24:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to reentrancy_cross_function.sol:Reentrancy_cross_function.json.

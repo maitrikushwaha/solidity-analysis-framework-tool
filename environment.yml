@@ -1,0 +1,35 @@
+# Conda environment for our tool — the abstract-interpretation Solidity analyzer.
+# This mirrors the environment the tool was developed and evaluated in.
+#
+#   conda env create -f environment.yml
+#   conda activate safpy
+#
+# Additional system prerequisites (NOT installable via conda — see README):
+#   * Java (JRE/JDK 11+) and the APRON library with its JNI bindings
+#     (apron.jar, gmp.jar, libjapron.so, libjgmp.so). Point the analyzer at the
+#     install directory with the APRON_HOME env var (default: ~/apron/japron).
+#   * The Solidity compiler versions used by the benchmarks (0.4.x–0.8.x) are
+#     fetched on demand by py-solc-x from each contract's pragma.
+#   * Optional: the Graphviz system binaries (e.g. `apt-get install graphviz`),
+#     needed only to render the CFG to an image; detection does not require them.
+name: safpy
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.19
+  - pip
+  - pip:
+      # --- analyzer runtime ---
+      - jpype1==1.5.0          # Python <-> JVM bridge used to call the APRON library
+      - py-solc-x==2.0.2       # fetches/selects the per-contract solc compiler
+      - graphviz==0.20.3       # Python bindings for CFG construction (PyPI name of python-graphviz)
+      # transitive / networking deps (pinned for exact reproducibility)
+      - certifi==2024.2.2
+      - charset-normalizer==3.3.2
+      - idna==3.7
+      - packaging==23.2
+      - requests==2.31.0
+      - urllib3==2.2.1
+      # --- evaluation scripts only (tables/figures) ---
+      - pillow==11.3.0         # used by scripts/build_comparison.py to stitch the comparison image

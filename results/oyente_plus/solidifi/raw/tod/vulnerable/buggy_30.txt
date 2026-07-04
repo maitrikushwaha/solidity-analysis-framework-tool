@@ -1,0 +1,121 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc buggy_30.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.QhPn8m5KmX' running
+INFO:root:contract buggy_30.sol:Address:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_30.sol:Address.json.
+INFO:root:contract buggy_30.sol:ERC777:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 1.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:buggy_30.sol:417:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    return _defaultOperatorsArray = 0
+INFO:symExec:buggy_30.sol:418:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    return _defaultOperatorsArray = 3618502788666131106986593281521497120414687020801267626233049500247285301247
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_30.sol:ERC777.json.
+INFO:root:contract buggy_30.sol:Roles:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_30.sol:Roles.json.
+INFO:root:contract buggy_30.sol:SKYBITToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 2.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:buggy_30.sol:417:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    return _defaultOperatorsArray = 0
+INFO:symExec:buggy_30.sol:418:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    return _defaultOperatorsArray = 3618502788666131106986593281521497120414687020801267626233049500247285301247
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_30.sol:SKYBITToken.json.
+INFO:root:contract buggy_30.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+Traceback (most recent call last):
+  File "/oyente/oyente.py", line 403, in <module>
+    exit(main())
+         ^^^^^^
+  File "/oyente/oyente.py", line 397, in main
+    exit_code = analyze_solidity(args)
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/oyente/oyente.py", line 187, in analyze_solidity
+    _results, exit_code = run_solidity_analysis(inputs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oyente/oyente.py", line 133, in run_solidity_analysis
+    result = symExec.run(
+             ^^^^^^^^^^^^
+  File "/oyente/symExec.py", line 2931, in run
+    ret = detect_vulnerabilities()
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oyente/symExec.py", line 2757, in detect_vulnerabilities
+    detect_time_dependency()
+  File "/oyente/symExec.py", line 2498, in detect_time_dependency
+    if is_expr(expr) and timestamp_var in str(expr) and j in global_problematic_pcs["time_dependency_bug"][i]:
+                                          ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/z3/z3.py", line 359, in __str__
+    return obj_to_string(self)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/z3/z3printer.py", line 1455, in obj_to_string
+    _PP(out, _Formatter(a))
+             ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/z3/z3printer.py", line 1346, in __call__
+    return self.main(a)
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/z3/z3printer.py", line 1320, in main
+    return self.pp_expr(a, 0, [])
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/z3/z3printer.py", line 1216, in pp_expr
+    if z3.is_app(a):
+       ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/z3/z3.py", line 1320, in is_app
+    k = _ast_kind(a.ctx, a)
+        ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/z3/z3.py", line 498, in _ast_kind
+    return Z3_get_ast_kind(ctx.ref(), a)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/z3/z3core.py", line 3131, in Z3_get_ast_kind
+    _elems.Check(a0)
+  File "/usr/local/lib/python3.11/site-packages/z3/z3core.py", line 1575, in Check
+    raise self.Exception(self.get_error_message(ctx, err))
+z3.z3types.Z3Exception: b'not a valid ast'

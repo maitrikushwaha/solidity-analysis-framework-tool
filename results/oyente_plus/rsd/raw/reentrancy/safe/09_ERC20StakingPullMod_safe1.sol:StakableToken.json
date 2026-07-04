@@ -1,0 +1,37 @@
+{
+ "evm_code_coverage": "75.7",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "09_ERC20StakingPullMod_safe1.sol:22:5: Warning: Integer Underflow.\n",
+   "09_ERC20StakingPullMod_safe1.sol:16:5: Warning: Integer Underflow.\n",
+   "09_ERC20StakingPullMod_safe1.sol:53:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stakedAmounts[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    flag = 0",
+   "09_ERC20StakingPullMod_safe1.sol:67:3180: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stakedAmounts[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    stakedAmounts[msg.sender] = 0\n    flag = 0",
+   "09_ERC20StakingPullMod_safe1.sol:67:2681: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stakedAmounts[msg.sender] = 0\n    flag = 0",
+   "09_ERC20StakingPullMod_safe1.sol:51:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stakedAmounts[msg.sender] = 0\n    flag = 0",
+   "09_ERC20StakingPullMod_safe1.sol:50:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 0",
+   "09_ERC20StakingPullMod_safe1.sol:34:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 23384026197294446691258957323460528314494920687616",
+   "09_ERC20StakingPullMod_safe1.sol:62:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 0\n    pendingWithdrawals[msg.sender] = 79228162514264337593543950336",
+   "09_ERC20StakingPullMod_safe1.sol:67:4236: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 70368744177664\n    pendingWithdrawals[msg.sender] = 0",
+   "09_ERC20StakingPullMod_safe1.sol:60:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 0\n    pendingWithdrawals[msg.sender] = 0",
+   "09_ERC20StakingPullMod_safe1.sol:43:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 1645504557321206042154969182557350504982735865633579863348609024",
+   "09_ERC20StakingPullMod_safe1.sol:41:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 73501039560714045548166006695587263786459890519772676110278709769691205730304",
+   "09_ERC20StakingPullMod_safe1.sol:23:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "09_ERC20StakingPullMod_safe1.sol:63:17: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 0\n    pendingWithdrawals[msg.sender] = 79228162514264337593543950336",
+   "09_ERC20StakingPullMod_safe1.sol:67:4686: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 0\n    pendingWithdrawals[msg.sender] = 55213970774324510299478046898216203619608871777363092441300193790394368",
+   "09_ERC20StakingPullMod_safe1.sol:67:4848: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 0\n    pendingWithdrawals[msg.sender] = 36893488147419103232",
+   "09_ERC20StakingPullMod_safe1.sol:45:24: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    stakedAmounts[msg.sender] = 2233710614456685110662889238989338617609075190963675573123461906098953958121\n    flag = 0",
+   "09_ERC20StakingPullMod_safe1.sol:67:6732: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    stakedAmounts[msg.sender] = 23693198577301872913953646432986094614415214722070671104364834453221993771177\n    flag = 0",
+   "09_ERC20StakingPullMod_safe1.sol:67:6894: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    stakedAmounts[msg.sender] = 23806276765481754636478913302879550579645780032895093290358052986557626778948\n    flag = 0",
+   "09_ERC20StakingPullMod_safe1.sol:67:6976: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    stakedAmounts[msg.sender] = 23806276765481754635301956727494547936426569516043655837338861340720620307780\n    flag = 0"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

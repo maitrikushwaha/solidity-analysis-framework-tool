@@ -1,0 +1,29 @@
+{
+ "evm_code_coverage": "35.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "king_of_the_ether_throne.sol:138:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    currentClaimPrice = 0\n    currentMonarch.etherAddress = 0\n    wizardAddress = 0",
+   "king_of_the_ether_throne.sol:26:1: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    currentClaimPrice = 0\n    currentMonarch.etherAddress = 8192\n    wizardAddress = 8192",
+   "king_of_the_ether_throne.sol:168:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    currentClaimPrice = 0\n    pastMonarchs.push(currentMonarch) = 57952638944022111413152075580388409481878788238390532535623125258617142911169\n    currentMonarch.etherAddress = 0\n    wizardAddress = 0"
+  ],
+  "integer_overflow": [
+   "king_of_the_ether_throne.sol:2:21: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    currentClaimPrice = 0\n    currentMonarch.etherAddress = 0\n    wizardAddress = 0",
+   "king_of_the_ether_throne.sol:138:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    currentClaimPrice = 0\n    currentMonarch.etherAddress = 0\n    wizardAddress = 0",
+   "king_of_the_ether_throne.sol:26:1: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    currentClaimPrice = 0\n    currentMonarch.etherAddress = 0\n    wizardAddress = 0",
+   "king_of_the_ether_throne.sol:139:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    currentClaimPrice = 0\n    pastMonarchs.push(currentMonarch) = 60016331695238172182826705797611924368217201347333230202789223466307682828353\n    currentMonarch.etherAddress = 11692013098647223345629478661730264157247460343808\n    wizardAddress = 0",
+   "king_of_the_ether_throne.sol:168:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    currentClaimPrice = 0\n    pastMonarchs.push(currentMonarch) = 60016331694382509813019678655696692403354889364751019927903459602143377883201\n    currentMonarch.etherAddress = 11692013098647223345629478661730264157247460343808\n    wizardAddress = 0"
+  ],
+  "callstack": [
+   "king_of_the_ether_throne.sol:110:13: Warning: Callstack Depth Attack Vulnerability.\n",
+   "king_of_the_ether_throne.sol:118:13: Warning: Callstack Depth Attack Vulnerability.\n",
+   "king_of_the_ether_throne.sol:132:13: Warning: Callstack Depth Attack Vulnerability.\n",
+   "king_of_the_ether_throne.sol:174:9: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

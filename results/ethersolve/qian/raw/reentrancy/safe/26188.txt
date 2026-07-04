@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/qian/reentrancy/safe/26188.sol:EXPERIMENTAL_ETH_AUCTION
+offset,opcode,detection

@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "86.6",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "40419.sol:13:24: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    fee = 115565156175948591379984385037826707719482251829155964122224711640713857835839\n    dispute_end = 1\n    amount = 51403931432494902765808806180540759247506116197300866564724333183335422010410"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [
+   "40419.sol:11:9: Warning: Timestamp Dependency.\n"
+  ],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

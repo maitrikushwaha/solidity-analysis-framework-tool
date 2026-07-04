@@ -1,0 +1,12 @@
+{
+  "filename": "unchecked_return_value.sol",
+  "reentrancy": 0,
+  "overflow": 0,
+  "timestamp": 0,
+  "tod": 0,
+  "duration_s": 0.52,
+  "error": null,
+  "reentrancy_domains": [
+    "Box"
+  ]
+}

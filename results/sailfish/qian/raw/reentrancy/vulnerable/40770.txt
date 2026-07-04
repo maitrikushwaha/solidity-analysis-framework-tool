@@ -1,0 +1,91 @@
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Analysis started at: 2026-06-21 07:14:38 PM
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Callgraph generation started!
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Value Range Analysis started
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Generating return summary for refund
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Return summary generated for refund
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Range graph generated
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Processed function refund
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Value Range Analysis took 0.000411 seconds
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Dependency detection started!
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | DAO dependency detected in file 40770.sol in contract TokenCreation in by composing functions refund and refund
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | TOD dependency detected in file 40770.sol in contract TokenCreation in by composing functions refund and refund
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Dependency detection finished!
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Static Analysis took 0.094082 seconds
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Dependency exists
+[INFO] | 2026-06-21 07:14:38 PM | analyzer.40770  | Invoking symbolic executor!
+[36m[#] Analysing started: 40770.sol[0m
+[36m[#] Interprocedural CFG generation started for refund[0m
+[36m[#] Interprocedural CFG generated for refund[0m
+[36m[#] SDG generation started for refund[0m
+[36m[#] SDG generated for refund[0m
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40770  | Symbolic execution took 0.969741 seconds
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40770  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40770  | Analysis finished!
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40770  | Analysis took 1.064431 seconds
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40770  | Analysis finished at: 2026-06-21 07:14:39 PM
+[36m[#] Analysis took 1.064431 seconds[0m
+[36m[#] Analysis completed: 40770.sol [0m
+
+=== dependency_info.json ===
+{
+    "40770.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "refund",
+                "refund"
+            ],
+            "from_function": "refund",
+            "to_function": "refund",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 11\nFunction: refund\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_4 := 0\"",
+                        "\"BlockID: 4\nFunction: refund\nNode: \nEXPRESSION totalSupply -= balances[msg.sender]\nIRS: \ntotalSupply = totalSupply - REF_3\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: refund\nNode: \nIF msg.sender.call.value(balances[msg.sender])()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:REF_2 \"",
+                        "\"BlockID: 5\nFunction: refund\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_4 := 0\""
+                    ],
+                    "state_variable": "balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: refund\nNode: \nEXPRESSION totalSupply -= balances[msg.sender]\nIRS: \ntotalSupply = totalSupply - REF_3\"",
+                        "\"BlockID: 5\nFunction: refund\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_4 := 0\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refund",
+                "refund"
+            ],
+            "First_function": "refund",
+            "Second_function": "refund",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: refund\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_4 := 0\"",
+                        "\"BlockID: 2\nFunction: refund\nNode: \nIF msg.sender.call.value(balances[msg.sender])()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:REF_2 \""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        }
+    ]
+}

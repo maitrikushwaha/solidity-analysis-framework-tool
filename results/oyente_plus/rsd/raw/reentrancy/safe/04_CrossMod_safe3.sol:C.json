@@ -1,0 +1,32 @@
+{
+ "evm_code_coverage": "85.5",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "04_CrossMod_safe3.sol:6:5: Warning: Integer Underflow.\n",
+   "04_CrossMod_safe3.sol:40:5780: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0\n    flag = 383123885216472214589586756787577295904684780545900544\n    balances[msg.sender] = 56539106072908298546665520023773392506479484700019806659891398441363832832\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969",
+   "04_CrossMod_safe3.sol:40:5896: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 4096\n    flag = 383123885216472214589586756787577295904684780545900544\n    balances[msg.sender] = 56539106072908298546665520023773392506479484700019806659891398441363832832\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969",
+   "04_CrossMod_safe3.sol:40:6249: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[a] = 0\n    balances[msg.sender] = 28919697541873214702169417223715340323728910444772640399238583105115121515485\n    flag = 58009122830803914308878823544391500711647951302220321633048574800839292485632\n    balances[msg.sender] = 56539106072908298546665520023773392506479484700019806659891398441363832832\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969",
+   "04_CrossMod_safe3.sol:10:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 3399638126434319826936575002556963601895972654875072642772535083136",
+   "04_CrossMod_safe3.sol:40:3211: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0\n    flag = 3844659212957764301173255361616590690440604959601346852872615094012740632576"
+  ],
+  "integer_overflow": [
+   "04_CrossMod_safe3.sol:40:424: Warning: Integer Overflow.\n",
+   "04_CrossMod_safe3.sol:30:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 1809251394333065553493296640760748560207343510400672498742752418257233248256\n    balances[msg.sender] = 0",
+   "04_CrossMod_safe3.sol:40:3157: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 1809251394333065553493296640760748560207343510400672498742752418257233248256\n    balances[msg.sender] = 0",
+   "04_CrossMod_safe3.sol:24:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 0",
+   "04_CrossMod_safe3.sol:40:1438: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 0",
+   "04_CrossMod_safe3.sol:40:2944: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 0"
+  ],
+  "callstack": [
+   "04_CrossMod_safe3.sol:31:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "04_CrossMod_safe3.sol:31:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

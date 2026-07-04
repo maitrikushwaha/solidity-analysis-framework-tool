@@ -1,0 +1,14 @@
+{
+  "filename": "eth_tx_order_dependence_minimal.sol",
+  "reentrancy": 0,
+  "overflow": 0,
+  "timestamp": 0,
+  "tod": 1,
+  "duration_s": 2.01,
+  "error": null,
+  "reentrancy_domains": [
+    "Box",
+    "Octagon",
+    "Polka"
+  ]
+}

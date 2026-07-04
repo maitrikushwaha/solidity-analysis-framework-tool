@@ -1,0 +1,121 @@
+{
+  "dataset": "sbc",
+  "macro_average": {
+    "accuracy": 0.8629,
+    "f1": 0.7156,
+    "precision": 0.5588,
+    "recall": 1.0
+  },
+  "micro_average": {
+    "counts": {
+      "fn": 0,
+      "fp": 37,
+      "tn": 190,
+      "tp": 43
+    },
+    "metrics": {
+      "accuracy": 0.863,
+      "f1": 0.6992,
+      "precision": 0.5375,
+      "recall": 1.0
+    }
+  },
+  "per_vulnerability": {
+    "reentrancy": {
+      "accuracy": 0.7926,
+      "counts": {
+        "fn": 0,
+        "fp": 28,
+        "tn": 78,
+        "tp": 29
+      },
+      "evaluated": 135,
+      "excluded_na": 7,
+      "excluded_na_files": [
+        "0x89c1b3807d4c67df034fffb62f3509561218d30b.sol",
+        "overflow_simple_add.sol",
+        "parity_wallet_bug_1.sol",
+        "reentrancy_bonus.sol",
+        "reentrancy_cross_function.sol",
+        "send_loop.sol",
+        "unchecked_return_value.sol"
+      ],
+      "f1": 0.6744,
+      "fn_files": [],
+      "fp_files": [
+        "0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol",
+        "0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol",
+        "0x663e4229142a27f00bafb5d087e1e730648314c3.sol",
+        "0x7d09edb07d23acb532a82be3da5c17d9d85806b4.sol",
+        "0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol",
+        "0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+        "0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol",
+        "0xec329ffc97d75fe03428ae155fc7793431487f63.sol",
+        "auction.sol",
+        "blackjack.sol",
+        "crypto_roulette.sol",
+        "eth_tx_order_dependence_minimal.sol",
+        "ether_lotto.sol",
+        "etheraffle.sol",
+        "etherpot_lotto.sol",
+        "governmental_survey.sol",
+        "king_of_the_ether_throne.sol",
+        "list_dos.sol",
+        "lotto.sol",
+        "lucky_doubler.sol",
+        "odds_and_evens.sol",
+        "open_address_lottery.sol",
+        "parity_wallet_bug_2.sol",
+        "rubixi.sol",
+        "smart_billions.sol",
+        "wallet_02_refund_nosub.sol",
+        "wallet_03_wrong_constructor.sol",
+        "wallet_04_confused_sign.sol"
+      ],
+      "precision": 0.5088,
+      "recall": 1.0,
+      "total": 142
+    },
+    "timestamp": {
+      "accuracy": 0.9333,
+      "counts": {
+        "fn": 0,
+        "fp": 9,
+        "tn": 112,
+        "tp": 14
+      },
+      "evaluated": 135,
+      "excluded_na": 7,
+      "excluded_na_files": [
+        "0x89c1b3807d4c67df034fffb62f3509561218d30b.sol",
+        "overflow_simple_add.sol",
+        "parity_wallet_bug_1.sol",
+        "reentrancy_bonus.sol",
+        "reentrancy_cross_function.sol",
+        "send_loop.sol",
+        "unchecked_return_value.sol"
+      ],
+      "f1": 0.7568,
+      "fn_files": [],
+      "fp_files": [
+        "0x663e4229142a27f00bafb5d087e1e730648314c3.sol",
+        "0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol",
+        "crypto_roulette.sol",
+        "etherstore.sol",
+        "guess_the_random_number.sol",
+        "king_of_the_ether_throne.sol",
+        "open_address_lottery.sol",
+        "parity_wallet_bug_2.sol",
+        "spank_chain_payment.sol"
+      ],
+      "precision": 0.6087,
+      "recall": 1.0,
+      "total": 142
+    }
+  },
+  "summary": {
+    "excluded_na_total": 14,
+    "total_contracts": 142
+  },
+  "tool": "slither"
+}

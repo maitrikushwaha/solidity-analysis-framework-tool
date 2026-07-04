@@ -1,0 +1,51 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/unchecked_low_level_calls' running
+Compilation warnings/errors on /work/datasets/sbc/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol:
+/work/datasets/sbc/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol:13:22: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'. Correct checksummed address: '0x96A65609a7B84E8842732DEB08f56C3E21aC6f8a'. For more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals
+		contract_address = 0x96a65609a7b84e8842732deb08f56c3e21ac6f8a;
+		                   ^----------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol:19:8: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'. Correct checksummed address: '0xAa27f8C1160886aacba64B2319D8d5469ef2Af79'. For more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals
+		c2 = 0xaa27f8c1160886aacba64b2319d8d5469ef2af79;	
+		     ^----------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol:21:3: Warning: Return value of low-level calls not used.
+		contract_address.call("register", "CentraToken");
+		^----------------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol:11:2: Warning: No visibility specified. Defaulting to "public". 
+	function transfer() returns (bool) {	
+ ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol:14:3: Warning: Unused local variable.
+		address c1;		
+		^--------^
+
+
+Centra4.transfer() (datasets/sbc/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol#11-25) ignores return value by contract_address.call(register,CentraToken) (datasets/sbc/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol#21)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-low-level-calls
+
+Version constraint ^0.4.13 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ExpExponentCleanup
+	- NestedArrayFunctionCallDecoder
+	- ZeroFunctionSelector
+	- DelegateCallReturnValue
+	- ECRecoverMalformedInput.
+It is used by:
+	- ^0.4.13 (datasets/sbc/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol#7)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in Centra4.transfer() (datasets/sbc/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol#11-25):
+	- contract_address.call(register,CentraToken) (datasets/sbc/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol#21)
+	- ! contract_address.call(bytes4(keccak256()(transfer(address,uint256))),c2,k) (datasets/sbc/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol#22)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/work/datasets/sbc/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol analyzed (1 contracts with 93 detectors), 4 result(s) found

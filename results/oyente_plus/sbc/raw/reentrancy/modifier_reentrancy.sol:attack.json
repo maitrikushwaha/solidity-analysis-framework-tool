@@ -1,0 +1,19 @@
+{
+ "evm_code_coverage": "81.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "modifier_reentrancy.sol:44:16: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    hasBeenCalled = 1",
+   "modifier_reentrancy.sol:39:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    hasBeenCalled = 1"
+  ],
+  "integer_overflow": [
+   "modifier_reentrancy.sol:39:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    hasBeenCalled = 1"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

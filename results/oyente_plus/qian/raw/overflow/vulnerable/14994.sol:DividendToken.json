@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "77.5",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "14994.sol:13:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    dividendsCollected = 115418807858178468106012636001314203539906338854995541016693767997684498828872\n    creditedPoints[msg.sender] = 50997092745337681248103701664211651675911474640381778831102098230849595092032"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "14994.sol:12:17: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

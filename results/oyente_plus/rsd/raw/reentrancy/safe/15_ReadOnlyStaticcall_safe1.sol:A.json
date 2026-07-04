@@ -1,0 +1,24 @@
+{
+ "evm_code_coverage": "69.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "15_ReadOnlyStaticcall_safe1.sol:29:45: Warning: Integer Underflow.\n",
+   "15_ReadOnlyStaticcall_safe1.sol:85:2287: Warning: Integer Underflow.\n",
+   "15_ReadOnlyStaticcall_safe1.sol:33:27: Warning: Integer Underflow.\n",
+   "15_ReadOnlyStaticcall_safe1.sol:85:1407: Warning: Integer Underflow.\n",
+   "15_ReadOnlyStaticcall_safe1.sol:34:9: Warning: Integer Underflow.\n",
+   "15_ReadOnlyStaticcall_safe1.sol:30:9: Warning: Integer Underflow.\n",
+   "15_ReadOnlyStaticcall_safe1.sol:22:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [],
+  "callstack": [
+   "15_ReadOnlyStaticcall_safe1.sol:40:23: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

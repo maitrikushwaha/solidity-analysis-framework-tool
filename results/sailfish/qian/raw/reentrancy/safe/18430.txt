@@ -1,0 +1,83 @@
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Analysis started at: 2026-06-21 07:10:33 PM
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Callgraph generation started!
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Value Range Analysis started
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Generating return summary for payout
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Return summary generated for payout
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Range graph generated
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Processed function payout
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Range graph generated
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Value Range Analysis took 0.000856 seconds
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Dependency detection started!
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | TOD dependency detected in file 18430.sol in contract BoomerangLiquidity in by composing functions payout and payout
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Dependency detection finished!
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Static Analysis took 0.132396 seconds
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Dependency exists
+[INFO] | 2026-06-21 07:10:33 PM | analyzer.18430  | Invoking symbolic executor!
+[36m[#] Analysing started: 18430.sol[0m
+[36m[#] Interprocedural CFG generation started for payout[0m
+[36m[#] Interprocedural CFG generated for payout[0m
+[36m[#] SDG generation started for payout[0m
+[36m[#] SDG generated for payout[0m
+[INFO] | 2026-06-21 07:10:34 PM | analyzer.18430  | Symbolic execution took 1.159476 seconds
+[INFO] | 2026-06-21 07:10:34 PM | analyzer.18430  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:10:34 PM | analyzer.18430  | Analysis finished!
+[INFO] | 2026-06-21 07:10:34 PM | analyzer.18430  | Analysis took 1.292520 seconds
+[INFO] | 2026-06-21 07:10:34 PM | analyzer.18430  | Analysis finished at: 2026-06-21 07:10:34 PM
+[36m[#] Analysis took 1.292520 seconds[0m
+[36m[#] Analysis completed: 18430.sol [0m
+
+=== dependency_info.json ===
+{
+    "18430.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "payout",
+                "payout"
+            ],
+            "First_function": "payout",
+            "Second_function": "payout",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: payout\nNode: \nEXPRESSION participants[payoutOrder].payout -= payoutToSend\nIRS: \nREF_2 = REF_2 - payoutToSend\"",
+                        "\"BlockID: 3\nFunction: payout\nNode: \nIF_LOOP balance > 0\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "participants.payout"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: payout\nNode: \nEXPRESSION participants[payoutOrder].payout -= payoutToSend\nIRS: \nREF_2 = REF_2 - payoutToSend\"",
+                        "\"BlockID: 4\nFunction: payout\nNode: \nIF balance < participants[payoutOrder].payout\nIRS: \nCONDITION TMP_10\""
+                    ],
+                    "state_variable": "participants.payout"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: payout\nNode: \nEXPRESSION participants[payoutOrder].payout -= payoutToSend\nIRS: \nREF_2 = REF_2 - payoutToSend\"",
+                        "\"BlockID: 5\nFunction: payout\nNode: \nIF payoutToSend > 0\nIRS: \nCONDITION TMP_6\""
+                    ],
+                    "state_variable": "participants.payout"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: payout\nNode: \nEXPRESSION participants[payoutOrder].payout -= payoutToSend\nIRS: \nREF_2 = REF_2 - payoutToSend\"",
+                        "\"BlockID: 7\nFunction: payout\nNode: \nEXPRESSION participants[payoutOrder].etherAddress.call.value(payoutToSend).gas(1000000)()\nIRS: \nTMP_9(bool) = LOW_LEVEL_CALL, dest:REF_4, function:call, arguments:[] value:payoutToSend gas:1000000\""
+                    ],
+                    "state_variable": "participants.payout"
+                }
+            ]
+        }
+    ]
+}

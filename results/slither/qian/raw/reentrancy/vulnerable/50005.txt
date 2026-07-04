@@ -1,0 +1,52 @@
+
+'solc --version' running
+'solc /work/datasets/qian/reentrancy/vulnerable/50005.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/reentrancy/vulnerable' running
+Compilation warnings/errors on /work/datasets/qian/reentrancy/vulnerable/50005.sol:
+/work/datasets/qian/reentrancy/vulnerable/50005.sol:8:23: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function transfer(address _to, uint _value, bytes _data) public returns (bool) {
+                      ^---------^
+
+
+Reentrancy in HiroyukiCoinDark.transfer(address,uint256,bytes) (datasets/qian/reentrancy/vulnerable/50005.sol#8-13):
+	External calls:
+	- assert(bool)(msg.sender.call.value(_value)(_data)) (datasets/qian/reentrancy/vulnerable/50005.sol#10)
+	State variables written after the call(s):
+	- balanceOf[msg.sender] = balanceOf[msg.sender] - _value (datasets/qian/reentrancy/vulnerable/50005.sol#11)
+	HiroyukiCoinDark.balanceOf (datasets/qian/reentrancy/vulnerable/50005.sol#6) can be used in cross function reentrancies:
+	- HiroyukiCoinDark.balanceOf (datasets/qian/reentrancy/vulnerable/50005.sol#6)
+	- HiroyukiCoinDark.transfer(address,uint256,bytes) (datasets/qian/reentrancy/vulnerable/50005.sol#8-13)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/reentrancy/vulnerable/50005.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in HiroyukiCoinDark.transfer(address,uint256,bytes) (datasets/qian/reentrancy/vulnerable/50005.sol#8-13):
+	- assert(bool)(msg.sender.call.value(_value)(_data)) (datasets/qian/reentrancy/vulnerable/50005.sol#10)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Parameter HiroyukiCoinDark.transfer(address,uint256,bytes)._value (datasets/qian/reentrancy/vulnerable/50005.sol#8) is not in mixedCase
+Parameter HiroyukiCoinDark.transfer(address,uint256,bytes)._data (datasets/qian/reentrancy/vulnerable/50005.sol#8) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+transfer(address,uint256,bytes) should be declared external:
+	- HiroyukiCoinDark.transfer(address,uint256,bytes) (datasets/qian/reentrancy/vulnerable/50005.sol#8-13)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external
+/work/datasets/qian/reentrancy/vulnerable/50005.sol analyzed (1 contracts with 93 detectors), 7 result(s) found

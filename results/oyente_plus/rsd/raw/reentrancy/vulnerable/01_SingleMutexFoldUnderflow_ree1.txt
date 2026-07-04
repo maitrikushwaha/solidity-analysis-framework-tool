@@ -1,0 +1,42 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 01_SingleMutexFoldUnderflow_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.hn0CfjgLSm' running
+INFO:root:contract 01_SingleMutexFoldUnderflow_ree1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 84.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:01_SingleMutexFoldUnderflow_ree1.sol:6:5: Warning: Integer Underflow.
+
+01_SingleMutexFoldUnderflow_ree1.sol:28:2758: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 197886872836508924499008326594132258210292031738478490183491832085550727168
+    balances[msg.sender] = 0
+01_SingleMutexFoldUnderflow_ree1.sol:16:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 842498333348457493589053212240187298075393907082190870580020903936
+    balances[msg.sender] = 0
+01_SingleMutexFoldUnderflow_ree1.sol:13:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 58800670342839728901408200366184942030072693496169573542805526381162089414720
+INFO:symExec:01_SingleMutexFoldUnderflow_ree1.sol:28:724: Warning: Integer Overflow.
+
+01_SingleMutexFoldUnderflow_ree1.sol:17:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 245199286538542217337335524344668477767879882001761697920
+    balances[msg.sender] = 4
+    balances[msg.sender] = 256
+INFO:symExec:01_SingleMutexFoldUnderflow_ree1.sol:17:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:01_SingleMutexFoldUnderflow_ree1.sol:17:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 01_SingleMutexFoldUnderflow_ree1.sol:C.json.

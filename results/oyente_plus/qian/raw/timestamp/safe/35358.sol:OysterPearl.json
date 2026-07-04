@@ -1,0 +1,17 @@
+{
+ "evm_code_coverage": "89.3",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "35358.sol:11:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    claimed[msg.sender] = 1\n    balanceOf[msg.sender] = 0\n    claimAmount = 1",
+   "35358.sol:10:46: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    claimed[msg.sender] = 3"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

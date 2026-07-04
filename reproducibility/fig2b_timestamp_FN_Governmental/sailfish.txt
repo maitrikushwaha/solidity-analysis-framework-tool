@@ -1,0 +1,195 @@
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Analysis started at: 2026-06-21 07:06:58 PM
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Callgraph generation started!
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Callgraph generation finished!
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Value Range Analysis started
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Generating return summary for Governmental
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Return summary generated for Governmental
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Range graph generated
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Processed function Governmental
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Generating return summary for invest
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Return summary generated for invest
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Range graph generated
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Processed function invest
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Generating return summary for resetInvestment
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Return summary generated for resetInvestment
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Range graph generated
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Processed function resetInvestment
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Range graph generated
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Value Range Analysis took 0.007666 seconds
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Value Range Analysis finished
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | Dependency detection started!
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | TOD dependency detected in file governmental_survey.sol in contract Governmental in by composing functions resetInvestment and invest
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | TOD dependency detected in file governmental_survey.sol in contract Governmental in by composing functions resetInvestment and invest
+[INFO] | 2026-06-21 07:06:58 PM | analyzer.governmental_survey | TOD dependency detected in file governmental_survey.sol in contract Governmental in by composing functions resetInvestment and resetInvestment
+[INFO] | 2026-06-21 07:06:59 PM | analyzer.governmental_survey | TOD dependency detected in file governmental_survey.sol in contract Governmental in by composing functions resetInvestment and resetInvestment
+[INFO] | 2026-06-21 07:06:59 PM | analyzer.governmental_survey | Dependency detection finished!
+[INFO] | 2026-06-21 07:06:59 PM | analyzer.governmental_survey | Static Analysis took 0.474129 seconds
+[INFO] | 2026-06-21 07:06:59 PM | analyzer.governmental_survey | Dependency exists
+[INFO] | 2026-06-21 07:06:59 PM | analyzer.governmental_survey | Invoking symbolic executor!
+[36m[#] Analysing started: governmental_survey.sol[0m
+[36m[#] Interprocedural CFG generation started for Governmental[0m
+[36m[#] Interprocedural CFG generated for Governmental[0m
+[36m[#] Interprocedural CFG generation started for invest[0m
+[36m[#] Interprocedural CFG generated for invest[0m
+[36m[#] Interprocedural CFG generation started for resetInvestment[0m
+[36m[#] Interprocedural CFG generated for resetInvestment[0m
+[36m[#] Interprocedural CFG generation started for attack[0m
+[36m[#] Interprocedural CFG generated for attack[0m
+[36m[#] SDG generation started for Governmental[0m
+[36m[#] SDG generated for Governmental[0m
+[36m[#] SDG generation started for invest[0m
+[36m[#] SDG generated for invest[0m
+[36m[#] SDG generation started for resetInvestment[0m
+[36m[#] SDG generated for resetInvestment[0m
+[36m[#] SDG generation started for attack[0m
+[36m[#] SDG generated for attack[0m
+[INFO] | 2026-06-21 07:07:01 PM | analyzer.governmental_survey | Symbolic execution took 2.270766 seconds
+[INFO] | 2026-06-21 07:07:01 PM | analyzer.governmental_survey | Symbolic execution finished!
+[INFO] | 2026-06-21 07:07:01 PM | analyzer.governmental_survey | Analysis finished!
+[INFO] | 2026-06-21 07:07:01 PM | analyzer.governmental_survey | Analysis took 2.745587 seconds
+[INFO] | 2026-06-21 07:07:01 PM | analyzer.governmental_survey | Analysis finished at: 2026-06-21 07:07:01 PM
+[36m[#] Analysis took 2.745587 seconds[0m
+[36m[#] Analysis completed: governmental_survey.sol [0m
+
+=== dependency_info.json ===
+{
+    "governmental_survey.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "resetInvestment",
+                "invest"
+            ],
+            "First_function": "invest",
+            "Second_function": "resetInvestment",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: invest\nNode: \nEXPRESSION lastInvestmentTimestamp = block.timestamp\nIRS: \nlastInvestmentTimestamp := block.timestamp\"",
+                        "\"BlockID: 10\nFunction: resetInvestment\nNode: \nIF block.timestamp < lastInvestmentTimestamp + ONE_MINUTE\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "lastInvestmentTimestamp"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: invest\nNode: \nEXPRESSION jackpot += msg.value \/ 2\nIRS: \njackpot = jackpot + TMP_3\"",
+                        "\"BlockID: 11\nFunction: resetInvestment\nNode: \nEXPRESSION lastInvestor.send(jackpot)\nIRS: \nTMP_6 = SEND dest:lastInvestor value:jackpot\""
+                    ],
+                    "state_variable": "jackpot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 6\nFunction: invest\nNode: \nEXPRESSION lastInvestor = msg.sender\nIRS: \nlastInvestor := msg.sender\"",
+                        "\"BlockID: 11\nFunction: resetInvestment\nNode: \nEXPRESSION lastInvestor.send(jackpot)\nIRS: \nTMP_6 = SEND dest:lastInvestor value:jackpot\""
+                    ],
+                    "state_variable": "lastInvestor"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "resetInvestment",
+                "invest"
+            ],
+            "First_function": "invest",
+            "Second_function": "resetInvestment",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: invest\nNode: \nEXPRESSION lastInvestmentTimestamp = block.timestamp\nIRS: \nlastInvestmentTimestamp := block.timestamp\"",
+                        "\"BlockID: 10\nFunction: resetInvestment\nNode: \nIF block.timestamp < lastInvestmentTimestamp + ONE_MINUTE\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "lastInvestmentTimestamp"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: invest\nNode: \nEXPRESSION jackpot += msg.value \/ 2\nIRS: \njackpot = jackpot + TMP_3\"",
+                        "\"BlockID: 11\nFunction: resetInvestment\nNode: \nEXPRESSION lastInvestor.send(jackpot)\nIRS: \nTMP_6 = SEND dest:lastInvestor value:jackpot\""
+                    ],
+                    "state_variable": "jackpot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 6\nFunction: invest\nNode: \nEXPRESSION lastInvestor = msg.sender\nIRS: \nlastInvestor := msg.sender\"",
+                        "\"BlockID: 11\nFunction: resetInvestment\nNode: \nEXPRESSION lastInvestor.send(jackpot)\nIRS: \nTMP_6 = SEND dest:lastInvestor value:jackpot\""
+                    ],
+                    "state_variable": "lastInvestor"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "resetInvestment",
+                "resetInvestment"
+            ],
+            "First_function": "resetInvestment",
+            "Second_function": "resetInvestment",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: resetInvestment\nNode: \nEXPRESSION lastInvestmentTimestamp = 0\nIRS: \nlastInvestmentTimestamp := 0\"",
+                        "\"BlockID: 10\nFunction: resetInvestment\nNode: \nIF block.timestamp < lastInvestmentTimestamp + ONE_MINUTE\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "lastInvestmentTimestamp"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: resetInvestment\nNode: \nEXPRESSION jackpot = 1000000000000000000\nIRS: \njackpot := 1000000000000000000\"",
+                        "\"BlockID: 11\nFunction: resetInvestment\nNode: \nEXPRESSION lastInvestor.send(jackpot)\nIRS: \nTMP_6 = SEND dest:lastInvestor value:jackpot\""
+                    ],
+                    "state_variable": "jackpot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: resetInvestment\nNode: \nEXPRESSION lastInvestor = 0\nIRS: \nlastInvestor := 0\"",
+                        "\"BlockID: 11\nFunction: resetInvestment\nNode: \nEXPRESSION lastInvestor.send(jackpot)\nIRS: \nTMP_6 = SEND dest:lastInvestor value:jackpot\""
+                    ],
+                    "state_variable": "lastInvestor"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "resetInvestment",
+                "resetInvestment"
+            ],
+            "First_function": "resetInvestment",
+            "Second_function": "resetInvestment",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 34\nFunction: resetInvestment\nNode: \nEXPRESSION lastInvestmentTimestamp = 0\nIRS: \nlastInvestmentTimestamp := 0\"",
+                        "\"BlockID: 10\nFunction: resetInvestment\nNode: \nIF block.timestamp < lastInvestmentTimestamp + ONE_MINUTE\nIRS: \nCONDITION TMP_5\""
+                    ],
+                    "state_variable": "lastInvestmentTimestamp"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 33\nFunction: resetInvestment\nNode: \nEXPRESSION jackpot = 1000000000000000000\nIRS: \njackpot := 1000000000000000000\"",
+                        "\"BlockID: 11\nFunction: resetInvestment\nNode: \nEXPRESSION lastInvestor.send(jackpot)\nIRS: \nTMP_6 = SEND dest:lastInvestor value:jackpot\""
+                    ],
+                    "state_variable": "jackpot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 32\nFunction: resetInvestment\nNode: \nEXPRESSION lastInvestor = 0\nIRS: \nlastInvestor := 0\"",
+                        "\"BlockID: 11\nFunction: resetInvestment\nNode: \nEXPRESSION lastInvestor.send(jackpot)\nIRS: \nTMP_6 = SEND dest:lastInvestor value:jackpot\""
+                    ],
+                    "state_variable": "lastInvestor"
+                }
+            ]
+        }
+    ]
+}

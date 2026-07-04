@@ -1,0 +1,68 @@
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Analysis started at: 2026-06-21 07:15:31 PM
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Callgraph generation started!
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Callgraph generation finished!
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Value Range Analysis started
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Generating return summary for getHash
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Return summary generated for getHash
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Processed function getHash
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Generating return summary for validDoc
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Return summary generated for validDoc
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Processed function validDoc
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Generating return summary for submitDocument
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Return summary generated for submitDocument
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Range graph generated
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Processed function submitDocument
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Generating return summary for signDocument
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Return summary generated for signDocument
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Processed function signDocument
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Generating return summary for getDetail
+[WARNING] | 2026-06-21 07:15:31 PM | analyzer.10     | No lvalue eligible assignment, is this some bug!
+[WARNING] | 2026-06-21 07:15:31 PM | analyzer.10     | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Return summary generated for getDetail
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Processed function getDetail
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Value Range Analysis took 0.000849 seconds
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Value Range Analysis finished
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Dependency detection started!
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Dependency detection finished!
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Static Analysis took 0.049844 seconds
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Dependency does not exist
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Analysis finished!
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Analysis took 0.049937 seconds
+[INFO] | 2026-06-21 07:15:31 PM | analyzer.10     | Analysis finished at: 2026-06-21 07:15:31 PM
+[36m[#] Analysing started: 10.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier validDoc[0m
+[36m[#] Interprocedural CFG generated for modifer validDoc[0m
+[36m[#] Interprocedural CFG generation started for submitDocument[0m
+[36m[#] Interprocedural CFG generated for submitDocument[0m
+[36m[#] Interprocedural CFG generation started for signDocument[0m
+[36m[#] Interprocedural CFG generated for signDocument[0m
+[36m[#] Interprocedural CFG generation started for getDetail[0m
+[36m[#] Interprocedural CFG generated for getDetail[0m
+[36m[#] Interprocedural CFG generation started for getHash[0m
+[36m[#] Interprocedural CFG generated for getHash[0m
+[36m[#] SDG generation started for submitDocument[0m
+[36m[#] SDG generated for submitDocument[0m
+[36m[#] SDG generation started for signDocument[0m
+[36m[#] SDG generated for signDocument[0m
+[36m[#] SDG generation started for getDetail[0m
+[36m[#] SDG generated for getDetail[0m
+[36m[#] SDG generation started for getHash[0m
+[36m[#] SDG generated for getHash[0m
+[36m[#] SDG generation started for modifier validDoc[0m
+[36m[#] SDG generated for modifier validDoc[0m
+[36m[#] Analysis took 0.049937 seconds[0m
+[36m[#] Analysis completed: 10.sol [0m
+
+=== dependency_info.json ===
+{}

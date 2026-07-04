@@ -1,0 +1,6 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract datasets/rsd/reentrancy/safe/09_ERC20Inherit_safe1.sol:C
+offset,opcode,detection
+
+# contract datasets/rsd/reentrancy/safe/09_ERC20Inherit_safe1.sol:MyERC20
+offset,opcode,detection

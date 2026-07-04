@@ -1,0 +1,44 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 08_MixedTransferEmit_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.OwWTvVpA0Y' running
+INFO:root:contract 08_MixedTransferEmit_safe1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 83.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:08_MixedTransferEmit_safe1.sol:5:5: Warning: Integer Underflow.
+
+08_MixedTransferEmit_safe1.sol:16:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 97063647080919394279591868405118762853843339049589125012653707685308760326145
+    balances[msg.sender] = 1766847064778384329583297500742918515827483896875618958121606201292619776
+08_MixedTransferEmit_safe1.sol:23:1977: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+08_MixedTransferEmit_safe1.sol:9:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+INFO:symExec:08_MixedTransferEmit_safe1.sol:23:901: Warning: Integer Overflow.
+
+08_MixedTransferEmit_safe1.sol:13:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 114846260599388905730976381002640859365730242222996802828640292717212362342401
+    balances[msg.sender] = 4096
+INFO:symExec:Flow1
+08_MixedTransferEmit_safe1.sol:10:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+08_MixedTransferEmit_safe1.sol:10:9: Warning: Transaction-Ordering Dependency.
+
+08_MixedTransferEmit_safe1.sol:13:28: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 08_MixedTransferEmit_safe1.sol:C.json.

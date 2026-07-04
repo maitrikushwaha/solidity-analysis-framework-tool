@@ -1,0 +1,37 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/denial_of_service/auction.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/denial_of_service' running
+Compilation warnings/errors on /work/datasets/sbc/denial_of_service/auction.sol:
+/work/datasets/sbc/denial_of_service/auction.sol:15:3: Warning: No visibility specified. Defaulting to "public". 
+  function bid() payable {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Version constraint ^0.4.15 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ExpExponentCleanup
+	- NestedArrayFunctionCallDecoder
+	- ZeroFunctionSelector.
+It is used by:
+	- ^0.4.15 (datasets/sbc/denial_of_service/auction.sol#7)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Reentrancy in DosAuction.bid() (datasets/sbc/denial_of_service/auction.sol#15-28):
+	External calls:
+	- require(bool)(currentFrontrunner.send(currentBid)) (datasets/sbc/denial_of_service/auction.sol#23)
+	State variables written after the call(s):
+	- currentBid = msg.value (datasets/sbc/denial_of_service/auction.sol#27)
+	- currentFrontrunner = msg.sender (datasets/sbc/denial_of_service/auction.sol#26)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4
+/work/datasets/sbc/denial_of_service/auction.sol analyzed (1 contracts with 93 detectors), 3 result(s) found

@@ -1,0 +1,14 @@
+{
+  "filename": "33217.sol",
+  "reentrancy": -1,
+  "overflow": 0,
+  "timestamp": -1,
+  "tod": -1,
+  "duration_s": 0.05,
+  "error": "transform_failed: An error occurred during execution\n> command: `/home/maitri/.solcx/solc-v0.4.26 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc -`\n> return code: `1`\n> stdout:\n\n> stderr:\n<stdin>:15:24: Warning: \"throw\" is deprecated in favour of \"revert()\", \"require()\" and \"assert()\".\n    if(msg.value <= 0) throw;\n                       ^---^\n<stdin>:17:5: Error: Undeclared identifier.\n    depositsStack = Deposit(msg.sender, msg.value);\n    ^-----------^\n<stdin>:17:21: Error: Undeclared identifier. Did you mean \"deposit\"?\n    depositsStack = Deposit(msg.sender, msg.value);\n                    ^-----^",
+  "skipped_pipelines": [
+    "reentrancy",
+    "timestamp",
+    "tod"
+  ]
+}

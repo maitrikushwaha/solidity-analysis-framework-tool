@@ -1,0 +1,35 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 00_BasicInline_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.I33pNt7Whx' running
+INFO:root:contract 00_BasicInline_ree1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 90.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:00_BasicInline_ree1.sol:9:5: Warning: Integer Underflow.
+
+00_BasicInline_ree1.sol:16:3335: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+00_BasicInline_ree1.sol:16:3915: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+00_BasicInline_ree1.sol:16:2910: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+00_BasicInline_ree1.sol:12:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+INFO:symExec:00_BasicInline_ree1.sol:16:1081: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 00_BasicInline_ree1.sol:C.json.

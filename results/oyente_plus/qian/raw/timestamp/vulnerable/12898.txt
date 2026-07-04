@@ -1,0 +1,21 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 12898.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.yoyLItpp0u' running
+INFO:root:contract 12898.sol:ActionAuctionPlat:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 91.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:12898.sol:16:37: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    auctionArray[lastIndex] = 17055075117530390290281879521502766365361137751832839276848951044616055427046
+    latestAction[_tokenId] = 14676012073713098016496183912198576280532916314203242522148509971513004786196
+12898.sol:9:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 12898.sol:ActionAuctionPlat.json.

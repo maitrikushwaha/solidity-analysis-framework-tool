@@ -1,0 +1,29 @@
+=================================================================
+OUR TOOL QIAN_OVERFLOW — PER-VULNERABILITY RESULTS
+=================================================================
+Total files  : 275 unique contracts
+Analysis OK  : 275  |  Partial: 0  |  Timeout: 0  |  Error: 0  |  Skipped: 0
+Batch time   : 54s (1 min)
+=================================================================
+
+  OVERFLOW / UNDERFLOW
+  -------------------------------------------------------
+  Ground truth : 86 positive + 189 negative
+  Evaluated    : 275  |  Excluded (N/A): 0
+  TP=86  FP=9  TN=180  FN=0  N/A=0
+  Precision : 90.5%  [TP/(TP+FP) = 86/95]
+  Recall    : 100.0%  [TP/(TP+FN) = 86/86]
+  F1        : 95.0%
+  Accuracy  : 96.7%  [(TP+TN)/evaluated = 266/275]
+  FP files (9):
+    - overflow/1.sol
+    - overflow/34442.sol
+    - overflow/50338.sol
+    - overflow/50793.sol
+    - overflow/50794.sol
+    - overflow/50795.sol
+    - overflow/50798.sol
+    - overflow/649.sol
+    - overflow/7570.sol
+
+=================================================================

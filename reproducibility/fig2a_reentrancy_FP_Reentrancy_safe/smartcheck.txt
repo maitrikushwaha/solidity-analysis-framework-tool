@@ -1,0 +1,27 @@
+/work/examples/reentrancysafe.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlline 16:42 no viable alternative at input '.call{'
+line 16:42 missing ';' at '{'
+ruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 3
+column: 0
+content: contractReentrancy_safe{mapping(address=>uint)privaterewardsForA;functiondepositReward(address_beneficiary)publicpayable{require(msg.value>0,"Must send ETH to deposit rewards");rewardsForA[_beneficiary]+=msg.value;}functionwithdrawReward()public{uintamountToWithdraw=rewardsForA[msg.sender];require(amountToWithdraw>0,"No rewards available to withdraw");rewardsForA[msg.sender]=0;(boolsuccess,)=msg.sender.call<missing ';'>{value:amountToWithdraw}("");require(success,"Transfer failed");}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 2
+column: 16
+content: ^
+
+ruleId: SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+patternId: 5616b2
+severity: 1
+line: 5
+column: 29
+content: private
+
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_LOCKED_MONEY :1
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA :1

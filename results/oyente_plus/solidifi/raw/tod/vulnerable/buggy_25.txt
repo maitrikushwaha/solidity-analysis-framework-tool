@@ -1,0 +1,114 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc buggy_25.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.uEAOAxVsF9' running
+INFO:root:contract buggy_25.sol:WhiteBetting:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 55.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:buggy_25.sol:340:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _odd = 1
+    gameList[_fixtureId].timestamp = 57896044618658097711785492504343953926634992332820282019728792003956564820553
+    gameList[_fixtureId].open_status = 3
+    _selectedTeam = 8
+    gameList[_fixtureId].odd_awayTeamAndDraw = 26959946667150639794667015087019630673637144422540572481103610249216
+INFO:symExec:buggy_25.sol:242:5: Warning: Integer Overflow.
+
+buggy_25.sol:243:5: Warning: Integer Overflow.
+
+buggy_25.sol:244:5: Warning: Integer Overflow.
+
+buggy_25.sol:245:5: Warning: Integer Overflow.
+
+buggy_25.sol:246:5: Warning: Integer Overflow.
+
+buggy_25.sol:247:5: Warning: Integer Overflow.
+
+buggy_25.sol:248:5: Warning: Integer Overflow.
+
+buggy_25.sol:249:5: Warning: Integer Overflow.
+
+buggy_25.sol:2:20: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _odd = 1
+    gameList[_fixtureId].timestamp = 57896044618658097711785492504343953926634992332820282019728792003956564820553
+    gameList[_fixtureId].open_status = 3
+    _selectedTeam = 8
+    gameList[_fixtureId].odd_awayTeamAndDraw = 26959946667150639794667015087019630673637144422540572481103610249216
+buggy_25.sol:340:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _odd = 524288
+    gameList[_fixtureId].timestamp = 3730256751415333683884441817290871547440205564647538392348831623736570413258
+    gameList[_fixtureId].open_status = 3
+    _selectedTeam = 8
+    gameList[_fixtureId].odd_awayTeamAndDraw = 14134776518227074636666380005943348126619871175004951664972849610340958208
+buggy_25.sol:82:3: Warning: Integer Overflow.
+
+buggy_25.sol:59:3: Warning: Integer Overflow.
+
+buggy_25.sol:374:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 1
+    betList[_fixtureId][0].player = 1
+buggy_25.sol:375:59: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 1
+    betList[_fixtureId][0].player = 1
+buggy_25.sol:375:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 1
+    betList[_fixtureId][0].player = 1
+buggy_25.sol:390:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 1
+    betList[_fixtureId][0].player = 1
+buggy_25.sol:392:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 1
+    betList[_fixtureId][0].player = 1
+buggy_25.sol:374:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+    betList[_fixtureId][0].player = 1
+buggy_25.sol:375:59: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+    betList[_fixtureId][0].player = 1
+buggy_25.sol:375:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    gameList[_fixtureId].open_status = 3
+    betList[_fixtureId][0] = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+    betList[_fixtureId][0].player = 1
+INFO:symExec:Flow1
+buggy_25.sol:482:27: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_25.sol:359:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:buggy_25.sol:385:9: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_25.sol:WhiteBetting.json.

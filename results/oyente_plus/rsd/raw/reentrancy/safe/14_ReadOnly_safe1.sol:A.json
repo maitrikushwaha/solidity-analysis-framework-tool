@@ -1,0 +1,19 @@
+{
+ "evm_code_coverage": "61.2",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "14_ReadOnly_safe1.sol:78:306: Warning: Integer Underflow.\n",
+   "14_ReadOnly_safe1.sol:22:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [],
+  "callstack": [
+   "14_ReadOnly_safe1.sol:33:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

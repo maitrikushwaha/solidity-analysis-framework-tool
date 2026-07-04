@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "83.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "798.sol:8:12: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    isAttached = 1"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

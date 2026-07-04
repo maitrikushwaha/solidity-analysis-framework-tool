@@ -1,0 +1,53 @@
+
+'solc --version' running
+'solc /work/datasets/qian/reentrancy/vulnerable/39269.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/reentrancy/vulnerable' running
+Compilation warnings/errors on /work/datasets/qian/reentrancy/vulnerable/39269.sol:
+/work/datasets/qian/reentrancy/vulnerable/39269.sol:19:9: Warning: This declaration shadows a builtin symbol.
+        TX memory tx = pendingTxs[ptxTail];
+        ^----------^
+
+
+Bakt.pendingTxs (datasets/qian/reentrancy/vulnerable/39269.sol#13) is never initialized. It is used in:
+	- Bakt.sendPending() (datasets/qian/reentrancy/vulnerable/39269.sol#17-28)
+Bakt.ptxTail (datasets/qian/reentrancy/vulnerable/39269.sol#15) is never initialized. It is used in:
+	- Bakt.sendPending() (datasets/qian/reentrancy/vulnerable/39269.sol#17-28)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+Bakt.sendPending().tx (datasets/qian/reentrancy/vulnerable/39269.sol#19) (local variable) shadows built-in symbol"
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#builtin-symbol-shadowing
+
+Reentrancy in Bakt.sendPending() (datasets/qian/reentrancy/vulnerable/39269.sol#17-28):
+	External calls:
+	- tx.to.call.value(tx.value)(tx.data) (datasets/qian/reentrancy/vulnerable/39269.sol#22)
+	State variables written after the call(s):
+	- committedEther -= tx.value (datasets/qian/reentrancy/vulnerable/39269.sol#23)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/reentrancy/vulnerable/39269.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in Bakt.sendPending() (datasets/qian/reentrancy/vulnerable/39269.sol#17-28):
+	- tx.to.call.value(tx.value)(tx.data) (datasets/qian/reentrancy/vulnerable/39269.sol#22)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Bakt.ptxTail (datasets/qian/reentrancy/vulnerable/39269.sol#15) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/qian/reentrancy/vulnerable/39269.sol analyzed (1 contracts with 93 detectors), 8 result(s) found

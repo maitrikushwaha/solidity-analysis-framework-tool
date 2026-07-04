@@ -1,0 +1,30 @@
+{
+ "evm_code_coverage": "86.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "02_CrossMutexUnchecked_ree1.sol:6:5: Warning: Integer Underflow.\n",
+   "02_CrossMutexUnchecked_ree1.sol:22:13: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 59849323381205851970197521066982367775278984893830421173511412372910683283456\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    balances[msg.sender] = 0",
+   "02_CrossMutexUnchecked_ree1.sol:15:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 3646772341702585256259926041533383816667926763151277530791191319876911235200",
+   "02_CrossMutexUnchecked_ree1.sol:33:6395: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    balances[to] = 46392324362385773911234458286694592301031399726849495737386652062523855788806\n    balances[msg.sender] = 0",
+   "02_CrossMutexUnchecked_ree1.sol:33:3673: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0",
+   "02_CrossMutexUnchecked_ree1.sol:9:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0",
+   "02_CrossMutexUnchecked_ree1.sol:29:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 65187824180460453018487429815626389026003598225511513752557158828499894534144"
+  ],
+  "integer_overflow": [
+   "02_CrossMutexUnchecked_ree1.sol:33:551: Warning: Integer Overflow.\n",
+   "02_CrossMutexUnchecked_ree1.sol:19:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 365386559705324994862491976038207079094736125952\n    balances[msg.sender] = 61514547407324228818772085785865451047049679353621549645961841504203850121216",
+   "02_CrossMutexUnchecked_ree1.sol:18:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 78052608194857180995381507208183211570495488\n    balances[msg.sender] = 0"
+  ],
+  "callstack": [
+   "02_CrossMutexUnchecked_ree1.sol:19:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "02_CrossMutexUnchecked_ree1.sol:19:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

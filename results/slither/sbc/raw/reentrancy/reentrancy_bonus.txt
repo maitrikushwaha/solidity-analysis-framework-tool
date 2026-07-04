@@ -1,0 +1,53 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/reentrancy/reentrancy_bonus.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/reentrancy' running
+Compilation warnings/errors on /work/datasets/sbc/reentrancy/reentrancy_bonus.sol:
+/work/datasets/sbc/reentrancy/reentrancy_bonus.sol:19:9: Warning: Different number of components on the left hand side (2) than on the right hand side (1).
+        (bool success, ) = recipient.call.value(amountToWithdraw)("");
+        ^-----------------------------------------------------------^
+
+
+Failed to generate IR for Reentrancy_bonus.withdrawReward. Please open an issue https://github.com/crytic/slither/issues.
+Reentrancy_bonus.withdrawReward (datasets/sbc/reentrancy/reentrancy_bonus.sol#16-21):
+ 	amountToWithdraw = rewardsForA[recipient]
+	rewardsForA[recipient] = 0
+	(success,None) = recipient.call.value(amountToWithdraw)()
+	require(bool)(success)
+Traceback (most recent call last):
+  File "/home/ethsec/.local/bin/slither", line 8, in <module>
+    sys.exit(main())
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/__main__.py", line 776, in main
+    main_impl(all_detector_classes=detectors, all_printer_classes=printers)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/__main__.py", line 882, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/__main__.py", line 107, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/slither.py", line 202, in __init__
+    self._init_parsing_and_analyses(kwargs.get("skip_analyze", False))
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/slither.py", line 221, in _init_parsing_and_analyses
+    raise e
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/slither.py", line 217, in _init_parsing_and_analyses
+    parser.analyze_contracts()
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 593, in analyze_contracts
+    self._convert_to_slithir()
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 827, in _convert_to_slithir
+    raise e
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 812, in _convert_to_slithir
+    func.generate_slithir_and_analyze()
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/core/declarations/function.py", line 1827, in generate_slithir_and_analyze
+    node.slithir_generation()
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/core/cfg/node.py", line 717, in slithir_generation
+    self._irs = convert_expression(expression, self)  # type:ignore
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/slithir/convert.py", line 115, in convert_expression
+    visitor = ExpressionToSlithIR(expression, node)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/visitors/slithir/expression_to_slithir.py", line 174, in __init__
+    self._visit_expression(self.expression)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/visitors/expression/expression.py", line 78, in _visit_expression
+    self._post_visit(expression)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/visitors/expression/expression.py", line 252, in _post_visit
+    self._post_assignement_operation(expression)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/visitors/slithir/expression_to_slithir.py", line 209, in _post_assignement_operation
+    assert isinstance(right, TupleVariable)
+AssertionError

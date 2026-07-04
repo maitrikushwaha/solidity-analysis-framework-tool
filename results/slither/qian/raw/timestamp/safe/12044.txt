@@ -1,0 +1,44 @@
+
+'solc --version' running
+'solc /work/datasets/qian/timestamp/safe/12044.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/timestamp/safe' running
+
+ESS.token (datasets/qian/timestamp/safe/12044.sol#4) is never initialized. It is used in:
+	- ESS.withdrawPUB() (datasets/qian/timestamp/safe/12044.sol#8-12)
+ESS.sold (datasets/qian/timestamp/safe/12044.sol#5) is never initialized. It is used in:
+	- ESS.withdrawPUB() (datasets/qian/timestamp/safe/12044.sol#8-12)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+ESS.withdrawPUB() (datasets/qian/timestamp/safe/12044.sol#8-12) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(block.timestamp > pubEnd) (datasets/qian/timestamp/safe/12044.sol#9)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/timestamp/safe/12044.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in ESS.withdrawPUB() (datasets/qian/timestamp/safe/12044.sol#8-12):
+	- result = token.call(bytes4(keccak256()(transfer(address,uint256))),msg.sender,sold[msg.sender]) (datasets/qian/timestamp/safe/12044.sol#10)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+ESS.pubEnd (datasets/qian/timestamp/safe/12044.sol#6) should be constant 
+ESS.token (datasets/qian/timestamp/safe/12044.sol#4) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/qian/timestamp/safe/12044.sol analyzed (1 contracts with 93 detectors), 8 result(s) found

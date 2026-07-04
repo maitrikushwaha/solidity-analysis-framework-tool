@@ -1,0 +1,32 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 35358.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.L5O1pCZxcX' running
+INFO:CryticCompile:Compilation warnings/errors on 35358.sol:
+35358.sol:9:20: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function claim(address _payout, address _fee) public {
+                   ^-------------^
+35358.sol:9:37: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function claim(address _payout, address _fee) public {
+                                    ^----------^
+
+INFO:root:contract 35358.sol:OysterPearl:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:35358.sol:11:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    claimed[msg.sender] = 1
+    balanceOf[msg.sender] = 0
+    claimAmount = 1
+35358.sol:10:46: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    claimed[msg.sender] = 3
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 35358.sol:OysterPearl.json.

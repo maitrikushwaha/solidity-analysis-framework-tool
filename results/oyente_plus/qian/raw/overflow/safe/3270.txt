@@ -1,0 +1,27 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 3270.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.k69weIFy7V' running
+INFO:CryticCompile:Compilation warnings/errors on 3270.sol:
+3270.sol:5:3: Warning: Functions in interfaces should be declared external.
+  function getBuyPrice() public view returns(uint256);
+  ^--------------------------------------------------^
+3270.sol:6:3: Warning: Functions in interfaces should be declared external.
+  function getTimeLeft() public view returns(uint256);
+  ^--------------------------------------------------^
+3270.sol:16:9: Warning: Return value of low-level calls not used.
+        address(fomo3d).call.value(fomo3d.getBuyPrice())();
+        ^------------------------------------------------^
+
+INFO:root:contract 3270.sol:PwnFoMo3D:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 42.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:3270.sol:16:9: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 3270.sol:PwnFoMo3D.json.

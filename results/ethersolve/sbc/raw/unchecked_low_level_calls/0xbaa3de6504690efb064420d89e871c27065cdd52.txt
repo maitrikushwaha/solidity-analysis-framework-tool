@@ -1,0 +1,6 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52.sol:Proxy
+offset,opcode,detection
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52.sol:VaultProxy
+offset,opcode,detection

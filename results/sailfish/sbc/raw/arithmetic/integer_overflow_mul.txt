@@ -1,0 +1,38 @@
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Analysis started at: 2026-06-21 06:59:44 PM
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Callgraph generation started!
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Callgraph generation finished!
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Value Range Analysis started
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Generating return summary for run
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Return summary generated for run
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Range graph generated
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Processed function run
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Range graph generated
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Value Range Analysis took 0.000629 seconds
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Value Range Analysis finished
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Dependency detection started!
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Dependency detection finished!
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Static Analysis took 0.054547 seconds
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Dependency does not exist
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Symbolic execution is not needed!
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Analysis finished!
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Analysis took 0.054747 seconds
+[INFO] | 2026-06-21 06:59:44 PM | analyzer.integer_overflow_mul | Analysis finished at: 2026-06-21 06:59:44 PM
+[36m[#] Analysing started: integer_overflow_mul.sol[0m
+[36m[#] Interprocedural CFG generation started for run[0m
+[36m[#] Interprocedural CFG generated for run[0m
+[36m[#] SDG generation started for run[0m
+[36m[#] SDG generated for run[0m
+[36m[#] Analysis took 0.054747 seconds[0m
+[36m[#] Analysis completed: integer_overflow_mul.sol [0m
+
+=== dependency_info.json ===
+{}

@@ -1,0 +1,24 @@
+{
+ "evm_code_coverage": "76.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "03_SingleModUnderflow_ree1.sol:6:5: Warning: Integer Underflow.\n",
+   "03_SingleModUnderflow_ree1.sol:10:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 2"
+  ],
+  "integer_overflow": [
+   "03_SingleModUnderflow_ree1.sol:26:873: Warning: Integer Overflow.\n",
+   "03_SingleModUnderflow_ree1.sol:17:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 56539106072908298546665520023773392506479484700019806659891398441380610048\n    balances[msg.sender] = 14474011154664524427946373126085988481658748083205070504932198000989141204993"
+  ],
+  "callstack": [
+   "03_SingleModUnderflow_ree1.sol:17:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "03_SingleModUnderflow_ree1.sol:17:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

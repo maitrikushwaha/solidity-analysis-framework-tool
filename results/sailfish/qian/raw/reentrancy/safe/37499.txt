@@ -1,0 +1,34 @@
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Analysis started at: 2026-06-21 07:11:59 PM
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Callgraph generation started!
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Value Range Analysis started
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Generating return summary for execute
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Return summary generated for execute
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Processed function execute
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Value Range Analysis took 0.000226 seconds
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Dependency detection started!
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Dependency detection finished!
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Static Analysis took 0.031856 seconds
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Dependency does not exist
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Analysis finished!
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Analysis took 0.031982 seconds
+[INFO] | 2026-06-21 07:11:59 PM | analyzer.37499  | Analysis finished at: 2026-06-21 07:11:59 PM
+[36m[#] Analysing started: 37499.sol[0m
+[36m[#] Interprocedural CFG generation started for execute[0m
+[36m[#] Interprocedural CFG generated for execute[0m
+[36m[#] SDG generation started for execute[0m
+[36m[#] SDG generated for execute[0m
+[36m[#] Analysis took 0.031982 seconds[0m
+[36m[#] Analysis completed: 37499.sol [0m
+
+=== dependency_info.json ===
+{}

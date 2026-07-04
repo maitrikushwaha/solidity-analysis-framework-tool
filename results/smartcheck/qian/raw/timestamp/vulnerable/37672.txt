@@ -1,0 +1,25 @@
+/work/datasets/qian/timestamp/vulnerable/37672.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 3
+column: 0
+content: contractEmpireCrowdsale{uint256publicweiRaised;uint256publicsoftCap;uint256publicgracePeriodStart;functionbuyTokens(addressbeneficiary)payablereturns(uint256){if((weiRaised>=softCap*1ether)&&gracePeriodStart==0)gracePeriodStart=block.timestamp;returngracePeriodStart;}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: 910067
+severity: 1
+line: 9
+column: 2
+content: functionbuyTokens(addressbeneficiary)payablereturns(uint256){if((weiRaised>=softCap*1ether)&&gracePeriodStart==0)gracePeriodStart=block.timestamp;returngracePeriodStart;}
+
+SOLIDITY_VISIBILITY :1
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_LOCKED_MONEY :1

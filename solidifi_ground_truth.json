@@ -1,0 +1,602 @@
+{
+  "1.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "10.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "11.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "12.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "13.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "14.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "15.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "16.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "17.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "18.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "19.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "2.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "20.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "21.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "22.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "23.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "24.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "25.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "26.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "27.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "28.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "29.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "3.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "30.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "31.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "32.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "33.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "34.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "35.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "36.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "37.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "38.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "39.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "4.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "40.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "41.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "42.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "43.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "44.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "45.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "46.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "47.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "48.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "49.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "5.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "50.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "6.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "7.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "8.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "9.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 0
+  },
+  "buggy_1.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_10.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_11.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_12.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_13.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_14.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_15.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_16.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_17.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_18.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_19.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_2.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_20.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_21.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_22.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_23.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_24.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_25.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_26.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_27.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_28.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_29.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_3.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_30.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_31.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_32.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_33.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_34.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_35.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_36.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_37.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_38.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_39.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_4.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_40.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_41.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_42.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_43.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_44.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_45.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_46.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_47.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_48.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_49.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_5.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_50.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_6.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_7.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_8.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  },
+  "buggy_9.sol": {
+    "overflow": 0,
+    "reentrancy": 0,
+    "timestamp": 0,
+    "tod": 1
+  }
+}

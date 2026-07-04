@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "89.2",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "50019.sol:18:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[founder] = 0\n    coinAllocation = 57896044618658097711785492504343953926634992332820282019728792003956564820024"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [
+   "50019.sol:14:9: Warning: Timestamp Dependency.\n"
+  ],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

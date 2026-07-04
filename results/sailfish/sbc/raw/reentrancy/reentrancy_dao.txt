@@ -1,0 +1,165 @@
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Analysis started at: 2026-06-21 07:04:41 PM
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Callgraph generation started!
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Callgraph generation finished!
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Value Range Analysis started
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Generating return summary for withdrawAll
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Return summary generated for withdrawAll
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Range graph generated
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Processed function withdrawAll
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Generating return summary for deposit
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Return summary generated for deposit
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Range graph generated
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Processed function deposit
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Value Range Analysis took 0.001282 seconds
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Value Range Analysis finished
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Dependency detection started!
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | DAO dependency detected in file reentrancy_dao.sol in contract ReentrancyDAO in by composing functions withdrawAll and withdrawAll
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | DAO dependency detected in file reentrancy_dao.sol in contract ReentrancyDAO in by composing functions withdrawAll and deposit
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | TOD dependency detected in file reentrancy_dao.sol in contract ReentrancyDAO in by composing functions withdrawAll and withdrawAll
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | TOD dependency detected in file reentrancy_dao.sol in contract ReentrancyDAO in by composing functions withdrawAll and deposit
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Dependency detection finished!
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Static Analysis took 0.286353 seconds
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Dependency exists
+[INFO] | 2026-06-21 07:04:41 PM | analyzer.reentrancy_dao | Invoking symbolic executor!
+[36m[#] Analysing started: reentrancy_dao.sol[0m
+[36m[#] Interprocedural CFG generation started for withdrawAll[0m
+[36m[#] Interprocedural CFG generated for withdrawAll[0m
+[36m[#] Interprocedural CFG generation started for deposit[0m
+[36m[#] Interprocedural CFG generated for deposit[0m
+[36m[#] SDG generation started for withdrawAll[0m
+[36m[#] SDG generated for withdrawAll[0m
+[36m[#] SDG generation started for deposit[0m
+[36m[#] SDG generated for deposit[0m
+[INFO] | 2026-06-21 07:04:45 PM | analyzer.reentrancy_dao | Symbolic execution took 3.841834 seconds
+[INFO] | 2026-06-21 07:04:45 PM | analyzer.reentrancy_dao | Symbolic execution finished!
+[INFO] | 2026-06-21 07:04:45 PM | analyzer.reentrancy_dao | Analysis finished!
+[INFO] | 2026-06-21 07:04:45 PM | analyzer.reentrancy_dao | Analysis took 4.129540 seconds
+[INFO] | 2026-06-21 07:04:45 PM | analyzer.reentrancy_dao | Analysis finished at: 2026-06-21 07:04:45 PM
+[36m[#] Analysis took 4.129540 seconds[0m
+[36m[#] Analysis completed: reentrancy_dao.sol [0m
+
+=== dependency_info.json ===
+{
+    "reentrancy_dao.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawAll",
+                "withdrawAll"
+            ],
+            "from_function": "withdrawAll",
+            "to_function": "withdrawAll",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: withdrawAll\nNode: \nIF oCredit > 0\nIRS: \nCONDITION TMP_0\"",
+                        "\"BlockID: 7\nFunction: withdrawAll\nNode: \nEXPRESSION credit[msg.sender] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "credit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 13\nFunction: withdrawAll\nNode: \nEXPRESSION balance -= oCredit\nIRS: \nbalance = balance - oCredit\"",
+                        "\"BlockID: 7\nFunction: withdrawAll\nNode: \nEXPRESSION credit[msg.sender] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "credit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: withdrawAll\nNode: \nNEW VARIABLE callResult = msg.sender.call.value(oCredit)()\nIRS: \nTMP_2(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:oCredit \"",
+                        "\"BlockID: 7\nFunction: withdrawAll\nNode: \nEXPRESSION credit[msg.sender] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "credit"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawAll",
+                "deposit"
+            ],
+            "from_function": "deposit",
+            "to_function": "withdrawAll",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: deposit\nNode: \nEXPRESSION balance += msg.value\nIRS: \nbalance = balance + msg.value\"",
+                        "\"BlockID: 7\nFunction: withdrawAll\nNode: \nEXPRESSION credit[msg.sender] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "credit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawAll",
+                "withdrawAll"
+            ],
+            "First_function": "withdrawAll",
+            "Second_function": "withdrawAll",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: withdrawAll\nNode: \nEXPRESSION credit[msg.sender] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 2\nFunction: withdrawAll\nNode: \nIF oCredit > 0\nIRS: \nCONDITION TMP_0\""
+                    ],
+                    "state_variable": "credit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: withdrawAll\nNode: \nEXPRESSION credit[msg.sender] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 3\nFunction: withdrawAll\nNode: \nEXPRESSION balance -= oCredit\nIRS: \nbalance = balance - oCredit\""
+                    ],
+                    "state_variable": "credit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: withdrawAll\nNode: \nEXPRESSION credit[msg.sender] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 4\nFunction: withdrawAll\nNode: \nNEW VARIABLE callResult = msg.sender.call.value(oCredit)()\nIRS: \nTMP_2(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:oCredit \""
+                    ],
+                    "state_variable": "credit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawAll",
+                "deposit"
+            ],
+            "First_function": "deposit",
+            "Second_function": "withdrawAll",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: deposit\nNode: \nEXPRESSION credit[msg.sender] += msg.value\nIRS: \nREF_4 = REF_4 + msg.value\"",
+                        "\"BlockID: 2\nFunction: withdrawAll\nNode: \nIF oCredit > 0\nIRS: \nCONDITION TMP_0\""
+                    ],
+                    "state_variable": "credit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: deposit\nNode: \nEXPRESSION credit[msg.sender] += msg.value\nIRS: \nREF_4 = REF_4 + msg.value\"",
+                        "\"BlockID: 3\nFunction: withdrawAll\nNode: \nEXPRESSION balance -= oCredit\nIRS: \nbalance = balance - oCredit\""
+                    ],
+                    "state_variable": "credit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: deposit\nNode: \nEXPRESSION credit[msg.sender] += msg.value\nIRS: \nREF_4 = REF_4 + msg.value\"",
+                        "\"BlockID: 4\nFunction: withdrawAll\nNode: \nNEW VARIABLE callResult = msg.sender.call.value(oCredit)()\nIRS: \nTMP_2(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:oCredit \""
+                    ],
+                    "state_variable": "credit"
+                }
+            ]
+        }
+    ]
+}

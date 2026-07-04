@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol:airDrop
+offset,opcode,detection

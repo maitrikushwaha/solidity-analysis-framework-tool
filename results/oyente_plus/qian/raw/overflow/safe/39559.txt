@@ -1,0 +1,42 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39559.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.sfnhyTOQcS' running
+INFO:CryticCompile:Compilation warnings/errors on 39559.sol:
+39559.sol:6:21: Warning: This declaration shadows a builtin symbol.
+  function notarize(string sha256) {
+                    ^-----------^
+39559.sol:6:3: Warning: No visibility specified. Defaulting to "public". 
+  function notarize(string sha256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 39559.sol:ProofOfExistence:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 80.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:39559.sol:11:24: Warning: Integer Underflow.
+
+39559.sol:7:12: Warning: Integer Underflow.
+
+39559.sol:8:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    proofs[sha256] = 1
+INFO:symExec:39559.sol:6:3: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    sha256 = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+39559.sol:8:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    proofs[sha256] = 1
+39559.sol:4:36: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    proofs[sha256] = 1361129467683753853853498429727072845824
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39559.sol:ProofOfExistence.json.

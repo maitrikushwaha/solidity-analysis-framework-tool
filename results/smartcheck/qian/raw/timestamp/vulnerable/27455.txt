@@ -1,0 +1,40 @@
+/work/datasets/qian/timestamp/vulnerable/27455.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_DEPRECATED_CONSTRUCTIONS
+patternId: 28fa69
+severity: 1
+line: 7
+column: 4
+content: functionrandomGen(bytes32blockHash,uintseed)constantpublicreturns(uintrandomNumber){return(uint(keccak256(blockHash,block.timestamp,numOfPurchases,seed))%NUM_SAMPLE_RANGE);}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_UPGRADE_TO_050
+patternId: 901eae
+severity: 1
+line: 8
+column: 21
+content: keccak256(blockHash,block.timestamp,numOfPurchases,seed)
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 4
+column: 4
+content: uintnumOfPurchases;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 5
+column: 4
+content: uintNUM_SAMPLE_RANGE=1000;
+
+SOLIDITY_VISIBILITY :2
+SOLIDITY_DEPRECATED_CONSTRUCTIONS :1
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_UPGRADE_TO_050 :1

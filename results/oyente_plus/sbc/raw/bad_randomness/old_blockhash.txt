@@ -1,0 +1,26 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc old_blockhash.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.jAg0hO4d7t' running
+INFO:root:contract old_blockhash.sol:PredictTheBlockHashChallenge:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:old_blockhash.sol:38:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    guesses[msg.sender].block = 0
+old_blockhash.sol:28:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    guesses[msg.sender].block = 0
+old_blockhash.sol:29:38: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    guesses[msg.sender].block = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to old_blockhash.sol:PredictTheBlockHashChallenge.json.

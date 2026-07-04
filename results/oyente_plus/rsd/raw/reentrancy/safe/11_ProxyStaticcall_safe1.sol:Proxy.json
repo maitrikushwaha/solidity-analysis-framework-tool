@@ -1,0 +1,21 @@
+{
+ "evm_code_coverage": "89.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "11_ProxyStaticcall_safe1.sol:7:13: Warning: Integer Underflow.\n",
+   "11_ProxyStaticcall_safe1.sol:22:3058: Warning: Integer Underflow.\n",
+   "11_ProxyStaticcall_safe1.sol:5:5: Warning: Integer Underflow.\n",
+   "11_ProxyStaticcall_safe1.sol:6:45: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "11_ProxyStaticcall_safe1.sol:22:1045: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

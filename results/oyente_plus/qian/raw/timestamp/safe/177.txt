@@ -1,0 +1,20 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 177.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.IuX7FIPJYH' running
+INFO:root:contract 177.sol:IcoRocketFuel:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 87.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:177.sol:16:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    crowdsales[_token].earlyClosure = 1
+177.sol:12:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 177.sol:IcoRocketFuel.json.

@@ -1,0 +1,9 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x8fd1e427396ddb511533cf9abdbebd0a7e08da35.sol:Ownable
+offset,opcode,detection
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x8fd1e427396ddb511533cf9abdbebd0a7e08da35.sol:Token
+offset,opcode,detection
+
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x8fd1e427396ddb511533cf9abdbebd0a7e08da35.sol:TokenBank
+offset,opcode,detection

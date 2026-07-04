@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "84.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "50027.sol:13:16: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    owner = 0"
+  ],
+  "integer_overflow": [
+   "50027.sol:13:16: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    owner = 0"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "50027.sol:13:16: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

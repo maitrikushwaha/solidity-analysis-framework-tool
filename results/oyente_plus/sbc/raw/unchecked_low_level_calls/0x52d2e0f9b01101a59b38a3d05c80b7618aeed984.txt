@@ -1,0 +1,33 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.PBLSFwpu4n' running
+INFO:CryticCompile:Compilation warnings/errors on 0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol:
+0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol:9:5: Warning: No visibility specified. Defaulting to "public".
+    function transfer(address _to, uint _value) returns (bool success);
+    ^-----------------------------------------------------------------^
+0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol:10:5: Warning: No visibility specified. Defaulting to "public".
+    function balanceOf(address _owner) constant returns (uint balance);
+    ^-----------------------------------------------------------------^
+0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol:14:5: Warning: No visibility specified. Defaulting to "public".
+    function EtherGet() {
+    ^
+Spanning multiple lines.
+0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol:27:13: Warning: Return value of low-level calls not used.
+            addr.call.value(0 wei)();
+            ^----------------------^
+
+INFO:root:contract 0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol:EtherGet:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 24.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol:27:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    num = 1
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol:EtherGet.json.

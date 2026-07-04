@@ -1,0 +1,47 @@
+
+'solc --version' running
+'solc /work/datasets/qian/overflow/safe/50785.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/overflow/safe' running
+Compilation warnings/errors on /work/datasets/qian/overflow/safe/50785.sol:
+/work/datasets/qian/overflow/safe/50785.sol:17:20: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function claim(address _payout, address _fee) public {
+                   ^-------------^
+/work/datasets/qian/overflow/safe/50785.sol:17:37: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function claim(address _payout, address _fee) public {
+                                    ^----------^
+
+
+OysterPearl.claimAmount (datasets/qian/overflow/safe/50785.sol#13) is never initialized. It is used in:
+	- OysterPearl.claim(address,address) (datasets/qian/overflow/safe/50785.sol#17-20)
+OysterPearl.claimed (datasets/qian/overflow/safe/50785.sol#15) is never initialized. It is used in:
+	- OysterPearl.claim(address,address) (datasets/qian/overflow/safe/50785.sol#17-20)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+OysterPearl.claim(address,address) (datasets/qian/overflow/safe/50785.sol#17-20) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(claimed[msg.sender] == 1 || block.timestamp >= 60) (datasets/qian/overflow/safe/50785.sol#18)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/overflow/safe/50785.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+OysterPearl.claimAmount (datasets/qian/overflow/safe/50785.sol#13) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/qian/overflow/safe/50785.sol analyzed (2 contracts with 93 detectors), 6 result(s) found

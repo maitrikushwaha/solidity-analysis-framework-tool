@@ -1,0 +1,58 @@
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Analysis started at: 2026-06-21 07:11:03 PM
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Callgraph generation started!
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Value Range Analysis started
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Generating return summary for participate
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Return summary generated for participate
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Range graph generated
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Processed function participate
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Value Range Analysis took 0.000754 seconds
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Dependency detection started!
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | TOD dependency detected in file 27334.sol in contract AddressLottery in by composing functions participate and participate
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Dependency detection finished!
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Static Analysis took 0.082527 seconds
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Dependency exists
+[INFO] | 2026-06-21 07:11:03 PM | analyzer.27334  | Invoking symbolic executor!
+[36m[#] Analysing started: 27334.sol[0m
+[36m[#] Interprocedural CFG generation started for participate[0m
+[36m[#] Interprocedural CFG generated for participate[0m
+[36m[#] SDG generation started for participate[0m
+[36m[#] SDG generated for participate[0m
+[INFO] | 2026-06-21 07:11:04 PM | analyzer.27334  | Symbolic execution took 0.961819 seconds
+[INFO] | 2026-06-21 07:11:04 PM | analyzer.27334  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:11:04 PM | analyzer.27334  | Analysis finished!
+[INFO] | 2026-06-21 07:11:04 PM | analyzer.27334  | Analysis took 1.045110 seconds
+[INFO] | 2026-06-21 07:11:04 PM | analyzer.27334  | Analysis finished at: 2026-06-21 07:11:04 PM
+[36m[#] Analysis took 1.045110 seconds[0m
+[36m[#] Analysis completed: 27334.sol [0m
+
+=== dependency_info.json ===
+{
+    "27334.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "participate",
+                "participate"
+            ],
+            "First_function": "participate",
+            "Second_function": "participate",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 13\nFunction: participate\nNode: \nEXPRESSION participated[msg.sender] = true\nIRS: \nREF_1 := true\"",
+                        "\"BlockID: 2\nFunction: participate\nNode: \nEXPRESSION require(bool)(! participated[msg.sender])\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+                    ],
+                    "state_variable": "participated"
+                }
+            ]
+        }
+    ]
+}

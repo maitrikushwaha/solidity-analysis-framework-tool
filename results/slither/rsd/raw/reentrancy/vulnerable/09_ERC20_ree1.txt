@@ -1,0 +1,21 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/vulnerable/09_ERC20_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/vulnerable' running
+
+Reentrancy in MiniToken.donateTokens(address,address,uint256) (datasets/rsd/reentrancy/vulnerable/09_ERC20_ree1.sol#19-25):
+	External calls:
+	- success = IERC20(token).transfer(to,amount) (datasets/rsd/reentrancy/vulnerable/09_ERC20_ree1.sol#22)
+	State variables written after the call(s):
+	- donated[msg.sender] = true (datasets/rsd/reentrancy/vulnerable/09_ERC20_ree1.sol#24)
+	MiniToken.donated (datasets/rsd/reentrancy/vulnerable/09_ERC20_ree1.sol#17) can be used in cross function reentrancies:
+	- MiniToken.donateTokens(address,address,uint256) (datasets/rsd/reentrancy/vulnerable/09_ERC20_ree1.sol#19-25)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-1
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/vulnerable/09_ERC20_ree1.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+/work/datasets/rsd/reentrancy/vulnerable/09_ERC20_ree1.sol analyzed (2 contracts with 93 detectors), 2 result(s) found

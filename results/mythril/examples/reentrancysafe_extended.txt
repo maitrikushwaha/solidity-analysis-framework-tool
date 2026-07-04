@@ -1,0 +1,51 @@
+================================================================================
+Mythril reentrancy FALSE POSITIVE on reentrancysafe.sol -- configuration battery
+================================================================================
+Contract : reentrancysafe.sol  (contract Reentrancy_safe; identical, modulo the
+           contract name, to Reentrancy_bonus of Fig. "reentrancybonus")
+SHA-256  : 01da12e50ec36f0a4bb9c950bfe8dd07a81d271e80c72fc86a49a7afe8f59276
+Tool     : Mythril v0.24.8 (same release as image smartbugs/mythril:0.24.8)
+Status   : SAFE.  Checks-Effects-Interactions -- rewardsForA[msg.sender] is set
+           to 0 (line 15) BEFORE the external msg.sender.call{value:} (line 16),
+           so a re-entrant call hits require(amountToWithdraw>0) and reverts.
+Claim    : Mythril raises SWC-107 (External Call To User-Supplied Address,
+           Severity Low) on withdrawReward() at reentrancysafe.sol:16 in EVERY
+           configuration tested -- a reentrancy false positive that is invariant
+           to the search budget. The CONTRACT WAS NOT MODIFIED; only myth flags
+           change. solc is resolved from the pragma ^0.8.20 (Mythril auto-selects
+           via py-solc-x; C3 pins it explicitly with --solv 0.8.20).
+
+--------------------------------------------------------------------------------
+CONFIG                                                       SWC IDs     SWC-107?
+DEFAULT   myth analyze <file>                                105,107,114  Yes (FP)
+C1  -t 3 --max-depth 50 --solver-timeout 30000               105,107,114  Yes (FP)
+C2  -t 4 --execution-timeout 300                             105,107,114  Yes (FP)
+C3  -t 3 --max-depth 22 --execution-timeout 300 \
+        --solver-timeout 10000 --solv 0.8.20 --no-onchain-data 105,107,114 Yes (FP)
+--------------------------------------------------------------------------------
+Reported in every run:
+  SWC-107  External Call To User-Supplied Address  (the reentrancy false positive)
+  SWC-114  Transaction Order Dependence            (also a false positive)
+  SWC-105  Unprotected Ether Withdrawal            (out-of-scope class)
+All three are anchored to withdrawReward() at reentrancysafe.sol:16.
+
+Takeaways for reviewers:
+  1. Out-of-the-box (`myth analyze <file>`, no extra flags) Mythril already
+     false-positives on this safe contract -- no special configuration needed.
+  2. The SWC-107 verdict is unchanged across all extended budgets above
+     (transaction count -t 3/4, max-depth 22/50, execution-timeout 300 s,
+     solver-timeout 10/30 s, with and without on-chain data).
+  3. Mythril keys on the presence of a value-transferring external call to a
+     user-supplied address and does not establish that the pre-call zeroing of
+     the balance makes re-entry harmless -- a pattern-level over-approximation.
+
+Reproduce (Mythril v0.24.8; solc 0.8.20 available to py-solc-x):
+  myth analyze reentrancysafe.sol                                        # DEFAULT
+  myth analyze reentrancysafe.sol -t 3 --max-depth 50 --solver-timeout 30000
+  myth analyze reentrancysafe.sol -t 4 --execution-timeout 300
+  myth analyze reentrancysafe.sol -t 3 --max-depth 22 --execution-timeout 300 \
+        --solver-timeout 10000 --solv 0.8.20 --no-onchain-data
+
+(The verbatim default-config console output is in reentrancysafe.txt in this
+directory; it lists the same SWC-107/114/105 findings at line 16.)
+================================================================================

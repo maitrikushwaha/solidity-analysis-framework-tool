@@ -1,0 +1,2716 @@
+[INFO] | 2026-06-21 07:21:26 PM | analyzer.buggy_37 | Analysis started at: 2026-06-21 07:21:26 PM
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Callgraph generation started!
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Callgraph generation finished!
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Interprocedural CFG generation started!
+[36m[#] Analysing started: buggy_37.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for safeAdd[0m
+[36m[#] Interprocedural CFG generated for safeAdd[0m
+[36m[#] Interprocedural CFG generation started for play_TOD11[0m
+[36m[#] Interprocedural CFG generated for play_TOD11[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD11[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD11[0m
+[36m[#] Interprocedural CFG generation started for safeSub[0m
+[36m[#] Interprocedural CFG generated for safeSub[0m
+[36m[#] Interprocedural CFG generation started for play_TOD1[0m
+[36m[#] Interprocedural CFG generated for play_TOD1[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD1[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD1[0m
+[36m[#] Interprocedural CFG generation started for safeMul[0m
+[36m[#] Interprocedural CFG generated for safeMul[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD2[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD2[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD2[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD2[0m
+[36m[#] Interprocedural CFG generation started for safeDiv[0m
+[36m[#] Interprocedural CFG generated for safeDiv[0m
+[36m[#] Interprocedural CFG generation started for play_TOD17[0m
+[36m[#] Interprocedural CFG generated for play_TOD17[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD17[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD17[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for play_TOD37[0m
+[36m[#] Interprocedural CFG generated for play_TOD37[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD37[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD37[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for play_TOD3[0m
+[36m[#] Interprocedural CFG generated for play_TOD3[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD3[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD3[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for play_TOD9[0m
+[36m[#] Interprocedural CFG generated for play_TOD9[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD9[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD9[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for play_TOD25[0m
+[36m[#] Interprocedural CFG generated for play_TOD25[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD25[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD25[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for play_TOD19[0m
+[36m[#] Interprocedural CFG generated for play_TOD19[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD19[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD19[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD26[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD26[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD26[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD26[0m
+[36m[#] Interprocedural CFG generation started for play_TOD27[0m
+[36m[#] Interprocedural CFG generated for play_TOD27[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD27[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD27[0m
+[36m[#] Interprocedural CFG generation started for play_TOD31[0m
+[36m[#] Interprocedural CFG generated for play_TOD31[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD31[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD31[0m
+[36m[#] Interprocedural CFG generation started for receiveApproval[0m
+[36m[#] Interprocedural CFG generated for receiveApproval[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD20[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD20[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD20[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD20[0m
+[36m[#] Interprocedural CFG generation started for play_TOD5[0m
+[36m[#] Interprocedural CFG generated for play_TOD5[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD5[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD5[0m
+[36m[#] Interprocedural CFG generation started for play_TOD15[0m
+[36m[#] Interprocedural CFG generated for play_TOD15[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD15[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD15[0m
+[36m[#] Interprocedural CFG generation started for play_TOD13[0m
+[36m[#] Interprocedural CFG generated for play_TOD13[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD13[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD13[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD32[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD32[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD32[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD32[0m
+[36m[#] Interprocedural CFG generation started for transferOwnership[0m
+[36m[#] Interprocedural CFG generated for transferOwnership[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD38[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD38[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD38[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD38[0m
+[36m[#] Interprocedural CFG generation started for acceptOwnership[0m
+[36m[#] Interprocedural CFG generated for acceptOwnership[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD4[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD4[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD4[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD4[0m
+[36m[#] Interprocedural CFG generation started for safeAdd[0m
+[36m[#] Interprocedural CFG generated for safeAdd[0m
+[36m[#] Interprocedural CFG generation started for play_TOD11[0m
+[36m[#] Interprocedural CFG generated for play_TOD11[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD11[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD11[0m
+[36m[#] Interprocedural CFG generation started for safeSub[0m
+[36m[#] Interprocedural CFG generated for safeSub[0m
+[36m[#] Interprocedural CFG generation started for play_TOD1[0m
+[36m[#] Interprocedural CFG generated for play_TOD1[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD1[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD1[0m
+[36m[#] Interprocedural CFG generation started for safeMul[0m
+[36m[#] Interprocedural CFG generated for safeMul[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD2[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD2[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD2[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD2[0m
+[36m[#] Interprocedural CFG generation started for safeDiv[0m
+[36m[#] Interprocedural CFG generated for safeDiv[0m
+[36m[#] Interprocedural CFG generation started for play_TOD17[0m
+[36m[#] Interprocedural CFG generated for play_TOD17[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD17[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD17[0m
+[36m[#] Interprocedural CFG generation started for play_TOD5[0m
+[36m[#] Interprocedural CFG generated for play_TOD5[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD5[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD5[0m
+[36m[#] Interprocedural CFG generation started for play_TOD15[0m
+[36m[#] Interprocedural CFG generated for play_TOD15[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD15[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD15[0m
+[36m[#] Interprocedural CFG generation started for play_TOD13[0m
+[36m[#] Interprocedural CFG generated for play_TOD13[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD13[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD13[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD32[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD32[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD32[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD32[0m
+[36m[#] Interprocedural CFG generation started for transferOwnership[0m
+[36m[#] Interprocedural CFG generated for transferOwnership[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD38[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD38[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD38[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD38[0m
+[36m[#] Interprocedural CFG generation started for acceptOwnership[0m
+[36m[#] Interprocedural CFG generated for acceptOwnership[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD4[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD4[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD4[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD4[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for play_TOD37[0m
+[36m[#] Interprocedural CFG generated for play_TOD37[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD37[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD37[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for play_TOD3[0m
+[36m[#] Interprocedural CFG generated for play_TOD3[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD3[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD3[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for play_TOD9[0m
+[36m[#] Interprocedural CFG generated for play_TOD9[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD9[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD9[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for play_TOD25[0m
+[36m[#] Interprocedural CFG generated for play_TOD25[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD25[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD25[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for play_TOD19[0m
+[36m[#] Interprocedural CFG generated for play_TOD19[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD19[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD19[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD26[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD26[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD26[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD26[0m
+[36m[#] Interprocedural CFG generation started for play_TOD27[0m
+[36m[#] Interprocedural CFG generated for play_TOD27[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD27[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD27[0m
+[36m[#] Interprocedural CFG generation started for play_TOD31[0m
+[36m[#] Interprocedural CFG generated for play_TOD31[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD31[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD31[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD28[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD28[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD28[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD28[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD34[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD34[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD34[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD34[0m
+[36m[#] Interprocedural CFG generation started for play_TOD21[0m
+[36m[#] Interprocedural CFG generated for play_TOD21[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD21[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD21[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD10[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD10[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD10[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD10[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD22[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD22[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD22[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD22[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD12[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD12[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD12[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD12[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for play_TOD7[0m
+[36m[#] Interprocedural CFG generated for play_TOD7[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD7[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD7[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for play_TOD23[0m
+[36m[#] Interprocedural CFG generated for play_TOD23[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD23[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD23[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD14[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD14[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD14[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD14[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD30[0m
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Storage dependency graph generation started!
+[36m[#] Interprocedural CFG generated for setReward_TOD30[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD30[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD30[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD8[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD8[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD8[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD8[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for play_TOD39[0m
+[36m[#] Interprocedural CFG generated for play_TOD39[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD39[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD39[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD36[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD36[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD36[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD36[0m
+[36m[#] Interprocedural CFG generation started for approveAndCall[0m
+[36m[#] Interprocedural CFG generated for approveAndCall[0m
+[36m[#] Interprocedural CFG generation started for play_TOD35[0m
+[36m[#] Interprocedural CFG generated for play_TOD35[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD35[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD35[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for setReward_TOD40[0m
+[36m[#] Interprocedural CFG generated for setReward_TOD40[0m
+[36m[#] Interprocedural CFG generation started for claimReward_TOD40[0m
+[36m[#] Interprocedural CFG generated for claimReward_TOD40[0m
+[36m[#] Interprocedural CFG generation started for transferAnyERC20Token[0m
+[36m[#] Interprocedural CFG generated for transferAnyERC20Token[0m
+[36m[#] Interprocedural CFG generation started for play_TOD33[0m
+[36m[#] Interprocedural CFG generated for play_TOD33[0m
+[36m[#] Interprocedural CFG generation started for getReward_TOD33[0m
+[36m[#] Interprocedural CFG generated for getReward_TOD33[0m
+[36m[#] SDG generation started for safeAdd[0m
+[36m[#] SDG generated for safeAdd[0m
+[36m[#] SDG generation started for play_TOD11[0m
+[36m[#] SDG generated for play_TOD11[0m
+[36m[#] SDG generation started for getReward_TOD11[0m
+[36m[#] SDG generated for getReward_TOD11[0m
+[36m[#] SDG generation started for safeSub[0m
+[36m[#] SDG generated for safeSub[0m
+[36m[#] SDG generation started for play_TOD1[0m
+[36m[#] SDG generated for play_TOD1[0m
+[36m[#] SDG generation started for getReward_TOD1[0m
+[36m[#] SDG generated for getReward_TOD1[0m
+[36m[#] SDG generation started for safeMul[0m
+[36m[#] SDG generated for safeMul[0m
+[36m[#] SDG generation started for setReward_TOD2[0m
+[36m[#] SDG generated for setReward_TOD2[0m
+[36m[#] SDG generation started for claimReward_TOD2[0m
+[36m[#] SDG generated for claimReward_TOD2[0m
+[36m[#] SDG generation started for safeDiv[0m
+[36m[#] SDG generated for safeDiv[0m
+[36m[#] SDG generation started for play_TOD17[0m
+[36m[#] SDG generated for play_TOD17[0m
+[36m[#] SDG generation started for getReward_TOD17[0m
+[36m[#] SDG generated for getReward_TOD17[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for play_TOD37[0m
+[36m[#] SDG generated for play_TOD37[0m
+[36m[#] SDG generation started for getReward_TOD37[0m
+[36m[#] SDG generated for getReward_TOD37[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for play_TOD3[0m
+[36m[#] SDG generated for play_TOD3[0m
+[36m[#] SDG generation started for getReward_TOD3[0m
+[36m[#] SDG generated for getReward_TOD3[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for play_TOD9[0m
+[36m[#] SDG generated for play_TOD9[0m
+[36m[#] SDG generation started for getReward_TOD9[0m
+[36m[#] SDG generated for getReward_TOD9[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for play_TOD25[0m
+[36m[#] SDG generated for play_TOD25[0m
+[36m[#] SDG generation started for getReward_TOD25[0m
+[36m[#] SDG generated for getReward_TOD25[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for play_TOD19[0m
+[36m[#] SDG generated for play_TOD19[0m
+[36m[#] SDG generation started for getReward_TOD19[0m
+[36m[#] SDG generated for getReward_TOD19[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for setReward_TOD26[0m
+[36m[#] SDG generated for setReward_TOD26[0m
+[36m[#] SDG generation started for claimReward_TOD26[0m
+[36m[#] SDG generated for claimReward_TOD26[0m
+[36m[#] SDG generation started for play_TOD27[0m
+[36m[#] SDG generated for play_TOD27[0m
+[36m[#] SDG generation started for getReward_TOD27[0m
+[36m[#] SDG generated for getReward_TOD27[0m
+[36m[#] SDG generation started for play_TOD31[0m
+[36m[#] SDG generated for play_TOD31[0m
+[36m[#] SDG generation started for getReward_TOD31[0m
+[36m[#] SDG generated for getReward_TOD31[0m
+[36m[#] SDG generation started for receiveApproval[0m
+[36m[#] SDG generated for receiveApproval[0m
+[36m[#] SDG generation started for setReward_TOD20[0m
+[36m[#] SDG generated for setReward_TOD20[0m
+[36m[#] SDG generation started for claimReward_TOD20[0m
+[36m[#] SDG generated for claimReward_TOD20[0m
+[36m[#] SDG generation started for play_TOD5[0m
+[36m[#] SDG generated for play_TOD5[0m
+[36m[#] SDG generation started for getReward_TOD5[0m
+[36m[#] SDG generated for getReward_TOD5[0m
+[36m[#] SDG generation started for play_TOD15[0m
+[36m[#] SDG generated for play_TOD15[0m
+[36m[#] SDG generation started for getReward_TOD15[0m
+[36m[#] SDG generated for getReward_TOD15[0m
+[36m[#] SDG generation started for play_TOD13[0m
+[36m[#] SDG generated for play_TOD13[0m
+[36m[#] SDG generation started for getReward_TOD13[0m
+[36m[#] SDG generated for getReward_TOD13[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for setReward_TOD32[0m
+[36m[#] SDG generated for setReward_TOD32[0m
+[36m[#] SDG generation started for claimReward_TOD32[0m
+[36m[#] SDG generated for claimReward_TOD32[0m
+[36m[#] SDG generation started for transferOwnership[0m
+[36m[#] SDG generated for transferOwnership[0m
+[36m[#] SDG generation started for setReward_TOD38[0m
+[36m[#] SDG generated for setReward_TOD38[0m
+[36m[#] SDG generation started for claimReward_TOD38[0m
+[36m[#] SDG generated for claimReward_TOD38[0m
+[36m[#] SDG generation started for acceptOwnership[0m
+[36m[#] SDG generated for acceptOwnership[0m
+[36m[#] SDG generation started for setReward_TOD4[0m
+[36m[#] SDG generated for setReward_TOD4[0m
+[36m[#] SDG generation started for claimReward_TOD4[0m
+[36m[#] SDG generated for claimReward_TOD4[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for safeAdd[0m
+[36m[#] SDG generated for safeAdd[0m
+[36m[#] SDG generation started for play_TOD11[0m
+[36m[#] SDG generated for play_TOD11[0m
+[36m[#] SDG generation started for getReward_TOD11[0m
+[36m[#] SDG generated for getReward_TOD11[0m
+[36m[#] SDG generation started for safeSub[0m
+[36m[#] SDG generated for safeSub[0m
+[36m[#] SDG generation started for play_TOD1[0m
+[36m[#] SDG generated for play_TOD1[0m
+[36m[#] SDG generation started for getReward_TOD1[0m
+[36m[#] SDG generated for getReward_TOD1[0m
+[36m[#] SDG generation started for safeMul[0m
+[36m[#] SDG generated for safeMul[0m
+[36m[#] SDG generation started for setReward_TOD2[0m
+[36m[#] SDG generated for setReward_TOD2[0m
+[36m[#] SDG generation started for claimReward_TOD2[0m
+[36m[#] SDG generated for claimReward_TOD2[0m
+[36m[#] SDG generation started for safeDiv[0m
+[36m[#] SDG generated for safeDiv[0m
+[36m[#] SDG generation started for play_TOD17[0m
+[36m[#] SDG generated for play_TOD17[0m
+[36m[#] SDG generation started for getReward_TOD17[0m
+[36m[#] SDG generated for getReward_TOD17[0m
+[36m[#] SDG generation started for play_TOD5[0m
+[36m[#] SDG generated for play_TOD5[0m
+[36m[#] SDG generation started for getReward_TOD5[0m
+[36m[#] SDG generated for getReward_TOD5[0m
+[36m[#] SDG generation started for play_TOD15[0m
+[36m[#] SDG generated for play_TOD15[0m
+[36m[#] SDG generation started for getReward_TOD15[0m
+[36m[#] SDG generated for getReward_TOD15[0m
+[36m[#] SDG generation started for play_TOD13[0m
+[36m[#] SDG generated for play_TOD13[0m
+[36m[#] SDG generation started for getReward_TOD13[0m
+[36m[#] SDG generated for getReward_TOD13[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for setReward_TOD32[0m
+[36m[#] SDG generated for setReward_TOD32[0m
+[36m[#] SDG generation started for claimReward_TOD32[0m
+[36m[#] SDG generated for claimReward_TOD32[0m
+[36m[#] SDG generation started for transferOwnership[0m
+[36m[#] SDG generated for transferOwnership[0m
+[36m[#] SDG generation started for setReward_TOD38[0m
+[36m[#] SDG generated for setReward_TOD38[0m
+[36m[#] SDG generation started for claimReward_TOD38[0m
+[36m[#] SDG generated for claimReward_TOD38[0m
+[36m[#] SDG generation started for acceptOwnership[0m
+[36m[#] SDG generated for acceptOwnership[0m
+[36m[#] SDG generation started for setReward_TOD4[0m
+[36m[#] SDG generated for setReward_TOD4[0m
+[36m[#] SDG generation started for claimReward_TOD4[0m
+[36m[#] SDG generated for claimReward_TOD4[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for play_TOD37[0m
+[36m[#] SDG generated for play_TOD37[0m
+[36m[#] SDG generation started for getReward_TOD37[0m
+[36m[#] SDG generated for getReward_TOD37[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for play_TOD3[0m
+[36m[#] SDG generated for play_TOD3[0m
+[36m[#] SDG generation started for getReward_TOD3[0m
+[36m[#] SDG generated for getReward_TOD3[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for play_TOD9[0m
+[36m[#] SDG generated for play_TOD9[0m
+[36m[#] SDG generation started for getReward_TOD9[0m
+[36m[#] SDG generated for getReward_TOD9[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for play_TOD25[0m
+[36m[#] SDG generated for play_TOD25[0m
+[36m[#] SDG generation started for getReward_TOD25[0m
+[36m[#] SDG generated for getReward_TOD25[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for play_TOD19[0m
+[36m[#] SDG generated for play_TOD19[0m
+[36m[#] SDG generation started for getReward_TOD19[0m
+[36m[#] SDG generated for getReward_TOD19[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for setReward_TOD26[0m
+[36m[#] SDG generated for setReward_TOD26[0m
+[36m[#] SDG generation started for claimReward_TOD26[0m
+[36m[#] SDG generated for claimReward_TOD26[0m
+[36m[#] SDG generation started for play_TOD27[0m
+[36m[#] SDG generated for play_TOD27[0m
+[36m[#] SDG generation started for getReward_TOD27[0m
+[36m[#] SDG generated for getReward_TOD27[0m
+[36m[#] SDG generation started for play_TOD31[0m
+[36m[#] SDG generated for play_TOD31[0m
+[36m[#] SDG generation started for getReward_TOD31[0m
+[36m[#] SDG generated for getReward_TOD31[0m
+[36m[#] SDG generation started for setReward_TOD28[0m
+[36m[#] SDG generated for setReward_TOD28[0m
+[36m[#] SDG generation started for claimReward_TOD28[0m
+[36m[#] SDG generated for claimReward_TOD28[0m
+[36m[#] SDG generation started for setReward_TOD34[0m
+[36m[#] SDG generated for setReward_TOD34[0m
+[36m[#] SDG generation started for claimReward_TOD34[0m
+[36m[#] SDG generated for claimReward_TOD34[0m
+[36m[#] SDG generation started for play_TOD21[0m
+[36m[#] SDG generated for play_TOD21[0m
+[36m[#] SDG generation started for getReward_TOD21[0m
+[36m[#] SDG generated for getReward_TOD21[0m
+[36m[#] SDG generation started for setReward_TOD10[0m
+[36m[#] SDG generated for setReward_TOD10[0m
+[36m[#] SDG generation started for claimReward_TOD10[0m
+[36m[#] SDG generated for claimReward_TOD10[0m
+[36m[#] SDG generation started for setReward_TOD22[0m
+[36m[#] SDG generated for setReward_TOD22[0m
+[36m[#] SDG generation started for claimReward_TOD22[0m
+[36m[#] SDG generated for claimReward_TOD22[0m
+[36m[#] SDG generation started for setReward_TOD12[0m
+[36m[#] SDG generated for setReward_TOD12[0m
+[36m[#] SDG generation started for claimReward_TOD12[0m
+[36m[#] SDG generated for claimReward_TOD12[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for play_TOD7[0m
+[36m[#] SDG generated for play_TOD7[0m
+[36m[#] SDG generation started for getReward_TOD7[0m
+[36m[#] SDG generated for getReward_TOD7[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for play_TOD23[0m
+[36m[#] SDG generated for play_TOD23[0m
+[36m[#] SDG generation started for getReward_TOD23[0m
+[36m[#] SDG generated for getReward_TOD23[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for setReward_TOD14[0m
+[36m[#] SDG generated for setReward_TOD14[0m
+[36m[#] SDG generation started for claimReward_TOD14[0m
+[36m[#] SDG generated for claimReward_TOD14[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for setReward_TOD30[0m
+[36m[#] SDG generated for setReward_TOD30[0m
+[36m[#] SDG generation started for claimReward_TOD30[0m
+[36m[#] SDG generated for claimReward_TOD30[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for setReward_TOD8[0m
+[36m[#] SDG generated for setReward_TOD8[0m
+[36m[#] SDG generation started for claimReward_TOD8[0m
+[36m[#] SDG generated for claimReward_TOD8[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for play_TOD39[0m
+[36m[#] SDG generated for play_TOD39[0m
+[36m[#] SDG generation started for getReward_TOD39[0m
+[36m[#] SDG generated for getReward_TOD39[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for setReward_TOD36[0m
+[36m[#] SDG generated for setReward_TOD36[0m
+[36m[#] SDG generation started for claimReward_TOD36[0m
+[36m[#] SDG generated for claimReward_TOD36[0m
+[36m[#] SDG generation started for approveAndCall[0m
+[36m[#] SDG generated for approveAndCall[0m
+[36m[#] SDG generation started for play_TOD35[0m
+[36m[#] SDG generated for play_TOD35[0m
+[36m[#] SDG generation started for getReward_TOD35[0m
+[36m[#] SDG generated for getReward_TOD35[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for setReward_TOD40[0m
+[36m[#] SDG generated for setReward_TOD40[0m
+[36m[#] SDG generation started for claimReward_TOD40[0m
+[36m[#] SDG generated for claimReward_TOD40[0m[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Value Range Analysis started
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for safeAdd
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for safeAdd
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function safeAdd
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD11
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD11
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD11
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD11
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD11
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD11
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for safeSub
+[WARNING] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for safeSub
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function safeSub
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD1
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD1
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD1
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD1
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD1
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD1
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for safeMul
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for safeMul
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function safeMul
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for safeDiv
+[WARNING] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for safeDiv
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function safeDiv
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD17
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD17
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD17
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD17
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD17
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD17
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function totalSupply
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD37
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD37
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD37
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD37
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD37
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD37
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function balanceOf
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD3
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD3
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD3
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD3
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD3
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD3
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for allowance
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for allowance
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function allowance
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD9
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD9
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD9
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD9
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD9
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD9
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for transfer
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for transfer
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function transfer
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD25
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD25
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD25
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD25
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD25
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD25
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for approve
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for approve
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function approve
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD19
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD19
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD19
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD19
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD19
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD19
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function transferFrom
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD26
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD26
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD26
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD26
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD26
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD26
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD27
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD27
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD27
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD27
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD27
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD27
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD31
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD31
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD31
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD31
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD31
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD31
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for receiveApproval
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for receiveApproval
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function receiveApproval
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD20
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD20
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD20
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD20
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD20
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD20
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD5
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD5
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD5
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD5
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD5
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD5
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD15
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD15
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD15
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD15
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD15
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD15
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD13
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD13
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD13
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD13
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD13
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD13
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for constructor
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for constructor
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function constructor
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD38
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD38
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD38
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD38
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD38
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD38
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for acceptOwnership
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for acceptOwnership
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function acceptOwnership
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD4
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD4
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD4
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD4
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD4
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD4
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function onlyOwner
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for safeAdd
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for safeAdd
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function safeAdd
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD11
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD11
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD11
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD11
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD11
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD11
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for safeSub
+[WARNING] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for safeSub
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function safeSub
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD1
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD1
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD1
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD1
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD1
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD1
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for safeMul
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for safeMul
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function safeMul
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for safeDiv
+[WARNING] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for safeDiv
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function safeDiv
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD17
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD17
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD17
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD17
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD17
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD17
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD5
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD5
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD5
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD5
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD5
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD5
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD15
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD15
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD15
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD15
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD15
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD15
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD13
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD13
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD13
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD13
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD13
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD13
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for constructor
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for constructor
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function constructor
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD38
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD38
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD38
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD38
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD38
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD38
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for acceptOwnership
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for acceptOwnership
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function acceptOwnership
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD4
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD4
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD4
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD4
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD4
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD4
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function totalSupply
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD37
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD37
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD37
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD37
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD37
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD37
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function balanceOf
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD3
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD3
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD3
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD3
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD3
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD3
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for allowance
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for allowance
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function allowance
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD9
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD9
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD9
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD9
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD9
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD9
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for transfer
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for transfer
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function transfer
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD25
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD25
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD25
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD25
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD25
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD25
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for approve
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for approve
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function approve
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD19
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD19
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD19
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD19
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD19
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD19
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function transferFrom
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD26
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD26
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD26
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD26
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD26
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD26
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD27
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD27
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD27
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD27
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD27
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD27
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD31
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD31
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD31
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD31
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD31
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD31
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD28
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD28
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD28
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD28
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD28
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD28
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD34
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD34
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD34
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD34
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD34
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD34
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD21
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD21
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD21
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD21
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD21
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD21
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD10
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD10
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD10
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD10
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD10
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD10
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD22
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD22
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD22
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD22
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD22
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD22
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD12
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD12
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD12
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD12
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD12
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD12
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for constructor
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for constructor
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function constructor
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD7
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD7
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD7
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD7
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD7
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD7
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function totalSupply
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD23
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD23
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD23
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD23
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD23
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD23
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function balanceOf
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD14
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD14
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD14
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD14
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD14
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD14
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD30
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD30
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD30
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD30
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD30
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD30
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for approve
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for approve
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function approve
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD8
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD8
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD8
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD8
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD8
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD8
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD39
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD39
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD39
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD39
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD39
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD39
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for allowance
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for allowance
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function allowance
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD36
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD36
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD36
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD36
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD36
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD36
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD35
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD35
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD35
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD35
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD35
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD35
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for fallback
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for fallback
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function fallback
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for setReward_TOD40
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for setReward_TOD40
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function setReward_TOD40
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for claimReward_TOD40
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for claimReward_TOD40
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function claimReward_TOD40
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for play_TOD33
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for play_TOD33
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function play_TOD33
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for getReward_TOD33
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for getReward_TOD33
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function getReward_TOD33
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function onlyOwner
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for transferAnyERC20Token
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for transferAnyERC20Token
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function transferAnyERC20Token
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for approveAndCall
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for approveAndCall
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function approveAndCall
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for transferOwnership
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for transferOwnership
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function transferOwnership
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for transfer
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for transfer
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function transfer
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function transferFrom
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Generating return summary for transferOwnership
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Return summary generated for transferOwnership
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Range graph generated
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Processed function transferOwnership
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Value Range Analysis took 0.026636 seconds
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Value Range Analysis finished
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | Dependency detection started!
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD11 and play_TOD11
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD1 and play_TOD1
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD2 and setReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD2 and claimReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD2 and setReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD2 and claimReward_TOD2
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD17 and play_TOD17
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD5 and play_TOD5
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD15 and play_TOD15
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD13 and play_TOD13
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD32 and setReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD32 and claimReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD32 and setReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD32 and claimReward_TOD32
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD38 and setReward_TOD38
+[INFO] | 2026-06-21 07:21:27 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD38 and claimReward_TOD38
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD38 and setReward_TOD38
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD38 and claimReward_TOD38
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD4 and setReward_TOD4
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD4 and claimReward_TOD4
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD4 and setReward_TOD4
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD4 and claimReward_TOD4
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD37 and play_TOD37
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD3 and play_TOD3
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD9 and play_TOD9
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD25 and play_TOD25
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD19 and play_TOD19
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD26 and setReward_TOD26
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD26 and claimReward_TOD26
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD26 and setReward_TOD26
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD26 and claimReward_TOD26
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD27 and play_TOD27
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD31 and play_TOD31
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD28 and setReward_TOD28
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD28 and claimReward_TOD28
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD28 and setReward_TOD28
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD28 and claimReward_TOD28
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD34 and setReward_TOD34
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD34 and claimReward_TOD34
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD34 and setReward_TOD34
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD34 and claimReward_TOD34
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD21 and play_TOD21
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD10 and setReward_TOD10
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD10 and claimReward_TOD10
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD10 and setReward_TOD10
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD10 and claimReward_TOD10
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD22 and setReward_TOD22
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD22 and claimReward_TOD22
+[INFO] | 2026-06-21 07:21:28 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD22 and setReward_TOD22
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD22 and claimReward_TOD22
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD12 and setReward_TOD12
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD12 and claimReward_TOD12
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD12 and setReward_TOD12
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD12 and claimReward_TOD12
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD7 and play_TOD7
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD23 and play_TOD23
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD14 and setReward_TOD14
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD14 and claimReward_TOD14
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD14 and setReward_TOD14
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD14 and claimReward_TOD14
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD30 and setReward_TOD30
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD30 and claimReward_TOD30
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD30 and setReward_TOD30
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD30 and claimReward_TOD30
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD8 and setReward_TOD8
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD8 and claimReward_TOD8
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD8 and setReward_TOD8
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD8 and claimReward_TOD8
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD39 and play_TOD39
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD36 and setReward_TOD36
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD36 and claimReward_TOD36
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD36 and setReward_TOD36
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD36 and claimReward_TOD36
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD35 and play_TOD35
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD40 and setReward_TOD40
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions setReward_TOD40 and claimReward_TOD40
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD40 and setReward_TOD40
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions claimReward_TOD40 and claimReward_TOD40
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | TOD dependency detected in file buggy_37.sol in contract AugustCoin in by composing functions getReward_TOD33 and play_TOD33
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | Dependency detection finished!
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | Static Analysis took 3.296921 seconds
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | Dependency exists
+[INFO] | 2026-06-21 07:21:29 PM | analyzer.buggy_37 | Invoking symbolic executor!
+
+[36m[#] SDG generation started for transferAnyERC20Token[0m
+[36m[#] SDG generated for transferAnyERC20Token[0m
+[36m[#] SDG generation started for play_TOD33[0m
+[36m[#] SDG generated for play_TOD33[0m
+[36m[#] SDG generation started for getReward_TOD33[0m
+[36m[#] SDG generated for getReward_TOD33[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[INFO] | 2026-06-21 07:21:38 PM | analyzer.buggy_37 | Symbolic execution took 8.859667 seconds
+[INFO] | 2026-06-21 07:21:38 PM | analyzer.buggy_37 | Symbolic execution finished!
+[INFO] | 2026-06-21 07:21:38 PM | analyzer.buggy_37 | Analysis finished!
+[INFO] | 2026-06-21 07:21:38 PM | analyzer.buggy_37 | Analysis took 12.157057 seconds
+[INFO] | 2026-06-21 07:21:38 PM | analyzer.buggy_37 | Analysis finished at: 2026-06-21 07:21:38 PM
+[36m[#] Analysis took 12.157057 seconds[0m
+[36m[#] Analysis completed: buggy_37.sol [0m
+
+=== dependency_info.json ===
+{
+    "buggy_37.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD11",
+                "play_TOD11"
+            ],
+            "First_function": "play_TOD11",
+            "Second_function": "getReward_TOD11",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 219\nFunction: play_TOD11\nNode: \nEXPRESSION winner_TOD11 = msg.sender\nIRS: \nwinner_TOD11 := msg.sender\"",
+                        "\"BlockID: 222\nFunction: getReward_TOD11\nNode: \nEXPRESSION winner_TOD11.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD11 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD11"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD1",
+                "play_TOD1"
+            ],
+            "First_function": "play_TOD1",
+            "Second_function": "getReward_TOD1",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 231\nFunction: play_TOD1\nNode: \nEXPRESSION winner_TOD1 = msg.sender\nIRS: \nwinner_TOD1 := msg.sender\"",
+                        "\"BlockID: 234\nFunction: getReward_TOD1\nNode: \nEXPRESSION winner_TOD1.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD1 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD1"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD2",
+                "setReward_TOD2"
+            ],
+            "First_function": "setReward_TOD2",
+            "Second_function": "setReward_TOD2",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 615\nFunction: setReward_TOD2\nNode: \nEXPRESSION reward_TOD2 = msg.value\nIRS: \nreward_TOD2 := msg.value\"",
+                        "\"BlockID: 240\nFunction: setReward_TOD2\nNode: \nEXPRESSION owner_TOD2.transfer(reward_TOD2)\nIRS: \nTransfer dest:owner_TOD2 value:reward_TOD2\""
+                    ],
+                    "state_variable": "reward_TOD2"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD2",
+                "claimReward_TOD2"
+            ],
+            "First_function": "claimReward_TOD2",
+            "Second_function": "setReward_TOD2",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 246\nFunction: claimReward_TOD2\nNode: \nEXPRESSION claimed_TOD2 = true\nIRS: \nclaimed_TOD2 := true\"",
+                        "\"BlockID: 238\nFunction: setReward_TOD2\nNode: \nEXPRESSION require(bool)(! claimed_TOD2)\nIRS: \nTMP_186 = SOLIDITY_CALL require(bool)(TMP_185)\""
+                    ],
+                    "state_variable": "claimed_TOD2"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD2",
+                "setReward_TOD2"
+            ],
+            "First_function": "setReward_TOD2",
+            "Second_function": "claimReward_TOD2",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 241\nFunction: setReward_TOD2\nNode: \nEXPRESSION reward_TOD2 = msg.value\nIRS: \nreward_TOD2 := msg.value\"",
+                        "\"BlockID: 245\nFunction: claimReward_TOD2\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD2)\nIRS: \nTransfer dest:msg.sender value:reward_TOD2\""
+                    ],
+                    "state_variable": "reward_TOD2"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD2",
+                "claimReward_TOD2"
+            ],
+            "First_function": "claimReward_TOD2",
+            "Second_function": "claimReward_TOD2",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 620\nFunction: claimReward_TOD2\nNode: \nEXPRESSION claimed_TOD2 = true\nIRS: \nclaimed_TOD2 := true\"",
+                        "\"BlockID: 243\nFunction: claimReward_TOD2\nNode: \nEXPRESSION require(bool)(! claimed_TOD2)\nIRS: \nTMP_191 = SOLIDITY_CALL require(bool)(TMP_190)\""
+                    ],
+                    "state_variable": "claimed_TOD2"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD17",
+                "play_TOD17"
+            ],
+            "First_function": "play_TOD17",
+            "Second_function": "getReward_TOD17",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 255\nFunction: play_TOD17\nNode: \nEXPRESSION winner_TOD17 = msg.sender\nIRS: \nwinner_TOD17 := msg.sender\"",
+                        "\"BlockID: 258\nFunction: getReward_TOD17\nNode: \nEXPRESSION winner_TOD17.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD17 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD17"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD5",
+                "play_TOD5"
+            ],
+            "First_function": "play_TOD5",
+            "Second_function": "getReward_TOD5",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 265\nFunction: play_TOD5\nNode: \nEXPRESSION winner_TOD5 = msg.sender\nIRS: \nwinner_TOD5 := msg.sender\"",
+                        "\"BlockID: 268\nFunction: getReward_TOD5\nNode: \nEXPRESSION winner_TOD5.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD5 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD5"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD15",
+                "play_TOD15"
+            ],
+            "First_function": "play_TOD15",
+            "Second_function": "getReward_TOD15",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 275\nFunction: play_TOD15\nNode: \nEXPRESSION winner_TOD15 = msg.sender\nIRS: \nwinner_TOD15 := msg.sender\"",
+                        "\"BlockID: 278\nFunction: getReward_TOD15\nNode: \nEXPRESSION winner_TOD15.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD15 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD15"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD13",
+                "play_TOD13"
+            ],
+            "First_function": "play_TOD13",
+            "Second_function": "getReward_TOD13",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 285\nFunction: play_TOD13\nNode: \nEXPRESSION winner_TOD13 = msg.sender\nIRS: \nwinner_TOD13 := msg.sender\"",
+                        "\"BlockID: 288\nFunction: getReward_TOD13\nNode: \nEXPRESSION winner_TOD13.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD13 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD13"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD32",
+                "setReward_TOD32"
+            ],
+            "First_function": "setReward_TOD32",
+            "Second_function": "setReward_TOD32",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 633\nFunction: setReward_TOD32\nNode: \nEXPRESSION reward_TOD32 = msg.value\nIRS: \nreward_TOD32 := msg.value\"",
+                        "\"BlockID: 294\nFunction: setReward_TOD32\nNode: \nEXPRESSION owner_TOD32.transfer(reward_TOD32)\nIRS: \nTransfer dest:owner_TOD32 value:reward_TOD32\""
+                    ],
+                    "state_variable": "reward_TOD32"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD32",
+                "claimReward_TOD32"
+            ],
+            "First_function": "claimReward_TOD32",
+            "Second_function": "setReward_TOD32",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 300\nFunction: claimReward_TOD32\nNode: \nEXPRESSION claimed_TOD32 = true\nIRS: \nclaimed_TOD32 := true\"",
+                        "\"BlockID: 292\nFunction: setReward_TOD32\nNode: \nEXPRESSION require(bool)(! claimed_TOD32)\nIRS: \nTMP_223 = SOLIDITY_CALL require(bool)(TMP_222)\""
+                    ],
+                    "state_variable": "claimed_TOD32"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD32",
+                "setReward_TOD32"
+            ],
+            "First_function": "setReward_TOD32",
+            "Second_function": "claimReward_TOD32",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 295\nFunction: setReward_TOD32\nNode: \nEXPRESSION reward_TOD32 = msg.value\nIRS: \nreward_TOD32 := msg.value\"",
+                        "\"BlockID: 299\nFunction: claimReward_TOD32\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD32)\nIRS: \nTransfer dest:msg.sender value:reward_TOD32\""
+                    ],
+                    "state_variable": "reward_TOD32"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD32",
+                "claimReward_TOD32"
+            ],
+            "First_function": "claimReward_TOD32",
+            "Second_function": "claimReward_TOD32",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 638\nFunction: claimReward_TOD32\nNode: \nEXPRESSION claimed_TOD32 = true\nIRS: \nclaimed_TOD32 := true\"",
+                        "\"BlockID: 297\nFunction: claimReward_TOD32\nNode: \nEXPRESSION require(bool)(! claimed_TOD32)\nIRS: \nTMP_228 = SOLIDITY_CALL require(bool)(TMP_227)\""
+                    ],
+                    "state_variable": "claimed_TOD32"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD38",
+                "setReward_TOD38"
+            ],
+            "First_function": "setReward_TOD38",
+            "Second_function": "setReward_TOD38",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 643\nFunction: setReward_TOD38\nNode: \nEXPRESSION reward_TOD38 = msg.value\nIRS: \nreward_TOD38 := msg.value\"",
+                        "\"BlockID: 307\nFunction: setReward_TOD38\nNode: \nEXPRESSION owner_TOD38.transfer(reward_TOD38)\nIRS: \nTransfer dest:owner_TOD38 value:reward_TOD38\""
+                    ],
+                    "state_variable": "reward_TOD38"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD38",
+                "claimReward_TOD38"
+            ],
+            "First_function": "claimReward_TOD38",
+            "Second_function": "setReward_TOD38",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 313\nFunction: claimReward_TOD38\nNode: \nEXPRESSION claimed_TOD38 = true\nIRS: \nclaimed_TOD38 := true\"",
+                        "\"BlockID: 305\nFunction: setReward_TOD38\nNode: \nEXPRESSION require(bool)(! claimed_TOD38)\nIRS: \nTMP_235 = SOLIDITY_CALL require(bool)(TMP_234)\""
+                    ],
+                    "state_variable": "claimed_TOD38"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD38",
+                "setReward_TOD38"
+            ],
+            "First_function": "setReward_TOD38",
+            "Second_function": "claimReward_TOD38",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 308\nFunction: setReward_TOD38\nNode: \nEXPRESSION reward_TOD38 = msg.value\nIRS: \nreward_TOD38 := msg.value\"",
+                        "\"BlockID: 312\nFunction: claimReward_TOD38\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD38)\nIRS: \nTransfer dest:msg.sender value:reward_TOD38\""
+                    ],
+                    "state_variable": "reward_TOD38"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD38",
+                "claimReward_TOD38"
+            ],
+            "First_function": "claimReward_TOD38",
+            "Second_function": "claimReward_TOD38",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 648\nFunction: claimReward_TOD38\nNode: \nEXPRESSION claimed_TOD38 = true\nIRS: \nclaimed_TOD38 := true\"",
+                        "\"BlockID: 310\nFunction: claimReward_TOD38\nNode: \nEXPRESSION require(bool)(! claimed_TOD38)\nIRS: \nTMP_240 = SOLIDITY_CALL require(bool)(TMP_239)\""
+                    ],
+                    "state_variable": "claimed_TOD38"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD4",
+                "setReward_TOD4"
+            ],
+            "First_function": "setReward_TOD4",
+            "Second_function": "setReward_TOD4",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 653\nFunction: setReward_TOD4\nNode: \nEXPRESSION reward_TOD4 = msg.value\nIRS: \nreward_TOD4 := msg.value\"",
+                        "\"BlockID: 322\nFunction: setReward_TOD4\nNode: \nEXPRESSION owner_TOD4.transfer(reward_TOD4)\nIRS: \nTransfer dest:owner_TOD4 value:reward_TOD4\""
+                    ],
+                    "state_variable": "reward_TOD4"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD4",
+                "claimReward_TOD4"
+            ],
+            "First_function": "claimReward_TOD4",
+            "Second_function": "setReward_TOD4",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 328\nFunction: claimReward_TOD4\nNode: \nEXPRESSION claimed_TOD4 = true\nIRS: \nclaimed_TOD4 := true\"",
+                        "\"BlockID: 320\nFunction: setReward_TOD4\nNode: \nEXPRESSION require(bool)(! claimed_TOD4)\nIRS: \nTMP_249 = SOLIDITY_CALL require(bool)(TMP_248)\""
+                    ],
+                    "state_variable": "claimed_TOD4"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD4",
+                "setReward_TOD4"
+            ],
+            "First_function": "setReward_TOD4",
+            "Second_function": "claimReward_TOD4",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 323\nFunction: setReward_TOD4\nNode: \nEXPRESSION reward_TOD4 = msg.value\nIRS: \nreward_TOD4 := msg.value\"",
+                        "\"BlockID: 327\nFunction: claimReward_TOD4\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD4)\nIRS: \nTransfer dest:msg.sender value:reward_TOD4\""
+                    ],
+                    "state_variable": "reward_TOD4"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD4",
+                "claimReward_TOD4"
+            ],
+            "First_function": "claimReward_TOD4",
+            "Second_function": "claimReward_TOD4",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 658\nFunction: claimReward_TOD4\nNode: \nEXPRESSION claimed_TOD4 = true\nIRS: \nclaimed_TOD4 := true\"",
+                        "\"BlockID: 325\nFunction: claimReward_TOD4\nNode: \nEXPRESSION require(bool)(! claimed_TOD4)\nIRS: \nTMP_254 = SOLIDITY_CALL require(bool)(TMP_253)\""
+                    ],
+                    "state_variable": "claimed_TOD4"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD37",
+                "play_TOD37"
+            ],
+            "First_function": "play_TOD37",
+            "Second_function": "getReward_TOD37",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 335\nFunction: play_TOD37\nNode: \nEXPRESSION winner_TOD37 = msg.sender\nIRS: \nwinner_TOD37 := msg.sender\"",
+                        "\"BlockID: 338\nFunction: getReward_TOD37\nNode: \nEXPRESSION winner_TOD37.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD37 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD37"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD3",
+                "play_TOD3"
+            ],
+            "First_function": "play_TOD3",
+            "Second_function": "getReward_TOD3",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 345\nFunction: play_TOD3\nNode: \nEXPRESSION winner_TOD3 = msg.sender\nIRS: \nwinner_TOD3 := msg.sender\"",
+                        "\"BlockID: 348\nFunction: getReward_TOD3\nNode: \nEXPRESSION winner_TOD3.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD3 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD3"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD9",
+                "play_TOD9"
+            ],
+            "First_function": "play_TOD9",
+            "Second_function": "getReward_TOD9",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 355\nFunction: play_TOD9\nNode: \nEXPRESSION winner_TOD9 = msg.sender\nIRS: \nwinner_TOD9 := msg.sender\"",
+                        "\"BlockID: 358\nFunction: getReward_TOD9\nNode: \nEXPRESSION winner_TOD9.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD9 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD9"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD25",
+                "play_TOD25"
+            ],
+            "First_function": "play_TOD25",
+            "Second_function": "getReward_TOD25",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 365\nFunction: play_TOD25\nNode: \nEXPRESSION winner_TOD25 = msg.sender\nIRS: \nwinner_TOD25 := msg.sender\"",
+                        "\"BlockID: 368\nFunction: getReward_TOD25\nNode: \nEXPRESSION winner_TOD25.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD25 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD25"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD19",
+                "play_TOD19"
+            ],
+            "First_function": "play_TOD19",
+            "Second_function": "getReward_TOD19",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 375\nFunction: play_TOD19\nNode: \nEXPRESSION winner_TOD19 = msg.sender\nIRS: \nwinner_TOD19 := msg.sender\"",
+                        "\"BlockID: 378\nFunction: getReward_TOD19\nNode: \nEXPRESSION winner_TOD19.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD19 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD19"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD26",
+                "setReward_TOD26"
+            ],
+            "First_function": "setReward_TOD26",
+            "Second_function": "setReward_TOD26",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 673\nFunction: setReward_TOD26\nNode: \nEXPRESSION reward_TOD26 = msg.value\nIRS: \nreward_TOD26 := msg.value\"",
+                        "\"BlockID: 382\nFunction: setReward_TOD26\nNode: \nEXPRESSION owner_TOD26.transfer(reward_TOD26)\nIRS: \nTransfer dest:owner_TOD26 value:reward_TOD26\""
+                    ],
+                    "state_variable": "reward_TOD26"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD26",
+                "claimReward_TOD26"
+            ],
+            "First_function": "claimReward_TOD26",
+            "Second_function": "setReward_TOD26",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 388\nFunction: claimReward_TOD26\nNode: \nEXPRESSION claimed_TOD26 = true\nIRS: \nclaimed_TOD26 := true\"",
+                        "\"BlockID: 380\nFunction: setReward_TOD26\nNode: \nEXPRESSION require(bool)(! claimed_TOD26)\nIRS: \nTMP_289 = SOLIDITY_CALL require(bool)(TMP_288)\""
+                    ],
+                    "state_variable": "claimed_TOD26"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD26",
+                "setReward_TOD26"
+            ],
+            "First_function": "setReward_TOD26",
+            "Second_function": "claimReward_TOD26",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 383\nFunction: setReward_TOD26\nNode: \nEXPRESSION reward_TOD26 = msg.value\nIRS: \nreward_TOD26 := msg.value\"",
+                        "\"BlockID: 387\nFunction: claimReward_TOD26\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD26)\nIRS: \nTransfer dest:msg.sender value:reward_TOD26\""
+                    ],
+                    "state_variable": "reward_TOD26"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD26",
+                "claimReward_TOD26"
+            ],
+            "First_function": "claimReward_TOD26",
+            "Second_function": "claimReward_TOD26",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 678\nFunction: claimReward_TOD26\nNode: \nEXPRESSION claimed_TOD26 = true\nIRS: \nclaimed_TOD26 := true\"",
+                        "\"BlockID: 385\nFunction: claimReward_TOD26\nNode: \nEXPRESSION require(bool)(! claimed_TOD26)\nIRS: \nTMP_294 = SOLIDITY_CALL require(bool)(TMP_293)\""
+                    ],
+                    "state_variable": "claimed_TOD26"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD27",
+                "play_TOD27"
+            ],
+            "First_function": "play_TOD27",
+            "Second_function": "getReward_TOD27",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 395\nFunction: play_TOD27\nNode: \nEXPRESSION winner_TOD27 = msg.sender\nIRS: \nwinner_TOD27 := msg.sender\"",
+                        "\"BlockID: 398\nFunction: getReward_TOD27\nNode: \nEXPRESSION winner_TOD27.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD27 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD27"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD31",
+                "play_TOD31"
+            ],
+            "First_function": "play_TOD31",
+            "Second_function": "getReward_TOD31",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 405\nFunction: play_TOD31\nNode: \nEXPRESSION winner_TOD31 = msg.sender\nIRS: \nwinner_TOD31 := msg.sender\"",
+                        "\"BlockID: 408\nFunction: getReward_TOD31\nNode: \nEXPRESSION winner_TOD31.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD31 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD31"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD28",
+                "setReward_TOD28"
+            ],
+            "First_function": "setReward_TOD28",
+            "Second_function": "setReward_TOD28",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 687\nFunction: setReward_TOD28\nNode: \nEXPRESSION reward_TOD28 = msg.value\nIRS: \nreward_TOD28 := msg.value\"",
+                        "\"BlockID: 412\nFunction: setReward_TOD28\nNode: \nEXPRESSION owner_TOD28.transfer(reward_TOD28)\nIRS: \nTransfer dest:owner_TOD28 value:reward_TOD28\""
+                    ],
+                    "state_variable": "reward_TOD28"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD28",
+                "claimReward_TOD28"
+            ],
+            "First_function": "claimReward_TOD28",
+            "Second_function": "setReward_TOD28",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 418\nFunction: claimReward_TOD28\nNode: \nEXPRESSION claimed_TOD28 = true\nIRS: \nclaimed_TOD28 := true\"",
+                        "\"BlockID: 410\nFunction: setReward_TOD28\nNode: \nEXPRESSION require(bool)(! claimed_TOD28)\nIRS: \nTMP_311 = SOLIDITY_CALL require(bool)(TMP_310)\""
+                    ],
+                    "state_variable": "claimed_TOD28"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD28",
+                "setReward_TOD28"
+            ],
+            "First_function": "setReward_TOD28",
+            "Second_function": "claimReward_TOD28",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 413\nFunction: setReward_TOD28\nNode: \nEXPRESSION reward_TOD28 = msg.value\nIRS: \nreward_TOD28 := msg.value\"",
+                        "\"BlockID: 417\nFunction: claimReward_TOD28\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD28)\nIRS: \nTransfer dest:msg.sender value:reward_TOD28\""
+                    ],
+                    "state_variable": "reward_TOD28"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD28",
+                "claimReward_TOD28"
+            ],
+            "First_function": "claimReward_TOD28",
+            "Second_function": "claimReward_TOD28",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 692\nFunction: claimReward_TOD28\nNode: \nEXPRESSION claimed_TOD28 = true\nIRS: \nclaimed_TOD28 := true\"",
+                        "\"BlockID: 415\nFunction: claimReward_TOD28\nNode: \nEXPRESSION require(bool)(! claimed_TOD28)\nIRS: \nTMP_316 = SOLIDITY_CALL require(bool)(TMP_315)\""
+                    ],
+                    "state_variable": "claimed_TOD28"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD34",
+                "setReward_TOD34"
+            ],
+            "First_function": "setReward_TOD34",
+            "Second_function": "setReward_TOD34",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 697\nFunction: setReward_TOD34\nNode: \nEXPRESSION reward_TOD34 = msg.value\nIRS: \nreward_TOD34 := msg.value\"",
+                        "\"BlockID: 422\nFunction: setReward_TOD34\nNode: \nEXPRESSION owner_TOD34.transfer(reward_TOD34)\nIRS: \nTransfer dest:owner_TOD34 value:reward_TOD34\""
+                    ],
+                    "state_variable": "reward_TOD34"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD34",
+                "claimReward_TOD34"
+            ],
+            "First_function": "claimReward_TOD34",
+            "Second_function": "setReward_TOD34",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 428\nFunction: claimReward_TOD34\nNode: \nEXPRESSION claimed_TOD34 = true\nIRS: \nclaimed_TOD34 := true\"",
+                        "\"BlockID: 420\nFunction: setReward_TOD34\nNode: \nEXPRESSION require(bool)(! claimed_TOD34)\nIRS: \nTMP_321 = SOLIDITY_CALL require(bool)(TMP_320)\""
+                    ],
+                    "state_variable": "claimed_TOD34"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD34",
+                "setReward_TOD34"
+            ],
+            "First_function": "setReward_TOD34",
+            "Second_function": "claimReward_TOD34",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 423\nFunction: setReward_TOD34\nNode: \nEXPRESSION reward_TOD34 = msg.value\nIRS: \nreward_TOD34 := msg.value\"",
+                        "\"BlockID: 427\nFunction: claimReward_TOD34\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD34)\nIRS: \nTransfer dest:msg.sender value:reward_TOD34\""
+                    ],
+                    "state_variable": "reward_TOD34"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD34",
+                "claimReward_TOD34"
+            ],
+            "First_function": "claimReward_TOD34",
+            "Second_function": "claimReward_TOD34",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 702\nFunction: claimReward_TOD34\nNode: \nEXPRESSION claimed_TOD34 = true\nIRS: \nclaimed_TOD34 := true\"",
+                        "\"BlockID: 425\nFunction: claimReward_TOD34\nNode: \nEXPRESSION require(bool)(! claimed_TOD34)\nIRS: \nTMP_326 = SOLIDITY_CALL require(bool)(TMP_325)\""
+                    ],
+                    "state_variable": "claimed_TOD34"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD21",
+                "play_TOD21"
+            ],
+            "First_function": "play_TOD21",
+            "Second_function": "getReward_TOD21",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 435\nFunction: play_TOD21\nNode: \nEXPRESSION winner_TOD21 = msg.sender\nIRS: \nwinner_TOD21 := msg.sender\"",
+                        "\"BlockID: 438\nFunction: getReward_TOD21\nNode: \nEXPRESSION winner_TOD21.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD21 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD21"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD10",
+                "setReward_TOD10"
+            ],
+            "First_function": "setReward_TOD10",
+            "Second_function": "setReward_TOD10",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 709\nFunction: setReward_TOD10\nNode: \nEXPRESSION reward_TOD10 = msg.value\nIRS: \nreward_TOD10 := msg.value\"",
+                        "\"BlockID: 442\nFunction: setReward_TOD10\nNode: \nEXPRESSION owner_TOD10.transfer(reward_TOD10)\nIRS: \nTransfer dest:owner_TOD10 value:reward_TOD10\""
+                    ],
+                    "state_variable": "reward_TOD10"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD10",
+                "claimReward_TOD10"
+            ],
+            "First_function": "claimReward_TOD10",
+            "Second_function": "setReward_TOD10",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 448\nFunction: claimReward_TOD10\nNode: \nEXPRESSION claimed_TOD10 = true\nIRS: \nclaimed_TOD10 := true\"",
+                        "\"BlockID: 440\nFunction: setReward_TOD10\nNode: \nEXPRESSION require(bool)(! claimed_TOD10)\nIRS: \nTMP_337 = SOLIDITY_CALL require(bool)(TMP_336)\""
+                    ],
+                    "state_variable": "claimed_TOD10"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD10",
+                "setReward_TOD10"
+            ],
+            "First_function": "setReward_TOD10",
+            "Second_function": "claimReward_TOD10",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 443\nFunction: setReward_TOD10\nNode: \nEXPRESSION reward_TOD10 = msg.value\nIRS: \nreward_TOD10 := msg.value\"",
+                        "\"BlockID: 447\nFunction: claimReward_TOD10\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD10)\nIRS: \nTransfer dest:msg.sender value:reward_TOD10\""
+                    ],
+                    "state_variable": "reward_TOD10"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD10",
+                "claimReward_TOD10"
+            ],
+            "First_function": "claimReward_TOD10",
+            "Second_function": "claimReward_TOD10",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 714\nFunction: claimReward_TOD10\nNode: \nEXPRESSION claimed_TOD10 = true\nIRS: \nclaimed_TOD10 := true\"",
+                        "\"BlockID: 445\nFunction: claimReward_TOD10\nNode: \nEXPRESSION require(bool)(! claimed_TOD10)\nIRS: \nTMP_342 = SOLIDITY_CALL require(bool)(TMP_341)\""
+                    ],
+                    "state_variable": "claimed_TOD10"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD22",
+                "setReward_TOD22"
+            ],
+            "First_function": "setReward_TOD22",
+            "Second_function": "setReward_TOD22",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 719\nFunction: setReward_TOD22\nNode: \nEXPRESSION reward_TOD22 = msg.value\nIRS: \nreward_TOD22 := msg.value\"",
+                        "\"BlockID: 452\nFunction: setReward_TOD22\nNode: \nEXPRESSION owner_TOD22.transfer(reward_TOD22)\nIRS: \nTransfer dest:owner_TOD22 value:reward_TOD22\""
+                    ],
+                    "state_variable": "reward_TOD22"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD22",
+                "claimReward_TOD22"
+            ],
+            "First_function": "claimReward_TOD22",
+            "Second_function": "setReward_TOD22",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 458\nFunction: claimReward_TOD22\nNode: \nEXPRESSION claimed_TOD22 = true\nIRS: \nclaimed_TOD22 := true\"",
+                        "\"BlockID: 450\nFunction: setReward_TOD22\nNode: \nEXPRESSION require(bool)(! claimed_TOD22)\nIRS: \nTMP_347 = SOLIDITY_CALL require(bool)(TMP_346)\""
+                    ],
+                    "state_variable": "claimed_TOD22"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD22",
+                "setReward_TOD22"
+            ],
+            "First_function": "setReward_TOD22",
+            "Second_function": "claimReward_TOD22",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 453\nFunction: setReward_TOD22\nNode: \nEXPRESSION reward_TOD22 = msg.value\nIRS: \nreward_TOD22 := msg.value\"",
+                        "\"BlockID: 457\nFunction: claimReward_TOD22\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD22)\nIRS: \nTransfer dest:msg.sender value:reward_TOD22\""
+                    ],
+                    "state_variable": "reward_TOD22"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD22",
+                "claimReward_TOD22"
+            ],
+            "First_function": "claimReward_TOD22",
+            "Second_function": "claimReward_TOD22",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 724\nFunction: claimReward_TOD22\nNode: \nEXPRESSION claimed_TOD22 = true\nIRS: \nclaimed_TOD22 := true\"",
+                        "\"BlockID: 455\nFunction: claimReward_TOD22\nNode: \nEXPRESSION require(bool)(! claimed_TOD22)\nIRS: \nTMP_352 = SOLIDITY_CALL require(bool)(TMP_351)\""
+                    ],
+                    "state_variable": "claimed_TOD22"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD12",
+                "setReward_TOD12"
+            ],
+            "First_function": "setReward_TOD12",
+            "Second_function": "setReward_TOD12",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 729\nFunction: setReward_TOD12\nNode: \nEXPRESSION reward_TOD12 = msg.value\nIRS: \nreward_TOD12 := msg.value\"",
+                        "\"BlockID: 462\nFunction: setReward_TOD12\nNode: \nEXPRESSION owner_TOD12.transfer(reward_TOD12)\nIRS: \nTransfer dest:owner_TOD12 value:reward_TOD12\""
+                    ],
+                    "state_variable": "reward_TOD12"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD12",
+                "claimReward_TOD12"
+            ],
+            "First_function": "claimReward_TOD12",
+            "Second_function": "setReward_TOD12",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 468\nFunction: claimReward_TOD12\nNode: \nEXPRESSION claimed_TOD12 = true\nIRS: \nclaimed_TOD12 := true\"",
+                        "\"BlockID: 460\nFunction: setReward_TOD12\nNode: \nEXPRESSION require(bool)(! claimed_TOD12)\nIRS: \nTMP_357 = SOLIDITY_CALL require(bool)(TMP_356)\""
+                    ],
+                    "state_variable": "claimed_TOD12"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD12",
+                "setReward_TOD12"
+            ],
+            "First_function": "setReward_TOD12",
+            "Second_function": "claimReward_TOD12",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 463\nFunction: setReward_TOD12\nNode: \nEXPRESSION reward_TOD12 = msg.value\nIRS: \nreward_TOD12 := msg.value\"",
+                        "\"BlockID: 467\nFunction: claimReward_TOD12\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD12)\nIRS: \nTransfer dest:msg.sender value:reward_TOD12\""
+                    ],
+                    "state_variable": "reward_TOD12"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD12",
+                "claimReward_TOD12"
+            ],
+            "First_function": "claimReward_TOD12",
+            "Second_function": "claimReward_TOD12",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 734\nFunction: claimReward_TOD12\nNode: \nEXPRESSION claimed_TOD12 = true\nIRS: \nclaimed_TOD12 := true\"",
+                        "\"BlockID: 465\nFunction: claimReward_TOD12\nNode: \nEXPRESSION require(bool)(! claimed_TOD12)\nIRS: \nTMP_362 = SOLIDITY_CALL require(bool)(TMP_361)\""
+                    ],
+                    "state_variable": "claimed_TOD12"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD7",
+                "play_TOD7"
+            ],
+            "First_function": "play_TOD7",
+            "Second_function": "getReward_TOD7",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 482\nFunction: play_TOD7\nNode: \nEXPRESSION winner_TOD7 = msg.sender\nIRS: \nwinner_TOD7 := msg.sender\"",
+                        "\"BlockID: 485\nFunction: getReward_TOD7\nNode: \nEXPRESSION winner_TOD7.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD7 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD7"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD23",
+                "play_TOD23"
+            ],
+            "First_function": "play_TOD23",
+            "Second_function": "getReward_TOD23",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 493\nFunction: play_TOD23\nNode: \nEXPRESSION winner_TOD23 = msg.sender\nIRS: \nwinner_TOD23 := msg.sender\"",
+                        "\"BlockID: 496\nFunction: getReward_TOD23\nNode: \nEXPRESSION winner_TOD23.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD23 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD23"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD14",
+                "setReward_TOD14"
+            ],
+            "First_function": "setReward_TOD14",
+            "Second_function": "setReward_TOD14",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 743\nFunction: setReward_TOD14\nNode: \nEXPRESSION reward_TOD14 = msg.value\nIRS: \nreward_TOD14 := msg.value\"",
+                        "\"BlockID: 501\nFunction: setReward_TOD14\nNode: \nEXPRESSION owner_TOD14.transfer(reward_TOD14)\nIRS: \nTransfer dest:owner_TOD14 value:reward_TOD14\""
+                    ],
+                    "state_variable": "reward_TOD14"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD14",
+                "claimReward_TOD14"
+            ],
+            "First_function": "claimReward_TOD14",
+            "Second_function": "setReward_TOD14",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 507\nFunction: claimReward_TOD14\nNode: \nEXPRESSION claimed_TOD14 = true\nIRS: \nclaimed_TOD14 := true\"",
+                        "\"BlockID: 499\nFunction: setReward_TOD14\nNode: \nEXPRESSION require(bool)(! claimed_TOD14)\nIRS: \nTMP_383 = SOLIDITY_CALL require(bool)(TMP_382)\""
+                    ],
+                    "state_variable": "claimed_TOD14"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD14",
+                "setReward_TOD14"
+            ],
+            "First_function": "setReward_TOD14",
+            "Second_function": "claimReward_TOD14",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 502\nFunction: setReward_TOD14\nNode: \nEXPRESSION reward_TOD14 = msg.value\nIRS: \nreward_TOD14 := msg.value\"",
+                        "\"BlockID: 506\nFunction: claimReward_TOD14\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD14)\nIRS: \nTransfer dest:msg.sender value:reward_TOD14\""
+                    ],
+                    "state_variable": "reward_TOD14"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD14",
+                "claimReward_TOD14"
+            ],
+            "First_function": "claimReward_TOD14",
+            "Second_function": "claimReward_TOD14",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 748\nFunction: claimReward_TOD14\nNode: \nEXPRESSION claimed_TOD14 = true\nIRS: \nclaimed_TOD14 := true\"",
+                        "\"BlockID: 504\nFunction: claimReward_TOD14\nNode: \nEXPRESSION require(bool)(! claimed_TOD14)\nIRS: \nTMP_388 = SOLIDITY_CALL require(bool)(TMP_387)\""
+                    ],
+                    "state_variable": "claimed_TOD14"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD30",
+                "setReward_TOD30"
+            ],
+            "First_function": "setReward_TOD30",
+            "Second_function": "setReward_TOD30",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 753\nFunction: setReward_TOD30\nNode: \nEXPRESSION reward_TOD30 = msg.value\nIRS: \nreward_TOD30 := msg.value\"",
+                        "\"BlockID: 517\nFunction: setReward_TOD30\nNode: \nEXPRESSION owner_TOD30.transfer(reward_TOD30)\nIRS: \nTransfer dest:owner_TOD30 value:reward_TOD30\""
+                    ],
+                    "state_variable": "reward_TOD30"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD30",
+                "claimReward_TOD30"
+            ],
+            "First_function": "claimReward_TOD30",
+            "Second_function": "setReward_TOD30",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 523\nFunction: claimReward_TOD30\nNode: \nEXPRESSION claimed_TOD30 = true\nIRS: \nclaimed_TOD30 := true\"",
+                        "\"BlockID: 515\nFunction: setReward_TOD30\nNode: \nEXPRESSION require(bool)(! claimed_TOD30)\nIRS: \nTMP_396 = SOLIDITY_CALL require(bool)(TMP_395)\""
+                    ],
+                    "state_variable": "claimed_TOD30"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD30",
+                "setReward_TOD30"
+            ],
+            "First_function": "setReward_TOD30",
+            "Second_function": "claimReward_TOD30",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 518\nFunction: setReward_TOD30\nNode: \nEXPRESSION reward_TOD30 = msg.value\nIRS: \nreward_TOD30 := msg.value\"",
+                        "\"BlockID: 522\nFunction: claimReward_TOD30\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD30)\nIRS: \nTransfer dest:msg.sender value:reward_TOD30\""
+                    ],
+                    "state_variable": "reward_TOD30"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD30",
+                "claimReward_TOD30"
+            ],
+            "First_function": "claimReward_TOD30",
+            "Second_function": "claimReward_TOD30",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 758\nFunction: claimReward_TOD30\nNode: \nEXPRESSION claimed_TOD30 = true\nIRS: \nclaimed_TOD30 := true\"",
+                        "\"BlockID: 520\nFunction: claimReward_TOD30\nNode: \nEXPRESSION require(bool)(! claimed_TOD30)\nIRS: \nTMP_401 = SOLIDITY_CALL require(bool)(TMP_400)\""
+                    ],
+                    "state_variable": "claimed_TOD30"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD8",
+                "setReward_TOD8"
+            ],
+            "First_function": "setReward_TOD8",
+            "Second_function": "setReward_TOD8",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 763\nFunction: setReward_TOD8\nNode: \nEXPRESSION reward_TOD8 = msg.value\nIRS: \nreward_TOD8 := msg.value\"",
+                        "\"BlockID: 530\nFunction: setReward_TOD8\nNode: \nEXPRESSION owner_TOD8.transfer(reward_TOD8)\nIRS: \nTransfer dest:owner_TOD8 value:reward_TOD8\""
+                    ],
+                    "state_variable": "reward_TOD8"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD8",
+                "claimReward_TOD8"
+            ],
+            "First_function": "claimReward_TOD8",
+            "Second_function": "setReward_TOD8",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 536\nFunction: claimReward_TOD8\nNode: \nEXPRESSION claimed_TOD8 = true\nIRS: \nclaimed_TOD8 := true\"",
+                        "\"BlockID: 528\nFunction: setReward_TOD8\nNode: \nEXPRESSION require(bool)(! claimed_TOD8)\nIRS: \nTMP_407 = SOLIDITY_CALL require(bool)(TMP_406)\""
+                    ],
+                    "state_variable": "claimed_TOD8"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD8",
+                "setReward_TOD8"
+            ],
+            "First_function": "setReward_TOD8",
+            "Second_function": "claimReward_TOD8",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 531\nFunction: setReward_TOD8\nNode: \nEXPRESSION reward_TOD8 = msg.value\nIRS: \nreward_TOD8 := msg.value\"",
+                        "\"BlockID: 535\nFunction: claimReward_TOD8\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD8)\nIRS: \nTransfer dest:msg.sender value:reward_TOD8\""
+                    ],
+                    "state_variable": "reward_TOD8"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD8",
+                "claimReward_TOD8"
+            ],
+            "First_function": "claimReward_TOD8",
+            "Second_function": "claimReward_TOD8",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 768\nFunction: claimReward_TOD8\nNode: \nEXPRESSION claimed_TOD8 = true\nIRS: \nclaimed_TOD8 := true\"",
+                        "\"BlockID: 533\nFunction: claimReward_TOD8\nNode: \nEXPRESSION require(bool)(! claimed_TOD8)\nIRS: \nTMP_412 = SOLIDITY_CALL require(bool)(TMP_411)\""
+                    ],
+                    "state_variable": "claimed_TOD8"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD39",
+                "play_TOD39"
+            ],
+            "First_function": "play_TOD39",
+            "Second_function": "getReward_TOD39",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 551\nFunction: play_TOD39\nNode: \nEXPRESSION winner_TOD39 = msg.sender\nIRS: \nwinner_TOD39 := msg.sender\"",
+                        "\"BlockID: 554\nFunction: getReward_TOD39\nNode: \nEXPRESSION winner_TOD39.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD39 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD39"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD36",
+                "setReward_TOD36"
+            ],
+            "First_function": "setReward_TOD36",
+            "Second_function": "setReward_TOD36",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 775\nFunction: setReward_TOD36\nNode: \nEXPRESSION reward_TOD36 = msg.value\nIRS: \nreward_TOD36 := msg.value\"",
+                        "\"BlockID: 559\nFunction: setReward_TOD36\nNode: \nEXPRESSION owner_TOD36.transfer(reward_TOD36)\nIRS: \nTransfer dest:owner_TOD36 value:reward_TOD36\""
+                    ],
+                    "state_variable": "reward_TOD36"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD36",
+                "claimReward_TOD36"
+            ],
+            "First_function": "claimReward_TOD36",
+            "Second_function": "setReward_TOD36",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 565\nFunction: claimReward_TOD36\nNode: \nEXPRESSION claimed_TOD36 = true\nIRS: \nclaimed_TOD36 := true\"",
+                        "\"BlockID: 557\nFunction: setReward_TOD36\nNode: \nEXPRESSION require(bool)(! claimed_TOD36)\nIRS: \nTMP_427 = SOLIDITY_CALL require(bool)(TMP_426)\""
+                    ],
+                    "state_variable": "claimed_TOD36"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD36",
+                "setReward_TOD36"
+            ],
+            "First_function": "setReward_TOD36",
+            "Second_function": "claimReward_TOD36",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 560\nFunction: setReward_TOD36\nNode: \nEXPRESSION reward_TOD36 = msg.value\nIRS: \nreward_TOD36 := msg.value\"",
+                        "\"BlockID: 564\nFunction: claimReward_TOD36\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD36)\nIRS: \nTransfer dest:msg.sender value:reward_TOD36\""
+                    ],
+                    "state_variable": "reward_TOD36"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD36",
+                "claimReward_TOD36"
+            ],
+            "First_function": "claimReward_TOD36",
+            "Second_function": "claimReward_TOD36",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 780\nFunction: claimReward_TOD36\nNode: \nEXPRESSION claimed_TOD36 = true\nIRS: \nclaimed_TOD36 := true\"",
+                        "\"BlockID: 562\nFunction: claimReward_TOD36\nNode: \nEXPRESSION require(bool)(! claimed_TOD36)\nIRS: \nTMP_432 = SOLIDITY_CALL require(bool)(TMP_431)\""
+                    ],
+                    "state_variable": "claimed_TOD36"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD35",
+                "play_TOD35"
+            ],
+            "First_function": "play_TOD35",
+            "Second_function": "getReward_TOD35",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 576\nFunction: play_TOD35\nNode: \nEXPRESSION winner_TOD35 = msg.sender\nIRS: \nwinner_TOD35 := msg.sender\"",
+                        "\"BlockID: 579\nFunction: getReward_TOD35\nNode: \nEXPRESSION winner_TOD35.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD35 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD35"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD40",
+                "setReward_TOD40"
+            ],
+            "First_function": "setReward_TOD40",
+            "Second_function": "setReward_TOD40",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 791\nFunction: setReward_TOD40\nNode: \nEXPRESSION reward_TOD40 = msg.value\nIRS: \nreward_TOD40 := msg.value\"",
+                        "\"BlockID: 585\nFunction: setReward_TOD40\nNode: \nEXPRESSION owner_TOD40.transfer(reward_TOD40)\nIRS: \nTransfer dest:owner_TOD40 value:reward_TOD40\""
+                    ],
+                    "state_variable": "reward_TOD40"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "setReward_TOD40",
+                "claimReward_TOD40"
+            ],
+            "First_function": "claimReward_TOD40",
+            "Second_function": "setReward_TOD40",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 591\nFunction: claimReward_TOD40\nNode: \nEXPRESSION claimed_TOD40 = true\nIRS: \nclaimed_TOD40 := true\"",
+                        "\"BlockID: 583\nFunction: setReward_TOD40\nNode: \nEXPRESSION require(bool)(! claimed_TOD40)\nIRS: \nTMP_448 = SOLIDITY_CALL require(bool)(TMP_447)\""
+                    ],
+                    "state_variable": "claimed_TOD40"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD40",
+                "setReward_TOD40"
+            ],
+            "First_function": "setReward_TOD40",
+            "Second_function": "claimReward_TOD40",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 586\nFunction: setReward_TOD40\nNode: \nEXPRESSION reward_TOD40 = msg.value\nIRS: \nreward_TOD40 := msg.value\"",
+                        "\"BlockID: 590\nFunction: claimReward_TOD40\nNode: \nEXPRESSION msg.sender.transfer(reward_TOD40)\nIRS: \nTransfer dest:msg.sender value:reward_TOD40\""
+                    ],
+                    "state_variable": "reward_TOD40"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimReward_TOD40",
+                "claimReward_TOD40"
+            ],
+            "First_function": "claimReward_TOD40",
+            "Second_function": "claimReward_TOD40",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 796\nFunction: claimReward_TOD40\nNode: \nEXPRESSION claimed_TOD40 = true\nIRS: \nclaimed_TOD40 := true\"",
+                        "\"BlockID: 588\nFunction: claimReward_TOD40\nNode: \nEXPRESSION require(bool)(! claimed_TOD40)\nIRS: \nTMP_453 = SOLIDITY_CALL require(bool)(TMP_452)\""
+                    ],
+                    "state_variable": "claimed_TOD40"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward_TOD33",
+                "play_TOD33"
+            ],
+            "First_function": "play_TOD33",
+            "Second_function": "getReward_TOD33",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 601\nFunction: play_TOD33\nNode: \nEXPRESSION winner_TOD33 = msg.sender\nIRS: \nwinner_TOD33 := msg.sender\"",
+                        "\"BlockID: 604\nFunction: getReward_TOD33\nNode: \nEXPRESSION winner_TOD33.transfer(msg.value)\nIRS: \nTransfer dest:winner_TOD33 value:msg.value\""
+                    ],
+                    "state_variable": "winner_TOD33"
+                }
+            ]
+        }
+    ]
+}

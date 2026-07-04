@@ -1,0 +1,42 @@
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Analysis started at: 2026-06-21 06:57:30 PM
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Callgraph generation started!
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Callgraph generation finished!
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Value Range Analysis started
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Generating return summary for MyContract
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Return summary generated for MyContract
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Range graph generated
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Processed function MyContract
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Generating return summary for sendTo
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Return summary generated for sendTo
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | State variable assignement do not exist
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Processed function sendTo
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Value Range Analysis took 0.000694 seconds
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Value Range Analysis finished
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Dependency detection started!
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Dependency detection finished!
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Static Analysis took 0.057825 seconds
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Dependency does not exist
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Symbolic execution is not needed!
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Analysis finished!
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Analysis took 0.058048 seconds
+[INFO] | 2026-06-21 06:57:30 PM | analyzer.mycontract | Analysis finished at: 2026-06-21 06:57:30 PM
+[36m[#] Analysing started: mycontract.sol[0m
+[36m[#] Interprocedural CFG generation started for MyContract[0m
+[36m[#] Interprocedural CFG generated for MyContract[0m
+[36m[#] Interprocedural CFG generation started for sendTo[0m
+[36m[#] Interprocedural CFG generated for sendTo[0m
+[36m[#] SDG generation started for MyContract[0m
+[36m[#] SDG generated for MyContract[0m
+[36m[#] SDG generation started for sendTo[0m
+[36m[#] SDG generated for sendTo[0m
+[36m[#] Analysis took 0.058048 seconds[0m
+[36m[#] Analysis completed: mycontract.sol [0m
+
+=== dependency_info.json ===
+{}

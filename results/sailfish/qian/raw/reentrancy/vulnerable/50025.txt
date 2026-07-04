@@ -1,0 +1,38 @@
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Analysis started at: 2026-06-21 07:15:29 PM
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Callgraph generation started!
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Value Range Analysis started
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Processed function onlyOwner
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Generating return summary for doWithdraw
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Return summary generated for doWithdraw
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Range graph generated
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Processed function doWithdraw
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Value Range Analysis took 0.000617 seconds
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Dependency detection started!
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Dependency detection finished!
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Static Analysis took 0.030433 seconds
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Dependency does not exist
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Analysis finished!
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Analysis took 0.030567 seconds
+[INFO] | 2026-06-21 07:15:29 PM | analyzer.50025  | Analysis finished at: 2026-06-21 07:15:29 PM
+[36m[#] Analysing started: 50025.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.030567 seconds[0m
+[36m[#] Analysis completed: 50025.sol [0m
+
+=== dependency_info.json ===
+{}

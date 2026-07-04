@@ -1,0 +1,22 @@
+{
+ "evm_code_coverage": "81.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "reentrancysafe.sol:8:9: Warning: Integer Underflow.\n",
+   "reentrancysafe.sol:23:2839: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    rewardsForA[msg.sender] = 0",
+   "reentrancysafe.sol:14:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    rewardsForA[msg.sender] = 0"
+  ],
+  "integer_overflow": [
+   "reentrancysafe.sol:16:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    rewardsForA[msg.sender] = 1"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "reentrancysafe.sol:16:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

@@ -1,0 +1,46 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+Transformed CFG build failed: An error occurred during execution
+> command: `/home/maitri/.solcx/solc-v0.4.26 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc -`
+> return code: `1`
+> stdout:
+
+> stderr:
+<stdin>:16:9: Warning: This declaration shadows an existing declaration.
+        uint commitEndDate = block.timestamp + (_commitDuration);
+        ^----------------^
+<stdin>:9:5: The shadowed declaration is here:
+    uint commitEndDate = 80;  // from struct Poll
+    ^---------------------^
+
+<stdin>:17:9: Warning: This declaration shadows an existing declaration.
+        uint revealEndDate = commitEndDate + (_revealDuration);
+        ^----------------^
+<stdin>:10:1: The shadowed declaration is here:
+uint revealEndDate = 80;  // from struct Poll
+^---------------------^
+
+<stdin>:19:9: Error: Undeclared identifier.
+        pollMap = Poll({
+        ^-----^
+<stdin>:19:19: Error: Undeclared identifier.
+        pollMap = Poll({
+                  ^--^
+Falling back: skipping reentrancy/timestamp/TOD analysis, running overflow only.
+
+===== VERDICTS (Box) =====
+[TIMESTAMP] block.timestamp/now used in arithmetic that computes a value.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: ANALYSIS UNAVAILABLE (transformed CFG failed)
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: VULNERABLE
+[SUMMARY] TOD: ANALYSIS UNAVAILABLE (transformed CFG failed)
+
+NOTE: Some pipelines were SKIPPED because the mapping transformer could not process this contract.  These vulnerabilities are recorded as -1 (N/A) in the JSON verdict — they are excluded from TP/TN/FP/FN counts rather than counted as negatives.
+
+Total analysis time: 0.07s
+

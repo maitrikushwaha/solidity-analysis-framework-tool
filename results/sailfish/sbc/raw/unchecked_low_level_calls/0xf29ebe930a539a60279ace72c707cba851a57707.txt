@@ -1,0 +1,46 @@
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Analysis started at: 2026-06-21 07:10:00 PM
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Callgraph generation started!
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Callgraph generation finished!
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Value Range Analysis started
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Generating return summary for go
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Return summary generated for go
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Processed function go
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Generating return summary for fallback
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Return summary generated for fallback
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Processed function fallback
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Range graph generated
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Value Range Analysis took 0.000648 seconds
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Value Range Analysis finished
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Dependency detection started!
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Dependency detection finished!
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Static Analysis took 0.037328 seconds
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Dependency does not exist
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Analysis finished!
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Analysis took 0.037468 seconds
+[INFO] | 2026-06-21 07:10:00 PM | analyzer.0xf29ebe930a539a60279ace72c707cba851a57707 | Analysis finished at: 2026-06-21 07:10:00 PM
+[36m[#] Analysing started: 0xf29ebe930a539a60279ace72c707cba851a57707.sol[0m
+[36m[#] Interprocedural CFG generation started for go[0m
+[36m[#] Interprocedural CFG generated for go[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] SDG generation started for go[0m
+[36m[#] SDG generated for go[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] Analysis took 0.037468 seconds[0m
+[36m[#] Analysis completed: 0xf29ebe930a539a60279ace72c707cba851a57707.sol [0m
+
+=== dependency_info.json ===
+{}

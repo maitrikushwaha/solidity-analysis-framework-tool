@@ -1,0 +1,41 @@
+/work/datasets/qian/reentrancy/safe/39248.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_DEPRECATED_CONSTRUCTIONS
+patternId: 49bd2a
+severity: 1
+line: 19
+column: 88
+content: throw
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_REVERT_REQUIRE
+patternId: c56b12
+severity: 1
+line: 19
+column: 8
+content: if(!p.beneficiary.call.value(p.etherAmount*1ether)(_transactionBytecode)){throw;}
+
+ruleId: SOLIDITY_UPGRADE_TO_050
+patternId: 441gim
+severity: 1
+line: 17
+column: 8
+content: Proposalp=proposals[_proposalID]
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: 910067
+severity: 1
+line: 16
+column: 4
+content: functionexecuteProposal(uint256_proposalID,bytes_transactionBytecode){Proposalp=proposals[_proposalID];p.state=ProposalState.Executed;if(!p.beneficiary.call.value(p.etherAmount*1ether)(_transactionBytecode)){throw;}}
+
+SOLIDITY_VISIBILITY :1
+SOLIDITY_DEPRECATED_CONSTRUCTIONS :1
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_REVERT_REQUIRE :1
+SOLIDITY_UPGRADE_TO_050 :1

@@ -1,0 +1,8 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/front_running/eth_tx_order_dependence_minimal.sol:EthTxOrderDependenceMinimal
+offset,opcode,detection
+533,533: SLOAD,Store read after unsafe call
+583,583: SSTORE,Store write after unsafe call
+695,695: SLOAD,Store read after unsafe call
+751,751: SLOAD,Store read after unsafe call
+765,765: SSTORE,Store write after unsafe call

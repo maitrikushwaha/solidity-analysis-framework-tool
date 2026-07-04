@@ -1,0 +1,75 @@
+{
+  "dataset": "qian",
+  "macro_average": {
+    "accuracy": 0.8874,
+    "f1": 0.7863,
+    "precision": 0.9583,
+    "recall": 0.6667
+  },
+  "micro_average": {
+    "counts": {
+      "fn": 23,
+      "fp": 2,
+      "tn": 151,
+      "tp": 46
+    },
+    "metrics": {
+      "accuracy": 0.8874,
+      "f1": 0.7863,
+      "precision": 0.9583,
+      "recall": 0.6667
+    }
+  },
+  "per_vulnerability": {
+    "reentrancy": {
+      "accuracy": 0.8874,
+      "counts": {
+        "fn": 23,
+        "fp": 2,
+        "tn": 151,
+        "tp": 46
+      },
+      "evaluated": 222,
+      "excluded_na": 0,
+      "excluded_na_files": [],
+      "f1": 0.7863,
+      "fn_files": [
+        "18509.sol",
+        "18510.sol",
+        "22074.sol",
+        "26743.sol",
+        "39019.sol",
+        "39269.sol",
+        "39778.sol",
+        "39866.sol",
+        "40748.sol",
+        "40775.sol",
+        "40781.sol",
+        "40784.sol",
+        "40785.sol",
+        "40787.sol",
+        "40789.sol",
+        "50009.sol",
+        "50010.sol",
+        "50014.sol",
+        "50018.sol",
+        "50019.sol",
+        "50023.sol",
+        "50025.sol",
+        "50026.sol"
+      ],
+      "fp_files": [
+        "22635.sol",
+        "36836.sol"
+      ],
+      "precision": 0.9583,
+      "recall": 0.6667,
+      "total": 222
+    }
+  },
+  "summary": {
+    "excluded_na_total": 0,
+    "total_contracts": 222
+  },
+  "tool": "sailfish"
+}

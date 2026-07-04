@@ -1,0 +1,63 @@
+/work/datasets/qian/overflow/safe/8872.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_CALL_WITHOUT_DATA
+patternId: om991k
+severity: 2
+line: 11
+column: 24
+content: call.value(amount)()
+
+ruleId: SOLIDITY_DEPRECATED_CONSTRUCTIONS
+patternId: 49bd2a
+severity: 1
+line: 9
+column: 44
+content: throw
+
+ruleId: SOLIDITY_DEPRECATED_CONSTRUCTIONS
+patternId: 49bd2a
+severity: 1
+line: 11
+column: 46
+content: throw
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_REVERT_REQUIRE
+patternId: c56b12
+severity: 1
+line: 9
+column: 8
+content: if(tokens[0][msg.sender]<amount)throw;
+
+ruleId: SOLIDITY_REVERT_REQUIRE
+patternId: c56b12
+severity: 1
+line: 11
+column: 8
+content: if(!msg.sender.call.value(amount)())throw;
+
+ruleId: SOLIDITY_UPGRADE_TO_050
+patternId: 83k1no
+severity: 1
+line: 11
+column: 24
+content: call.value(amount)()
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: 910067
+severity: 1
+line: 8
+column: 4
+content: functionwithdraw(uintamount){if(tokens[0][msg.sender]<amount)throw;tokens[0][msg.sender]=tokens[0][msg.sender]-amount;if(!msg.sender.call.value(amount)())throw;}
+
+SOLIDITY_VISIBILITY :1
+SOLIDITY_DEPRECATED_CONSTRUCTIONS :2
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_REVERT_REQUIRE :2
+SOLIDITY_UPGRADE_TO_050 :1
+SOLIDITY_CALL_WITHOUT_DATA :1

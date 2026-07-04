@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "84.8",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "insecure_transfer.sol:18:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balanceOf[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819970\n    _value = 28985804283996535609424023491659493335988248472634317432459648560466680918146\n    balanceOf[_to] = 90485112614747491723693534199426699914452579031181003077195766920181059067273"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

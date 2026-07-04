@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/bad_randomness/lottery.sol:Lottery
+offset,opcode,detection

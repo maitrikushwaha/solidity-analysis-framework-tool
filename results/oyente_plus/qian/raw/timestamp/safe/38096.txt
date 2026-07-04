@@ -1,0 +1,22 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 38096.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.HI5kBvsyd2' running
+INFO:CryticCompile:Compilation warnings/errors on 38096.sol:
+38096.sol:9:32: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+		if (block.timestamp > end || this.balance > cap) {
+		                             ^----------^
+38096.sol:8:2: Warning: No visibility specified. Defaulting to "public". 
+	function () payable {
+ ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 38096.sol:Sale:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 85.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 38096.sol:Sale.json.

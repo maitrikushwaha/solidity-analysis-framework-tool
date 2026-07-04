@@ -1,0 +1,43 @@
+
+'solc --version' running
+'solc /work/datasets/qian/overflow/safe/50660.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/overflow/safe' running
+
+IChain.amountRaised (datasets/qian/overflow/safe/50660.sol#14) is never initialized. It is used in:
+	- IChain.finishDistribution() (datasets/qian/overflow/safe/50660.sol#17-21)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+Reentrancy in IChain.finishDistribution() (datasets/qian/overflow/safe/50660.sol#17-21):
+	External calls:
+	- require(bool)(msg.sender.call.value(amountRaised)()) (datasets/qian/overflow/safe/50660.sol#18)
+	State variables written after the call(s):
+	- balances[msg.sender] = balances[msg.sender].sub(amountRaised) (datasets/qian/overflow/safe/50660.sol#19)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/overflow/safe/50660.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in IChain.finishDistribution() (datasets/qian/overflow/safe/50660.sol#17-21):
+	- require(bool)(msg.sender.call.value(amountRaised)()) (datasets/qian/overflow/safe/50660.sol#18)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+IChain.amountRaised (datasets/qian/overflow/safe/50660.sol#14) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/qian/overflow/safe/50660.sol analyzed (2 contracts with 93 detectors), 6 result(s) found

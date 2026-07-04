@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "68.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "17806.sol:11:62: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    weeklyTicketsBought = 1"
+  ],
+  "integer_overflow": [
+   "17806.sol:10:24: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    weeklyTicketsBought = 95235721736379883315001763940616669011307430545820611921043079414295449969311"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

@@ -1,0 +1,41 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 01_SingleMutexFold_ree2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.CQEJNFHTQt' running
+INFO:root:contract 01_SingleMutexFold_ree2.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 79.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:01_SingleMutexFold_ree2.sol:6:5: Warning: Integer Underflow.
+
+01_SingleMutexFold_ree2.sol:13:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 3672591774785928755388719463214162168885546361816168173861978611533217920
+01_SingleMutexFold_ree2.sol:26:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 7307789887864946236177117419166507414041183190204296314022029752784734126208
+INFO:symExec:01_SingleMutexFold_ree2.sol:30:764: Warning: Integer Overflow.
+
+01_SingleMutexFold_ree2.sol:18:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 21711016731996786641919559689128982722488122124807605757398297001483711807488
+    balances[msg.sender] = 748288838313422294120286634350736906063837462003712
+    balances[msg.sender] = 1
+01_SingleMutexFold_ree2.sol:17:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 187072209578355573530071658588313420760724600258568
+    balances[msg.sender] = 0
+INFO:symExec:01_SingleMutexFold_ree2.sol:18:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:01_SingleMutexFold_ree2.sol:18:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 01_SingleMutexFold_ree2.sol:C.json.

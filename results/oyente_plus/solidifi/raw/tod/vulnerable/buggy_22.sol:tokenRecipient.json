@@ -1,0 +1,26 @@
+{
+ "evm_code_coverage": "57.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "buggy_22.sol:108:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _extraData = 32"
+  ],
+  "integer_overflow": [
+   "buggy_22.sol:108:14: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _extraData = 269566969",
+   "buggy_22.sol:5:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _extraData = 1"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "buggy_22.sol:125:9: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "buggy_22.sol:117:9: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

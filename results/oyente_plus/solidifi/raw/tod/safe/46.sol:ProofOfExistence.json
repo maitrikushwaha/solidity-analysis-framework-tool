@@ -1,0 +1,35 @@
+{
+ "evm_code_coverage": "25.7",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "46.sol:48:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    filePathHash = 679680529\n    fileHash = 4034229872\n    fileExistenceProofs[dappBoxOrigin].length = 0",
+   "46.sol:53:22: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    filePathHash = 679680529\n    fileHash = 4034229872\n    fileExistenceProofs[dappBoxOrigin].length = 107839786668602559178668060348078522694548577690162289924414440996864",
+   "46.sol:75:52: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    filePathHash = 750979584\n    fileHash = 2710853180\n    fileExistenceProofs[dappBoxOrigin].length = 81129638414606681695789005144064",
+   "46.sol:2:23: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    filePathHash = 750979584\n    fileHash = 2710853180\n    fileExistenceProofs[dappBoxOrigin].length = 81129638414606681695789005144064",
+   "46.sol:75:24: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    filePathHash = 885206528\n    fileHash = 1879609001\n    fileExistenceProofs[dappBoxOrigin].length = 131072",
+   "46.sol:54:11: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    fileExistenceProofs[dappBoxOrigin].length = 20282409603651670423947251286030\n    filePathHash = 641129161\n    fileHash = 1423098785"
+  ],
+  "integer_overflow": [
+   "46.sol:48:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 268435481\n    fileHash = 545086489",
+   "46.sol:5:15: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 756748936\n    fileHash = 3224557341",
+   "46.sol:9:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 2891649688\n    fileHash = 3224557341",
+   "46.sol:53:46: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 679680529\n    fileHash = 4034229872\n    fileExistenceProofs[dappBoxOrigin].length = 107839786668602559178668060348078522694548577690162289924414440996864",
+   "46.sol:53:22: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 679680529\n    fileHash = 4036327024\n    fileExistenceProofs[dappBoxOrigin].length = 81129638414606681695789005144064",
+   "46.sol:75:52: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 679680529\n    fileHash = 4036327024\n    fileExistenceProofs[dappBoxOrigin].length = 81129638414606681695789005144064",
+   "46.sol:75:42: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 750979584\n    fileHash = 2710853180\n    fileExistenceProofs[dappBoxOrigin].length = 81129638414606681695789005144064",
+   "46.sol:75:24: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 750979584\n    fileHash = 2710853180\n    fileExistenceProofs[dappBoxOrigin].length = 81129638414606681695789005144064",
+   "46.sol:75:14: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    filePathHash = 977473154\n    fileHash = 1619058467\n    fileExistenceProofs[dappBoxOrigin].length = 95780971304118053647396689196894323976171195136475136",
+   "46.sol:53:46: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    fileExistenceProofs[dappBoxOrigin].length = 4611686018427387905\n    filePathHash = 1741126402\n    fileHash = 3490314928",
+   "46.sol:54:39: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    fileExistenceProofs[dappBoxOrigin].length = 20282409603651670423947251286030\n    filePathHash = 641129161\n    fileHash = 1423098785",
+   "46.sol:54:39: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    fileExistenceProofs[dappBoxOrigin].length = 20282409603651670423947251286030\n    filePathHash = 641129161\n    fileHash = 1423098785",
+   "46.sol:54:11: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    fileExistenceProofs[dappBoxOrigin].length = 20282409603651670423947251286030\n    filePathHash = 641129161\n    fileHash = 1423098785"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

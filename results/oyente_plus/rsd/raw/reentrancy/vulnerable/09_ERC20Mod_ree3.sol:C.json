@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "70.4",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "09_ERC20Mod_ree3.sol:35:3893: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    received[to] = 0\n    flag = 4241947657116780359935904571152055820256669890204210823169",
+   "09_ERC20Mod_ree3.sol:22:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 28325198366375148193868952731026304770950129416118032853501282881533706368",
+   "09_ERC20Mod_ree3.sol:17:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "09_ERC20Mod_ree3.sol:29:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    received[to] = 5846006549323611672814739330865132078623730171904\n    flag = 2650270597206147249384819134507744799861984899829781565703086535807601157"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

@@ -1,0 +1,26 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 03_SingleModFoldUnderflow_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.e2n4v8KQjc' running
+INFO:root:contract 03_SingleModFoldUnderflow_ree1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:03_SingleModFoldUnderflow_ree1.sol:6:5: Warning: Integer Underflow.
+
+03_SingleModFoldUnderflow_ree1.sol:10:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 14482845389988416349594289613589703074237885502689448648769723192747982073088
+INFO:symExec:03_SingleModFoldUnderflow_ree1.sol:30:815: Warning: Integer Overflow.
+
+INFO:symExec:03_SingleModFoldUnderflow_ree1.sol:17:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:03_SingleModFoldUnderflow_ree1.sol:17:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 03_SingleModFoldUnderflow_ree1.sol:C.json.

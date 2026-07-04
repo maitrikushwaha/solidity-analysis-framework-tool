@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "88.5",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "40539.sol:4:5: Warning: Integer Overflow.\n",
+   "40539.sol:5:5: Warning: Integer Overflow.\n",
+   "40539.sol:14:5: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

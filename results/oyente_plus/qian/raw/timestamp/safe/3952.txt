@@ -1,0 +1,27 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 3952.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.4oucrSVm71' running
+INFO:CryticCompile:Compilation warnings/errors on 3952.sol:
+3952.sol:7:5: Warning: Function state mutability can be restricted to view
+    function sellOffer(uint256 amount, uint256 price, address race, bytes32 horse) external returns (bytes32) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 3952.sol:HorseFutures:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 88.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:3952.sol:7:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    owner[id] = 0
+INFO:symExec:3952.sol:7:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner[id] = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 3952.sol:HorseFutures.json.

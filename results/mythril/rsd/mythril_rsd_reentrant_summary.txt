@@ -1,0 +1,33 @@
+=================================================================
+MYTHRIL RSD REENTRANT SUBSET — RESULTS SUMMARY
+=================================================================
+Dataset      : RSD (Ressi et al., 2026), Solidity ^0.8.20
+Subset       : Reentrant contracts only (_ree*.sol)
+Total files  : 71
+Mythril ver  : Mythril version v0.24.8
+Config       : -t 5, --max-depth 50, --execution-timeout 300s, --solver-timeout 25000ms
+Batch time   : 19613s (326 min)
+=================================================================
+
+  TP    (reentrant, SWC-107 found)   : 60
+  FN    (reentrant, no SWC-107)      : 11
+  CRASH (timeout / compile error)    : 0
+
+  NOTE: All contracts have ground_truth = 1 (reentrant).
+  FP and TN are not applicable here.
+  Run the safe split separately for FP / TN counts.
+
+  Recall (strict,  crash=FN)  : 84.5%  [60/71]
+  Recall (lenient, crash excl): 84.5%  [60/71]
+
+  SWC-107 = 'State access after external call'
+  (Mythril's reentrancy detector)
+
+NEXT STEPS:
+  1. Inspect CRASH/TIMEOUT rows:
+     grep 'CRASH\|TIMEOUT' rsd_experiment/results/mythril_rsd_reentrant_results.csv
+  2. Run the SAFE split for FP/TN:
+     Copy this script, change REENTRANT_DIR to .../safe/
+     and change _ree*.sol pattern to _safe*.sol
+  3. Combine TP/FN (this) + FP/TN (safe) for full P/R/F1
+=================================================================

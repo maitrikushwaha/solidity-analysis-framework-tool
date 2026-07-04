@@ -1,0 +1,34 @@
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Analysis started at: 2026-06-21 07:12:49 PM
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Generating return summary for redeem
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Return summary generated for redeem
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Processed function redeem
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Value Range Analysis took 0.000271 seconds
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Static Analysis took 0.041718 seconds
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Dependency does not exist
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Analysis finished!
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Analysis took 0.041923 seconds
+[INFO] | 2026-06-21 07:12:49 PM | analyzer.40299  | Analysis finished at: 2026-06-21 07:12:49 PM
+[36m[#] Analysing started: 40299.sol[0m
+[36m[#] Interprocedural CFG generation started for redeem[0m
+[36m[#] Interprocedural CFG generated for redeem[0m
+[36m[#] SDG generation started for redeem[0m
+[36m[#] SDG generated for redeem[0m
+[36m[#] Analysis took 0.041923 seconds[0m
+[36m[#] Analysis completed: 40299.sol [0m
+
+=== dependency_info.json ===
+{}

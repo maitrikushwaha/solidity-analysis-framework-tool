@@ -1,0 +1,7 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/denial_of_service/send_loop.sol:Refunder
+offset,opcode,detection
+198,198: SLOAD,Store read after unsafe call
+212,212: SLOAD,Store read after unsafe call
+298,298: SLOAD,Store read after unsafe call
+410,410: SLOAD,Store read after unsafe call

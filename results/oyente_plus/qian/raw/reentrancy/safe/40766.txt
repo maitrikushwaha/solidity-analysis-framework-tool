@@ -1,0 +1,28 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40766.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.0uaAcPPXiW' running
+INFO:root:contract 40766.sol:Tradesman:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 70.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:40766.sol:13:18: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    owner = 43556142965880123323311949751266331066368
+INFO:symExec:40766.sol:12:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+40766.sol:6:23: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner = 43556142965880123927774859558580918419456
+INFO:symExec:40766.sol:13:18: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40766.sol:Tradesman.json.

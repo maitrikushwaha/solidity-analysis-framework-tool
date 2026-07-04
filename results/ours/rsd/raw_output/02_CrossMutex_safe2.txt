@@ -1,0 +1,43 @@
+Starting Solidity compilation and static analysis.
+solc 0.8.28 already installed at: /home/maitri/.solcx/solc-v0.8.28
+Using solc version 0.8.28
+solc 0.8.28 already installed at: /home/maitri/.solcx/solc-v0.8.28
+Using solc version 0.8.28
+[CFG] Reentrancy back-edge inserted: ExpressionStatement_10 → IfStatement_0
+Dependency analysis completed in 0.0079s.
+[DOMAIN] Reentrancy encoding detected → Box + Octagon + Polka
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] Running Box domain.
+[TIMING] reentrancy domain=Box fixpoint=0.6374s
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW ==========
+solc 0.8.28 already installed at: /home/maitri/.solcx/solc-v0.8.28
+Using solc version 0.8.28
+
+========== PIPELINE 3: TIMESTAMP DEPENDENCY ==========
+
+========== PIPELINE 4: TOD ==========
+
+===== VERDICTS (Box) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+[TOD] Function FunctionDefinition_2: deposit reads storage variable flag which is written by externally callable function FunctionDefinition_1: withdraw. Reordering may affect FunctionDefinition_2: deposit's behavior.
+
+===== VERDICTS (Octagon) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+[TOD] Function FunctionDefinition_2: deposit reads storage variable flag which is written by externally callable function FunctionDefinition_1: withdraw. Reordering may affect FunctionDefinition_2: deposit's behavior.
+
+===== VERDICTS (Polka) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+[TOD] Function FunctionDefinition_2: deposit reads storage variable flag which is written by externally callable function FunctionDefinition_1: withdraw. Reordering may affect FunctionDefinition_2: deposit's behavior.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: NOT VULNERABLE
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: NOT VULNERABLE
+[SUMMARY] TOD: VULNERABLE
+
+Total analysis time: 1.47s
+

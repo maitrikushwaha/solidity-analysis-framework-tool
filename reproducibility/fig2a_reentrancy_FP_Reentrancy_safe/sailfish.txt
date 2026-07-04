@@ -1,0 +1,1 @@
+reentrancysafe.sol is Solidity ^0.8.20; Sailfish's bundled solc (<=0.6.x) cannot compile it -> COMPILE_ERROR (no verdict).

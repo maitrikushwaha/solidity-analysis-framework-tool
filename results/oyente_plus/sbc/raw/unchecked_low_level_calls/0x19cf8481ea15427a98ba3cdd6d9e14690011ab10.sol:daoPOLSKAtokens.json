@@ -1,0 +1,22 @@
+{
+ "evm_code_coverage": "4.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol:153:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol:329:24: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 37242216721855104332336715069043080207443529550194186342938410084480473280802\n    funding = 1",
+   "0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol:153:5: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [
+   "0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol:439:9: Warning: Callstack Depth Attack Vulnerability.\n",
+   "0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol:465:3: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

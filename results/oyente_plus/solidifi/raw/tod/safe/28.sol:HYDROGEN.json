@@ -1,0 +1,19 @@
+{
+ "evm_code_coverage": "7.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "28.sol:65:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    return _name = 1",
+   "28.sol:64:3: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    return _name = 0"
+  ],
+  "integer_overflow": [
+   "28.sol:65:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    return _name = 115792089237316195423570985008687907853269984665640564039457584007913129639681"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

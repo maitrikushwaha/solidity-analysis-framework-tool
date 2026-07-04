@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "78.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "18509.sol:11:3: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _amount = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    balances[_contract] = 0"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "18509.sol:10:11: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

@@ -1,0 +1,26 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40784.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.CWoKWSCltV' running
+INFO:CryticCompile:Compilation warnings/errors on 40784.sol:
+40784.sol:16:11: Warning: Return value of low-level calls not used.
+          msg.sender.call.value(amount)();
+          ^-----------------------------^
+40784.sol:14:5: Warning: No visibility specified. Defaulting to "public". 
+    function withdraw(uint amount) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 40784.sol:SimpleDAO:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 84.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:40784.sol:16:11: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:40784.sol:16:11: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40784.sol:SimpleDAO.json.

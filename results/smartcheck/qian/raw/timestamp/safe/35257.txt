@@ -1,0 +1,25 @@
+/work/datasets/qian/timestamp/safe/35257.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+patternId: 5616b2
+severity: 1
+line: 13
+column: 34
+content: private
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: 910067
+severity: 1
+line: 16
+column: 4
+content: functionaddLovers(bytes32love_hash,stringlovemsg,stringloveurl)payable{require(msg.value>=price);mapLoveItems[love_hash]=LoveItem(msg.sender,block.number,block.timestamp,lovemsg,loveurl);owner.transfer(price);return;}
+
+SOLIDITY_VISIBILITY :1
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA :1

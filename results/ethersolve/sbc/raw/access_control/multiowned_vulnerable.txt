@@ -1,0 +1,6 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/access_control/multiowned_vulnerable.sol:MultiOwnable
+offset,opcode,detection
+
+# contract /work/datasets/sbc/access_control/multiowned_vulnerable.sol:TestContract
+offset,opcode,detection

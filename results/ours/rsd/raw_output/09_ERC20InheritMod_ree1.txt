@@ -1,0 +1,37 @@
+Starting Solidity compilation and static analysis.
+solc 0.8.28 already installed at: /home/maitri/.solcx/solc-v0.8.28
+Using solc version 0.8.28
+solc 0.8.28 already installed at: /home/maitri/.solcx/solc-v0.8.28
+Using solc version 0.8.28
+[CFG] No reentrancy back-edge: no external-call encoding detected.
+Dependency analysis completed in 0.0159s.
+[DOMAIN] No reentrancy encoding → Box only
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] ERC-20 interface reentrancy detected.
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW ==========
+solc 0.8.28 already installed at: /home/maitri/.solcx/solc-v0.8.28
+Using solc version 0.8.28
+
+========== PIPELINE 3: TIMESTAMP DEPENDENCY ==========
+
+========== PIPELINE 4: TOD ==========
+
+===== VERDICTS (Box) =====
+[REENTRANCY] ERC-20 interface reentrancy in function 'donate' (line ~93). External call MyERC20(token).transfer() with attacker-controlled token address allows re-entry. State update after external call.
+[OVERFLOW] Variable totalSupply (uint256) at ExpressionStatement_0: arithmetic op '*' with external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935. (Solidity >=0.8: overflow reverts)
+[TOD] Function FunctionDefinition_12: donateTokens reads storage variable balances which is written by externally callable function FunctionDefinition_11: transferFrom. Reordering may affect FunctionDefinition_12: donateTokens's behavior.
+[TOD] Function FunctionDefinition_13: batchTransfer reads storage variable balances which is written by externally callable function FunctionDefinition_11: transferFrom. Reordering may affect FunctionDefinition_13: batchTransfer's behavior.
+[TOD] Function FunctionDefinition_11: transferFrom reads storage variable balances which is written by externally callable function FunctionDefinition_8: transfer. Reordering may affect FunctionDefinition_11: transferFrom's behavior.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: VULNERABLE
+[SUMMARY] Integer Overflow: VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: NOT VULNERABLE
+[SUMMARY] TOD: VULNERABLE
+
+Total analysis time: 1.24s
+

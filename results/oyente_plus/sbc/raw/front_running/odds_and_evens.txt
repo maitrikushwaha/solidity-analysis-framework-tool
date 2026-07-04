@@ -1,0 +1,56 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc odds_and_evens.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.iyWA5wP4I5' running
+INFO:CryticCompile:Compilation warnings/errors on odds_and_evens.sol:
+odds_and_evens.sol:21:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function OddsAndEvens() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+odds_and_evens.sol:26:31: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (msg.value != 1 ether) throw;
+                              ^---^
+odds_and_evens.sol:49:27: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if(msg.sender!=owner) throw;
+                          ^---^
+odds_and_evens.sol:50:32: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+    bool res = msg.sender.send(this.balance);
+                               ^----------^
+odds_and_evens.sol:21:3: Warning: No visibility specified. Defaulting to "public". 
+  function OddsAndEvens() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+odds_and_evens.sol:25:3: Warning: No visibility specified. Defaulting to "public". 
+  function play(uint number) payable{
+  ^ (Relevant source part starts here and spans across multiple lines).
+odds_and_evens.sol:48:3: Warning: No visibility specified. Defaulting to "public". 
+  function getProfit() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+odds_and_evens.sol:50:5: Warning: Unused local variable.
+    bool res = msg.sender.send(this.balance);
+    ^------^
+
+INFO:root:contract odds_and_evens.sol:OddsAndEvens:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 93.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:odds_and_evens.sol:36:14: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    tot = 1
+    players[1].number = 60373226545577530331518837846126442086170146149441209342680576745514071130752
+    players[0].number = 63739086369732976365162596263284212086002798484365468887259142861349055554176
+INFO:symExec:odds_and_evens.sol:38:13: Warning: Callstack Depth Attack Vulnerability.
+
+odds_and_evens.sol:41:13: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:Flow1
+odds_and_evens.sol:50:16: Warning: Transaction-Ordering Dependency.
+
+Flow2
+odds_and_evens.sol:41:13: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to odds_and_evens.sol:OddsAndEvens.json.

@@ -1,0 +1,51 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.hUdB2IW9NA' running
+INFO:CryticCompile:Compilation warnings/errors on 0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:
+0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:55:9: Warning: Return value of low-level calls not used.
+        _dst.call.value(_value)(_data);
+        ^----------------------------^
+
+INFO:root:contract 0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:Marriage:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 5.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:70:5: Warning: Integer Underflow.
+
+INFO:symExec:0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:70:5: Warning: Integer Overflow.
+
+INFO:symExec:0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:2:1: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:Marriage.json.
+INFO:root:contract 0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:Owned:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 80.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:2:1: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    owner = 0
+INFO:symExec:0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:53:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:5:1: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner = 11417981541647679048466287755595961092135714817
+INFO:symExec:0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:2:1: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:Owned.json.

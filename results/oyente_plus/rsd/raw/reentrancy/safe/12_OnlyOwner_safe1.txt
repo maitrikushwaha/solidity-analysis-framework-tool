@@ -1,0 +1,4 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 12_OnlyOwner_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.4pMuwOPBog' running
+INFO:root:contract 12_OnlyOwner_safe1.sol:ControlledPayout:
+INFO:symExec:	============ Results ===========

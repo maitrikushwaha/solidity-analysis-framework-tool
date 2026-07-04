@@ -1,0 +1,38 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 00_BasicStaticcall_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.51ezGjXWsa' running
+INFO:root:contract 00_BasicStaticcall_safe1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 92.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:00_BasicStaticcall_safe1.sol:5:5: Warning: Integer Underflow.
+
+00_BasicStaticcall_safe1.sol:11:28: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 862718293348820473429344482784628181556388621521298319395315527974912
+00_BasicStaticcall_safe1.sol:19:4182: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 200867255532373784442745261542645325315275374222849104412672
+00_BasicStaticcall_safe1.sol:12:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 26959946667150639794667015087019630673637144422540572481103610249216
+00_BasicStaticcall_safe1.sol:19:2108: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+00_BasicStaticcall_safe1.sol:9:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+INFO:symExec:00_BasicStaticcall_safe1.sol:19:1032: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 00_BasicStaticcall_safe1.sol:C.json.

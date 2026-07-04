@@ -1,0 +1,21 @@
+{
+ "evm_code_coverage": "77.6",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "reentrancy_insecure.sol:4:2: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    userBalances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969",
+   "reentrancy_insecure.sol:3:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    userBalances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819972"
+  ],
+  "callstack": [
+   "reentrancy_insecure.sol:17:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "reentrancy_insecure.sol:17:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

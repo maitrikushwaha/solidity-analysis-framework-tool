@@ -1,0 +1,22 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 2253.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.gJlhRnorcL' running
+INFO:root:contract 2253.sol:CardsRaffle:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 65.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:2253.sol:8:20: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    raffleTicketsBought = 95235721736379883315001763940616669011307430545820611921043079414295449969311
+2253.sol:9:27: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    raffleTicketsBought = 108583850231458656121627270733818130229814001566534529145329180499821641859072
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 2253.sol:CardsRaffle.json.

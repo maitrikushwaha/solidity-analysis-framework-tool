@@ -1,0 +1,77 @@
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Analysis started at: 2026-06-21 07:15:09 PM
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Callgraph generation started!
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Value Range Analysis started
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Generating return summary for transfer
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Return summary generated for transfer
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Range graph generated
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Processed function transfer
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Value Range Analysis took 0.000355 seconds
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Dependency detection started!
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | DAO dependency detected in file 50011.sol in contract ERC223TokenCompatible in by composing functions transfer and transfer
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | TOD dependency detected in file 50011.sol in contract ERC223TokenCompatible in by composing functions transfer and transfer
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Dependency detection finished!
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Static Analysis took 0.063935 seconds
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Dependency exists
+[INFO] | 2026-06-21 07:15:09 PM | analyzer.50011  | Invoking symbolic executor!
+[36m[#] Analysing started: 50011.sol[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[INFO] | 2026-06-21 07:15:10 PM | analyzer.50011  | Symbolic execution took 1.359322 seconds
+[INFO] | 2026-06-21 07:15:10 PM | analyzer.50011  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:15:10 PM | analyzer.50011  | Analysis finished!
+[INFO] | 2026-06-21 07:15:10 PM | analyzer.50011  | Analysis took 1.423858 seconds
+[INFO] | 2026-06-21 07:15:10 PM | analyzer.50011  | Analysis finished at: 2026-06-21 07:15:10 PM
+[36m[#] Analysis took 1.423858 seconds[0m
+[36m[#] Analysis completed: 50011.sol [0m
+
+=== dependency_info.json ===
+{
+    "50011.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "transfer",
+                "transfer"
+            ],
+            "from_function": "transfer",
+            "to_function": "transfer",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 6\nFunction: transfer\nNode: \nEXPRESSION require(bool)(_value <= balances[msg.sender])\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\"",
+                        "\"BlockID: 4\nFunction: transfer\nNode: \nEXPRESSION balances[msg.sender] = balances[msg.sender] - _value\nIRS: \nREF_3 := TMP_4\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "transfer",
+                "transfer"
+            ],
+            "First_function": "transfer",
+            "Second_function": "transfer",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: transfer\nNode: \nEXPRESSION balances[msg.sender] = balances[msg.sender] - _value\nIRS: \nREF_3 := TMP_4\"",
+                        "\"BlockID: 2\nFunction: transfer\nNode: \nEXPRESSION require(bool)(_value <= balances[msg.sender])\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        }
+    ]
+}

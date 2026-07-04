@@ -1,0 +1,32 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/vulnerable' running
+
+Reentrancy in C.withdraw() (datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol#29-34):
+	External calls:
+	- (success,None) = msg.sender.call{value: balances[msg.sender]}() (datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol#31)
+	State variables written after the call(s):
+	- update(msg.sender,- int256(balances[msg.sender])) (datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol#33)
+		- balances[a] -= uint256(amt) (datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol#18)
+		- balances[a] += uint256(amt) (datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol#20)
+	C.balances (datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol#6) can be used in cross function reentrancies:
+	- C.balances (datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol#6)
+	- C.update(address,int256) (datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol#16-21)
+	- C.withdraw() (datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol#29-34)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+C (datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol#4-41) has incorrect ERC20 function interface:C.transfer(address,uint256) (datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol#23-27)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-erc20-interface
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol#1)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in C.withdraw() (datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol#29-34):
+	- (success,None) = msg.sender.call{value: balances[msg.sender]}() (datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol#31)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/work/datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol analyzed (1 contracts with 93 detectors), 4 result(s) found

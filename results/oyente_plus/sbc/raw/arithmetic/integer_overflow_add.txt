@@ -1,0 +1,19 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc integer_overflow_add.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.yifCQxR0yu' running
+INFO:root:contract integer_overflow_add.sol:IntegerOverflowAdd:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 71.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:integer_overflow_add.sol:17:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    count = 90612310279450192762509999569073406819412893354215485307353007253607489118476
+    input = 25650671635628077330008020994425597968451114935058687386511328258514137670005
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to integer_overflow_add.sol:IntegerOverflowAdd.json.

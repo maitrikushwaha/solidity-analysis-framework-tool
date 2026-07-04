@@ -1,0 +1,14 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 8141.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.7FMysJT2Eo' running
+INFO:root:contract 8141.sol:Inner4WithEth:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 46.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 8141.sol:Inner4WithEth.json.

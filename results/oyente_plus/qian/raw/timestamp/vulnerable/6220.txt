@@ -1,0 +1,32 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 6220.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.Ri32s1gAK8' running
+INFO:CryticCompile:Compilation warnings/errors on 6220.sol:
+6220.sol:11:34: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        uint minedHashRel = uint(sha256(minedAtBlock + randomNumber)) % 10000000;
+                                 ^---------------------------------^
+6220.sol:11:34: Warning: The provided argument of type uint256 is not implicitly convertible to expected type bytes memory.
+        uint minedHashRel = uint(sha256(minedAtBlock + randomNumber)) % 10000000;
+                                 ^---------------------------------^
+6220.sol:10:34: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        uint minedAtBlock = uint(block.blockhash(block.number - 1));
+                                 ^-------------^
+
+INFO:root:contract 6220.sol:MINEA:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:6220.sol:11:34: Warning: Integer Overflow.
+
+6220.sol:13:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    randomNumber = 73691252784013223506030921413053373826419683915513620195428683083898653386688
+    successesOf[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 6220.sol:MINEA.json.

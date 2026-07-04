@@ -1,0 +1,35 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50669.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.4nasMDPZkt' running
+INFO:CryticCompile:Compilation warnings/errors on 50669.sol:
+50669.sol:25:20: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function place(uint cell) external returns (uint){
+                   ^-------^
+
+INFO:root:contract 50669.sol:LOTT:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:50669.sol:12:21: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    rand1 = 62449248004479264610045903397385922333695504792936186587559103694911506178047
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50669.sol:LOTT.json.
+INFO:root:contract 50669.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50669.sol:SafeMath.json.

@@ -1,0 +1,38 @@
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Analysis started at: 2026-06-21 07:13:37 PM
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Generating return summary for Collect
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Return summary generated for Collect
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Range graph generated
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Processed function Collect
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Range graph generated
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Value Range Analysis took 0.000443 seconds
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Static Analysis took 0.025773 seconds
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Dependency does not exist
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Analysis finished!
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Analysis took 0.025871 seconds
+[INFO] | 2026-06-21 07:13:37 PM | analyzer.22074  | Analysis finished at: 2026-06-21 07:13:37 PM
+[36m[#] Analysing started: 22074.sol[0m
+[36m[#] Interprocedural CFG generation started for Collect[0m
+[36m[#] Interprocedural CFG generated for Collect[0m
+[36m[#] SDG generation started for Collect[0m
+[36m[#] SDG generated for Collect[0m
+[36m[#] Analysis took 0.025871 seconds[0m
+[36m[#] Analysis completed: 22074.sol [0m
+
+=== dependency_info.json ===
+{}

@@ -1,0 +1,34 @@
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Analysis started at: 2026-06-21 07:10:35 PM
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Callgraph generation started!
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Value Range Analysis started
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Generating return summary for donate
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Return summary generated for donate
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Processed function donate
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Value Range Analysis took 0.000349 seconds
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Dependency detection started!
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Dependency detection finished!
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Static Analysis took 0.036047 seconds
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Dependency does not exist
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Analysis finished!
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Analysis took 0.036238 seconds
+[INFO] | 2026-06-21 07:10:35 PM | analyzer.18438  | Analysis finished at: 2026-06-21 07:10:35 PM
+[36m[#] Analysing started: 18438.sol[0m
+[36m[#] Interprocedural CFG generation started for donate[0m
+[36m[#] Interprocedural CFG generated for donate[0m
+[36m[#] SDG generation started for donate[0m
+[36m[#] SDG generated for donate[0m
+[36m[#] Analysis took 0.036238 seconds[0m
+[36m[#] Analysis completed: 18438.sol [0m
+
+=== dependency_info.json ===
+{}

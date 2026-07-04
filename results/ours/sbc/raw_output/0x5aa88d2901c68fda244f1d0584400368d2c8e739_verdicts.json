@@ -1,0 +1,14 @@
+{
+  "filename": "0x5aa88d2901c68fda244f1d0584400368d2c8e739.sol",
+  "reentrancy": 0,
+  "overflow": 0,
+  "timestamp": 0,
+  "tod": 0,
+  "duration_s": 1.15,
+  "error": null,
+  "reentrancy_domains": [
+    "Box",
+    "Octagon",
+    "Polka"
+  ]
+}

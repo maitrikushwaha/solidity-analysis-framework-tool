@@ -1,0 +1,22 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 4467.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.8xlsBJAPxN' running
+INFO:root:contract 4467.sol:TydoIco:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 56.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:4467.sol:5:3: Warning: Integer Overflow.
+
+4467.sol:10:10: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    bonuses.length = 5708990770823839524233143877797980545530986496
+    bonusEnds[i] = 47890485652059026823698344598447161988085597568237568
+    bonusEnds[i] = 2
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 4467.sol:TydoIco.json.

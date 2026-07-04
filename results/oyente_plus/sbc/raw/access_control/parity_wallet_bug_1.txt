@@ -1,0 +1,36 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc parity_wallet_bug_1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc' running
+INFO:CryticCompile:Compilation warnings/errors on parity_wallet_bug_1.sol:
+parity_wallet_bug_1.sol:377:37: Warning: This looks like an address but has an invalid checksum.
+  address constant _walletLibrary = 0xcafecafecafecafecafecafecafecafecafecafe;
+                                    ^----------------------------------------^
+parity_wallet_bug_1.sol:417:14: Warning: Inline assembly block is not balanced. It leaves 1 item(s) on the stack.
+    assembly {
+             ^
+Spanning multiple lines.
+parity_wallet_bug_1.sol:437:7: Warning: Return value of low-level calls not used.
+      _walletLibrary.delegatecall(msg.data); //it should have whitelisted specific methods that the user is allowed to call
+      ^-----------------------------------^
+parity_wallet_bug_1.sol:456:37: Warning: This looks like an address but has an invalid checksum.
+  address constant _walletLibrary = 0xcafecafecafecafecafecafecafecafecafecafe;
+                                    ^----------------------------------------^
+
+Traceback (most recent call last):
+  File "/oyente/oyente.py", line 403, in <module>
+    exit(main())
+         ^^^^^^
+  File "/oyente/oyente.py", line 397, in main
+    exit_code = analyze_solidity(args)
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/oyente/oyente.py", line 186, in analyze_solidity
+    inputs = helper.get_inputs(global_params.TARGET_CONTRACTS)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oyente/input_helper.py", line 213, in get_inputs
+    source_map = SourceMap(
+                 ^^^^^^^^^^
+  File "/oyente/source_map.py", line 63, in __init__
+    SourceMap.func_to_sig_by_contract = SourceMap._get_sig_to_func_by_contract()
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/oyente/source_map.py", line 243, in _get_sig_to_func_by_contract
+    raise RuntimeError(
+RuntimeError: Solidity compilation failed. Command 'solc --combined-json hashes  parity_wallet_bug_1.sol' produced empty output. This may be due to compilation errors or unsupported compiler flags.

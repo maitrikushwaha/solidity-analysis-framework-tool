@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "84.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "22074.sol:12:13: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    Bal[msg.sender] = 0\n    MinSum = 0\n    _am = 1"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "75.1",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "42.sol:48:17: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    basePercent = 36243639471025000074110961378130555558972539571693660181898594321676888451756\n    stakeTokens = 109632127342345210532777667868223032427575384970044956091838811853566534757034",
+   "42.sol:105:41: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 1208925819614629174706177\n    staker[msg.sender].redeem = 0\n    staker[msg.sender].time = 0",
+   "42.sol:105:68: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 1208925819614629174706177\n    staker[msg.sender].redeem = 0\n    staker[msg.sender].time = 0",
+   "42.sol:106:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 1208925819614629174706177\n    staker[msg.sender].redeem = 0\n    staker[msg.sender].time = 0",
+   "42.sol:107:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 1208925819614629174706177\n    staker[msg.sender].redeem = 256\n    staker[msg.sender].time = 0"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

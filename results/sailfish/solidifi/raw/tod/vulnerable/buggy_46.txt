@@ -1,0 +1,1 @@
+COMPILE_ERROR: no compatible solc (<=0.6.x) for this contract's pragma

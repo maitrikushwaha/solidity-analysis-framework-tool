@@ -1,0 +1,77 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 02_CrossMutexUnchecked_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.HKyVNhv5xV' running
+INFO:root:contract 02_CrossMutexUnchecked_safe1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 84.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:02_CrossMutexUnchecked_safe1.sol:6:5: Warning: Integer Underflow.
+
+02_CrossMutexUnchecked_safe1.sol:22:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 59849323381205851970197521066982367775278984893830421173511412372910683283456
+    balances[msg.sender] = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+    balances[msg.sender] = 0
+02_CrossMutexUnchecked_safe1.sol:36:3671: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 0
+    balances[msg.sender] = 0
+02_CrossMutexUnchecked_safe1.sol:16:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 3646772341702585256259926041533383816667926763151277530791191319876911235200
+02_CrossMutexUnchecked_safe1.sol:36:6393: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+    balances[msg.sender] = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+    flag = 0
+    balances[to] = 87147968134906568569172490880080237091577488643718659577373589915330045589138
+02_CrossMutexUnchecked_safe1.sol:9:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 224306756270693323091629565524003327204661041595537563042782037273477280
+02_CrossMutexUnchecked_safe1.sol:32:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 58800670315824630488532140824724350508164427352485617388932076242243428548608
+INFO:symExec:02_CrossMutexUnchecked_safe1.sol:36:549: Warning: Integer Overflow.
+
+02_CrossMutexUnchecked_safe1.sol:24:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 28490408919551447320660654362943154697847252821063118559168782135392731140
+    balances[msg.sender] = 72372043477975240543487416299790826264753461463642383483752573239130946273280
+02_CrossMutexUnchecked_safe1.sol:20:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 88879474746611845315358197477371773020185749948431136069349278349823945736192
+    balances[msg.sender] = 0
+02_CrossMutexUnchecked_safe1.sol:36:3617: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 0
+    balances[msg.sender] = 0
+02_CrossMutexUnchecked_safe1.sol:36:1898: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 51622885288421757407798831190345929060518633200538425873534024
+    balances[msg.sender] = 0
+02_CrossMutexUnchecked_safe1.sol:10:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+    flag = 42535306006322109758757037902596673536
+INFO:symExec:02_CrossMutexUnchecked_safe1.sol:24:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:02_CrossMutexUnchecked_safe1.sol:24:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 02_CrossMutexUnchecked_safe1.sol:C.json.

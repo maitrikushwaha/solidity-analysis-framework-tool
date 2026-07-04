@@ -1,0 +1,33 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40357.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.uZo0sN8WVJ' running
+INFO:CryticCompile:Compilation warnings/errors on 40357.sol:
+40357.sol:10:46: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'. Correct checksummed address: '0x2BD2326c993DFaeF84f696526064FF22eba5b362'. For more information please see https://solidity.readthedocs.io/en/develop/types.html#address-literals
+    AmIOnTheFork amIOnTheFork = AmIOnTheFork(0x2bd2326c993dfaef84f696526064ff22eba5b362);
+                                             ^----------------------------------------^
+40357.sol:14:13: Warning: Return value of low-level calls not used.
+            ethDestination.call.value(msg.value)();
+            ^------------------------------------^
+40357.sol:5:5: Warning: No visibility specified. Defaulting to "public". 
+    function forked() constant returns(bool);
+    ^---------------------------------------^
+40357.sol:12:5: Warning: No visibility specified. Defaulting to "public". 
+    function split(address ethDestination) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+40357.sol:14:39: Warning: "msg.value" used in non-payable function. Do you want to add the "payable" modifier to this function?
+            ethDestination.call.value(msg.value)();
+                                      ^-------^
+
+INFO:root:contract 40357.sol:SellETCSafely:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 77.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:40357.sol:13:13: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40357.sol:SellETCSafely.json.

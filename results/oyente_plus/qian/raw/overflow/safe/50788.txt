@@ -1,0 +1,41 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50788.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.Qr0j9q6Jxf' running
+INFO:CryticCompile:Compilation warnings/errors on 50788.sol:
+50788.sol:19:53: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(!fundingAccount.call.value(msg.value)()) throw;
+                                                    ^---^
+50788.sol:18:5: Warning: No visibility specified. Defaulting to "public". 
+    function buy(string _commit) payable {
+    ^ (Relevant source part starts here and spans across multiple lines).
+50788.sol:18:18: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function buy(string _commit) payable {
+                 ^------------^
+
+INFO:root:contract 50788.sol:NinjaToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 58.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:50788.sol:14:5: Warning: Integer Underflow.
+
+INFO:symExec:50788.sol:14:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50788.sol:NinjaToken.json.
+INFO:root:contract 50788.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50788.sol:SafeMath.json.

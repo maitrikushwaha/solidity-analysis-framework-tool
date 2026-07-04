@@ -1,0 +1,111 @@
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Analysis started at: 2026-06-21 07:02:33 PM
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Callgraph generation started!
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Callgraph generation finished!
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Value Range Analysis started
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Generating return summary for OddsAndEvens
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Return summary generated for OddsAndEvens
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Range graph generated
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Processed function OddsAndEvens
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Generating return summary for andTheWinnerIs
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Return summary generated for andTheWinnerIs
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Range graph generated
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Processed function andTheWinnerIs
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Generating return summary for getProfit
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Return summary generated for getProfit
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | State variable assignement do not exist
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Processed function getProfit
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Generating return summary for play
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Return summary generated for play
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Range graph generated
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Processed function play
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Value Range Analysis took 0.006360 seconds
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Value Range Analysis finished
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Dependency detection started!
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | TOD dependency detected in file odds_and_evens.sol in contract OddsAndEvens in by composing functions play and play
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | TOD dependency detected in file odds_and_evens.sol in contract OddsAndEvens in by composing functions play and play
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Dependency detection finished!
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Static Analysis took 0.277286 seconds
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Dependency exists
+[INFO] | 2026-06-21 07:02:33 PM | analyzer.odds_and_evens | Invoking symbolic executor!
+[36m[#] Analysing started: odds_and_evens.sol[0m
+[36m[#] Interprocedural CFG generation started for OddsAndEvens[0m
+[36m[#] Interprocedural CFG generated for OddsAndEvens[0m
+[36m[#] Interprocedural CFG generation started for play[0m
+[36m[#] Interprocedural CFG generated for play[0m
+[36m[#] Interprocedural CFG generation started for getProfit[0m
+[36m[#] Interprocedural CFG generated for getProfit[0m
+[36m[#] SDG generation started for OddsAndEvens[0m
+[36m[#] SDG generated for OddsAndEvens[0m
+[36m[#] SDG generation started for play[0m
+[36m[#] SDG generated for play[0m
+[36m[#] SDG generation started for getProfit[0m
+[36m[#] SDG generated for getProfit[0m
+[INFO] | 2026-06-21 07:02:36 PM | analyzer.odds_and_evens | Symbolic execution took 2.789064 seconds
+[INFO] | 2026-06-21 07:02:36 PM | analyzer.odds_and_evens | Symbolic execution finished!
+[INFO] | 2026-06-21 07:02:36 PM | analyzer.odds_and_evens | Analysis finished!
+[INFO] | 2026-06-21 07:02:36 PM | analyzer.odds_and_evens | Analysis took 3.067542 seconds
+[INFO] | 2026-06-21 07:02:36 PM | analyzer.odds_and_evens | Analysis finished at: 2026-06-21 07:02:36 PM
+[36m[#] Analysis took 3.067542 seconds[0m
+[36m[#] Analysis completed: odds_and_evens.sol [0m
+
+=== dependency_info.json ===
+{
+    "odds_and_evens.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "play",
+                "play"
+            ],
+            "First_function": "play",
+            "Second_function": "play",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: play\nNode: \nEXPRESSION tot ++\nIRS: \ntot = tot + 1\"",
+                        "\"BlockID: 7\nFunction: play\nNode: \nIF tot == 2\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "tot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: andTheWinnerIs\nNode: \nEXPRESSION tot = 0\nIRS: \ntot := 0\"",
+                        "\"BlockID: 7\nFunction: play\nNode: \nIF tot == 2\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "tot"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "play",
+                "play"
+            ],
+            "First_function": "play",
+            "Second_function": "play",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 33\nFunction: play\nNode: \nEXPRESSION tot ++\nIRS: \ntot = tot + 1\"",
+                        "\"BlockID: 7\nFunction: play\nNode: \nIF tot == 2\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "tot"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 41\nFunction: andTheWinnerIs\nNode: \nEXPRESSION tot = 0\nIRS: \ntot := 0\"",
+                        "\"BlockID: 7\nFunction: play\nNode: \nIF tot == 2\nIRS: \nCONDITION TMP_3\""
+                    ],
+                    "state_variable": "tot"
+                }
+            ]
+        }
+    ]
+}

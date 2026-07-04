@@ -1,0 +1,28 @@
+{
+  "reentrancy": {
+    "tp": 69,
+    "fp": 11,
+    "tn": 142,
+    "fn": 0,
+    "na": 0,
+    "precision": 0.8625,
+    "recall": 1.0,
+    "f1": 0.9262,
+    "accuracy": 0.9505,
+    "fp_files": [
+      "reentrancy/29090.sol",
+      "reentrancy/37708.sol",
+      "reentrancy/38828.sol",
+      "reentrancy/39151.sol",
+      "reentrancy/39749.sol",
+      "reentrancy/40336.sol",
+      "reentrancy/40771.sol",
+      "reentrancy/50007.sol",
+      "reentrancy/50030.sol",
+      "reentrancy/50035.sol",
+      "reentrancy/50036.sol"
+    ],
+    "fn_files": [],
+    "na_files": []
+  }
+}

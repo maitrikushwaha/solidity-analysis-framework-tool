@@ -1,0 +1,39 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/access_control/arbitrary_location_write_simple.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/access_control' running
+
+Wallet (datasets/sbc/access_control/arbitrary_location_write_simple.sol#9-40) contract sets array length with a user-controlled value:
+	- bonusCodes.push(c) (datasets/sbc/access_control/arbitrary_location_write_simple.sol#22)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#array-length-assignment
+
+Wallet.PopBonusCode() (datasets/sbc/access_control/arbitrary_location_write_simple.sol#25-29) contains a tautology or contradiction:
+	- require(bool)(0 <= bonusCodes.length) (datasets/sbc/access_control/arbitrary_location_write_simple.sol#27)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#tautology-or-contradiction
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/sbc/access_control/arbitrary_location_write_simple.sol#7)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Function Wallet.PushBonusCode(uint256) (datasets/sbc/access_control/arbitrary_location_write_simple.sol#21-23) is not in mixedCase
+Function Wallet.PopBonusCode() (datasets/sbc/access_control/arbitrary_location_write_simple.sol#25-29) is not in mixedCase
+Function Wallet.UpdateBonusCodeAt(uint256,uint256) (datasets/sbc/access_control/arbitrary_location_write_simple.sol#31-34) is not in mixedCase
+Function Wallet.Destroy() (datasets/sbc/access_control/arbitrary_location_write_simple.sol#36-39) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+/work/datasets/sbc/access_control/arbitrary_location_write_simple.sol analyzed (1 contracts with 93 detectors), 8 result(s) found

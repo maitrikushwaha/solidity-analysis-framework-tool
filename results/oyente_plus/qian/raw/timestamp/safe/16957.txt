@@ -1,0 +1,23 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 16957.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.44OAUruHYC' running
+INFO:CryticCompile:Compilation warnings/errors on 16957.sol:
+16957.sol:11:5: Warning: Function state mutability can be restricted to view
+    function UpdateMoney() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 16957.sol:RigIdle:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 67.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:16957.sol:13:21: Warning: Integer Underflow.
+
+INFO:symExec:16957.sol:13:39: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 16957.sol:RigIdle.json.

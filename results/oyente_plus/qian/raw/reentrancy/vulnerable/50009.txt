@@ -1,0 +1,60 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50009.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.HpZsaoK9CY' running
+INFO:CryticCompile:Compilation warnings/errors on 50009.sol:
+50009.sol:23:17: Warning: Return value of low-level calls not used.
+                participants[payoutOrder].etherAddress.call.value(payoutToSend).gas(1000000)();
+                ^----------------------------------------------------------------------------^
+
+INFO:root:contract 50009.sol:BoomerangLiquidity:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 79.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:50009.sol:10:5: Warning: Integer Overflow.
+
+50009.sol:20:43: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    payoutOrder = 43572272142598013823216551299209816328195567771593934019407436276456722245303
+    participants[payoutOrder] = 43998302701450696989454107721139667863187395855123830992159520251080074913535
+50009.sol:20:43: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    payoutOrder = 28948022309329048855892746252188033586972755300778090607835329084334809284608
+    participants[payoutOrder] = 57896044618658097711785492504379992017988134905537902901743442581521239638018
+50009.sol:23:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    payoutOrder = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+    participants[payoutOrder] = 28948022309329048855892746252171976963317496166410141009864396001978282409985
+50009.sol:24:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    payoutOrder = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+    participants[payoutOrder] = 28948022309329048855892746252171976963317496166410141009864396001978282409986
+50009.sol:24:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    payoutOrder = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+    participants[payoutOrder] = 28948022309329048855892746252171976963317496166410141009864396001978282409986
+50009.sol:20:88: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    payoutOrder = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+    participants[payoutOrder] = 28948022309329048855892746252171976963317496166410141009864396001978282409986
+50009.sol:20:88: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    payoutOrder = 28948022309329048855892746252171976963317496166410141009864396001978282409984
+    participants[payoutOrder] = 28948022309329048855892746252171976963317496166410141009864396001978282409986
+INFO:symExec:50009.sol:23:17: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:50009.sol:23:17: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50009.sol:BoomerangLiquidity.json.

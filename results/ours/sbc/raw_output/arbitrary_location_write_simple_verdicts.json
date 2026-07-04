@@ -1,0 +1,12 @@
+{
+  "filename": "arbitrary_location_write_simple.sol",
+  "reentrancy": 0,
+  "overflow": 0,
+  "timestamp": 0,
+  "tod": 0,
+  "duration_s": 1.39,
+  "error": null,
+  "reentrancy_domains": [
+    "Box"
+  ]
+}

@@ -1,0 +1,4 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/qian/reentrancy/safe/39664.sol:Blockjack
+offset,opcode,detection
+600,600: SLOAD,Store read after unsafe call

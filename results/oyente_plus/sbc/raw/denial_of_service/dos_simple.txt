@@ -1,0 +1,18 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc dos_simple.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.MFw7Cq7TMZ' running
+INFO:root:contract dos_simple.sol:DosOneFunc:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 50.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:dos_simple.sol:10:1: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    listAddresses.length = 36323082332822582021637431004964458663483085419708028762024340976525621461056
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to dos_simple.sol:DosOneFunc.json.

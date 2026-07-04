@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "28.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "lucky_doubler.sol:170:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    users[user].id = 0"
+  ],
+  "integer_overflow": [],
+  "callstack": [
+   "lucky_doubler.sol:74:10: Warning: Callstack Depth Attack Vulnerability.\n",
+   "lucky_doubler.sol:102:13: Warning: Callstack Depth Attack Vulnerability.\n",
+   "lucky_doubler.sol:119:17: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

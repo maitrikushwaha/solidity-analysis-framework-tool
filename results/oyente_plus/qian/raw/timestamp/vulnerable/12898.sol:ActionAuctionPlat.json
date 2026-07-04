@@ -1,0 +1,17 @@
+{
+ "evm_code_coverage": "91.8",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "12898.sol:16:37: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    auctionArray[lastIndex] = 17055075117530390290281879521502766365361137751832839276848951044616055427046\n    latestAction[_tokenId] = 14676012073713098016496183912198576280532916314203242522148509971513004786196",
+   "12898.sol:9:5: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

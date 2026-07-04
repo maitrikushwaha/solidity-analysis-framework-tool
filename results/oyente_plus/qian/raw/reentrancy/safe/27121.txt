@@ -1,0 +1,26 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 27121.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.vztsB3sqQs' running
+INFO:CryticCompile:Compilation warnings/errors on 27121.sol:
+27121.sol:17:13: Warning: This declaration shadows a builtin symbol.
+            Transaction tx = transactions[transactionId];
+            ^------------^
+27121.sol:17:13: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+            Transaction tx = transactions[transactionId];
+            ^------------^
+
+INFO:root:contract 27121.sol:MultiSigWallet:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 52.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:27121.sol:6:5: Warning: Integer Underflow.
+
+INFO:symExec:27121.sol:6:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 27121.sol:MultiSigWallet.json.

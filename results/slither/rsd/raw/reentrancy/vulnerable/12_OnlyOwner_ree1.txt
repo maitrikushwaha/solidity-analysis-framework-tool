@@ -1,0 +1,40 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/vulnerable' running
+
+Reentrancy in ControlledPayout.payAll() (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#30-34):
+	External calls:
+	- pay(pendingPayments[i].recipient,pendingPayments[i].amount) (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#32)
+		- (success,None) = recipient.call{value: amount}() (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#39)
+	State variables written after the call(s):
+	- delete pendingPayments (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#33)
+	ControlledPayout.pendingPayments (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#12) can be used in cross function reentrancies:
+	- ControlledPayout.payAll() (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#30-34)
+	- ControlledPayout.requestPay(address) (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#25-28)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+ControlledPayout.pay(address,uint256).recipient (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#36) lacks a zero-check on :
+		- (success,None) = recipient.call{value: amount}() (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#39)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+ControlledPayout.pay(address,uint256) (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#36-41) has external calls inside a loop: (success,None) = recipient.call{value: amount}() (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#39)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation/#calls-inside-a-loop
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in ControlledPayout.pay(address,uint256) (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#36-41):
+	- (success,None) = recipient.call{value: amount}() (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#39)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Loop condition i < pendingPayments.length (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#31) should use cached array length instead of referencing `length` member of the storage array.
+ Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#cache-array-length
+
+ControlledPayout.owner (datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol#11) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+/work/datasets/rsd/reentrancy/vulnerable/12_OnlyOwner_ree1.sol analyzed (1 contracts with 93 detectors), 7 result(s) found

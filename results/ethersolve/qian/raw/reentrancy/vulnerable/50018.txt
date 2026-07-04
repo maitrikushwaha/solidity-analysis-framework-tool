@@ -1,0 +1,6 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/qian/reentrancy/vulnerable/50018.sol:PreICOProxyBuyer
+offset,opcode,detection
+431,431: SLOAD,Store read after unsafe call
+525,525: SLOAD,Store read after unsafe call
+615,615: SSTORE,Store write after unsafe call

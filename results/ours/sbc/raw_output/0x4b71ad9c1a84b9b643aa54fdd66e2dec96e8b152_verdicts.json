@@ -1,0 +1,12 @@
+{
+  "filename": "0x4b71ad9c1a84b9b643aa54fdd66e2dec96e8b152.sol",
+  "reentrancy": 0,
+  "overflow": 0,
+  "timestamp": 0,
+  "tod": 0,
+  "duration_s": 1.28,
+  "error": null,
+  "reentrancy_domains": [
+    "Box"
+  ]
+}

@@ -1,0 +1,27 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 13413.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.sn8gx74dIW' running
+INFO:root:contract 13413.sol:PLCRVoting:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:13413.sol:16:30: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _commitDuration = 87522543116091692642898991470747911540473016816853618691036649129099924882818
+13413.sol:17:30: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _commitDuration = 29456874332281890209883348956247684718274426803610056459378754686031190820897
+    _revealDuration = 100874599943723384954160387357362392062686164703082665607194252046009521503239
+13413.sol:19:9: Warning: Integer Overflow.
+
+13413.sol:13:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 13413.sol:PLCRVoting.json.

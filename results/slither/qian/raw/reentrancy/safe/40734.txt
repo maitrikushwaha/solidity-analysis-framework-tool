@@ -1,0 +1,38 @@
+
+'solc --version' running
+'solc /work/datasets/qian/reentrancy/safe/40734.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/reentrancy/safe' running
+
+crossFunctionReentrancy.WithdrawReward(address) (datasets/qian/reentrancy/safe/40734.sol#8-12) sends eth to arbitrary user
+	Dangerous calls:
+	- require(bool)(recipient.call.value(amountToWithdraw)()) (datasets/qian/reentrancy/safe/40734.sol#11)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/reentrancy/safe/40734.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in crossFunctionReentrancy.WithdrawReward(address) (datasets/qian/reentrancy/safe/40734.sol#8-12):
+	- require(bool)(recipient.call.value(amountToWithdraw)()) (datasets/qian/reentrancy/safe/40734.sol#11)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Contract crossFunctionReentrancy (datasets/qian/reentrancy/safe/40734.sol#4-13) is not in CapWords
+Function crossFunctionReentrancy.WithdrawReward(address) (datasets/qian/reentrancy/safe/40734.sol#8-12) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+/work/datasets/qian/reentrancy/safe/40734.sol analyzed (1 contracts with 93 detectors), 6 result(s) found

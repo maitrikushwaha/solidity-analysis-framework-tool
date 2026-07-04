@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "88.5",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "15_ReadOnly_safe2.sol:45:5: Warning: Integer Underflow.\n",
+   "15_ReadOnly_safe2.sol:44:5: Warning: Integer Underflow.\n",
+   "15_ReadOnly_safe2.sol:49:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 65585820299170351060534981674592553104982477922981632397119374634586659094528",
+   "15_ReadOnly_safe2.sol:64:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 28948022323230284211744728682834777843596489962684260312198989960426607869952",
+   "15_ReadOnly_safe2.sol:61:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 1011078232819430432604041994800135120682277659987072948785089148689701666816"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

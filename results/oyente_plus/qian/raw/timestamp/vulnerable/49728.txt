@@ -1,0 +1,23 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 49728.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.hydIYzNrtc' running
+INFO:CryticCompile:Compilation warnings/errors on 49728.sol:
+49728.sol:7:29: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        bytes20 bonusHash = ripemd160(block.coinbase, block.number, block.timestamp);
+                            ^------------------------------------------------------^
+
+INFO:root:contract 49728.sol:DaddyToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 79.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:49728.sol:11:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    totalBonusTokensIssued = 43506293781459965876291732631124366119718670827671737732685695108376871912620
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 49728.sol:DaddyToken.json.

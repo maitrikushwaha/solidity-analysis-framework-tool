@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "42.7",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "callstack": [
+   "3270.sol:16:9: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

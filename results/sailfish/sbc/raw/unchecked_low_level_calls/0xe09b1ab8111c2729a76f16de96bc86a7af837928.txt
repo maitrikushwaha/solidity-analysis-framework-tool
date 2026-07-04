@@ -1,0 +1,621 @@
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Analysis started at: 2026-06-21 07:09:44 PM
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Callgraph generation started!
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Callgraph generation finished!
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Value Range Analysis started
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Range graph generated
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for constructor
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for constructor
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Range graph generated
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function constructor
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for fallback
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for fallback
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function fallback
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for donateForContractHealth
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for donateForContractHealth
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Range graph generated
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function donateForContractHealth
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for getBetInfo
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for getBetInfo
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function getBetInfo
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for getContractBalance
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for getContractBalance
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function getContractBalance
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for getCollateralBalance
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for getCollateralBalance
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function getCollateralBalance
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for payout
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for payout
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function payout
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for sendRefund
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for sendRefund
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Range graph generated
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function sendRefund
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for sendFunds
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for sendFunds
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function sendFunds
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for loseWager
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for loseWager
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function loseWager
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for clearProcessedBet
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for clearProcessedBet
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function clearProcessedBet
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function onlyOwner
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for checkContractHealth
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for checkContractHealth
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function checkContractHealth
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for onlyBot
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for onlyBot
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function onlyBot
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for transfer
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for transfer
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function transfer
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for wager
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for wager
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Range graph generated
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function wager
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for play
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for play
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Range graph generated
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function play
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for refund
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for refund
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Range graph generated
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function refund
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for withdrawDonation
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for withdrawDonation
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Range graph generated
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function withdrawDonation
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for withdrawDevFee
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for withdrawDevFee
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Range graph generated
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function withdrawDevFee
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for withdrawBotFee
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for withdrawBotFee
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Range graph generated
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function withdrawBotFee
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for clearStorage
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for clearStorage
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function clearStorage
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for setBotAddress
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for setBotAddress
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Range graph generated
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function setBotAddress
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for setSecretSigner
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for setSecretSigner
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Range graph generated
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function setSecretSigner
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for kill
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for kill
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function kill
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Generating return summary for transferAnyERC20Token
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Return summary generated for transferAnyERC20Token
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Processed function transferAnyERC20Token
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Value Range Analysis took 0.008345 seconds
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Value Range Analysis finished
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Dependency detection started!
+[INFO] | 2026-06-21 07:09:44 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | TOD dependency detected in file 0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol in contract FiftyFlip in by composing functions wager and wager
+[INFO] | 2026-06-21 07:09:45 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | TOD dependency detected in file 0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol in contract FiftyFlip in by composing functions wager and play
+[INFO] | 2026-06-21 07:09:45 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | TOD dependency detected in file 0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol in contract FiftyFlip in by composing functions wager and refund
+[INFO] | 2026-06-21 07:09:45 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | TOD dependency detected in file 0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol in contract FiftyFlip in by composing functions play and wager
+[INFO] | 2026-06-21 07:09:45 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | TOD dependency detected in file 0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol in contract FiftyFlip in by composing functions play and play
+[INFO] | 2026-06-21 07:09:45 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | TOD dependency detected in file 0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol in contract FiftyFlip in by composing functions play and refund
+[INFO] | 2026-06-21 07:09:45 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | TOD dependency detected in file 0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol in contract FiftyFlip in by composing functions withdrawDonation and donateForContractHealth
+[INFO] | 2026-06-21 07:09:45 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | TOD dependency detected in file 0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol in contract FiftyFlip in by composing functions withdrawDonation and withdrawDonation
+[INFO] | 2026-06-21 07:09:45 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | TOD dependency detected in file 0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol in contract FiftyFlip in by composing functions refund and wager
+[INFO] | 2026-06-21 07:09:46 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | TOD dependency detected in file 0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol in contract FiftyFlip in by composing functions refund and play
+[INFO] | 2026-06-21 07:09:46 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | TOD dependency detected in file 0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol in contract FiftyFlip in by composing functions refund and refund
+[INFO] | 2026-06-21 07:09:46 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Dependency detection finished!
+[INFO] | 2026-06-21 07:09:46 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Static Analysis took 2.078633 seconds
+[INFO] | 2026-06-21 07:09:46 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Dependency exists
+[INFO] | 2026-06-21 07:09:46 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Invoking symbolic executor!
+[36m[#] Analysing started: 0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyBot[0m
+[36m[#] Interprocedural CFG generated for modifer onlyBot[0m
+[36m[#] Interprocedural CFG generation started for modifier checkContractHealth[0m
+[36m[#] Interprocedural CFG generated for modifer checkContractHealth[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for setBotAddress[0m
+[36m[#] Interprocedural CFG generated for setBotAddress[0m
+[36m[#] Interprocedural CFG generation started for setSecretSigner[0m
+[36m[#] Interprocedural CFG generated for setSecretSigner[0m
+[36m[#] Interprocedural CFG generation started for wager[0m
+[36m[#] Interprocedural CFG generated for wager[0m
+[36m[#] Interprocedural CFG generation started for play[0m
+[36m[#] Interprocedural CFG generated for play[0m
+[36m[#] Interprocedural CFG generation started for donateForContractHealth[0m
+[36m[#] Interprocedural CFG generated for donateForContractHealth[0m
+[36m[#] Interprocedural CFG generation started for withdrawDonation[0m
+[36m[#] Interprocedural CFG generated for withdrawDonation[0m
+[36m[#] Interprocedural CFG generation started for refund[0m
+[36m[#] Interprocedural CFG generated for refund[0m
+[36m[#] Interprocedural CFG generation started for withdrawDevFee[0m
+[36m[#] Interprocedural CFG generated for withdrawDevFee[0m
+[36m[#] Interprocedural CFG generation started for withdrawBotFee[0m
+[36m[#] Interprocedural CFG generated for withdrawBotFee[0m
+[36m[#] Interprocedural CFG generation started for getBetInfo[0m
+[36m[#] Interprocedural CFG generated for getBetInfo[0m
+[36m[#] Interprocedural CFG generation started for getContractBalance[0m
+[36m[#] Interprocedural CFG generated for getContractBalance[0m
+[36m[#] Interprocedural CFG generation started for getCollateralBalance[0m
+[36m[#] Interprocedural CFG generated for getCollateralBalance[0m
+[36m[#] Interprocedural CFG generation started for kill[0m
+[36m[#] Interprocedural CFG generated for kill[0m
+[36m[#] Interprocedural CFG generation started for clearStorage[0m
+[36m[#] Interprocedural CFG generated for clearStorage[0m
+[36m[#] Interprocedural CFG generation started for transferAnyERC20Token[0m
+[36m[#] Interprocedural CFG generated for transferAnyERC20Token[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for setBotAddress[0m
+[36m[#] SDG generated for setBotAddress[0m
+[36m[#] SDG generation started for setSecretSigner[0m
+[36m[#] SDG generated for setSecretSigner[0m
+[36m[#] SDG generation started for wager[0m
+[36m[#] SDG generated for wager[0m
+[36m[#] SDG generation started for play[0m
+[36m[#] SDG generated for play[0m
+[36m[#] SDG generation started for donateForContractHealth[0m
+[36m[#] SDG generated for donateForContractHealth[0m
+[36m[#] SDG generation started for withdrawDonation[0m
+[36m[#] SDG generated for withdrawDonation[0m
+[36m[#] SDG generation started for refund[0m
+[36m[#] SDG generated for refund[0m
+[36m[#] SDG generation started for withdrawDevFee[0m
+[36m[#] SDG generated for withdrawDevFee[0m
+[36m[#] SDG generation started for withdrawBotFee[0m
+[36m[#] SDG generated for withdrawBotFee[0m
+[36m[#] SDG generation started for getBetInfo[0m
+[36m[#] SDG generated for getBetInfo[0m
+[36m[#] SDG generation started for getContractBalance[0m
+[36m[#] SDG generated for getContractBalance[0m
+[36m[#] SDG generation started for getCollateralBalance[0m
+[36m[#] SDG generated for getCollateralBalance[0m
+[36m[#] SDG generation started for kill[0m
+[36m[#] SDG generated for kill[0m
+[36m[#] SDG generation started for clearStorage[0m
+[36m[#] SDG generated for clearStorage[0m
+[36m[#] SDG generation started for transferAnyERC20Token[0m
+[36m[#] SDG generated for transferAnyERC20Token[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for modifier onlyBot[0m
+[36m[#] SDG generated for modifier onlyBot[0m
+[36m[#] SDG generation started for modifier checkContractHealth[0m
+[36m[#] SDG generated for modifier checkContractHealth[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[INFO] | 2026-06-21 07:09:51 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Symbolic execution took 5.476290 seconds
+[INFO] | 2026-06-21 07:09:51 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Symbolic execution finished!
+[INFO] | 2026-06-21 07:09:51 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Analysis finished!
+[INFO] | 2026-06-21 07:09:51 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Analysis took 7.555560 seconds
+[INFO] | 2026-06-21 07:09:51 PM | analyzer.0xe09b1ab8111c2729a76f16de96bc86a7af837928 | Analysis finished at: 2026-06-21 07:09:51 PM
+[36m[#] Analysis took 7.555560 seconds[0m
+[36m[#] Analysis completed: 0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol [0m
+
+=== dependency_info.json ===
+{
+    "0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "wager",
+                "wager"
+            ],
+            "First_function": "wager",
+            "Second_function": "wager",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 140\nFunction: wager\nNode: \nEXPRESSION lockedInBets += amount * WIN_X \/ 1000\nIRS: \nlockedInBets = lockedInBets + TMP_28\"",
+                        "\"BlockID: 20\nFunction: wager\nNode: \nEXPRESSION require(bool,string)(getCollateralBalance() >= 2 * amount,If we accept this, this contract will be in danger!)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool,string)(TMP_13,If we accept this, this contract will be in danger!)\""
+                    ],
+                    "state_variable": "lockedInBets"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 140\nFunction: wager\nNode: \nEXPRESSION lockedInBets += amount * WIN_X \/ 1000\nIRS: \nlockedInBets = lockedInBets + TMP_28\"",
+                        "\"BlockID: 34\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "lockedInBets"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 140\nFunction: wager\nNode: \nEXPRESSION lockedInBets += amount * WIN_X \/ 1000\nIRS: \nlockedInBets = lockedInBets + TMP_28\"",
+                        "\"BlockID: 35\nFunction: getCollateralBalance\nNode: \nIF address(this).balance > lockedInBets + jackpotSize + devFeeSize\nIRS: \nCONDITION TMP_113\""
+                    ],
+                    "state_variable": "lockedInBets"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 139\nFunction: wager\nNode: \nEXPRESSION devFeeSize += amount * DEV_FEE \/ 1000\nIRS: \ndevFeeSize = devFeeSize + TMP_26\"",
+                        "\"BlockID: 20\nFunction: wager\nNode: \nEXPRESSION require(bool,string)(getCollateralBalance() >= 2 * amount,If we accept this, this contract will be in danger!)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool,string)(TMP_13,If we accept this, this contract will be in danger!)\""
+                    ],
+                    "state_variable": "devFeeSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 139\nFunction: wager\nNode: \nEXPRESSION devFeeSize += amount * DEV_FEE \/ 1000\nIRS: \ndevFeeSize = devFeeSize + TMP_26\"",
+                        "\"BlockID: 34\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "devFeeSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 139\nFunction: wager\nNode: \nEXPRESSION devFeeSize += amount * DEV_FEE \/ 1000\nIRS: \ndevFeeSize = devFeeSize + TMP_26\"",
+                        "\"BlockID: 35\nFunction: getCollateralBalance\nNode: \nIF address(this).balance > lockedInBets + jackpotSize + devFeeSize\nIRS: \nCONDITION TMP_113\""
+                    ],
+                    "state_variable": "devFeeSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 138\nFunction: wager\nNode: \nEXPRESSION jackpotSize += amount * JACKPOT_FEE \/ 1000\nIRS: \njackpotSize = jackpotSize + TMP_24\"",
+                        "\"BlockID: 20\nFunction: wager\nNode: \nEXPRESSION require(bool,string)(getCollateralBalance() >= 2 * amount,If we accept this, this contract will be in danger!)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool,string)(TMP_13,If we accept this, this contract will be in danger!)\""
+                    ],
+                    "state_variable": "jackpotSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 138\nFunction: wager\nNode: \nEXPRESSION jackpotSize += amount * JACKPOT_FEE \/ 1000\nIRS: \njackpotSize = jackpotSize + TMP_24\"",
+                        "\"BlockID: 34\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "jackpotSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 138\nFunction: wager\nNode: \nEXPRESSION jackpotSize += amount * JACKPOT_FEE \/ 1000\nIRS: \njackpotSize = jackpotSize + TMP_24\"",
+                        "\"BlockID: 35\nFunction: getCollateralBalance\nNode: \nIF address(this).balance > lockedInBets + jackpotSize + devFeeSize\nIRS: \nCONDITION TMP_113\""
+                    ],
+                    "state_variable": "jackpotSize"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "wager",
+                "play"
+            ],
+            "First_function": "play",
+            "Second_function": "wager",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: play\nNode: \nEXPRESSION lockedInBets -= tossWinAmount\nIRS: \nlockedInBets = lockedInBets - tossWinAmount\"",
+                        "\"BlockID: 20\nFunction: wager\nNode: \nEXPRESSION require(bool,string)(getCollateralBalance() >= 2 * amount,If we accept this, this contract will be in danger!)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool,string)(TMP_13,If we accept this, this contract will be in danger!)\""
+                    ],
+                    "state_variable": "lockedInBets"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: play\nNode: \nEXPRESSION lockedInBets -= tossWinAmount\nIRS: \nlockedInBets = lockedInBets - tossWinAmount\"",
+                        "\"BlockID: 34\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "lockedInBets"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: play\nNode: \nEXPRESSION lockedInBets -= tossWinAmount\nIRS: \nlockedInBets = lockedInBets - tossWinAmount\"",
+                        "\"BlockID: 35\nFunction: getCollateralBalance\nNode: \nIF address(this).balance > lockedInBets + jackpotSize + devFeeSize\nIRS: \nCONDITION TMP_113\""
+                    ],
+                    "state_variable": "lockedInBets"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 47\nFunction: play\nNode: \nEXPRESSION jackpotSize = 0\nIRS: \njackpotSize := 0\"",
+                        "\"BlockID: 20\nFunction: wager\nNode: \nEXPRESSION require(bool,string)(getCollateralBalance() >= 2 * amount,If we accept this, this contract will be in danger!)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool,string)(TMP_13,If we accept this, this contract will be in danger!)\""
+                    ],
+                    "state_variable": "jackpotSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 47\nFunction: play\nNode: \nEXPRESSION jackpotSize = 0\nIRS: \njackpotSize := 0\"",
+                        "\"BlockID: 34\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "jackpotSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 47\nFunction: play\nNode: \nEXPRESSION jackpotSize = 0\nIRS: \njackpotSize := 0\"",
+                        "\"BlockID: 35\nFunction: getCollateralBalance\nNode: \nIF address(this).balance > lockedInBets + jackpotSize + devFeeSize\nIRS: \nCONDITION TMP_113\""
+                    ],
+                    "state_variable": "jackpotSize"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "wager",
+                "refund"
+            ],
+            "First_function": "refund",
+            "Second_function": "wager",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 78\nFunction: sendRefund\nNode: \nEXPRESSION lockedInBets -= tossWinAmount\nIRS: \nlockedInBets = lockedInBets - tossWinAmount\"",
+                        "\"BlockID: 20\nFunction: wager\nNode: \nEXPRESSION require(bool,string)(getCollateralBalance() >= 2 * amount,If we accept this, this contract will be in danger!)\nIRS: \nTMP_14 = SOLIDITY_CALL require(bool,string)(TMP_13,If we accept this, this contract will be in danger!)\""
+                    ],
+                    "state_variable": "lockedInBets"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 78\nFunction: sendRefund\nNode: \nEXPRESSION lockedInBets -= tossWinAmount\nIRS: \nlockedInBets = lockedInBets - tossWinAmount\"",
+                        "\"BlockID: 34\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "lockedInBets"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 78\nFunction: sendRefund\nNode: \nEXPRESSION lockedInBets -= tossWinAmount\nIRS: \nlockedInBets = lockedInBets - tossWinAmount\"",
+                        "\"BlockID: 35\nFunction: getCollateralBalance\nNode: \nIF address(this).balance > lockedInBets + jackpotSize + devFeeSize\nIRS: \nCONDITION TMP_113\""
+                    ],
+                    "state_variable": "lockedInBets"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "play",
+                "wager"
+            ],
+            "First_function": "wager",
+            "Second_function": "play",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: wager\nNode: \nEXPRESSION jackpotSize += amount * JACKPOT_FEE \/ 1000\nIRS: \njackpotSize = jackpotSize + TMP_24\"",
+                        "\"BlockID: 49\nFunction: play\nNode: \nIF jackpotWin > 0\nIRS: \nCONDITION TMP_61\""
+                    ],
+                    "state_variable": "jackpotSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: wager\nNode: \nEXPRESSION jackpotSize += amount * JACKPOT_FEE \/ 1000\nIRS: \njackpotSize = jackpotSize + TMP_24\"",
+                        "\"BlockID: 52\nFunction: play\nNode: \nIF tossWin + jackpotWin > 0\nIRS: \nCONDITION TMP_64\""
+                    ],
+                    "state_variable": "jackpotSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: wager\nNode: \nEXPRESSION jackpotSize += amount * JACKPOT_FEE \/ 1000\nIRS: \njackpotSize = jackpotSize + TMP_24\"",
+                        "\"BlockID: 56\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "jackpotSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: wager\nNode: \nEXPRESSION jackpotSize += amount * JACKPOT_FEE \/ 1000\nIRS: \njackpotSize = jackpotSize + TMP_24\"",
+                        "\"BlockID: 57\nFunction: payout\nNode: \nEXPRESSION winner.transfer(ethToTransfer)\nIRS: \nTransfer dest:winner value:ethToTransfer\""
+                    ],
+                    "state_variable": "jackpotSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: wager\nNode: \nEXPRESSION lockedInBets += amount * WIN_X \/ 1000\nIRS: \nlockedInBets = lockedInBets + TMP_28\"",
+                        "\"BlockID: 56\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "lockedInBets"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: wager\nNode: \nEXPRESSION devFeeSize += amount * DEV_FEE \/ 1000\nIRS: \ndevFeeSize = devFeeSize + TMP_26\"",
+                        "\"BlockID: 56\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "devFeeSize"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "play",
+                "play"
+            ],
+            "First_function": "play",
+            "Second_function": "play",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 159\nFunction: play\nNode: \nEXPRESSION jackpotSize = 0\nIRS: \njackpotSize := 0\"",
+                        "\"BlockID: 49\nFunction: play\nNode: \nIF jackpotWin > 0\nIRS: \nCONDITION TMP_61\""
+                    ],
+                    "state_variable": "jackpotSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 159\nFunction: play\nNode: \nEXPRESSION jackpotSize = 0\nIRS: \njackpotSize := 0\"",
+                        "\"BlockID: 52\nFunction: play\nNode: \nIF tossWin + jackpotWin > 0\nIRS: \nCONDITION TMP_64\""
+                    ],
+                    "state_variable": "jackpotSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 159\nFunction: play\nNode: \nEXPRESSION jackpotSize = 0\nIRS: \njackpotSize := 0\"",
+                        "\"BlockID: 56\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "jackpotSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 159\nFunction: play\nNode: \nEXPRESSION jackpotSize = 0\nIRS: \njackpotSize := 0\"",
+                        "\"BlockID: 57\nFunction: payout\nNode: \nEXPRESSION winner.transfer(ethToTransfer)\nIRS: \nTransfer dest:winner value:ethToTransfer\""
+                    ],
+                    "state_variable": "jackpotSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: play\nNode: \nEXPRESSION lockedInBets -= tossWinAmount\nIRS: \nlockedInBets = lockedInBets - tossWinAmount\"",
+                        "\"BlockID: 56\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "lockedInBets"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "play",
+                "refund"
+            ],
+            "First_function": "refund",
+            "Second_function": "play",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 78\nFunction: sendRefund\nNode: \nEXPRESSION lockedInBets -= tossWinAmount\nIRS: \nlockedInBets = lockedInBets - tossWinAmount\"",
+                        "\"BlockID: 56\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "lockedInBets"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawDonation",
+                "donateForContractHealth"
+            ],
+            "First_function": "donateForContractHealth",
+            "Second_function": "withdrawDonation",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 61\nFunction: donateForContractHealth\nNode: \nEXPRESSION donateAmount[msg.sender] += msg.value\nIRS: \nREF_26 = REF_26 + msg.value\"",
+                        "\"BlockID: 64\nFunction: withdrawDonation\nNode: \nEXPRESSION require(bool,string)(donateAmount[msg.sender] >= amount,You are going to withdraw more than you donated!)\nIRS: \nTMP_73 = SOLIDITY_CALL require(bool,string)(TMP_72,You are going to withdraw more than you donated!)\""
+                    ],
+                    "state_variable": "donateAmount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawDonation",
+                "withdrawDonation"
+            ],
+            "First_function": "withdrawDonation",
+            "Second_function": "withdrawDonation",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 175\nFunction: withdrawDonation\nNode: \nEXPRESSION donateAmount[msg.sender] -= amount\nIRS: \nREF_28 = REF_28 - amount\"",
+                        "\"BlockID: 64\nFunction: withdrawDonation\nNode: \nEXPRESSION require(bool,string)(donateAmount[msg.sender] >= amount,You are going to withdraw more than you donated!)\nIRS: \nTMP_73 = SOLIDITY_CALL require(bool,string)(TMP_72,You are going to withdraw more than you donated!)\""
+                    ],
+                    "state_variable": "donateAmount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refund",
+                "wager"
+            ],
+            "First_function": "wager",
+            "Second_function": "refund",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: wager\nNode: \nEXPRESSION lockedInBets += amount * WIN_X \/ 1000\nIRS: \nlockedInBets = lockedInBets + TMP_28\"",
+                        "\"BlockID: 76\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "lockedInBets"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: wager\nNode: \nEXPRESSION devFeeSize += amount * DEV_FEE \/ 1000\nIRS: \ndevFeeSize = devFeeSize + TMP_26\"",
+                        "\"BlockID: 76\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "devFeeSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 26\nFunction: wager\nNode: \nEXPRESSION jackpotSize += amount * JACKPOT_FEE \/ 1000\nIRS: \njackpotSize = jackpotSize + TMP_24\"",
+                        "\"BlockID: 76\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "jackpotSize"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refund",
+                "play"
+            ],
+            "First_function": "play",
+            "Second_function": "refund",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 54\nFunction: play\nNode: \nEXPRESSION lockedInBets -= tossWinAmount\nIRS: \nlockedInBets = lockedInBets - tossWinAmount\"",
+                        "\"BlockID: 76\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "lockedInBets"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 47\nFunction: play\nNode: \nEXPRESSION jackpotSize = 0\nIRS: \njackpotSize := 0\"",
+                        "\"BlockID: 76\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "jackpotSize"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "refund",
+                "refund"
+            ],
+            "First_function": "refund",
+            "Second_function": "refund",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 187\nFunction: sendRefund\nNode: \nEXPRESSION lockedInBets -= tossWinAmount\nIRS: \nlockedInBets = lockedInBets - tossWinAmount\"",
+                        "\"BlockID: 76\nFunction: checkContractHealth\nNode: \nEXPRESSION require(bool,string)(address(this).balance >= lockedInBets + jackpotSize + devFeeSize,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\nIRS: \nTMP_153 = SOLIDITY_CALL require(bool,string)(TMP_152,This contract doesn't have enough balance, it is stopped till someone donate to this game!)\""
+                    ],
+                    "state_variable": "lockedInBets"
+                }
+            ]
+        }
+    ]
+}

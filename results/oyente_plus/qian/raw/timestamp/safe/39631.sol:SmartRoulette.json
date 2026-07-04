@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "71.1",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "39631.sol:11:62: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    profitDistributionContract = 87112285931760246646623899502532662132736\n    bankrolLimit = 7527294552367162368894811570280170750189384177331669444378874638579706289284\n    profitLimit = 109060622791456606992654373778003620468674111544825691836072117108158847591358"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

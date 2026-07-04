@@ -1,0 +1,14 @@
+{
+  "filename": "30939.sol",
+  "reentrancy": -1,
+  "overflow": 0,
+  "timestamp": -1,
+  "tod": -1,
+  "duration_s": 0.06,
+  "error": "transform_failed: An error occurred during execution\n> command: `/home/maitri/.solcx/solc-v0.4.26 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc -`\n> return code: `1`\n> stdout:\n\n> stderr:\n<stdin>:18:9: Warning: Use of the \"var\" keyword is deprecated.\n        var entry = Entry(name, company, description, category, ethAddress, timestamp, false);\n        ^-------^\n<stdin>:17:23: Warning: This declaration shadows an existing declaration.\n    function addEntry(string name, string company, string description, string category, address ethAddress) public returns (bool) {\n                      ^---------^\n<stdin>:8:5: The shadowed declaration is here:\n    string name = \"default\";  // from struct Entry\n    ^---------------------^\n\n<stdin>:17:36: Warning: This declaration shadows an existing declaration.\n    function addEntry(string name, string company, string description, string category, address ethAddress) public returns (bool) {\n                                   ^------------^\n<stdin>:9:1: The shadowed declaration is here:\nstring company = \"default\";  // from struct Entry\n^------------------------^\n\n<stdin>:17:52: Warning: This declaration shadows an existing declaration.\n    function addEntry(string name, string company, string description, string category, address ethAddress) public returns (bool) {\n                                                   ^----------------^\n<stdin>:10:1: The shadowed declaration is here:\nstring description = \"default\";  // from struct Entry\n^----------------------------^\n\n<stdin>:17:72: Warning: This declaration shadows an existing declaration.\n    function addEntry(string name, string company, string description, string category, address ethAddress) public returns (bool) {\n                                                                       ^-------------^\n<stdin>:11:1: The shadowed declaration is here:\nstring category = \"default\";  // from struct Entry\n^-------------------------^\n\n<stdin>:17:89: Warning: This declaration shadows an existing declaration.\n    function addEntry(string name, string company, string description, string category, address ethAddress) public returns (bool) {\n                                                                                        ^----------------^\n<stdin>:12:1: The shadowed declaration is here:\naddress ethAddress = address(0);  // from struct Entry\n^-----------------------------^\n\n<stdin>:15:5: Error: Identifier not found or not unique.\n    Entry[] public entries;\n    ^---^",
+  "skipped_pipelines": [
+    "reentrancy",
+    "timestamp",
+    "tod"
+  ]
+}

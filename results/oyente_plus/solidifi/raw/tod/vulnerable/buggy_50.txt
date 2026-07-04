@@ -1,0 +1,66 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc buggy_50.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.5eiZq61M9K' running
+INFO:root:contract buggy_50.sol:digitalNotary:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 95.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:buggy_50.sol:520:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    HashList[hash].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    contractactive = 46768052394588893382517914646921056628989841375232
+    changehashownerfee = 0
+INFO:symExec:buggy_50.sol:2:20: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    HashList[hash].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    contractactive = 1461501637330902918203684832716283019655932542976
+    changehashownerfee = 0
+buggy_50.sol:520:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    HashList[hash].length = 79228162514264337593544016896
+    contractactive = 46768052394588893382517914646921056628989841375232
+    changehashownerfee = 0
+buggy_50.sol:481:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    hashfee = 0
+    HashList[hash].length = 0
+    contractactive = 1461501637330902918203684832716283019655932542976
+buggy_50.sol:483:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    hashfee = 0
+    HashListLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    HashList[hash].length = 0
+    contractactive = 1461501637330902918203684832716283019655932542976
+buggy_50.sol:454:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    indx = 32691588631652881389083030660050573995616919793653027826290831616367895173649
+    HashList[hash].length = 76393898357030475207386099012120771376197517773365785919112625397629730347550
+buggy_50.sol:454:44: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    indx = 32691588631652881389083030660050573995616919793653027826290831616367895173649
+    HashList[hash].length = 76393898357030475207386099012120771376197517773365785919112625397629730347550
+buggy_50.sol:454:44: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    indx = 32691588631652881389083030660050573995616919793653027826290831616367895173649
+    HashList[hash].length = 76393898357030475207386099012120771376197517773365785919112625397629730347550
+INFO:symExec:Flow1
+buggy_50.sol:291:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_50.sol:25:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_50.sol:digitalNotary.json.

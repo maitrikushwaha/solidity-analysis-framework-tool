@@ -1,0 +1,74 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc buggy_23.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.Y3vOSUPasn' running
+INFO:root:contract buggy_23.sol:AGR:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 6.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:buggy_23.sol:686:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    return _name = 1
+buggy_23.sol:685:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    return _name = 0
+INFO:symExec:buggy_23.sol:686:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    return _name = 115792089237316195423570985008687907853269984665640564039457584007913129639681
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_23.sol:AGR.json.
+INFO:root:contract buggy_23.sol:ERC20:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 95.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:Flow1
+buggy_23.sol:361:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_23.sol:150:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_23.sol:ERC20.json.
+INFO:root:contract buggy_23.sol:ERC20Burnable:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 96.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:Flow1
+buggy_23.sol:361:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_23.sol:150:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_23.sol:ERC20Burnable.json.
+INFO:root:contract buggy_23.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_23.sol:SafeMath.json.

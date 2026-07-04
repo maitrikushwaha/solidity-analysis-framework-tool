@@ -1,0 +1,44 @@
+{
+ "evm_code_coverage": "69.2",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "25.sol:128:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _odd = 1\n    gameList[_fixtureId].timestamp = 57896044618658097711785492504343953926634992332820282019728792003956564820553\n    gameList[_fixtureId].open_status = 3\n    _selectedTeam = 8\n    gameList[_fixtureId].odd_awayTeamAndDraw = 26959946667150639794667015087019630673637144422540572481103610249216"
+  ],
+  "integer_overflow": [
+   "25.sol:66:5: Warning: Integer Overflow.\n",
+   "25.sol:67:5: Warning: Integer Overflow.\n",
+   "25.sol:68:5: Warning: Integer Overflow.\n",
+   "25.sol:69:5: Warning: Integer Overflow.\n",
+   "25.sol:70:5: Warning: Integer Overflow.\n",
+   "25.sol:71:5: Warning: Integer Overflow.\n",
+   "25.sol:72:5: Warning: Integer Overflow.\n",
+   "25.sol:73:5: Warning: Integer Overflow.\n",
+   "25.sol:2:20: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _odd = 1\n    gameList[_fixtureId].timestamp = 57896044618658097711785492504343953926634992332820282019728792003956564820553\n    gameList[_fixtureId].open_status = 3\n    _selectedTeam = 8\n    gameList[_fixtureId].odd_awayTeamAndDraw = 26959946667150639794667015087019630673637144422540572481103610249216",
+   "25.sol:128:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _odd = 1\n    gameList[_fixtureId].timestamp = 57896044618658097711785492504343953926634992332820282019728792003956564820553\n    gameList[_fixtureId].open_status = 3\n    _selectedTeam = 8\n    gameList[_fixtureId].odd_awayTeamAndDraw = 26959946667150639794667015087019630673637144422540572481103610249216",
+   "25.sol:43:3: Warning: Integer Overflow.\n",
+   "25.sol:33:3: Warning: Integer Overflow.\n",
+   "25.sol:144:29: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    betList[_fixtureId][0].player = 1\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 1",
+   "25.sol:145:59: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    betList[_fixtureId][0].player = 1\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 1",
+   "25.sol:145:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    betList[_fixtureId][0].player = 1\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 1",
+   "25.sol:160:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    betList[_fixtureId][0].player = 1\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 1",
+   "25.sol:162:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    betList[_fixtureId][0].player = 1\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 1",
+   "25.sol:144:29: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    betList[_fixtureId][0].player = 1\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 57896044618658097711785492504343953926634992332820282019728792003956564819969",
+   "25.sol:145:59: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    betList[_fixtureId][0].player = 1\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 57896044618658097711785492504343953926634992332820282019728792003956564819969",
+   "25.sol:145:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    betList[_fixtureId][0].player = 1\n    gameList[_fixtureId].open_status = 3\n    betList[_fixtureId][0] = 57896044618658097711785492504343953926634992332820282019728792003956564819969"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "25.sol:190:27: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "25.sol:196:27: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

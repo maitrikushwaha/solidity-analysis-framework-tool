@@ -1,0 +1,26 @@
+{
+ "evm_code_coverage": "73.7",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "04_CrossMod_ree5.sol:6:5: Warning: Integer Underflow.\n",
+   "04_CrossMod_ree5.sol:10:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 3399641365418815286463849141824305977051843363690481986214343737472"
+  ],
+  "integer_overflow": [
+   "04_CrossMod_ree5.sol:33:598: Warning: Integer Overflow.\n",
+   "04_CrossMod_ree5.sol:24:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 220855883097298041197912187592864814478435487109452369765200775161577472\n    flag = 1724442735223703105673298360725088471447624283395169944723627343245072466064\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969",
+   "04_CrossMod_ree5.sol:23:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 25109753861455687215472574208858533823602953543522315173904",
+   "04_CrossMod_ree5.sol:17:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 2097152"
+  ],
+  "callstack": [
+   "04_CrossMod_ree5.sol:24:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "04_CrossMod_ree5.sol:24:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

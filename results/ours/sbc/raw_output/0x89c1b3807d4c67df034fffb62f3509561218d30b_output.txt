@@ -1,0 +1,78 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+[CFG] Reentrancy back-edge inserted: ExpressionStatement_27 → IfStatement_14
+Dependency analysis completed in 0.2149s.
+[DOMAIN] Reentrancy encoding detected → Box + Octagon + Polka
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] Running Box domain.
+[TIMING] reentrancy domain=Box fixpoint=0.0733s
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW ==========
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+
+========== PIPELINE 3: TIMESTAMP DEPENDENCY ==========
+
+========== PIPELINE 4: TOD ==========
+
+===== VERDICTS (Box) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+[OVERFLOW] Variable MIN_FEE (uint256) at ExpressionStatement_9: '*' with {'minGas', 'price'} can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[OVERFLOW] Variable CANCELLATION_FEE (uint256) at ExpressionStatement_10: '*' with {'cancellationGas', 'price'} can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[OVERFLOW] Variable MIN_FEE (uint) in reset(): unguarded '*' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable CANCELLATION_FEE (uint) in reset(): unguarded '*' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[UNDERFLOW] Variable callbackGas (uint) in deliver(): unguarded '-' over external input can underflow below 0 (augmented data-flow Algorithm 3).
+[TOD] Function FunctionDefinition_3: reset reads storage variable GAS_PRICE which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_3: reset's behavior.
+[TOD] Function FunctionDefinition_3: reset reads storage variable MIN_FEE which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_3: reset's behavior.
+[TOD] Function FunctionDefinition_3: reset reads storage variable CANCELLATION_FEE which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_3: reset's behavior.
+[TOD] Function FunctionDefinition_8: deliver reads storage variable callbackGas which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_8: deliver's behavior.
+[TOD] Function FunctionDefinition_9: cancel reads storage variable fee which is written by externally callable function FunctionDefinition_8: deliver. Reordering may affect FunctionDefinition_9: cancel's behavior.
+[TOD] Function FunctionDefinition_8: deliver reads storage variable fee which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_8: deliver's behavior.
+[TOD] Function FunctionDefinition_7: request reads storage variable requestId which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_7: request's behavior.
+[TOD] Function FunctionDefinition_7: request reads storage variable paramsHash which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_7: request's behavior.
+
+===== VERDICTS (Octagon) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+[OVERFLOW] Variable MIN_FEE (uint256) at ExpressionStatement_9: '*' with {'minGas', 'price'} can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[OVERFLOW] Variable CANCELLATION_FEE (uint256) at ExpressionStatement_10: '*' with {'cancellationGas', 'price'} can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[OVERFLOW] Variable MIN_FEE (uint) in reset(): unguarded '*' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable CANCELLATION_FEE (uint) in reset(): unguarded '*' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[UNDERFLOW] Variable callbackGas (uint) in deliver(): unguarded '-' over external input can underflow below 0 (augmented data-flow Algorithm 3).
+[TOD] Function FunctionDefinition_3: reset reads storage variable GAS_PRICE which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_3: reset's behavior.
+[TOD] Function FunctionDefinition_3: reset reads storage variable MIN_FEE which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_3: reset's behavior.
+[TOD] Function FunctionDefinition_3: reset reads storage variable CANCELLATION_FEE which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_3: reset's behavior.
+[TOD] Function FunctionDefinition_8: deliver reads storage variable callbackGas which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_8: deliver's behavior.
+[TOD] Function FunctionDefinition_9: cancel reads storage variable fee which is written by externally callable function FunctionDefinition_8: deliver. Reordering may affect FunctionDefinition_9: cancel's behavior.
+[TOD] Function FunctionDefinition_8: deliver reads storage variable fee which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_8: deliver's behavior.
+[TOD] Function FunctionDefinition_7: request reads storage variable requestId which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_7: request's behavior.
+[TOD] Function FunctionDefinition_7: request reads storage variable paramsHash which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_7: request's behavior.
+
+===== VERDICTS (Polka) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+[OVERFLOW] Variable MIN_FEE (uint256) at ExpressionStatement_9: '*' with {'minGas', 'price'} can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[OVERFLOW] Variable CANCELLATION_FEE (uint256) at ExpressionStatement_10: '*' with {'cancellationGas', 'price'} can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[OVERFLOW] Variable MIN_FEE (uint) in reset(): unguarded '*' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable CANCELLATION_FEE (uint) in reset(): unguarded '*' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[UNDERFLOW] Variable callbackGas (uint) in deliver(): unguarded '-' over external input can underflow below 0 (augmented data-flow Algorithm 3).
+[TOD] Function FunctionDefinition_3: reset reads storage variable GAS_PRICE which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_3: reset's behavior.
+[TOD] Function FunctionDefinition_3: reset reads storage variable MIN_FEE which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_3: reset's behavior.
+[TOD] Function FunctionDefinition_3: reset reads storage variable CANCELLATION_FEE which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_3: reset's behavior.
+[TOD] Function FunctionDefinition_8: deliver reads storage variable callbackGas which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_8: deliver's behavior.
+[TOD] Function FunctionDefinition_9: cancel reads storage variable fee which is written by externally callable function FunctionDefinition_8: deliver. Reordering may affect FunctionDefinition_9: cancel's behavior.
+[TOD] Function FunctionDefinition_8: deliver reads storage variable fee which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_8: deliver's behavior.
+[TOD] Function FunctionDefinition_7: request reads storage variable requestId which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_7: request's behavior.
+[TOD] Function FunctionDefinition_7: request reads storage variable paramsHash which is written by externally callable function FunctionDefinition_9: cancel. Reordering may affect FunctionDefinition_7: request's behavior.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: NOT VULNERABLE
+[SUMMARY] Integer Overflow: VULNERABLE
+[SUMMARY] Integer Underflow: VULNERABLE
+[SUMMARY] Timestamp Dependency: NOT VULNERABLE
+[SUMMARY] TOD: VULNERABLE
+
+Total analysis time: 6.38s

@@ -1,0 +1,40 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 47.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.wSDXQMJ6pL' running
+INFO:root:contract 47.sol:AcunarIEO:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 22.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:47.sol:26:5: Warning: Integer Underflow.
+
+INFO:symExec:47.sol:26:5: Warning: Integer Overflow.
+
+INFO:symExec:47.sol:164:15: Warning: Timestamp Dependency.
+
+47.sol:166:18: Warning: Timestamp Dependency.
+
+47.sol:166:15: Warning: Timestamp Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 47.sol:AcunarIEO.json.
+INFO:root:contract 47.sol:AcunarToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 16.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:47.sol:26:5: Warning: Integer Underflow.
+
+INFO:symExec:47.sol:26:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 47.sol:AcunarToken.json.

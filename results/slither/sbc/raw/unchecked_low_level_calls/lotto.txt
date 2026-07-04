@@ -1,0 +1,64 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/unchecked_low_level_calls/lotto.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/unchecked_low_level_calls' running
+Compilation warnings/errors on /work/datasets/sbc/unchecked_low_level_calls/lotto.sol:
+/work/datasets/sbc/unchecked_low_level_calls/lotto.sol:20:10: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+         winner.send(winAmount);
+         ^--------------------^
+/work/datasets/sbc/unchecked_low_level_calls/lotto.sol:27:26: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+         msg.sender.send(this.balance);
+                         ^----------^
+/work/datasets/sbc/unchecked_low_level_calls/lotto.sol:27:10: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+         msg.sender.send(this.balance);
+         ^---------------------------^
+
+
+Lotto.withdrawLeftOver() (datasets/sbc/unchecked_low_level_calls/lotto.sol#24-28) sends eth to arbitrary user
+	Dangerous calls:
+	- msg.sender.send(this.balance) (datasets/sbc/unchecked_low_level_calls/lotto.sol#27)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+Lotto.winner (datasets/sbc/unchecked_low_level_calls/lotto.sol#12) is never initialized. It is used in:
+	- Lotto.sendToWinner() (datasets/sbc/unchecked_low_level_calls/lotto.sol#17-22)
+Lotto.winAmount (datasets/sbc/unchecked_low_level_calls/lotto.sol#13) is never initialized. It is used in:
+	- Lotto.sendToWinner() (datasets/sbc/unchecked_low_level_calls/lotto.sol#17-22)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+Lotto.sendToWinner() (datasets/sbc/unchecked_low_level_calls/lotto.sol#17-22) ignores return value by winner.send(winAmount) (datasets/sbc/unchecked_low_level_calls/lotto.sol#20)
+Lotto.withdrawLeftOver() (datasets/sbc/unchecked_low_level_calls/lotto.sol#24-28) ignores return value by msg.sender.send(this.balance) (datasets/sbc/unchecked_low_level_calls/lotto.sol#27)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-send
+
+Version constraint ^0.4.18 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ExpExponentCleanup
+	- EventStructWrongData
+	- NestedArrayFunctionCallDecoder.
+It is used by:
+	- ^0.4.18 (datasets/sbc/unchecked_low_level_calls/lotto.sol#7)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Reentrancy in Lotto.sendToWinner() (datasets/sbc/unchecked_low_level_calls/lotto.sol#17-22):
+	External calls:
+	- winner.send(winAmount) (datasets/sbc/unchecked_low_level_calls/lotto.sol#20)
+	State variables written after the call(s):
+	- payedOut = true (datasets/sbc/unchecked_low_level_calls/lotto.sol#21)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4
+
+Lotto.winAmount (datasets/sbc/unchecked_low_level_calls/lotto.sol#13) should be constant 
+Lotto.winner (datasets/sbc/unchecked_low_level_calls/lotto.sol#12) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/sbc/unchecked_low_level_calls/lotto.sol analyzed (1 contracts with 93 detectors), 10 result(s) found

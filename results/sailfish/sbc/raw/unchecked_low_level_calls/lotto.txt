@@ -1,0 +1,89 @@
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Analysis started at: 2026-06-21 07:10:29 PM
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Callgraph generation started!
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Value Range Analysis started
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Generating return summary for sendToWinner
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Return summary generated for sendToWinner
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Range graph generated
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Processed function sendToWinner
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Generating return summary for withdrawLeftOver
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Return summary generated for withdrawLeftOver
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Processed function withdrawLeftOver
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Range graph generated
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Value Range Analysis took 0.000609 seconds
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Dependency detection started!
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | TOD dependency detected in file lotto.sol in contract Lotto in by composing functions sendToWinner and sendToWinner
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | TOD dependency detected in file lotto.sol in contract Lotto in by composing functions withdrawLeftOver and sendToWinner
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Dependency detection finished!
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Static Analysis took 0.060219 seconds
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Dependency exists
+[INFO] | 2026-06-21 07:10:29 PM | analyzer.lotto  | Invoking symbolic executor!
+[36m[#] Analysing started: lotto.sol[0m
+[36m[#] Interprocedural CFG generation started for sendToWinner[0m
+[36m[#] Interprocedural CFG generated for sendToWinner[0m
+[36m[#] Interprocedural CFG generation started for withdrawLeftOver[0m
+[36m[#] Interprocedural CFG generated for withdrawLeftOver[0m
+[36m[#] SDG generation started for sendToWinner[0m
+[36m[#] SDG generated for sendToWinner[0m
+[36m[#] SDG generation started for withdrawLeftOver[0m
+[36m[#] SDG generated for withdrawLeftOver[0m
+[INFO] | 2026-06-21 07:10:30 PM | analyzer.lotto  | Symbolic execution took 1.250490 seconds
+[INFO] | 2026-06-21 07:10:30 PM | analyzer.lotto  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:10:30 PM | analyzer.lotto  | Analysis finished!
+[INFO] | 2026-06-21 07:10:30 PM | analyzer.lotto  | Analysis took 1.311285 seconds
+[INFO] | 2026-06-21 07:10:30 PM | analyzer.lotto  | Analysis finished at: 2026-06-21 07:10:30 PM
+[36m[#] Analysis took 1.311285 seconds[0m
+[36m[#] Analysis completed: lotto.sol [0m
+
+=== dependency_info.json ===
+{
+    "lotto.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "sendToWinner",
+                "sendToWinner"
+            ],
+            "First_function": "sendToWinner",
+            "Second_function": "sendToWinner",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 11\nFunction: sendToWinner\nNode: \nEXPRESSION payedOut = true\nIRS: \npayedOut := true\"",
+                        "\"BlockID: 2\nFunction: sendToWinner\nNode: \nEXPRESSION require(bool)(! payedOut)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+                    ],
+                    "state_variable": "payedOut"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawLeftOver",
+                "sendToWinner"
+            ],
+            "First_function": "sendToWinner",
+            "Second_function": "withdrawLeftOver",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 4\nFunction: sendToWinner\nNode: \nEXPRESSION payedOut = true\nIRS: \npayedOut := true\"",
+                        "\"BlockID: 6\nFunction: withdrawLeftOver\nNode: \nEXPRESSION require(bool)(payedOut)\nIRS: \nTMP_3 = SOLIDITY_CALL require(bool)(payedOut)\""
+                    ],
+                    "state_variable": "payedOut"
+                }
+            ]
+        }
+    ]
+}

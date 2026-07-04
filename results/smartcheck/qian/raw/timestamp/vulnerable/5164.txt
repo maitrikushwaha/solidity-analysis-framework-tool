@@ -1,0 +1,17 @@
+/work/datasets/qian/timestamp/vulnerable/5164.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_DEPRECATED_CONSTRUCTIONS
+patternId: 28fa69
+severity: 1
+line: 7
+column: 4
+content: functionteamAvailable(address_to)internalconstantreturns(uint256){uint256now1=block.timestamp;uint256lockTime=teamLockTime[_to];uint256time=now1-(lockTime);uint256percent=0;if(time>=365days){percent=(time/(30days))+(1);}uint256avail=avail*(percent)/(12);returnavail;}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+SOLIDITY_DEPRECATED_CONSTRUCTIONS :1
+SOLIDITY_PRAGMAS_VERSION :1

@@ -1,0 +1,77 @@
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Analysis started at: 2026-06-21 07:13:48 PM
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Generating return summary for CashOut
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Return summary generated for CashOut
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Range graph generated
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Processed function CashOut
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Value Range Analysis took 0.000344 seconds
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | DAO dependency detected in file 29089.sol in contract PrivateBank in by composing functions CashOut and CashOut
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | TOD dependency detected in file 29089.sol in contract PrivateBank in by composing functions CashOut and CashOut
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Static Analysis took 0.060276 seconds
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Dependency exists
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.29089  | Invoking symbolic executor!
+[36m[#] Analysing started: 29089.sol[0m
+[36m[#] Interprocedural CFG generation started for CashOut[0m
+[36m[#] Interprocedural CFG generated for CashOut[0m
+[36m[#] SDG generation started for CashOut[0m
+[36m[#] SDG generated for CashOut[0m
+[INFO] | 2026-06-21 07:13:50 PM | analyzer.29089  | Symbolic execution took 1.365692 seconds
+[INFO] | 2026-06-21 07:13:50 PM | analyzer.29089  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:13:50 PM | analyzer.29089  | Analysis finished!
+[INFO] | 2026-06-21 07:13:50 PM | analyzer.29089  | Analysis took 1.426377 seconds
+[INFO] | 2026-06-21 07:13:50 PM | analyzer.29089  | Analysis finished at: 2026-06-21 07:13:50 PM
+[36m[#] Analysis took 1.426377 seconds[0m
+[36m[#] Analysis completed: 29089.sol [0m
+
+=== dependency_info.json ===
+{
+    "29089.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "CashOut",
+                "CashOut"
+            ],
+            "from_function": "CashOut",
+            "to_function": "CashOut",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: CashOut\nNode: \nIF _am <= balances[msg.sender]\nIRS: \nCONDITION TMP_0\"",
+                        "\"BlockID: 6\nFunction: CashOut\nNode: \nEXPRESSION balances[msg.sender] -= _am\nIRS: \nREF_3 = REF_3 - _am\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "CashOut",
+                "CashOut"
+            ],
+            "First_function": "CashOut",
+            "Second_function": "CashOut",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: CashOut\nNode: \nEXPRESSION balances[msg.sender] -= _am\nIRS: \nREF_3 = REF_3 - _am\"",
+                        "\"BlockID: 2\nFunction: CashOut\nNode: \nIF _am <= balances[msg.sender]\nIRS: \nCONDITION TMP_0\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        }
+    ]
+}

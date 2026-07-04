@@ -1,0 +1,49 @@
+
+'solc --version' running
+'solc /work/datasets/qian/timestamp/vulnerable/37919.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/timestamp/vulnerable' running
+Compilation warnings/errors on /work/datasets/qian/timestamp/vulnerable/37919.sol:
+/work/datasets/qian/timestamp/vulnerable/37919.sol:8:5: Warning: No visibility specified. Defaulting to "public". 
+    function getExchangeRate() constant returns(uint){
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+
+BlocklancerToken.fundingStart (datasets/qian/timestamp/vulnerable/37919.sol#5) is never initialized. It is used in:
+	- BlocklancerToken.getExchangeRate() (datasets/qian/timestamp/vulnerable/37919.sol#8-18)
+BlocklancerToken.soldAfterPowerHour (datasets/qian/timestamp/vulnerable/37919.sol#6) is never initialized. It is used in:
+	- BlocklancerToken.getExchangeRate() (datasets/qian/timestamp/vulnerable/37919.sol#8-18)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+BlocklancerToken.getExchangeRate() (datasets/qian/timestamp/vulnerable/37919.sol#8-18) uses timestamp for comparisons
+	Dangerous comparisons:
+	- fundingStart + 1 * 86400 > block.timestamp (datasets/qian/timestamp/vulnerable/37919.sol#9)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/timestamp/vulnerable/37919.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+BlocklancerToken.getExchangeRate() (datasets/qian/timestamp/vulnerable/37919.sol#8-18) uses literals with too many digits:
+	- decrease = 100 - (soldAfterPowerHour / 10000000 / 1000000000000000000) (datasets/qian/timestamp/vulnerable/37919.sol#12)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+
+BlocklancerToken.fundingStart (datasets/qian/timestamp/vulnerable/37919.sol#5) should be constant 
+BlocklancerToken.soldAfterPowerHour (datasets/qian/timestamp/vulnerable/37919.sol#6) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/qian/timestamp/vulnerable/37919.sol analyzed (1 contracts with 93 detectors), 8 result(s) found

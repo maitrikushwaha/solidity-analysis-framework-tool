@@ -1,0 +1,55 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0xbaa3de6504690efb064420d89e871c27065cdd52.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.ZTiRgq3kp8' running
+INFO:CryticCompile:Compilation warnings/errors on 0xbaa3de6504690efb064420d89e871c27065cdd52.sol:
+0xbaa3de6504690efb064420d89e871c27065cdd52.sol:14:9: Warning: Return value of low-level calls not used.
+        target.call.value(msg.value)(data);
+        ^--------------------------------^
+
+INFO:root:contract 0xbaa3de6504690efb064420d89e871c27065cdd52.sol:Proxy:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 87.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0xbaa3de6504690efb064420d89e871c27065cdd52.sol:14:9: Warning: Integer Underflow.
+
+INFO:symExec:0xbaa3de6504690efb064420d89e871c27065cdd52.sol:12:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+0xbaa3de6504690efb064420d89e871c27065cdd52.sol:5:1: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xbaa3de6504690efb064420d89e871c27065cdd52.sol:Proxy.json.
+INFO:root:contract 0xbaa3de6504690efb064420d89e871c27065cdd52.sol:VaultProxy:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 91.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0xbaa3de6504690efb064420d89e871c27065cdd52.sol:14:9: Warning: Integer Underflow.
+
+INFO:symExec:0xbaa3de6504690efb064420d89e871c27065cdd52.sol:33:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    Deposits[msg.sender] = 61740704701074964780846309608901824210962816459313765263755791555858194012688
+0xbaa3de6504690efb064420d89e871c27065cdd52.sol:12:5: Warning: Integer Overflow.
+
+0xbaa3de6504690efb064420d89e871c27065cdd52.sol:5:1: Warning: Integer Overflow.
+
+INFO:symExec:Flow1
+0xbaa3de6504690efb064420d89e871c27065cdd52.sol:39:13: Warning: Transaction-Ordering Dependency.
+
+Flow2
+0xbaa3de6504690efb064420d89e871c27065cdd52.sol:14:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xbaa3de6504690efb064420d89e871c27065cdd52.sol:VaultProxy.json.

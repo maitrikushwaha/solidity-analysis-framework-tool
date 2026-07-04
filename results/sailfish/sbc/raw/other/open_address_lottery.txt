@@ -1,0 +1,164 @@
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Analysis started at: 2026-06-21 07:02:43 PM
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Callgraph generation started!
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Callgraph generation finished!
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Value Range Analysis started
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Generating return summary for luckyNumberOfAddress
+[WARNING] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Return summary generated for luckyNumberOfAddress
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | State variable assignement do not exist
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Processed function luckyNumberOfAddress
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Generating return summary for reseed
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Return summary generated for reseed
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Range graph generated
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Processed function reseed
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Generating return summary for kill
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Return summary generated for kill
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | State variable assignement do not exist
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Processed function kill
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Range graph generated
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Generating return summary for participate
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Return summary generated for participate
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Range graph generated
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Processed function participate
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Generating return summary for OpenAddressLottery
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Return summary generated for OpenAddressLottery
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Range graph generated
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Processed function OpenAddressLottery
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Generating return summary for forceReseed
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Return summary generated for forceReseed
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Range graph generated
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Processed function forceReseed
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Generating return summary for fallback
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Return summary generated for fallback
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Range graph generated
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Processed function fallback
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Value Range Analysis took 0.008681 seconds
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Value Range Analysis finished
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Dependency detection started!
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | TOD dependency detected in file open_address_lottery.sol in contract OpenAddressLottery in by composing functions participate and participate
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | TOD dependency detected in file open_address_lottery.sol in contract OpenAddressLottery in by composing functions participate and fallback
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | TOD dependency detected in file open_address_lottery.sol in contract OpenAddressLottery in by composing functions fallback and participate
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | TOD dependency detected in file open_address_lottery.sol in contract OpenAddressLottery in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Dependency detection finished!
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Static Analysis took 0.397211 seconds
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Dependency exists
+[INFO] | 2026-06-21 07:02:43 PM | analyzer.open_address_lottery | Invoking symbolic executor!
+[36m[#] Analysing started: open_address_lottery.sol[0m
+[36m[#] Interprocedural CFG generation started for OpenAddressLottery[0m
+[36m[#] Interprocedural CFG generated for OpenAddressLottery[0m
+[36m[#] Interprocedural CFG generation started for participate[0m
+[36m[#] Interprocedural CFG generated for participate[0m
+[36m[#] Interprocedural CFG generation started for luckyNumberOfAddress[0m
+[36m[#] Interprocedural CFG generated for luckyNumberOfAddress[0m
+[36m[#] Interprocedural CFG generation started for kill[0m
+[36m[#] Interprocedural CFG generated for kill[0m
+[36m[#] Interprocedural CFG generation started for forceReseed[0m
+[36m[#] Interprocedural CFG generated for forceReseed[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] SDG generation started for OpenAddressLottery[0m
+[36m[#] SDG generated for OpenAddressLottery[0m
+[36m[#] SDG generation started for participate[0m
+[36m[#] SDG generated for participate[0m
+[36m[#] SDG generation started for luckyNumberOfAddress[0m
+[36m[#] SDG generated for luckyNumberOfAddress[0m
+[36m[#] SDG generation started for kill[0m
+[36m[#] SDG generated for kill[0m
+[36m[#] SDG generation started for forceReseed[0m
+[36m[#] SDG generated for forceReseed[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[INFO] | 2026-06-21 07:02:45 PM | analyzer.open_address_lottery | Symbolic execution took 2.382563 seconds
+[INFO] | 2026-06-21 07:02:45 PM | analyzer.open_address_lottery | Symbolic execution finished!
+[INFO] | 2026-06-21 07:02:45 PM | analyzer.open_address_lottery | Analysis finished!
+[INFO] | 2026-06-21 07:02:45 PM | analyzer.open_address_lottery | Analysis took 2.780985 seconds
+[INFO] | 2026-06-21 07:02:45 PM | analyzer.open_address_lottery | Analysis finished at: 2026-06-21 07:02:45 PM
+[36m[#] Analysis took 2.780985 seconds[0m
+[36m[#] Analysis completed: open_address_lottery.sol [0m
+
+=== dependency_info.json ===
+{
+    "open_address_lottery.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "participate",
+                "participate"
+            ],
+            "First_function": "participate",
+            "Second_function": "participate",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: participate\nNode: \nEXPRESSION winner[msg.sender] = true\nIRS: \nREF_1 := true\"",
+                        "\"BlockID: 8\nFunction: participate\nNode: \nEXPRESSION require(bool)(winner[msg.sender] == false)\nIRS: \nTMP_5 = SOLIDITY_CALL require(bool)(TMP_4)\""
+                    ],
+                    "state_variable": "winner"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "participate",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "participate",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 37\nFunction: participate\nNode: \nEXPRESSION winner[msg.sender] = true\nIRS: \nREF_1 := true\"",
+                        "\"BlockID: 8\nFunction: participate\nNode: \nEXPRESSION require(bool)(winner[msg.sender] == false)\nIRS: \nTMP_5 = SOLIDITY_CALL require(bool)(TMP_4)\""
+                    ],
+                    "state_variable": "winner"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "participate"
+            ],
+            "First_function": "participate",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: participate\nNode: \nEXPRESSION winner[msg.sender] = true\nIRS: \nREF_1 := true\"",
+                        "\"BlockID: 35\nFunction: participate\nNode: \nEXPRESSION require(bool)(winner[msg.sender] == false)\nIRS: \nTMP_5 = SOLIDITY_CALL require(bool)(TMP_4)\""
+                    ],
+                    "state_variable": "winner"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 67\nFunction: participate\nNode: \nEXPRESSION winner[msg.sender] = true\nIRS: \nREF_1 := true\"",
+                        "\"BlockID: 35\nFunction: participate\nNode: \nEXPRESSION require(bool)(winner[msg.sender] == false)\nIRS: \nTMP_5 = SOLIDITY_CALL require(bool)(TMP_4)\""
+                    ],
+                    "state_variable": "winner"
+                }
+            ]
+        }
+    ]
+}

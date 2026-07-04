@@ -1,0 +1,18 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 22734.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.bHwubKK1c2' running
+INFO:root:contract 22734.sol:CCCRCoin:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 80.2%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:22734.sol:7:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _seconds = 87522543116091692642898991470747911540473016816853618691036649129099924882818
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 22734.sol:CCCRCoin.json.

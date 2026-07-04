@@ -1,0 +1,29 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 1824.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.3QCXu0bzLl' running
+INFO:CryticCompile:Compilation warnings/errors on 1824.sol:
+1824.sol:13:5: Warning: No visibility specified. Defaulting to "public". 
+    function setPrices(uint256 newSellPrice, uint256 newBuyPrice) onlyOwner returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+1824.sol:13:5: Warning: Function state mutability can be restricted to view
+    function setPrices(uint256 newSellPrice, uint256 newBuyPrice) onlyOwner returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 1824.sol:Zmbc:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 84.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:1824.sol:15:16: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    PRICE_CHANGE_ENDING_TIME = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    owner = 0
+    newSellPrice = 1
+    newBuyPrice = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 1824.sol:Zmbc.json.

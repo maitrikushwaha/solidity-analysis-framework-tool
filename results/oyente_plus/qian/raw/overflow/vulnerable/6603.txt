@@ -1,0 +1,35 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 6603.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.ccSzOBftnd' running
+INFO:CryticCompile:Compilation warnings/errors on 6603.sol:
+6603.sol:8:49: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function transfer(address _to, uint _value, bytes _data) public returns (bool) {
+                                                ^---------^
+
+INFO:root:contract 6603.sol:HiroyukiCoinDark:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:6603.sol:8:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balanceOf[msg.sender] = 0
+    _value = 0
+INFO:symExec:6603.sol:11:26: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balanceOf[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    _value = 29231852045951868046254258437310183509001552418175972418710961615820984295437
+    balanceOf[_to] = 87216269114709376657741027999166354947085255561749914345753145055117535274228
+6603.sol:8:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balanceOf[msg.sender] = 0
+    _value = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 6603.sol:HiroyukiCoinDark.json.

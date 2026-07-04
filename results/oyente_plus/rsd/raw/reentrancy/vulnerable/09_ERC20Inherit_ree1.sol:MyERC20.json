@@ -1,0 +1,40 @@
+{
+ "evm_code_coverage": "89.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "09_ERC20Inherit_ree1.sol:40:14: Warning: Integer Underflow.\n",
+   "09_ERC20Inherit_ree1.sol:38:5: Warning: Integer Underflow.\n",
+   "09_ERC20Inherit_ree1.sol:93:5879: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 28948022309329048855892746252171976963317496166410141009864396001978282409984\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    balances[msg.sender] = 0",
+   "09_ERC20Inherit_ree1.sol:18:5: Warning: Integer Underflow.\n",
+   "09_ERC20Inherit_ree1.sol:54:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[to] = 18998963821306410992694389819446214172343548736946105045038646842547569693663",
+   "09_ERC20Inherit_ree1.sol:48:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[to] = 18773410775571108325231901899388264020999711231781812287752508987002285195373",
+   "09_ERC20Inherit_ree1.sol:93:5566: Warning: Integer Underflow.\n",
+   "09_ERC20Inherit_ree1.sol:50:9: Warning: Integer Underflow.\n",
+   "09_ERC20Inherit_ree1.sol:93:4595: Warning: Integer Underflow.\n",
+   "09_ERC20Inherit_ree1.sol:49:9: Warning: Integer Underflow.\n",
+   "09_ERC20Inherit_ree1.sol:26:5: Warning: Integer Underflow.\n",
+   "09_ERC20Inherit_ree1.sol:75:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[to] = 36356427102420266203560407724451850608536000682428798894627678521419211103812",
+   "09_ERC20Inherit_ree1.sol:31:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792004472283004992\n    balances[msg.sender] = 32",
+   "09_ERC20Inherit_ree1.sol:93:6943: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0",
+   "09_ERC20Inherit_ree1.sol:34:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[to] = 14982921788882046048224503607607903579794023751952144091632446419622485470547\n    balances[msg.sender] = 57911311770227518536627584849114099385312062331493935227383959298905412207616\n    balances[msg.sender] = 57896166355483172806702800472006359588067134961549638663517211161347116498944",
+   "09_ERC20Inherit_ree1.sol:30:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[to] = 14603349918617884096860062946906541005519231197210743634311125635974364172756\n    balances[msg.sender] = 58010071836618130072620717527796571362005602384867032860789675349708310333908\n    balances[msg.sender] = 58504130097974817294109982912665788870904842532828372012201256591360877142432",
+   "09_ERC20Inherit_ree1.sol:44:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "09_ERC20Inherit_ree1.sol:60:28: Warning: Integer Overflow.\n",
+   "09_ERC20Inherit_ree1.sol:50:23: Warning: Integer Overflow.\n",
+   "09_ERC20Inherit_ree1.sol:60:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0",
+   "09_ERC20Inherit_ree1.sol:93:3571: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0",
+   "09_ERC20Inherit_ree1.sol:66:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0",
+   "09_ERC20Inherit_ree1.sol:93:6889: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0",
+   "09_ERC20Inherit_ree1.sol:93:6676: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 16384"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

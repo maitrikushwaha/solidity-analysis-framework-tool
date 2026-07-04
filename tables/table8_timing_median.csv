@@ -1,0 +1,5 @@
+dataset,Mythril,Oyente+,Slither,Osiris,SmartCheck,Sailfish,Vandal,EtherSolve,Ours (Interval),Ours (Octagon),Ours (Polyhedra)
+SBC,145.68,15.98,1.00,7.34,3.62,2.25,0.37,0.40,0.99,0.99,0.99
+Qian,6.15,1.27,0.64,0.30,1.48,1.12,0.37,0.36,1.10,1.17,1.17
+RSD,305.00,39.76,0.65,--,2.19,--,0.52,0.37,1.61,1.75,1.68
+SolidiFI,318.71,125.89,--,--,--,3.92,--,--,1.06,1.12,1.08

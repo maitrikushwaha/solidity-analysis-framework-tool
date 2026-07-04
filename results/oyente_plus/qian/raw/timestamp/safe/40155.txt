@@ -1,0 +1,30 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40155.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.hOvwKNYHfI' running
+INFO:CryticCompile:Compilation warnings/errors on 40155.sol:
+40155.sol:8:33: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(msg.sender != owner) throw;
+                                ^---^
+40155.sol:13:67: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(block.timestamp < withdrawTime || withdrawAmount == 0) throw;
+                                                                  ^---^
+40155.sol:16:33: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(!owner.send(amount)) throw;
+                                ^---^
+40155.sol:12:5: Warning: No visibility specified. Defaulting to "public". 
+    function withdraw() onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 40155.sol:Vault:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 85.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:40155.sol:13:12: Warning: Timestamp Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40155.sol:Vault.json.

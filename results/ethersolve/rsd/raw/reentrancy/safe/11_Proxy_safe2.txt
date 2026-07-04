@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract datasets/rsd/reentrancy/safe/11_Proxy_safe2.sol:Proxy
+offset,opcode,detection

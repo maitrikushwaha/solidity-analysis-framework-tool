@@ -1,0 +1,23 @@
+{
+ "evm_code_coverage": "83.5",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "send_loop.sol:24:21: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    refundAddresses.length = 19342813113834066795298816\n    refunds[refundAddresses[x]] = 57896044618658097711785492504343953926634992332820282019728792003956564819969"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "send_loop.sol:24:21: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "send_loop.sol:24:21: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

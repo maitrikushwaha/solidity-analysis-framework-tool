@@ -1,0 +1,58 @@
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Analysis started at: 2026-06-21 07:13:11 PM
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Generating return summary for deposit
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Return summary generated for deposit
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Range graph generated
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Processed function deposit
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Value Range Analysis took 0.000249 seconds
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | TOD dependency detected in file 40760.sol in contract ReentranceExploit in by composing functions deposit and deposit
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Static Analysis took 0.048979 seconds
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Dependency exists
+[INFO] | 2026-06-21 07:13:11 PM | analyzer.40760  | Invoking symbolic executor!
+[36m[#] Analysing started: 40760.sol[0m
+[36m[#] Interprocedural CFG generation started for deposit[0m
+[36m[#] Interprocedural CFG generated for deposit[0m
+[36m[#] SDG generation started for deposit[0m
+[36m[#] SDG generated for deposit[0m
+[INFO] | 2026-06-21 07:13:12 PM | analyzer.40760  | Symbolic execution took 0.439016 seconds
+[INFO] | 2026-06-21 07:13:12 PM | analyzer.40760  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:13:12 PM | analyzer.40760  | Analysis finished!
+[INFO] | 2026-06-21 07:13:12 PM | analyzer.40760  | Analysis took 0.488549 seconds
+[INFO] | 2026-06-21 07:13:12 PM | analyzer.40760  | Analysis finished at: 2026-06-21 07:13:12 PM
+[36m[#] Analysis took 0.488549 seconds[0m
+[36m[#] Analysis completed: 40760.sol [0m
+
+=== dependency_info.json ===
+{
+    "40760.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "deposit",
+                "deposit"
+            ],
+            "First_function": "deposit",
+            "Second_function": "deposit",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: deposit\nNode: \nEXPRESSION vulnerable_contract = _vulnerable_contract\nIRS: \nvulnerable_contract := _vulnerable_contract\"",
+                        "\"BlockID: 3\nFunction: deposit\nNode: \nEXPRESSION require(bool)(vulnerable_contract.call.value(msg.value)())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:vulnerable_contract, function:call, arguments:[] value:msg.value \""
+                    ],
+                    "state_variable": "vulnerable_contract"
+                }
+            ]
+        }
+    ]
+}

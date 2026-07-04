@@ -1,0 +1,27 @@
+[INFO] | 2026-06-21 07:01:43 PM | analyzer.smart_billions | Analysis started at: 2026-06-21 07:01:43 PM
+[INFO] | 2026-06-21 07:01:46 PM | analyzer.smart_billions | Callgraph generation started!
+[INFO] | 2026-06-21 07:01:46 PM | analyzer.smart_billions | Callgraph generation finished!
+[INFO] | 2026-06-21 07:01:46 PM | analyzer.smart_billions | Interprocedural CFG generation started!
+Traceback (most recent call last):
+  File "contractlint.py", line 77, in analyze_contracts
+    generated_icfg, icfg_objects = generate_icfg(slither_obj, callgraph, graph_dir, dump_graph, log)
+  File "/root/sailfish/code/static_analysis/analysis/main_helper.py", line 400, in generate_icfg
+    cfg_obj = CFG(slither_obj, contract, function, graph_dir, dump_graph, log, ICFG.icfg_objects)
+  File "/root/sailfish/code/static_analysis/analysis/cfg.py", line 70, in __init__
+    self.build_cfg()
+  File "/root/sailfish/code/static_analysis/analysis/cfg.py", line 91, in build_cfg
+    self.generate_phi_var_for_return(self._function)
+  File "/root/sailfish/code/static_analysis/analysis/cfg.py", line 155, in generate_phi_var_for_return
+    variable = return_ir.used[0]
+IndexError: list index out of range
+[36m[#] Analysing started: smart_billions.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyPayloadSize[0m
+[36m[#] Interprocedural CFG generated for modifer onlyPayloadSize[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyPayloadSize[0m
+[36m[#] Interprocedural CFG generated for modifer onlyPayloadSize[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyPayloadSize[0m
+[36m[#] Interprocedural CFG generated for modifer onlyPayloadSize[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyAnimator[0m
+[36m[#] Interprocedural CFG generated for modifer onlyAnimator[0m

@@ -1,0 +1,87 @@
+
+'solc --version' running
+'solc /work/datasets/qian/timestamp/vulnerable/40451.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/timestamp/vulnerable' running
+Compilation warnings/errors on /work/datasets/qian/timestamp/vulnerable/40451.sol:
+/work/datasets/qian/timestamp/vulnerable/40451.sol:13:50: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+            if (!participant.send(this.balance)) throw;
+                                                 ^---^
+/work/datasets/qian/timestamp/vulnerable/40451.sol:10:32: Warning: "sha3" has been deprecated in favour of "keccak256"
+        uint32 hash32 = uint32(sha3(msg.value,participant,participant.balance,block.blockhash(block.number-1),block.timestamp,block.number));  
+                               ^----------------------------------------------------------------------------------------------------------^
+/work/datasets/qian/timestamp/vulnerable/40451.sol:10:32: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        uint32 hash32 = uint32(sha3(msg.value,participant,participant.balance,block.blockhash(block.number-1),block.timestamp,block.number));  
+                               ^----------------------------------------------------------------------------------------------------------^
+/work/datasets/qian/timestamp/vulnerable/40451.sol:11:60: Warning: "sha3" has been deprecated in favour of "keccak256"
+        uint64 hash64 = uint64(hash32) * shift_32 + uint32(sha3(hash32));
+                                                           ^----------^
+/work/datasets/qian/timestamp/vulnerable/40451.sol:11:60: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        uint64 hash64 = uint64(hash32) * shift_32 + uint32(sha3(hash32));
+                                                           ^----------^
+/work/datasets/qian/timestamp/vulnerable/40451.sol:11:60: Warning: The provided argument of type uint32 is not implicitly convertible to expected type bytes memory.
+        uint64 hash64 = uint64(hash32) * shift_32 + uint32(sha3(hash32));
+                                                           ^----------^
+/work/datasets/qian/timestamp/vulnerable/40451.sol:13:35: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            if (!participant.send(this.balance)) throw;
+                                  ^----------^
+/work/datasets/qian/timestamp/vulnerable/40451.sol:10:79: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        uint32 hash32 = uint32(sha3(msg.value,participant,participant.balance,block.blockhash(block.number-1),block.timestamp,block.number));  
+                                                                              ^-------------^
+
+
+PRNG_Challenge.challenge() (datasets/qian/timestamp/vulnerable/40451.sol#7-17) sends eth to arbitrary user
+	Dangerous calls:
+	- ! participant.send(this.balance) (datasets/qian/timestamp/vulnerable/40451.sol#13)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+PRNG_Challenge.challenge() (datasets/qian/timestamp/vulnerable/40451.sol#7-17) uses a dangerous strict equality:
+	- hash64 == lucky_number (datasets/qian/timestamp/vulnerable/40451.sol#12)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+PRNG_Challenge.challenge() (datasets/qian/timestamp/vulnerable/40451.sol#7-17) uses timestamp for comparisons
+	Dangerous comparisons:
+	- hash64 == lucky_number (datasets/qian/timestamp/vulnerable/40451.sol#12)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+PRNG_Challenge.challenge() (datasets/qian/timestamp/vulnerable/40451.sol#7-17) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+
+Deprecated standard detected hash32 = uint32(sha3()(msg.value,participant,participant.balance,block.blockhash(block.number - 1),block.timestamp,block.number)) (datasets/qian/timestamp/vulnerable/40451.sol#10):
+	- Usage of "block.blockhash()" should be replaced with "blockhash()"
+	- Usage of "sha3()" should be replaced with "keccak256()"
+Deprecated standard detected hash64 = uint64(hash32) * shift_32 + uint32(sha3()(hash32)) (datasets/qian/timestamp/vulnerable/40451.sol#11):
+	- Usage of "sha3()" should be replaced with "keccak256()"
+Deprecated standard detected THROW (datasets/qian/timestamp/vulnerable/40451.sol#13):
+	- Usage of "throw" should be replaced with "revert()"
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#deprecated-standards
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/timestamp/vulnerable/40451.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Contract PRNG_Challenge (datasets/qian/timestamp/vulnerable/40451.sol#3-19) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Reentrancy in PRNG_Challenge.challenge() (datasets/qian/timestamp/vulnerable/40451.sol#7-17):
+	External calls:
+	- ! participant.send(this.balance) (datasets/qian/timestamp/vulnerable/40451.sol#13)
+	State variables written after the call(s):
+	- winner = participant (datasets/qian/timestamp/vulnerable/40451.sol#14)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4
+/work/datasets/qian/timestamp/vulnerable/40451.sol analyzed (1 contracts with 93 detectors), 11 result(s) found

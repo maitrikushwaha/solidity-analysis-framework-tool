@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "76.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "21393.sol:10:46: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _value = 1\n    balances[tokenOwner].balance = 0"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

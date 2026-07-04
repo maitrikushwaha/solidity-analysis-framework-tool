@@ -1,0 +1,90 @@
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Analysis started at: 2026-06-21 07:02:38 PM
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Callgraph generation started!
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Callgraph generation finished!
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Value Range Analysis started
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Generating return summary for shuffle
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Return summary generated for shuffle
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Range graph generated
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Processed function shuffle
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Generating return summary for kill
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Return summary generated for kill
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | State variable assignement do not exist
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Processed function kill
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Generating return summary for fallback
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Return summary generated for fallback
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | State variable assignement do not exist
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Processed function fallback
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Range graph generated
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Generating return summary for CryptoRoulette
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Return summary generated for CryptoRoulette
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Range graph generated
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Processed function CryptoRoulette
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Generating return summary for play
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Return summary generated for play
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Range graph generated
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Processed function play
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Value Range Analysis took 0.002205 seconds
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Value Range Analysis finished
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Dependency detection started!
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | TOD dependency detected in file crypto_roulette.sol in contract CryptoRoulette in by composing functions play and play
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Dependency detection finished!
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Static Analysis took 0.153114 seconds
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Dependency exists
+[INFO] | 2026-06-21 07:02:38 PM | analyzer.crypto_roulette | Invoking symbolic executor!
+[36m[#] Analysing started: crypto_roulette.sol[0m
+[36m[#] Interprocedural CFG generation started for CryptoRoulette[0m
+[36m[#] Interprocedural CFG generated for CryptoRoulette[0m
+[36m[#] Interprocedural CFG generation started for play[0m
+[36m[#] Interprocedural CFG generated for play[0m
+[36m[#] Interprocedural CFG generation started for kill[0m
+[36m[#] Interprocedural CFG generated for kill[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] SDG generation started for CryptoRoulette[0m
+[36m[#] SDG generated for CryptoRoulette[0m
+[36m[#] SDG generation started for play[0m
+[36m[#] SDG generated for play[0m
+[36m[#] SDG generation started for kill[0m
+[36m[#] SDG generated for kill[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[INFO] | 2026-06-21 07:02:40 PM | analyzer.crypto_roulette | Symbolic execution took 1.677619 seconds
+[INFO] | 2026-06-21 07:02:40 PM | analyzer.crypto_roulette | Symbolic execution finished!
+[INFO] | 2026-06-21 07:02:40 PM | analyzer.crypto_roulette | Analysis finished!
+[INFO] | 2026-06-21 07:02:40 PM | analyzer.crypto_roulette | Analysis took 1.831792 seconds
+[INFO] | 2026-06-21 07:02:40 PM | analyzer.crypto_roulette | Analysis finished at: 2026-06-21 07:02:40 PM
+[36m[#] Analysis took 1.831792 seconds[0m
+[36m[#] Analysis completed: crypto_roulette.sol [0m
+
+=== dependency_info.json ===
+{
+    "crypto_roulette.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "play",
+                "play"
+            ],
+            "First_function": "play",
+            "Second_function": "play",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: shuffle\nNode: \nEXPRESSION secretNumber = uint8(sha3()(now,block.blockhash(block.number - 1))) % 20 + 1\nIRS: \nsecretNumber := TMP_6\"",
+                        "\"BlockID: 9\nFunction: play\nNode: \nIF number == secretNumber\nIRS: \nCONDITION TMP_12\""
+                    ],
+                    "state_variable": "secretNumber"
+                }
+            ]
+        }
+    ]
+}

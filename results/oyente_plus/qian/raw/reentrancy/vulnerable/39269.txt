@@ -1,0 +1,23 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39269.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.L9qs8thLNY' running
+INFO:CryticCompile:Compilation warnings/errors on 39269.sol:
+39269.sol:19:9: Warning: This declaration shadows a builtin symbol.
+        TX memory tx = pendingTxs[ptxTail];
+        ^----------^
+
+INFO:root:contract 39269.sol:Bakt:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 40.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:39269.sol:13:5: Warning: Integer Underflow.
+
+INFO:symExec:39269.sol:13:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39269.sol:Bakt.json.

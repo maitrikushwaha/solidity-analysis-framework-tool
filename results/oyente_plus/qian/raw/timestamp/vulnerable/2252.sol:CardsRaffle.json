@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "80.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "2252.sol:15:58: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    owner = 0\n    raffleTicketsBought = 1"
+  ],
+  "integer_overflow": [
+   "2252.sol:14:20: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    owner = 0\n    raffleTicketsBought = 66641087174358818163062227740702012211728032212072388996919585167904923265703"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

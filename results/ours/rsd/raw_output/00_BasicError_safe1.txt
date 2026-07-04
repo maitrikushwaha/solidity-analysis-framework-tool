@@ -1,0 +1,42 @@
+Starting Solidity compilation and static analysis.
+solc 0.8.28 already installed at: /home/maitri/.solcx/solc-v0.8.28
+Using solc version 0.8.28
+solc 0.8.28 already installed at: /home/maitri/.solcx/solc-v0.8.28
+Using solc version 0.8.28
+[CFG] Reentrancy back-edge inserted: ExpressionStatement_3 → IfStatement_1
+Dependency analysis completed in 0.0046s.
+[DOMAIN] Reentrancy encoding detected → Box + Octagon + Polka
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] Running Box domain.
+[TIMING] reentrancy domain=Box fixpoint=0.6430s
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW ==========
+solc 0.8.28 already installed at: /home/maitri/.solcx/solc-v0.8.28
+Using solc version 0.8.28
+
+========== PIPELINE 3: TIMESTAMP DEPENDENCY ==========
+
+========== PIPELINE 4: TOD ==========
+
+===== VERDICTS (Box) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+
+===== VERDICTS (Octagon) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+
+===== VERDICTS (Polka) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: NOT VULNERABLE
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: NOT VULNERABLE
+[SUMMARY] TOD: NOT VULNERABLE
+
+Total analysis time: 1.47s
+
+Error: cfg.rev.png: syntax error in line 39 near 'ExpressionStatement_7'
+Error: cfg.png: syntax error in line 45 near 'n_0'

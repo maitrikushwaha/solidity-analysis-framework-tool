@@ -1,0 +1,17 @@
+{
+ "evm_code_coverage": "80.7",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "40154.sol:8:38: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    duration = 58842661087258632601818429958475246874657598876710526450742656402557900759041",
+   "40154.sol:8:82: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    withdrawTime = 9033392107838478948222461764553198785964224814720499616835006731726194843785\n    duration = 77250993765194479790229504306789580043098689343798260961908938210701194987602"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

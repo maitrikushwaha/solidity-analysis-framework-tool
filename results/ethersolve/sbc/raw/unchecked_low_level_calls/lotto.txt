@@ -1,0 +1,5 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/unchecked_low_level_calls/lotto.sol:Lotto
+offset,opcode,detection
+570,570: SLOAD,Store read after unsafe call
+584,584: SSTORE,Store write after unsafe call

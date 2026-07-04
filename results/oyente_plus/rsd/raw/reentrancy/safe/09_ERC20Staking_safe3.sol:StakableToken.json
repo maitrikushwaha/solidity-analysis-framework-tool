@@ -1,0 +1,32 @@
+{
+ "evm_code_coverage": "85.2",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "09_ERC20Staking_safe3.sol:21:5: Warning: Integer Underflow.\n",
+   "09_ERC20Staking_safe3.sol:16:5: Warning: Integer Underflow.\n",
+   "09_ERC20Staking_safe3.sol:49:2809: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stakedAmounts[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    stakedAmounts[msg.sender] = 0",
+   "09_ERC20Staking_safe3.sol:44:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stakedAmounts[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    stakedAmounts[msg.sender] = 61572006390280932505766902755780819567365690625440071682017727939567941582848",
+   "09_ERC20Staking_safe3.sol:49:3792: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stakedAmounts[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    stakedAmounts[msg.sender] = 74236320984910516156828726151844451796481385158646365382513834323227497726288",
+   "09_ERC20Staking_safe3.sol:49:4838: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stakedAmounts[msg.sender] = 86844066927987146567678238756515930889952488499230423029593188005934847229952\n    stakedAmounts[msg.sender] = 86845171423161614054597598533617657694409123443910218562653007420384434231552",
+   "09_ERC20Staking_safe3.sol:46:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stakedAmounts[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    stakedAmounts[msg.sender] = 65588013382570723455271274191124121733921997332004764452769019611525319492512",
+   "09_ERC20Staking_safe3.sol:49:2310: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stakedAmounts[msg.sender] = 0",
+   "09_ERC20Staking_safe3.sol:41:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stakedAmounts[msg.sender] = 0",
+   "09_ERC20Staking_safe3.sol:40:9: Warning: Integer Underflow.\n",
+   "09_ERC20Staking_safe3.sol:34:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    stakedAmounts[msg.sender] = 18098592498915982125758829695095930485479817295685173279159948559681130797096",
+   "09_ERC20Staking_safe3.sol:31:9: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "09_ERC20Staking_safe3.sol:35:24: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    stakedAmounts[msg.sender] = 18098592498915982125758829695095930485479817295685173279159948559681130797096",
+   "09_ERC20Staking_safe3.sol:49:5389: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    stakedAmounts[msg.sender] = 8604783667320492181230880818828527780751860368080672046280279845673034929473",
+   "09_ERC20Staking_safe3.sol:49:5551: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    stakedAmounts[msg.sender] = 8604783667320492181230880818828527780751860368080672046280279845673034929473",
+   "09_ERC20Staking_safe3.sol:49:5633: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    stakedAmounts[msg.sender] = 66500828285978589893016373323172481707386852700900954066009071849629599749441"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

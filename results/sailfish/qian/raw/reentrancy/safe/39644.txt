@@ -1,0 +1,58 @@
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Analysis started at: 2026-06-21 07:12:27 PM
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Generating return summary for revoke
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Return summary generated for revoke
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Range graph generated
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Processed function revoke
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Value Range Analysis took 0.000727 seconds
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | TOD dependency detected in file 39644.sol in contract AddressOwnershipVerification in by composing functions revoke and revoke
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Static Analysis took 0.087070 seconds
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Dependency exists
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Invoking symbolic executor!
+[36m[#] Analysing started: 39644.sol[0m
+[36m[#] Interprocedural CFG generation started for revoke[0m
+[36m[#] Interprocedural CFG generated for revoke[0m
+[36m[#] SDG generation started for revoke[0m
+[36m[#] SDG generated for revoke[0m
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Symbolic execution took 0.679551 seconds
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Analysis finished!
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Analysis took 0.767402 seconds
+[INFO] | 2026-06-21 07:12:27 PM | analyzer.39644  | Analysis finished at: 2026-06-21 07:12:27 PM
+[36m[#] Analysis took 0.767402 seconds[0m
+[36m[#] Analysis completed: 39644.sol [0m
+
+=== dependency_info.json ===
+{
+    "39644.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "revoke",
+                "revoke"
+            ],
+            "First_function": "revoke",
+            "Second_function": "revoke",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: revoke\nNode: \nEXPRESSION verifications[transactor][transactee] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 3\nFunction: revoke\nNode: \nIF ! transactee.call.value(deposit).gas(23000)()\nIRS: \nTMP_2(bool) = LOW_LEVEL_CALL, dest:transactee, function:call, arguments:[] value:deposit gas:23000\""
+                    ],
+                    "state_variable": "verifications"
+                }
+            ]
+        }
+    ]
+}

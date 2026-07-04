@@ -1,0 +1,81 @@
+[INFO] | 2026-06-21 07:14:04 PM | analyzer.40736  | Analysis started at: 2026-06-21 07:14:04 PM
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Callgraph generation started!
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Value Range Analysis started
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Generating return summary for withdrawFunds
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Return summary generated for withdrawFunds
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Range graph generated
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Processed function withdrawFunds
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Range graph generated
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Value Range Analysis took 0.000536 seconds
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Dependency detection started!
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | DAO dependency detected in file 40736.sol in contract EtherStore in by composing functions withdrawFunds and withdrawFunds
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | TOD dependency detected in file 40736.sol in contract EtherStore in by composing functions withdrawFunds and withdrawFunds
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Dependency detection finished!
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Static Analysis took 0.065559 seconds
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Dependency exists
+[INFO] | 2026-06-21 07:14:05 PM | analyzer.40736  | Invoking symbolic executor!
+[36m[#] Analysing started: 40736.sol[0m
+[36m[#] Interprocedural CFG generation started for withdrawFunds[0m
+[36m[#] Interprocedural CFG generated for withdrawFunds[0m
+[36m[#] SDG generation started for withdrawFunds[0m
+[36m[#] SDG generated for withdrawFunds[0m
+[INFO] | 2026-06-21 07:14:06 PM | analyzer.40736  | Symbolic execution took 1.268721 seconds
+[INFO] | 2026-06-21 07:14:06 PM | analyzer.40736  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:14:06 PM | analyzer.40736  | Analysis finished!
+[INFO] | 2026-06-21 07:14:06 PM | analyzer.40736  | Analysis took 1.334869 seconds
+[INFO] | 2026-06-21 07:14:06 PM | analyzer.40736  | Analysis finished at: 2026-06-21 07:14:06 PM
+[36m[#] Analysis took 1.334869 seconds[0m
+[36m[#] Analysis completed: 40736.sol [0m
+
+=== dependency_info.json ===
+{
+    "40736.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawFunds",
+                "withdrawFunds"
+            ],
+            "from_function": "withdrawFunds",
+            "to_function": "withdrawFunds",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: withdrawFunds\nNode: \nEXPRESSION require(bool)(balances[msg.sender] >= _weiToWithdraw)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\"",
+                        "\"BlockID: 6\nFunction: withdrawFunds\nNode: \nEXPRESSION balances[msg.sender] -= _weiToWithdraw\nIRS: \nREF_3 = REF_3 - _weiToWithdraw\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawFunds",
+                "withdrawFunds"
+            ],
+            "First_function": "withdrawFunds",
+            "Second_function": "withdrawFunds",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: withdrawFunds\nNode: \nEXPRESSION balances[msg.sender] -= _weiToWithdraw\nIRS: \nREF_3 = REF_3 - _weiToWithdraw\"",
+                        "\"BlockID: 2\nFunction: withdrawFunds\nNode: \nEXPRESSION require(bool)(balances[msg.sender] >= _weiToWithdraw)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        }
+    ]
+}

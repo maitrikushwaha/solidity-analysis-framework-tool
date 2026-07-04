@@ -1,0 +1,12 @@
+{
+  "filename": "timed_crowdsale.sol",
+  "reentrancy": 0,
+  "overflow": 0,
+  "timestamp": 1,
+  "tod": 0,
+  "duration_s": 0.55,
+  "error": null,
+  "reentrancy_domains": [
+    "Box"
+  ]
+}

@@ -1,0 +1,58 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39248.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.1pwLNqmphC' running
+INFO:CryticCompile:Compilation warnings/errors on 39248.sol:
+39248.sol:19:89: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (!p.beneficiary.call.value(p.etherAmount * 1 ether)(_transactionBytecode)) { throw; }
+                                                                                        ^---^
+39248.sol:17:9: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+        Proposal p = proposals[_proposalID];
+        ^--------^
+39248.sol:16:5: Warning: No visibility specified. Defaulting to "public". 
+    function executeProposal(uint256 _proposalID, bytes _transactionBytecode)  {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 39248.sol:DAS:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:39248.sol:19:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _proposalID = 0
+    proposals[_proposalID] = 1
+INFO:symExec:39248.sol:6:5: Warning: Integer Overflow.
+
+39248.sol:16:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _transactionBytecode = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+39248.sol:17:22: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    proposals[_proposalID] = 73299361704175640233819768636839491027482852634548353979321839784933018922431
+    _proposalID = 66039160219397864884282574707139656127115026062204637500735389164634825555977
+39248.sol:18:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    proposals[_proposalID] = 102416780475840342398320159365885853644600904410913805847634761052238604758463
+    _proposalID = 37262384040386122786786671173031432929428139339905504400457998139727737782281
+39248.sol:19:39: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    proposals[_proposalID] = 102416780475840342398320350927828461880708199204292199636282713394628877708735
+    _proposalID = 37262384040386122786786760967692030540103433774301626488886725800223178227721
+39248.sol:6:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    proposals[_proposalID] = 1
+    _proposalID = 0
+INFO:symExec:39248.sol:19:14: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39248.sol:DAS.json.

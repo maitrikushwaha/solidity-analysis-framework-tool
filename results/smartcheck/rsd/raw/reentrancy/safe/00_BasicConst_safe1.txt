@@ -1,0 +1,35 @@
+/work/datasets/rsd/reentrancy/safe/00_BasicConst_safe1.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlline 12:38 no viable alternative at input '.call{'
+line 12:38 missing ';' at '{'
+ruleId: SOLIDITY_ADDRESS_HARDCODED
+patternId: adc165
+severity: 1
+line: 7
+column: 29
+content: 0xD591678684E7c2f033b5eFF822553161bdaAd781
+
+ruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 4
+column: 0
+content: contractC{mapping(address=>uint256)publicbalances;addressprivatetarget=0xD591678684E7c2f033b5eFF822553161bdaAd781;functionwithdraw()public{require(balances[msg.sender]>0,"Insufficient funds");balances[msg.sender]=0;(boolsuccess,)=target.call<missing ';'>{value:balances[msg.sender]}("");require(success,"Call failed");}functiondeposit()publicpayable{balances[msg.sender]+=msg.value;}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+patternId: 5616b2
+severity: 1
+line: 7
+column: 12
+content: private
+
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_LOCKED_MONEY :1
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA :1
+SOLIDITY_ADDRESS_HARDCODED :1

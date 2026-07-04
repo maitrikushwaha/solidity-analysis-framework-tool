@@ -1,0 +1,102 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/unchecked_low_level_calls' running
+Compilation warnings/errors on /work/datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:
+/work/datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:48:38: Warning: This declaration shadows an existing declaration.
+	function newPuppet() public returns(address newPuppet){
+	                                    ^---------------^
+/work/datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:48:2: The shadowed declaration is here:
+	function newPuppet() public returns(address newPuppet){
+ ^ (Relevant source part starts here and spans across multiple lines).
+
+/work/datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:69:9: Warning: Return value of low-level calls not used.
+        extra[0].call.value(_share).gas(800000)();
+        ^---------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:71:9: Warning: Return value of low-level calls not used.
+        extra[1].call.value(_share).gas(800000)();
+        ^---------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:73:9: Warning: Return value of low-level calls not used.
+        extra[2].call.value(_share).gas(800000)();
+        ^---------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:75:9: Warning: Return value of low-level calls not used.
+        extra[3].call.value(_share).gas(800000)();
+        ^---------------------------------------^
+/work/datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:102:4: Warning: Return value of low-level calls not used.
+			target[0].call.value(msg.value).gas(600000)();
+			^-------------------------------------------^
+
+
+Splitter.fundPuppets() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#65-76) ignores return value by extra[0].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#69)
+Splitter.fundPuppets() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#65-76) ignores return value by extra[1].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#71)
+Splitter.fundPuppets() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#65-76) ignores return value by extra[2].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#73)
+Splitter.fundPuppets() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#65-76) ignores return value by extra[3].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#75)
+Puppet.fallback() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#99-104) ignores return value by target[0].call.value(msg.value).gas(600000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#102)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-low-level-calls
+
+Splitter.newPuppet().newPuppet (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#48) shadows:
+	- Splitter.newPuppet() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#48-53) (function)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#local-variable-shadowing
+
+Splitter.fundPuppets() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#65-76) tries to limit the gas of an external call that controls implicit decoding
+	extra[0].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#69)
+	extra[1].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#71)
+	extra[2].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#73)
+	extra[3].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#75)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#return-bomb
+
+Version constraint ^0.4.23 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x
+	- ExpExponentCleanup
+	- EventStructWrongData.
+It is used by:
+	- ^0.4.23 (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#7)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in Splitter.fundPuppets() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#65-76):
+	- extra[0].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#69)
+	- extra[1].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#71)
+	- extra[2].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#73)
+	- extra[3].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#75)
+Low level call in Puppet.fallback() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#99-104):
+	- target[0].call.value(msg.value).gas(600000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#102)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Parameter Splitter.setExtra(uint256,address)._id (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#57) is not in mixedCase
+Parameter Splitter.setExtra(uint256,address)._newExtra (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#57) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Splitter.fundPuppets() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#65-76) uses literals with too many digits:
+	- extra[0].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#69)
+Splitter.fundPuppets() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#65-76) uses literals with too many digits:
+	- extra[1].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#71)
+Splitter.fundPuppets() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#65-76) uses literals with too many digits:
+	- extra[2].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#73)
+Splitter.fundPuppets() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#65-76) uses literals with too many digits:
+	- extra[3].call.value(_share).gas(800000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#75)
+Puppet.fallback() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#99-104) uses literals with too many digits:
+	- target[0].call.value(msg.value).gas(600000)() (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#102)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+
+Splitter._addy (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#14) is never used in Splitter (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#9-82)
+Splitter._count (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#16) is never used in Splitter (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#9-82)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-state-variable
+
+Splitter._addy (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#14) should be constant 
+Splitter._count (datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol#16) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/sbc/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol analyzed (3 contracts with 93 detectors), 22 result(s) found

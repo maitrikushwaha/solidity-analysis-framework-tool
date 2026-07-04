@@ -1,0 +1,25 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 35661.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.CbLTLSc9Qb' running
+INFO:CryticCompile:Compilation warnings/errors on 35661.sol:
+35661.sol:10:37: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(balances[investor] == 0) throw;
+                                    ^---^
+35661.sol:13:46: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(!(investor.call.value(amount)())) throw;
+                                             ^---^
+35661.sol:9:5: Warning: No visibility specified. Defaulting to "public". 
+    function refund() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 35661.sol:PreICOProxyBuyer:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 84.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 35661.sol:PreICOProxyBuyer.json.

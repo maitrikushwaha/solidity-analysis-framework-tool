@@ -1,0 +1,171 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/unchecked_low_level_calls' running
+Compilation warnings/errors on /work/datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol:
+/work/datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol:150:9: Warning: Return value of low-level calls not used.
+        whale.call.value(donate_amount)(bytes4(keccak256("donate()")));
+        ^------------------------------------------------------------^
+
+
+FiftyFlip.sendFunds(address,uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#323-331) sends eth to arbitrary user
+	Dangerous calls:
+	- success = paidUser.send(amount) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#324)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+FiftyFlip.play(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#162-207) uses a weak PRNG: "maskRes = (random % 2) != 0 (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#174)" 
+FiftyFlip.play(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#162-207) uses a weak PRNG: "jackpotRes = random % JACKPOT_MODULO (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#175)" 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#weak-PRNG
+
+Reentrancy in FiftyFlip.wager(bool,uint256,uint256,uint8,bytes32,bytes32) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#128-159):
+	External calls:
+	- whale.call.value(donate_amount)(bytes4(keccak256()(donate()))) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#150)
+	State variables written after the call(s):
+	- bet.amount = amount (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#153)
+	FiftyFlip.bets (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#66) can be used in cross function reentrancies:
+	- FiftyFlip.clearProcessedBet(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#349-361)
+	- FiftyFlip.getBetInfo(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#265-271)
+	- FiftyFlip.play(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#162-207)
+	- FiftyFlip.refund(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#228-236)
+	- FiftyFlip.sendRefund(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#307-320)
+	- FiftyFlip.wager(bool,uint256,uint256,uint8,bytes32,bytes32) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#128-159)
+	- bet.blockNumber = block.number (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#154)
+	FiftyFlip.bets (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#66) can be used in cross function reentrancies:
+	- FiftyFlip.clearProcessedBet(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#349-361)
+	- FiftyFlip.getBetInfo(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#265-271)
+	- FiftyFlip.play(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#162-207)
+	- FiftyFlip.refund(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#228-236)
+	- FiftyFlip.sendRefund(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#307-320)
+	- FiftyFlip.wager(bool,uint256,uint256,uint8,bytes32,bytes32) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#128-159)
+	- bet.betMask = bMask (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#155)
+	FiftyFlip.bets (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#66) can be used in cross function reentrancies:
+	- FiftyFlip.clearProcessedBet(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#349-361)
+	- FiftyFlip.getBetInfo(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#265-271)
+	- FiftyFlip.play(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#162-207)
+	- FiftyFlip.refund(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#228-236)
+	- FiftyFlip.sendRefund(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#307-320)
+	- FiftyFlip.wager(bool,uint256,uint256,uint8,bytes32,bytes32) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#128-159)
+	- bet.player = player (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#156)
+	FiftyFlip.bets (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#66) can be used in cross function reentrancies:
+	- FiftyFlip.clearProcessedBet(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#349-361)
+	- FiftyFlip.getBetInfo(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#265-271)
+	- FiftyFlip.play(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#162-207)
+	- FiftyFlip.refund(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#228-236)
+	- FiftyFlip.sendRefund(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#307-320)
+	- FiftyFlip.wager(bool,uint256,uint256,uint8,bytes32,bytes32) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#128-159)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+FiftyFlip.wager(bool,uint256,uint256,uint8,bytes32,bytes32) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#128-159) ignores return value by whale.call.value(donate_amount)(bytes4(keccak256()(donate()))) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#150)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-low-level-calls
+
+FiftyFlip.setBotAddress(address) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#113-118) should emit an event for: 
+	- autoPlayBot = autoPlayBotAddress (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#117) 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-events-access-control
+
+FiftyFlip.withdrawDevFee(address,uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#239-249) should emit an event for: 
+	- devFeeSize -= withdrawAmount (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#247) 
+FiftyFlip.withdrawBotFee(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#252-262) should emit an event for: 
+	- devFeeSize -= withdrawAmount (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#260) 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-events-arithmetic
+
+FiftyFlip.constructor(address,address,address).autoPlayBotAddress (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#80) lacks a zero-check on :
+		- autoPlayBot = autoPlayBotAddress (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#82)
+FiftyFlip.constructor(address,address,address).whaleAddress (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#80) lacks a zero-check on :
+		- whale = whaleAddress (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#83)
+FiftyFlip.constructor(address,address,address).secretSignerAddress (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#80) lacks a zero-check on :
+		- secretSigner = secretSignerAddress (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#84)
+FiftyFlip.setBotAddress(address).autoPlayBotAddress (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#113) lacks a zero-check on :
+		- autoPlayBot = autoPlayBotAddress (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#117)
+FiftyFlip.setSecretSigner(address)._secretSigner (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#120) lacks a zero-check on :
+		- secretSigner = _secretSigner (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#124)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+Reentrancy in FiftyFlip.wager(bool,uint256,uint256,uint8,bytes32,bytes32) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#128-159):
+	External calls:
+	- whale.call.value(donate_amount)(bytes4(keccak256()(donate()))) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#150)
+	State variables written after the call(s):
+	- totalAmountToWhale += donate_amount (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#151)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2
+
+Reentrancy in FiftyFlip.wager(bool,uint256,uint256,uint8,bytes32,bytes32) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#128-159):
+	External calls:
+	- whale.call.value(donate_amount)(bytes4(keccak256()(donate()))) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#150)
+	Event emitted after the call(s):
+	- Wager(ticketID,bet.amount,bet.blockNumber,bet.betMask,bet.player) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#158)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3
+
+Version constraint ^0.4.24 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x
+	- ExpExponentCleanup
+	- EventStructWrongData.
+It is used by:
+	- ^0.4.24 (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#7)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in FiftyFlip.wager(bool,uint256,uint256,uint8,bytes32,bytes32) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#128-159):
+	- whale.call.value(donate_amount)(bytes4(keccak256()(donate()))) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#150)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Parameter FiftyFlip.setSecretSigner(address)._secretSigner (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#120) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Reentrancy in FiftyFlip.payout(address,uint256,uint256,bool,uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#299-304):
+	External calls:
+	- winner.transfer(ethToTransfer) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#302)
+	Event emitted after the call(s):
+	- Win(winner,ethToTransfer,ticketID,maskRes,jackpotRes) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#303)
+Reentrancy in FiftyFlip.play(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#162-207):
+	External calls:
+	- payout(bet.player,tossWin + jackpotWin,ticketID,maskRes,jackpotRes) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#194)
+		- winner.transfer(ethToTransfer) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#302)
+	State variables written after the call(s):
+	- bet.amount = 0 (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#201)
+	- lockedInBets -= tossWinAmount (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#200)
+Reentrancy in FiftyFlip.sendFunds(address,uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#323-331):
+	External calls:
+	- success = paidUser.send(amount) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#324)
+	Event emitted after the call(s):
+	- FailedPayment(paidUser,amount) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#328)
+	- Payment(paidUser,amount) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#326)
+Reentrancy in FiftyFlip.sendRefund(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#307-320):
+	External calls:
+	- requester.transfer(ethToTransfer) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#313)
+	State variables written after the call(s):
+	- bet.amount = 0 (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#318)
+	- lockedInBets -= tossWinAmount (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#316)
+	Event emitted after the call(s):
+	- Refund(ticketID,ethToTransfer,requester) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#319)
+Reentrancy in FiftyFlip.withdrawBotFee(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#252-262):
+	External calls:
+	- sendFunds(autoPlayBot,withdrawAmount) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#259)
+		- success = paidUser.send(amount) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#324)
+	State variables written after the call(s):
+	- devFeeSize -= withdrawAmount (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#260)
+Reentrancy in FiftyFlip.withdrawDevFee(address,uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#239-249):
+	External calls:
+	- sendFunds(withdrawAddress,withdrawAmount) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#246)
+		- success = paidUser.send(amount) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#324)
+	State variables written after the call(s):
+	- devFeeSize -= withdrawAmount (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#247)
+Reentrancy in FiftyFlip.withdrawDonation(uint256) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#217-225):
+	External calls:
+	- sendFunds(msg.sender,amount) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#222)
+		- success = paidUser.send(amount) (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#324)
+	State variables written after the call(s):
+	- donateAmount[msg.sender] -= amount (datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol#223)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4
+/work/datasets/sbc/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol analyzed (2 contracts with 93 detectors), 26 result(s) found

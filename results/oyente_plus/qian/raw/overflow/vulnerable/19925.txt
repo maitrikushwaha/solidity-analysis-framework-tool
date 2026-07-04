@@ -1,0 +1,43 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 19925.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.spTF4mIybp' running
+INFO:CryticCompile:Compilation warnings/errors on 19925.sol:
+19925.sol:11:6: Warning: Return value of low-level calls not used.
+	    msg.sender.call.value(_value)(_data);
+	    ^----------------------------------^
+
+INFO:root:contract 19925.sol:ERC223TokenCompatible:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 88.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:19925.sol:9:32: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+    _value = 1
+19925.sol:8:2: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _value = 14474011154664524427946373126085988481658748083205070504932198000989141204993
+19925.sol:11:6: Warning: Integer Underflow.
+
+INFO:symExec:19925.sol:8:2: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+19925.sol:10:25: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[_to] = 86973801820715698127913924616581717904574452523280318352663118682180914401574
+    _value = 29222354080878577187665080323502750383624931226130243202986789467875657797930
+19925.sol:6:11: Warning: Integer Overflow.
+
+INFO:symExec:19925.sol:11:6: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 19925.sol:ERC223TokenCompatible.json.

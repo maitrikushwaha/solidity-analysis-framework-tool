@@ -1,0 +1,23 @@
+{
+ "evm_code_coverage": "88.6",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "callstack": [
+   "lotto.sol:20:10: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [
+   [
+    "lotto.sol:27:10: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "lotto.sol:20:10: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

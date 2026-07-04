@@ -1,0 +1,23 @@
+{
+ "evm_code_coverage": "93.6",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol:63:16: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    MinSum = 57896044618658097711785492504343953926645626156786561346712022460438807576576\n    _am = 10633823966279326983230456482242756609"
+  ],
+  "integer_overflow": [
+   "0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol:17:5: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [
+   "0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol:60:9: Warning: Timestamp Dependency.\n"
+  ],
+  "reentrancy": [
+   "0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol:63:16: Warning: Re-Entrancy Vulnerability.\n",
+   "0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol:66:17: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

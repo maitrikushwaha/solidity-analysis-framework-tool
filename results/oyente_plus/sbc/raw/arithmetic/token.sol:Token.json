@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "86.5",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "token.sol:22:6: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _value = 1\n    balances[msg.sender] = 0"
+  ],
+  "integer_overflow": [
+   "token.sol:23:6: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[_to] = 9954213416465694884158333234283357949270119047261713061903225480195385073375\n    _value = 109484684196675394460098087156194687024136662164966117791088172068152111849764"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

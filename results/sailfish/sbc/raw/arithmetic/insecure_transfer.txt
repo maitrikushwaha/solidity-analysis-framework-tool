@@ -1,0 +1,34 @@
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Analysis started at: 2026-06-21 06:59:33 PM
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Callgraph generation started!
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Callgraph generation finished!
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Value Range Analysis started
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Generating return summary for transfer
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Return summary generated for transfer
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Range graph generated
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Processed function transfer
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Value Range Analysis took 0.001274 seconds
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Value Range Analysis finished
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Dependency detection started!
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Dependency detection finished!
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Static Analysis took 0.066314 seconds
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Dependency does not exist
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Symbolic execution is not needed!
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Analysis finished!
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Analysis took 0.066750 seconds
+[INFO] | 2026-06-21 06:59:33 PM | analyzer.insecure_transfer | Analysis finished at: 2026-06-21 06:59:33 PM
+[36m[#] Analysing started: insecure_transfer.sol[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] Analysis took 0.066750 seconds[0m
+[36m[#] Analysis completed: insecure_transfer.sol [0m
+
+=== dependency_info.json ===
+{}

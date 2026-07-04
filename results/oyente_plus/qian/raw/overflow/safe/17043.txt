@@ -1,0 +1,23 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 17043.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.D7kgFc4Mp2' running
+INFO:CryticCompile:Compilation warnings/errors on 17043.sol:
+17043.sol:9:9: Warning: Return value of low-level calls not used.
+        msg.sender.call.value(balances[msg.sender])();
+        ^-------------------------------------------^
+
+INFO:root:contract 17043.sol:keepMyEther:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 80.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:17043.sol:9:9: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:17043.sol:9:9: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 17043.sol:keepMyEther.json.

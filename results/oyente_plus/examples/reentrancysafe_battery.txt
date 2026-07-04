@@ -1,0 +1,92 @@
+================================================================================
+Oyente+ reentrancy FALSE POSITIVE on reentrancysafe.sol  --  robustness battery
+================================================================================
+Contract : reentrancysafe.sol  (contract Reentrancy_safe; identical, modulo the
+           contract name, to Reentrancy_bonus of Fig. "reentrancybonus")
+SHA-256  : 01da12e50ec36f0a4bb9c950bfe8dd07a81d271e80c72fc86a49a7afe8f59276
+Status   : SAFE.  Checks-Effects-Interactions -- rewardsForA[msg.sender] is set
+           to 0 (line 15) BEFORE the external msg.sender.call{value:} (line 16),
+           so a re-entrant call hits require(amountToWithdraw>0) and reverts.
+Claim    : Oyente+ reports "Re-Entrancy Vulnerability: True" (a false positive)
+           at the DEFAULT configuration and across the entire realistic solver/
+           exploration budget spectrum -- on two independent images and two solc
+           versions. The CONTRACT WAS NOT MODIFIED for any run; only oyente.py
+           command-line flags change.
+
+The verdict is flagged at source location 16:28 -- the guarded external call:
+    INFO:symExec: reentrancysafe.sol:16:28: Warning: Re-Entrancy Vulnerability.
+
+--------------------------------------------------------------------------------
+IMAGE A (canonical, reproducible build used for the paper tables)
+  oyente-plus-repro:latest   image id sha256:ee602e77d171...
+  solc 0.8.20 (per pragma ^0.8.20)   oyente 0.2.7
+  Oyente defaults: -t 100ms  -glt 50s  -dl 50  -ll 10  (-gl 4000000)
+--------------------------------------------------------------------------------
+CONFIG                                            COVERAGE   RE-ENTRANCY
+DEFAULT / flagless (t100 glt50 dl50 ll10)          81.9%      True   (FP)
+-t 300ms                                           81.9%      True   (FP)
+-t 1000ms                                          81.9%      True   (FP)
+-t 5000ms                                          81.9%      True   (FP)
+-t 10000ms                  (paper -t)             81.9%      True   (FP)
+-t 30000ms                                         81.9%      True   (FP)
+PAPER     -t 10000 -glt 300  -dl 10000 -ll 10000   81.9%      True   (FP)
+GENEROUS  -t 30000 -glt 7200 -dl 10000 -ll 10000   81.9%      True   (FP)
+DEEP      -t 10000 -glt 600  -dl 50000 -ll 50000   81.9%      True   (FP)
+HIGH-GAS  -t 10000 -glt 300  -gl 1e8 -dl/ll 10000  81.9%      True   (FP)
+SHALLOW   -t 10000 -dl 10 -ll 2                     37.6%      False  (*)
+TINY      -t 100   -dl 5  -ll 1                     16.1%      False  (*)
+
+--------------------------------------------------------------------------------
+IMAGE B (official Docker Hub image -- independent confirmation)
+  smartbugs/oyente_plus:latest
+  digest sha256:8c7fe9eca284bd3d85faf15718b14523a2855fc6c842d808fa1aa86a46a90b0f
+  solc 0.8.30 (image default; also satisfies ^0.8.20)   oyente 0.2.7
+--------------------------------------------------------------------------------
+CONFIG                                            COVERAGE   RE-ENTRANCY
+DEFAULT / flagless (t100 glt50 dl50 ll10)          81.9%      True   (FP)
+-t 10000ms                  (paper -t)             81.9%      True   (FP)
+PAPER     -t 10000 -glt 300  -dl 10000 -ll 10000   81.9%      True   (FP)
+GENEROUS  -t 30000 -glt 7200 -dl 10000 -ll 10000   81.9%      True   (FP)
+SHALLOW   -t 10000 -dl 10 -ll 2                     37.6%      False  (*)
+
+--------------------------------------------------------------------------------
+(*) The ONLY "False" verdicts arise when depth/loop limits are starved below the
+    Oyente defaults (dl<=10), collapsing EVM code coverage to 16-38%. That is the
+    analyzer ABANDONING the withdraw path before it reaches the call site -- not a
+    safety proof. (In those starved runs Oyente even emits a DIFFERENT spurious
+    warning, "Callstack Depth Attack Vulnerability: True", at the same line 16,
+    and loses the integer warnings.) At every budget that actually reaches the
+    call site (>=81.9% coverage), the reentrancy false positive is stable.
+
+  1. Out-of-the-box (no flags) Oyente+ already false-positives -- no tuning needed.
+  2. The FP is invariant to the solver budget (z3 -t 100ms..30s), the global
+     timeout (-glt 50s..7200s), and the depth/loop limits (50..50000).
+  3. It reproduces on the OFFICIAL smartbugs/oyente_plus image, so it is not an
+     artifact of the reproducible repackaging.
+  4. It is not solc-version-sensitive (0.8.20 and 0.8.30 both give 81.9% / True).
+  5. Oyente+ also raises spurious Integer Overflow/Underflow on this contract,
+     i.e. it over-approximates several categories, not only reentrancy.
+
+Reproduce (either image):
+  docker run --rm -v "$PWD":/work --entrypoint bash <image> -lc \
+    'solc-select use 0.8.20 2>/dev/null; \
+     python3 /oyente/oyente.py -s /work/reentrancysafe.sol'        # DEFAULT
+  # add  -t 10000 -glt 300 -dl 10000 -ll 10000  for the paper config.
+
+================================================================================
+Full DEFAULT (flagless) console output, Image A (verbatim):
+================================================================================
+INFO:root:contract reentrancysafe.sol:Reentrancy_safe:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 81.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:reentrancysafe.sol:16:28: Warning: Integer Overflow.
+INFO:symExec:reentrancysafe.sol:16:28: Warning: Re-Entrancy Vulnerability.
+INFO:symExec:	====== Analysis Completed ======
+================================================================================

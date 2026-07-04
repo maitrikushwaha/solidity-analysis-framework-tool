@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/access_control/mycontract.sol:MyContract
+offset,opcode,detection

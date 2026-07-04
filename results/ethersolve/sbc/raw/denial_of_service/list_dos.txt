@@ -1,0 +1,31 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/denial_of_service/list_dos.sol:Government
+offset,opcode,detection
+1255,1255: SLOAD,Store read after unsafe call
+1485,1485: SLOAD,Store read after unsafe call
+1521,1521: SSTORE,Store write after unsafe call
+1694,1694: SLOAD,Store read after unsafe call
+1709,1709: SSTORE,Store write after unsafe call
+2021,2021: SLOAD,Store read after unsafe call
+2050,2050: SLOAD,Store read after unsafe call
+2057,2057: SSTORE,Store write after unsafe call
+2124,2124: SLOAD,Store read after unsafe call
+2292,2292: SSTORE,Store write after unsafe call
+2349,2349: SLOAD,Store read after unsafe call
+2370,2370: SLOAD,Store read after unsafe call
+2405,2405: SLOAD,Store read after unsafe call
+2511,2511: SLOAD,Store read after unsafe call
+2587,2587: SLOAD,Store read after unsafe call
+2640,2640: SLOAD,Store read after unsafe call
+2796,2796: SLOAD,Store read after unsafe call
+2817,2817: SSTORE,Store write after unsafe call
+3662,3662: SLOAD,Store read after unsafe call
+3665,3665: SSTORE,Store write after unsafe call
+3710,3710: SLOAD,Store read after unsafe call
+3763,3763: SSTORE,Store write after unsafe call
+3800,3800: SLOAD,Store read after unsafe call
+3803,3803: SSTORE,Store write after unsafe call
+3841,3841: SSTORE,Store write after unsafe call
+3898,3898: SLOAD,Store read after unsafe call
+3925,3925: SSTORE,Store write after unsafe call
+3962,3962: SSTORE,Store write after unsafe call

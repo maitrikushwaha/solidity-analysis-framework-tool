@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "10.3",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "13.sol:13:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "13.sol:13:5: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

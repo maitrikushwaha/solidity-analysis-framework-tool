@@ -1,0 +1,79 @@
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Analysis started at: 2026-06-21 07:09:19 PM
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Callgraph generation started!
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Callgraph generation finished!
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Storage dependency graph generation started!
+[WARNING] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Issues with getting the high level call destination address
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Value Range Analysis started
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Generating return summary for tokens_buy
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Return summary generated for tokens_buy
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Processed function tokens_buy
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Range graph generated
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Processed function onlyOwner
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Generating return summary for fallback
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Return summary generated for fallback
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Processed function fallback
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Generating return summary for withdraw
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Return summary generated for withdraw
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Processed function withdraw
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Generating return summary for change_token_price
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Return summary generated for change_token_price
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Range graph generated
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Processed function change_token_price
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Generating return summary for change_active
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Return summary generated for change_active
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Range graph generated
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Processed function change_active
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Value Range Analysis took 0.002085 seconds
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Value Range Analysis finished
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Dependency detection started!
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Dependency detection finished!
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Static Analysis took 0.080032 seconds
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Dependency does not exist
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Analysis finished!
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Analysis took 0.080209 seconds
+[INFO] | 2026-06-21 07:09:19 PM | analyzer.0x9d06cbafa865037a01d322d3f4222fa3e04e5488 | Analysis finished at: 2026-06-21 07:09:19 PM
+[36m[#] Analysing started: 0x9d06cbafa865037a01d322d3f4222fa3e04e5488.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for tokens_buy[0m
+[36m[#] Interprocedural CFG generated for tokens_buy[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] Interprocedural CFG generation started for change_token_price[0m
+[36m[#] Interprocedural CFG generated for change_token_price[0m
+[36m[#] Interprocedural CFG generation started for change_active[0m
+[36m[#] Interprocedural CFG generated for change_active[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for tokens_buy[0m
+[36m[#] SDG generated for tokens_buy[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[36m[#] SDG generation started for change_token_price[0m
+[36m[#] SDG generated for change_token_price[0m
+[36m[#] SDG generation started for change_active[0m
+[36m[#] SDG generated for change_active[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.080209 seconds[0m
+[36m[#] Analysis completed: 0x9d06cbafa865037a01d322d3f4222fa3e04e5488.sol [0m
+
+=== dependency_info.json ===
+{}

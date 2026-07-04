@@ -1,0 +1,5 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/qian/reentrancy/vulnerable/22247.sol:PIGGY_BANK
+offset,opcode,detection
+388,388: SLOAD,Store read after unsafe call
+395,395: SSTORE,Store write after unsafe call

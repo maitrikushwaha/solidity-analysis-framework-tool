@@ -1,0 +1,29 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40748.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.OS80yafojQ' running
+INFO:root:contract 40748.sol:BancorBuyer:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 88.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:40748.sol:10:32: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+    _value = 57896044618658097711785492504343953926634992332820282019728945726713894570121
+40748.sol:9:17: Warning: Integer Underflow.
+
+INFO:symExec:40748.sol:8:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+40748.sol:6:21: Warning: Integer Overflow.
+
+INFO:symExec:40748.sol:9:17: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40748.sol:BancorBuyer.json.

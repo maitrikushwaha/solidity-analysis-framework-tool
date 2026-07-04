@@ -1,0 +1,52 @@
+
+'solc --version' running
+'solc /work/datasets/qian/timestamp/vulnerable/15641.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/timestamp/vulnerable' running
+Compilation warnings/errors on /work/datasets/qian/timestamp/vulnerable/15641.sol:
+/work/datasets/qian/timestamp/vulnerable/15641.sol:11:9: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+        Ho hoe = hoes[index];
+        ^----^
+
+
+Brothel.rentHo(uint256) (datasets/qian/timestamp/vulnerable/15641.sol#10-16) uses a weak PRNG: "block.timestamp % hoe.aidsChance == 0 (datasets/qian/timestamp/vulnerable/15641.sol#12)" 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#weak-PRNG
+
+Brothel.hoes (datasets/qian/timestamp/vulnerable/15641.sol#5) is never initialized. It is used in:
+	- Brothel.rentHo(uint256) (datasets/qian/timestamp/vulnerable/15641.sol#10-16)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+Brothel.rentHo(uint256) (datasets/qian/timestamp/vulnerable/15641.sol#10-16) uses a dangerous strict equality:
+	- block.timestamp % hoe.aidsChance == 0 (datasets/qian/timestamp/vulnerable/15641.sol#12)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+Contract locking ether found:
+	Contract Brothel (datasets/qian/timestamp/vulnerable/15641.sol#3-18) has payable functions:
+	 - Brothel.rentHo(uint256) (datasets/qian/timestamp/vulnerable/15641.sol#10-16)
+	But does not have a function to withdraw the ether
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#contracts-that-lock-ether
+
+Brothel.rentHo(uint256) (datasets/qian/timestamp/vulnerable/15641.sol#10-16) uses timestamp for comparisons
+	Dangerous comparisons:
+	- block.timestamp % hoe.aidsChance == 0 (datasets/qian/timestamp/vulnerable/15641.sol#12)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/timestamp/vulnerable/15641.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+/work/datasets/qian/timestamp/vulnerable/15641.sol analyzed (1 contracts with 93 detectors), 7 result(s) found

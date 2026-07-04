@@ -1,0 +1,34 @@
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Analysis started at: 2026-06-21 07:11:35 PM
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Callgraph generation started!
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Value Range Analysis started
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Generating return summary for withdrawPayout
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Return summary generated for withdrawPayout
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Processed function withdrawPayout
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Value Range Analysis took 0.000196 seconds
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Dependency detection started!
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Dependency detection finished!
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Static Analysis took 0.037540 seconds
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Dependency does not exist
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Analysis finished!
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Analysis took 0.037676 seconds
+[INFO] | 2026-06-21 07:11:35 PM | analyzer.34432  | Analysis finished at: 2026-06-21 07:11:35 PM
+[36m[#] Analysing started: 34432.sol[0m
+[36m[#] Interprocedural CFG generation started for withdrawPayout[0m
+[36m[#] Interprocedural CFG generated for withdrawPayout[0m
+[36m[#] SDG generation started for withdrawPayout[0m
+[36m[#] SDG generated for withdrawPayout[0m
+[36m[#] Analysis took 0.037676 seconds[0m
+[36m[#] Analysis completed: 34432.sol [0m
+
+=== dependency_info.json ===
+{}

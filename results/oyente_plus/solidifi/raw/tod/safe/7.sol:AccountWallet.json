@@ -1,0 +1,30 @@
+{
+ "evm_code_coverage": "25.2",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "7.sol:151:19: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    to = 4294967296\n    _master = 0\n    stopped = 0",
+   "7.sol:151:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    to = 68801411\n    _master = 0\n    stopped = 0",
+   "7.sol:151:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    btc[to] = 1\n    to = 68801411\n    _master = 0\n    stopped = 0",
+   "7.sol:117:1: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    to = 68801411\n    _master = 0\n    stopped = 0",
+   "7.sol:152:19: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _master = 0\n    btc[to] = 57903224215165330047832886783274045513183542778322038004933879816320719949377\n    to = 1726716358\n    stopped = 0",
+   "7.sol:152:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _master = 0\n    btc[to] = 61571088293914758158886686439206675983145681275151078891783590150467600925345\n    to = 2147483613\n    stopped = 0",
+   "7.sol:154:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _master = 0\n    btc[to] = 79607450005252830625953921301364192639174092515994349805535263646381899647425\n    to = 3765338466\n    stopped = 0"
+  ],
+  "integer_overflow": [
+   "7.sol:2:42: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    to = 68797315\n    _master = 0\n    stopped = 0",
+   "7.sol:151:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    to = 68797315\n    _master = 0\n    stopped = 0",
+   "7.sol:117:1: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    to = 1952643\n    _master = 0\n    stopped = 0",
+   "7.sol:152:19: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _master = 0\n    btc[to] = 59712365127541123414978465861749286905816374473619157684416860495636739311285\n    to = 3085870473\n    stopped = 0",
+   "7.sol:152:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _master = 0\n    btc[to] = 61571088293914757930885639359051689300821417427517527882258751030740167574049\n    to = 2266566173\n    stopped = 0",
+   "7.sol:154:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _master = 0\n    btc[to] = 61571088293914758158886686439206675983145681275151078891783590150467600925345\n    to = 2147483613\n    stopped = 0",
+   "7.sol:154:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _master = 0\n    btc[to] = 86904583436835868421864742573983404627164372073293222654463225832929709003201\n    to = 2762474502\n    stopped = 0"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

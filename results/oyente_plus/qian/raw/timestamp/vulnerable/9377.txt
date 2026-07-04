@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 9377.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.IGnjUprOpr' running
+INFO:CryticCompile:Compilation warnings/errors on 9377.sol:
+9377.sol:14:13: Warning: Function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.
+            vested = vested + (elapsedOffsets);
+            ^----^
+
+INFO:root:contract 9377.sol:PGOMonthlyInternalVault:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 77.2%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:9377.sol:14:22: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    cliff = 59697442580289573842515073431922729006425036581668169209974471958247112204254
+    vested = 115785199193470415864107063623073381620125568892557453189303113357509250777087
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 9377.sol:PGOMonthlyInternalVault.json.

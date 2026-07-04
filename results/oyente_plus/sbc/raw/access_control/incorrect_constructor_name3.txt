@@ -1,0 +1,22 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc incorrect_constructor_name3.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.U4qyDdrwZI' running
+INFO:CryticCompile:Compilation warnings/errors on incorrect_constructor_name3.sol:
+incorrect_constructor_name3.sol:29:23: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+       owner.transfer(this.balance);
+                      ^----------^
+incorrect_constructor_name3.sol:23:5: Warning: No visibility specified. Defaulting to "public". 
+    function () payable {}
+    ^--------------------^
+
+INFO:root:contract incorrect_constructor_name3.sol:Missing:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 75.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to incorrect_constructor_name3.sol:Missing.json.

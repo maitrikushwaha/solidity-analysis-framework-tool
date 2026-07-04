@@ -1,0 +1,53 @@
+
+'solc --version' running
+'solc /work/datasets/qian/timestamp/safe/14439.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/timestamp/safe' running
+Compilation warnings/errors on /work/datasets/qian/timestamp/safe/14439.sol:
+/work/datasets/qian/timestamp/safe/14439.sol:13:2: Warning: No visibility specified. Defaulting to "public". 
+	function softCap(uint _newend) onlyOwner {
+ ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/qian/timestamp/safe/14439.sol:13:2: Warning: Function state mutability can be restricted to view
+	function softCap(uint _newend) onlyOwner {
+ ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Sale.owner (datasets/qian/timestamp/safe/14439.sol#4) is never initialized. It is used in:
+Sale.start (datasets/qian/timestamp/safe/14439.sol#5) is never initialized. It is used in:
+	- Sale.softCap(uint256) (datasets/qian/timestamp/safe/14439.sol#13-16)
+Sale.end (datasets/qian/timestamp/safe/14439.sol#6) is never initialized. It is used in:
+	- Sale.softCap(uint256) (datasets/qian/timestamp/safe/14439.sol#13-16)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+Sale.softCap(uint256) (datasets/qian/timestamp/safe/14439.sol#13-16) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(_newend >= block.timestamp && _newend >= start && _newend <= end) (datasets/qian/timestamp/safe/14439.sol#14)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/timestamp/safe/14439.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Parameter Sale.softCap(uint256)._newend (datasets/qian/timestamp/safe/14439.sol#13) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Sale.end (datasets/qian/timestamp/safe/14439.sol#6) should be constant 
+Sale.owner (datasets/qian/timestamp/safe/14439.sol#4) should be constant 
+Sale.start (datasets/qian/timestamp/safe/14439.sol#5) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/qian/timestamp/safe/14439.sol analyzed (1 contracts with 93 detectors), 10 result(s) found

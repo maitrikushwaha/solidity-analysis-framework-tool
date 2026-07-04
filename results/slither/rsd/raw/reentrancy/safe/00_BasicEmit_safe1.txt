@@ -1,0 +1,23 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/00_BasicEmit_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+Reentrancy in C.withdraw() (datasets/rsd/reentrancy/safe/00_BasicEmit_safe1.sol#9-15):
+	External calls:
+	- (success,None) = msg.sender.call{value: balances[msg.sender]}() (datasets/rsd/reentrancy/safe/00_BasicEmit_safe1.sol#12)
+	Event emitted after the call(s):
+	- Transfer(balances[msg.sender]) (datasets/rsd/reentrancy/safe/00_BasicEmit_safe1.sol#14)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/00_BasicEmit_safe1.sol#1)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in C.withdraw() (datasets/rsd/reentrancy/safe/00_BasicEmit_safe1.sol#9-15):
+	- (success,None) = msg.sender.call{value: balances[msg.sender]}() (datasets/rsd/reentrancy/safe/00_BasicEmit_safe1.sol#12)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/work/datasets/rsd/reentrancy/safe/00_BasicEmit_safe1.sol analyzed (1 contracts with 93 detectors), 3 result(s) found

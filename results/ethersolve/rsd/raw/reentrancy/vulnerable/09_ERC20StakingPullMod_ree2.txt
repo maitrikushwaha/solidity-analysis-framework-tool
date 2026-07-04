@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract datasets/rsd/reentrancy/vulnerable/09_ERC20StakingPullMod_ree2.sol:StakableToken
+offset,opcode,detection

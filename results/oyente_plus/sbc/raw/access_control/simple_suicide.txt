@@ -1,0 +1,19 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc simple_suicide.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.SziVBOGllU' running
+INFO:CryticCompile:Compilation warnings/errors on simple_suicide.sol:
+simple_suicide.sol:12:3: Warning: No visibility specified. Defaulting to "public". 
+  function sudicideAnyone() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract simple_suicide.sol:SimpleSuicide:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 97.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to simple_suicide.sol:SimpleSuicide.json.

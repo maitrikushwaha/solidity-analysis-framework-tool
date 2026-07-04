@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "83.6",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "22416.sol:11:17: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _wei = 57896044618658097711785492504343953926634992332820282019728792004506320633857\n    Holders[_addr] = 549755813888"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "22416.sol:10:16: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

@@ -1,0 +1,77 @@
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Analysis started at: 2026-06-21 07:14:39 PM
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Callgraph generation started!
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Value Range Analysis started
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Generating return summary for get
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Return summary generated for get
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Range graph generated
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Processed function get
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Value Range Analysis took 0.000347 seconds
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Dependency detection started!
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | DAO dependency detected in file 40772.sol in contract HoneyPot in by composing functions get and get
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | TOD dependency detected in file 40772.sol in contract HoneyPot in by composing functions get and get
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Dependency detection finished!
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Static Analysis took 0.055095 seconds
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Dependency exists
+[INFO] | 2026-06-21 07:14:39 PM | analyzer.40772  | Invoking symbolic executor!
+[36m[#] Analysing started: 40772.sol[0m
+[36m[#] Interprocedural CFG generation started for get[0m
+[36m[#] Interprocedural CFG generated for get[0m
+[36m[#] SDG generation started for get[0m
+[36m[#] SDG generated for get[0m
+[INFO] | 2026-06-21 07:14:40 PM | analyzer.40772  | Symbolic execution took 0.855640 seconds
+[INFO] | 2026-06-21 07:14:40 PM | analyzer.40772  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:14:40 PM | analyzer.40772  | Analysis finished!
+[INFO] | 2026-06-21 07:14:40 PM | analyzer.40772  | Analysis took 0.911280 seconds
+[INFO] | 2026-06-21 07:14:40 PM | analyzer.40772  | Analysis finished at: 2026-06-21 07:14:40 PM
+[36m[#] Analysis took 0.911280 seconds[0m
+[36m[#] Analysis completed: 40772.sol [0m
+
+=== dependency_info.json ===
+{
+    "40772.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "get",
+                "get"
+            ],
+            "from_function": "get",
+            "to_function": "get",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 6\nFunction: get\nNode: \nIF ! msg.sender.call.value(balances[msg.sender])()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:REF_2 \"",
+                        "\"BlockID: 4\nFunction: get\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "get",
+                "get"
+            ],
+            "First_function": "get",
+            "Second_function": "get",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: get\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 2\nFunction: get\nNode: \nIF ! msg.sender.call.value(balances[msg.sender])()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:REF_2 \""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        }
+    ]
+}

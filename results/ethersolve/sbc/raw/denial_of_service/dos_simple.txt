@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/denial_of_service/dos_simple.sol:DosOneFunc
+offset,opcode,detection

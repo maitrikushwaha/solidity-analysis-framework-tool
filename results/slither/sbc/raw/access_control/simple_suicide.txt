@@ -1,0 +1,37 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/access_control/simple_suicide.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/access_control' running
+Compilation warnings/errors on /work/datasets/sbc/access_control/simple_suicide.sol:
+/work/datasets/sbc/access_control/simple_suicide.sol:12:3: Warning: No visibility specified. Defaulting to "public". 
+  function sudicideAnyone() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+
+SimpleSuicide.sudicideAnyone() (datasets/sbc/access_control/simple_suicide.sol#12-14) allows anyone to destruct the contract
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#suicidal
+
+Version constraint ^0.4.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ExpExponentCleanup
+	- NestedArrayFunctionCallDecoder
+	- ZeroFunctionSelector
+	- DelegateCallReturnValue
+	- ECRecoverMalformedInput
+	- SkipEmptyStringLiteral
+	- ConstantOptimizerSubtraction
+	- IdentityPrecompileReturnIgnored
+	- HighOrderByteCleanStorage
+	- OptimizerStaleKnowledgeAboutSHA3
+	- LibrariesNotCallableFromPayableFunctions.
+It is used by:
+	- ^0.4.0 (datasets/sbc/access_control/simple_suicide.sol#8)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+/work/datasets/sbc/access_control/simple_suicide.sol analyzed (1 contracts with 93 detectors), 3 result(s) found

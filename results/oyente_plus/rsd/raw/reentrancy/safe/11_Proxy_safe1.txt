@@ -1,0 +1,30 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 11_Proxy_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.5H3YGFJesR' running
+INFO:root:contract 11_Proxy_safe1.sol:Proxy:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 77.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:11_Proxy_safe1.sol:6:28: Warning: Integer Underflow.
+
+INFO:symExec:11_Proxy_safe1.sol:21:27: Warning: Integer Overflow.
+
+11_Proxy_safe1.sol:6:28: Warning: Integer Overflow.
+
+INFO:symExec:Flow1
+11_Proxy_safe1.sol:6:28: Warning: Transaction-Ordering Dependency.
+
+Flow2
+11_Proxy_safe1.sol:6:28: Warning: Transaction-Ordering Dependency.
+
+11_Proxy_safe1.sol:21:27: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:11_Proxy_safe1.sol:21:27: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 11_Proxy_safe1.sol:Proxy.json.

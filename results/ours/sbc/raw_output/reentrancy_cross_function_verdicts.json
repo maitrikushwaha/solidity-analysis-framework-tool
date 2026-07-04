@@ -1,0 +1,17 @@
+{
+  "filename": "reentrancy_cross_function.sol",
+  "reentrancy": 1,
+  "overflow": 1,
+  "timestamp": 0,
+  "tod": 0,
+  "duration_s": 11.1,
+  "error": null,
+  "reentrancy_domains": [
+    "Box",
+    "Octagon",
+    "Polka"
+  ],
+  "reentrancy_fixpoint_times": {
+    "Box": 10.202
+  }
+}

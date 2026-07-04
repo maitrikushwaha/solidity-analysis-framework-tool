@@ -1,0 +1,28 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/07_MixedSendFold_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+C.pay(uint256) (datasets/rsd/reentrancy/safe/07_MixedSendFold_safe1.sol#7-10) sends eth to arbitrary user
+	Dangerous calls:
+	- (success2,None) = msg.sender.call{value: amt}() (datasets/rsd/reentrancy/safe/07_MixedSendFold_safe1.sol#8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/07_MixedSendFold_safe1.sol#1)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in C.pay(uint256) (datasets/rsd/reentrancy/safe/07_MixedSendFold_safe1.sol#7-10):
+	- (success2,None) = msg.sender.call{value: amt}() (datasets/rsd/reentrancy/safe/07_MixedSendFold_safe1.sol#8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Reentrancy in C.withdraw() (datasets/rsd/reentrancy/safe/07_MixedSendFold_safe1.sol#12-18):
+	External calls:
+	- success1 = address(msg.sender).send(balances[msg.sender]) (datasets/rsd/reentrancy/safe/07_MixedSendFold_safe1.sol#14)
+	State variables written after the call(s):
+	- balances[msg.sender] = 0 (datasets/rsd/reentrancy/safe/07_MixedSendFold_safe1.sol#16)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4
+/work/datasets/rsd/reentrancy/safe/07_MixedSendFold_safe1.sol analyzed (1 contracts with 93 detectors), 4 result(s) found

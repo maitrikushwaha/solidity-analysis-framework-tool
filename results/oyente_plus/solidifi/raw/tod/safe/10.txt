@@ -1,0 +1,46 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 10.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.au3jYtFiQg' running
+INFO:root:contract 10.sol:DocumentSigner:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 28.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:10.sol:10:1: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _doc = 2080374770
+10.sol:2:23: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _doc = 2080374769
+10.sol:40:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _doc = 1048712
+INFO:symExec:10.sol:32:9: Warning: Integer Overflow.
+
+10.sol:30:16: Warning: Integer Overflow.
+
+10.sol:41:26: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _doc = 1590121729
+10.sol:41:16: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _doc = 2080374769
+10.sol:40:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _doc = 2080374769
+10.sol:3:6: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _doc = 1048714
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 10.sol:DocumentSigner.json.

@@ -1,0 +1,42 @@
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Analysis started at: 2026-06-21 07:13:31 PM
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Processed function onlyOwner
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Generating return summary for revoke
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Return summary generated for revoke
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Range graph generated
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Processed function revoke
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Value Range Analysis took 0.000533 seconds
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Static Analysis took 0.033440 seconds
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Dependency does not exist
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Analysis finished!
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Analysis took 0.033555 seconds
+[INFO] | 2026-06-21 07:13:31 PM | analyzer.50031  | Analysis finished at: 2026-06-21 07:13:31 PM
+[36m[#] Analysing started: 50031.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for revoke[0m
+[36m[#] Interprocedural CFG generated for revoke[0m
+[36m[#] SDG generation started for revoke[0m
+[36m[#] SDG generated for revoke[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.033555 seconds[0m
+[36m[#] Analysis completed: 50031.sol [0m
+
+=== dependency_info.json ===
+{}

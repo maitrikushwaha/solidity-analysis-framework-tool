@@ -1,0 +1,23 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 17401.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.ccR7gFBo3k' running
+INFO:CryticCompile:Compilation warnings/errors on 17401.sol:
+17401.sol:11:5: Warning: Function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.
+    rate = initialRate - (num_day * initialRate);
+    ^--^
+
+INFO:root:contract 17401.sol:FloraFicTokenCrowdsale:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 71.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:17401.sol:9:27: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    openingTime = 1
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 17401.sol:FloraFicTokenCrowdsale.json.

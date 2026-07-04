@@ -1,0 +1,43 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+A.withdraw() (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#28-44) sends eth to arbitrary user
+	Dangerous calls:
+	- (success,None) = address(msg.sender).call{value: amountETH}() (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#40)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+A.withdraw() (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#28-44) performs a multiplication on the result of a division:
+	- rate = t1 * 1e18 / t2 (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#37)
+	- amountETH = rate * 1000 / 1e18 (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#38)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#divide-before-multiply
+
+Contract locking ether found:
+	Contract B (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#50-66) has payable functions:
+	 - IAlpha.work(address) (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#7)
+	 - B.work(address) (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#54-58)
+	But does not have a function to withdraw the ether
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#contracts-that-lock-ether
+
+A.withdraw().data (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#29) is written in both
+	(success,data) = address(alpha).staticcall(totalETHView) (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#29)
+	(success,data) = address(alpha).staticcall(totalSupplyView) (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#33)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#write-after-write
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in A.withdraw() (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#28-44):
+	- (success,data) = address(alpha).staticcall(totalETHView) (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#29)
+	- (success,data) = address(alpha).staticcall(totalSupplyView) (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#33)
+	- (success,None) = address(msg.sender).call{value: amountETH}() (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#40)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+A.alpha (datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol#22) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+/work/datasets/rsd/reentrancy/safe/15_ReadOnlyStaticcall_safe1.sol analyzed (5 contracts with 93 detectors), 7 result(s) found

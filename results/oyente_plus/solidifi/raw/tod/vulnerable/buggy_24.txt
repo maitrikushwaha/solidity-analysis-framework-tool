@@ -1,0 +1,81 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc buggy_24.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.lfoe5zRiWl' running
+INFO:root:contract buggy_24.sol:FomoFeast:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 32.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:buggy_24.sol:1275:38: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    index = 65275536913288633538215533897507060416178005014484918788253722063626200748498
+    length = 58829167736912318587420531919853280343281424534128725364144518706030038654042
+    owner = 0
+buggy_24.sol:1277:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    index = 0
+    length = 1
+    owner = 0
+buggy_24.sol:1304:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    length = 12482163920388703199627202395092602019309340271027376237838347
+    index = 105312721724352094782921369398351482411755801996476659380562952192
+    owner = 0
+buggy_24.sol:1323:41: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    length = 12482163920388703199627202395092602019309340271027376237838347
+    index = 105312721724352094782921369398351482411755801996476659380562952192
+    owner = 0
+buggy_24.sol:1213:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner = 0
+    totalUserCount = 1
+buggy_24.sol:1217:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner = 0
+    totalUserCount = 1
+buggy_24.sol:1254:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner = 0
+    totalUserCount = 1
+buggy_24.sol:1225:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner = 0
+    totalUserCount = 1
+buggy_24.sol:1244:41: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner = 0
+    totalUserCount = 1
+INFO:symExec:Flow1
+buggy_24.sol:927:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_24.sol:416:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_24.sol:FomoFeast.json.
+INFO:root:contract buggy_24.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_24.sol:SafeMath.json.

@@ -1,0 +1,32 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 37676.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.zWKh1sYmjU' running
+INFO:CryticCompile:Compilation warnings/errors on 37676.sol:
+37676.sol:7:39: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if (!_to.call.value(_value)(_data)) throw;
+		                                    ^---^
+37676.sol:6:2: Warning: No visibility specified. Defaulting to "public". 
+	function send(address _to, uint _value, bytes _data) {
+ ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 37676.sol:DeadMansSwitch:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:37676.sol:7:8: Warning: Integer Underflow.
+
+INFO:symExec:37676.sol:6:2: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+37676.sol:6:18: Warning: Integer Overflow.
+
+INFO:symExec:37676.sol:7:8: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 37676.sol:DeadMansSwitch.json.

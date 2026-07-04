@@ -1,0 +1,114 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc king_of_the_ether_throne.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.jxagsVKhjr' running
+INFO:CryticCompile:Compilation warnings/errors on king_of_the_ether_throne.sol:
+king_of_the_ether_throne.sol:73:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function KingOfTheEtherThrone() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+king_of_the_ether_throne.sol:110:13: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+            msg.sender.send(valuePaid);
+            ^------------------------^
+king_of_the_ether_throne.sol:118:13: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+            msg.sender.send(excessPaid);
+            ^-------------------------^
+king_of_the_ether_throne.sol:132:13: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+            currentMonarch.etherAddress.send(compensation);
+            ^--------------------------------------------^
+king_of_the_ether_throne.sol:168:9: Warning: Invoking events without "emit" prefix is deprecated.
+        ThroneClaimed(currentMonarch.etherAddress, currentMonarch.name, currentClaimPrice);
+        ^--------------------------------------------------------------------------------^
+king_of_the_ether_throne.sol:174:9: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        wizardAddress.send(amount);
+        ^------------------------^
+king_of_the_ether_throne.sol:73:5: Warning: No visibility specified. Defaulting to "public". 
+    function KingOfTheEtherThrone() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+king_of_the_ether_throne.sol:84:5: Warning: No visibility specified. Defaulting to "public". 
+    function numberOfMonarchs() constant returns (uint n) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+king_of_the_ether_throne.sol:98:5: Warning: No visibility specified. Defaulting to "public". 
+    function() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+king_of_the_ether_throne.sol:103:5: Warning: No visibility specified. Defaulting to "public". 
+    function claimThrone(string name) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+king_of_the_ether_throne.sol:105:26: Warning: "msg.value" used in non-payable function. Do you want to add the "payable" modifier to this function?
+        uint valuePaid = msg.value;
+                         ^-------^
+king_of_the_ether_throne.sol:172:5: Warning: No visibility specified. Defaulting to "public". 
+    function sweepCommission(uint amount) onlywizard {
+    ^ (Relevant source part starts here and spans across multiple lines).
+king_of_the_ether_throne.sol:178:5: Warning: No visibility specified. Defaulting to "public". 
+    function transferOwnership(address newOwner) onlywizard {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract king_of_the_ether_throne.sol:KingOfTheEtherThrone:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 35.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:king_of_the_ether_throne.sol:138:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentClaimPrice = 0
+    currentMonarch.etherAddress = 0
+    wizardAddress = 0
+king_of_the_ether_throne.sol:26:1: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentClaimPrice = 0
+    currentMonarch.etherAddress = 8192
+    wizardAddress = 8192
+king_of_the_ether_throne.sol:168:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    currentClaimPrice = 0
+    pastMonarchs.push(currentMonarch) = 57952638944022111413152075580388409481878788238390532535623125258617142911169
+    currentMonarch.etherAddress = 0
+    wizardAddress = 0
+INFO:symExec:king_of_the_ether_throne.sol:2:21: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentClaimPrice = 0
+    currentMonarch.etherAddress = 0
+    wizardAddress = 0
+king_of_the_ether_throne.sol:138:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentClaimPrice = 0
+    currentMonarch.etherAddress = 0
+    wizardAddress = 0
+king_of_the_ether_throne.sol:26:1: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentClaimPrice = 0
+    currentMonarch.etherAddress = 0
+    wizardAddress = 0
+king_of_the_ether_throne.sol:139:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentClaimPrice = 0
+    pastMonarchs.push(currentMonarch) = 60016331695238172182826705797611924368217201347333230202789223466307682828353
+    currentMonarch.etherAddress = 11692013098647223345629478661730264157247460343808
+    wizardAddress = 0
+king_of_the_ether_throne.sol:168:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    currentClaimPrice = 0
+    pastMonarchs.push(currentMonarch) = 60016331694382509813019678655696692403354889364751019927903459602143377883201
+    currentMonarch.etherAddress = 11692013098647223345629478661730264157247460343808
+    wizardAddress = 0
+INFO:symExec:king_of_the_ether_throne.sol:110:13: Warning: Callstack Depth Attack Vulnerability.
+
+king_of_the_ether_throne.sol:118:13: Warning: Callstack Depth Attack Vulnerability.
+
+king_of_the_ether_throne.sol:132:13: Warning: Callstack Depth Attack Vulnerability.
+
+king_of_the_ether_throne.sol:174:9: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to king_of_the_ether_throne.sol:KingOfTheEtherThrone.json.

@@ -1,0 +1,57 @@
+
+'solc --version' running
+'solc /work/datasets/qian/reentrancy/vulnerable/50019.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/reentrancy/vulnerable' running
+Compilation warnings/errors on /work/datasets/qian/reentrancy/vulnerable/50019.sol:
+/work/datasets/qian/reentrancy/vulnerable/50019.sol:12:5: Warning: No visibility specified. Defaulting to "public". 
+    function buyRecipient(address recipient) payable {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Reentrancy in MoldCoin.buyRecipient(address) (datasets/qian/reentrancy/vulnerable/50019.sol#12-19):
+	External calls:
+	- ! founder.call.value(msg.value)() (datasets/qian/reentrancy/vulnerable/50019.sol#17)
+	State variables written after the call(s):
+	- balances[founder] -= msg.value (datasets/qian/reentrancy/vulnerable/50019.sol#18)
+	MoldCoin.balances (datasets/qian/reentrancy/vulnerable/50019.sol#10) can be used in cross function reentrancies:
+	- MoldCoin.buyRecipient(address) (datasets/qian/reentrancy/vulnerable/50019.sol#12-19)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+MoldCoin.founder (datasets/qian/reentrancy/vulnerable/50019.sol#6) is never initialized. It is used in:
+	- MoldCoin.buyRecipient(address) (datasets/qian/reentrancy/vulnerable/50019.sol#12-19)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+MoldCoin.buyRecipient(address) (datasets/qian/reentrancy/vulnerable/50019.sol#12-19) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(tokens <= coinAllocation) (datasets/qian/reentrancy/vulnerable/50019.sol#14)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/reentrancy/vulnerable/50019.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in MoldCoin.buyRecipient(address) (datasets/qian/reentrancy/vulnerable/50019.sol#12-19):
+	- ! founder.call.value(msg.value)() (datasets/qian/reentrancy/vulnerable/50019.sol#17)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+MoldCoin.coinAllocation (datasets/qian/reentrancy/vulnerable/50019.sol#7) should be constant 
+MoldCoin.founder (datasets/qian/reentrancy/vulnerable/50019.sol#6) should be constant 
+MoldCoin.saleTokenSupply (datasets/qian/reentrancy/vulnerable/50019.sol#8) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/qian/reentrancy/vulnerable/50019.sol analyzed (1 contracts with 93 detectors), 9 result(s) found

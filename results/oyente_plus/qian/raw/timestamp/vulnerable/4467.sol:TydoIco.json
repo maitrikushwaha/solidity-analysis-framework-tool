@@ -1,0 +1,17 @@
+{
+ "evm_code_coverage": "56.5",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "4467.sol:5:3: Warning: Integer Overflow.\n",
+   "4467.sol:10:10: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    bonuses.length = 5708990770823839524233143877797980545530986496\n    bonusEnds[i] = 47890485652059026823698344598447161988085597568237568\n    bonusEnds[i] = 2"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

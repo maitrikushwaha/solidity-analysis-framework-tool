@@ -1,0 +1,455 @@
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Analysis started at: 2026-06-21 07:16:34 PM
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Callgraph generation started!
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Callgraph generation finished!
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Value Range Analysis started
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function onlyOwner
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for _transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for _transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function _transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function approve
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for burn
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for burn
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function burn
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for burnFrom
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for burnFrom
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function burnFrom
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for _transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for _transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function _transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function approve
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for burn
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for burn
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function burn
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for burnFrom
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for burnFrom
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function burnFrom
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for _transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for _transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function _transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function onlyOwner
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for transferOwnership
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for transferOwnership
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function transferOwnership
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function constructor
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for buy
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for buy
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function buy
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for sell
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for sell
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function sell
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for transferOwnership
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for transferOwnership
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function transferOwnership
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for mintToken
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for mintToken
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function mintToken
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for freezeAccount
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for freezeAccount
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function freezeAccount
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Generating return summary for setPrices
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Return summary generated for setPrices
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Range graph generated
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Processed function setPrices
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Value Range Analysis took 0.006921 seconds
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Value Range Analysis finished
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Dependency detection started!
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | TOD dependency detected in file 8.sol in contract YFT in by composing functions sell and transfer
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | TOD dependency detected in file 8.sol in contract YFT in by composing functions sell and transferFrom
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | TOD dependency detected in file 8.sol in contract YFT in by composing functions sell and burn
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | TOD dependency detected in file 8.sol in contract YFT in by composing functions sell and burnFrom
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | TOD dependency detected in file 8.sol in contract YFT in by composing functions sell and buy
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | TOD dependency detected in file 8.sol in contract YFT in by composing functions sell and sell
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Dependency detection finished!
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Static Analysis took 0.624570 seconds
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Dependency exists
+[INFO] | 2026-06-21 07:16:34 PM | analyzer.8      | Invoking symbolic executor!
+[36m[#] Analysing started: 8.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for transferOwnership[0m
+[36m[#] Interprocedural CFG generated for transferOwnership[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for burn[0m
+[36m[#] Interprocedural CFG generated for burn[0m
+[36m[#] Interprocedural CFG generation started for burnFrom[0m
+[36m[#] Interprocedural CFG generated for burnFrom[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for burn[0m
+[36m[#] Interprocedural CFG generated for burn[0m
+[36m[#] Interprocedural CFG generation started for burnFrom[0m
+[36m[#] Interprocedural CFG generated for burnFrom[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for transferOwnership[0m
+[36m[#] Interprocedural CFG generated for transferOwnership[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for mintToken[0m
+[36m[#] Interprocedural CFG generated for mintToken[0m
+[36m[#] Interprocedural CFG generation started for freezeAccount[0m
+[36m[#] Interprocedural CFG generated for freezeAccount[0m
+[36m[#] Interprocedural CFG generation started for setPrices[0m
+[36m[#] Interprocedural CFG generated for setPrices[0m
+[36m[#] Interprocedural CFG generation started for buy[0m
+[36m[#] Interprocedural CFG generated for buy[0m
+[36m[#] Interprocedural CFG generation started for sell[0m
+[36m[#] Interprocedural CFG generated for sell[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for transferOwnership[0m
+[36m[#] SDG generated for transferOwnership[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for burn[0m
+[36m[#] SDG generated for burn[0m
+[36m[#] SDG generation started for burnFrom[0m
+[36m[#] SDG generated for burnFrom[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for burn[0m
+[36m[#] SDG generated for burn[0m
+[36m[#] SDG generation started for burnFrom[0m
+[36m[#] SDG generated for burnFrom[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for transferOwnership[0m
+[36m[#] SDG generated for transferOwnership[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for mintToken[0m
+[36m[#] SDG generated for mintToken[0m
+[36m[#] SDG generation started for freezeAccount[0m
+[36m[#] SDG generated for freezeAccount[0m
+[36m[#] SDG generation started for setPrices[0m
+[36m[#] SDG generated for setPrices[0m
+[36m[#] SDG generation started for buy[0m
+[36m[#] SDG generated for buy[0m
+[36m[#] SDG generation started for sell[0m
+[36m[#] SDG generated for sell[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[INFO] | 2026-06-21 07:16:37 PM | analyzer.8      | Symbolic execution took 2.938498 seconds
+[INFO] | 2026-06-21 07:16:37 PM | analyzer.8      | Symbolic execution finished!
+[INFO] | 2026-06-21 07:16:37 PM | analyzer.8      | Analysis finished!
+[INFO] | 2026-06-21 07:16:37 PM | analyzer.8      | Analysis took 3.563502 seconds
+[INFO] | 2026-06-21 07:16:37 PM | analyzer.8      | Analysis finished at: 2026-06-21 07:16:37 PM
+[36m[#] Analysis took 3.563502 seconds[0m
+[36m[#] Analysis completed: 8.sol [0m
+
+=== dependency_info.json ===
+{
+    "8.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "sell",
+                "transfer"
+            ],
+            "First_function": "transfer",
+            "Second_function": "sell",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_53 = REF_53 - _value\"",
+                        "\"BlockID: 127\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_78 = SOLIDITY_CALL require(bool)(TMP_77)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_54 = REF_54 + _value\"",
+                        "\"BlockID: 127\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_78 = SOLIDITY_CALL require(bool)(TMP_77)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_53 = REF_53 - _value\"",
+                        "\"BlockID: 128\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value >= balanceOf[_to])\nIRS: \nTMP_81 = SOLIDITY_CALL require(bool)(TMP_80)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_54 = REF_54 + _value\"",
+                        "\"BlockID: 128\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value >= balanceOf[_to])\nIRS: \nTMP_81 = SOLIDITY_CALL require(bool)(TMP_80)\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "sell",
+                "transferFrom"
+            ],
+            "First_function": "transferFrom",
+            "Second_function": "sell",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_53 = REF_53 - _value\"",
+                        "\"BlockID: 127\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_78 = SOLIDITY_CALL require(bool)(TMP_77)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 70\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_54 = REF_54 + _value\"",
+                        "\"BlockID: 127\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_78 = SOLIDITY_CALL require(bool)(TMP_77)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_53 = REF_53 - _value\"",
+                        "\"BlockID: 128\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value >= balanceOf[_to])\nIRS: \nTMP_81 = SOLIDITY_CALL require(bool)(TMP_80)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 70\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_54 = REF_54 + _value\"",
+                        "\"BlockID: 128\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value >= balanceOf[_to])\nIRS: \nTMP_81 = SOLIDITY_CALL require(bool)(TMP_80)\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "sell",
+                "burn"
+            ],
+            "First_function": "burn",
+            "Second_function": "sell",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 78\nFunction: burn\nNode: \nEXPRESSION balanceOf[msg.sender] -= _value\nIRS: \nREF_41 = REF_41 - _value\"",
+                        "\"BlockID: 127\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_78 = SOLIDITY_CALL require(bool)(TMP_77)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 78\nFunction: burn\nNode: \nEXPRESSION balanceOf[msg.sender] -= _value\nIRS: \nREF_41 = REF_41 - _value\"",
+                        "\"BlockID: 128\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value >= balanceOf[_to])\nIRS: \nTMP_81 = SOLIDITY_CALL require(bool)(TMP_80)\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "sell",
+                "burnFrom"
+            ],
+            "First_function": "burnFrom",
+            "Second_function": "sell",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 84\nFunction: burnFrom\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_45 = REF_45 - _value\"",
+                        "\"BlockID: 127\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_78 = SOLIDITY_CALL require(bool)(TMP_77)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 84\nFunction: burnFrom\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_45 = REF_45 - _value\"",
+                        "\"BlockID: 128\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value >= balanceOf[_to])\nIRS: \nTMP_81 = SOLIDITY_CALL require(bool)(TMP_80)\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "sell",
+                "buy"
+            ],
+            "First_function": "buy",
+            "Second_function": "sell",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 120\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_53 = REF_53 - _value\"",
+                        "\"BlockID: 127\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_78 = SOLIDITY_CALL require(bool)(TMP_77)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 121\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_54 = REF_54 + _value\"",
+                        "\"BlockID: 127\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_78 = SOLIDITY_CALL require(bool)(TMP_77)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 120\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_53 = REF_53 - _value\"",
+                        "\"BlockID: 128\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value >= balanceOf[_to])\nIRS: \nTMP_81 = SOLIDITY_CALL require(bool)(TMP_80)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 121\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_54 = REF_54 + _value\"",
+                        "\"BlockID: 128\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value >= balanceOf[_to])\nIRS: \nTMP_81 = SOLIDITY_CALL require(bool)(TMP_80)\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "sell",
+                "sell"
+            ],
+            "First_function": "sell",
+            "Second_function": "sell",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 144\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_53 = REF_53 - _value\"",
+                        "\"BlockID: 127\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_78 = SOLIDITY_CALL require(bool)(TMP_77)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 145\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_54 = REF_54 + _value\"",
+                        "\"BlockID: 127\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_from] >= _value)\nIRS: \nTMP_78 = SOLIDITY_CALL require(bool)(TMP_77)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 144\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_from] -= _value\nIRS: \nREF_53 = REF_53 - _value\"",
+                        "\"BlockID: 128\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value >= balanceOf[_to])\nIRS: \nTMP_81 = SOLIDITY_CALL require(bool)(TMP_80)\""
+                    ],
+                    "state_variable": "balanceOf"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 145\nFunction: _transfer\nNode: \nEXPRESSION balanceOf[_to] += _value\nIRS: \nREF_54 = REF_54 + _value\"",
+                        "\"BlockID: 128\nFunction: _transfer\nNode: \nEXPRESSION require(bool)(balanceOf[_to] + _value >= balanceOf[_to])\nIRS: \nTMP_81 = SOLIDITY_CALL require(bool)(TMP_80)\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+
+'solc --version' running
+'solc /work/datasets/qian/overflow/safe/39268.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/overflow/safe' running
+Compilation warnings/errors on /work/datasets/qian/overflow/safe/39268.sol:
+/work/datasets/qian/overflow/safe/39268.sol:14:70: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+            if (!requests[0].requester.call.value(this.balance)()) { throw; }
+                                                                     ^---^
+/work/datasets/qian/overflow/safe/39268.sol:14:51: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            if (!requests[0].requester.call.value(this.balance)()) { throw; }
+                                                  ^----------^
+/work/datasets/qian/overflow/safe/39268.sol:10:5: Warning: Variable covers a large part of storage and thus makes collisions likely. Either use mappings or dynamic arrays and allow their size to be increased only in small quantities per transaction.
+    Request[2**64] public requests;
+    ^----------------------------^
+
+Traceback (most recent call last):
+  File "/home/ethsec/.local/bin/slither", line 8, in <module>
+    sys.exit(main())
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/__main__.py", line 776, in main
+    main_impl(all_detector_classes=detectors, all_printer_classes=printers)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/__main__.py", line 882, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/__main__.py", line 107, in process_all
+    ) = process_single(compilation, args, detector_classes, printer_classes)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/__main__.py", line 80, in process_single
+    slither = Slither(target, ast_format=ast, **vars(args))
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/slither.py", line 202, in __init__
+    self._init_parsing_and_analyses(kwargs.get("skip_analyze", False))
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/slither.py", line 211, in _init_parsing_and_analyses
+    raise e
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/slither.py", line 207, in _init_parsing_and_analyses
+    parser.parse_contracts()
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 583, in parse_contracts
+    self._analyze_third_part(contracts_to_be_analyzed, libraries)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 694, in _analyze_third_part
+    self._analyze_variables_modifiers_functions(contract)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/solc_parsing/slither_compilation_unit_solc.py", line 797, in _analyze_variables_modifiers_functions
+    contract.analyze_state_variables()
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/solc_parsing/declarations/contract.py", line 605, in analyze_state_variables
+    var_parser.analyze(self)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/solc_parsing/variables/variable_declaration.py", line 212, in analyze
+    self._variable.type = parse_type(self._elem_to_parse, caller_context)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/solc_parsing/solidity_types/type_parsing.py", line 447, in parse_type
+    return ArrayType(array_type, length)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/core/solidity_types/array_type.py", line 32, in __init__
+    cf = ConstantFolding(length, "uint256")
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/visitors/expression/constants_folding.py", line 52, in __init__
+    super().__init__(expression)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/visitors/expression/expression.py", line 59, in __init__
+    self._visit_expression(self.expression)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/visitors/expression/expression.py", line 78, in _visit_expression
+    self._post_visit(expression)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/visitors/expression/expression.py", line 255, in _post_visit
+    self._post_binary_operation(expression)
+  File "/home/ethsec/.local/lib/python3.10/site-packages/slither/visitors/expression/constants_folding.py", line 176, in _post_binary_operation
+    raise NotConstant
+slither.visitors.expression.constants_folding.NotConstant

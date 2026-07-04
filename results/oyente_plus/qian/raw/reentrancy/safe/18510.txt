@@ -1,0 +1,23 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 18510.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.p3POxdI4Ka' running
+INFO:root:contract 18510.sol:A2ACrowdsale:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 85.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:18510.sol:18:3: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[_contract] = 0
+    wingsETHRewards = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+    owner = 274877906944
+    _amount = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+INFO:symExec:18510.sol:17:11: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 18510.sol:A2ACrowdsale.json.

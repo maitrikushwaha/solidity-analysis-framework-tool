@@ -1,0 +1,70 @@
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Analysis started at: 2026-06-21 07:09:30 PM
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Callgraph generation started!
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Callgraph generation finished!
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Value Range Analysis started
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Generating return summary for fallback
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Return summary generated for fallback
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Range graph generated
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Processed function fallback
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Range graph generated
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Processed function onlyOwner
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Generating return summary for withdraw
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Return summary generated for withdraw
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Processed function withdraw
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Generating return summary for sendMoney
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Return summary generated for sendMoney
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Processed function sendMoney
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Generating return summary for withdrawAll
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Return summary generated for withdrawAll
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Processed function withdrawAll
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Value Range Analysis took 0.000835 seconds
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Value Range Analysis finished
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Dependency detection started!
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Dependency detection finished!
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Static Analysis took 0.036759 seconds
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Dependency does not exist
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Analysis finished!
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Analysis took 0.036864 seconds
+[INFO] | 2026-06-21 07:09:30 PM | analyzer.0xb37f18af15bafb869a065b61fc83cfc44ed9cc27 | Analysis finished at: 2026-06-21 07:09:30 PM
+[36m[#] Analysing started: 0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for withdrawAll[0m
+[36m[#] Interprocedural CFG generated for withdrawAll[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] Interprocedural CFG generation started for sendMoney[0m
+[36m[#] Interprocedural CFG generated for sendMoney[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for withdrawAll[0m
+[36m[#] SDG generated for withdrawAll[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[36m[#] SDG generation started for sendMoney[0m
+[36m[#] SDG generated for sendMoney[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.036864 seconds[0m
+[36m[#] Analysis completed: 0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol [0m
+
+=== dependency_info.json ===
+{}

@@ -1,0 +1,485 @@
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Analysis started at: 2026-06-21 07:16:06 PM
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Callgraph generation started!
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Callgraph generation finished!
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Value Range Analysis started
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for add
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for add
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function add
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for sub
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for sub
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function sub
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for mul
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for mul
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function mul
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for div
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for div
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function div
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for mod
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for mod
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function mod
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function constructor
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for acceptOwnership
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for acceptOwnership
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function acceptOwnership
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function onlyOwner
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function transfer
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function constructor
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for acceptOwnership
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for acceptOwnership
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function acceptOwnership
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function constructor
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for availableTradingFeeOwner
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for availableTradingFeeOwner
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function availableTradingFeeOwner
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for order
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for order
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function order
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for amountFilled
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for amountFilled
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function amountFilled
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for cancelOrder
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for cancelOrder
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function cancelOrder
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function onlyOwner
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for deposit
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for deposit
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function deposit
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for depositToken
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for depositToken
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function depositToken
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for withdraw
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for withdraw
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function withdraw
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for withdrawToken
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for withdrawToken
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function withdrawToken
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for availableVolume
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for availableVolume
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function availableVolume
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for calculatePercentage
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for calculatePercentage
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function calculatePercentage
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for onlyOwnerTransferOwnership
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for onlyOwnerTransferOwnership
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function onlyOwnerTransferOwnership
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for withdrawTradingFeeOwner
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for withdrawTradingFeeOwner
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function withdrawTradingFeeOwner
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for onlyOwnerTransferOwnership
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for onlyOwnerTransferOwnership
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function onlyOwnerTransferOwnership
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for changeSafeguardStatus
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for changeSafeguardStatus
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function changeSafeguardStatus
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for changeFeeAccount
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for changeFeeAccount
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function changeFeeAccount
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for changetradingFee
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for changetradingFee
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function changetradingFee
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for testTrade
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for testTrade
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function testTrade
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for tradeBalances
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for tradeBalances
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function tradeBalances
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Generating return summary for trade
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Return summary generated for trade
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Range graph generated
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Processed function trade
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Value Range Analysis took 0.007436 seconds
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Value Range Analysis finished
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:16:06 PM | analyzer.35     | Dependency detection started!
+[INFO] | 2026-06-21 07:16:07 PM | analyzer.35     | DAO dependency detected in file 35.sol in contract BitpayerDEX in by composing functions depositToken and withdraw
+[INFO] | 2026-06-21 07:16:07 PM | analyzer.35     | DAO dependency detected in file 35.sol in contract BitpayerDEX in by composing functions depositToken and withdrawToken
+[INFO] | 2026-06-21 07:16:07 PM | analyzer.35     | DAO dependency detected in file 35.sol in contract BitpayerDEX in by composing functions depositToken and testTrade
+[INFO] | 2026-06-21 07:16:07 PM | analyzer.35     | DAO dependency detected in file 35.sol in contract BitpayerDEX in by composing functions depositToken and availableVolume
+[INFO] | 2026-06-21 07:16:07 PM | analyzer.35     | TOD dependency detected in file 35.sol in contract BitpayerDEX in by composing functions withdraw and deposit
+[INFO] | 2026-06-21 07:16:07 PM | analyzer.35     | TOD dependency detected in file 35.sol in contract BitpayerDEX in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 07:16:07 PM | analyzer.35     | TOD dependency detected in file 35.sol in contract BitpayerDEX in by composing functions withdraw and depositToken
+[INFO] | 2026-06-21 07:16:07 PM | analyzer.35     | TOD dependency detected in file 35.sol in contract BitpayerDEX in by composing functions withdraw and withdrawToken
+[INFO] | 2026-06-21 07:16:07 PM | analyzer.35     | TOD dependency detected in file 35.sol in contract BitpayerDEX in by composing functions withdraw and trade
+[INFO] | 2026-06-21 07:16:07 PM | analyzer.35     | Dependency detection finished!
+[INFO] | 2026-06-21 07:16:07 PM | analyzer.35     | Static Analysis took 0.710145 seconds
+[INFO] | 2026-06-21 07:16:07 PM | analyzer.35     | Dependency exists
+[INFO] | 2026-06-21 07:16:07 PM | analyzer.35     | Invoking symbolic executor!
+[36m[#] Analysing started: 35.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for onlyOwnerTransferOwnership[0m
+[36m[#] Interprocedural CFG generated for onlyOwnerTransferOwnership[0m
+[36m[#] Interprocedural CFG generation started for acceptOwnership[0m
+[36m[#] Interprocedural CFG generated for acceptOwnership[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for onlyOwnerTransferOwnership[0m
+[36m[#] Interprocedural CFG generated for onlyOwnerTransferOwnership[0m
+[36m[#] Interprocedural CFG generation started for acceptOwnership[0m
+[36m[#] Interprocedural CFG generated for acceptOwnership[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for changeSafeguardStatus[0m
+[36m[#] Interprocedural CFG generated for changeSafeguardStatus[0m
+[36m[#] Interprocedural CFG generation started for changeFeeAccount[0m
+[36m[#] Interprocedural CFG generated for changeFeeAccount[0m
+[36m[#] Interprocedural CFG generation started for changetradingFee[0m
+[36m[#] Interprocedural CFG generated for changetradingFee[0m
+[36m[#] Interprocedural CFG generation started for availableTradingFeeOwner[0m
+[36m[#] Interprocedural CFG generated for availableTradingFeeOwner[0m
+[36m[#] Interprocedural CFG generation started for withdrawTradingFeeOwner[0m
+[36m[#] Interprocedural CFG generated for withdrawTradingFeeOwner[0m
+[36m[#] Interprocedural CFG generation started for deposit[0m
+[36m[#] Interprocedural CFG generated for deposit[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] Interprocedural CFG generation started for depositToken[0m
+[36m[#] Interprocedural CFG generated for depositToken[0m
+[36m[#] Interprocedural CFG generation started for withdrawToken[0m
+[36m[#] Interprocedural CFG generated for withdrawToken[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for order[0m
+[36m[#] Interprocedural CFG generated for order[0m
+[36m[#] Interprocedural CFG generation started for trade[0m
+[36m[#] Interprocedural CFG generated for trade[0m
+[36m[#] Interprocedural CFG generation started for testTrade[0m
+[36m[#] Interprocedural CFG generated for testTrade[0m
+[36m[#] Interprocedural CFG generation started for availableVolume[0m
+[36m[#] Interprocedural CFG generated for availableVolume[0m
+[36m[#] Interprocedural CFG generation started for amountFilled[0m
+[36m[#] Interprocedural CFG generated for amountFilled[0m
+[36m[#] Interprocedural CFG generation started for cancelOrder[0m
+[36m[#] Interprocedural CFG generated for cancelOrder[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for onlyOwnerTransferOwnership[0m
+[36m[#] SDG generated for onlyOwnerTransferOwnership[0m
+[36m[#] SDG generation started for acceptOwnership[0m
+[36m[#] SDG generated for acceptOwnership[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for onlyOwnerTransferOwnership[0m
+[36m[#] SDG generated for onlyOwnerTransferOwnership[0m
+[36m[#] SDG generation started for acceptOwnership[0m
+[36m[#] SDG generated for acceptOwnership[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for changeSafeguardStatus[0m
+[36m[#] SDG generated for changeSafeguardStatus[0m
+[36m[#] SDG generation started for changeFeeAccount[0m
+[36m[#] SDG generated for changeFeeAccount[0m
+[36m[#] SDG generation started for changetradingFee[0m
+[36m[#] SDG generated for changetradingFee[0m
+[36m[#] SDG generation started for availableTradingFeeOwner[0m
+[36m[#] SDG generated for availableTradingFeeOwner[0m
+[36m[#] SDG generation started for withdrawTradingFeeOwner[0m
+[36m[#] SDG generated for withdrawTradingFeeOwner[0m
+[36m[#] SDG generation started for deposit[0m
+[36m[#] SDG generated for deposit[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[36m[#] SDG generation started for depositToken[0m
+[36m[#] SDG generated for depositToken[0m
+[36m[#] SDG generation started for withdrawToken[0m
+[36m[#] SDG generated for withdrawToken[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for order[0m
+[36m[#] SDG generated for order[0m
+[36m[#] SDG generation started for trade[0m
+[36m[#] SDG generated for trade[0m
+[36m[#] SDG generation started for testTrade[0m
+[36m[#] SDG generated for testTrade[0m
+[36m[#] SDG generation started for availableVolume[0m
+[36m[#] SDG generated for availableVolume[0m
+[36m[#] SDG generation started for amountFilled[0m
+[36m[#] SDG generated for amountFilled[0m
+[36m[#] SDG generation started for cancelOrder[0m
+[36m[#] SDG generated for cancelOrder[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[INFO] | 2026-06-21 07:16:10 PM | analyzer.35     | Symbolic execution took 2.770647 seconds
+[INFO] | 2026-06-21 07:16:10 PM | analyzer.35     | Symbolic execution finished!
+[INFO] | 2026-06-21 07:16:10 PM | analyzer.35     | Analysis finished!
+[INFO] | 2026-06-21 07:16:10 PM | analyzer.35     | Analysis took 3.481279 seconds
+[INFO] | 2026-06-21 07:16:10 PM | analyzer.35     | Analysis finished at: 2026-06-21 07:16:10 PM
+[36m[#] Analysis took 3.481279 seconds[0m
+[36m[#] Analysis completed: 35.sol [0m
+
+=== dependency_info.json ===
+{
+    "35.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "depositToken",
+                "withdraw"
+            ],
+            "from_function": "withdraw",
+            "to_function": "depositToken",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 50\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(tokens[address(0)][msg.sender] >= amount)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\"",
+                        "\"BlockID: 59\nFunction: depositToken\nNode: \nEXPRESSION tokens[token][msg.sender] = tokens[token][msg.sender].add(amount)\nIRS: \nREF_26 := TMP_76\""
+                    ],
+                    "state_variable": "tokens"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "depositToken",
+                "withdrawToken"
+            ],
+            "from_function": "withdrawToken",
+            "to_function": "depositToken",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: withdrawToken\nNode: \nEXPRESSION require(bool)(tokens[token][msg.sender] >= amount)\nIRS: \nTMP_84 = SOLIDITY_CALL require(bool)(TMP_83)\"",
+                        "\"BlockID: 59\nFunction: depositToken\nNode: \nEXPRESSION tokens[token][msg.sender] = tokens[token][msg.sender].add(amount)\nIRS: \nREF_26 := TMP_76\""
+                    ],
+                    "state_variable": "tokens"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "depositToken",
+                "testTrade"
+            ],
+            "from_function": "testTrade",
+            "to_function": "depositToken",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 112\nFunction: testTrade\nNode: \nIF ! (tokens[tokenGet][sender] >= amount && availableVolume(tokenGet,amountGet,tokenGive,amountGive,expires,nonce,user,v,r,s) >= amount)\nIRS: \nCONDITION TMP_130\"",
+                        "\"BlockID: 59\nFunction: depositToken\nNode: \nEXPRESSION tokens[token][msg.sender] = tokens[token][msg.sender].add(amount)\nIRS: \nREF_26 := TMP_76\""
+                    ],
+                    "state_variable": "tokens"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 119\nFunction: availableVolume\nNode: \nIF amountGet.sub(orderFills[user][hash]) < available1\nIRS: \nCONDITION TMP_144\"",
+                        "\"BlockID: 59\nFunction: depositToken\nNode: \nEXPRESSION tokens[token][msg.sender] = tokens[token][msg.sender].add(amount)\nIRS: \nREF_26 := TMP_76\""
+                    ],
+                    "state_variable": "tokens"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "depositToken",
+                "availableVolume"
+            ],
+            "from_function": "availableVolume",
+            "to_function": "depositToken",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 133\nFunction: availableVolume\nNode: \nIF amountGet.sub(orderFills[user][hash]) < available1\nIRS: \nCONDITION TMP_144\"",
+                        "\"BlockID: 59\nFunction: depositToken\nNode: \nEXPRESSION tokens[token][msg.sender] = tokens[token][msg.sender].add(amount)\nIRS: \nREF_26 := TMP_76\""
+                    ],
+                    "state_variable": "tokens"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "deposit"
+            ],
+            "First_function": "deposit",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 45\nFunction: deposit\nNode: \nEXPRESSION tokens[address(0)][msg.sender] = tokens[address(0)][msg.sender].add(msg.value)\nIRS: \nREF_8 := TMP_53\"",
+                        "\"BlockID: 50\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(tokens[address(0)][msg.sender] >= amount)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "tokens"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 157\nFunction: withdraw\nNode: \nEXPRESSION tokens[address(0)][msg.sender] = tokens[address(0)][msg.sender].sub(amount)\nIRS: \nREF_17 := TMP_64\"",
+                        "\"BlockID: 50\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(tokens[address(0)][msg.sender] >= amount)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "tokens"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "depositToken"
+            ],
+            "First_function": "depositToken",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: depositToken\nNode: \nEXPRESSION tokens[token][msg.sender] = tokens[token][msg.sender].add(amount)\nIRS: \nREF_26 := TMP_76\"",
+                        "\"BlockID: 50\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(tokens[address(0)][msg.sender] >= amount)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "tokens"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdrawToken"
+            ],
+            "First_function": "withdrawToken",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 66\nFunction: withdrawToken\nNode: \nEXPRESSION tokens[token][msg.sender] = tokens[token][msg.sender].sub(amount)\nIRS: \nREF_35 := TMP_85\"",
+                        "\"BlockID: 50\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(tokens[address(0)][msg.sender] >= amount)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "tokens"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "trade"
+            ],
+            "First_function": "trade",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 87\nFunction: tradeBalances\nNode: \nEXPRESSION tokens[tokenGive][msg.sender] = tokens[tokenGive][msg.sender].add(amountGive.mul(amount) \/ amountGet)\nIRS: \nREF_83 := TMP_125\"",
+                        "\"BlockID: 50\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(tokens[address(0)][msg.sender] >= amount)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "tokens"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 96\nFunction: tradeBalances\nNode: \nEXPRESSION tokens[tokenGet][msg.sender] = tokens[tokenGet][msg.sender].sub(amount.add(tradingFeeXfer))\nIRS: \nREF_60 := TMP_114\"",
+                        "\"BlockID: 50\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(tokens[address(0)][msg.sender] >= amount)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "tokens"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 99\nFunction: tradeBalances\nNode: \nEXPRESSION tokens[tokenGet][user] = tokens[tokenGet][user].add(amount.sub(tradingFeeXfer))\nIRS: \nREF_66 := TMP_116\"",
+                        "\"BlockID: 50\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(tokens[address(0)][msg.sender] >= amount)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "tokens"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 102\nFunction: tradeBalances\nNode: \nEXPRESSION tokens[address(0)][feeAccount] = tokens[address(0)][feeAccount].add(tradingFeeXfer)\nIRS: \nREF_72 := TMP_119\"",
+                        "\"BlockID: 50\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(tokens[address(0)][msg.sender] >= amount)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "tokens"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 107\nFunction: tradeBalances\nNode: \nEXPRESSION tokens[tokenGive][user] = tokens[tokenGive][user].sub(amountGive.mul(amount) \/ amountGet)\nIRS: \nREF_77 := TMP_122\"",
+                        "\"BlockID: 50\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(tokens[address(0)][msg.sender] >= amount)\nIRS: \nTMP_61 = SOLIDITY_CALL require(bool)(TMP_60)\""
+                    ],
+                    "state_variable": "tokens"
+                }
+            ]
+        }
+    ]
+}

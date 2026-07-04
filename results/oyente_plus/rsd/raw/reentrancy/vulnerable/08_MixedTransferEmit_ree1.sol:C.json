@@ -1,0 +1,32 @@
+{
+ "evm_code_coverage": "83.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "08_MixedTransferEmit_ree1.sol:5:5: Warning: Integer Underflow.\n",
+   "08_MixedTransferEmit_ree1.sol:16:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 73327961306066034406162736272318781021796717346160204381635874878763682496513\n    balances[msg.sender] = 803469022129495137770981046170581301261101496891396417650688",
+   "08_MixedTransferEmit_ree1.sol:23:1977: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0",
+   "08_MixedTransferEmit_ree1.sol:9:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0"
+  ],
+  "integer_overflow": [
+   "08_MixedTransferEmit_ree1.sol:23:901: Warning: Integer Overflow.\n",
+   "08_MixedTransferEmit_ree1.sol:12:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 64773055106541764118606082201610578519864516530434409909477613740937764143104\n    balances[msg.sender] = 2787593149816327892691964784081045188247552"
+  ],
+  "callstack": [
+   "08_MixedTransferEmit_ree1.sol:12:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [
+   [
+    "08_MixedTransferEmit_ree1.sol:10:9: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "08_MixedTransferEmit_ree1.sol:10:9: Warning: Transaction-Ordering Dependency.\n",
+    "08_MixedTransferEmit_ree1.sol:12:28: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

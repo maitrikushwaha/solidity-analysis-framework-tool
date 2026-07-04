@@ -1,0 +1,17 @@
+{
+ "evm_code_coverage": "86.1",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "177.sol:16:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    crowdsales[_token].closingTime = 1",
+   "177.sol:12:5: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

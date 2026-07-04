@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40789.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.1V1mu6CNhb' running
+INFO:CryticCompile:Compilation warnings/errors on 40789.sol:
+40789.sol:15:69: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (!(msg.sender.call.value(userBalances[msg.sender])())) { throw ; }
+                                                                    ^---^
+40789.sol:14:5: Warning: No visibility specified. Defaulting to "public". 
+    function withdrawBalance() onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 40789.sol:SendBalance:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 74.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:40789.sol:15:15: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40789.sol:SendBalance.json.

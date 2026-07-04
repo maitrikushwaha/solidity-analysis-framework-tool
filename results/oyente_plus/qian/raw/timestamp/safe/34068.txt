@@ -1,0 +1,16 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 34068.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.pIEurgYJCw' running
+INFO:root:contract 34068.sol:RichestTakeAll:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 78.2%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:34068.sol:8:9: Warning: Timestamp Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 34068.sol:RichestTakeAll.json.

@@ -1,0 +1,38 @@
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Analysis started at: 2026-06-21 07:13:53 PM
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Generating return summary for CreateTokens
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Return summary generated for CreateTokens
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Range graph generated
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Processed function CreateTokens
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Range graph generated
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Value Range Analysis took 0.000549 seconds
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Static Analysis took 0.036506 seconds
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Dependency does not exist
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Analysis finished!
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Analysis took 0.036630 seconds
+[INFO] | 2026-06-21 07:13:53 PM | analyzer.39019  | Analysis finished at: 2026-06-21 07:13:53 PM
+[36m[#] Analysing started: 39019.sol[0m
+[36m[#] Interprocedural CFG generation started for CreateTokens[0m
+[36m[#] Interprocedural CFG generated for CreateTokens[0m
+[36m[#] SDG generation started for CreateTokens[0m
+[36m[#] SDG generated for CreateTokens[0m
+[36m[#] Analysis took 0.036630 seconds[0m
+[36m[#] Analysis completed: 39019.sol [0m
+
+=== dependency_info.json ===
+{}

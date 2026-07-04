@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 34668.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.ZhCOSS7lYz' running
+INFO:CryticCompile:Compilation warnings/errors on 34668.sol:
+34668.sol:15:55: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (!milestone.paymentSource.call.value(0)()) throw;
+                                                      ^---^
+34668.sol:14:9: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+        Milestone milestone = milestones[_idMilestone];
+        ^-----------------^
+
+INFO:root:contract 34668.sol:MilestoneTracker:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 73.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:34668.sol:10:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 34668.sol:MilestoneTracker.json.

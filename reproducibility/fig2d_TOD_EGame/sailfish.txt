@@ -1,0 +1,73 @@
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Analysis started at: 2026-06-21 06:10:32 PM
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Callgraph generation started!
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Callgraph generation finished!
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Value Range Analysis started
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Generating return summary for constructor
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Return summary generated for constructor
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Range graph generated
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Processed function constructor
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Generating return summary for play
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Return summary generated for play
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Range graph generated
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Processed function play
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Generating return summary for getReward
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Return summary generated for getReward
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | State variable assignement do not exist
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Processed function getReward
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Value Range Analysis took 0.000416 seconds
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Value Range Analysis finished
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Dependency detection started!
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | TOD dependency detected in file egame.sol in contract EGame in by composing functions getReward and play
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Dependency detection finished!
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Static Analysis took 0.046071 seconds
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Dependency exists
+[INFO] | 2026-06-21 06:10:32 PM | analyzer.egame  | Invoking symbolic executor!
+[36m[#] Analysing started: egame.sol[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for play[0m
+[36m[#] Interprocedural CFG generated for play[0m
+[36m[#] Interprocedural CFG generation started for getReward[0m
+[36m[#] Interprocedural CFG generated for getReward[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for play[0m
+[36m[#] SDG generated for play[0m
+[36m[#] SDG generation started for getReward[0m
+[36m[#] SDG generated for getReward[0m
+[INFO] | 2026-06-21 06:10:33 PM | analyzer.egame  | Symbolic execution took 0.333052 seconds
+[INFO] | 2026-06-21 06:10:33 PM | analyzer.egame  | Symbolic execution finished!
+[INFO] | 2026-06-21 06:10:33 PM | analyzer.egame  | Analysis finished!
+[INFO] | 2026-06-21 06:10:33 PM | analyzer.egame  | Analysis took 0.379623 seconds
+[INFO] | 2026-06-21 06:10:33 PM | analyzer.egame  | Analysis finished at: 2026-06-21 06:10:33 PM
+[36m[#] Analysis took 0.379623 seconds[0m
+[36m[#] Analysis completed: egame.sol [0m
+=== dependency_info.json ===
+{
+    "egame.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getReward",
+                "play"
+            ],
+            "First_function": "play",
+            "Second_function": "getReward",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: play\nNode: \nEXPRESSION winner = msg.sender\nIRS: \nwinner := msg.sender\"",
+                        "\"BlockID: 15\nFunction: getReward\nNode: \nEXPRESSION winner.transfer(msg.value)\nIRS: \nTransfer dest:winner value:msg.value\""
+                    ],
+                    "state_variable": "winner"
+                }
+            ]
+        }
+    ]
+}

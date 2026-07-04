@@ -1,0 +1,65 @@
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Analysis started at: 2026-06-21 07:11:28 PM
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Callgraph generation started!
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Value Range Analysis started
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Generating return summary for reject
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Return summary generated for reject
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Range graph generated
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Processed function reject
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Value Range Analysis took 0.000737 seconds
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Dependency detection started!
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | TOD dependency detected in file 31565.sol in contract TelcoinSaleKYCEscrow in by composing functions reject and reject
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Dependency detection finished!
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Static Analysis took 0.088992 seconds
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Dependency exists
+[INFO] | 2026-06-21 07:11:28 PM | analyzer.31565  | Invoking symbolic executor!
+[36m[#] Analysing started: 31565.sol[0m
+[36m[#] Interprocedural CFG generation started for reject[0m
+[36m[#] Interprocedural CFG generated for reject[0m
+[36m[#] SDG generation started for reject[0m
+[36m[#] SDG generated for reject[0m
+[INFO] | 2026-06-21 07:11:29 PM | analyzer.31565  | Symbolic execution took 1.156023 seconds
+[INFO] | 2026-06-21 07:11:29 PM | analyzer.31565  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:11:29 PM | analyzer.31565  | Analysis finished!
+[INFO] | 2026-06-21 07:11:29 PM | analyzer.31565  | Analysis took 1.245823 seconds
+[INFO] | 2026-06-21 07:11:29 PM | analyzer.31565  | Analysis finished at: 2026-06-21 07:11:29 PM
+[36m[#] Analysis took 1.245823 seconds[0m
+[36m[#] Analysis completed: 31565.sol [0m
+
+=== dependency_info.json ===
+{
+    "31565.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "reject",
+                "reject"
+            ],
+            "First_function": "reject",
+            "Second_function": "reject",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 13\nFunction: reject\nNode: \nEXPRESSION deposited[_participant] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 2\nFunction: reject\nNode: \nEXPRESSION require(bool)(weiAmount > 0)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+                    ],
+                    "state_variable": "deposited"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 13\nFunction: reject\nNode: \nEXPRESSION deposited[_participant] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 4\nFunction: reject\nNode: \nEXPRESSION require(bool)(_participant.call.value(weiAmount)())\nIRS: \nTMP_3(bool) = LOW_LEVEL_CALL, dest:_participant, function:call, arguments:[] value:weiAmount \""
+                    ],
+                    "state_variable": "deposited"
+                }
+            ]
+        }
+    ]
+}

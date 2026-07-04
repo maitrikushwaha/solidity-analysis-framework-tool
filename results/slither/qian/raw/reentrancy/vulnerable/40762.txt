@@ -1,0 +1,39 @@
+
+'solc --version' running
+'solc /work/datasets/qian/reentrancy/vulnerable/40762.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/reentrancy/vulnerable' running
+
+Reentrancy in SimpleDAO.withdraw(uint256) (datasets/qian/reentrancy/vulnerable/40762.sol#8-13):
+	External calls:
+	- require(bool)(msg.sender.call.value(amount)()) (datasets/qian/reentrancy/vulnerable/40762.sol#10)
+	State variables written after the call(s):
+	- credit[msg.sender] -= amount (datasets/qian/reentrancy/vulnerable/40762.sol#11)
+	SimpleDAO.credit (datasets/qian/reentrancy/vulnerable/40762.sol#6) can be used in cross function reentrancies:
+	- SimpleDAO.credit (datasets/qian/reentrancy/vulnerable/40762.sol#6)
+	- SimpleDAO.withdraw(uint256) (datasets/qian/reentrancy/vulnerable/40762.sol#8-13)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/reentrancy/vulnerable/40762.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in SimpleDAO.withdraw(uint256) (datasets/qian/reentrancy/vulnerable/40762.sol#8-13):
+	- require(bool)(msg.sender.call.value(amount)()) (datasets/qian/reentrancy/vulnerable/40762.sol#10)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/work/datasets/qian/reentrancy/vulnerable/40762.sol analyzed (1 contracts with 93 detectors), 4 result(s) found

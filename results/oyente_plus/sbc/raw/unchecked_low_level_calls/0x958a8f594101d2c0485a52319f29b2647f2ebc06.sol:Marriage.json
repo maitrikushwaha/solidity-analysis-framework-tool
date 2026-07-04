@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "5.5",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:70:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:70:5: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [
+   "0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol:2:1: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

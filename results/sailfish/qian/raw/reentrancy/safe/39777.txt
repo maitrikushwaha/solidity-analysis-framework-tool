@@ -1,0 +1,73 @@
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Analysis started at: 2026-06-21 07:12:33 PM
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Processed function onlyOwner
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Generating return summary for shareProfits
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Return summary generated for shareProfits
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Range graph generated
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Processed function shareProfits
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Value Range Analysis took 0.000854 seconds
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | TOD dependency detected in file 39777.sol in contract Blockjack in by composing functions shareProfits and shareProfits
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Static Analysis took 0.079164 seconds
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Dependency exists
+[INFO] | 2026-06-21 07:12:33 PM | analyzer.39777  | Invoking symbolic executor!
+[36m[#] Analysing started: 39777.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for shareProfits[0m
+[36m[#] Interprocedural CFG generated for shareProfits[0m
+[36m[#] SDG generation started for shareProfits[0m
+[36m[#] SDG generated for shareProfits[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[INFO] | 2026-06-21 07:12:34 PM | analyzer.39777  | Symbolic execution took 0.943373 seconds
+[INFO] | 2026-06-21 07:12:34 PM | analyzer.39777  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:12:34 PM | analyzer.39777  | Analysis finished!
+[INFO] | 2026-06-21 07:12:34 PM | analyzer.39777  | Analysis took 1.023295 seconds
+[INFO] | 2026-06-21 07:12:34 PM | analyzer.39777  | Analysis finished at: 2026-06-21 07:12:34 PM
+[36m[#] Analysis took 1.023295 seconds[0m
+[36m[#] Analysis completed: 39777.sol [0m
+
+=== dependency_info.json ===
+{
+    "39777.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "shareProfits",
+                "shareProfits"
+            ],
+            "First_function": "shareProfits",
+            "Second_function": "shareProfits",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 13\nFunction: shareProfits\nNode: \nEXPRESSION currentBankroll -= profit\nIRS: \ncurrentBankroll = currentBankroll - profit\"",
+                        "\"BlockID: 1\nFunction: shareProfits\nNode: \nIF currentBankroll <= initialBankroll\nIRS: \nCONDITION TMP_0\""
+                    ],
+                    "state_variable": "currentBankroll"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 13\nFunction: shareProfits\nNode: \nEXPRESSION currentBankroll -= profit\nIRS: \ncurrentBankroll = currentBankroll - profit\"",
+                        "\"BlockID: 2\nFunction: shareProfits\nNode: \nIF ! ADMIN_CONTRACT.call.value(profit)()\nIRS: \nTMP_3(bool) = LOW_LEVEL_CALL, dest:ADMIN_CONTRACT, function:call, arguments:[] value:profit \""
+                    ],
+                    "state_variable": "currentBankroll"
+                }
+            ]
+        }
+    ]
+}

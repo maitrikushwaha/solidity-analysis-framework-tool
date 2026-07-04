@@ -1,0 +1,22 @@
+{
+ "evm_code_coverage": "89.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "50005.sol:8:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balanceOf[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819971\n    _value = 57896044618658097711785492504343953926634992332820282019728792003956564819969",
+   "50005.sol:10:16: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balanceOf[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819971\n    _value = 57896044618658097711785492504343953926634992332820282019728792003956564819969"
+  ],
+  "integer_overflow": [
+   "50005.sol:8:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639932",
+   "50005.sol:6:16: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balanceOf[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    _value = 1"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "50005.sol:10:16: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

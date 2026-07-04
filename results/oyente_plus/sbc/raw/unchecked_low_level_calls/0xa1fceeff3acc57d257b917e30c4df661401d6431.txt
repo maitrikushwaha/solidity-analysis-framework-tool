@@ -1,0 +1,47 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0xa1fceeff3acc57d257b917e30c4df661401d6431.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.NcnNKrs4GS' running
+INFO:CryticCompile:Compilation warnings/errors on 0xa1fceeff3acc57d257b917e30c4df661401d6431.sol:
+0xa1fceeff3acc57d257b917e30c4df661401d6431.sol:31:13: Warning: Return value of low-level calls not used.
+            contract_address.call(id, msg.sender, tos[i], vs[i]);
+            ^--------------------------------------------------^
+
+INFO:root:contract 0xa1fceeff3acc57d257b917e30c4df661401d6431.sol:AirDropContract:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0xa1fceeff3acc57d257b917e30c4df661401d6431.sol:28:28: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    contract_address = 730750818665451459101842416358141509827966271488
+0xa1fceeff3acc57d257b917e30c4df661401d6431.sol:31:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    contract_address = 730750818686719107034401070324602422792451784704
+0xa1fceeff3acc57d257b917e30c4df661401d6431.sol:20:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    contract_address = 35184372088832
+INFO:symExec:0xa1fceeff3acc57d257b917e30c4df661401d6431.sol:20:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    tos = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+0xa1fceeff3acc57d257b917e30c4df661401d6431.sol:28:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    contract_address = 1
+0xa1fceeff3acc57d257b917e30c4df661401d6431.sol:31:59: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    contract_address = 730750818665451459101842416358141509827966271488
+0xa1fceeff3acc57d257b917e30c4df661401d6431.sol:31:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    contract_address = 730750818665451459101842416358141509827966271488
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xa1fceeff3acc57d257b917e30c4df661401d6431.sol:AirDropContract.json.

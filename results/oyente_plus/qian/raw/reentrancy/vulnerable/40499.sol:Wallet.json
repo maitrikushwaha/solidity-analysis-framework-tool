@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "82.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "40499.sol:12:13: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    value = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    m_txs[_h] = 57896044618658097711785492504343953926634992332820282019728792003956564819968"
+  ],
+  "integer_overflow": [],
+  "callstack": [
+   "40499.sol:11:13: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "40499.sol:11:13: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

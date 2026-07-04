@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "79.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "05_Send_safe3.sol:5:5: Warning: Integer Underflow.\n",
+   "05_Send_safe3.sol:19:2101: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0",
+   "05_Send_safe3.sol:9:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0"
+  ],
+  "integer_overflow": [
+   "05_Send_safe3.sol:19:1025: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

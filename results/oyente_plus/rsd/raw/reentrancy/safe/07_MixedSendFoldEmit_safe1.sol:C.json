@@ -1,0 +1,33 @@
+{
+ "evm_code_coverage": "77.3",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "07_MixedSendFoldEmit_safe1.sol:5:5: Warning: Integer Underflow.\n",
+   "07_MixedSendFoldEmit_safe1.sol:20:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    balances[msg.sender] = 1427247692705959881058285969449495136382746624",
+   "07_MixedSendFoldEmit_safe1.sol:13:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 72757989118292416629054997161488593804188097757043174928945821699831228448573\n    balances[msg.sender] = 862718293348820473429344482784628181556388621521298319395315527974912",
+   "07_MixedSendFoldEmit_safe1.sol:29:1810: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0",
+   "07_MixedSendFoldEmit_safe1.sol:17:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0"
+  ],
+  "integer_overflow": [
+   "07_MixedSendFoldEmit_safe1.sol:29:734: Warning: Integer Overflow.\n",
+   "07_MixedSendFoldEmit_safe1.sol:11:29: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 112583804346388654033686513081411297119813200832508866865471007569840305078273\n    balances[msg.sender] = 862718293348820473429344482784628181556388621521298319395315527974912"
+  ],
+  "callstack": [
+   "07_MixedSendFoldEmit_safe1.sol:18:25: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [
+   [
+    "07_MixedSendFoldEmit_safe1.sol:18:25: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "07_MixedSendFoldEmit_safe1.sol:18:25: Warning: Transaction-Ordering Dependency.\n",
+    "07_MixedSendFoldEmit_safe1.sol:11:29: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

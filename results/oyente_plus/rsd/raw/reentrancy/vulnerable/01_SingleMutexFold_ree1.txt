@@ -1,0 +1,61 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 01_SingleMutexFold_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.CGDcx8hjtq' running
+INFO:root:contract 01_SingleMutexFold_ree1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 85.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:01_SingleMutexFold_ree1.sol:6:5: Warning: Integer Underflow.
+
+01_SingleMutexFold_ree1.sol:29:2827: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+    flag = 162259276829213363391578010288408
+01_SingleMutexFold_ree1.sol:13:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 448014753582324495121099962949220751228739633744864811584717848592
+01_SingleMutexFold_ree1.sol:25:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 94747173848740859673904328477347569986310108484945578963648619006461795631104
+INFO:symExec:01_SingleMutexFold_ree1.sol:29:793: Warning: Integer Overflow.
+
+01_SingleMutexFold_ree1.sol:17:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 68719476736
+    flag = 883538299746017202379602638820395888965613427802793287217553502954850304
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+01_SingleMutexFold_ree1.sol:16:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+    flag = 26334525777723274502097416945255447235438317519676133941473968600
+01_SingleMutexFold_ree1.sol:29:2773: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+    flag = 162259276829213363391578010288408
+01_SingleMutexFold_ree1.sol:29:1054: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+    flag = 162259276829213363391578010288128
+01_SingleMutexFold_ree1.sol:29:2560: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 0
+    flag = 162259276829213363391578010288128
+INFO:symExec:01_SingleMutexFold_ree1.sol:17:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:01_SingleMutexFold_ree1.sol:17:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 01_SingleMutexFold_ree1.sol:C.json.

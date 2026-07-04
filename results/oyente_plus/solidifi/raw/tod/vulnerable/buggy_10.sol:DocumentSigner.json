@@ -1,0 +1,32 @@
+{
+ "evm_code_coverage": "31.7",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "buggy_10.sol:11:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _doc = 469762305",
+   "buggy_10.sol:2:23: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _doc = 3283707890",
+   "buggy_10.sol:141:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _doc = 1208197184"
+  ],
+  "integer_overflow": [
+   "buggy_10.sol:102:9: Warning: Integer Overflow.\n",
+   "buggy_10.sol:100:16: Warning: Integer Overflow.\n",
+   "buggy_10.sol:142:26: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _doc = 469762305",
+   "buggy_10.sol:142:16: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _doc = 3283707890",
+   "buggy_10.sol:141:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _doc = 3283707890",
+   "buggy_10.sol:3:6: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _doc = 1208197184"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "buggy_10.sol:58:8: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "buggy_10.sol:155:8: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

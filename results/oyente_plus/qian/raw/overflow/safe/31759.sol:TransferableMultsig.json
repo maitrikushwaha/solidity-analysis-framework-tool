@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "75.3",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "31759.sol:6:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    data = 115792089237316195423570985008687907853269984665640564039457584007913129639932"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "31759.sol:7:17: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

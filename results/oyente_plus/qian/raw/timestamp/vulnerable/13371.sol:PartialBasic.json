@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "70.4",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "13371.sol:10:25: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    rewardTimestamp = 61469482018867790948701355630557758369052575379045933174337892954218641"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

@@ -1,0 +1,25 @@
+/work/datasets/qian/timestamp/safe/3772.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN
+patternId: 58bdd3
+severity: 1
+line: 12
+column: 1
+content: functionpurchase()publicpayablereturns(boolsuccess){GroupstorageopenGroup=groups[openGroupNumber];uint256currentTimestamp=block.timestamp;require(currentTimestamp>=openGroup.startTime);}
+
+ruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 3
+column: 0
+content: contractSparksterToken{structGroup{uint256startTime;}mapping(uint256=>Group)internalgroups;uint256publicopenGroupNumber;functionpurchase()publicpayablereturns(boolsuccess){GroupstorageopenGroup=groups[openGroupNumber];uint256currentTimestamp=block.timestamp;require(currentTimestamp>=openGroup.startTime);}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_LOCKED_MONEY :1
+SOLIDITY_FUNCTIONS_RETURNS_TYPE_AND_NO_RETURN :1

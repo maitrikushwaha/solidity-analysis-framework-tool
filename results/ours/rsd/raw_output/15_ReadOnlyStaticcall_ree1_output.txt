@@ -1,0 +1,32 @@
+Starting Solidity compilation and static analysis.
+solc 0.8.28 already installed at: /home/maitri/.solcx/solc-v0.8.28
+Using solc version 0.8.28
+solc 0.8.28 already installed at: /home/maitri/.solcx/solc-v0.8.28
+Using solc version 0.8.28
+[CFG] No reentrancy back-edge: no external-call encoding detected.
+Dependency analysis completed in 0.0085s.
+[DOMAIN] No reentrancy encoding → Box only
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] ERC-20 interface reentrancy detected.
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW ==========
+solc 0.8.28 already installed at: /home/maitri/.solcx/solc-v0.8.28
+Using solc version 0.8.28
+
+========== PIPELINE 3: TIMESTAMP DEPENDENCY ==========
+
+========== PIPELINE 4: TOD ==========
+
+===== VERDICTS (Box) =====
+[REENTRANCY] ERC-20 interface reentrancy in function 'work' (line ~62). External call IStrategy(strategy).execute() with attacker-controlled token address allows re-entry. State update after external call.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: VULNERABLE
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: NOT VULNERABLE
+[SUMMARY] TOD: NOT VULNERABLE
+
+Total analysis time: 0.95s

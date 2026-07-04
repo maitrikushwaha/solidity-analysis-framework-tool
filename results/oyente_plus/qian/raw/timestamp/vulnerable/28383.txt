@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 28383.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.f7jLJci1Op' running
+INFO:root:contract 28383.sol:Timestamped:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 79.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:28383.sol:11:11: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    ts = 0
+    plus = 11779626536899610846288162318691730961479591714980140672862778815512452268033
+28383.sol:9:11: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    ts = 50737029811530342054937126680263613535234603839930405491670764866158036632689
+    plus = 72979382328548683165336346366175286376472616152943505079852674966517766044559
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 28383.sol:Timestamped.json.

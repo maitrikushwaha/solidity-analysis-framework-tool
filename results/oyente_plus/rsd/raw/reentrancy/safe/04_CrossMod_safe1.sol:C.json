@@ -1,0 +1,25 @@
+{
+ "evm_code_coverage": "74.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "04_CrossMod_safe1.sol:6:5: Warning: Integer Underflow.\n",
+   "04_CrossMod_safe1.sol:10:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 106135847416239919214133283255995278152687725663058912991346950272"
+  ],
+  "integer_overflow": [
+   "04_CrossMod_safe1.sol:33:600: Warning: Integer Overflow.\n",
+   "04_CrossMod_safe1.sol:23:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 0\n    balances[msg.sender] = 0",
+   "04_CrossMod_safe1.sol:17:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 383123885216472214589586756787577295904684780545900544"
+  ],
+  "callstack": [
+   "04_CrossMod_safe1.sol:25:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "04_CrossMod_safe1.sol:25:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "68.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "23792.sol:9:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    accountBalances[msg.sender] = 0\n    amount = 1"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

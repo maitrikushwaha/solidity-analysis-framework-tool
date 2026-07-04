@@ -1,0 +1,72 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 33.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.MVuR1J71OK' running
+INFO:root:contract 33.sol:Owned:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 80.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 33.sol:Owned.json.
+INFO:root:contract 33.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 33.sol:SafeMath.json.
+INFO:root:contract 33.sol:Staking:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 75.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:33.sol:48:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    basePercent = 87432547781297140027737132986763873843542798940286759673444773526332146784621
+    minstakeTokens = 30179646726687130050312541015292704755293991546264334350173753385902959220735
+    stakeTokens = 87937748944946369101174008237033460432825686807267554815492769635181046090900
+33.sol:106:41: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    lock = 0
+    stakeTime = 19903539194844749172224006438155086732574315356335499197008546989369793970248
+    staker[msg.sender].redeem = 0
+    staker[msg.sender].time = 74663443970355484392698068600391054943455363144611474823538803164208812786113
+33.sol:106:68: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    lock = 0
+    stakeTime = 29854425328082155273599904834403105307167221412109504556727961689274851439810
+    staker[msg.sender].redeem = 0
+    staker[msg.sender].time = 2293388202309147043012258623363032921655409235293140438085501599619483697153
+33.sol:107:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    lock = 0
+    stakeTime = 3792558105552059566460197584159904263415637690603433630366596913518865292465
+    staker[msg.sender].redeem = 0
+    staker[msg.sender].time = 911978545798865543965046011695345116098945478775115825159977450176291811360
+33.sol:108:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    lock = 0
+    stakeTime = 63499621774564369097070788216070432813380308429736985505822951150828599642371
+    staker[msg.sender].redeem = 0
+    staker[msg.sender].time = 31944602084013928305766195434573584494154620058553371191988460229423479666944
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 33.sol:Staking.json.

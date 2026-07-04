@@ -1,0 +1,31 @@
+{
+ "evm_code_coverage": "95.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "buggy_50.sol:520:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    HashList[hash].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    contractactive = 46768052394588893382517914646921056628989841375232\n    changehashownerfee = 0"
+  ],
+  "integer_overflow": [
+   "buggy_50.sol:2:20: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    HashList[hash].length = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    contractactive = 1461501637330902918203684832716283019655932542976\n    changehashownerfee = 0",
+   "buggy_50.sol:520:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    HashList[hash].length = 79228162514264337593544016896\n    contractactive = 46768052394588893382517914646921056628989841375232\n    changehashownerfee = 0",
+   "buggy_50.sol:481:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    hashfee = 0\n    HashList[hash].length = 0\n    contractactive = 1461501637330902918203684832716283019655932542976",
+   "buggy_50.sol:483:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    hashfee = 0\n    HashListLength = 115792089237316195423570985008687907853269984665640564039457584007913129639935\n    HashList[hash].length = 0\n    contractactive = 1461501637330902918203684832716283019655932542976",
+   "buggy_50.sol:454:17: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    indx = 32691588631652881389083030660050573995616919793653027826290831616367895173649\n    HashList[hash].length = 76393898357030475207386099012120771376197517773365785919112625397629730347550",
+   "buggy_50.sol:454:44: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    indx = 32691588631652881389083030660050573995616919793653027826290831616367895173649\n    HashList[hash].length = 76393898357030475207386099012120771376197517773365785919112625397629730347550",
+   "buggy_50.sol:454:44: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    indx = 32691588631652881389083030660050573995616919793653027826290831616367895173649\n    HashList[hash].length = 76393898357030475207386099012120771376197517773365785919112625397629730347550"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "buggy_50.sol:291:9: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "buggy_50.sol:25:9: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

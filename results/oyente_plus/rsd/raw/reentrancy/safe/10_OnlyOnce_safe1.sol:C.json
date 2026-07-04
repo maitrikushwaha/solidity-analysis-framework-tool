@@ -1,0 +1,26 @@
+{
+ "evm_code_coverage": "74.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "10_OnlyOnce_safe1.sol:5:5: Warning: Integer Underflow.\n",
+   "10_OnlyOnce_safe1.sol:22:4193: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    done[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    balances[msg.sender] = 0\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968",
+   "10_OnlyOnce_safe1.sol:22:3880: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    done[msg.sender] = 22548652392185856\n    balances[msg.sender] = 0",
+   "10_OnlyOnce_safe1.sol:22:2909: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    done[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968",
+   "10_OnlyOnce_safe1.sol:9:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    done[msg.sender] = 57896044618658097711803882450834344592935292497146433900715839839214759837696"
+  ],
+  "integer_overflow": [
+   "10_OnlyOnce_safe1.sol:22:848: Warning: Integer Overflow.\n",
+   "10_OnlyOnce_safe1.sol:10:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    done[msg.sender] = 61299821634635554334333881086012367344749564887344087040\n    balances[msg.sender] = 0",
+   "10_OnlyOnce_safe1.sol:22:3826: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    done[msg.sender] = 61299821634635554334333881086012367344749564887344087040\n    balances[msg.sender] = 0"
+  ],
+  "callstack": [
+   "10_OnlyOnce_safe1.sol:13:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

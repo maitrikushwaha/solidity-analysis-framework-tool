@@ -1,0 +1,32 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 38983.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.JPCrdm6YbM' running
+INFO:CryticCompile:Compilation warnings/errors on 38983.sol:
+38983.sol:9:40: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (this.balance >= capAmount) throw;
+                                       ^---^
+38983.sol:9:13: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        if (this.balance >= capAmount) throw;
+            ^----------^
+38983.sol:10:13: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        if (this.balance + msg.value >= capAmount) {
+            ^----------^
+38983.sol:8:5: Warning: No visibility specified. Defaulting to "public". 
+    function () payable {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 38983.sol:FunFairSale:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 75.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:38983.sol:10:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    capAmount = 1
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 38983.sol:FunFairSale.json.

@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "82.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "50014.sol:10:32: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0\n    _tkA = 57896044618658097711785492504343953926634992332820282019728792003956564819969"
+  ],
+  "integer_overflow": [
+   "50014.sol:11:25: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[_pd] = 62094152296112971864103243168379150362976067995458940553813749143743808118076\n    _tkA = 77960304675817946857830488955567514628616252505170703073589319268629301715718"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "50014.sol:9:14: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

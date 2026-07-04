@@ -1,0 +1,23 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 31812.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.rD8bbbZlsM' running
+INFO:CryticCompile:Compilation warnings/errors on 31812.sol:
+31812.sol:9:5: Warning: Function state mutability can be restricted to view
+    function tokensAvailable() public returns (uint256){
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 31812.sol:ArnaVault:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 49.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:31812.sol:10:18: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    startTime = 1
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 31812.sol:ArnaVault.json.

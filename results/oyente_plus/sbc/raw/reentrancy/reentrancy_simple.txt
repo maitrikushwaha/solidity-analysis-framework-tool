@@ -1,0 +1,25 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc reentrancy_simple.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.DtkjSgDPt7' running
+INFO:CryticCompile:Compilation warnings/errors on reentrancy_simple.sol:
+reentrancy_simple.sol:25:14: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+             throw;
+             ^---^
+
+INFO:root:contract reentrancy_simple.sol:Reentrance:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:reentrancy_simple.sol:17:10: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    userBalance[msg.sender] = 58145359774152284933456109867463921104630326686651346578866921971682764303017
+INFO:symExec:reentrancy_simple.sol:24:17: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to reentrancy_simple.sol:Reentrance.json.

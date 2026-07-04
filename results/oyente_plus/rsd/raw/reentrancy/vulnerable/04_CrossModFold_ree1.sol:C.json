@@ -1,0 +1,29 @@
+{
+ "evm_code_coverage": "85.5",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "04_CrossModFold_ree1.sol:6:5: Warning: Integer Underflow.\n",
+   "04_CrossModFold_ree1.sol:40:5707: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0\n    flag = 383123885216472214589586756787577295904684780545900544\n    balances[msg.sender] = 89202980794122492566142873090593446023921664\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969",
+   "04_CrossModFold_ree1.sol:40:5823: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 4503599627370496\n    flag = 383123885216472214589586756787577295904684780545900544\n    balances[msg.sender] = 89202980794122492566142873090593446023921664\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969",
+   "04_CrossModFold_ree1.sol:40:6176: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 57429596993556601009766287507568588170819853123170191182065722364752021585841\n    flag = 0\n    balances[msg.sender] = 766247770432944429179173513575154591809369561091801088\n    balances[a] = 0\n    balances[msg.sender] = 1",
+   "04_CrossModFold_ree1.sol:40:3138: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 86844066927987146567678238756515930889952488499230423029593188005934847329795\n    balances[msg.sender] = 0",
+   "04_CrossModFold_ree1.sol:10:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 2077812148179405707707072946264803901349756214158033914408628723382977822720",
+   "04_CrossModFold_ree1.sol:24:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0"
+  ],
+  "integer_overflow": [
+   "04_CrossModFold_ree1.sol:40:351: Warning: Integer Overflow.\n",
+   "04_CrossModFold_ree1.sol:30:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 0\n    balances[msg.sender] = 0"
+  ],
+  "callstack": [
+   "04_CrossModFold_ree1.sol:31:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "04_CrossModFold_ree1.sol:31:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

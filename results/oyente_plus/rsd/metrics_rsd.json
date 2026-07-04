@@ -1,0 +1,23 @@
+{
+  "dataset": "rsd",
+  "vuln": "reentrancy",
+  "tp": 41,
+  "fp": 30,
+  "tn": 41,
+  "fn": 24,
+  "precision": 0.5774647887323944,
+  "recall": 0.6307692307692307,
+  "f1": 0.6029411764705882,
+  "accuracy": 0.6029411764705882,
+  "excluded": [
+    "12_OnlyOwner_safe1.sol",
+    "15_ReadOnly_ree2.sol"
+  ],
+  "not_in_gt": [
+    "00_BasicInline_ree1.sol",
+    "14_DelegateCall_ree1.sol",
+    "14_DelegateCall_ree2.sol",
+    "14_DelegateCall_ree3.sol",
+    "14_DelegateCall_ree4.sol"
+  ]
+}

@@ -1,0 +1,19 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc integer_overflow_mapping_sym_1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.c93XukYvVb' running
+INFO:root:contract integer_overflow_mapping_sym_1.sol:IntegerOverflowMappingSym1:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 69.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:integer_overflow_mapping_sym_1.sol:16:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    v = 1
+    map[k] = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to integer_overflow_mapping_sym_1.sol:IntegerOverflowMappingSym1.json.

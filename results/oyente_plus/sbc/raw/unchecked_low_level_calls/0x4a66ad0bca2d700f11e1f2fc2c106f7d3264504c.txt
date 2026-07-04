@@ -1,0 +1,35 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.mAJO1aWdLR' running
+INFO:CryticCompile:Compilation warnings/errors on 0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol:
+0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol:19:13: Warning: Return value of low-level calls not used.
+            caddress.call(id,from,_tos[i],v[i]*1000000000000000000);
+            ^-----------------------------------------------------^
+
+INFO:root:contract 0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol:EBU:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol:16:26: Warning: Integer Underflow.
+
+0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol:19:13: Warning: Integer Underflow.
+
+0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol:13:5: Warning: Integer Underflow.
+
+INFO:symExec:0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol:13:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _tos = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol:16:26: Warning: Integer Overflow.
+
+0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol:19:43: Warning: Integer Overflow.
+
+0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol:19:13: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol:EBU.json.

@@ -1,0 +1,17 @@
+{
+  "filename": "01_SingleMutex_safe2.sol",
+  "reentrancy": 0,
+  "overflow": 0,
+  "timestamp": 0,
+  "tod": 1,
+  "duration_s": 1.48,
+  "error": null,
+  "reentrancy_domains": [
+    "Box",
+    "Octagon",
+    "Polka"
+  ],
+  "reentrancy_fixpoint_times": {
+    "Box": 0.6395
+  }
+}

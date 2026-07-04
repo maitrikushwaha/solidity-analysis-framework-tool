@@ -1,0 +1,37 @@
+/work/datasets/rsd/reentrancy/safe/11_Proxy_safe1.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlline 5:71 extraneous input 'callData' expecting {',', ')'}
+line 6:38 no viable alternative at input '.call{'
+line 6:38 missing ';' at '{'
+line 21:40 no viable alternative at input '.call{'
+line 21:40 missing ';' at '{'
+ruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 4
+column: 0
+content: contractProxy{functionforward(addressmsgSender,addresstarget,bytescalldatacallData)externalpayable{(boolsuccess,)=target.call<missing ';'>{value:msg.value}(callData);uint256size;uint256ptr;assembly{size:=returndatasize()ptr:=mload(0x40)returndatacopy(ptr,0,size)ifeq(success,0){revert(ptr,size)}}uint256ethBalance=address(this).balance;if(ethBalance!=0){(success,)=msgSender.call<missing ';'>{value:ethBalance}("");}require(success,"eth refund failed");assembly{return(ptr,size)}}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 2
+column: 16
+content: ^
+
+ruleId: SOLIDITY_USING_INLINE_ASSEMBLY
+patternId: 109cd5
+severity: 1
+line: 9
+column: 8
+content: assembly{size:=returndatasize()ptr:=mload(0x40)returndatacopy(ptr,0,size)ifeq(success,0){revert(ptr,size)}}
+
+ruleId: SOLIDITY_USING_INLINE_ASSEMBLY
+patternId: 109cd5
+severity: 1
+line: 25
+column: 8
+content: assembly{return(ptr,size)}
+
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_LOCKED_MONEY :1
+SOLIDITY_USING_INLINE_ASSEMBLY :2

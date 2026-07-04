@@ -1,0 +1,79 @@
+/work/datasets/rsd/reentrancy/vulnerable/09_ERC20InheritMod_ree3.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlline 64:46 extraneous input 'recipients' expecting {',', ')'}
+ruleId: SOLIDITY_ERC20_APPROVE
+patternId: af782c
+severity: 2
+line: 38
+column: 4
+content: functionapprove(addressspender,uint256amount)publicreturns(bool){allowances[msg.sender][spender]=amount;emitApproval(msg.sender,spender,amount);returntrue;}
+
+ruleId: SOLIDITY_EXTRA_GAS_IN_LOOPS
+patternId: d3j11j
+severity: 1
+line: 68
+column: 8
+content: for(uinti=0;i<recipients.length;i++){transfer(recipients[i],amount);}
+
+ruleId: SOLIDITY_GAS_LIMIT_IN_LOOPS
+patternId: f6f853
+severity: 2
+line: 68
+column: 8
+content: for(uinti=0;i<recipients.length;i++){transfer(recipients[i],amount);}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 2
+column: 16
+content: ^
+
+ruleId: SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+patternId: 5616b2
+severity: 1
+line: 16
+column: 32
+content: private
+
+ruleId: SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+patternId: 5616b2
+severity: 1
+line: 17
+column: 52
+content: private
+
+ruleId: SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+patternId: 5616b2
+severity: 1
+line: 83
+column: 9
+content: private
+
+ruleId: SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+patternId: 5616b2
+severity: 1
+line: 84
+column: 30
+content: private
+
+ruleId: SOLIDITY_UPGRADE_TO_050
+patternId: 341gim
+severity: 1
+line: 64
+column: 27
+content: address[]calldata
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: 910067
+severity: 1
+line: 20
+column: 4
+content: constructor(){totalSupply=1000*10**uint256(10);balances[msg.sender]=totalSupply;emitTransfer(address(0),msg.sender,totalSupply);}
+
+SOLIDITY_VISIBILITY :1
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA :4
+SOLIDITY_EXTRA_GAS_IN_LOOPS :1
+SOLIDITY_UPGRADE_TO_050 :1
+SOLIDITY_GAS_LIMIT_IN_LOOPS :1
+SOLIDITY_ERC20_APPROVE :1

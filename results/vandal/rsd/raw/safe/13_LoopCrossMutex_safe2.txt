@@ -1,0 +1,6 @@
+=== Vandal error ===
+++ cd /opt/vandal/bin
+++ pwd
++ DIR=/opt/vandal/bin
++ rm -rf facts-tmp
++ /opt/vandal/bin/decompile -o CALL JUMPI SSTORE SLOAD MLOAD MSTORE -d -n -t facts-tmp c.hex

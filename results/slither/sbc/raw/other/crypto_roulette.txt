@@ -1,0 +1,95 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/other/crypto_roulette.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/other' running
+Compilation warnings/errors on /work/datasets/sbc/other/crypto_roulette.sol:
+/work/datasets/sbc/other/crypto_roulette.sol:27:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function CryptoRoulette() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/other/crypto_roulette.sol:40:9: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+        Game game; //Uninitialized storage pointer
+        ^-------^
+/work/datasets/sbc/other/crypto_roulette.sol:34:30: Warning: "sha3" has been deprecated in favour of "keccak256"
+        secretNumber = uint8(sha3(now, block.blockhash(block.number-1))) % 20 + 1;
+                             ^----------------------------------------^
+/work/datasets/sbc/other/crypto_roulette.sol:34:30: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        secretNumber = uint8(sha3(now, block.blockhash(block.number-1))) % 20 + 1;
+                             ^----------------------------------------^
+/work/datasets/sbc/other/crypto_roulette.sol:40:9: Warning: Uninitialized storage pointer. Did you mean '<type> memory game'?
+        Game game; //Uninitialized storage pointer
+        ^-------^
+/work/datasets/sbc/other/crypto_roulette.sol:47:33: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            msg.sender.transfer(this.balance);
+                                ^----------^
+/work/datasets/sbc/other/crypto_roulette.sol:56:13: Warning: "suicide" has been deprecated in favour of "selfdestruct"
+            suicide(msg.sender);
+            ^-----------------^
+/work/datasets/sbc/other/crypto_roulette.sol:34:40: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        secretNumber = uint8(sha3(now, block.blockhash(block.number-1))) % 20 + 1;
+                                       ^-------------^
+
+
+CryptoRoulette (datasets/sbc/other/crypto_roulette.sol#14-61) contract sets array length with a user-controlled value:
+	- gamesPlayed.push(game) (datasets/sbc/other/crypto_roulette.sol#43)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#array-length-assignment
+
+CryptoRoulette.shuffle() (datasets/sbc/other/crypto_roulette.sol#32-35) uses a weak PRNG: "secretNumber = uint8(sha3()(now,block.blockhash(block.number - 1))) % 20 + 1 (datasets/sbc/other/crypto_roulette.sol#34)" 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#weak-PRNG
+
+CryptoRoulette.play(uint256).game (datasets/sbc/other/crypto_roulette.sol#40) is a storage variable never initialized
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-storage-variables
+
+CryptoRoulette.play(uint256) (datasets/sbc/other/crypto_roulette.sol#37-52) uses a dangerous strict equality:
+	- number == secretNumber (datasets/sbc/other/crypto_roulette.sol#45)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+CryptoRoulette.play(uint256) (datasets/sbc/other/crypto_roulette.sol#37-52) uses timestamp for comparisons
+	Dangerous comparisons:
+	- number == secretNumber (datasets/sbc/other/crypto_roulette.sol#45)
+CryptoRoulette.kill() (datasets/sbc/other/crypto_roulette.sol#54-58) uses timestamp for comparisons
+	Dangerous comparisons:
+	- msg.sender == ownerAddr && now > lastPlayed + 86400 (datasets/sbc/other/crypto_roulette.sol#55)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Deprecated standard detected secretNumber = uint8(sha3()(now,block.blockhash(block.number - 1))) % 20 + 1 (datasets/sbc/other/crypto_roulette.sol#34):
+	- Usage of "block.blockhash()" should be replaced with "blockhash()"
+	- Usage of "sha3()" should be replaced with "keccak256()"
+Deprecated standard detected suicide(address)(msg.sender) (datasets/sbc/other/crypto_roulette.sol#56):
+	- Usage of "suicide()" should be replaced with "selfdestruct()"
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#deprecated-standards
+
+Version constraint ^0.4.19 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x
+	- ExpExponentCleanup
+	- EventStructWrongData
+	- NestedArrayFunctionCallDecoder.
+It is used by:
+	- ^0.4.19 (datasets/sbc/other/crypto_roulette.sol#5)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Reentrancy in CryptoRoulette.play(uint256) (datasets/sbc/other/crypto_roulette.sol#37-52):
+	External calls:
+	- msg.sender.transfer(this.balance) (datasets/sbc/other/crypto_roulette.sol#47)
+	State variables written after the call(s):
+	- lastPlayed = now (datasets/sbc/other/crypto_roulette.sol#51)
+	- shuffle() (datasets/sbc/other/crypto_roulette.sol#50)
+		- secretNumber = uint8(sha3()(now,block.blockhash(block.number - 1))) % 20 + 1 (datasets/sbc/other/crypto_roulette.sol#34)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4
+
+CryptoRoulette.betPrice (datasets/sbc/other/crypto_roulette.sol#18) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/sbc/other/crypto_roulette.sol analyzed (1 contracts with 93 detectors), 12 result(s) found

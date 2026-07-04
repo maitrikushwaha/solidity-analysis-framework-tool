@@ -1,0 +1,56 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc modifier_reentrancy.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.kmW0xI2fHd' running
+INFO:root:contract modifier_reentrancy.sol:Bank:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 70.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:modifier_reentrancy.sol:33:16: Warning: Integer Underflow.
+
+modifier_reentrancy.sol:32:5: Warning: Integer Underflow.
+
+INFO:symExec:modifier_reentrancy.sol:32:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to modifier_reentrancy.sol:Bank.json.
+INFO:root:contract modifier_reentrancy.sol:ModifierEntrancy:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 83.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to modifier_reentrancy.sol:ModifierEntrancy.json.
+INFO:root:contract modifier_reentrancy.sol:attack:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 81.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:modifier_reentrancy.sol:44:16: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    hasBeenCalled = 1
+modifier_reentrancy.sol:39:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    hasBeenCalled = 1
+INFO:symExec:modifier_reentrancy.sol:39:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    hasBeenCalled = 1
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to modifier_reentrancy.sol:attack.json.

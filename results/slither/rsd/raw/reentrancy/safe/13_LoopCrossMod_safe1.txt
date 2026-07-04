@@ -1,0 +1,36 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+C.payAll(address[]) (datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol#22-30) sends eth to arbitrary user
+	Dangerous calls:
+	- (success,None) = r.call{value: balances[r]}() (datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol#26)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+Reentrancy in C.payAll(address[]) (datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol#22-30):
+	External calls:
+	- (success,None) = r.call{value: balances[r]}() (datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol#26)
+	State variables written after the call(s):
+	- balances[r] = 0 (datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol#28)
+	C.balances (datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol#5) can be used in cross function reentrancies:
+	- C.balances (datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol#5)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+C (datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol#4-37) has incorrect ERC20 function interface:C.transfer(address,uint256) (datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol#16-20)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-erc20-interface
+
+C.payAll(address[]) (datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol#22-30) has external calls inside a loop: (success,None) = r.call{value: balances[r]}() (datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol#26)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation/#calls-inside-a-loop
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol#1)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in C.payAll(address[]) (datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol#22-30):
+	- (success,None) = r.call{value: balances[r]}() (datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol#26)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/work/datasets/rsd/reentrancy/safe/13_LoopCrossMod_safe1.sol analyzed (1 contracts with 93 detectors), 6 result(s) found

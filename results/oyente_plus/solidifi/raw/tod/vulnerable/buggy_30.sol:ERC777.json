@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "1.7",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "buggy_30.sol:417:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    return _defaultOperatorsArray = 0"
+  ],
+  "integer_overflow": [
+   "buggy_30.sol:418:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    return _defaultOperatorsArray = 3618502788666131106986593281521497120414687020801267626233049500247285301247"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

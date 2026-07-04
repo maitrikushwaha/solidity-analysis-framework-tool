@@ -1,0 +1,45 @@
+
+'solc --version' running
+'solc /work/datasets/qian/timestamp/vulnerable/7593.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/timestamp/vulnerable' running
+
+EtheremonEnergy.energyData (datasets/qian/timestamp/vulnerable/7593.sol#9) is never initialized. It is used in:
+	- EtheremonEnergy.getClaimableAmount(address) (datasets/qian/timestamp/vulnerable/7593.sol#13-20)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+EtheremonEnergy.getClaimableAmount(address) (datasets/qian/timestamp/vulnerable/7593.sol#13-20) performs a multiplication on the result of a division:
+	- energyAmount = (period / claimTime) * claimAmount (datasets/qian/timestamp/vulnerable/7593.sol#16)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#divide-before-multiply
+
+EtheremonEnergy.getClaimableAmount(address) (datasets/qian/timestamp/vulnerable/7593.sol#13-20) uses timestamp for comparisons
+	Dangerous comparisons:
+	- energyAmount > claimAmount (datasets/qian/timestamp/vulnerable/7593.sol#17)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/timestamp/vulnerable/7593.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Parameter EtheremonEnergy.getClaimableAmount(address)._trainer (datasets/qian/timestamp/vulnerable/7593.sol#13) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+EtheremonEnergy.claimAmount (datasets/qian/timestamp/vulnerable/7593.sol#11) should be constant 
+EtheremonEnergy.claimTime (datasets/qian/timestamp/vulnerable/7593.sol#10) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/qian/timestamp/vulnerable/7593.sol analyzed (1 contracts with 93 detectors), 8 result(s) found

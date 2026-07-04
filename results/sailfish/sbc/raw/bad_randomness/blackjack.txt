@@ -1,0 +1,124 @@
+[INFO] | 2026-06-21 07:00:00 PM | analyzer.blackjack | Analysis started at: 2026-06-21 07:00:00 PM
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Callgraph generation started!
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Callgraph generation finished!
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Value Range Analysis started
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for deal
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for deal
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | State variable assignement do not exist
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function deal
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for valueOf
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for valueOf
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | State variable assignement do not exist
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function valueOf
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for isAce
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for isAce
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | State variable assignement do not exist
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function isAce
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for isTen
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for isTen
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | State variable assignement do not exist
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function isTen
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for BlackJack
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for BlackJack
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | State variable assignement do not exist
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function BlackJack
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for fallback
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for fallback
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | State variable assignement do not exist
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function fallback
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for getGameState
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for getGameState
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | State variable assignement do not exist
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function getGameState
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Range graph generated
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for gameIsGoingOn
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for gameIsGoingOn
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | State variable assignement do not exist
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function gameIsGoingOn
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for calculateScore
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for calculateScore
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | State variable assignement do not exist
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function calculateScore
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for getPlayerCard
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for getPlayerCard
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | State variable assignement do not exist
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function getPlayerCard
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for getHouseCard
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for getHouseCard
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | State variable assignement do not exist
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function getHouseCard
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for getPlayerCardsNumber
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for getPlayerCardsNumber
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | State variable assignement do not exist
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function getPlayerCardsNumber
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for getHouseCardsNumber
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for getHouseCardsNumber
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | State variable assignement do not exist
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function getHouseCardsNumber
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for checkGameResult
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for checkGameResult
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Range graph generated
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function checkGameResult
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for deal
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for deal
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Range graph generated
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function deal
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for hit
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for hit
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Range graph generated
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Processed function hit
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Generating return summary for stand
+[INFO] | 2026-06-21 07:00:01 PM | analyzer.blackjack | Return summary generated for stand
+[WARNING] | 2026-06-21 07:00:01 PM | analyzer.blackjack | instrs length LocalVariableInitFromTupleSolc is more than 1
+[36m[#] Analysing started: blackjack.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier gameIsGoingOn[0m
+[36m[#] Interprocedural CFG generated for modifer gameIsGoingOn[0m
+[36m[#] Interprocedural CFG generation started for BlackJack[0m
+[36m[#] Interprocedural CFG generated for BlackJack[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for deal[0m
+[36m[#] Interprocedural CFG generated for deal[0m
+[36m[#] Interprocedural CFG generation started for hit[0m
+[36m[#] Interprocedural CFG generated for hit[0m
+[36m[#] Interprocedural CFG generation started for stand[0m
+[36m[#] Interprocedural CFG generated for stand[0m
+[36m[#] Interprocedural CFG generation started for getPlayerCard[0m
+[36m[#] Interprocedural CFG generated for getPlayerCard[0m
+[36m[#] Interprocedural CFG generation started for getHouseCard[0m
+[36m[#] Interprocedural CFG generated for getHouseCard[0m
+[36m[#] Interprocedural CFG generation started for getPlayerCardsNumber[0m
+[36m[#] Interprocedural CFG generated for getPlayerCardsNumber[0m
+[36m[#] Interprocedural CFG generation started for getHouseCardsNumber[0m
+[36m[#] Interprocedural CFG generated for getHouseCardsNumber[0m
+[36m[#] Interprocedural CFG generation started for getGameState[0m
+[36m[#] Interprocedural CFG generated for getGameState[0m
+[36m[#] SDG generation started for BlackJack[0m
+[36m[#] SDG generated for BlackJack[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for deal[0m
+[36m[#] SDG generated for deal[0m
+[36m[#] SDG generation started for hit[0m
+[36m[#] SDG generated for hit[0m
+[36m[#] SDG generation started for stand[0m
+[36m[#] SDG generated for stand[0m
+[36m[#] SDG generation started for getPlayerCard[0m
+[36m[#] SDG generated for getPlayerCard[0m
+[36m[#] SDG generation started for getHouseCard[0m
+[36m[#] SDG generated for getHouseCard[0m
+[36m[#] SDG generation started for getPlayerCardsNumber[0m
+[36m[#] SDG generated for getPlayerCardsNumber[0m
+[36m[#] SDG generation started for getHouseCardsNumber[0m
+[36m[#] SDG generated for getHouseCardsNumber[0m
+[36m[#] SDG generation started for getGameState[0m
+[36m[#] SDG generated for getGameState[0m
+[36m[#] SDG generation started for modifier gameIsGoingOn[0m
+[36m[#] SDG generated for modifier gameIsGoingOn[0m

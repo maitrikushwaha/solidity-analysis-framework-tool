@@ -1,0 +1,56 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 15_ReadOnly_safe2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.d7Gr03OKdX' running
+INFO:root:contract 15_ReadOnly_safe2.sol:A:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 59.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:15_ReadOnly_safe2.sol:86:139: Warning: Integer Underflow.
+
+15_ReadOnly_safe2.sol:22:5: Warning: Integer Underflow.
+
+INFO:symExec:15_ReadOnly_safe2.sol:33:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:Flow1
+15_ReadOnly_safe2.sol:29:54: Warning: Transaction-Ordering Dependency.
+
+Flow2
+15_ReadOnly_safe2.sol:29:54: Warning: Transaction-Ordering Dependency.
+
+15_ReadOnly_safe2.sol:29:24: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 15_ReadOnly_safe2.sol:A.json.
+INFO:root:contract 15_ReadOnly_safe2.sol:B:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 88.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:15_ReadOnly_safe2.sol:45:5: Warning: Integer Underflow.
+
+15_ReadOnly_safe2.sol:44:5: Warning: Integer Underflow.
+
+15_ReadOnly_safe2.sol:49:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 65585820299170351060534981674592553104982477922981632397119374634586659094528
+15_ReadOnly_safe2.sol:64:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 28948022323230284211744728682834777843596489962684260312198989960426607869952
+15_ReadOnly_safe2.sol:61:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 1011078232819430432604041994800135120682277659987072948785089148689701666816
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 15_ReadOnly_safe2.sol:B.json.

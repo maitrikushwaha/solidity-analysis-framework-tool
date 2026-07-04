@@ -1,0 +1,98 @@
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Analysis started at: 2026-06-21 07:15:35 PM
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Callgraph generation started!
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Callgraph generation finished!
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Value Range Analysis started
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Generating return summary for receiveApproval
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Return summary generated for receiveApproval
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Processed function receiveApproval
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Range graph generated
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Processed function constructor
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Generating return summary for _transfer
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Return summary generated for _transfer
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Range graph generated
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Processed function _transfer
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Generating return summary for approve
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Return summary generated for approve
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Range graph generated
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Processed function approve
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Generating return summary for burn
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Return summary generated for burn
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Range graph generated
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Processed function burn
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Generating return summary for burnFrom
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Return summary generated for burnFrom
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Range graph generated
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Processed function burnFrom
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Range graph generated
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Generating return summary for approveAndCall
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Return summary generated for approveAndCall
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Range graph generated
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Processed function approveAndCall
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Range graph generated
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Processed function transfer
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Range graph generated
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Processed function transferFrom
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Value Range Analysis took 0.002083 seconds
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Value Range Analysis finished
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Dependency detection started!
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Dependency detection finished!
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Static Analysis took 0.088696 seconds
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Dependency does not exist
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Analysis finished!
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Analysis took 0.088794 seconds
+[INFO] | 2026-06-21 07:15:35 PM | analyzer.15     | Analysis finished at: 2026-06-21 07:15:35 PM
+[36m[#] Analysing started: 15.sol[0m
+[36m[#] Interprocedural CFG generation started for receiveApproval[0m
+[36m[#] Interprocedural CFG generated for receiveApproval[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for approveAndCall[0m
+[36m[#] Interprocedural CFG generated for approveAndCall[0m
+[36m[#] Interprocedural CFG generation started for burn[0m
+[36m[#] Interprocedural CFG generated for burn[0m
+[36m[#] Interprocedural CFG generation started for burnFrom[0m
+[36m[#] Interprocedural CFG generated for burnFrom[0m
+[36m[#] SDG generation started for receiveApproval[0m
+[36m[#] SDG generated for receiveApproval[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for approveAndCall[0m
+[36m[#] SDG generated for approveAndCall[0m
+[36m[#] SDG generation started for burn[0m
+[36m[#] SDG generated for burn[0m
+[36m[#] SDG generation started for burnFrom[0m
+[36m[#] SDG generated for burnFrom[0m
+[36m[#] Analysis took 0.088794 seconds[0m
+[36m[#] Analysis completed: 15.sol [0m
+
+=== dependency_info.json ===
+{}

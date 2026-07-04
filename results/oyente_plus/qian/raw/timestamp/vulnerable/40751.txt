@@ -1,0 +1,19 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40751.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.FCNgSC2f2f' running
+INFO:root:contract 40751.sol:ShortingRewards:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 81.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:40751.sol:12:27: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    periodFinish = 1
+    reward = 115792089237316195423570985008687907853269984665640564039457584007913129639856
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40751.sol:ShortingRewards.json.

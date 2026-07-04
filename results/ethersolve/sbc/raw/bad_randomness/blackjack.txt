@@ -1,0 +1,16 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/bad_randomness/blackjack.sol:BlackJack
+offset,opcode,detection
+7875,7875: SLOAD,Store read after unsafe call
+7898,7898: SSTORE,Store write after unsafe call
+8407,8407: SLOAD,Store read after unsafe call
+8430,8430: SSTORE,Store write after unsafe call
+9061,9061: SLOAD,Store read after unsafe call
+9084,9084: SSTORE,Store write after unsafe call
+9294,9294: SLOAD,Store read after unsafe call
+9317,9317: SSTORE,Store write after unsafe call
+9484,9484: SLOAD,Store read after unsafe call
+9507,9507: SSTORE,Store write after unsafe call
+
+# contract /work/datasets/sbc/bad_randomness/blackjack.sol:Deck
+offset,opcode,detection

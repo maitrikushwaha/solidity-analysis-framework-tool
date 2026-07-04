@@ -1,0 +1,38 @@
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Analysis started at: 2026-06-21 07:12:32 PM
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Processed function onlyOwner
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Generating return summary for calcRefund
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Return summary generated for calcRefund
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Range graph generated
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Processed function calcRefund
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Value Range Analysis took 0.000965 seconds
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Static Analysis took 0.046566 seconds
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Dependency does not exist
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Analysis finished!
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Analysis took 0.046711 seconds
+[INFO] | 2026-06-21 07:12:32 PM | analyzer.39750  | Analysis finished at: 2026-06-21 07:12:32 PM
+[36m[#] Analysing started: 39750.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.046711 seconds[0m
+[36m[#] Analysis completed: 39750.sol [0m
+
+=== dependency_info.json ===
+{}

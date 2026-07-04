@@ -1,0 +1,23 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 1813.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.fKd71Qymzr' running
+INFO:root:contract 1813.sol:Bittwatt:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 72.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:1813.sol:6:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _seconds = 87522543116091692642898991470747911540473016816853618691036649129099924882818
+1813.sol:7:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _seconds = 8373322899400908053494396487360869399134213375292744451154638026247245922569
+    _minutes = 1170192282959968810686918288713449580912103923992821338736115007318116706990
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 1813.sol:Bittwatt.json.

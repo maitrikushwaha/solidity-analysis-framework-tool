@@ -1,0 +1,26 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39867.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.B86EDqg8n7' running
+INFO:CryticCompile:Compilation warnings/errors on 39867.sol:
+39867.sol:17:53: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if(!fundingAccount.call.value(msg.value)()) throw;
+                                                    ^---^
+39867.sol:16:5: Warning: No visibility specified. Defaulting to "public". 
+    function buy(string _commit) payable onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 39867.sol:NinjaToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 46.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:39867.sol:6:5: Warning: Integer Underflow.
+
+INFO:symExec:39867.sol:6:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39867.sol:NinjaToken.json.

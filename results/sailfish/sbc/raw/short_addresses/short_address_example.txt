@@ -1,0 +1,50 @@
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Analysis started at: 2026-06-21 07:06:31 PM
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Callgraph generation started!
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Callgraph generation finished!
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Value Range Analysis started
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Generating return summary for MyToken
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Return summary generated for MyToken
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Range graph generated
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Processed function MyToken
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Generating return summary for sendCoin
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Return summary generated for sendCoin
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Range graph generated
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Processed function sendCoin
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Generating return summary for getBalance
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Return summary generated for getBalance
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | State variable assignement do not exist
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Processed function getBalance
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Value Range Analysis took 0.001697 seconds
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Value Range Analysis finished
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Dependency detection started!
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Dependency detection finished!
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Static Analysis took 0.065423 seconds
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Dependency does not exist
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Analysis finished!
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Analysis took 0.065662 seconds
+[INFO] | 2026-06-21 07:06:31 PM | analyzer.short_address_example | Analysis finished at: 2026-06-21 07:06:31 PM
+[36m[#] Analysing started: short_address_example.sol[0m
+[36m[#] Interprocedural CFG generation started for MyToken[0m
+[36m[#] Interprocedural CFG generated for MyToken[0m
+[36m[#] Interprocedural CFG generation started for sendCoin[0m
+[36m[#] Interprocedural CFG generated for sendCoin[0m
+[36m[#] Interprocedural CFG generation started for getBalance[0m
+[36m[#] Interprocedural CFG generated for getBalance[0m
+[36m[#] SDG generation started for MyToken[0m
+[36m[#] SDG generated for MyToken[0m
+[36m[#] SDG generation started for sendCoin[0m
+[36m[#] SDG generated for sendCoin[0m
+[36m[#] SDG generation started for getBalance[0m
+[36m[#] SDG generated for getBalance[0m
+[36m[#] Analysis took 0.065662 seconds[0m
+[36m[#] Analysis completed: short_address_example.sol [0m
+
+=== dependency_info.json ===
+{}

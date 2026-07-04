@@ -1,0 +1,105 @@
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Analysis started at: 2026-06-21 06:59:57 PM
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Callgraph generation started!
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Callgraph generation finished!
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Value Range Analysis started
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Range graph generated
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Generating return summary for TokenSaleChallenge
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Return summary generated for TokenSaleChallenge
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Processed function TokenSaleChallenge
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Generating return summary for isComplete
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Return summary generated for isComplete
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Processed function isComplete
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Generating return summary for buy
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Return summary generated for buy
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Range graph generated
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Processed function buy
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Generating return summary for sell
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Return summary generated for sell
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Range graph generated
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Processed function sell
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Value Range Analysis took 0.001559 seconds
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Value Range Analysis finished
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Dependency detection started!
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | TOD dependency detected in file tokensalechallenge.sol in contract TokenSaleChallenge in by composing functions sell and buy
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | TOD dependency detected in file tokensalechallenge.sol in contract TokenSaleChallenge in by composing functions sell and sell
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Dependency detection finished!
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Static Analysis took 0.102031 seconds
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Dependency exists
+[INFO] | 2026-06-21 06:59:57 PM | analyzer.tokensalechallenge | Invoking symbolic executor!
+[36m[#] Analysing started: tokensalechallenge.sol[0m
+[36m[#] Interprocedural CFG generation started for TokenSaleChallenge[0m
+[36m[#] Interprocedural CFG generated for TokenSaleChallenge[0m
+[36m[#] Interprocedural CFG generation started for isComplete[0m
+[36m[#] Interprocedural CFG generated for isComplete[0m
+[36m[#] Interprocedural CFG generation started for buy[0m
+[36m[#] Interprocedural CFG generated for buy[0m
+[36m[#] Interprocedural CFG generation started for sell[0m
+[36m[#] Interprocedural CFG generated for sell[0m
+[36m[#] SDG generation started for TokenSaleChallenge[0m
+[36m[#] SDG generated for TokenSaleChallenge[0m
+[36m[#] SDG generation started for isComplete[0m
+[36m[#] SDG generated for isComplete[0m
+[36m[#] SDG generation started for buy[0m
+[36m[#] SDG generated for buy[0m
+[36m[#] SDG generation started for sell[0m
+[36m[#] SDG generated for sell[0m
+[INFO] | 2026-06-21 06:59:59 PM | analyzer.tokensalechallenge | Symbolic execution took 1.770478 seconds
+[INFO] | 2026-06-21 06:59:59 PM | analyzer.tokensalechallenge | Symbolic execution finished!
+[INFO] | 2026-06-21 06:59:59 PM | analyzer.tokensalechallenge | Analysis finished!
+[INFO] | 2026-06-21 06:59:59 PM | analyzer.tokensalechallenge | Analysis took 1.873711 seconds
+[INFO] | 2026-06-21 06:59:59 PM | analyzer.tokensalechallenge | Analysis finished at: 2026-06-21 06:59:59 PM
+[36m[#] Analysis took 1.873711 seconds[0m
+[36m[#] Analysis completed: tokensalechallenge.sol [0m
+
+=== dependency_info.json ===
+{
+    "tokensalechallenge.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "sell",
+                "buy"
+            ],
+            "First_function": "buy",
+            "Second_function": "sell",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 6\nFunction: buy\nNode: \nEXPRESSION balanceOf[msg.sender] += numTokens\nIRS: \nREF_1 = REF_1 + numTokens\"",
+                        "\"BlockID: 8\nFunction: sell\nNode: \nEXPRESSION require(bool)(balanceOf[msg.sender] >= numTokens)\nIRS: \nTMP_8 = SOLIDITY_CALL require(bool)(TMP_7)\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "sell",
+                "sell"
+            ],
+            "First_function": "sell",
+            "Second_function": "sell",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 13\nFunction: sell\nNode: \nEXPRESSION balanceOf[msg.sender] -= numTokens\nIRS: \nREF_3 = REF_3 - numTokens\"",
+                        "\"BlockID: 8\nFunction: sell\nNode: \nEXPRESSION require(bool)(balanceOf[msg.sender] >= numTokens)\nIRS: \nTMP_8 = SOLIDITY_CALL require(bool)(TMP_7)\""
+                    ],
+                    "state_variable": "balanceOf"
+                }
+            ]
+        }
+    ]
+}

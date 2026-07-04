@@ -1,0 +1,22 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 10146.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.S9kah4hYuz' running
+INFO:CryticCompile:Compilation warnings/errors on 10146.sol:
+10146.sol:7:27: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+	function isValidPurchase(uint256 value, uint256 amount) internal constant returns (bool) {
+	                         ^-----------^
+10146.sol:7:42: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+	function isValidPurchase(uint256 value, uint256 amount) internal constant returns (bool) {
+	                                        ^------------^
+
+INFO:root:contract 10146.sol:KOIOSTokenSale:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 70.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 10146.sol:KOIOSTokenSale.json.

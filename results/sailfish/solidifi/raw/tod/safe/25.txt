@@ -1,0 +1,122 @@
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Analysis started at: 2026-06-21 07:15:55 PM
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Callgraph generation started!
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Callgraph generation finished!
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Value Range Analysis started
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Range graph generated
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Processed function constructor
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Generating return summary for placeBet
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Return summary generated for placeBet
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Range graph generated
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Processed function placeBet
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Generating return summary for getBalance
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Return summary generated for getBalance
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Processed function getBalance
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Generating return summary for deposit
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Return summary generated for deposit
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Processed function deposit
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Generating return summary for fallback
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Return summary generated for fallback
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Processed function fallback
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Processed function onlyOwner
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Generating return summary for setOpenStatus
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Return summary generated for setOpenStatus
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Range graph generated
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Processed function setOpenStatus
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Generating return summary for changeOdd
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Return summary generated for changeOdd
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Range graph generated
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Processed function changeOdd
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Generating return summary for setGameInfo
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Return summary generated for setGameInfo
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Range graph generated
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Processed function setGameInfo
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Generating return summary for givePrizeMoney
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Return summary generated for givePrizeMoney
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Range graph generated
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Processed function givePrizeMoney
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Generating return summary for changeOwner
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Return summary generated for changeOwner
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Range graph generated
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Processed function changeOwner
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Generating return summary for withdraw
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Return summary generated for withdraw
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Processed function withdraw
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Value Range Analysis took 0.004490 seconds
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Value Range Analysis finished
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Dependency detection started!
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Dependency detection finished!
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Static Analysis took 0.215823 seconds
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Dependency does not exist
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Analysis finished!
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Analysis took 0.215926 seconds
+[INFO] | 2026-06-21 07:15:55 PM | analyzer.25     | Analysis finished at: 2026-06-21 07:15:55 PM
+[36m[#] Analysing started: 25.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for setOpenStatus[0m
+[36m[#] Interprocedural CFG generated for setOpenStatus[0m
+[36m[#] Interprocedural CFG generation started for changeOdd[0m
+[36m[#] Interprocedural CFG generated for changeOdd[0m
+[36m[#] Interprocedural CFG generation started for setGameInfo[0m
+[36m[#] Interprocedural CFG generated for setGameInfo[0m
+[36m[#] Interprocedural CFG generation started for placeBet[0m
+[36m[#] Interprocedural CFG generated for placeBet[0m
+[36m[#] Interprocedural CFG generation started for givePrizeMoney[0m
+[36m[#] Interprocedural CFG generated for givePrizeMoney[0m
+[36m[#] Interprocedural CFG generation started for getBalance[0m
+[36m[#] Interprocedural CFG generated for getBalance[0m
+[36m[#] Interprocedural CFG generation started for deposit[0m
+[36m[#] Interprocedural CFG generated for deposit[0m
+[36m[#] Interprocedural CFG generation started for changeOwner[0m
+[36m[#] Interprocedural CFG generated for changeOwner[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for setOpenStatus[0m
+[36m[#] SDG generated for setOpenStatus[0m
+[36m[#] SDG generation started for changeOdd[0m
+[36m[#] SDG generated for changeOdd[0m
+[36m[#] SDG generation started for setGameInfo[0m
+[36m[#] SDG generated for setGameInfo[0m
+[36m[#] SDG generation started for placeBet[0m
+[36m[#] SDG generated for placeBet[0m
+[36m[#] SDG generation started for givePrizeMoney[0m
+[36m[#] SDG generated for givePrizeMoney[0m
+[36m[#] SDG generation started for getBalance[0m
+[36m[#] SDG generated for getBalance[0m
+[36m[#] SDG generation started for deposit[0m
+[36m[#] SDG generated for deposit[0m
+[36m[#] SDG generation started for changeOwner[0m
+[36m[#] SDG generated for changeOwner[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.215926 seconds[0m
+[36m[#] Analysis completed: 25.sol [0m
+
+=== dependency_info.json ===
+{}

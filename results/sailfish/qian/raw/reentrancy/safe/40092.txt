@@ -1,0 +1,67 @@
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Analysis started at: 2026-06-21 07:12:44 PM
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Generating return summary for withdrawPayments
+[WARNING] | 2026-06-21 07:12:44 PM | analyzer.40092  | No lvalue eligible assignment, is this some bug!
+[WARNING] | 2026-06-21 07:12:44 PM | analyzer.40092  | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Return summary generated for withdrawPayments
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Range graph generated
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Processed function withdrawPayments
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Value Range Analysis took 0.000734 seconds
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | TOD dependency detected in file 40092.sol in contract PullPaymentCapable in by composing functions withdrawPayments and withdrawPayments
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Static Analysis took 0.083333 seconds
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Dependency exists
+[INFO] | 2026-06-21 07:12:44 PM | analyzer.40092  | Invoking symbolic executor!
+[36m[#] Analysing started: 40092.sol[0m
+[36m[#] Interprocedural CFG generation started for withdrawPayments[0m
+[36m[#] Interprocedural CFG generated for withdrawPayments[0m
+[36m[#] SDG generation started for withdrawPayments[0m
+[36m[#] SDG generated for withdrawPayments[0m
+[INFO] | 2026-06-21 07:12:45 PM | analyzer.40092  | Symbolic execution took 1.055573 seconds
+[INFO] | 2026-06-21 07:12:45 PM | analyzer.40092  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:12:45 PM | analyzer.40092  | Analysis finished!
+[INFO] | 2026-06-21 07:12:45 PM | analyzer.40092  | Analysis took 1.139546 seconds
+[INFO] | 2026-06-21 07:12:45 PM | analyzer.40092  | Analysis finished at: 2026-06-21 07:12:45 PM
+[36m[#] Analysis took 1.139546 seconds[0m
+[36m[#] Analysis completed: 40092.sol [0m
+
+=== dependency_info.json ===
+{
+    "40092.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawPayments",
+                "withdrawPayments"
+            ],
+            "First_function": "withdrawPayments",
+            "Second_function": "withdrawPayments",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: withdrawPayments\nNode: \nEXPRESSION payments[msg.sender] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 3\nFunction: withdrawPayments\nNode: \nEXPRESSION totalBalance -= payment\nIRS: \ntotalBalance = totalBalance - payment\""
+                    ],
+                    "state_variable": "payments"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: withdrawPayments\nNode: \nEXPRESSION payments[msg.sender] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 4\nFunction: withdrawPayments\nNode: \nIF ! msg.sender.call.value(payment)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:payment \""
+                    ],
+                    "state_variable": "payments"
+                }
+            ]
+        }
+    ]
+}

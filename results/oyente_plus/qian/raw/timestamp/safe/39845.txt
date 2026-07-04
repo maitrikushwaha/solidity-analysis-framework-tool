@@ -1,0 +1,33 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39845.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.GDjHG3klci' running
+INFO:CryticCompile:Compilation warnings/errors on 39845.sol:
+39845.sol:19:26: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (p.status != 1) { throw; }
+                         ^---^
+39845.sol:18:5: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+    Purse p = purses[purseId];
+    ^-----^
+39845.sol:17:3: Warning: No visibility specified. Defaulting to "public". 
+  function contributeToPurse(uint purseId) payable {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 39845.sol:Omnipurse:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 83.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:39845.sol:20:5: Warning: Integer Overflow.
+
+39845.sol:20:21: Warning: Integer Overflow.
+
+39845.sol:20:21: Warning: Integer Overflow.
+
+39845.sol:20:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39845.sol:Omnipurse.json.

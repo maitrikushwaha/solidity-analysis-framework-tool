@@ -1,0 +1,122 @@
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Analysis started at: 2026-06-21 07:08:42 PM
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Callgraph generation started!
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Callgraph generation finished!
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Value Range Analysis started
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Generating return summary for Owned
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Return summary generated for Owned
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Range graph generated
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Processed function Owned
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Generating return summary for acceptOwnership
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Return summary generated for acceptOwnership
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Range graph generated
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Processed function acceptOwnership
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Processed function onlyOwner
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Generating return summary for Owned
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Return summary generated for Owned
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Range graph generated
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Processed function Owned
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Generating return summary for acceptOwnership
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Return summary generated for acceptOwnership
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Range graph generated
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Processed function acceptOwnership
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Generating return summary for numberOfIndex
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Return summary generated for numberOfIndex
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Processed function numberOfIndex
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Generating return summary for writeIndex
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Return summary generated for writeIndex
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Range graph generated
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Processed function writeIndex
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Processed function onlyOwner
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Generating return summary for changeOwner
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Return summary generated for changeOwner
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Range graph generated
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Processed function changeOwner
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Generating return summary for execute
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Return summary generated for execute
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Processed function execute
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Generating return summary for changeOwner
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Return summary generated for changeOwner
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Range graph generated
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Processed function changeOwner
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Generating return summary for execute
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Return summary generated for execute
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Processed function execute
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Value Range Analysis took 0.002947 seconds
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Value Range Analysis finished
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Dependency detection started!
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Dependency detection finished!
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Static Analysis took 0.098875 seconds
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Dependency does not exist
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Analysis finished!
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Analysis took 0.099046 seconds
+[INFO] | 2026-06-21 07:08:42 PM | analyzer.0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8 | Analysis finished at: 2026-06-21 07:08:42 PM
+[36m[#] Analysing started: 0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for Owned[0m
+[36m[#] Interprocedural CFG generated for Owned[0m
+[36m[#] Interprocedural CFG generation started for changeOwner[0m
+[36m[#] Interprocedural CFG generated for changeOwner[0m
+[36m[#] Interprocedural CFG generation started for acceptOwnership[0m
+[36m[#] Interprocedural CFG generated for acceptOwnership[0m
+[36m[#] Interprocedural CFG generation started for execute[0m
+[36m[#] Interprocedural CFG generated for execute[0m
+[36m[#] Interprocedural CFG generation started for Owned[0m
+[36m[#] Interprocedural CFG generated for Owned[0m
+[36m[#] Interprocedural CFG generation started for changeOwner[0m
+[36m[#] Interprocedural CFG generated for changeOwner[0m
+[36m[#] Interprocedural CFG generation started for acceptOwnership[0m
+[36m[#] Interprocedural CFG generated for acceptOwnership[0m
+[36m[#] Interprocedural CFG generation started for execute[0m
+[36m[#] Interprocedural CFG generated for execute[0m
+[36m[#] Interprocedural CFG generation started for numberOfIndex[0m
+[36m[#] Interprocedural CFG generated for numberOfIndex[0m
+[36m[#] Interprocedural CFG generation started for writeIndex[0m
+[36m[#] Interprocedural CFG generated for writeIndex[0m
+[36m[#] SDG generation started for Owned[0m
+[36m[#] SDG generated for Owned[0m
+[36m[#] SDG generation started for changeOwner[0m
+[36m[#] SDG generated for changeOwner[0m
+[36m[#] SDG generation started for acceptOwnership[0m
+[36m[#] SDG generated for acceptOwnership[0m
+[36m[#] SDG generation started for execute[0m
+[36m[#] SDG generated for execute[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for Owned[0m
+[36m[#] SDG generated for Owned[0m
+[36m[#] SDG generation started for changeOwner[0m
+[36m[#] SDG generated for changeOwner[0m
+[36m[#] SDG generation started for acceptOwnership[0m
+[36m[#] SDG generated for acceptOwnership[0m
+[36m[#] SDG generation started for execute[0m
+[36m[#] SDG generated for execute[0m
+[36m[#] SDG generation started for numberOfIndex[0m
+[36m[#] SDG generated for numberOfIndex[0m
+[36m[#] SDG generation started for writeIndex[0m
+[36m[#] SDG generated for writeIndex[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.099046 seconds[0m
+[36m[#] Analysis completed: 0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8.sol [0m
+
+=== dependency_info.json ===
+{}

@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract datasets/rsd/reentrancy/safe/02_CrossMutex_safe1.sol:C
+offset,opcode,detection

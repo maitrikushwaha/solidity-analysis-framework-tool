@@ -1,0 +1,342 @@
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Analysis started at: 2026-06-21 07:16:11 PM
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Callgraph generation started!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Callgraph generation finished!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Storage dependency graph generation started!
+[36m[#] Analysing started: 37.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for safeAdd[0m
+[36m[#] Interprocedural CFG generated for safeAdd[0m
+[36m[#] Interprocedural CFG generation started for safeSub[0m
+[36m[#] Interprocedural CFG generated for safeSub[0m
+[36m[#] Interprocedural CFG generation started for safeMul[0m
+[36m[#] Interprocedural CFG generated for safeMul[0m
+[36m[#] Interprocedural CFG generation started for safeDiv[0m
+[36m[#] Interprocedural CFG generated for safeDiv[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for receiveApproval[0m
+[36m[#] Interprocedural CFG generated for receiveApproval[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for transferOwnership[0m
+[36m[#] Interprocedural CFG generated for transferOwnership[0m
+[36m[#] Interprocedural CFG generation started for acceptOwnership[0m
+[36m[#] Interprocedural CFG generated for acceptOwnership[0m
+[36m[#] Interprocedural CFG generation started for safeAdd[0m
+[36m[#] Interprocedural CFG generated for safeAdd[0m
+[36m[#] Interprocedural CFG generation started for safeSub[0m
+[36m[#] Interprocedural CFG generated for safeSub[0m
+[36m[#] Interprocedural CFG generation started for safeMul[0m
+[36m[#] Interprocedural CFG generated for safeMul[0m
+[36m[#] Interprocedural CFG generation started for safeDiv[0m
+[36m[#] Interprocedural CFG generated for safeDiv[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for transferOwnership[0m
+[36m[#] Interprocedural CFG generated for transferOwnership[0m
+[36m[#] Interprocedural CFG generation started for acceptOwnership[0m
+[36m[#] Interprocedural CFG generated for acceptOwnership[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for totalSupply[0m
+[36m[#] Interprocedural CFG generated for totalSupply[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for approve[0m
+[36m[#] Interprocedural CFG generated for approve[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for approveAndCall[0m
+[36m[#] Interprocedural CFG generated for approveAndCall[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for transferAnyERC20Token[0m
+[36m[#] Interprocedural CFG generated for transferAnyERC20Token[0m
+[36m[#] SDG generation started for safeAdd[0m
+[36m[#] SDG generated for safeAdd[0m
+[36m[#] SDG generation started for safeSub[0m
+[36m[#] SDG generated for safeSub[0m
+[36m[#] SDG generation started for safeMul[0m
+[36m[#] SDG generated for safeMul[0m
+[36m[#] SDG generation started for safeDiv[0m
+[36m[#] SDG generated for safeDiv[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for receiveApproval[0m
+[36m[#] SDG generated for receiveApproval[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for transferOwnership[0m
+[36m[#] SDG generated for transferOwnership[0m
+[36m[#] SDG generation started for acceptOwnership[0m
+[36m[#] SDG generated for acceptOwnership[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for safeAdd[0m
+[36m[#] SDG generated for safeAdd[0m
+[36m[#] SDG generation started for safeSub[0m
+[36m[#] SDG generated for safeSub[0m
+[36m[#] SDG generation started for safeMul[0m
+[36m[#] SDG generated for safeMul[0m
+[36m[#] SDG generation started for safeDiv[0m
+[36m[#] SDG generated for safeDiv[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for transferOwnership[0m
+[36m[#] SDG generated for transferOwnership[0m
+[36m[#] SDG generation started for acceptOwnership[0m
+[36m[#] SDG generated for acceptOwnership[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for totalSupply[0m
+[36m[#] SDG generated for totalSupply[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for approve[0m
+[36m[#] SDG generated for approve[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Value Range Analysis started
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for safeAdd
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for safeAdd
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function safeAdd
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for safeSub
+[WARNING] | 2026-06-21 07:16:11 PM | analyzer.37     | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for safeSub
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function safeSub
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for safeMul
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for safeMul
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function safeMul
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for safeDiv
+[WARNING] | 2026-06-21 07:16:11 PM | analyzer.37     | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for safeDiv
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function safeDiv
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for allowance
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for allowance
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function allowance
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function transfer
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function approve
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for receiveApproval
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for receiveApproval
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function receiveApproval
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Range graph generated
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function constructor
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for acceptOwnership
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for acceptOwnership
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Range graph generated
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function acceptOwnership
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function onlyOwner
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for safeAdd
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for safeAdd
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function safeAdd
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for safeSub
+[WARNING] | 2026-06-21 07:16:11 PM | analyzer.37     | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for safeSub
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function safeSub
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for safeMul
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for safeMul
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function safeMul
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for safeDiv
+[WARNING] | 2026-06-21 07:16:11 PM | analyzer.37     | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for safeDiv
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function safeDiv
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Range graph generated
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function constructor
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for acceptOwnership
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for acceptOwnership
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Range graph generated
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function acceptOwnership
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for allowance
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for allowance
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function allowance
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function transfer
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function approve
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Range graph generated
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function constructor
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for totalSupply
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for totalSupply
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function totalSupply
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function balanceOf
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for approve
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for approve
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Range graph generated
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function approve
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for allowance
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for allowance
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function allowance
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for fallback
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for fallback
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function fallback
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function onlyOwner
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for transferAnyERC20Token
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for transferAnyERC20Token
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function transferAnyERC20Token
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for approveAndCall
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for approveAndCall
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Range graph generated
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function approveAndCall
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for transferOwnership
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for transferOwnership
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Range graph generated
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function transferOwnership
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Range graph generated
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function transfer
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Range graph generated
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Generating return summary for transferOwnership
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Return summary generated for transferOwnership
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Range graph generated
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Processed function transferOwnership
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Value Range Analysis took 0.005886 seconds
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Value Range Analysis finished
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Dependency detection started!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Dependency detection finished!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Static Analysis took 0.132518 seconds
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Dependency does not exist
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Analysis finished!
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Analysis took 0.132618 seconds
+[INFO] | 2026-06-21 07:16:11 PM | analyzer.37     | Analysis finished at: 2026-06-21 07:16:11 PM
+
+[36m[#] SDG generation started for approveAndCall[0m
+[36m[#] SDG generated for approveAndCall[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for transferAnyERC20Token[0m
+[36m[#] SDG generated for transferAnyERC20Token[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.132618 seconds[0m
+[36m[#] Analysis completed: 37.sol [0m
+
+=== dependency_info.json ===
+{}

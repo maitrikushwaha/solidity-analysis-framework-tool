@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 35322.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.0iclFMl3PG' running
+INFO:CryticCompile:Compilation warnings/errors on 35322.sol:
+35322.sol:7:3: Warning: No visibility specified. Defaulting to "public". 
+  function buyTokens(address beneficiary)payable {
+  ^ (Relevant source part starts here and spans across multiple lines).
+35322.sol:10:5: Warning: Unused local variable.
+    uint256 etherAmount = msg.value;
+    ^-----------------^
+
+INFO:root:contract 35322.sol:CONTSKCrowdsale:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 81.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:35322.sol:9:5: Warning: Timestamp Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 35322.sol:CONTSKCrowdsale.json.

@@ -1,0 +1,74 @@
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Analysis started at: 2026-06-21 06:57:20 PM
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Callgraph generation started!
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Callgraph generation finished!
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Value Range Analysis started
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Generating return summary for constructor
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Return summary generated for constructor
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Range graph generated
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Processed function constructor
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Generating return summary for fallback
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Return summary generated for fallback
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | State variable assignement do not exist
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Processed function fallback
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Generating return summary for PushBonusCode
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Return summary generated for PushBonusCode
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Range graph generated
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Processed function PushBonusCode
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Generating return summary for PopBonusCode
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Return summary generated for PopBonusCode
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Range graph generated
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Processed function PopBonusCode
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Generating return summary for UpdateBonusCodeAt
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Return summary generated for UpdateBonusCodeAt
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Range graph generated
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Processed function UpdateBonusCodeAt
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Generating return summary for Destroy
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Return summary generated for Destroy
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | State variable assignement do not exist
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Processed function Destroy
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Value Range Analysis took 0.002340 seconds
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Value Range Analysis finished
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Dependency detection started!
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Dependency detection finished!
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Static Analysis took 0.065356 seconds
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Dependency does not exist
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Symbolic execution is not needed!
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Analysis finished!
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Analysis took 0.065558 seconds
+[INFO] | 2026-06-21 06:57:20 PM | analyzer.arbitrary_location_write_simple | Analysis finished at: 2026-06-21 06:57:20 PM
+[36m[#] Analysing started: arbitrary_location_write_simple.sol[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for PushBonusCode[0m
+[36m[#] Interprocedural CFG generated for PushBonusCode[0m
+[36m[#] Interprocedural CFG generation started for PopBonusCode[0m
+[36m[#] Interprocedural CFG generated for PopBonusCode[0m
+[36m[#] Interprocedural CFG generation started for UpdateBonusCodeAt[0m
+[36m[#] Interprocedural CFG generated for UpdateBonusCodeAt[0m
+[36m[#] Interprocedural CFG generation started for Destroy[0m
+[36m[#] Interprocedural CFG generated for Destroy[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for PushBonusCode[0m
+[36m[#] SDG generated for PushBonusCode[0m
+[36m[#] SDG generation started for PopBonusCode[0m
+[36m[#] SDG generated for PopBonusCode[0m
+[36m[#] SDG generation started for UpdateBonusCodeAt[0m
+[36m[#] SDG generated for UpdateBonusCodeAt[0m
+[36m[#] SDG generation started for Destroy[0m
+[36m[#] SDG generated for Destroy[0m
+[36m[#] Analysis took 0.065558 seconds[0m
+[36m[#] Analysis completed: arbitrary_location_write_simple.sol [0m
+
+=== dependency_info.json ===
+{}

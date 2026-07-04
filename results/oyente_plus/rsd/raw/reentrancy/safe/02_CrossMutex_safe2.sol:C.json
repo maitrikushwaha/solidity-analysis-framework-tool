@@ -1,0 +1,27 @@
+{
+ "evm_code_coverage": "74.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "02_CrossMutex_safe2.sol:6:5: Warning: Integer Underflow.\n",
+   "02_CrossMutex_safe2.sol:34:4273: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 59849323381205851970197521066982367775278984893830421173511412372910683283456\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    balances[msg.sender] = 0",
+   "02_CrossMutex_safe2.sol:16:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 6073752464749033338161973546912546237563638829598802309818449348656641552",
+   "02_CrossMutex_safe2.sol:9:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 222581319683995682144770876558434070841548264352494966403991406217527936",
+   "02_CrossMutex_safe2.sol:30:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 43426615414769533397408835359490759266799750928168223907189271638703465331346"
+  ],
+  "integer_overflow": [
+   "02_CrossMutex_safe2.sol:34:652: Warning: Integer Overflow.\n",
+   "02_CrossMutex_safe2.sol:20:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 59849323381205851970197521066982367775278984893830421173511412372910683283456\n    balances[msg.sender] = 0",
+   "02_CrossMutex_safe2.sol:34:3720: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 43422033463993573283839119378259000338933113561345373416204310544880270049280\n    balances[msg.sender] = 0",
+   "02_CrossMutex_safe2.sol:10:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 57896044618658097711785492507449644905963161035587675539536181441437013934464"
+  ],
+  "callstack": [
+   "02_CrossMutex_safe2.sol:22:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

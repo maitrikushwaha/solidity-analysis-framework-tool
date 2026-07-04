@@ -1,0 +1,25 @@
+{
+ "evm_code_coverage": "71.7",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "03_SingleMod_safe2.sol:6:5: Warning: Integer Underflow.\n",
+   "03_SingleMod_safe2.sol:27:3987: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 59849323381205851970197521066982367775278984893830421173511412372910683283456\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    balances[msg.sender] = 0",
+   "03_SingleMod_safe2.sol:27:3488: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 86844066989094604263644582355212363322702004726742301540550628079922734694402\n    balances[msg.sender] = 0",
+   "03_SingleMod_safe2.sol:10:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 784637716923335095479473677900958302603090258371993944248"
+  ],
+  "integer_overflow": [
+   "03_SingleMod_safe2.sol:27:846: Warning: Integer Overflow.\n",
+   "03_SingleMod_safe2.sol:17:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 1297875303509775674860333107566471209603026418428994213188779097718784\n    balances[msg.sender] = 0",
+   "03_SingleMod_safe2.sol:27:3434: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 198191019906668594774700077996461049537293255218217606319534407641731170560\n    balances[msg.sender] = 0"
+  ],
+  "callstack": [
+   "03_SingleMod_safe2.sol:19:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

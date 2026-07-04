@@ -1,0 +1,30 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+Reentrancy in C.withdrawOnlyOnce() (datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol#8-16):
+	External calls:
+	- (success,None) = msg.sender.call{value: balances[msg.sender]}() (datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol#12)
+	State variables written after the call(s):
+	- balances[msg.sender] = 0 (datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol#14)
+	C.balances (datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol#5) can be used in cross function reentrancies:
+	- C.balances (datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol#5)
+	- C.deposit() (datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol#18-20)
+	- C.withdrawOnlyOnce() (datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol#8-16)
+	- done[msg.sender] = success (datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol#15)
+	C.done (datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol#6) can be used in cross function reentrancies:
+	- C.withdrawOnlyOnce() (datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol#8-16)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol#1)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in C.withdrawOnlyOnce() (datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol#8-16):
+	- (success,None) = msg.sender.call{value: balances[msg.sender]}() (datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol#12)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/work/datasets/rsd/reentrancy/safe/10_OnlyOnce_safe2.sol analyzed (1 contracts with 93 detectors), 3 result(s) found

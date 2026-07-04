@@ -1,0 +1,32 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39199.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.J2m25QhSOj' running
+INFO:CryticCompile:Compilation warnings/errors on 39199.sol:
+39199.sol:9:45: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (!_to.call.value(_value)(_data)) throw;
+                                            ^---^
+39199.sol:8:5: Warning: No visibility specified. Defaulting to "public". 
+    function execute (address _to, uint _value, bytes _data) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 39199.sol:BranchWallet:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 85.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:39199.sol:9:14: Warning: Integer Underflow.
+
+INFO:symExec:39199.sol:8:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+39199.sol:6:20: Warning: Integer Overflow.
+
+INFO:symExec:39199.sol:9:14: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39199.sol:BranchWallet.json.

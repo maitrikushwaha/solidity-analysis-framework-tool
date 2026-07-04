@@ -1,0 +1,19 @@
+{
+  "filename": "38250.sol",
+  "reentrancy": 0,
+  "overflow": -1,
+  "timestamp": -1,
+  "tod": -1,
+  "duration_s": 0.15,
+  "error": null,
+  "skipped_pipelines": [
+    "overflow",
+    "timestamp",
+    "tod"
+  ],
+  "reentrancy_domains": [
+    "Box",
+    "Octagon",
+    "Polka"
+  ]
+}

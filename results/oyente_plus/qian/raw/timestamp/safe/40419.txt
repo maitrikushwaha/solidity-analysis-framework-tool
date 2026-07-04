@@ -1,0 +1,30 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40419.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.HsTP4asZjt' running
+INFO:CryticCompile:Compilation warnings/errors on 40419.sol:
+40419.sol:11:44: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (block.timestamp < dispute_end) throw;
+                                           ^---^
+40419.sol:15:44: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+            if (!buyer.send(buyer_amount)) throw;
+                                           ^---^
+
+INFO:root:contract 40419.sol:EscrowContract:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:40419.sol:13:24: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    fee = 115565156175948591379984385037826707719482251829155964122224711640713857835839
+    dispute_end = 1
+    amount = 51403931432494902765808806180540759247506116197300866564724333183335422010410
+INFO:symExec:40419.sol:11:9: Warning: Timestamp Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40419.sol:EscrowContract.json.

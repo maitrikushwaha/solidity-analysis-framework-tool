@@ -1,0 +1,34 @@
+{
+ "evm_code_coverage": "77.3",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "07_MixedSendFoldEmit_ree1.sol:5:5: Warning: Integer Underflow.\n",
+   "07_MixedSendFoldEmit_ree1.sol:20:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    balances[msg.sender] = 1427247692705959881058285969449495136382746624",
+   "07_MixedSendFoldEmit_ree1.sol:13:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 71286039000794218792549773829756774278193957988937091835445496700585103175151\n    balances[msg.sender] = 93536104789177786765035829293842113257979682750464",
+   "07_MixedSendFoldEmit_ree1.sol:29:1776: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0",
+   "07_MixedSendFoldEmit_ree1.sol:17:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0"
+  ],
+  "integer_overflow": [
+   "07_MixedSendFoldEmit_ree1.sol:29:700: Warning: Integer Overflow.\n",
+   "07_MixedSendFoldEmit_ree1.sol:11:29: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 107974548838623548936692992525166484077884608365695492004094583407915772674048\n    balances[msg.sender] = 288230376151711744"
+  ],
+  "callstack": [
+   "07_MixedSendFoldEmit_ree1.sol:18:25: Warning: Callstack Depth Attack Vulnerability.\n",
+   "07_MixedSendFoldEmit_ree1.sol:11:29: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [
+   [
+    "07_MixedSendFoldEmit_ree1.sol:18:25: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "07_MixedSendFoldEmit_ree1.sol:18:25: Warning: Transaction-Ordering Dependency.\n",
+    "07_MixedSendFoldEmit_ree1.sol:11:29: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

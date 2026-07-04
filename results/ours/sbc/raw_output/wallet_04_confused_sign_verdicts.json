@@ -1,0 +1,14 @@
+{
+  "filename": "wallet_04_confused_sign.sol",
+  "reentrancy": 0,
+  "overflow": 0,
+  "timestamp": 0,
+  "tod": 1,
+  "duration_s": 1.3,
+  "error": null,
+  "reentrancy_domains": [
+    "Box",
+    "Octagon",
+    "Polka"
+  ]
+}

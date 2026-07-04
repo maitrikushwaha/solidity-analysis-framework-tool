@@ -1,0 +1,5 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/other/crypto_roulette.sol:CryptoRoulette
+offset,opcode,detection
+1069,1069: SSTORE,Store write after unsafe call
+1196,1196: SSTORE,Store write after unsafe call

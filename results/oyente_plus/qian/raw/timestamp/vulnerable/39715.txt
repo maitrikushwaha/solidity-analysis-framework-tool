@@ -1,0 +1,23 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39715.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.0zq2tKHkp6' running
+INFO:CryticCompile:Compilation warnings/errors on 39715.sol:
+39715.sol:17:36: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (totalVIP > limitVIP) { throw; }
+                                   ^---^
+
+INFO:root:contract 39715.sol:LegendsCrowdfund:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:39715.sol:12:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    start = 1
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39715.sol:LegendsCrowdfund.json.

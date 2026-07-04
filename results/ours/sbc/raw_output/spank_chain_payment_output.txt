@@ -1,0 +1,597 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+Transformed CFG build failed: An error occurred during execution
+> command: `/home/maitri/.solcx/solc-v0.4.26 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc -`
+> return code: `1`
+> stdout:
+
+> stderr:
+<stdin>:344:6: Error: Identifier already declared.
+     uint256 sequence = 80;  // from struct Channel
+     ^-------------------^
+<stdin>:337:1: The previous declaration is here:
+uint256 sequence = 80;  // from struct VirtualChannel
+^-------------------^
+
+<stdin>:352:1: Error: Identifier already declared.
+HumanStandardToken token = HumanStandardToken();  // from struct Channel
+^---------------------------------------------^
+<stdin>:343:1: The previous declaration is here:
+HumanStandardToken token = HumanStandardToken();  // from struct VirtualChannel
+^---------------------------------------------^
+
+<stdin>:364:18: Error: Undeclared identifier.
+         require(Channels.partyAddresses[0] == address(0), "Channel has already been created.");
+                 ^------^
+<stdin>:371:10: Error: Undeclared identifier.
+         Channels.partyAddresses[0] = msg.sender;
+         ^------^
+<stdin>:372:10: Error: Undeclared identifier.
+         Channels.partyAddresses[1] = _partyI;
+         ^------^
+<stdin>:376:14: Error: Undeclared identifier.
+             Channels.ethBalances[0] = msg.value;
+             ^------^
+<stdin>:379:14: Error: Undeclared identifier.
+             Channels.token = HumanStandardToken(_token);
+             ^------^
+<stdin>:380:22: Error: Undeclared identifier.
+             require(Channels.token.transferFrom(msg.sender, this, _balances[1]),"CreateChannel: token transfer failure");
+                     ^------^
+<stdin>:381:14: Error: Undeclared identifier.
+             Channels.erc20Balances[0] = _balances[1];
+             ^------^
+<stdin>:384:10: Error: Undeclared identifier.
+         Channels.sequence = 0;
+         ^------^
+<stdin>:385:10: Error: Undeclared identifier.
+         Channels.confirmTime = _confirmTime;
+         ^------^
+<stdin>:388:10: Error: Undeclared identifier.
+         Channels.LCopenTimeout = now + _confirmTime;
+         ^------^
+<stdin>:389:10: Error: Undeclared identifier.
+         Channels.initialDeposit = _balances;
+         ^------^
+<stdin>:391:89: Error: Undeclared identifier.
+         emit DidLCOpen(_lcID, msg.sender, _partyI, _balances[0], _token, _balances[1], Channels.LCopenTimeout);
+                                                                                        ^------^
+<stdin>:395:32: Error: Undeclared identifier.
+         require(msg.sender == Channels.partyAddresses[0] && Channels.isOpen == false);
+                               ^------^
+<stdin>:395:62: Error: Undeclared identifier.
+         require(msg.sender == Channels.partyAddresses[0] && Channels.isOpen == false);
+                                                             ^------^
+<stdin>:396:24: Error: Undeclared identifier.
+         require(now > Channels.LCopenTimeout);
+                       ^------^
+<stdin>:398:13: Error: Undeclared identifier.
+         if(Channels.initialDeposit[0] != 0) {
+            ^------^
+<stdin>:400:14: Error: Undeclared identifier.
+             Channels.partyAddresses[0].transfer(Channels.ethBalances[0]);
+             ^------^
+<stdin>:400:50: Error: Undeclared identifier.
+             Channels.partyAddresses[0].transfer(Channels.ethBalances[0]);
+                                                 ^------^
+<stdin>:402:13: Error: Undeclared identifier.
+         if(Channels.initialDeposit[1] != 0) {
+            ^------^
+<stdin>:404:22: Error: Undeclared identifier.
+             require(Channels.token.transfer(Channels.partyAddresses[0], Channels.erc20Balances[0]),"CreateChannel: token transfer failure");
+                     ^------^
+<stdin>:404:46: Error: Undeclared identifier.
+             require(Channels.token.transfer(Channels.partyAddresses[0], Channels.erc20Balances[0]),"CreateChannel: token transfer failure");
+                                             ^------^
+<stdin>:404:74: Error: Undeclared identifier.
+             require(Channels.token.transfer(Channels.partyAddresses[0], Channels.erc20Balances[0]),"CreateChannel: token transfer failure");
+                                                                         ^------^
+<stdin>:407:36: Error: Undeclared identifier.
+         emit DidLCClose(_lcID, 0, Channels.ethBalances[0], Channels.erc20Balances[0], 0, 0);
+                                   ^------^
+<stdin>:407:61: Error: Undeclared identifier.
+         emit DidLCClose(_lcID, 0, Channels.ethBalances[0], Channels.erc20Balances[0], 0, 0);
+                                                            ^------^
+<stdin>:410:17: Error: Undeclared identifier.
+         delete Channels;
+                ^------^
+<stdin>:415:18: Error: Undeclared identifier.
+         require(Channels.isOpen == false);
+                 ^------^
+<stdin>:416:32: Error: Undeclared identifier.
+         require(msg.sender == Channels.partyAddresses[1]);
+                               ^------^
+<stdin>:420:14: Error: Undeclared identifier.
+             Channels.ethBalances[1] = msg.value;
+             ^------^
+<stdin>:423:22: Error: Undeclared identifier.
+             require(Channels.token.transferFrom(msg.sender, this, _balances[1]),"joinChannel: token transfer failure");
+                     ^------^
+<stdin>:424:14: Error: Undeclared identifier.
+             Channels.erc20Balances[1] = _balances[1];
+             ^------^
+<stdin>:427:10: Error: Undeclared identifier.
+         Channels.initialDeposit[0]+=_balances[0];
+         ^------^
+<stdin>:428:10: Error: Undeclared identifier.
+         Channels.initialDeposit[1]+=_balances[1];
+         ^------^
+<stdin>:430:10: Error: Undeclared identifier.
+         Channels.isOpen = true;
+         ^------^
+<stdin>:440:18: Error: Undeclared identifier.
+         require(Channels.isOpen == true, "Tried adding funds to a closed channel");
+                 ^------^
+<stdin>:441:31: Error: Undeclared identifier.
+         require(recipient == Channels.partyAddresses[0] || recipient == Channels.partyAddresses[1]);
+                              ^------^
+<stdin>:441:74: Error: Undeclared identifier.
+         require(recipient == Channels.partyAddresses[0] || recipient == Channels.partyAddresses[1]);
+                                                                         ^------^
+<stdin>:445:14: Error: Undeclared identifier.
+         if (Channels.partyAddresses[0] == recipient) {
+             ^------^
+<stdin>:447:26: Error: Undeclared identifier.
+                 require(Channels.token.transferFrom(msg.sender, this, _balance),"deposit: token transfer failure");
+                         ^------^
+<stdin>:448:18: Error: Undeclared identifier.
+                 Channels.erc20Balances[2] += _balance;
+                 ^------^
+<stdin>:451:18: Error: Undeclared identifier.
+                 Channels.ethBalances[2] += msg.value;
+                 ^------^
+<stdin>:455:14: Error: Undeclared identifier.
+         if (Channels.partyAddresses[1] == recipient) {
+             ^------^
+<stdin>:457:26: Error: Undeclared identifier.
+                 require(Channels.token.transferFrom(msg.sender, this, _balance),"deposit: token transfer failure");
+                         ^------^
+<stdin>:458:18: Error: Undeclared identifier.
+                 Channels.erc20Balances[3] += _balance;
+                 ^------^
+<stdin>:461:18: Error: Undeclared identifier.
+                 Channels.ethBalances[3] += msg.value;
+                 ^------^
+<stdin>:480:18: Error: Undeclared identifier.
+         require(Channels.isOpen == true);
+                 ^------^
+<stdin>:481:36: Error: Undeclared identifier.
+         uint256 totalEthDeposit = Channels.initialDeposit[0] + Channels.ethBalances[2] + Channels.ethBalances[3];
+                                   ^------^
+<stdin>:481:65: Error: Undeclared identifier.
+         uint256 totalEthDeposit = Channels.initialDeposit[0] + Channels.ethBalances[2] + Channels.ethBalances[3];
+                                                                ^------^
+<stdin>:481:91: Error: Undeclared identifier.
+         uint256 totalEthDeposit = Channels.initialDeposit[0] + Channels.ethBalances[2] + Channels.ethBalances[3];
+                                                                                          ^------^
+<stdin>:482:38: Error: Undeclared identifier.
+         uint256 totalTokenDeposit = Channels.initialDeposit[1] + Channels.erc20Balances[2] + Channels.erc20Balances[3];
+                                     ^------^
+<stdin>:482:67: Error: Undeclared identifier.
+         uint256 totalTokenDeposit = Channels.initialDeposit[1] + Channels.erc20Balances[2] + Channels.erc20Balances[3];
+                                                                  ^------^
+<stdin>:482:95: Error: Undeclared identifier.
+         uint256 totalTokenDeposit = Channels.initialDeposit[1] + Channels.erc20Balances[2] + Channels.erc20Balances[3];
+                                                                                              ^------^
+<stdin>:493:18: Error: Undeclared identifier.
+                 Channels.partyAddresses[0],
+                 ^------^
+<stdin>:494:18: Error: Undeclared identifier.
+                 Channels.partyAddresses[1],
+                 ^------^
+<stdin>:502:18: Error: Undeclared identifier.
+         require(Channels.partyAddresses[0] == ECTools.recoverSigner(_state, _sigA));
+                 ^------^
+<stdin>:503:18: Error: Undeclared identifier.
+         require(Channels.partyAddresses[1] == ECTools.recoverSigner(_state, _sigI));
+                 ^------^
+<stdin>:505:10: Error: Undeclared identifier.
+         Channels.isOpen = false;
+         ^------^
+<stdin>:508:14: Error: Undeclared identifier.
+             Channels.partyAddresses[0].transfer(_balances[0]);
+             ^------^
+<stdin>:509:14: Error: Undeclared identifier.
+             Channels.partyAddresses[1].transfer(_balances[1]);
+             ^------^
+<stdin>:513:22: Error: Undeclared identifier.
+             require(Channels.token.transfer(Channels.partyAddresses[0], _balances[2]),"happyCloseChannel: token transfer failure");
+                     ^------^
+<stdin>:513:46: Error: Undeclared identifier.
+             require(Channels.token.transfer(Channels.partyAddresses[0], _balances[2]),"happyCloseChannel: token transfer failure");
+                                             ^------^
+<stdin>:514:22: Error: Undeclared identifier.
+             require(Channels.token.transfer(Channels.partyAddresses[1], _balances[3]),"happyCloseChannel: token transfer failure");
+                     ^------^
+<stdin>:514:46: Error: Undeclared identifier.
+             require(Channels.token.transfer(Channels.partyAddresses[1], _balances[3]),"happyCloseChannel: token transfer failure");
+                                             ^------^
+<stdin>:536:18: Error: Undeclared identifier.
+         require(channel.ethBalances[0] + channel.ethBalances[1] >= updateParams[2] + updateParams[3]);
+                 ^-----^
+<stdin>:536:43: Error: Undeclared identifier.
+         require(channel.ethBalances[0] + channel.ethBalances[1] >= updateParams[2] + updateParams[3]);
+                                          ^-----^
+<stdin>:537:18: Error: Undeclared identifier.
+         require(channel.erc20Balances[0] + channel.erc20Balances[1] >= updateParams[4] + updateParams[5]);
+                 ^-----^
+<stdin>:537:45: Error: Undeclared identifier.
+         require(channel.erc20Balances[0] + channel.erc20Balances[1] >= updateParams[4] + updateParams[5]);
+                                            ^-----^
+<stdin>:550:18: Error: Undeclared identifier.
+                 channel.partyAddresses[0],
+                 ^-----^
+<stdin>:551:18: Error: Undeclared identifier.
+                 channel.partyAddresses[1],
+                 ^-----^
+<stdin>:559:18: Error: Undeclared identifier.
+         require(channel.partyAddresses[0] == ECTools.recoverSigner(_state, _sigA));
+                 ^-----^
+<stdin>:560:18: Error: Undeclared identifier.
+         require(channel.partyAddresses[1] == ECTools.recoverSigner(_state, _sigI));
+                 ^-----^
+<stdin>:565:10: Error: Undeclared identifier.
+         channel.ethBalances[0] = updateParams[2];
+         ^-----^
+<stdin>:566:10: Error: Undeclared identifier.
+         channel.ethBalances[1] = updateParams[3];
+         ^-----^
+<stdin>:567:10: Error: Undeclared identifier.
+         channel.erc20Balances[0] = updateParams[4];
+         ^-----^
+<stdin>:568:10: Error: Undeclared identifier.
+         channel.erc20Balances[1] = updateParams[5];
+         ^-----^
+<stdin>:601:18: Error: Undeclared identifier.
+         require(Channels.isOpen, "LC is closed.");
+                 ^------^
+<stdin>:603:19: Error: Undeclared identifier.
+         require(!virtualChannels.isClose, "VC is closed.");
+                  ^-------------^
+<stdin>:605:18: Error: Undeclared identifier.
+         require(Channels.updateLCtimeout < now, "LC timeout not over.");
+                 ^------^
+<stdin>:607:18: Error: Undeclared identifier.
+         require(virtualChannels.updateVCtimeout == 0);
+                 ^-------------^
+<stdin>:617:51: Error: Undeclared identifier.
+         require(_isContained(_initState, _proof, Channels.VCrootHash) == true);
+                                                  ^------^
+<stdin>:619:10: Error: Undeclared identifier.
+         virtualChannels.partyA = _partyA; 
+         ^-------------^
+<stdin>:620:10: Error: Undeclared identifier.
+         virtualChannels.partyB = _partyB; 
+         ^-------------^
+<stdin>:621:10: Error: Undeclared identifier.
+         virtualChannels.sequence = uint256(0);
+         ^-------------^
+<stdin>:622:10: Error: Undeclared identifier.
+         virtualChannels.ethBalances[0] = _balances[0];
+         ^-------------^
+<stdin>:623:10: Error: Undeclared identifier.
+         virtualChannels.ethBalances[1] = _balances[1];
+         ^-------------^
+<stdin>:624:10: Error: Undeclared identifier.
+         virtualChannels.erc20Balances[0] = _balances[2];
+         ^-------------^
+<stdin>:625:10: Error: Undeclared identifier.
+         virtualChannels.erc20Balances[1] = _balances[3];
+         ^-------------^
+<stdin>:626:10: Error: Undeclared identifier.
+         virtualChannels.bond = _bond;
+         ^-------------^
+<stdin>:627:10: Error: Undeclared identifier.
+         virtualChannels.updateVCtimeout = now + Channels.confirmTime;
+         ^-------------^
+<stdin>:627:50: Error: Undeclared identifier.
+         virtualChannels.updateVCtimeout = now + Channels.confirmTime;
+                                                 ^------^
+<stdin>:628:10: Error: Undeclared identifier.
+         virtualChannels.isInSettlementState = true;
+         ^-------------^
+<stdin>:647:18: Error: Undeclared identifier.
+         require(Channels.isOpen, "LC is closed.");
+                 ^------^
+<stdin>:649:19: Error: Undeclared identifier.
+         require(!virtualChannels.isClose, "VC is closed.");
+                  ^-------------^
+<stdin>:650:18: Error: Undeclared identifier.
+         require(virtualChannels.sequence < updateSeq, "VC sequence is higher than update sequence.");
+                 ^-------------^
+<stdin>:652:14: Error: Undeclared identifier.
+             virtualChannels.ethBalances[1] < updateBal[1] && virtualChannels.erc20Balances[1] < updateBal[3],
+             ^-------------^
+<stdin>:652:63: Error: Undeclared identifier.
+             virtualChannels.ethBalances[1] < updateBal[1] && virtualChannels.erc20Balances[1] < updateBal[3],
+                                                              ^-------------^
+<stdin>:656:14: Error: Undeclared identifier.
+             virtualChannels.bond[0] == updateBal[0] + updateBal[1] &&
+             ^-------------^
+<stdin>:657:14: Error: Undeclared identifier.
+             virtualChannels.bond[1] == updateBal[2] + updateBal[3],
+             ^-------------^
+<stdin>:663:18: Error: Undeclared identifier.
+         require(Channels.updateLCtimeout < now); 
+                 ^------^
+<stdin>:671:18: Error: Undeclared identifier.
+                 virtualChannels.bond[0],
+                 ^-------------^
+<stdin>:672:18: Error: Undeclared identifier.
+                 virtualChannels.bond[1],
+                 ^-------------^
+<stdin>:681:18: Error: Undeclared identifier.
+         require(virtualChannels.partyA == ECTools.recoverSigner(_updateState, sigA));
+                 ^-------------^
+<stdin>:685:10: Error: Undeclared identifier.
+         virtualChannels.challenger = msg.sender;
+         ^-------------^
+<stdin>:686:10: Error: Undeclared identifier.
+         virtualChannels.sequence = updateSeq;
+         ^-------------^
+<stdin>:689:10: Error: Undeclared identifier.
+         virtualChannels.ethBalances[0] = updateBal[0];
+         ^-------------^
+<stdin>:690:10: Error: Undeclared identifier.
+         virtualChannels.ethBalances[1] = updateBal[1];
+         ^-------------^
+<stdin>:691:10: Error: Undeclared identifier.
+         virtualChannels.erc20Balances[0] = updateBal[2];
+         ^-------------^
+<stdin>:692:10: Error: Undeclared identifier.
+         virtualChannels.erc20Balances[1] = updateBal[3];
+         ^-------------^
+<stdin>:694:10: Error: Undeclared identifier.
+         virtualChannels.updateVCtimeout = now + Channels.confirmTime;
+         ^-------------^
+<stdin>:694:50: Error: Undeclared identifier.
+         virtualChannels.updateVCtimeout = now + Channels.confirmTime;
+                                                 ^------^
+<stdin>:696:92: Error: Undeclared identifier.
+         emit DidVCSettle(_lcID, _vcID, updateSeq, updateBal[0], updateBal[1], msg.sender, virtualChannels.updateVCtimeout);
+                                                                                           ^-------------^
+<stdin>:701:18: Error: Undeclared identifier.
+         require(Channels.isOpen, "LC is closed.");
+                 ^------^
+<stdin>:702:18: Error: Undeclared identifier.
+         require(virtualChannels.isInSettlementState, "VC is not in settlement state.");
+                 ^-------------^
+<stdin>:703:18: Error: Undeclared identifier.
+         require(virtualChannels.updateVCtimeout < now, "Update vc timeout has not elapsed.");
+                 ^-------------^
+<stdin>:704:19: Error: Undeclared identifier.
+         require(!virtualChannels.isClose, "VC is already closed");
+                  ^-------------^
+<stdin>:706:10: Error: Undeclared identifier.
+         Channels.numOpenVC--;
+         ^------^
+<stdin>:708:10: Error: Undeclared identifier.
+         virtualChannels.isClose = true;
+         ^-------------^
+<stdin>:711:13: Error: Undeclared identifier.
+         if(virtualChannels.partyA == Channels.partyAddresses[0]) {
+            ^-------------^
+<stdin>:711:39: Error: Undeclared identifier.
+         if(virtualChannels.partyA == Channels.partyAddresses[0]) {
+                                      ^------^
+<stdin>:712:14: Error: Undeclared identifier.
+             Channels.ethBalances[0] += virtualChannels.ethBalances[0];
+             ^------^
+<stdin>:712:41: Error: Undeclared identifier.
+             Channels.ethBalances[0] += virtualChannels.ethBalances[0];
+                                        ^-------------^
+<stdin>:713:14: Error: Undeclared identifier.
+             Channels.ethBalances[1] += virtualChannels.ethBalances[1];
+             ^------^
+<stdin>:713:41: Error: Undeclared identifier.
+             Channels.ethBalances[1] += virtualChannels.ethBalances[1];
+                                        ^-------------^
+<stdin>:715:14: Error: Undeclared identifier.
+             Channels.erc20Balances[0] += virtualChannels.erc20Balances[0];
+             ^------^
+<stdin>:715:43: Error: Undeclared identifier.
+             Channels.erc20Balances[0] += virtualChannels.erc20Balances[0];
+                                          ^-------------^
+<stdin>:716:14: Error: Undeclared identifier.
+             Channels.erc20Balances[1] += virtualChannels.erc20Balances[1];
+             ^------^
+<stdin>:716:43: Error: Undeclared identifier.
+             Channels.erc20Balances[1] += virtualChannels.erc20Balances[1];
+                                          ^-------------^
+<stdin>:717:21: Error: Undeclared identifier.
+         } else if (virtualChannels.partyB == Channels.partyAddresses[0]) {
+                    ^-------------^
+<stdin>:717:47: Error: Undeclared identifier.
+         } else if (virtualChannels.partyB == Channels.partyAddresses[0]) {
+                                              ^------^
+<stdin>:718:14: Error: Undeclared identifier.
+             Channels.ethBalances[0] += virtualChannels.ethBalances[1];
+             ^------^
+<stdin>:718:41: Error: Undeclared identifier.
+             Channels.ethBalances[0] += virtualChannels.ethBalances[1];
+                                        ^-------------^
+<stdin>:719:14: Error: Undeclared identifier.
+             Channels.ethBalances[1] += virtualChannels.ethBalances[0];
+             ^------^
+<stdin>:719:41: Error: Undeclared identifier.
+             Channels.ethBalances[1] += virtualChannels.ethBalances[0];
+                                        ^-------------^
+<stdin>:721:14: Error: Undeclared identifier.
+             Channels.erc20Balances[0] += virtualChannels.erc20Balances[1];
+             ^------^
+<stdin>:721:43: Error: Undeclared identifier.
+             Channels.erc20Balances[0] += virtualChannels.erc20Balances[1];
+                                          ^-------------^
+<stdin>:722:14: Error: Undeclared identifier.
+             Channels.erc20Balances[1] += virtualChannels.erc20Balances[0];
+             ^------^
+<stdin>:722:43: Error: Undeclared identifier.
+             Channels.erc20Balances[1] += virtualChannels.erc20Balances[0];
+                                          ^-------------^
+<stdin>:725:40: Error: Undeclared identifier.
+         emit DidVCClose(_lcID, _vcID, virtualChannels.erc20Balances[0], virtualChannels.erc20Balances[1]);
+                                       ^-------------^
+<stdin>:725:74: Error: Undeclared identifier.
+         emit DidVCClose(_lcID, _vcID, virtualChannels.erc20Balances[0], virtualChannels.erc20Balances[1]);
+                                                                         ^-------------^
+<stdin>:740:36: Error: Undeclared identifier.
+         uint256 totalEthDeposit = channel.initialDeposit[0] + channel.ethBalances[2] + channel.ethBalances[3];
+                                   ^-----^
+<stdin>:740:64: Error: Undeclared identifier.
+         uint256 totalEthDeposit = channel.initialDeposit[0] + channel.ethBalances[2] + channel.ethBalances[3];
+                                                               ^-----^
+<stdin>:740:89: Error: Undeclared identifier.
+         uint256 totalEthDeposit = channel.initialDeposit[0] + channel.ethBalances[2] + channel.ethBalances[3];
+                                                                                        ^-----^
+<stdin>:741:38: Error: Undeclared identifier.
+         uint256 totalTokenDeposit = channel.initialDeposit[1] + channel.erc20Balances[2] + channel.erc20Balances[3];
+                                     ^-----^
+<stdin>:741:66: Error: Undeclared identifier.
+         uint256 totalTokenDeposit = channel.initialDeposit[1] + channel.erc20Balances[2] + channel.erc20Balances[3];
+                                                                 ^-----^
+<stdin>:741:93: Error: Undeclared identifier.
+         uint256 totalTokenDeposit = channel.initialDeposit[1] + channel.erc20Balances[2] + channel.erc20Balances[3];
+                                                                                            ^-----^
+<stdin>:743:50: Error: Undeclared identifier.
+         uint256 possibleTotalEthBeforeDeposit = channel.ethBalances[0] + channel.ethBalances[1];
+                                                 ^-----^
+<stdin>:743:75: Error: Undeclared identifier.
+         uint256 possibleTotalEthBeforeDeposit = channel.ethBalances[0] + channel.ethBalances[1];
+                                                                          ^-----^
+<stdin>:744:52: Error: Undeclared identifier.
+         uint256 possibleTotalTokenBeforeDeposit = channel.erc20Balances[0] + channel.erc20Balances[1];
+                                                   ^-----^
+<stdin>:744:79: Error: Undeclared identifier.
+         uint256 possibleTotalTokenBeforeDeposit = channel.erc20Balances[0] + channel.erc20Balances[1];
+                                                                              ^-----^
+<stdin>:747:14: Error: Undeclared identifier.
+             channel.ethBalances[0]+=channel.ethBalances[2];
+             ^-----^
+<stdin>:747:38: Error: Undeclared identifier.
+             channel.ethBalances[0]+=channel.ethBalances[2];
+                                     ^-----^
+<stdin>:748:14: Error: Undeclared identifier.
+             channel.ethBalances[1]+=channel.ethBalances[3];
+             ^-----^
+<stdin>:748:38: Error: Undeclared identifier.
+             channel.ethBalances[1]+=channel.ethBalances[3];
+                                     ^-----^
+<stdin>:754:14: Error: Undeclared identifier.
+             channel.erc20Balances[0]+=channel.erc20Balances[2];
+             ^-----^
+<stdin>:754:40: Error: Undeclared identifier.
+             channel.erc20Balances[0]+=channel.erc20Balances[2];
+                                       ^-----^
+<stdin>:755:14: Error: Undeclared identifier.
+             channel.erc20Balances[1]+=channel.erc20Balances[3];
+             ^-----^
+<stdin>:755:40: Error: Undeclared identifier.
+             channel.erc20Balances[1]+=channel.erc20Balances[3];
+                                       ^-----^
+<stdin>:761:32: Error: Undeclared identifier.
+         uint256 ethbalanceA = channel.ethBalances[0];
+                               ^-----^
+<stdin>:762:32: Error: Undeclared identifier.
+         uint256 ethbalanceI = channel.ethBalances[1];
+                               ^-----^
+<stdin>:763:34: Error: Undeclared identifier.
+         uint256 tokenbalanceA = channel.erc20Balances[0];
+                                 ^-----^
+<stdin>:764:34: Error: Undeclared identifier.
+         uint256 tokenbalanceI = channel.erc20Balances[1];
+                                 ^-----^
+<stdin>:766:10: Error: Undeclared identifier.
+         channel.ethBalances[0] = 0;
+         ^-----^
+<stdin>:767:10: Error: Undeclared identifier.
+         channel.ethBalances[1] = 0;
+         ^-----^
+<stdin>:768:10: Error: Undeclared identifier.
+         channel.erc20Balances[0] = 0;
+         ^-----^
+<stdin>:769:10: Error: Undeclared identifier.
+         channel.erc20Balances[1] = 0;
+         ^-----^
+<stdin>:772:14: Error: Undeclared identifier.
+             channel.partyAddresses[0].transfer(ethbalanceA);
+             ^-----^
+<stdin>:773:14: Error: Undeclared identifier.
+             channel.partyAddresses[1].transfer(ethbalanceI);
+             ^-----^
+<stdin>:778:33: Error: Undeclared identifier.
+                 token.transfer(channel.partyAddresses[0], tokenbalanceA),
+                                ^-----^
+<stdin>:782:33: Error: Undeclared identifier.
+                 token.transfer(channel.partyAddresses[1], tokenbalanceI),
+                                ^-----^
+<stdin>:827:14: Error: Undeclared identifier.
+             channel.partyAddresses,
+             ^-----^
+<stdin>:828:14: Error: Undeclared identifier.
+             channel.ethBalances,
+             ^-----^
+<stdin>:829:14: Error: Undeclared identifier.
+             channel.erc20Balances,
+             ^-----^
+<stdin>:830:14: Error: Undeclared identifier.
+             channel.initialDeposit,
+             ^-----^
+<stdin>:865:14: Error: Undeclared identifier.
+             virtualChannel.ethBalances,
+             ^------------^
+<stdin>:866:14: Error: Undeclared identifier.
+             virtualChannel.erc20Balances,
+             ^------------^
+<stdin>:867:14: Error: Undeclared identifier.
+             virtualChannel.bond
+             ^------------^
+Falling back: skipping reentrancy/timestamp/TOD analysis, running overflow only.
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW (fallback) ==========
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+
+===== VERDICTS (Box) =====
+[REENTRANCY-SKIP] Transformed CFG unavailable.
+[OVERFLOW] Variable i (uint256) at ExpressionStatement_7: compound '+=' with {'(local)'} can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[OVERFLOW] Variable m (uint256) at VariableDeclarationStatement_17: '+' with {'_uint'} can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[UNDERFLOW] Variable balances (uint256) at ExpressionStatement_22: compound '-=' with {'_value'} can fall below type min 0.
+[OVERFLOW] Variable balances (uint256) at ExpressionStatement_23: compound '+=' with {'_value'} can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[OVERFLOW] Variable totalEthDeposit (uint256) at VariableDeclarationStatement_24: '+' with {'_lcID'} can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[OVERFLOW] Variable totalTokenDeposit (uint256) at VariableDeclarationStatement_25: '+' with {'_lcID'} can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[OVERFLOW] Variable i (uint) in balanceOf(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable s (uint) in balanceOf(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable r (uint) in balanceOf(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable m (uint) in balanceOf(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[UNDERFLOW] Variable i (uint) in balanceOf(): unguarded '-' over external input can underflow below 0 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable b[i--] (uint) in balanceOf(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable balances[_to] (uint256) in transfer(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable balances[_to] (uint256) in transferFrom(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable (expr) (uint256) in createChannel(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable erc20Balances[2] (uint256) in deposit(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable erc20Balances[3] (uint256) in deposit(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable totalEthDeposit (uint256) in consensusCloseChannel(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable totalTokenDeposit (uint256) in consensusCloseChannel(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable (expr) (uint256) in updateLCstate(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable (expr) (uint256) in initVCstate(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable (expr) (uint256) in settleVC(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable ethBalances[0] (uint256) in closeVirtualChannel(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable ethBalances[1] (uint256) in closeVirtualChannel(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable erc20Balances[0] (uint256) in closeVirtualChannel(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable erc20Balances[1] (uint256) in closeVirtualChannel(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable i (uint256) in _isContained(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[TIMESTAMP] block.timestamp/now used in arithmetic that computes a value.
+[TOD] ERC-20 approve() sets the allowance to an absolute value; a spender can front-run an allowance change to spend both the old and the new amount (approve/transferFrom race, SWC-114).
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: ANALYSIS UNAVAILABLE (transformed CFG failed)
+[SUMMARY] Integer Overflow: VULNERABLE
+[SUMMARY] Integer Underflow: VULNERABLE
+[SUMMARY] Timestamp Dependency: VULNERABLE
+[SUMMARY] TOD: VULNERABLE
+
+NOTE: Some pipelines were SKIPPED because the mapping transformer could not process this contract.  These vulnerabilities are recorded as -1 (N/A) in the JSON verdict — they are excluded from TP/TN/FP/FN counts rather than counted as negatives.
+
+Total analysis time: 0.71s

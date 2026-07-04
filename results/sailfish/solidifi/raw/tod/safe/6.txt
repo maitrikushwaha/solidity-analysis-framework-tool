@@ -1,0 +1,290 @@
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Analysis started at: 2026-06-21 07:16:32 PM
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Callgraph generation started!
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Callgraph generation finished!
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Value Range Analysis started
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function constructor
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for owner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for owner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function owner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for master
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for master
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function master
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for isOwner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for isOwner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function isOwner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for isMaster
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for isMaster
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function isMaster
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for isStopped
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for isStopped
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function isStopped
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for _transferOwnership
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for _transferOwnership
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function _transferOwnership
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for _transferMasterRole
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for _transferMasterRole
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function _transferMasterRole
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for _stop
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for _stop
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function _stop
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for _start
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for _start
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function _start
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function onlyOwner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function constructor
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for owner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for owner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function owner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for master
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for master
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function master
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for isOwner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for isOwner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function isOwner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for isMaster
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for isMaster
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function isMaster
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for isStopped
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for isStopped
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function isStopped
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for _transferOwnership
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for _transferOwnership
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function _transferOwnership
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for _transferMasterRole
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for _transferMasterRole
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function _transferMasterRole
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for _stop
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for _stop
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function _stop
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for _start
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for _start
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function _start
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for version
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for version
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function version
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for getAddress
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for getAddress
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function getAddress
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function onlyOwner
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for onlyMaster
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for onlyMaster
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function onlyMaster
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for onlyWhenNotStopped
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for onlyWhenNotStopped
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function onlyWhenNotStopped
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for transferOwnership
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for transferOwnership
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function transferOwnership
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for transferMasterRole
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for transferMasterRole
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function transferMasterRole
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for stop
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for stop
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function stop
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for start
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for start
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function start
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for transferOwnership
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for transferOwnership
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function transferOwnership
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for transferMasterRole
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for transferMasterRole
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function transferMasterRole
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for stop
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for stop
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function stop
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for start
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for start
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function start
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for setAddress
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for setAddress
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function setAddress
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for updateChannel
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for updateChannel
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function updateChannel
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Generating return summary for deleteChannel
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Return summary generated for deleteChannel
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Range graph generated
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Processed function deleteChannel
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Value Range Analysis took 0.005661 seconds
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Value Range Analysis finished
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Dependency detection started!
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Dependency detection finished!
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Static Analysis took 0.150806 seconds
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Dependency does not exist
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Analysis finished!
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Analysis took 0.150900 seconds
+[INFO] | 2026-06-21 07:16:32 PM | analyzer.6      | Analysis finished at: 2026-06-21 07:16:32 PM
+[36m[#] Analysing started: 6.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyMaster[0m
+[36m[#] Interprocedural CFG generated for modifer onlyMaster[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyWhenNotStopped[0m
+[36m[#] Interprocedural CFG generated for modifer onlyWhenNotStopped[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyMaster[0m
+[36m[#] Interprocedural CFG generated for modifer onlyMaster[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyWhenNotStopped[0m
+[36m[#] Interprocedural CFG generated for modifer onlyWhenNotStopped[0m
+[36m[#] Interprocedural CFG generation started for owner[0m
+[36m[#] Interprocedural CFG generated for owner[0m
+[36m[#] Interprocedural CFG generation started for master[0m
+[36m[#] Interprocedural CFG generated for master[0m
+[36m[#] Interprocedural CFG generation started for isOwner[0m
+[36m[#] Interprocedural CFG generated for isOwner[0m
+[36m[#] Interprocedural CFG generation started for isMaster[0m
+[36m[#] Interprocedural CFG generated for isMaster[0m
+[36m[#] Interprocedural CFG generation started for transferOwnership[0m
+[36m[#] Interprocedural CFG generated for transferOwnership[0m
+[36m[#] Interprocedural CFG generation started for transferMasterRole[0m
+[36m[#] Interprocedural CFG generated for transferMasterRole[0m
+[36m[#] Interprocedural CFG generation started for isStopped[0m
+[36m[#] Interprocedural CFG generated for isStopped[0m
+[36m[#] Interprocedural CFG generation started for stop[0m
+[36m[#] Interprocedural CFG generated for stop[0m
+[36m[#] Interprocedural CFG generation started for start[0m
+[36m[#] Interprocedural CFG generated for start[0m
+[36m[#] Interprocedural CFG generation started for owner[0m
+[36m[#] Interprocedural CFG generated for owner[0m
+[36m[#] Interprocedural CFG generation started for master[0m
+[36m[#] Interprocedural CFG generated for master[0m
+[36m[#] Interprocedural CFG generation started for isOwner[0m
+[36m[#] Interprocedural CFG generated for isOwner[0m
+[36m[#] Interprocedural CFG generation started for isMaster[0m
+[36m[#] Interprocedural CFG generated for isMaster[0m
+[36m[#] Interprocedural CFG generation started for transferOwnership[0m
+[36m[#] Interprocedural CFG generated for transferOwnership[0m
+[36m[#] Interprocedural CFG generation started for transferMasterRole[0m
+[36m[#] Interprocedural CFG generated for transferMasterRole[0m
+[36m[#] Interprocedural CFG generation started for isStopped[0m
+[36m[#] Interprocedural CFG generated for isStopped[0m
+[36m[#] Interprocedural CFG generation started for stop[0m
+[36m[#] Interprocedural CFG generated for stop[0m
+[36m[#] Interprocedural CFG generation started for start[0m
+[36m[#] Interprocedural CFG generated for start[0m
+[36m[#] Interprocedural CFG generation started for version[0m
+[36m[#] Interprocedural CFG generated for version[0m
+[36m[#] Interprocedural CFG generation started for getAddress[0m
+[36m[#] Interprocedural CFG generated for getAddress[0m
+[36m[#] Interprocedural CFG generation started for setAddress[0m
+[36m[#] Interprocedural CFG generated for setAddress[0m
+[36m[#] Interprocedural CFG generation started for updateChannel[0m
+[36m[#] Interprocedural CFG generated for updateChannel[0m
+[36m[#] Interprocedural CFG generation started for deleteChannel[0m
+[36m[#] Interprocedural CFG generated for deleteChannel[0m
+[36m[#] SDG generation started for owner[0m
+[36m[#] SDG generated for owner[0m
+[36m[#] SDG generation started for master[0m
+[36m[#] SDG generated for master[0m
+[36m[#] SDG generation started for isOwner[0m
+[36m[#] SDG generated for isOwner[0m
+[36m[#] SDG generation started for isMaster[0m
+[36m[#] SDG generated for isMaster[0m
+[36m[#] SDG generation started for transferOwnership[0m
+[36m[#] SDG generated for transferOwnership[0m
+[36m[#] SDG generation started for transferMasterRole[0m
+[36m[#] SDG generated for transferMasterRole[0m
+[36m[#] SDG generation started for isStopped[0m
+[36m[#] SDG generated for isStopped[0m
+[36m[#] SDG generation started for stop[0m
+[36m[#] SDG generated for stop[0m
+[36m[#] SDG generation started for start[0m
+[36m[#] SDG generated for start[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for modifier onlyMaster[0m
+[36m[#] SDG generated for modifier onlyMaster[0m
+[36m[#] SDG generation started for modifier onlyWhenNotStopped[0m
+[36m[#] SDG generated for modifier onlyWhenNotStopped[0m
+[36m[#] SDG generation started for owner[0m
+[36m[#] SDG generated for owner[0m
+[36m[#] SDG generation started for master[0m
+[36m[#] SDG generated for master[0m
+[36m[#] SDG generation started for isOwner[0m
+[36m[#] SDG generated for isOwner[0m
+[36m[#] SDG generation started for isMaster[0m
+[36m[#] SDG generated for isMaster[0m
+[36m[#] SDG generation started for transferOwnership[0m
+[36m[#] SDG generated for transferOwnership[0m
+[36m[#] SDG generation started for transferMasterRole[0m
+[36m[#] SDG generated for transferMasterRole[0m
+[36m[#] SDG generation started for isStopped[0m
+[36m[#] SDG generated for isStopped[0m
+[36m[#] SDG generation started for stop[0m
+[36m[#] SDG generated for stop[0m
+[36m[#] SDG generation started for start[0m
+[36m[#] SDG generated for start[0m
+[36m[#] SDG generation started for version[0m
+[36m[#] SDG generated for version[0m
+[36m[#] SDG generation started for getAddress[0m
+[36m[#] SDG generated for getAddress[0m
+[36m[#] SDG generation started for setAddress[0m
+[36m[#] SDG generated for setAddress[0m
+[36m[#] SDG generation started for updateChannel[0m
+[36m[#] SDG generated for updateChannel[0m
+[36m[#] SDG generation started for deleteChannel[0m
+[36m[#] SDG generated for deleteChannel[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for modifier onlyMaster[0m
+[36m[#] SDG generated for modifier onlyMaster[0m
+[36m[#] SDG generation started for modifier onlyWhenNotStopped[0m
+[36m[#] SDG generated for modifier onlyWhenNotStopped[0m
+[36m[#] Analysis took 0.150900 seconds[0m
+[36m[#] Analysis completed: 6.sol [0m
+
+=== dependency_info.json ===
+{}

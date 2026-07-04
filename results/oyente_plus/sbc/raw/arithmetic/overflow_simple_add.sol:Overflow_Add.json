@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "73.2",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "overflow_simple_add.sol:14:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    deposit = 87522543116091692642898991470747911540473016816853618691036649129099924882818\n    balance = 95235721736379883315001763940616669011307430545820611921043079414295449969311"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

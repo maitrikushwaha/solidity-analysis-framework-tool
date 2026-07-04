@@ -1,0 +1,33 @@
+/work/datasets/qian/timestamp/vulnerable/39715.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_DEPRECATED_CONSTRUCTIONS
+patternId: 49bd2a
+severity: 1
+line: 17
+column: 35
+content: throw
+
+ruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 3
+column: 0
+content: contractLegendsCrowdfund{uintpublicstart;uintpubliclimitVIP;mapping(address=>uint)publicrecipientVIP;uintpublictotalVIP;functionpurchaseMembership(addressrecipient)externalpayablereturns(uint){uintVIP=msg.value*10;if(block.timestamp-start<2weeks){VIP=(VIP*10)/9;}recipientVIP[recipient]+=VIP;totalVIP+=VIP;if(totalVIP>limitVIP){throw;}returnVIP;}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_REVERT_REQUIRE
+patternId: c56b12
+severity: 1
+line: 17
+column: 8
+content: if(totalVIP>limitVIP){throw;}
+
+SOLIDITY_DEPRECATED_CONSTRUCTIONS :1
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_REVERT_REQUIRE :1
+SOLIDITY_LOCKED_MONEY :1

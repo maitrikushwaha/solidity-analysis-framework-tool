@@ -1,0 +1,26 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 00_BasicNoChecks_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.jUJCYFMBlA' running
+INFO:root:contract 00_BasicNoChecks_ree1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 77.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:00_BasicNoChecks_ree1.sol:5:5: Warning: Integer Underflow.
+
+INFO:symExec:00_BasicNoChecks_ree1.sol:18:1046: Warning: Integer Overflow.
+
+00_BasicNoChecks_ree1.sol:9:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 1
+INFO:symExec:00_BasicNoChecks_ree1.sol:9:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:00_BasicNoChecks_ree1.sol:9:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 00_BasicNoChecks_ree1.sol:C.json.

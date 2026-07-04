@@ -1,0 +1,51 @@
+
+'solc --version' running
+'solc /work/datasets/qian/timestamp/vulnerable/1226.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/timestamp/vulnerable' running
+Compilation warnings/errors on /work/datasets/qian/timestamp/vulnerable/1226.sol:
+/work/datasets/qian/timestamp/vulnerable/1226.sol:18:17: Warning: Function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.
+                total_coins = total_coins - nodes[i].end_stamp;
+                ^---------^
+
+
+FreezableCoin.c_freezing_list (datasets/qian/timestamp/vulnerable/1226.sol#9) is never initialized. It is used in:
+	- FreezableCoin.validBalanceOf(address) (datasets/qian/timestamp/vulnerable/1226.sol#12-22)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+FreezableCoin.validBalanceOf(address) (datasets/qian/timestamp/vulnerable/1226.sol#12-22) is declared view but changes state variables:
+	- FreezableCoin.total_coins (datasets/qian/timestamp/vulnerable/1226.sol#10)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#constant-functions-changing-the-state
+
+FreezableCoin.validBalanceOf(address) (datasets/qian/timestamp/vulnerable/1226.sol#12-22) uses timestamp for comparisons
+	Dangerous comparisons:
+	- nodes[i].end_stamp > block.timestamp (datasets/qian/timestamp/vulnerable/1226.sol#17)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+FreezableCoin.validBalanceOf(address) (datasets/qian/timestamp/vulnerable/1226.sol#12-22) has costly operations inside a loop:
+	- total_coins = total_coins - nodes[i].end_stamp (datasets/qian/timestamp/vulnerable/1226.sol#18)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#costly-operations-inside-a-loop
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/timestamp/vulnerable/1226.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Variable FreezableCoin.c_freezing_list (datasets/qian/timestamp/vulnerable/1226.sol#9) is not in mixedCase
+Variable FreezableCoin.total_coins (datasets/qian/timestamp/vulnerable/1226.sol#10) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+/work/datasets/qian/timestamp/vulnerable/1226.sol analyzed (1 contracts with 93 detectors), 8 result(s) found

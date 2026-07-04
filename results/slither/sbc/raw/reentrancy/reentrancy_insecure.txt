@@ -1,0 +1,41 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/reentrancy/reentrancy_insecure.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/reentrancy' running
+
+Reentrancy in Reentrancy_insecure.withdrawBalance() (datasets/sbc/reentrancy/reentrancy_insecure.sol#14-20):
+	External calls:
+	- (success,None) = msg.sender.call.value(amountToWithdraw)() (datasets/sbc/reentrancy/reentrancy_insecure.sol#17)
+	State variables written after the call(s):
+	- userBalances[msg.sender] = 0 (datasets/sbc/reentrancy/reentrancy_insecure.sol#19)
+	Reentrancy_insecure.userBalances (datasets/sbc/reentrancy/reentrancy_insecure.sol#12) can be used in cross function reentrancies:
+	- Reentrancy_insecure.withdrawBalance() (datasets/sbc/reentrancy/reentrancy_insecure.sol#14-20)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+Version constraint ^0.5.0 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor
+	- IncorrectEventSignatureInLibraries
+	- ABIEncoderV2PackedStorage.
+It is used by:
+	- ^0.5.0 (datasets/sbc/reentrancy/reentrancy_insecure.sol#7)
+solc-0.5.17 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in Reentrancy_insecure.withdrawBalance() (datasets/sbc/reentrancy/reentrancy_insecure.sol#14-20):
+	- (success,None) = msg.sender.call.value(amountToWithdraw)() (datasets/sbc/reentrancy/reentrancy_insecure.sol#17)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Contract Reentrancy_insecure (datasets/sbc/reentrancy/reentrancy_insecure.sol#9-21) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+/work/datasets/sbc/reentrancy/reentrancy_insecure.sol analyzed (1 contracts with 93 detectors), 5 result(s) found

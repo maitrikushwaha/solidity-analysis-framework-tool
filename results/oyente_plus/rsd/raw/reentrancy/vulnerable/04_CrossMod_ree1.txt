@@ -1,0 +1,52 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 04_CrossMod_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.LGAU01Uxcn' running
+INFO:root:contract 04_CrossMod_ree1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 87.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:04_CrossMod_ree1.sol:6:5: Warning: Integer Underflow.
+
+04_CrossMod_ree1.sol:33:3401: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 85070591730234615865915709451979980800
+    balances[msg.sender] = 0
+04_CrossMod_ree1.sol:10:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 3399641365418815286463849141824305977051843363690481986214343737472
+04_CrossMod_ree1.sol:33:6123: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+    balances[msg.sender] = 99508826688318605442131315241841170811403893072034859721408861256800345784321
+    balances[to] = 32522016278311123928495121776970305970492088483812703659310019735656163497984
+04_CrossMod_ree1.sol:17:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+INFO:symExec:04_CrossMod_ree1.sol:33:614: Warning: Integer Overflow.
+
+04_CrossMod_ree1.sol:24:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 0
+    balances[msg.sender] = 158456325028528675187087900672
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+04_CrossMod_ree1.sol:23:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 0
+    balances[msg.sender] = 0
+INFO:symExec:04_CrossMod_ree1.sol:24:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:04_CrossMod_ree1.sol:24:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 04_CrossMod_ree1.sol:C.json.

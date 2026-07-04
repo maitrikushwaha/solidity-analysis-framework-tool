@@ -1,0 +1,22 @@
+{
+ "evm_code_coverage": "22.3",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "47.sol:26:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "47.sol:26:5: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [
+   "47.sol:164:15: Warning: Timestamp Dependency.\n",
+   "47.sol:166:18: Warning: Timestamp Dependency.\n",
+   "47.sol:166:15: Warning: Timestamp Dependency.\n"
+  ],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

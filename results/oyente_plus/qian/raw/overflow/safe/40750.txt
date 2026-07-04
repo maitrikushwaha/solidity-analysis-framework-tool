@@ -1,0 +1,27 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40750.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.1CkdoeZGMF' running
+INFO:CryticCompile:Compilation warnings/errors on 40750.sol:
+40750.sol:9:13: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        if (this.balance >= amount) {
+            ^----------^
+40750.sol:10:13: Warning: Return value of low-level calls not used.
+            victim.call.value(amount)();
+            ^-------------------------^
+40750.sol:8:5: Warning: No visibility specified. Defaulting to "public". 
+    function step1(uint256 amount) payable {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 40750.sol:Attack:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 68.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:40750.sol:10:13: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40750.sol:Attack.json.

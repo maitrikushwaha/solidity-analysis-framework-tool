@@ -1,0 +1,75 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 24.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.hhqwvNh00h' running
+INFO:root:contract 24.sol:FomoFeast:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 21.2%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:24.sol:694:38: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    index = 31443823326269823140835068405696838541869216464473548099528231440504903191432
+    length = 88676630172089878886856726874723639660907382898871748135845346905008680339585
+    owner = 0
+24.sol:696:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    index = 49039857307708443467467104868809907052146389475952898944
+    length = 9482347383869838352385
+    owner = 0
+24.sol:710:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    length = 35734127904768
+    index = 98079714615416886934934209737619787751620132968027127815
+    owner = 0
+24.sol:729:41: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    length = 35734127904768
+    index = 98079714615416886934934209737619787751620132968027127815
+    owner = 0
+24.sol:645:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner = 0
+    totalUserCount = 1
+24.sol:649:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner = 0
+    totalUserCount = 1
+24.sol:686:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner = 0
+    totalUserCount = 1
+24.sol:657:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    owner = 0
+    totalUserCount = 1
+24.sol:676:41: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    totalUserCount = 1
+    owner = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 24.sol:FomoFeast.json.
+INFO:root:contract 24.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 24.sol:SafeMath.json.

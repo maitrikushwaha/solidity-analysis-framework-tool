@@ -1,0 +1,37 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50791.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.DWCrIGpXxW' running
+INFO:CryticCompile:Compilation warnings/errors on 50791.sol:
+50791.sol:17:45: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (tokens[0][msg.sender] < amount) throw;
+                                            ^---^
+50791.sol:19:47: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (!msg.sender.call.value(amount)()) throw;
+                                              ^---^
+50791.sol:16:5: Warning: No visibility specified. Defaulting to "public". 
+    function withdraw(uint amount) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 50791.sol:EtherDelta:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 83.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50791.sol:EtherDelta.json.
+INFO:root:contract 50791.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50791.sol:SafeMath.json.

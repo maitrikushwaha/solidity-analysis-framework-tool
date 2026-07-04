@@ -1,0 +1,28 @@
+{
+ "evm_code_coverage": "54.4",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:12:2: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [
+   "0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:102:4: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [
+   [
+    "0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:69:9: Warning: Transaction-Ordering Dependency.\n",
+    "0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:71:9: Warning: Transaction-Ordering Dependency.\n",
+    "0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:73:9: Warning: Transaction-Ordering Dependency.\n",
+    "0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:75:9: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol:37:3: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

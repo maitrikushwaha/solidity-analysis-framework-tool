@@ -1,0 +1,138 @@
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Analysis started at: 2026-06-21 07:16:20 PM
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Callgraph generation started!
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Callgraph generation finished!
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Value Range Analysis started
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Range graph generated
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Range graph generated
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function constructor
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for getBalance
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for getBalance
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function getBalance
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for byOwner
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for byOwner
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function byOwner
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for inState
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for inState
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function inState
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for byOracle
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for byOracle
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function byOracle
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for byPlayer
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for byPlayer
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function byPlayer
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for setFinalPrice
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for setFinalPrice
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Range graph generated
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function setFinalPrice
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for setOracle
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for setOracle
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Range graph generated
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function setOracle
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for closeGame
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for closeGame
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Range graph generated
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function closeGame
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for collectOwnerWinnings
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for collectOwnerWinnings
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function collectOwnerWinnings
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for setInitialPrice
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for setInitialPrice
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Range graph generated
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function setInitialPrice
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for betUp
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for betUp
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Range graph generated
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function betUp
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for betDown
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for betDown
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Range graph generated
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function betDown
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Generating return summary for collectPlayerWinnings
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Return summary generated for collectPlayerWinnings
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Range graph generated
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Processed function collectPlayerWinnings
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Value Range Analysis took 0.004407 seconds
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Value Range Analysis finished
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Dependency detection started!
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Dependency detection finished!
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Static Analysis took 0.130262 seconds
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Dependency does not exist
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Analysis finished!
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Analysis took 0.130361 seconds
+[INFO] | 2026-06-21 07:16:20 PM | analyzer.45     | Analysis finished at: 2026-06-21 07:16:20 PM
+[36m[#] Analysing started: 45.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier byPlayer[0m
+[36m[#] Interprocedural CFG generated for modifer byPlayer[0m
+[36m[#] Interprocedural CFG generation started for modifier byOwner[0m
+[36m[#] Interprocedural CFG generated for modifer byOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier byOracle[0m
+[36m[#] Interprocedural CFG generated for modifer byOracle[0m
+[36m[#] Interprocedural CFG generation started for modifier inState[0m
+[36m[#] Interprocedural CFG generated for modifer inState[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for setOracle[0m
+[36m[#] Interprocedural CFG generated for setOracle[0m
+[36m[#] Interprocedural CFG generation started for setInitialPrice[0m
+[36m[#] Interprocedural CFG generated for setInitialPrice[0m
+[36m[#] Interprocedural CFG generation started for closeGame[0m
+[36m[#] Interprocedural CFG generated for closeGame[0m
+[36m[#] Interprocedural CFG generation started for betUp[0m
+[36m[#] Interprocedural CFG generated for betUp[0m
+[36m[#] Interprocedural CFG generation started for betDown[0m
+[36m[#] Interprocedural CFG generated for betDown[0m
+[36m[#] Interprocedural CFG generation started for setFinalPrice[0m
+[36m[#] Interprocedural CFG generated for setFinalPrice[0m
+[36m[#] Interprocedural CFG generation started for collectOwnerWinnings[0m
+[36m[#] Interprocedural CFG generated for collectOwnerWinnings[0m
+[36m[#] Interprocedural CFG generation started for collectPlayerWinnings[0m
+[36m[#] Interprocedural CFG generated for collectPlayerWinnings[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for setOracle[0m
+[36m[#] SDG generated for setOracle[0m
+[36m[#] SDG generation started for setInitialPrice[0m
+[36m[#] SDG generated for setInitialPrice[0m
+[36m[#] SDG generation started for closeGame[0m
+[36m[#] SDG generated for closeGame[0m
+[36m[#] SDG generation started for betUp[0m
+[36m[#] SDG generated for betUp[0m
+[36m[#] SDG generation started for betDown[0m
+[36m[#] SDG generated for betDown[0m
+[36m[#] SDG generation started for setFinalPrice[0m
+[36m[#] SDG generated for setFinalPrice[0m
+[36m[#] SDG generation started for collectOwnerWinnings[0m
+[36m[#] SDG generated for collectOwnerWinnings[0m
+[36m[#] SDG generation started for collectPlayerWinnings[0m
+[36m[#] SDG generated for collectPlayerWinnings[0m
+[36m[#] SDG generation started for modifier byPlayer[0m
+[36m[#] SDG generated for modifier byPlayer[0m
+[36m[#] SDG generation started for modifier byOwner[0m
+[36m[#] SDG generated for modifier byOwner[0m
+[36m[#] SDG generation started for modifier byOracle[0m
+[36m[#] SDG generated for modifier byOracle[0m
+[36m[#] SDG generation started for modifier inState[0m
+[36m[#] SDG generated for modifier inState[0m
+[36m[#] Analysis took 0.130361 seconds[0m
+[36m[#] Analysis completed: 45.sol [0m
+
+=== dependency_info.json ===
+{}

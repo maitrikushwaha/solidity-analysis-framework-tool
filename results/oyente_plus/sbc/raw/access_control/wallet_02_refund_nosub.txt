@@ -1,0 +1,29 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc wallet_02_refund_nosub.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.w0ODyGO2aw' running
+INFO:CryticCompile:Compilation warnings/errors on wallet_02_refund_nosub.sol:
+wallet_02_refund_nosub.sol:43:22: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+         to.transfer(this.balance);
+                     ^----------^
+
+INFO:root:contract wallet_02_refund_nosub.sol:Wallet:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 87.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:wallet_02_refund_nosub.sol:24:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 58068743163919891697566729948957307245138585446027331220996034322926014916738
+INFO:symExec:Flow1
+wallet_02_refund_nosub.sol:30:10: Warning: Transaction-Ordering Dependency.
+
+Flow2
+wallet_02_refund_nosub.sol:43:10: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to wallet_02_refund_nosub.sol:Wallet.json.

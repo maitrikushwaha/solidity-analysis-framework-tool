@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract datasets/rsd/reentrancy/vulnerable/04_CrossMod_ree2.sol:C
+offset,opcode,detection

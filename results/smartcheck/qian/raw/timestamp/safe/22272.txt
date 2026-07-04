@@ -1,0 +1,25 @@
+/work/datasets/qian/timestamp/safe/22272.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_EXTRA_GAS_IN_LOOPS
+patternId: d3j11j
+severity: 1
+line: 10
+column: 8
+content: for(uint8i=1;i<weekBonuses.length;i++){time=time+1weeks;if(block.timestamp<=time){break;}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 5
+column: 4
+content: uintstartAt;
+
+SOLIDITY_VISIBILITY :1
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_EXTRA_GAS_IN_LOOPS :1

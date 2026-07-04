@@ -1,0 +1,27 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40353.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.CiJzirK4XO' running
+INFO:CryticCompile:Compilation warnings/errors on 40353.sol:
+40353.sol:12:38: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+	    if (daoChallenge != msg.sender) throw;
+	                                    ^---^
+40353.sol:18:48: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+		if(!owner.call.value(tokenPrice * tokens)()) throw;
+		                                             ^---^
+40353.sol:16:2: Warning: No visibility specified. Defaulting to "public". 
+	function withdraw(uint256 tokens) onlyOwner {
+ ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 40353.sol:DaoAccount:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 75.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:40353.sol:18:7: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40353.sol:DaoAccount.json.

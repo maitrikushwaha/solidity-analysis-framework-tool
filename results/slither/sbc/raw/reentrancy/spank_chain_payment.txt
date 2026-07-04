@@ -1,0 +1,569 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/reentrancy/spank_chain_payment.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/reentrancy' running
+
+LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546) sends eth to arbitrary user
+	Dangerous calls:
+	- Channels[_lcID].partyAddresses[0].transfer(_balances[0]) (datasets/sbc/reentrancy/spank_chain_payment.sol#534)
+	- Channels[_lcID].partyAddresses[1].transfer(_balances[1]) (datasets/sbc/reentrancy/spank_chain_payment.sol#535)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+ECTools.toEthereumSignedMessage(string) (datasets/sbc/reentrancy/spank_chain_payment.sol#139-144) calls abi.encodePacked() with multiple dynamic arguments:
+	- keccak256()(abi.encodePacked(prefix,uintToString(len),_msg)) (datasets/sbc/reentrancy/spank_chain_payment.sol#143)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#abi-encodePacked-collision
+
+Reentrancy in LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437):
+	External calls:
+	- require(bool,string)(Channels[_lcID].token.transfer(Channels[_lcID].partyAddresses[0],Channels[_lcID].erc20Balances[0]),CreateChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#430)
+	External calls sending eth:
+	- Channels[_lcID].partyAddresses[0].transfer(Channels[_lcID].ethBalances[0]) (datasets/sbc/reentrancy/spank_chain_payment.sol#426)
+	State variables written after the call(s):
+	- delete Channels[_lcID] (datasets/sbc/reentrancy/spank_chain_payment.sol#436)
+	LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) can be used in cross function reentrancies:
+	- LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378)
+	- LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437)
+	- LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817)
+	- LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752)
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+	- LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492)
+	- LedgerChannel.getChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#837-866)
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+Reentrancy in LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817):
+	External calls:
+	- require(bool,string)(channel.token.transfer(channel.partyAddresses[0],tokenbalanceA),byzantineCloseChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#803-806)
+	- require(bool,string)(channel.token.transfer(channel.partyAddresses[1],tokenbalanceI),byzantineCloseChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#807-810)
+	External calls sending eth:
+	- channel.partyAddresses[0].transfer(ethbalanceA) (datasets/sbc/reentrancy/spank_chain_payment.sol#798)
+	- channel.partyAddresses[1].transfer(ethbalanceI) (datasets/sbc/reentrancy/spank_chain_payment.sol#799)
+	State variables written after the call(s):
+	- channel.isOpen = false (datasets/sbc/reentrancy/spank_chain_payment.sol#813)
+	LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) can be used in cross function reentrancies:
+	- LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378)
+	- LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437)
+	- LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817)
+	- LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752)
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+	- LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492)
+	- LedgerChannel.getChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#837-866)
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+ECTools.recoverSigner(bytes32,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#62-88) is declared view but contains assembly code
+ECTools.uintToBytes32(uint256) (datasets/sbc/reentrancy/spank_chain_payment.sol#132-135) is declared view but contains assembly code
+LedgerChannel._isContained(bytes32,bytes,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#819-834) is declared view but contains assembly code
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#constant-functions-using-assembly-code
+
+LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437) uses a dangerous strict equality:
+	- require(bool)(msg.sender == Channels[_lcID].partyAddresses[0] && Channels[_lcID].isOpen == false) (datasets/sbc/reentrancy/spank_chain_payment.sol#421)
+LedgerChannel._isContained(bytes32,bytes,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#819-834) uses a dangerous strict equality:
+	- cursor == _root (datasets/sbc/reentrancy/spank_chain_payment.sol#833)
+LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546) uses a dangerous strict equality:
+	- require(bool)(Channels[_lcID].isOpen == true) (datasets/sbc/reentrancy/spank_chain_payment.sol#506)
+LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546) uses a dangerous strict equality:
+	- require(bool)(totalEthDeposit == _balances[0] + _balances[1]) (datasets/sbc/reentrancy/spank_chain_payment.sol#509)
+LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546) uses a dangerous strict equality:
+	- require(bool)(totalTokenDeposit == _balances[2] + _balances[3]) (datasets/sbc/reentrancy/spank_chain_payment.sol#510)
+LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492) uses a dangerous strict equality:
+	- require(bool,string)(Channels[_lcID].isOpen == true,Tried adding funds to a closed channel) (datasets/sbc/reentrancy/spank_chain_payment.sol#466)
+LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657) uses a dangerous strict equality:
+	- require(bool)(_isContained(_initState,_proof,Channels[_lcID].VCrootHash) == true) (datasets/sbc/reentrancy/spank_chain_payment.sol#643)
+LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460) uses a dangerous strict equality:
+	- require(bool)(Channels[_lcID].isOpen == false) (datasets/sbc/reentrancy/spank_chain_payment.sol#441)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+Reentrancy in LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418):
+	External calls:
+	- require(bool,string)(Channels[_lcID].token.transferFrom(msg.sender,this,_balances[1]),CreateChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#406)
+	State variables written after the call(s):
+	- Channels[_lcID].erc20Balances[0] = _balances[1] (datasets/sbc/reentrancy/spank_chain_payment.sol#407)
+	LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) can be used in cross function reentrancies:
+	- LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378)
+	- LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437)
+	- LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817)
+	- LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752)
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+	- LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492)
+	- LedgerChannel.getChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#837-866)
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+	- Channels[_lcID].sequence = 0 (datasets/sbc/reentrancy/spank_chain_payment.sol#410)
+	LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) can be used in cross function reentrancies:
+	- LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378)
+	- LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437)
+	- LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817)
+	- LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752)
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+	- LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492)
+	- LedgerChannel.getChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#837-866)
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+	- Channels[_lcID].confirmTime = _confirmTime (datasets/sbc/reentrancy/spank_chain_payment.sol#411)
+	LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) can be used in cross function reentrancies:
+	- LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378)
+	- LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437)
+	- LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817)
+	- LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752)
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+	- LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492)
+	- LedgerChannel.getChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#837-866)
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+	- Channels[_lcID].LCopenTimeout = now + _confirmTime (datasets/sbc/reentrancy/spank_chain_payment.sol#414)
+	LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) can be used in cross function reentrancies:
+	- LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378)
+	- LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437)
+	- LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817)
+	- LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752)
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+	- LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492)
+	- LedgerChannel.getChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#837-866)
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+	- Channels[_lcID].initialDeposit = _balances (datasets/sbc/reentrancy/spank_chain_payment.sol#415)
+	LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) can be used in cross function reentrancies:
+	- LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378)
+	- LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437)
+	- LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817)
+	- LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752)
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+	- LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492)
+	- LedgerChannel.getChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#837-866)
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+Reentrancy in LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492):
+	External calls:
+	- require(bool,string)(Channels[_lcID].token.transferFrom(msg.sender,this,_balance),deposit: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#473)
+	State variables written after the call(s):
+	- Channels[_lcID].erc20Balances[2] += _balance (datasets/sbc/reentrancy/spank_chain_payment.sol#474)
+	LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) can be used in cross function reentrancies:
+	- LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378)
+	- LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437)
+	- LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817)
+	- LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752)
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+	- LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492)
+	- LedgerChannel.getChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#837-866)
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+	- Channels[_lcID].ethBalances[3] += msg.value (datasets/sbc/reentrancy/spank_chain_payment.sol#487)
+	LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) can be used in cross function reentrancies:
+	- LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378)
+	- LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437)
+	- LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817)
+	- LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752)
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+	- LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492)
+	- LedgerChannel.getChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#837-866)
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+Reentrancy in LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492):
+	External calls:
+	- require(bool,string)(Channels[_lcID].token.transferFrom(msg.sender,this,_balance),deposit: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#473)
+	- require(bool,string)(Channels[_lcID].token.transferFrom(msg.sender,this,_balance),deposit: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#483)
+	State variables written after the call(s):
+	- Channels[_lcID].erc20Balances[3] += _balance (datasets/sbc/reentrancy/spank_chain_payment.sol#484)
+	LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) can be used in cross function reentrancies:
+	- LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378)
+	- LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437)
+	- LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817)
+	- LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752)
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+	- LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492)
+	- LedgerChannel.getChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#837-866)
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+Reentrancy in LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460):
+	External calls:
+	- require(bool,string)(Channels[_lcID].token.transferFrom(msg.sender,this,_balances[1]),joinChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#449)
+	State variables written after the call(s):
+	- Channels[_lcID].erc20Balances[1] = _balances[1] (datasets/sbc/reentrancy/spank_chain_payment.sol#450)
+	LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) can be used in cross function reentrancies:
+	- LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378)
+	- LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437)
+	- LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817)
+	- LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752)
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+	- LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492)
+	- LedgerChannel.getChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#837-866)
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+	- Channels[_lcID].initialDeposit[0] += _balances[0] (datasets/sbc/reentrancy/spank_chain_payment.sol#453)
+	LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) can be used in cross function reentrancies:
+	- LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378)
+	- LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437)
+	- LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817)
+	- LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752)
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+	- LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492)
+	- LedgerChannel.getChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#837-866)
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+	- Channels[_lcID].initialDeposit[1] += _balances[1] (datasets/sbc/reentrancy/spank_chain_payment.sol#454)
+	LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) can be used in cross function reentrancies:
+	- LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378)
+	- LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437)
+	- LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817)
+	- LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752)
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+	- LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492)
+	- LedgerChannel.getChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#837-866)
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+	- Channels[_lcID].isOpen = true (datasets/sbc/reentrancy/spank_chain_payment.sol#456)
+	LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) can be used in cross function reentrancies:
+	- LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378)
+	- LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437)
+	- LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817)
+	- LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752)
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+	- LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492)
+	- LedgerChannel.getChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#837-866)
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-1
+
+ECTools.substring(string,uint256,uint256) (datasets/sbc/reentrancy/spank_chain_payment.sol#167-178) contains a tautology or contradiction:
+	- require(bool)(_startIndex >= 0) (datasets/sbc/reentrancy/spank_chain_payment.sol#170)
+LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418) contains a tautology or contradiction:
+	- require(bool,string)(_balances[0] >= 0 && _balances[1] >= 0,Balances cannot be negative) (datasets/sbc/reentrancy/spank_chain_payment.sol#392)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#tautology-or-contradiction
+
+Reentrancy in LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817):
+	External calls:
+	- require(bool,string)(channel.token.transfer(channel.partyAddresses[0],tokenbalanceA),byzantineCloseChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#803-806)
+	- require(bool,string)(channel.token.transfer(channel.partyAddresses[1],tokenbalanceI),byzantineCloseChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#807-810)
+	External calls sending eth:
+	- channel.partyAddresses[0].transfer(ethbalanceA) (datasets/sbc/reentrancy/spank_chain_payment.sol#798)
+	- channel.partyAddresses[1].transfer(ethbalanceI) (datasets/sbc/reentrancy/spank_chain_payment.sol#799)
+	State variables written after the call(s):
+	- numChannels -- (datasets/sbc/reentrancy/spank_chain_payment.sol#814)
+Reentrancy in LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546):
+	External calls:
+	- require(bool,string)(Channels[_lcID].token.transfer(Channels[_lcID].partyAddresses[0],_balances[2]),happyCloseChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#539)
+	- require(bool,string)(Channels[_lcID].token.transfer(Channels[_lcID].partyAddresses[1],_balances[3]),happyCloseChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#540)
+	External calls sending eth:
+	- Channels[_lcID].partyAddresses[0].transfer(_balances[0]) (datasets/sbc/reentrancy/spank_chain_payment.sol#534)
+	- Channels[_lcID].partyAddresses[1].transfer(_balances[1]) (datasets/sbc/reentrancy/spank_chain_payment.sol#535)
+	State variables written after the call(s):
+	- numChannels -- (datasets/sbc/reentrancy/spank_chain_payment.sol#543)
+Reentrancy in LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460):
+	External calls:
+	- require(bool,string)(Channels[_lcID].token.transferFrom(msg.sender,this,_balances[1]),joinChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#449)
+	State variables written after the call(s):
+	- numChannels ++ (datasets/sbc/reentrancy/spank_chain_payment.sol#457)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2
+
+Reentrancy in LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437):
+	External calls:
+	- require(bool,string)(Channels[_lcID].token.transfer(Channels[_lcID].partyAddresses[0],Channels[_lcID].erc20Balances[0]),CreateChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#430)
+	External calls sending eth:
+	- Channels[_lcID].partyAddresses[0].transfer(Channels[_lcID].ethBalances[0]) (datasets/sbc/reentrancy/spank_chain_payment.sol#426)
+	Event emitted after the call(s):
+	- DidLCClose(_lcID,0,Channels[_lcID].ethBalances[0],Channels[_lcID].erc20Balances[0],0,0) (datasets/sbc/reentrancy/spank_chain_payment.sol#433)
+Reentrancy in LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817):
+	External calls:
+	- require(bool,string)(channel.token.transfer(channel.partyAddresses[0],tokenbalanceA),byzantineCloseChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#803-806)
+	- require(bool,string)(channel.token.transfer(channel.partyAddresses[1],tokenbalanceI),byzantineCloseChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#807-810)
+	External calls sending eth:
+	- channel.partyAddresses[0].transfer(ethbalanceA) (datasets/sbc/reentrancy/spank_chain_payment.sol#798)
+	- channel.partyAddresses[1].transfer(ethbalanceI) (datasets/sbc/reentrancy/spank_chain_payment.sol#799)
+	Event emitted after the call(s):
+	- DidLCClose(_lcID,channel.sequence,ethbalanceA,ethbalanceI,tokenbalanceA,tokenbalanceI) (datasets/sbc/reentrancy/spank_chain_payment.sol#816)
+Reentrancy in LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546):
+	External calls:
+	- require(bool,string)(Channels[_lcID].token.transfer(Channels[_lcID].partyAddresses[0],_balances[2]),happyCloseChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#539)
+	- require(bool,string)(Channels[_lcID].token.transfer(Channels[_lcID].partyAddresses[1],_balances[3]),happyCloseChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#540)
+	External calls sending eth:
+	- Channels[_lcID].partyAddresses[0].transfer(_balances[0]) (datasets/sbc/reentrancy/spank_chain_payment.sol#534)
+	- Channels[_lcID].partyAddresses[1].transfer(_balances[1]) (datasets/sbc/reentrancy/spank_chain_payment.sol#535)
+	Event emitted after the call(s):
+	- DidLCClose(_lcID,_sequence,_balances[0],_balances[1],_balances[2],_balances[3]) (datasets/sbc/reentrancy/spank_chain_payment.sol#545)
+Reentrancy in LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418):
+	External calls:
+	- require(bool,string)(Channels[_lcID].token.transferFrom(msg.sender,this,_balances[1]),CreateChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#406)
+	Event emitted after the call(s):
+	- DidLCOpen(_lcID,msg.sender,_partyI,_balances[0],_token,_balances[1],Channels[_lcID].LCopenTimeout) (datasets/sbc/reentrancy/spank_chain_payment.sol#417)
+Reentrancy in LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492):
+	External calls:
+	- require(bool,string)(Channels[_lcID].token.transferFrom(msg.sender,this,_balance),deposit: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#473)
+	- require(bool,string)(Channels[_lcID].token.transferFrom(msg.sender,this,_balance),deposit: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#483)
+	Event emitted after the call(s):
+	- DidLCDeposit(_lcID,recipient,_balance,isToken) (datasets/sbc/reentrancy/spank_chain_payment.sol#491)
+Reentrancy in LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460):
+	External calls:
+	- require(bool,string)(Channels[_lcID].token.transferFrom(msg.sender,this,_balances[1]),joinChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#449)
+	Event emitted after the call(s):
+	- DidLCJoin(_lcID,_balances[0],_balances[1]) (datasets/sbc/reentrancy/spank_chain_payment.sol#459)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3
+
+LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(Channels[_lcID].partyAddresses[0] == address(0),Channel has already been created.) (datasets/sbc/reentrancy/spank_chain_payment.sol#390)
+	- require(bool,string)(Channels[_lcID].token.transferFrom(msg.sender,this,_balances[1]),CreateChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#406)
+LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(msg.sender == Channels[_lcID].partyAddresses[0] && Channels[_lcID].isOpen == false) (datasets/sbc/reentrancy/spank_chain_payment.sol#421)
+	- require(bool)(now > Channels[_lcID].LCopenTimeout) (datasets/sbc/reentrancy/spank_chain_payment.sol#422)
+	- Channels[_lcID].initialDeposit[0] != 0 (datasets/sbc/reentrancy/spank_chain_payment.sol#424)
+	- Channels[_lcID].initialDeposit[1] != 0 (datasets/sbc/reentrancy/spank_chain_payment.sol#428)
+	- require(bool,string)(Channels[_lcID].token.transfer(Channels[_lcID].partyAddresses[0],Channels[_lcID].erc20Balances[0]),CreateChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#430)
+LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(Channels[_lcID].isOpen == false) (datasets/sbc/reentrancy/spank_chain_payment.sol#441)
+	- require(bool)(msg.sender == Channels[_lcID].partyAddresses[1]) (datasets/sbc/reentrancy/spank_chain_payment.sol#442)
+	- require(bool,string)(Channels[_lcID].token.transferFrom(msg.sender,this,_balances[1]),joinChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#449)
+LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(Channels[_lcID].isOpen == true,Tried adding funds to a closed channel) (datasets/sbc/reentrancy/spank_chain_payment.sol#466)
+	- require(bool)(recipient == Channels[_lcID].partyAddresses[0] || recipient == Channels[_lcID].partyAddresses[1]) (datasets/sbc/reentrancy/spank_chain_payment.sol#467)
+	- Channels[_lcID].partyAddresses[0] == recipient (datasets/sbc/reentrancy/spank_chain_payment.sol#471)
+	- require(bool,string)(Channels[_lcID].token.transferFrom(msg.sender,this,_balance),deposit: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#473)
+	- Channels[_lcID].partyAddresses[1] == recipient (datasets/sbc/reentrancy/spank_chain_payment.sol#481)
+	- require(bool,string)(Channels[_lcID].token.transferFrom(msg.sender,this,_balance),deposit: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#483)
+LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(Channels[_lcID].isOpen == true) (datasets/sbc/reentrancy/spank_chain_payment.sol#506)
+	- require(bool)(totalEthDeposit == _balances[0] + _balances[1]) (datasets/sbc/reentrancy/spank_chain_payment.sol#509)
+	- require(bool)(totalTokenDeposit == _balances[2] + _balances[3]) (datasets/sbc/reentrancy/spank_chain_payment.sol#510)
+	- require(bool)(Channels[_lcID].partyAddresses[0] == ECTools.recoverSigner(_state,_sigA)) (datasets/sbc/reentrancy/spank_chain_payment.sol#528)
+	- require(bool)(Channels[_lcID].partyAddresses[1] == ECTools.recoverSigner(_state,_sigI)) (datasets/sbc/reentrancy/spank_chain_payment.sol#529)
+	- require(bool,string)(Channels[_lcID].token.transfer(Channels[_lcID].partyAddresses[0],_balances[2]),happyCloseChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#539)
+	- require(bool,string)(Channels[_lcID].token.transfer(Channels[_lcID].partyAddresses[1],_balances[3]),happyCloseChannel: token transfer failure) (datasets/sbc/reentrancy/spank_chain_payment.sol#540)
+LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(channel.isOpen) (datasets/sbc/reentrancy/spank_chain_payment.sol#560)
+	- require(bool)(channel.sequence < updateParams[0]) (datasets/sbc/reentrancy/spank_chain_payment.sol#561)
+	- require(bool)(channel.ethBalances[0] + channel.ethBalances[1] >= updateParams[2] + updateParams[3]) (datasets/sbc/reentrancy/spank_chain_payment.sol#562)
+	- require(bool)(channel.erc20Balances[0] + channel.erc20Balances[1] >= updateParams[4] + updateParams[5]) (datasets/sbc/reentrancy/spank_chain_payment.sol#563)
+	- require(bool)(channel.updateLCtimeout > now) (datasets/sbc/reentrancy/spank_chain_payment.sol#566)
+	- require(bool)(channel.partyAddresses[0] == ECTools.recoverSigner(_state,_sigA)) (datasets/sbc/reentrancy/spank_chain_payment.sol#585)
+	- require(bool)(channel.partyAddresses[1] == ECTools.recoverSigner(_state,_sigI)) (datasets/sbc/reentrancy/spank_chain_payment.sol#586)
+LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(Channels[_lcID].isOpen,LC is closed.) (datasets/sbc/reentrancy/spank_chain_payment.sol#627)
+	- require(bool,string)(Channels[_lcID].updateLCtimeout < now,LC timeout not over.) (datasets/sbc/reentrancy/spank_chain_payment.sol#631)
+	- require(bool)(_isContained(_initState,_proof,Channels[_lcID].VCrootHash) == true) (datasets/sbc/reentrancy/spank_chain_payment.sol#643)
+LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(Channels[_lcID].isOpen,LC is closed.) (datasets/sbc/reentrancy/spank_chain_payment.sol#673)
+	- require(bool)(Channels[_lcID].updateLCtimeout < now) (datasets/sbc/reentrancy/spank_chain_payment.sol#689)
+LedgerChannel.closeVirtualChannel(bytes32,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#725-752) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(Channels[_lcID].isOpen,LC is closed.) (datasets/sbc/reentrancy/spank_chain_payment.sol#727)
+	- require(bool,string)(virtualChannels[_vcID].updateVCtimeout < now,Update vc timeout has not elapsed.) (datasets/sbc/reentrancy/spank_chain_payment.sol#729)
+	- virtualChannels[_vcID].partyA == Channels[_lcID].partyAddresses[0] (datasets/sbc/reentrancy/spank_chain_payment.sol#737)
+	- virtualChannels[_vcID].partyB == Channels[_lcID].partyAddresses[0] (datasets/sbc/reentrancy/spank_chain_payment.sol#743)
+LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(channel.updateLCtimeout < now,LC timeout over.) (datasets/sbc/reentrancy/spank_chain_payment.sol#763)
+LedgerChannel._isContained(bytes32,bytes,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#819-834) uses timestamp for comparisons
+	Dangerous comparisons:
+	- cursor == _root (datasets/sbc/reentrancy/spank_chain_payment.sol#833)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+ECTools.recoverSigner(bytes32,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#62-88) uses assembly
+	- INLINE ASM (datasets/sbc/reentrancy/spank_chain_payment.sol#76-81)
+ECTools.uintToBytes32(uint256) (datasets/sbc/reentrancy/spank_chain_payment.sol#132-135) uses assembly
+	- INLINE ASM (datasets/sbc/reentrancy/spank_chain_payment.sol#134-135)
+LedgerChannel._isContained(bytes32,bytes,bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#819-834) uses assembly
+	- INLINE ASM (datasets/sbc/reentrancy/spank_chain_payment.sol#824-826)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage
+
+LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437) compares to a boolean constant:
+	-require(bool)(msg.sender == Channels[_lcID].partyAddresses[0] && Channels[_lcID].isOpen == false) (datasets/sbc/reentrancy/spank_chain_payment.sol#421)
+LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460) compares to a boolean constant:
+	-require(bool)(Channels[_lcID].isOpen == false) (datasets/sbc/reentrancy/spank_chain_payment.sol#441)
+LedgerChannel.deposit(bytes32,address,uint256,bool) (datasets/sbc/reentrancy/spank_chain_payment.sol#465-492) compares to a boolean constant:
+	-require(bool,string)(Channels[_lcID].isOpen == true,Tried adding funds to a closed channel) (datasets/sbc/reentrancy/spank_chain_payment.sol#466)
+LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546) compares to a boolean constant:
+	-require(bool)(Channels[_lcID].isOpen == true) (datasets/sbc/reentrancy/spank_chain_payment.sol#506)
+LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612) compares to a boolean constant:
+	-channel.isUpdateLCSettling == true (datasets/sbc/reentrancy/spank_chain_payment.sol#565)
+LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657) compares to a boolean constant:
+	-require(bool)(_isContained(_initState,_proof,Channels[_lcID].VCrootHash) == true) (datasets/sbc/reentrancy/spank_chain_payment.sol#643)
+LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817) compares to a boolean constant:
+	-require(bool)(channel.isUpdateLCSettling == true) (datasets/sbc/reentrancy/spank_chain_payment.sol#761)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#boolean-equality
+
+Version constraint ^0.4.23 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x
+	- ExpExponentCleanup
+	- EventStructWrongData.
+It is used by:
+	- ^0.4.23 (datasets/sbc/reentrancy/spank_chain_payment.sol#9)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in HumanStandardToken.approveAndCall(address,uint256,bytes) (datasets/sbc/reentrancy/spank_chain_payment.sol#252-261):
+	- require(bool)(_spender.call(bytes4(bytes32(keccak256()(receiveApproval(address,uint256,address,bytes)))),msg.sender,_value,this,_extraData)) (datasets/sbc/reentrancy/spank_chain_payment.sol#259)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Parameter ECTools.recoverSigner(bytes32,string)._hashedMsg (datasets/sbc/reentrancy/spank_chain_payment.sol#62) is not in mixedCase
+Parameter ECTools.recoverSigner(bytes32,string)._sig (datasets/sbc/reentrancy/spank_chain_payment.sol#62) is not in mixedCase
+Parameter ECTools.isSignedBy(bytes32,string,address)._hashedMsg (datasets/sbc/reentrancy/spank_chain_payment.sol#91) is not in mixedCase
+Parameter ECTools.isSignedBy(bytes32,string,address)._sig (datasets/sbc/reentrancy/spank_chain_payment.sol#91) is not in mixedCase
+Parameter ECTools.isSignedBy(bytes32,string,address)._addr (datasets/sbc/reentrancy/spank_chain_payment.sol#91) is not in mixedCase
+Parameter ECTools.hexstrToBytes(string)._hexstr (datasets/sbc/reentrancy/spank_chain_payment.sol#98) is not in mixedCase
+Parameter ECTools.parseInt16Char(string)._char (datasets/sbc/reentrancy/spank_chain_payment.sol#116) is not in mixedCase
+Parameter ECTools.toEthereumSignedMessage(string)._msg (datasets/sbc/reentrancy/spank_chain_payment.sol#139) is not in mixedCase
+Parameter ECTools.uintToString(uint256)._uint (datasets/sbc/reentrancy/spank_chain_payment.sol#147) is not in mixedCase
+Parameter ECTools.substring(string,uint256,uint256)._str (datasets/sbc/reentrancy/spank_chain_payment.sol#167) is not in mixedCase
+Parameter ECTools.substring(string,uint256,uint256)._startIndex (datasets/sbc/reentrancy/spank_chain_payment.sol#167) is not in mixedCase
+Parameter ECTools.substring(string,uint256,uint256)._endIndex (datasets/sbc/reentrancy/spank_chain_payment.sol#167) is not in mixedCase
+Parameter StandardToken.transfer(address,uint256)._to (datasets/sbc/reentrancy/spank_chain_payment.sol#182) is not in mixedCase
+Parameter StandardToken.transfer(address,uint256)._value (datasets/sbc/reentrancy/spank_chain_payment.sol#182) is not in mixedCase
+Parameter StandardToken.transferFrom(address,address,uint256)._from (datasets/sbc/reentrancy/spank_chain_payment.sol#194) is not in mixedCase
+Parameter StandardToken.transferFrom(address,address,uint256)._to (datasets/sbc/reentrancy/spank_chain_payment.sol#194) is not in mixedCase
+Parameter StandardToken.transferFrom(address,address,uint256)._value (datasets/sbc/reentrancy/spank_chain_payment.sol#194) is not in mixedCase
+Parameter StandardToken.balanceOf(address)._owner (datasets/sbc/reentrancy/spank_chain_payment.sol#205) is not in mixedCase
+Parameter StandardToken.approve(address,uint256)._spender (datasets/sbc/reentrancy/spank_chain_payment.sol#209) is not in mixedCase
+Parameter StandardToken.approve(address,uint256)._value (datasets/sbc/reentrancy/spank_chain_payment.sol#209) is not in mixedCase
+Parameter StandardToken.allowance(address,address)._owner (datasets/sbc/reentrancy/spank_chain_payment.sol#215) is not in mixedCase
+Parameter StandardToken.allowance(address,address)._spender (datasets/sbc/reentrancy/spank_chain_payment.sol#215) is not in mixedCase
+Parameter HumanStandardToken.approveAndCall(address,uint256,bytes)._spender (datasets/sbc/reentrancy/spank_chain_payment.sol#252) is not in mixedCase
+Parameter HumanStandardToken.approveAndCall(address,uint256,bytes)._value (datasets/sbc/reentrancy/spank_chain_payment.sol#252) is not in mixedCase
+Parameter HumanStandardToken.approveAndCall(address,uint256,bytes)._extraData (datasets/sbc/reentrancy/spank_chain_payment.sol#252) is not in mixedCase
+Parameter LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2])._lcID (datasets/sbc/reentrancy/spank_chain_payment.sol#381) is not in mixedCase
+Parameter LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2])._partyI (datasets/sbc/reentrancy/spank_chain_payment.sol#382) is not in mixedCase
+Parameter LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2])._confirmTime (datasets/sbc/reentrancy/spank_chain_payment.sol#383) is not in mixedCase
+Parameter LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2])._token (datasets/sbc/reentrancy/spank_chain_payment.sol#384) is not in mixedCase
+Parameter LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2])._balances (datasets/sbc/reentrancy/spank_chain_payment.sol#385) is not in mixedCase
+Function LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437) is not in mixedCase
+Parameter LedgerChannel.LCOpenTimeout(bytes32)._lcID (datasets/sbc/reentrancy/spank_chain_payment.sol#420) is not in mixedCase
+Parameter LedgerChannel.joinChannel(bytes32,uint256[2])._lcID (datasets/sbc/reentrancy/spank_chain_payment.sol#439) is not in mixedCase
+Parameter LedgerChannel.joinChannel(bytes32,uint256[2])._balances (datasets/sbc/reentrancy/spank_chain_payment.sol#439) is not in mixedCase
+Parameter LedgerChannel.deposit(bytes32,address,uint256,bool)._lcID (datasets/sbc/reentrancy/spank_chain_payment.sol#465) is not in mixedCase
+Parameter LedgerChannel.deposit(bytes32,address,uint256,bool)._balance (datasets/sbc/reentrancy/spank_chain_payment.sol#465) is not in mixedCase
+Parameter LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string)._lcID (datasets/sbc/reentrancy/spank_chain_payment.sol#496) is not in mixedCase
+Parameter LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string)._sequence (datasets/sbc/reentrancy/spank_chain_payment.sol#497) is not in mixedCase
+Parameter LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string)._balances (datasets/sbc/reentrancy/spank_chain_payment.sol#498) is not in mixedCase
+Parameter LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string)._sigA (datasets/sbc/reentrancy/spank_chain_payment.sol#499) is not in mixedCase
+Parameter LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string)._sigI (datasets/sbc/reentrancy/spank_chain_payment.sol#500) is not in mixedCase
+Parameter LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string)._lcID (datasets/sbc/reentrancy/spank_chain_payment.sol#551) is not in mixedCase
+Parameter LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string)._VCroot (datasets/sbc/reentrancy/spank_chain_payment.sol#553) is not in mixedCase
+Parameter LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string)._sigA (datasets/sbc/reentrancy/spank_chain_payment.sol#554) is not in mixedCase
+Parameter LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string)._sigI (datasets/sbc/reentrancy/spank_chain_payment.sol#555) is not in mixedCase
+Parameter LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string)._lcID (datasets/sbc/reentrancy/spank_chain_payment.sol#616) is not in mixedCase
+Parameter LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string)._vcID (datasets/sbc/reentrancy/spank_chain_payment.sol#617) is not in mixedCase
+Parameter LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string)._proof (datasets/sbc/reentrancy/spank_chain_payment.sol#618) is not in mixedCase
+Parameter LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string)._partyA (datasets/sbc/reentrancy/spank_chain_payment.sol#619) is not in mixedCase
+Parameter LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string)._partyB (datasets/sbc/reentrancy/spank_chain_payment.sol#620) is not in mixedCase
+Parameter LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string)._bond (datasets/sbc/reentrancy/spank_chain_payment.sol#621) is not in mixedCase
+Parameter LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string)._balances (datasets/sbc/reentrancy/spank_chain_payment.sol#622) is not in mixedCase
+Parameter LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string)._lcID (datasets/sbc/reentrancy/spank_chain_payment.sol#663) is not in mixedCase
+Parameter LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string)._vcID (datasets/sbc/reentrancy/spank_chain_payment.sol#664) is not in mixedCase
+Parameter LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string)._partyA (datasets/sbc/reentrancy/spank_chain_payment.sol#666) is not in mixedCase
+Parameter LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string)._partyB (datasets/sbc/reentrancy/spank_chain_payment.sol#667) is not in mixedCase
+Parameter LedgerChannel.closeVirtualChannel(bytes32,bytes32)._lcID (datasets/sbc/reentrancy/spank_chain_payment.sol#725) is not in mixedCase
+Parameter LedgerChannel.closeVirtualChannel(bytes32,bytes32)._vcID (datasets/sbc/reentrancy/spank_chain_payment.sol#725) is not in mixedCase
+Parameter LedgerChannel.byzantineCloseChannel(bytes32)._lcID (datasets/sbc/reentrancy/spank_chain_payment.sol#756) is not in mixedCase
+Variable LedgerChannel.Channels (datasets/sbc/reentrancy/spank_chain_payment.sol#378) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Reentrancy in LedgerChannel.LCOpenTimeout(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#420-437):
+	External calls:
+	- Channels[_lcID].partyAddresses[0].transfer(Channels[_lcID].ethBalances[0]) (datasets/sbc/reentrancy/spank_chain_payment.sol#426)
+	State variables written after the call(s):
+	- delete Channels[_lcID] (datasets/sbc/reentrancy/spank_chain_payment.sol#436)
+	Event emitted after the call(s):
+	- DidLCClose(_lcID,0,Channels[_lcID].ethBalances[0],Channels[_lcID].erc20Balances[0],0,0) (datasets/sbc/reentrancy/spank_chain_payment.sol#433)
+Reentrancy in LedgerChannel.byzantineCloseChannel(bytes32) (datasets/sbc/reentrancy/spank_chain_payment.sol#756-817):
+	External calls:
+	- channel.partyAddresses[0].transfer(ethbalanceA) (datasets/sbc/reentrancy/spank_chain_payment.sol#798)
+	- channel.partyAddresses[1].transfer(ethbalanceI) (datasets/sbc/reentrancy/spank_chain_payment.sol#799)
+	State variables written after the call(s):
+	- channel.isOpen = false (datasets/sbc/reentrancy/spank_chain_payment.sol#813)
+	- numChannels -- (datasets/sbc/reentrancy/spank_chain_payment.sol#814)
+	Event emitted after the call(s):
+	- DidLCClose(_lcID,channel.sequence,ethbalanceA,ethbalanceI,tokenbalanceA,tokenbalanceI) (datasets/sbc/reentrancy/spank_chain_payment.sol#816)
+Reentrancy in LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546):
+	External calls:
+	- Channels[_lcID].partyAddresses[0].transfer(_balances[0]) (datasets/sbc/reentrancy/spank_chain_payment.sol#534)
+	- Channels[_lcID].partyAddresses[1].transfer(_balances[1]) (datasets/sbc/reentrancy/spank_chain_payment.sol#535)
+	State variables written after the call(s):
+	- numChannels -- (datasets/sbc/reentrancy/spank_chain_payment.sol#543)
+	Event emitted after the call(s):
+	- DidLCClose(_lcID,_sequence,_balances[0],_balances[1],_balances[2],_balances[3]) (datasets/sbc/reentrancy/spank_chain_payment.sol#545)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4
+
+HumanStandardToken.version (datasets/sbc/reentrancy/spank_chain_payment.sol#236) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+
+isSignedBy(bytes32,string,address) should be declared external:
+	- ECTools.isSignedBy(bytes32,string,address) (datasets/sbc/reentrancy/spank_chain_payment.sol#91-95)
+toEthereumSignedMessage(string) should be declared external:
+	- ECTools.toEthereumSignedMessage(string) (datasets/sbc/reentrancy/spank_chain_payment.sol#139-144)
+approveAndCall(address,uint256,bytes) should be declared external:
+	- HumanStandardToken.approveAndCall(address,uint256,bytes) (datasets/sbc/reentrancy/spank_chain_payment.sol#252-261)
+createChannel(bytes32,address,uint256,address,uint256[2]) should be declared external:
+	- LedgerChannel.createChannel(bytes32,address,uint256,address,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#380-418)
+joinChannel(bytes32,uint256[2]) should be declared external:
+	- LedgerChannel.joinChannel(bytes32,uint256[2]) (datasets/sbc/reentrancy/spank_chain_payment.sol#439-460)
+consensusCloseChannel(bytes32,uint256,uint256[4],string,string) should be declared external:
+	- LedgerChannel.consensusCloseChannel(bytes32,uint256,uint256[4],string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#495-546)
+updateLCstate(bytes32,uint256[6],bytes32,string,string) should be declared external:
+	- LedgerChannel.updateLCstate(bytes32,uint256[6],bytes32,string,string) (datasets/sbc/reentrancy/spank_chain_payment.sol#550-612)
+initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) should be declared external:
+	- LedgerChannel.initVCstate(bytes32,bytes32,bytes,address,address,uint256[2],uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#615-657)
+settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) should be declared external:
+	- LedgerChannel.settleVC(bytes32,bytes32,uint256,address,address,uint256[4],string) (datasets/sbc/reentrancy/spank_chain_payment.sol#662-723)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external
+/work/datasets/sbc/reentrancy/spank_chain_payment.sol analyzed (5 contracts with 93 detectors), 127 result(s) found

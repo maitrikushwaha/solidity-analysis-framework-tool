@@ -1,0 +1,36 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50337.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.eFNCtcXcWK' running
+INFO:CryticCompile:Compilation warnings/errors on 50337.sol:
+50337.sol:18:5: Warning: No visibility specified. Defaulting to "public". 
+    function add(uint value) returns (uint){
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 50337.sol:Overflow_add:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 74.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:50337.sol:7:21: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    sellerBalance = 95235721736379883315001763940616669011307430545820611921043079414295449969311
+    value = 87522543116091692642898991470747911540473016816853618691036649129099924882818
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50337.sol:Overflow_add.json.
+INFO:root:contract 50337.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 100.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50337.sol:SafeMath.json.

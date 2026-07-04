@@ -1,0 +1,612 @@
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Analysis started at: 2026-06-21 07:15:41 PM
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Callgraph generation started!
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Callgraph generation finished!
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Value Range Analysis started
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for transfer
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for transfer
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function transfer
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function transferFrom
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for balanceOf
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for balanceOf
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function balanceOf
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for allowance
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for allowance
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function allowance
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for mul
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for mul
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function mul
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for div
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for div
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function div
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for sub
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for sub
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function sub
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for add
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for add
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function add
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Range graph generated
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function constructor
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for setDexStatus
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for setDexStatus
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Range graph generated
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function setDexStatus
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for addToken
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for addToken
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Range graph generated
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function addToken
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for setwithdrawfee
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for setwithdrawfee
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Range graph generated
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function setwithdrawfee
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Range graph generated
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for dexstatuscheck
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for dexstatuscheck
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function dexstatuscheck
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for withdraw
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for withdraw
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Range graph generated
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function withdraw
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for adminProfitWithdraw
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for adminProfitWithdraw
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Range graph generated
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function adminProfitWithdraw
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for viewTokenBalance
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for viewTokenBalance
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function viewTokenBalance
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for tokenallowance
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for tokenallowance
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function tokenallowance
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for verify
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for verify
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function verify
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for deposit
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for deposit
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Range graph generated
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function deposit
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for cancelOrder
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for cancelOrder
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Range graph generated
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function cancelOrder
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for tokenDeposit
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for tokenDeposit
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Range graph generated
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function tokenDeposit
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Generating return summary for makeOrder
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Return summary generated for makeOrder
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Range graph generated
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Processed function makeOrder
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Value Range Analysis took 0.015273 seconds
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Value Range Analysis finished
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:15:41 PM | analyzer.21     | Dependency detection started!
+[INFO] | 2026-06-21 07:15:42 PM | analyzer.21     | DAO dependency detected in file 21.sol in contract StableDEX in by composing functions tokenDeposit and withdraw
+[INFO] | 2026-06-21 07:15:42 PM | analyzer.21     | DAO dependency detected in file 21.sol in contract StableDEX in by composing functions tokenDeposit and makeOrder
+[INFO] | 2026-06-21 07:15:42 PM | analyzer.21     | DAO dependency detected in file 21.sol in contract StableDEX in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 07:15:42 PM | analyzer.21     | DAO dependency detected in file 21.sol in contract StableDEX in by composing functions withdraw and adminProfitWithdraw
+[INFO] | 2026-06-21 07:15:43 PM | analyzer.21     | DAO dependency detected in file 21.sol in contract StableDEX in by composing functions withdraw and makeOrder
+[INFO] | 2026-06-21 07:15:43 PM | analyzer.21     | DAO dependency detected in file 21.sol in contract StableDEX in by composing functions adminProfitWithdraw and adminProfitWithdraw
+[INFO] | 2026-06-21 07:15:43 PM | analyzer.21     | TOD dependency detected in file 21.sol in contract StableDEX in by composing functions withdraw and setDexStatus
+[INFO] | 2026-06-21 07:15:43 PM | analyzer.21     | TOD dependency detected in file 21.sol in contract StableDEX in by composing functions withdraw and deposit
+[INFO] | 2026-06-21 07:15:43 PM | analyzer.21     | TOD dependency detected in file 21.sol in contract StableDEX in by composing functions withdraw and tokenDeposit
+[INFO] | 2026-06-21 07:15:43 PM | analyzer.21     | TOD dependency detected in file 21.sol in contract StableDEX in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 07:15:44 PM | analyzer.21     | TOD dependency detected in file 21.sol in contract StableDEX in by composing functions withdraw and setwithdrawfee
+[INFO] | 2026-06-21 07:15:45 PM | analyzer.21     | TOD dependency detected in file 21.sol in contract StableDEX in by composing functions withdraw and makeOrder
+[INFO] | 2026-06-21 07:15:45 PM | analyzer.21     | TOD dependency detected in file 21.sol in contract StableDEX in by composing functions adminProfitWithdraw and withdraw
+[INFO] | 2026-06-21 07:15:45 PM | analyzer.21     | TOD dependency detected in file 21.sol in contract StableDEX in by composing functions adminProfitWithdraw and adminProfitWithdraw
+[INFO] | 2026-06-21 07:15:46 PM | analyzer.21     | TOD dependency detected in file 21.sol in contract StableDEX in by composing functions adminProfitWithdraw and makeOrder
+[INFO] | 2026-06-21 07:15:46 PM | analyzer.21     | Dependency detection finished!
+[INFO] | 2026-06-21 07:15:46 PM | analyzer.21     | Static Analysis took 5.241618 seconds
+[INFO] | 2026-06-21 07:15:46 PM | analyzer.21     | Dependency exists
+[INFO] | 2026-06-21 07:15:46 PM | analyzer.21     | Invoking symbolic executor!
+[36m[#] Analysing started: 21.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier dexstatuscheck[0m
+[36m[#] Interprocedural CFG generated for modifer dexstatuscheck[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for balanceOf[0m
+[36m[#] Interprocedural CFG generated for balanceOf[0m
+[36m[#] Interprocedural CFG generation started for allowance[0m
+[36m[#] Interprocedural CFG generated for allowance[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for setDexStatus[0m
+[36m[#] Interprocedural CFG generated for setDexStatus[0m
+[36m[#] Interprocedural CFG generation started for addToken[0m
+[36m[#] Interprocedural CFG generated for addToken[0m
+[36m[#] Interprocedural CFG generation started for deposit[0m
+[36m[#] Interprocedural CFG generated for deposit[0m
+[36m[#] Interprocedural CFG generation started for tokenDeposit[0m
+[36m[#] Interprocedural CFG generated for tokenDeposit[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] Interprocedural CFG generation started for adminProfitWithdraw[0m
+[36m[#] Interprocedural CFG generated for adminProfitWithdraw[0m
+[36m[#] Interprocedural CFG generation started for setwithdrawfee[0m
+[36m[#] Interprocedural CFG generated for setwithdrawfee[0m
+[36m[#] Interprocedural CFG generation started for makeOrder[0m
+[36m[#] Interprocedural CFG generated for makeOrder[0m
+[36m[#] Interprocedural CFG generation started for viewTokenBalance[0m
+[36m[#] Interprocedural CFG generated for viewTokenBalance[0m
+[36m[#] Interprocedural CFG generation started for tokenallowance[0m
+[36m[#] Interprocedural CFG generated for tokenallowance[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for balanceOf[0m
+[36m[#] SDG generated for balanceOf[0m
+[36m[#] SDG generation started for allowance[0m
+[36m[#] SDG generated for allowance[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for setDexStatus[0m
+[36m[#] SDG generated for setDexStatus[0m
+[36m[#] SDG generation started for addToken[0m
+[36m[#] SDG generated for addToken[0m
+[36m[#] SDG generation started for deposit[0m
+[36m[#] SDG generated for deposit[0m
+[36m[#] SDG generation started for tokenDeposit[0m
+[36m[#] SDG generated for tokenDeposit[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[36m[#] SDG generation started for adminProfitWithdraw[0m
+[36m[#] SDG generated for adminProfitWithdraw[0m
+[36m[#] SDG generation started for setwithdrawfee[0m
+[36m[#] SDG generated for setwithdrawfee[0m
+[36m[#] SDG generation started for makeOrder[0m
+[36m[#] SDG generated for makeOrder[0m
+[36m[#] SDG generation started for viewTokenBalance[0m
+[36m[#] SDG generated for viewTokenBalance[0m
+[36m[#] SDG generation started for tokenallowance[0m
+[36m[#] SDG generated for tokenallowance[0m
+[36m[#] SDG generation started for modifier dexstatuscheck[0m
+[36m[#] SDG generated for modifier dexstatuscheck[0m
+[INFO] | 2026-06-21 07:15:50 PM | analyzer.21     | Symbolic execution took 3.681113 seconds
+[INFO] | 2026-06-21 07:15:50 PM | analyzer.21     | Symbolic execution finished!
+[INFO] | 2026-06-21 07:15:50 PM | analyzer.21     | Analysis finished!
+[INFO] | 2026-06-21 07:15:50 PM | analyzer.21     | Analysis took 8.923086 seconds
+[INFO] | 2026-06-21 07:15:50 PM | analyzer.21     | Analysis finished at: 2026-06-21 07:15:50 PM
+[36m[#] Analysis took 8.923086 seconds[0m
+[36m[#] Analysis completed: 21.sol [0m
+
+=== dependency_info.json ===
+{
+    "21.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "tokenDeposit",
+                "withdraw"
+            ],
+            "from_function": "withdraw",
+            "to_function": "tokenDeposit",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 32\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][tokenaddr] && withdrawfee[tokenaddr] < amount)\nIRS: \nTMP_80 = SOLIDITY_CALL require(bool)(TMP_79)\"",
+                        "\"BlockID: 21\nFunction: tokenDeposit\nNode: \nEXPRESSION userDetails[msg.sender][tokenaddr] = userDetails[msg.sender][tokenaddr].add(tokenAmount)\nIRS: \nREF_16 := TMP_34\""
+                    ],
+                    "state_variable": "userDetails"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\"",
+                        "\"BlockID: 21\nFunction: tokenDeposit\nNode: \nEXPRESSION userDetails[msg.sender][tokenaddr] = userDetails[msg.sender][tokenaddr].add(tokenAmount)\nIRS: \nREF_16 := TMP_34\""
+                    ],
+                    "state_variable": "userDetails"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "tokenDeposit",
+                "makeOrder"
+            ],
+            "from_function": "makeOrder",
+            "to_function": "tokenDeposit",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 97\nFunction: makeOrder\nNode: \nEXPRESSION require(bool)(amount__ > 0 && amount__ <= userDetails[traderAddresses[1]][traderAddresses[0]])\nIRS: \nTMP_146 = SOLIDITY_CALL require(bool)(TMP_145)\"",
+                        "\"BlockID: 21\nFunction: tokenDeposit\nNode: \nEXPRESSION userDetails[msg.sender][tokenaddr] = userDetails[msg.sender][tokenaddr].add(tokenAmount)\nIRS: \nREF_16 := TMP_34\""
+                    ],
+                    "state_variable": "userDetails"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "from_function": "withdraw",
+            "to_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 196\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][tokenaddr] && withdrawfee[tokenaddr] < amount)\nIRS: \nTMP_80 = SOLIDITY_CALL require(bool)(TMP_79)\"",
+                        "\"BlockID: 46\nFunction: withdraw\nNode: \nEXPRESSION userDetails[msg.sender][tokenaddr] = userDetails[msg.sender][tokenaddr].sub(amount)\nIRS: \nREF_48 := TMP_84\""
+                    ],
+                    "state_variable": "userDetails"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 201\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\"",
+                        "\"BlockID: 46\nFunction: withdraw\nNode: \nEXPRESSION userDetails[msg.sender][tokenaddr] = userDetails[msg.sender][tokenaddr].sub(amount)\nIRS: \nREF_48 := TMP_84\""
+                    ],
+                    "state_variable": "userDetails"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdraw",
+                "adminProfitWithdraw"
+            ],
+            "from_function": "adminProfitWithdraw",
+            "to_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 55\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION admin.transfer(feeAmount[admin][address(0)])\nIRS: \nTransfer dest:admin value:REF_60\"",
+                        "\"BlockID: 34\nFunction: withdraw\nNode: \nEXPRESSION feeAmount[admin][tokenaddr] = feeAmount[admin][tokenaddr].add(withdrawfee[tokenaddr])\nIRS: \nREF_53 := TMP_85\""
+                    ],
+                    "state_variable": "feeAmount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION Token(tokenAddr).transfer(admin,feeAmount[admin][tokenAddr])\nIRS: \nTMP_103(bool) = HIGH_LEVEL_CALL, dest:TMP_102(Token), function:transfer, arguments:['admin', 'REF_65']  \"",
+                        "\"BlockID: 34\nFunction: withdraw\nNode: \nEXPRESSION feeAmount[admin][tokenaddr] = feeAmount[admin][tokenaddr].add(withdrawfee[tokenaddr])\nIRS: \nREF_53 := TMP_85\""
+                    ],
+                    "state_variable": "feeAmount"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdraw",
+                "makeOrder"
+            ],
+            "from_function": "makeOrder",
+            "to_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 97\nFunction: makeOrder\nNode: \nEXPRESSION require(bool)(amount__ > 0 && amount__ <= userDetails[traderAddresses[1]][traderAddresses[0]])\nIRS: \nTMP_146 = SOLIDITY_CALL require(bool)(TMP_145)\"",
+                        "\"BlockID: 46\nFunction: withdraw\nNode: \nEXPRESSION userDetails[msg.sender][tokenaddr] = userDetails[msg.sender][tokenaddr].sub(amount)\nIRS: \nREF_48 := TMP_84\""
+                    ],
+                    "state_variable": "userDetails"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "adminProfitWithdraw",
+                "adminProfitWithdraw"
+            ],
+            "from_function": "adminProfitWithdraw",
+            "to_function": "adminProfitWithdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 242\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION admin.transfer(feeAmount[admin][address(0)])\nIRS: \nTransfer dest:admin value:REF_60\"",
+                        "\"BlockID: 58\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION feeAmount[admin][tokenAddr] = 0\nIRS: \nREF_67 := 0\""
+                    ],
+                    "state_variable": "feeAmount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 244\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION Token(tokenAddr).transfer(admin,feeAmount[admin][tokenAddr])\nIRS: \nTMP_103(bool) = HIGH_LEVEL_CALL, dest:TMP_102(Token), function:transfer, arguments:['admin', 'REF_65']  \"",
+                        "\"BlockID: 58\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION feeAmount[admin][tokenAddr] = 0\nIRS: \nREF_67 := 0\""
+                    ],
+                    "state_variable": "feeAmount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "setDexStatus"
+            ],
+            "First_function": "setDexStatus",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: setDexStatus\nNode: \nEXPRESSION dexStatus = status_\nIRS: \ndexStatus := status_\"",
+                        "\"BlockID: 42\nFunction: dexstatuscheck\nNode: \nEXPRESSION require(bool)(dexStatus == true)\nIRS: \nTMP_203 = SOLIDITY_CALL require(bool)(TMP_202)\""
+                    ],
+                    "state_variable": "dexStatus"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "deposit"
+            ],
+            "First_function": "deposit",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 14\nFunction: deposit\nNode: \nEXPRESSION userDetails[msg.sender][address(0)] = userDetails[msg.sender][address(0)].add(msg.value)\nIRS: \nREF_9 := TMP_22\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "userDetails"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "tokenDeposit"
+            ],
+            "First_function": "tokenDeposit",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: tokenDeposit\nNode: \nEXPRESSION userDetails[msg.sender][tokenaddr] = userDetails[msg.sender][tokenaddr].add(tokenAmount)\nIRS: \nREF_16 := TMP_34\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "userDetails"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 233\nFunction: withdraw\nNode: \nEXPRESSION userDetails[msg.sender][tokenaddr] = userDetails[msg.sender][tokenaddr].sub(amount)\nIRS: \nREF_48 := TMP_84\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "userDetails"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 237\nFunction: withdraw\nNode: \nEXPRESSION userDetails[msg.sender][address(0)] = userDetails[msg.sender][address(0)].sub(amount)\nIRS: \nREF_29 := TMP_65\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "userDetails"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "setwithdrawfee"
+            ],
+            "First_function": "setwithdrawfee",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: setwithdrawfee\nNode: \nEXPRESSION withdrawfee[addr[i]] = feeamount[i]\nIRS: \nREF_74 := REF_75\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "withdrawfee"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 65\nFunction: setwithdrawfee\nNode: \nEXPRESSION withdrawfee[addr[i]] = feeamount[i]\nIRS: \nREF_74 := REF_75\"",
+                        "\"BlockID: 39\nFunction: withdraw\nNode: \nEXPRESSION msg.sender.transfer(amount.sub(withdrawfee[address(0)]))\nIRS: \nTransfer dest:msg.sender value:TMP_61\""
+                    ],
+                    "state_variable": "withdrawfee"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "makeOrder"
+            ],
+            "First_function": "makeOrder",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 94\nFunction: makeOrder\nNode: \nEXPRESSION userDetails[Order[orderiD].userAddress][Order[orderiD].tokenAddress] = userDetails[Order[orderiD].userAddress][Order[orderiD].tokenAddress].add(tradeDetails[2])\nIRS: \nREF_165 := TMP_164\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "userDetails"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 98\nFunction: makeOrder\nNode: \nEXPRESSION userDetails[traderAddresses[1]][traderAddresses[0]] = userDetails[traderAddresses[1]][traderAddresses[0]].sub(amount__)\nIRS: \nREF_123 := TMP_147\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "userDetails"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 122\nFunction: cancelOrder\nNode: \nEXPRESSION userDetails[Order[orderid].userAddress][Order[orderid].tokenAddress] = userDetails[Order[orderid].userAddress][Order[orderid].tokenAddress].add(Order[orderid].tradeAmount)\nIRS: \nREF_375 := TMP_196\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "userDetails"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 125\nFunction: cancelOrder\nNode: \nEXPRESSION userDetails[Order[orderid].userAddress][Order[orderid].tokenAddress] = userDetails[Order[orderid].userAddress][Order[orderid].tokenAddress].add(Order[orderid].tradeTotal)\nIRS: \nREF_360 := TMP_195\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "userDetails"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 145\nFunction: makeOrder\nNode: \nEXPRESSION userDetails[Order[orderiD].userAddress][Order[tradeDetails[8]].tokenAddress] = userDetails[Order[orderiD].userAddress][Order[tradeDetails[8]].tokenAddress].add(tradeDetails[1].sub(tradeDetails[4]))\nIRS: \nREF_246 := TMP_178\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "userDetails"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 150\nFunction: makeOrder\nNode: \nEXPRESSION userDetails[Order[tradeDetails[8]].userAddress][Order[orderiD].tokenAddress] = userDetails[Order[tradeDetails[8]].userAddress][Order[orderiD].tokenAddress].add(tradeDetails[3].sub(tradeDetails[5]))\nIRS: \nREF_316 := TMP_187\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "userDetails"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 152\nFunction: makeOrder\nNode: \nEXPRESSION userDetails[Order[tradeDetails[8]].userAddress][Order[orderiD].tokenAddress] = userDetails[Order[tradeDetails[8]].userAddress][Order[orderiD].tokenAddress].add(tradeDetails[3])\nIRS: \nREF_278 := TMP_183\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "userDetails"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 154\nFunction: makeOrder\nNode: \nEXPRESSION userDetails[Order[tradeDetails[8]].userAddress][traderAddresses[0]] = userDetails[Order[tradeDetails[8]].userAddress][traderAddresses[0]].sub(tradeDetails[5])\nIRS: \nREF_293 := TMP_184\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "userDetails"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 156\nFunction: makeOrder\nNode: \nEXPRESSION userDetails[Order[orderiD].userAddress][Order[tradeDetails[8]].tokenAddress] = userDetails[Order[orderiD].userAddress][Order[tradeDetails[8]].tokenAddress].add(tradeDetails[1])\nIRS: \nREF_210 := TMP_174\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "userDetails"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 158\nFunction: makeOrder\nNode: \nEXPRESSION userDetails[Order[orderiD].userAddress][traderAddresses[0]] = userDetails[Order[orderiD].userAddress][traderAddresses[0]].sub(tradeDetails[4])\nIRS: \nREF_224 := TMP_175\"",
+                        "\"BlockID: 37\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount > 0 && amount <= userDetails[msg.sender][address(0)] && withdrawfee[address(0)] < amount)\nIRS: \nTMP_56 = SOLIDITY_CALL require(bool)(TMP_55)\""
+                    ],
+                    "state_variable": "userDetails"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "adminProfitWithdraw",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "adminProfitWithdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 34\nFunction: withdraw\nNode: \nEXPRESSION feeAmount[admin][tokenaddr] = feeAmount[admin][tokenaddr].add(withdrawfee[tokenaddr])\nIRS: \nREF_53 := TMP_85\"",
+                        "\"BlockID: 55\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION admin.transfer(feeAmount[admin][address(0)])\nIRS: \nTransfer dest:admin value:REF_60\""
+                    ],
+                    "state_variable": "feeAmount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: withdraw\nNode: \nEXPRESSION feeAmount[admin][address(0)] = feeAmount[admin][address(0)].add(withdrawfee[address(0)])\nIRS: \nREF_34 := TMP_69\"",
+                        "\"BlockID: 55\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION admin.transfer(feeAmount[admin][address(0)])\nIRS: \nTransfer dest:admin value:REF_60\""
+                    ],
+                    "state_variable": "feeAmount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "adminProfitWithdraw",
+                "adminProfitWithdraw"
+            ],
+            "First_function": "adminProfitWithdraw",
+            "Second_function": "adminProfitWithdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 255\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION feeAmount[admin][tokenAddr] = 0\nIRS: \nREF_67 := 0\"",
+                        "\"BlockID: 55\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION admin.transfer(feeAmount[admin][address(0)])\nIRS: \nTransfer dest:admin value:REF_60\""
+                    ],
+                    "state_variable": "feeAmount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 257\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION feeAmount[admin][address(0)] = 0\nIRS: \nREF_62 := 0\"",
+                        "\"BlockID: 55\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION admin.transfer(feeAmount[admin][address(0)])\nIRS: \nTransfer dest:admin value:REF_60\""
+                    ],
+                    "state_variable": "feeAmount"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "adminProfitWithdraw",
+                "makeOrder"
+            ],
+            "First_function": "makeOrder",
+            "Second_function": "adminProfitWithdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 80\nFunction: makeOrder\nNode: \nEXPRESSION feeAmount[admin][Order[tradeDetails[8]].tokenAddress] = feeAmount[admin][Order[tradeDetails[8]].tokenAddress].add(tradeDetails[4])\nIRS: \nREF_262 := TMP_179\"",
+                        "\"BlockID: 55\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION admin.transfer(feeAmount[admin][address(0)])\nIRS: \nTransfer dest:admin value:REF_60\""
+                    ],
+                    "state_variable": "feeAmount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 83\nFunction: makeOrder\nNode: \nEXPRESSION feeAmount[admin][Order[orderiD].tokenAddress] = feeAmount[admin][Order[orderiD].tokenAddress].add(tradeDetails[5])\nIRS: \nREF_331 := TMP_188\"",
+                        "\"BlockID: 55\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION admin.transfer(feeAmount[admin][address(0)])\nIRS: \nTransfer dest:admin value:REF_60\""
+                    ],
+                    "state_variable": "feeAmount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 92\nFunction: makeOrder\nNode: \nEXPRESSION feeAmount[admin][traderAddresses[0]] = feeAmount[admin][traderAddresses[0]].add(tradeDetails[5])\nIRS: \nREF_304 := TMP_185\"",
+                        "\"BlockID: 55\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION admin.transfer(feeAmount[admin][address(0)])\nIRS: \nTransfer dest:admin value:REF_60\""
+                    ],
+                    "state_variable": "feeAmount"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 93\nFunction: makeOrder\nNode: \nEXPRESSION feeAmount[admin][traderAddresses[0]] = feeAmount[admin][traderAddresses[0]].add(tradeDetails[4])\nIRS: \nREF_234 := TMP_176\"",
+                        "\"BlockID: 55\nFunction: adminProfitWithdraw\nNode: \nEXPRESSION admin.transfer(feeAmount[admin][address(0)])\nIRS: \nTransfer dest:admin value:REF_60\""
+                    ],
+                    "state_variable": "feeAmount"
+                }
+            ]
+        }
+    ]
+}

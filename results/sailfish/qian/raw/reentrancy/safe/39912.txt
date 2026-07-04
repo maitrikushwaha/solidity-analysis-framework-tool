@@ -1,0 +1,34 @@
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Analysis started at: 2026-06-21 07:12:38 PM
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Generating return summary for simulatePathwayFromBeneficiary
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Return summary generated for simulatePathwayFromBeneficiary
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Processed function simulatePathwayFromBeneficiary
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Value Range Analysis took 0.000157 seconds
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Static Analysis took 0.028433 seconds
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Dependency does not exist
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Analysis finished!
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Analysis took 0.028544 seconds
+[INFO] | 2026-06-21 07:12:38 PM | analyzer.39912  | Analysis finished at: 2026-06-21 07:12:38 PM
+[36m[#] Analysing started: 39912.sol[0m
+[36m[#] Interprocedural CFG generation started for simulatePathwayFromBeneficiary[0m
+[36m[#] Interprocedural CFG generated for simulatePathwayFromBeneficiary[0m
+[36m[#] SDG generation started for simulatePathwayFromBeneficiary[0m
+[36m[#] SDG generated for simulatePathwayFromBeneficiary[0m
+[36m[#] Analysis took 0.028544 seconds[0m
+[36m[#] Analysis completed: 39912.sol [0m
+
+=== dependency_info.json ===
+{}

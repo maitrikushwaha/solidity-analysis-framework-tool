@@ -1,0 +1,26 @@
+{
+ "evm_code_coverage": "64.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "buggy_12.sol:333:5: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[_to] = 791700822477589915722012473676987854248131620409551159528858099563660732220\n    balances[msg.sender] = 101318190291011140154806935719253711800937187053669407840046829909327678013450\n    _to = 0\n    _value = 95139994780378007923354016204582289007252144401546544110334103166970001499142",
+   "buggy_12.sol:351:13: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[_to] = 791700801563565878928549492471776160737522950728529810312830451547987837444\n    balances[msg.sender] = 39803532454896436551272158468563846173858999624375530160001273727062045097992\n    _to = 0\n    _value = 37243950173133284385522447510493634296091474265702530996251191314487479205378"
+  ],
+  "integer_overflow": [
+   "buggy_12.sol:333:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[_to] = 19923057481201417365605991515849352626673292066231885423458655736018881237001\n    balances[msg.sender] = 72370055783458927298685916262664051698689256147277920958561331603235244343296\n    _to = 0\n    _value = 58578516756196129745862701196632008106390530189683482566038214071419960017399"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "buggy_12.sol:369:8: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "buggy_12.sol:409:8: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

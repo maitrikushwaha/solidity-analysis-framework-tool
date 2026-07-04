@@ -1,0 +1,128 @@
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Analysis started at: 2026-06-21 07:01:36 PM
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Callgraph generation started!
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Callgraph generation finished!
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Value Range Analysis started
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Generating return summary for constructor
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Return summary generated for constructor
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Processed function constructor
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Generating return summary for lockInGuess
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Return summary generated for lockInGuess
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Range graph generated
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Processed function lockInGuess
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Generating return summary for settle
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Return summary generated for settle
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Range graph generated
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Processed function settle
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Value Range Analysis took 0.002214 seconds
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Value Range Analysis finished
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Dependency detection started!
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | TOD dependency detected in file old_blockhash.sol in contract PredictTheBlockHashChallenge in by composing functions settle and lockInGuess
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | TOD dependency detected in file old_blockhash.sol in contract PredictTheBlockHashChallenge in by composing functions settle and settle
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Dependency detection finished!
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Static Analysis took 0.340221 seconds
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Dependency exists
+[INFO] | 2026-06-21 07:01:36 PM | analyzer.old_blockhash | Invoking symbolic executor!
+[36m[#] Analysing started: old_blockhash.sol[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for lockInGuess[0m
+[36m[#] Interprocedural CFG generated for lockInGuess[0m
+[36m[#] Interprocedural CFG generation started for settle[0m
+[36m[#] Interprocedural CFG generated for settle[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for lockInGuess[0m
+[36m[#] SDG generated for lockInGuess[0m
+[36m[#] SDG generation started for settle[0m
+[36m[#] SDG generated for settle[0m
+[INFO] | 2026-06-21 07:01:39 PM | analyzer.old_blockhash | Symbolic execution took 2.788654 seconds
+[INFO] | 2026-06-21 07:01:39 PM | analyzer.old_blockhash | Symbolic execution finished!
+[INFO] | 2026-06-21 07:01:39 PM | analyzer.old_blockhash | Analysis finished!
+[INFO] | 2026-06-21 07:01:39 PM | analyzer.old_blockhash | Analysis took 3.130425 seconds
+[INFO] | 2026-06-21 07:01:39 PM | analyzer.old_blockhash | Analysis finished at: 2026-06-21 07:01:39 PM
+[36m[#] Analysis took 3.130425 seconds[0m
+[36m[#] Analysis completed: old_blockhash.sol [0m
+
+=== dependency_info.json ===
+{
+    "old_blockhash.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "settle",
+                "lockInGuess"
+            ],
+            "First_function": "lockInGuess",
+            "Second_function": "settle",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: lockInGuess\nNode: \nEXPRESSION guesses[msg.sender].block = block.number + 1\nIRS: \nREF_5 := TMP_6\"",
+                        "\"BlockID: 9\nFunction: settle\nNode: \nEXPRESSION require(bool)(block.number > guesses[msg.sender].block)\nIRS: \nTMP_8 = SOLIDITY_CALL require(bool)(TMP_7)\""
+                    ],
+                    "state_variable": "guesses.block"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: lockInGuess\nNode: \nEXPRESSION guesses[msg.sender].block = block.number + 1\nIRS: \nREF_5 := TMP_6\"",
+                        "\"BlockID: 10\nFunction: settle\nNode: \nNEW VARIABLE answer = blockhash(uint256)(guesses[msg.sender].block)\nIRS: \nTMP_9 = SOLIDITY_CALL blockhash(uint256)(REF_9)\""
+                    ],
+                    "state_variable": "guesses.block"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: lockInGuess\nNode: \nEXPRESSION guesses[msg.sender].block = block.number + 1\nIRS: \nREF_5 := TMP_6\"",
+                        "\"BlockID: 12\nFunction: settle\nNode: \nIF guesses[msg.sender].guess == answer\nIRS: \nCONDITION TMP_10\""
+                    ],
+                    "state_variable": "guesses.block"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 6\nFunction: lockInGuess\nNode: \nEXPRESSION guesses[msg.sender].guess = hash\nIRS: \nREF_3 := hash\"",
+                        "\"BlockID: 12\nFunction: settle\nNode: \nIF guesses[msg.sender].guess == answer\nIRS: \nCONDITION TMP_10\""
+                    ],
+                    "state_variable": "guesses.guess"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "settle",
+                "settle"
+            ],
+            "First_function": "settle",
+            "Second_function": "settle",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: settle\nNode: \nEXPRESSION guesses[msg.sender].block = 0\nIRS: \nREF_11 := 0\"",
+                        "\"BlockID: 9\nFunction: settle\nNode: \nEXPRESSION require(bool)(block.number > guesses[msg.sender].block)\nIRS: \nTMP_8 = SOLIDITY_CALL require(bool)(TMP_7)\""
+                    ],
+                    "state_variable": "guesses.block"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: settle\nNode: \nEXPRESSION guesses[msg.sender].block = 0\nIRS: \nREF_11 := 0\"",
+                        "\"BlockID: 10\nFunction: settle\nNode: \nNEW VARIABLE answer = blockhash(uint256)(guesses[msg.sender].block)\nIRS: \nTMP_9 = SOLIDITY_CALL blockhash(uint256)(REF_9)\""
+                    ],
+                    "state_variable": "guesses.block"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 18\nFunction: settle\nNode: \nEXPRESSION guesses[msg.sender].block = 0\nIRS: \nREF_11 := 0\"",
+                        "\"BlockID: 12\nFunction: settle\nNode: \nIF guesses[msg.sender].guess == answer\nIRS: \nCONDITION TMP_10\""
+                    ],
+                    "state_variable": "guesses.block"
+                }
+            ]
+        }
+    ]
+}

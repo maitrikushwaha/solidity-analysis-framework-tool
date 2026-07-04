@@ -1,0 +1,30 @@
+{
+ "evm_code_coverage": "81.2",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "03_SingleModFoldUnderflow_safe1.sol:6:5: Warning: Integer Underflow.\n",
+   "03_SingleModFoldUnderflow_safe1.sol:31:6079: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 59849323381205851970197521066982367775278984893830421173511412372910683283456\n    balances[msg.sender] = 86844066927987146567678238756515930889952488499230423029593188005934847229953\n    balances[msg.sender] = 0",
+   "03_SingleModFoldUnderflow_safe1.sol:31:3357: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 74139858155478392212305118115190261375989954728595555671413688123558\n    balances[msg.sender] = 0",
+   "03_SingleModFoldUnderflow_safe1.sol:10:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 3646772341702585256259926041533383816667926763151277530791191319876911235200"
+  ],
+  "integer_overflow": [
+   "03_SingleModFoldUnderflow_safe1.sol:31:715: Warning: Integer Overflow.\n",
+   "03_SingleModFoldUnderflow_safe1.sol:18:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 43422034326929074898444966216987514584180857044613281620628220260113279090688\n    balances[msg.sender] = 32566525098100903636964328757425739074082690773216935329846743012968868380679",
+   "03_SingleModFoldUnderflow_safe1.sol:17:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 74139858155478392212305118115190261375989954728595555671413673558592\n    balances[msg.sender] = 0",
+   "03_SingleModFoldUnderflow_safe1.sol:31:3303: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 74139858155478392212305118115190261375989954728595555671413637775458\n    balances[msg.sender] = 0",
+   "03_SingleModFoldUnderflow_safe1.sol:31:1584: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 74139864583230569248266220283038630740640364817407530802584980816470\n    balances[msg.sender] = 0",
+   "03_SingleModFoldUnderflow_safe1.sol:31:3090: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 74139864583230569248266220283038630740640364817407530802584980816470\n    balances[msg.sender] = 0"
+  ],
+  "callstack": [
+   "03_SingleModFoldUnderflow_safe1.sol:18:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "03_SingleModFoldUnderflow_safe1.sol:18:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

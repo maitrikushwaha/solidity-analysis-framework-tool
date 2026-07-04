@@ -1,0 +1,85 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc governmental_survey.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.cvLpluVBsz' running
+INFO:CryticCompile:Compilation warnings/errors on governmental_survey.sol:
+governmental_survey.sol:17:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Governmental() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+governmental_survey.sol:19:28: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (msg.value<1 ether) throw;
+                           ^---^
+governmental_survey.sol:23:30: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (msg.value<jackpot/2) throw;
+                             ^---^
+governmental_survey.sol:32:7: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+      throw;
+      ^---^
+governmental_survey.sol:34:5: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+    lastInvestor.send(jackpot);
+    ^------------------------^
+governmental_survey.sol:35:16: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+    owner.send(this.balance-1 ether);
+               ^----------^
+governmental_survey.sol:35:5: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+    owner.send(this.balance-1 ether);
+    ^------------------------------^
+governmental_survey.sol:17:3: Warning: No visibility specified. Defaulting to "public". 
+  function Governmental() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+governmental_survey.sol:19:9: Warning: "msg.value" used in non-payable function. Do you want to add the "payable" modifier to this function?
+    if (msg.value<1 ether) throw;
+        ^-------^
+governmental_survey.sol:22:3: Warning: No visibility specified. Defaulting to "public". 
+  function invest() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+governmental_survey.sol:23:9: Warning: "msg.value" used in non-payable function. Do you want to add the "payable" modifier to this function?
+    if (msg.value<jackpot/2) throw;
+        ^-------^
+governmental_survey.sol:25:16: Warning: "msg.value" used in non-payable function. Do you want to add the "payable" modifier to this function?
+    jackpot += msg.value/2;
+               ^-------^
+governmental_survey.sol:30:3: Warning: No visibility specified. Defaulting to "public". 
+  function resetInvestment() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+governmental_survey.sol:45:3: Warning: No visibility specified. Defaulting to "public". 
+  function attack(address target, uint count) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+governmental_survey.sol:47:23: Warning: "msg.gas" has been deprecated in favor of "gasleft()"
+      this.attack.gas(msg.gas-2000)(target, count+1);
+                      ^-----^
+
+INFO:root:contract governmental_survey.sol:Attacker:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 79.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to governmental_survey.sol:Attacker.json.
+INFO:root:contract governmental_survey.sol:Governmental:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 91.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:governmental_survey.sol:35:16: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    jackpot = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+    ONE_MINUTE = 257
+    lastInvestmentTimestamp = 0
+INFO:symExec:governmental_survey.sol:34:5: Warning: Callstack Depth Attack Vulnerability.
+
+governmental_survey.sol:35:5: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:governmental_survey.sol:31:5: Warning: Timestamp Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to governmental_survey.sol:Governmental.json.

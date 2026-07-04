@@ -1,0 +1,76 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/time_manipulation/ether_lotto.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/time_manipulation' running
+Compilation warnings/errors on /work/datasets/sbc/time_manipulation/ether_lotto.sol:
+/work/datasets/sbc/time_manipulation/ether_lotto.sol:27:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function EtherLotto() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/time_manipulation/ether_lotto.sol:43:9: Warning: Use of the "var" keyword is deprecated.
+        var random = uint(sha3(block.timestamp)) % 2;
+        ^--------^
+/work/datasets/sbc/time_manipulation/ether_lotto.sol:43:27: Warning: "sha3" has been deprecated in favour of "keccak256"
+        var random = uint(sha3(block.timestamp)) % 2;
+                          ^-------------------^
+/work/datasets/sbc/time_manipulation/ether_lotto.sol:43:27: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        var random = uint(sha3(block.timestamp)) % 2;
+                          ^-------------------^
+/work/datasets/sbc/time_manipulation/ether_lotto.sol:43:27: Warning: The provided argument of type uint256 is not implicitly convertible to expected type bytes memory.
+        var random = uint(sha3(block.timestamp)) % 2;
+                          ^-------------------^
+/work/datasets/sbc/time_manipulation/ether_lotto.sol:27:5: Warning: No visibility specified. Defaulting to "public". 
+    function EtherLotto() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+/work/datasets/sbc/time_manipulation/ether_lotto.sol:33:5: Warning: No visibility specified. Defaulting to "public". 
+    function play() payable {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+
+EtherLotto.play() (datasets/sbc/time_manipulation/ether_lotto.sol#33-57) sends eth to arbitrary user
+	Dangerous calls:
+	- bank.transfer(FEE_AMOUNT) (datasets/sbc/time_manipulation/ether_lotto.sol#49)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+EtherLotto.play() (datasets/sbc/time_manipulation/ether_lotto.sol#33-57) uses a weak PRNG: "random = uint256(sha3()(block.timestamp)) % 2 (datasets/sbc/time_manipulation/ether_lotto.sol#43)" 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#weak-PRNG
+
+EtherLotto.play() (datasets/sbc/time_manipulation/ether_lotto.sol#33-57) uses a dangerous strict equality:
+	- random == 0 (datasets/sbc/time_manipulation/ether_lotto.sol#46)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+EtherLotto.play() (datasets/sbc/time_manipulation/ether_lotto.sol#33-57) uses timestamp for comparisons
+	Dangerous comparisons:
+	- random == 0 (datasets/sbc/time_manipulation/ether_lotto.sol#46)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Deprecated standard detected random = uint256(sha3()(block.timestamp)) % 2 (datasets/sbc/time_manipulation/ether_lotto.sol#43):
+	- Usage of "sha3()" should be replaced with "keccak256()"
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#deprecated-standards
+
+Version constraint ^0.4.15 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ExpExponentCleanup
+	- NestedArrayFunctionCallDecoder
+	- ZeroFunctionSelector.
+It is used by:
+	- ^0.4.15 (datasets/sbc/time_manipulation/ether_lotto.sol#8)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Reentrancy in EtherLotto.play() (datasets/sbc/time_manipulation/ether_lotto.sol#33-57):
+	External calls:
+	- bank.transfer(FEE_AMOUNT) (datasets/sbc/time_manipulation/ether_lotto.sol#49)
+	- msg.sender.transfer(pot - FEE_AMOUNT) (datasets/sbc/time_manipulation/ether_lotto.sol#52)
+	State variables written after the call(s):
+	- pot = 0 (datasets/sbc/time_manipulation/ether_lotto.sol#55)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4
+/work/datasets/sbc/time_manipulation/ether_lotto.sol analyzed (1 contracts with 93 detectors), 8 result(s) found

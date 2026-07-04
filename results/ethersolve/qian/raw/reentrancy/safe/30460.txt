@@ -1,0 +1,4 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/qian/reentrancy/safe/30460.sol:BullTokenRefundVault
+offset,opcode,detection
+271,271: SLOAD,Store read after unsafe call

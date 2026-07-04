@@ -1,0 +1,83 @@
+==== External Call To User-Supplied Address ====
+SWC ID: 107
+Severity: Low
+Contract: Reentrancy_safe
+Function name: withdrawReward()
+PC address: 489
+Estimated Gas Usage: 7237 - 62181
+A call to a user-supplied address is executed.
+An external message call to an address specified by the caller is executed. Note that the callee account might contain arbitrary code and could re-enter any function within this contract. Reentering the contract in an intermediate state may lead to unexpected behaviour. Make sure that no state modifications are executed after this call and/or reentrancy guards are in place.
+--------------------
+In file: reentrancysafe.sol:16
+
+msg.sender.call{value:          
+            amountToWithdraw}("")
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x0, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , decoded_data: , value: 0x0
+Caller: [SOMEGUY], function: depositReward(address), txdata: 0x6ffa4dc1000000000000000000000000deadbeefdeadbeefdeadbeefdeadbeefdeadbeef, decoded_data: ('0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef',), value: 0x1
+Caller: [ATTACKER], function: withdrawReward(), txdata: 0xc885bc58, value: 0x0
+
+==== Transaction Order Dependence ====
+SWC ID: 114
+Severity: Medium
+Contract: Reentrancy_safe
+Function name: withdrawReward()
+PC address: 489
+Estimated Gas Usage: 7237 - 62181
+The value of the call is dependent on balance or storage write
+This can lead to race conditions. An attacker may be able to run a transaction after our transaction which can change the value of the call
+--------------------
+In file: reentrancysafe.sol:16
+
+msg.sender.call{value:          
+            amountToWithdraw}("")
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x0, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , decoded_data: , value: 0x0
+Caller: [SOMEGUY], function: depositReward(address), txdata: 0x6ffa4dc1000000000000000000000000deadbeefdeadbeefdeadbeefdeadbeefdeadbeef, decoded_data: ('0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef',), value: 0x1
+Caller: [ATTACKER], function: withdrawReward(), txdata: 0xc885bc58, value: 0x0
+
+==== Unprotected Ether Withdrawal ====
+SWC ID: 105
+Severity: High
+Contract: Reentrancy_safe
+Function name: withdrawReward()
+PC address: 489
+Estimated Gas Usage: 7168 - 61829
+Any sender can withdraw Ether from the contract account.
+Arbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds.
+--------------------
+In file: reentrancysafe.sol:16
+
+msg.sender.call{value:          
+            amountToWithdraw}("")
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x100000, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x4013ffffffffffff, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , decoded_data: , value: 0x0
+Caller: [SOMEGUY], function: depositReward(address), txdata: 0x6ffa4dc1000000000000000000000000deadbeefdeadbeefdeadbeefdeadbeefdeadbeef, decoded_data: ('0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef',), value: 0x1
+Caller: [CREATOR], function: depositReward(address), txdata: 0x6ffa4dc10000000000000000000000000000000000008000800800000000000000000040, decoded_data: ('0x0000000000008000800800000000000000000040',), value: 0x1
+Caller: [ATTACKER], function: withdrawReward(), txdata: 0xc885bc58, value: 0x0
+
+

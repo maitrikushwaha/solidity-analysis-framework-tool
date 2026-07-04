@@ -1,0 +1,53 @@
+
+'solc --version' running
+'solc /work/datasets/qian/timestamp/vulnerable/16407.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/timestamp/vulnerable' running
+Compilation warnings/errors on /work/datasets/qian/timestamp/vulnerable/16407.sol:
+/work/datasets/qian/timestamp/vulnerable/16407.sol:12:32: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        uint _switch = uint136(keccak256(_seed, block.coinbase, block.timestamp)) % 5;
+                               ^-----------------------------------------------^
+
+
+ChibiFighters.traits(uint16[13],uint256,uint256) (datasets/qian/timestamp/vulnerable/16407.sol#11-17) uses a weak PRNG: "_switch = uint136(keccak256()(_seed,block.coinbase,block.timestamp)) % 5 (datasets/qian/timestamp/vulnerable/16407.sol#12)" 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#weak-PRNG
+
+ChibiFighters.chibies (datasets/qian/timestamp/vulnerable/16407.sol#9) is never initialized. It is used in:
+	- ChibiFighters.traits(uint16[13],uint256,uint256) (datasets/qian/timestamp/vulnerable/16407.sol#11-17)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+ChibiFighters.traits(uint16[13],uint256,uint256) (datasets/qian/timestamp/vulnerable/16407.sol#11-17) uses a dangerous strict equality:
+	- _switch == 0 (datasets/qian/timestamp/vulnerable/16407.sol#13)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+ChibiFighters.traits(uint16[13],uint256,uint256) (datasets/qian/timestamp/vulnerable/16407.sol#11-17) uses timestamp for comparisons
+	Dangerous comparisons:
+	- _switch == 0 (datasets/qian/timestamp/vulnerable/16407.sol#13)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+ChibiFighters.traits(uint16[13],uint256,uint256) (datasets/qian/timestamp/vulnerable/16407.sol#11-17) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/timestamp/vulnerable/16407.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Parameter ChibiFighters.traits(uint16[13],uint256,uint256)._seed (datasets/qian/timestamp/vulnerable/16407.sol#11) is not in mixedCase
+Parameter ChibiFighters.traits(uint16[13],uint256,uint256)._fatherId (datasets/qian/timestamp/vulnerable/16407.sol#11) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+/work/datasets/qian/timestamp/vulnerable/16407.sol analyzed (1 contracts with 93 detectors), 9 result(s) found

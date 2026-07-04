@@ -1,0 +1,5 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/qian/reentrancy/vulnerable/24161.sol:FREE_FOR_FUN
+offset,opcode,detection
+360,360: SLOAD,Store read after unsafe call
+448,448: SSTORE,Store write after unsafe call

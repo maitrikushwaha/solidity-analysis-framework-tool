@@ -1,0 +1,112 @@
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Analysis started at: 2026-06-21 07:04:49 PM
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Callgraph generation started!
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Callgraph generation finished!
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Value Range Analysis started
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Generating return summary for getBalance
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Return summary generated for getBalance
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | State variable assignement do not exist
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Processed function getBalance
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Generating return summary for addToBalance
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Return summary generated for addToBalance
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Range graph generated
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Processed function addToBalance
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Generating return summary for withdrawBalance
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Return summary generated for withdrawBalance
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Range graph generated
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Processed function withdrawBalance
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Value Range Analysis took 0.002622 seconds
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Value Range Analysis finished
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:04:49 PM | analyzer.reentrancy_simple | Dependency detection started!
+[INFO] | 2026-06-21 07:04:50 PM | analyzer.reentrancy_simple | DAO dependency detected in file reentrancy_simple.sol in contract Reentrance in by composing functions withdrawBalance and withdrawBalance
+[INFO] | 2026-06-21 07:04:50 PM | analyzer.reentrancy_simple | TOD dependency detected in file reentrancy_simple.sol in contract Reentrance in by composing functions withdrawBalance and addToBalance
+[INFO] | 2026-06-21 07:04:50 PM | analyzer.reentrancy_simple | TOD dependency detected in file reentrancy_simple.sol in contract Reentrance in by composing functions withdrawBalance and withdrawBalance
+[INFO] | 2026-06-21 07:04:50 PM | analyzer.reentrancy_simple | Dependency detection finished!
+[INFO] | 2026-06-21 07:04:50 PM | analyzer.reentrancy_simple | Static Analysis took 0.208736 seconds
+[INFO] | 2026-06-21 07:04:50 PM | analyzer.reentrancy_simple | Dependency exists
+[INFO] | 2026-06-21 07:04:50 PM | analyzer.reentrancy_simple | Invoking symbolic executor!
+[36m[#] Analysing started: reentrancy_simple.sol[0m
+[36m[#] Interprocedural CFG generation started for getBalance[0m
+[36m[#] Interprocedural CFG generated for getBalance[0m
+[36m[#] Interprocedural CFG generation started for addToBalance[0m
+[36m[#] Interprocedural CFG generated for addToBalance[0m
+[36m[#] Interprocedural CFG generation started for withdrawBalance[0m
+[36m[#] Interprocedural CFG generated for withdrawBalance[0m
+[36m[#] SDG generation started for getBalance[0m
+[36m[#] SDG generated for getBalance[0m
+[36m[#] SDG generation started for addToBalance[0m
+[36m[#] SDG generated for addToBalance[0m
+[36m[#] SDG generation started for withdrawBalance[0m
+[36m[#] SDG generated for withdrawBalance[0m
+[INFO] | 2026-06-21 07:04:52 PM | analyzer.reentrancy_simple | Symbolic execution took 2.133860 seconds
+[INFO] | 2026-06-21 07:04:52 PM | analyzer.reentrancy_simple | Symbolic execution finished!
+[INFO] | 2026-06-21 07:04:52 PM | analyzer.reentrancy_simple | Analysis finished!
+[INFO] | 2026-06-21 07:04:52 PM | analyzer.reentrancy_simple | Analysis took 2.344322 seconds
+[INFO] | 2026-06-21 07:04:52 PM | analyzer.reentrancy_simple | Analysis finished at: 2026-06-21 07:04:52 PM
+[36m[#] Analysis took 2.344322 seconds[0m
+[36m[#] Analysis completed: reentrancy_simple.sol [0m
+
+=== dependency_info.json ===
+{
+    "reentrancy_simple.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawBalance",
+                "withdrawBalance"
+            ],
+            "from_function": "withdrawBalance",
+            "to_function": "withdrawBalance",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: withdrawBalance\nNode: \nIF ! (msg.sender.call.value(userBalance[msg.sender])())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:REF_4 \"",
+                        "\"BlockID: 7\nFunction: withdrawBalance\nNode: \nEXPRESSION userBalance[msg.sender] = 0\nIRS: \nREF_5 := 0\""
+                    ],
+                    "state_variable": "userBalance"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawBalance",
+                "addToBalance"
+            ],
+            "First_function": "addToBalance",
+            "Second_function": "withdrawBalance",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 3\nFunction: addToBalance\nNode: \nEXPRESSION userBalance[msg.sender] += msg.value\nIRS: \nREF_1 = REF_1 + msg.value\"",
+                        "\"BlockID: 5\nFunction: withdrawBalance\nNode: \nIF ! (msg.sender.call.value(userBalance[msg.sender])())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:REF_4 \""
+                    ],
+                    "state_variable": "userBalance"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawBalance",
+                "withdrawBalance"
+            ],
+            "First_function": "withdrawBalance",
+            "Second_function": "withdrawBalance",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 15\nFunction: withdrawBalance\nNode: \nEXPRESSION userBalance[msg.sender] = 0\nIRS: \nREF_5 := 0\"",
+                        "\"BlockID: 5\nFunction: withdrawBalance\nNode: \nIF ! (msg.sender.call.value(userBalance[msg.sender])())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:REF_4 \""
+                    ],
+                    "state_variable": "userBalance"
+                }
+            ]
+        }
+    ]
+}

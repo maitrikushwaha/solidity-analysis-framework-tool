@@ -1,0 +1,50 @@
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Analysis started at: 2026-06-21 06:57:27 PM
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Callgraph generation started!
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Callgraph generation finished!
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Value Range Analysis started
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Generating return summary for set
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Return summary generated for set
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Range graph generated
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Processed function set
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Generating return summary for get
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Return summary generated for get
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | State variable assignement do not exist
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Processed function get
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Generating return summary for withdraw
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Return summary generated for withdraw
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | State variable assignement do not exist
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Processed function withdraw
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Value Range Analysis took 0.001252 seconds
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Value Range Analysis finished
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Dependency detection started!
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Dependency detection finished!
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Static Analysis took 0.062755 seconds
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Dependency does not exist
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Symbolic execution is not needed!
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Analysis finished!
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Analysis took 0.062972 seconds
+[INFO] | 2026-06-21 06:57:27 PM | analyzer.mapping_write | Analysis finished at: 2026-06-21 06:57:27 PM
+[36m[#] Analysing started: mapping_write.sol[0m
+[36m[#] Interprocedural CFG generation started for set[0m
+[36m[#] Interprocedural CFG generated for set[0m
+[36m[#] Interprocedural CFG generation started for get[0m
+[36m[#] Interprocedural CFG generated for get[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] SDG generation started for set[0m
+[36m[#] SDG generated for set[0m
+[36m[#] SDG generation started for get[0m
+[36m[#] SDG generated for get[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[36m[#] Analysis took 0.062972 seconds[0m
+[36m[#] Analysis completed: mapping_write.sol [0m
+
+=== dependency_info.json ===
+{}

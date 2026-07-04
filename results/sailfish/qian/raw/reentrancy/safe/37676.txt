@@ -1,0 +1,34 @@
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Analysis started at: 2026-06-21 07:12:02 PM
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Generating return summary for send
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Return summary generated for send
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Processed function send
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Value Range Analysis took 0.000290 seconds
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Static Analysis took 0.044111 seconds
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Dependency does not exist
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Analysis finished!
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Analysis took 0.044346 seconds
+[INFO] | 2026-06-21 07:12:02 PM | analyzer.37676  | Analysis finished at: 2026-06-21 07:12:02 PM
+[36m[#] Analysing started: 37676.sol[0m
+[36m[#] Interprocedural CFG generation started for send[0m
+[36m[#] Interprocedural CFG generated for send[0m
+[36m[#] SDG generation started for send[0m
+[36m[#] SDG generated for send[0m
+[36m[#] Analysis took 0.044346 seconds[0m
+[36m[#] Analysis completed: 37676.sol [0m
+
+=== dependency_info.json ===
+{}

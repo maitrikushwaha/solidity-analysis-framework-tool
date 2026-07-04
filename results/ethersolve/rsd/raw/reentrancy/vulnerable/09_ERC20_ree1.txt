@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract datasets/rsd/reentrancy/vulnerable/09_ERC20_ree1.sol:MiniToken
+offset,opcode,detection

@@ -1,0 +1,25 @@
+{
+ "evm_code_coverage": "89.5",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "39248.sol:19:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    _proposalID = 0\n    proposals[_proposalID] = 1"
+  ],
+  "integer_overflow": [
+   "39248.sol:6:5: Warning: Integer Overflow.\n",
+   "39248.sol:16:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _transactionBytecode = 115792089237316195423570985008687907853269984665640564039457584007913129639932",
+   "39248.sol:17:22: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    proposals[_proposalID] = 73299361704175640233819768636839491027482852634548353979321839784933018922431\n    _proposalID = 66039160219397864884282574707139656127115026062204637500735389164634825555977",
+   "39248.sol:18:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    proposals[_proposalID] = 102416780475840342398320159365885853644600904410913805847634761052238604758463\n    _proposalID = 37262384040386122786786671173031432929428139339905504400457998139727737782281",
+   "39248.sol:19:39: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    proposals[_proposalID] = 102416780475840342398320350927828461880708199204292199636282713394628877708735\n    _proposalID = 37262384040386122786786760967692030540103433774301626488886725800223178227721",
+   "39248.sol:6:29: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    proposals[_proposalID] = 1\n    _proposalID = 0"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "39248.sol:19:14: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

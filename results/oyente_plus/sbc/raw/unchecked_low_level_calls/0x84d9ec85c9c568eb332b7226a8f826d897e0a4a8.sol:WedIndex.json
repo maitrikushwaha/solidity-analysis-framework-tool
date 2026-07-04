@@ -1,0 +1,23 @@
+{
+ "evm_code_coverage": "22.2",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8.sol:62:1: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    indexarray.push(IndexArray(now, wedaddress, partnernames, weddingdate, displaymultisig)) = 57899623183627922922245335441831084483997875451635426345024227663722472223489"
+  ],
+  "integer_overflow": [
+   "0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8.sol:87:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    wedaddress = 115792089237316195423570985008687907853269984665640564039457584007913129639932",
+   "0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8.sol:88:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    indexarray.push(IndexArray(now, wedaddress, partnernames, weddingdate, displaymultisig)) = 115792089237316195423570985008687907853269984665640564039457584007913129639935",
+   "0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8.sol:62:1: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    indexarray.push(IndexArray(now, wedaddress, partnernames, weddingdate, displaymultisig)) = 85504499824761051622889744089067220524026177792521801812420309694458588307137",
+   "0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8.sol:88:25: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    indexarray.push(IndexArray(now, wedaddress, partnernames, weddingdate, displaymultisig)) = 57899606626176636149434004744619917244981914857969597818890864171350812031049"
+  ],
+  "callstack": [
+   "0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8.sol:2:1: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

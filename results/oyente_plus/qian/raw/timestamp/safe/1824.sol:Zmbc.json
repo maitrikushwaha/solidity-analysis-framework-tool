@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "84.2",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "1824.sol:15:16: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    PRICE_CHANGE_ENDING_TIME = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    owner = 0\n    newSellPrice = 1\n    newBuyPrice = 0"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

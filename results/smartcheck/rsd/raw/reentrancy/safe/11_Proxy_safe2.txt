@@ -1,0 +1,22 @@
+/work/datasets/rsd/reentrancy/safe/11_Proxy_safe2.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlline 5:71 extraneous input 'callData' expecting {',', ')'}
+line 6:38 no viable alternative at input '.call{'
+line 6:38 missing ';' at '{'
+line 9:40 no viable alternative at input '.call{'
+line 9:40 missing ';' at '{'
+ruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 4
+column: 0
+content: contractProxy{functionforward(addressmsgSender,addresstarget,bytescalldatacallData)externalpayable{(boolsuccess,)=target.call<missing ';'>{value:msg.value}(callData);uint256ethBalance=address(this).balance;if(ethBalance!=0){(success,)=msgSender.call<missing ';'>{value:ethBalance}("");}require(success,"eth refund failed");}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 2
+column: 16
+content: ^
+
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_LOCKED_MONEY :1

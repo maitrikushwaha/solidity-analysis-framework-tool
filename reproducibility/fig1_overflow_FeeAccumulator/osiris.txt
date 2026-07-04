@@ -1,0 +1,27 @@
+# Osiris (official Docker image smartbugs/osiris:d1ecc37, bundled solc 0.4.21).
+# The Figure-1 FeeAccumulator is declared ^0.8.0, which Osiris's toolchain cannot
+# compile; the pragma was back-ported to ^0.4.21 (the only version the image
+# supports) so Osiris can actually analyze it. At 0.4.21 the iterated `fee = fee*3`
+# is an unchecked silent wraparound, yet Osiris reaches 99.5% code coverage and
+# still reports NO overflow -> its loop handling under-approximates the iterated
+# multiplication. Genuine miss (false negative), not a compile failure.
+# Command: docker run --rm -v <dir>:/work --entrypoint python2 \
+#          smartbugs/osiris:d1ecc37 /root/osiris/osiris.py -s /work/overflow.sol
+
+INFO:root:Contract /work/overflow.sol:FeeAccumulator:
+INFO:symExec:Running, please wait...
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM code coverage: 	 99.5%
+INFO:symExec:	  Arithmetic bugs: 	 False
+INFO:symExec:	  └> Overflow bugs: 	 False
+INFO:symExec:	  └> Underflow bugs: 	 False
+INFO:symExec:	  └> Division bugs: 	 False
+INFO:symExec:	  └> Modulo bugs:   	 False
+INFO:symExec:	  └> Truncation bugs: 	 False
+INFO:symExec:	  └> Signedness bugs: 	 False
+INFO:symExec:	  Callstack bug: 	 False
+INFO:symExec:	  Concurrency bug: 	 False
+INFO:symExec:	  Time dependency bug: 	 False
+INFO:symExec:	  Reentrancy bug: 	 False
+INFO:symExec:	 --- 0.824522018433 seconds ---
+INFO:symExec:	====== Analysis Completed ======

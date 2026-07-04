@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "85.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "18510.sol:18:3: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[_contract] = 0\n    wingsETHRewards = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    owner = 274877906944\n    _amount = 57896044618658097711785492504343953926634992332820282019728792003956564819969"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "18510.sol:17:11: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

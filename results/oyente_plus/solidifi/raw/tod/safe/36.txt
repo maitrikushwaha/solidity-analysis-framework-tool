@@ -1,0 +1,68 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 36.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.kpSMitfOdD' running
+INFO:root:contract 36.sol:MindsyncPlatform:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 8.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:36.sol:127:5: Warning: Integer Underflow.
+
+INFO:symExec:36.sol:127:5: Warning: Integer Overflow.
+
+INFO:symExec:36.sol:375:32: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 36.sol:MindsyncPlatform.json.
+INFO:root:contract 36.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 36.sol:SafeMath.json.
+INFO:root:contract 36.sol:owned:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 79.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 36.sol:owned.json.
+INFO:root:contract 36.sol:tokenRecipient:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:36.sol:33:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _extraData = 61
+INFO:symExec:36.sol:33:14: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _extraData = 645953541
+36.sol:5:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _extraData = 41
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 36.sol:tokenRecipient.json.

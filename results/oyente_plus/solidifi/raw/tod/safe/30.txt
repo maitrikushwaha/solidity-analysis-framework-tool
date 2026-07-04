@@ -1,0 +1,43 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 30.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.ukgDl3osBu' running
+INFO:root:contract 30.sol:Address:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 30.sol:Address.json.
+INFO:root:contract 30.sol:ERC777:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 2.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:30.sol:368:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    return _defaultOperatorsArray = 0
+INFO:symExec:30.sol:369:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    return _defaultOperatorsArray = 3618502788666131106986593281521497120414687020801267626233049500247285301247
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 30.sol:ERC777.json.
+INFO:root:contract 30.sol:Roles:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+timeout: the monitored command dumped core

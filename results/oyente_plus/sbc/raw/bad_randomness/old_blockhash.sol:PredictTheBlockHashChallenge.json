@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "86.5",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "old_blockhash.sol:38:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    guesses[msg.sender].block = 0",
+   "old_blockhash.sol:28:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    guesses[msg.sender].block = 0",
+   "old_blockhash.sol:29:38: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    guesses[msg.sender].block = 0"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

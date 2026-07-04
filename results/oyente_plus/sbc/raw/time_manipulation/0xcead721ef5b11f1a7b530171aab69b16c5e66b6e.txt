@@ -1,0 +1,53 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.8OrA6KyoRY' running
+INFO:CryticCompile:Compilation warnings/errors on 0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:
+0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:56:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function WALLET(address log) public{
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:Log:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 53.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:62:1: Warning: Integer Underflow.
+
+0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:83:9: Warning: Integer Underflow.
+
+INFO:symExec:0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:76:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:62:1: Warning: Integer Overflow.
+
+0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:2:21: Warning: Integer Overflow.
+
+0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:83:9: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:Log.json.
+INFO:root:contract 0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:WALLET:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 91.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:50:5: Warning: Integer Overflow.
+
+INFO:symExec:0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:26:9: Warning: Timestamp Dependency.
+
+INFO:symExec:0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:29:16: Warning: Re-Entrancy Vulnerability.
+
+0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:32:17: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol:WALLET.json.

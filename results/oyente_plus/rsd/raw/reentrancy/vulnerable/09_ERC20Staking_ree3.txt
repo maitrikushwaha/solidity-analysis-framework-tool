@@ -1,0 +1,63 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 09_ERC20Staking_ree3.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.ghuH3QJhle' running
+INFO:root:contract 09_ERC20Staking_ree3.sol:StakableToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 94.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:09_ERC20Staking_ree3.sol:21:5: Warning: Integer Underflow.
+
+09_ERC20Staking_ree3.sol:16:5: Warning: Integer Underflow.
+
+09_ERC20Staking_ree3.sol:49:3673: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stakedAmounts[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    stakedAmounts[msg.sender] = 0
+09_ERC20Staking_ree3.sol:44:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stakedAmounts[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    stakedAmounts[msg.sender] = 61572006390280932505766902755780819567365690625440071682017727939567941582848
+09_ERC20Staking_ree3.sol:49:4656: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stakedAmounts[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    stakedAmounts[msg.sender] = 64341972029829007678922533841946462774237236484534829175973337194318870348032
+09_ERC20Staking_ree3.sol:49:5702: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stakedAmounts[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    stakedAmounts[msg.sender] = 87473953082898758390866908000330908882764535798188384756221999516157015679240
+09_ERC20Staking_ree3.sol:46:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stakedAmounts[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    stakedAmounts[msg.sender] = 59761835132544149160060991438596090208141146903650931304088472680795112698020
+09_ERC20Staking_ree3.sol:49:3174: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stakedAmounts[msg.sender] = 0
+09_ERC20Staking_ree3.sol:41:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    stakedAmounts[msg.sender] = 0
+09_ERC20Staking_ree3.sol:40:9: Warning: Integer Underflow.
+
+09_ERC20Staking_ree3.sol:33:14: Warning: Integer Underflow.
+
+09_ERC20Staking_ree3.sol:49:7122: Warning: Integer Underflow.
+
+09_ERC20Staking_ree3.sol:35:9: Warning: Integer Underflow.
+
+09_ERC20Staking_ree3.sol:31:9: Warning: Integer Underflow.
+
+09_ERC20Staking_ree3.sol:17:5: Warning: Integer Underflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 09_ERC20Staking_ree3.sol:StakableToken.json.

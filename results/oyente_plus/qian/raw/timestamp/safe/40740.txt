@@ -1,0 +1,28 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40740.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.CgIJLg9zLg' running
+INFO:CryticCompile:Compilation warnings/errors on 40740.sol:
+40740.sol:8:22: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function consult(address tokenIn, uint amountIn, address tokenOut) external view returns (uint amountOut) {
+                     ^-------------^
+40740.sol:8:39: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function consult(address tokenIn, uint amountIn, address tokenOut) external view returns (uint amountOut) {
+                                      ^-----------^
+40740.sol:8:54: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function consult(address tokenIn, uint amountIn, address tokenOut) external view returns (uint amountOut) {
+                                                     ^--------------^
+40740.sol:8:95: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function consult(address tokenIn, uint amountIn, address tokenOut) external view returns (uint amountOut) {
+                                                                                              ^------------^
+
+INFO:root:contract 40740.sol:ExampleSlidingWindowOracle:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 84.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40740.sol:ExampleSlidingWindowOracle.json.

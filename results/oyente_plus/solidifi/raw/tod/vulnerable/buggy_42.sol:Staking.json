@@ -1,0 +1,27 @@
+{
+ "evm_code_coverage": "90.4",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "buggy_42.sol:128:17: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    basePercent = 68820518075025548677223189278000137157012861069810447013096073957490527567920\n    stakeTokens = 94366936655129477867324343950453612132322410904198684833602337355817424913509",
+   "buggy_42.sol:392:41: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 57926108848165113019422609331428205578374442479346051603186861506713461194754\n    staker[msg.sender].redeem = 0\n    staker[msg.sender].time = 66037786321519690524477256826039471754545751096316515560153037599254834577409",
+   "buggy_42.sol:392:68: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 57926108848165113019422609331428205578374442479346051603186861506713461194754\n    staker[msg.sender].redeem = 0\n    staker[msg.sender].time = 66037786321519690524477256826039471754545751096316515560153037599254834577409",
+   "buggy_42.sol:393:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 57926108848165113019422609331428205578374442479346051603186861506713461194754\n    staker[msg.sender].redeem = 0\n    staker[msg.sender].time = 66037786321519690524477256826039471754545751096316515560153037599254834577409",
+   "buggy_42.sol:394:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 57926108848165113019422609331428205578374442479346051603186861506713461194754\n    staker[msg.sender].redeem = 65536\n    staker[msg.sender].time = 66037786321519690524477256826039471754545751096316515560153037599254834577409"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "buggy_42.sol:23:9: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "buggy_42.sol:102:9: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

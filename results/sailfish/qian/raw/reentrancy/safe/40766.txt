@@ -1,0 +1,42 @@
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Analysis started at: 2026-06-21 07:13:15 PM
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Processed function onlyOwner
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Generating return summary for genericTransfer
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Return summary generated for genericTransfer
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Processed function genericTransfer
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Value Range Analysis took 0.000288 seconds
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Static Analysis took 0.032468 seconds
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Dependency does not exist
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Analysis finished!
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Analysis took 0.032584 seconds
+[INFO] | 2026-06-21 07:13:15 PM | analyzer.40766  | Analysis finished at: 2026-06-21 07:13:15 PM
+[36m[#] Analysing started: 40766.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for genericTransfer[0m
+[36m[#] Interprocedural CFG generated for genericTransfer[0m
+[36m[#] SDG generation started for genericTransfer[0m
+[36m[#] SDG generated for genericTransfer[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.032584 seconds[0m
+[36m[#] Analysis completed: 40766.sol [0m
+
+=== dependency_info.json ===
+{}

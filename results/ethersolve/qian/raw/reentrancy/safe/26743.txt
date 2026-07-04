@@ -1,0 +1,5 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/qian/reentrancy/safe/26743.sol:TokenBank
+offset,opcode,detection
+603,603: SLOAD,Store read after unsafe call
+610,610: SSTORE,Store write after unsafe call

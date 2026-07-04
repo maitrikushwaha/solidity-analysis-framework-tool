@@ -1,0 +1,86 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc lucky_doubler.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.Ezosae4ayi' running
+INFO:CryticCompile:Compilation warnings/errors on lucky_doubler.sol:
+lucky_doubler.sol:33:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function LuckyDoubler() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+lucky_doubler.sol:142:41: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (multi < 110 || multi > 150) throw;
+                                        ^---^
+lucky_doubler.sol:149:13: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+            throw;
+            ^---^
+lucky_doubler.sol:95:9: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+        Entry theEntry = entries[unpaidEntries[index]];
+        ^------------^
+lucky_doubler.sol:60:14: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+             msg.sender.send(msg.value);
+             ^------------------------^
+lucky_doubler.sol:74:10: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+        	msg.sender.send(msg.value - 1 ether);
+        	^----------------------------------^
+lucky_doubler.sol:102:13: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+            theEntry.entryAddress.send(payout);
+            ^--------------------------------^
+lucky_doubler.sol:116:21: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+        uint fees = this.balance - balance;
+                    ^----------^
+lucky_doubler.sol:119:17: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+                owner.send(fees);
+                ^--------------^
+lucky_doubler.sol:33:5: Warning: No visibility specified. Defaulting to "public". 
+    function LuckyDoubler() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+lucky_doubler.sol:53:5: Warning: No visibility specified. Defaulting to "public". 
+    function() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+lucky_doubler.sol:130:35: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        uint256 hashVal = uint256(block.blockhash(lastBlockNumber));
+                                  ^-------------^
+lucky_doubler.sol:137:5: Warning: No visibility specified. Defaulting to "public". 
+    function changeOwner(address newOwner) onlyowner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+lucky_doubler.sol:141:5: Warning: No visibility specified. Defaulting to "public". 
+    function changeMultiplier(uint multi) onlyowner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+lucky_doubler.sol:147:5: Warning: No visibility specified. Defaulting to "public". 
+    function changeFee(uint newFee) onlyowner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+lucky_doubler.sol:155:5: Warning: No visibility specified. Defaulting to "public". 
+    function multiplierFactor() constant returns (uint factor, string info) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+lucky_doubler.sol:160:5: Warning: No visibility specified. Defaulting to "public". 
+    function currentFee() constant returns (uint feePercentage, string info) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+lucky_doubler.sol:165:5: Warning: No visibility specified. Defaulting to "public". 
+    function totalEntries() constant returns (uint count, string info) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+lucky_doubler.sol:170:5: Warning: No visibility specified. Defaulting to "public". 
+    function userStats(address user) constant returns (uint deposits, uint payouts, string info)
+    ^ (Relevant source part starts here and spans across multiple lines).
+lucky_doubler.sol:180:5: Warning: No visibility specified. Defaulting to "public". 
+    function entryDetails(uint index) constant returns (address user, uint payout, bool paid, string info)
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract lucky_doubler.sol:LuckyDoubler:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 28.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:lucky_doubler.sol:170:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    users[user].id = 0
+INFO:symExec:lucky_doubler.sol:74:10: Warning: Callstack Depth Attack Vulnerability.
+
+lucky_doubler.sol:102:13: Warning: Callstack Depth Attack Vulnerability.
+
+lucky_doubler.sol:119:17: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to lucky_doubler.sol:LuckyDoubler.json.

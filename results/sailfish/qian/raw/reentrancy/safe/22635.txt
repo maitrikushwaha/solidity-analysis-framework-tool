@@ -1,0 +1,84 @@
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Analysis started at: 2026-06-21 07:10:46 PM
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Callgraph generation started!
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Value Range Analysis started
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Generating return summary for playerWithdrawPendingTransactions
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Return summary generated for playerWithdrawPendingTransactions
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Range graph generated
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Processed function playerWithdrawPendingTransactions
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Value Range Analysis took 0.000566 seconds
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Dependency detection started!
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | DAO dependency detected in file 22635.sol in contract LuckyETH in by composing functions playerWithdrawPendingTransactions and playerWithdrawPendingTransactions
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | TOD dependency detected in file 22635.sol in contract LuckyETH in by composing functions playerWithdrawPendingTransactions and playerWithdrawPendingTransactions
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Dependency detection finished!
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Static Analysis took 0.093267 seconds
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Dependency exists
+[INFO] | 2026-06-21 07:10:46 PM | analyzer.22635  | Invoking symbolic executor!
+[36m[#] Analysing started: 22635.sol[0m
+[36m[#] Interprocedural CFG generation started for playerWithdrawPendingTransactions[0m
+[36m[#] Interprocedural CFG generated for playerWithdrawPendingTransactions[0m
+[36m[#] SDG generation started for playerWithdrawPendingTransactions[0m
+[36m[#] SDG generated for playerWithdrawPendingTransactions[0m
+[INFO] | 2026-06-21 07:10:47 PM | analyzer.22635  | Symbolic execution took 1.290529 seconds
+[INFO] | 2026-06-21 07:10:47 PM | analyzer.22635  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:10:47 PM | analyzer.22635  | Analysis finished!
+[INFO] | 2026-06-21 07:10:47 PM | analyzer.22635  | Analysis took 1.384494 seconds
+[INFO] | 2026-06-21 07:10:47 PM | analyzer.22635  | Analysis finished at: 2026-06-21 07:10:47 PM
+[36m[#] Analysis took 1.384494 seconds[0m
+[36m[#] Analysis completed: 22635.sol [0m
+
+=== dependency_info.json ===
+{
+    "22635.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "playerWithdrawPendingTransactions",
+                "playerWithdrawPendingTransactions"
+            ],
+            "from_function": "playerWithdrawPendingTransactions",
+            "to_function": "playerWithdrawPendingTransactions",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: playerWithdrawPendingTransactions\nNode: \nIF msg.sender.call.value(withdrawAmount)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:withdrawAmount \"",
+                        "\"BlockID: 5\nFunction: playerWithdrawPendingTransactions\nNode: \nEXPRESSION playerPendingWithdrawals[msg.sender] = withdrawAmount\nIRS: \nREF_4 := withdrawAmount\""
+                    ],
+                    "state_variable": "playerPendingWithdrawals"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "playerWithdrawPendingTransactions",
+                "playerWithdrawPendingTransactions"
+            ],
+            "First_function": "playerWithdrawPendingTransactions",
+            "Second_function": "playerWithdrawPendingTransactions",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: playerWithdrawPendingTransactions\nNode: \nEXPRESSION playerPendingWithdrawals[msg.sender] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 3\nFunction: playerWithdrawPendingTransactions\nNode: \nIF msg.sender.call.value(withdrawAmount)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:withdrawAmount \""
+                    ],
+                    "state_variable": "playerPendingWithdrawals"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 15\nFunction: playerWithdrawPendingTransactions\nNode: \nEXPRESSION playerPendingWithdrawals[msg.sender] = withdrawAmount\nIRS: \nREF_4 := withdrawAmount\"",
+                        "\"BlockID: 3\nFunction: playerWithdrawPendingTransactions\nNode: \nIF msg.sender.call.value(withdrawAmount)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:withdrawAmount \""
+                    ],
+                    "state_variable": "playerPendingWithdrawals"
+                }
+            ]
+        }
+    ]
+}

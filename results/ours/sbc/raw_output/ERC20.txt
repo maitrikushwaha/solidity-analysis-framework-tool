@@ -1,0 +1,43 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+[CFG] No reentrancy back-edge: no external-call encoding detected.
+Dependency analysis completed in 0.0328s.
+[DOMAIN] Reentrancy encoding detected → Box + Octagon + Polka
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] Only gas-limited calls (transfer/send) detected — reentrancy infeasible.
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW ==========
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+
+========== PIPELINE 3: TIMESTAMP DEPENDENCY ==========
+
+========== PIPELINE 4: TOD ==========
+
+===== VERDICTS (Box) =====
+[NO REENTRANCY] Contract uses only gas-limited external calls (transfer/send); reentrancy infeasible.
+[TOD] ERC-20 approve() sets the allowance to an absolute value; a spender can front-run an allowance change to spend both the old and the new amount (approve/transferFrom race, SWC-114).
+
+===== VERDICTS (Octagon) =====
+[NO REENTRANCY] Contract uses only gas-limited external calls (transfer/send); reentrancy infeasible.
+[TOD] ERC-20 approve() sets the allowance to an absolute value; a spender can front-run an allowance change to spend both the old and the new amount (approve/transferFrom race, SWC-114).
+
+===== VERDICTS (Polka) =====
+[NO REENTRANCY] Contract uses only gas-limited external calls (transfer/send); reentrancy infeasible.
+[TOD] ERC-20 approve() sets the allowance to an absolute value; a spender can front-run an allowance change to spend both the old and the new amount (approve/transferFrom race, SWC-114).
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: NOT VULNERABLE
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: NOT VULNERABLE
+[SUMMARY] TOD: VULNERABLE
+
+Total analysis time: 1.56s
+
+Error: cfg.png: syntax error in line 201 near 'ment_24'

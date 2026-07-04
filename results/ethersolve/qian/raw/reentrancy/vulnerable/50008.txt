@@ -1,0 +1,5 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/qian/reentrancy/vulnerable/50008.sol:DividendToken
+offset,opcode,detection
+339,339: SSTORE,Store write after unsafe call
+343,343: SLOAD,Store read after unsafe call

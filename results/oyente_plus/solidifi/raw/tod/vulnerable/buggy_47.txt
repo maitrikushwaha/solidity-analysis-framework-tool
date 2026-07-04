@@ -1,0 +1,46 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc buggy_47.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.lctM3IF4DS' running
+INFO:root:contract buggy_47.sol:AcunarIEO:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 7.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:buggy_47.sol:122:3: Warning: Integer Underflow.
+
+INFO:symExec:buggy_47.sol:122:3: Warning: Integer Overflow.
+
+INFO:symExec:Flow1
+buggy_47.sol:742:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_47.sol:359:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:buggy_47.sol:696:15: Warning: Timestamp Dependency.
+
+buggy_47.sol:698:18: Warning: Timestamp Dependency.
+
+buggy_47.sol:698:15: Warning: Timestamp Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_47.sol:AcunarIEO.json.
+INFO:root:contract buggy_47.sol:AcunarToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 9.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:buggy_47.sol:122:3: Warning: Integer Underflow.
+
+INFO:symExec:buggy_47.sol:122:3: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_47.sol:AcunarToken.json.

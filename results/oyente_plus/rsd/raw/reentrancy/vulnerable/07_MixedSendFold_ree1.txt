@@ -1,0 +1,43 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 07_MixedSendFold_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.heckJytCgJ' running
+INFO:root:contract 07_MixedSendFold_ree1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 76.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:07_MixedSendFold_ree1.sol:5:5: Warning: Integer Underflow.
+
+07_MixedSendFold_ree1.sol:24:1900: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+07_MixedSendFold_ree1.sol:13:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+INFO:symExec:07_MixedSendFold_ree1.sol:24:824: Warning: Integer Overflow.
+
+07_MixedSendFold_ree1.sol:8:29: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 115763816233406567075546736401802595435599796037184492007382491964549489491969
+    balances[msg.sender] = 34359738368
+INFO:symExec:07_MixedSendFold_ree1.sol:14:25: Warning: Callstack Depth Attack Vulnerability.
+
+07_MixedSendFold_ree1.sol:8:29: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:Flow1
+07_MixedSendFold_ree1.sol:14:25: Warning: Transaction-Ordering Dependency.
+
+Flow2
+07_MixedSendFold_ree1.sol:14:25: Warning: Transaction-Ordering Dependency.
+
+07_MixedSendFold_ree1.sol:8:29: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 07_MixedSendFold_ree1.sol:C.json.

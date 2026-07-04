@@ -1,0 +1,42 @@
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Analysis started at: 2026-06-21 07:12:37 PM
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Processed function onlyOwner
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Generating return summary for buy
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Return summary generated for buy
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Range graph generated
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Processed function buy
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Value Range Analysis took 0.000560 seconds
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Static Analysis took 0.040018 seconds
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Dependency does not exist
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Analysis finished!
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Analysis took 0.040127 seconds
+[INFO] | 2026-06-21 07:12:37 PM | analyzer.39867  | Analysis finished at: 2026-06-21 07:12:37 PM
+[36m[#] Analysing started: 39867.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for buy[0m
+[36m[#] Interprocedural CFG generated for buy[0m
+[36m[#] SDG generation started for buy[0m
+[36m[#] SDG generated for buy[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.040127 seconds[0m
+[36m[#] Analysis completed: 39867.sol [0m
+
+=== dependency_info.json ===
+{}

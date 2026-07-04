@@ -1,0 +1,35 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/unchecked_low_level_calls/king_of_the_ether_throne.sol:KingOfTheEtherThrone
+offset,opcode,detection
+1042,1042: SLOAD,Store read after unsafe call
+1194,1194: SLOAD,Store read after unsafe call
+1261,1261: SLOAD,Store read after unsafe call
+1498,1498: SSTORE,Store write after unsafe call
+1510,1510: SLOAD,Store read after unsafe call
+1637,1637: SLOAD,Store read after unsafe call
+1690,1690: SSTORE,Store write after unsafe call
+1740,1740: SSTORE,Store write after unsafe call
+1750,1750: SLOAD,Store read after unsafe call
+1784,1784: SSTORE,Store write after unsafe call
+1837,1837: SSTORE,Store write after unsafe call
+1892,1892: SSTORE,Store write after unsafe call
+1947,1947: SSTORE,Store write after unsafe call
+2005,2005: SSTORE,Store write after unsafe call
+2063,2063: SSTORE,Store write after unsafe call
+2122,2122: SSTORE,Store write after unsafe call
+2134,2134: SSTORE,Store write after unsafe call
+2320,2320: SLOAD,Store read after unsafe call
+2357,2357: SLOAD,Store read after unsafe call
+2387,2387: SLOAD,Store read after unsafe call
+2529,2529: SLOAD,Store read after unsafe call
+3251,3251: SLOAD,Store read after unsafe call
+3298,3298: SLOAD,Store read after unsafe call
+3300,3300: SSTORE,Store write after unsafe call
+3313,3313: SSTORE,Store write after unsafe call
+3348,3348: SLOAD,Store read after unsafe call
+3350,3350: SSTORE,Store write after unsafe call
+3386,3386: SLOAD,Store read after unsafe call
+3443,3443: SSTORE,Store write after unsafe call
+3456,3456: SSTORE,Store write after unsafe call
+3478,3478: SSTORE,Store write after unsafe call
+3532,3532: SSTORE,Store write after unsafe call

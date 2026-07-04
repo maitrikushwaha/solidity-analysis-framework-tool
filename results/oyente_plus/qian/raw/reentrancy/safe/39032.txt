@@ -1,0 +1,32 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39032.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.16jUyXBtUk' running
+INFO:CryticCompile:Compilation warnings/errors on 39032.sol:
+39032.sol:7:10: Warning: Return value of low-level calls not used.
+         _to.call.value(_value)(_data);
+         ^---------------------------^
+39032.sol:6:5: Warning: No visibility specified. Defaulting to "public". 
+    function advSend(address _to, uint _value, bytes _data){
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 39032.sol:SmartexInvoice:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 83.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:39032.sol:7:10: Warning: Integer Underflow.
+
+INFO:symExec:39032.sol:6:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+39032.sol:6:17: Warning: Integer Overflow.
+
+INFO:symExec:39032.sol:7:10: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39032.sol:SmartexInvoice.json.

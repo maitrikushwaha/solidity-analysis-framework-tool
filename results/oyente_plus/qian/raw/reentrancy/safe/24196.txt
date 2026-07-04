@@ -1,0 +1,32 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 24196.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.zF28SMzuTK' running
+INFO:CryticCompile:Compilation warnings/errors on 24196.sol:
+24196.sol:7:9: Warning: Return value of low-level calls not used.
+        _dst.call.value(_value)(_data);
+        ^----------------------------^
+24196.sol:6:5: Warning: No visibility specified. Defaulting to "public". 
+    function execute(address _dst, uint _value, bytes _data) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 24196.sol:Owned:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 83.3%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:24196.sol:7:9: Warning: Integer Underflow.
+
+INFO:symExec:24196.sol:6:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+24196.sol:6:27: Warning: Integer Overflow.
+
+INFO:symExec:24196.sol:7:9: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 24196.sol:Owned.json.

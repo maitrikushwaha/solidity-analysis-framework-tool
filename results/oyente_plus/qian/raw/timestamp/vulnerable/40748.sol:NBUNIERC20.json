@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "71.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "40748.sol:8:17: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    contractStartTimestamp = 115792089237316195423570985008687907853269984665640564039457584007913129034880"
+  ],
+  "integer_overflow": [
+   "40748.sol:8:17: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    contractStartTimestamp = 115792089237316195423570985008687907853269984665640564039457584007913129544832"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

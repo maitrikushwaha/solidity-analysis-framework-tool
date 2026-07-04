@@ -1,0 +1,49 @@
+
+'solc --version' running
+'solc /work/datasets/qian/reentrancy/safe/27603.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/reentrancy/safe' running
+Compilation warnings/errors on /work/datasets/qian/reentrancy/safe/27603.sol:
+/work/datasets/qian/reentrancy/safe/27603.sol:10:9: Warning: Return value of low-level calls not used.
+        adr.call.value(msg.value)(data);
+        ^-----------------------------^
+
+
+Freebie.Command(address,bytes) (datasets/qian/reentrancy/safe/27603.sol#8-11) ignores return value by adr.call.value(msg.value)(data) (datasets/qian/reentrancy/safe/27603.sol#10)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-low-level-calls
+
+Freebie.Command(address,bytes).adr (datasets/qian/reentrancy/safe/27603.sol#8) lacks a zero-check on :
+		- adr.call.value(msg.value)(data) (datasets/qian/reentrancy/safe/27603.sol#10)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/reentrancy/safe/27603.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in Freebie.Command(address,bytes) (datasets/qian/reentrancy/safe/27603.sol#8-11):
+	- adr.call.value(msg.value)(data) (datasets/qian/reentrancy/safe/27603.sol#10)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Function Freebie.Command(address,bytes) (datasets/qian/reentrancy/safe/27603.sol#8-11) is not in mixedCase
+Variable Freebie.Owner (datasets/qian/reentrancy/safe/27603.sol#6) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Command(address,bytes) should be declared external:
+	- Freebie.Command(address,bytes) (datasets/qian/reentrancy/safe/27603.sol#8-11)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external
+/work/datasets/qian/reentrancy/safe/27603.sol analyzed (1 contracts with 93 detectors), 8 result(s) found

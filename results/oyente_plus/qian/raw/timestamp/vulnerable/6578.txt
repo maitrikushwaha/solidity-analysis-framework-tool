@@ -1,0 +1,38 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 6578.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.o6HEJc2iol' running
+INFO:CryticCompile:Compilation warnings/errors on 6578.sol:
+6578.sol:14:7: Warning: Function declared as view, but this expression (potentially) modifies the state and thus requires non-payable (the default) or payable.
+      currentCap = crowdsaleUserCaps[i];
+      ^--------^
+
+INFO:root:contract 6578.sol:CryptualProjectToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:6578.sol:9:27: Warning: Integer Underflow.
+
+INFO:symExec:6578.sol:5:3: Warning: Integer Overflow.
+
+6578.sol:4:3: Warning: Integer Overflow.
+
+6578.sol:12:25: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    crowdsaleMinElapsedTimeLevels[i] = 2277024613052236146311351163421692716606396516800209703140117262690336899041
+    crowdsaleUserCaps.length = 64
+    crowdsaleMinElapsedTimeLevels[i] = 17592186044416
+6578.sol:14:20: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    crowdsaleMinElapsedTimeLevels[i] = 4975999340959380698933744549285742270123648324671652943399579811745
+    crowdsaleUserCaps.length = 5846006549323611672814739330865132078623730171904
+    crowdsaleMinElapsedTimeLevels[i] = 6682186653046610868769283428513908408048745296601910183007929499553
+    crowdsaleMinElapsedTimeLevels[i] = 5070602400912917605986812821504
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 6578.sol:CryptualProjectToken.json.

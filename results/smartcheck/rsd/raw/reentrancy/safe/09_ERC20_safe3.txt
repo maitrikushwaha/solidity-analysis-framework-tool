@@ -1,0 +1,150 @@
+/work/datasets/rsd/reentrancy/safe/09_ERC20_safe3.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlline 34:61 extraneous input 'recipients' expecting {',', ')'}
+line 34:71 mismatched input ',' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 34:87 mismatched input ')' expecting {';', '='}
+line 34:111 mismatched input '{' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 36:15 extraneous input '(' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 36:24 mismatched input '[' expecting {';', '='}
+line 36:35 mismatched input ']' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 36:45 mismatched input ',' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 38:18 missing ')' at 'i'
+line 38:27 extraneous input '<' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 38:39 mismatched input '.' expecting {';', '='}
+line 38:46 extraneous input ';' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 38:49 mismatched input '++' expecting {';', '='}
+line 39:18 extraneous input '(' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 39:24 mismatched input ')' expecting {';', '='}
+line 39:34 extraneous input '(' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 39:45 mismatched input '[' expecting {';', '='}
+line 39:47 mismatched input ']' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 39:56 mismatched input ')' expecting {'solidity', 'experimental', 'from', 'constructor', 'block', 'coinbase', 'difficulty', 'gaslimit', 'number', 'timestamp', 'blockhash', 'msg', 'data', 'gas', 'sender', 'sig', 'value', 'now', 'this', 'tx', 'origin', 'gasprice', 'public', 'internal', 'external', 'private', 'constant', 'length', 'balance', 'emit', '_', 'revert', Identifier}
+line 42:8 extraneous input 'return' expecting {<EOF>, 'pragma', 'import', 'contract', 'library', 'interface'}
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 2
+column: 16
+content: ^
+
+ruleId: SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+patternId: 5616b2
+severity: 1
+line: 21
+column: 32
+content: private
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: 910067
+severity: 1
+line: 23
+column: 4
+content: constructor(){totalSupply=1000*10**uint256(decimals);balances[msg.sender]=totalSupply;}
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: 910067
+severity: 1
+line: 34
+column: 4
+content: functionbatchTransfer(addresstoken,address[]calldata<missing ')'>
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 34
+column: 61
+content: recipients,
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 34
+column: 73
+content: uint256amount)publicreturns
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 34
+column: 104
+content: (bool){
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 35
+column: 8
+content: uint256total=amount*recipients.length;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 36
+column: 8
+content: require(balances[
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 36
+column: 25
+content: msg.sender]>=
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 36
+column: 40
+content: total,"Not enough tokens for batch");for
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 38
+column: 12
+content: (uint<missing ')'>i=0;
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 38
+column: 25
+content: i<recipients.
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 38
+column: 40
+content: length;i++){
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 39
+column: 12
+content: IERC20(token).
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 39
+column: 26
+content: transfer(recipients[
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 39
+column: 46
+content: i],
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 39
+column: 50
+content: amount);
+
+SOLIDITY_VISIBILITY :16
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA :1

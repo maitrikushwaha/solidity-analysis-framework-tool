@@ -1,0 +1,100 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+Transformed CFG build failed: An error occurred during execution
+> command: `/home/maitri/.solcx/solc-v0.4.26 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc -`
+> return code: `1`
+> stdout:
+
+> stderr:
+<stdin>:110:9: Warning: This declaration shadows an existing declaration.
+        uint amount = msg.value;
+        ^---------^
+<stdin>:40:5: The shadowed declaration is here:
+    uint amount = 80;  // from struct Bet
+    ^--------------^
+
+<stdin>:111:9: Warning: This declaration shadows an existing declaration.
+        address player = msg.sender;
+        ^------------^
+<stdin>:43:1: The shadowed declaration is here:
+address player = address(0);  // from struct Bet
+^-------------------------^
+
+<stdin>:147:9: Warning: This declaration shadows an existing declaration.
+        uint256 blockNumber = blockNumber;
+        ^-----------------^
+<stdin>:41:1: The shadowed declaration is here:
+uint256 blockNumber = 80;  // from struct Bet
+^----------------------^
+
+<stdin>:194:31: Warning: This declaration shadows an existing declaration.
+    function withdrawDonation(uint amount)
+                              ^---------^
+<stdin>:40:5: The shadowed declaration is here:
+    uint amount = 80;  // from struct Bet
+    ^--------------^
+
+<stdin>:306:42: Warning: This declaration shadows an existing declaration.
+    function sendFunds(address paidUser, uint amount) private returns (bool){
+                                         ^---------^
+<stdin>:40:5: The shadowed declaration is here:
+    uint amount = 80;  // from struct Bet
+    ^--------------^
+
+<stdin>:324:24: Warning: This declaration shadows an existing declaration.
+    function loseWager(address player, uint amount, uint ticketID, bool maskRes, uint jackpotRes) 
+                       ^------------^
+<stdin>:43:1: The shadowed declaration is here:
+address player = address(0);  // from struct Bet
+^-------------------------^
+
+<stdin>:324:40: Warning: This declaration shadows an existing declaration.
+    function loseWager(address player, uint amount, uint ticketID, bool maskRes, uint jackpotRes) 
+                                       ^---------^
+<stdin>:40:5: The shadowed declaration is here:
+    uint amount = 80;  // from struct Bet
+    ^--------------^
+
+<stdin>:279:16: Error: Undeclared identifier.
+if (BAL > 0 && bets >= ethToTransfer) {
+               ^--^
+<stdin>:293:16: Error: Undeclared identifier.
+if (BAL > 0 && bets >= ethToTransfer) {
+               ^--^
+<stdin>:308:16: Error: Undeclared identifier.
+if (BAL > 0 && bets >= amount) {
+               ^--^
+Falling back: skipping reentrancy/timestamp/TOD analysis, running overflow only.
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW (fallback) ==========
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+
+===== VERDICTS (Box) =====
+[REENTRANCY] State update after external call in function 'wager'. The .call{value:} forwards unlimited gas, allowing re-entry before state is updated.
+[OVERFLOW] Variable totalAmountToWhale (uint256) at ExpressionStatement_20: arithmetic op '+=' with external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935.
+[UNDERFLOW] Variable lockedInBets (uint256) at ExpressionStatement_32: arithmetic op '-=' with external input can fall below type min 0.
+[OVERFLOW] Variable jackpotSize (uint256) in wager(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable devFeeSize (uint256) in wager(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable lockedInBets (uint256) in wager(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable donate_amount (uint) in wager(): unguarded '*' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable totalAmountToWhale (uint256) in wager(): unguarded '+' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable tossWinAmount (uint) in play(): unguarded '*' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[UNDERFLOW] Variable lockedInBets (uint256) in play(): unguarded '-' over external input can underflow below 0 (augmented data-flow Algorithm 3).
+[UNDERFLOW] Variable (return value) (uint256) in getCollateralBalance(): unguarded '-' over external input can underflow below 0 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable tossWinAmount (uint) in sendRefund(): unguarded '*' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[UNDERFLOW] Variable lockedInBets (uint256) in sendRefund(): unguarded '-' over external input can underflow below 0 (augmented data-flow Algorithm 3).
+[TIMESTAMP-SKIP] Transformed CFG unavailable.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: VULNERABLE
+[SUMMARY] Integer Overflow: VULNERABLE
+[SUMMARY] Integer Underflow: VULNERABLE
+[SUMMARY] Timestamp Dependency: ANALYSIS UNAVAILABLE (transformed CFG failed)
+[SUMMARY] TOD: NOT VULNERABLE
+
+NOTE: Some pipelines were SKIPPED because the mapping transformer could not process this contract.  These vulnerabilities are recorded as -1 (N/A) in the JSON verdict — they are excluded from TP/TN/FP/FN counts rather than counted as negatives.
+
+Total analysis time: 2.24s

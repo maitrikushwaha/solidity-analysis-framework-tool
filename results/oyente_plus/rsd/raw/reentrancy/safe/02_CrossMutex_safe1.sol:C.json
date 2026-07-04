@@ -1,0 +1,32 @@
+{
+ "evm_code_coverage": "86.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "02_CrossMutex_safe1.sol:6:5: Warning: Integer Underflow.\n",
+   "02_CrossMutex_safe1.sol:34:6298: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 59849323381205851970197521066982367775278984893830421173511412372910683283456\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    balances[msg.sender] = 0",
+   "02_CrossMutex_safe1.sol:16:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 1181807773022607638672",
+   "02_CrossMutex_safe1.sol:34:3773: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0\n    flag = 7067388259113537318333190002971674658804158870118793145558045785533186176",
+   "02_CrossMutex_safe1.sol:9:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 1538801880274196904278829683956364213340365020500649406238390487649776985781",
+   "02_CrossMutex_safe1.sol:30:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 323519360005807677536004181044235568083645733070486869773243348152968"
+  ],
+  "integer_overflow": [
+   "02_CrossMutex_safe1.sol:34:651: Warning: Integer Overflow.\n",
+   "02_CrossMutex_safe1.sol:20:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 7846377169285177886636121947190512029393579097719941693448\n    balances[msg.sender] = 0",
+   "02_CrossMutex_safe1.sol:10:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 61641815609959046815012382683965839396392877803068371574039038450890730312768",
+   "02_CrossMutex_safe1.sol:34:3719: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 7067388259113537318333190002971674658804158870118793145558045785533186176",
+   "02_CrossMutex_safe1.sol:34:2000: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 245612633450004199301412558125959353723449202897737057859540448562259165312",
+   "02_CrossMutex_safe1.sol:34:3506: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 1871453203435964970028596347714360236514114013233152"
+  ],
+  "callstack": [
+   "02_CrossMutex_safe1.sol:21:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "02_CrossMutex_safe1.sol:21:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

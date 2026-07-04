@@ -1,0 +1,17 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/access_control/rubixi.sol:Rubixi
+offset,opcode,detection
+1687,1687: SLOAD,Store read after unsafe call
+1694,1694: SSTORE,Store write after unsafe call
+1993,1993: SLOAD,Store read after unsafe call
+2027,2027: SSTORE,Store write after unsafe call
+2551,2551: SLOAD,Store read after unsafe call
+2658,2658: SLOAD,Store read after unsafe call
+2665,2665: SSTORE,Store write after unsafe call
+3232,3232: SLOAD,Store read after unsafe call
+3263,3263: SLOAD,Store read after unsafe call
+3276,3276: SLOAD,Store read after unsafe call
+3313,3313: SLOAD,Store read after unsafe call
+3433,3433: SLOAD,Store read after unsafe call
+3484,3484: SLOAD,Store read after unsafe call
+3491,3491: SSTORE,Store write after unsafe call

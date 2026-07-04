@@ -1,0 +1,32 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0x524960d55174d912768678d8c606b4d50b79d7b1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.FTH4hElABq' running
+INFO:CryticCompile:Compilation warnings/errors on 0x524960d55174d912768678d8c606b4d50b79d7b1.sol:
+0x524960d55174d912768678d8c606b4d50b79d7b1.sol:13:22: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'.
+		contract_address = 0x96a65609a7b84e8842732deb08f56c3e21ac6f8a;
+		                   ^----------------------------------------^
+0x524960d55174d912768678d8c606b4d50b79d7b1.sol:19:8: Warning: This looks like an address but has an invalid checksum. If this is not used as an address, please prepend '00'.
+		c2 = 0xaa27f8c1160886aacba64b2319d8d5469ef2af79;	
+		     ^----------------------------------------^
+0x524960d55174d912768678d8c606b4d50b79d7b1.sol:21:3: Warning: Return value of low-level calls not used.
+		contract_address.call("register", "CentraToken");
+		^----------------------------------------------^
+0x524960d55174d912768678d8c606b4d50b79d7b1.sol:14:3: Warning: Unused local variable
+		address c1;		
+		^--------^
+
+INFO:root:contract 0x524960d55174d912768678d8c606b4d50b79d7b1.sol:Centra4:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 80.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0x524960d55174d912768678d8c606b4d50b79d7b1.sol:21:3: Warning: Integer Underflow.
+
+0x524960d55174d912768678d8c606b4d50b79d7b1.sol:22:7: Warning: Integer Underflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0x524960d55174d912768678d8c606b4d50b79d7b1.sol:Centra4.json.

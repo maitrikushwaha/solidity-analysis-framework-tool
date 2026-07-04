@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "90.4",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "timelock.sol:22:10: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    _secondsToIncrease = 87194594481619713617005574410151974613687047497059911510403235881186950989132\n    lockTime[msg.sender] = 33193963800062260167131905160642323078876853943177837133934905924843627437396",
+   "timelock.sol:16:10: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 59202652398254964910148551457668506474813224403644667012030723591572179811522",
+   "timelock.sol:17:33: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [
+   "timelock.sol:27:10: Warning: Timestamp Dependency.\n"
+  ],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

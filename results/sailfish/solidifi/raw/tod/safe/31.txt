@@ -1,0 +1,194 @@
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Analysis started at: 2026-06-21 07:16:02 PM
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Callgraph generation started!
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Callgraph generation finished!
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Value Range Analysis started
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for transferFrom
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for transferFrom
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function transferFrom
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for signer
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for signer
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function signer
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for recover
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for recover
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function recover
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Range graph generated
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for owner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for owner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function owner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for isOwner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for isOwner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function isOwner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for _transferOwnership
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for _transferOwnership
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Range graph generated
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function _transferOwnership
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function onlyOwner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Range graph generated
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Range graph generated
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Range graph generated
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for owner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for owner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function owner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for isOwner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for isOwner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function isOwner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for _transferOwnership
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for _transferOwnership
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Range graph generated
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function _transferOwnership
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Range graph generated
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function constructor
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function onlyOwner
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for nonReentrant
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for nonReentrant
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Range graph generated
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function nonReentrant
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for execute
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for execute
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Range graph generated
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function execute
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for transferOwnership
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for transferOwnership
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Range graph generated
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function transferOwnership
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for transferOwnership
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for transferOwnership
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Range graph generated
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function transferOwnership
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Generating return summary for setRelayer
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Return summary generated for setRelayer
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Range graph generated
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Processed function setRelayer
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Value Range Analysis took 0.002661 seconds
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Value Range Analysis finished
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Dependency detection started!
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | DAO dependency detected in file 31.sol in contract FeeTransactionManager in by composing functions execute and execute
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Dependency detection finished!
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Static Analysis took 0.133492 seconds
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Dependency exists
+[INFO] | 2026-06-21 07:16:02 PM | analyzer.31     | Invoking symbolic executor!
+[36m[#] Analysing started: 31.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier nonReentrant[0m
+[36m[#] Interprocedural CFG generated for modifer nonReentrant[0m
+[36m[#] Interprocedural CFG generation started for modifier nonReentrant[0m
+[36m[#] Interprocedural CFG generated for modifer nonReentrant[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for transferFrom[0m
+[36m[#] Interprocedural CFG generated for transferFrom[0m
+[36m[#] Interprocedural CFG generation started for signer[0m
+[36m[#] Interprocedural CFG generated for signer[0m
+[36m[#] Interprocedural CFG generation started for owner[0m
+[36m[#] Interprocedural CFG generated for owner[0m
+[36m[#] Interprocedural CFG generation started for isOwner[0m
+[36m[#] Interprocedural CFG generated for isOwner[0m
+[36m[#] Interprocedural CFG generation started for transferOwnership[0m
+[36m[#] Interprocedural CFG generated for transferOwnership[0m
+[36m[#] Interprocedural CFG generation started for owner[0m
+[36m[#] Interprocedural CFG generated for owner[0m
+[36m[#] Interprocedural CFG generation started for isOwner[0m
+[36m[#] Interprocedural CFG generated for isOwner[0m
+[36m[#] Interprocedural CFG generation started for transferOwnership[0m
+[36m[#] Interprocedural CFG generated for transferOwnership[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for execute[0m
+[36m[#] Interprocedural CFG generated for execute[0m
+[36m[#] Interprocedural CFG generation started for setRelayer[0m
+[36m[#] Interprocedural CFG generated for setRelayer[0m
+[36m[#] SDG generation started for transferFrom[0m
+[36m[#] SDG generated for transferFrom[0m
+[36m[#] SDG generation started for signer[0m
+[36m[#] SDG generated for signer[0m
+[36m[#] SDG generation started for owner[0m
+[36m[#] SDG generated for owner[0m
+[36m[#] SDG generation started for isOwner[0m
+[36m[#] SDG generated for isOwner[0m
+[36m[#] SDG generation started for transferOwnership[0m
+[36m[#] SDG generated for transferOwnership[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for modifier nonReentrant[0m
+[36m[#] SDG generated for modifier nonReentrant[0m
+[36m[#] SDG generation started for owner[0m
+[36m[#] SDG generated for owner[0m
+[36m[#] SDG generation started for isOwner[0m
+[36m[#] SDG generated for isOwner[0m
+[36m[#] SDG generation started for transferOwnership[0m
+[36m[#] SDG generated for transferOwnership[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for execute[0m
+[36m[#] SDG generated for execute[0m
+[36m[#] SDG generation started for setRelayer[0m
+[36m[#] SDG generated for setRelayer[0m
+[36m[#] SDG generation started for modifier nonReentrant[0m
+[36m[#] SDG generated for modifier nonReentrant[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[INFO] | 2026-06-21 07:16:03 PM | analyzer.31     | Symbolic execution took 0.527689 seconds
+[INFO] | 2026-06-21 07:16:03 PM | analyzer.31     | Symbolic execution finished!
+[INFO] | 2026-06-21 07:16:03 PM | analyzer.31     | Analysis finished!
+[INFO] | 2026-06-21 07:16:03 PM | analyzer.31     | Analysis took 0.661658 seconds
+[INFO] | 2026-06-21 07:16:03 PM | analyzer.31     | Analysis finished at: 2026-06-21 07:16:03 PM
+[36m[#] Analysis took 0.661658 seconds[0m
+[36m[#] Analysis completed: 31.sol [0m
+
+=== dependency_info.json ===
+{
+    "31.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "execute",
+                "execute"
+            ],
+            "from_function": "execute",
+            "to_function": "execute",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 61\nFunction: nonReentrant\nNode: \nEXPRESSION _guardCounter += 1\nIRS: \n_guardCounter = _guardCounter + 1\"",
+                        "\"BlockID: 33\nFunction: nonReentrant\nNode: \nEXPRESSION require(bool,string)(localCounter == _guardCounter,ReentrancyGuard: reentrant call)\nIRS: \nTMP_57 = SOLIDITY_CALL require(bool,string)(TMP_56,ReentrancyGuard: reentrant call)\""
+                    ],
+                    "state_variable": "_guardCounter"
+                }
+            ]
+        }
+    ]
+}

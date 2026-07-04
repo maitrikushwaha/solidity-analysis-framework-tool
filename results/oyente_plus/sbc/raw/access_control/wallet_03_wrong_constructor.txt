@@ -1,0 +1,29 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc wallet_03_wrong_constructor.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.F5qnMmodrq' running
+INFO:CryticCompile:Compilation warnings/errors on wallet_03_wrong_constructor.sol:
+wallet_03_wrong_constructor.sol:38:22: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+         to.transfer(this.balance);
+                     ^----------^
+
+INFO:root:contract wallet_03_wrong_constructor.sol:Wallet:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 87.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:wallet_03_wrong_constructor.sol:24:17: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 74790760600218216274646178999492455314055749625653410169397113036168647484436
+INFO:symExec:Flow1
+wallet_03_wrong_constructor.sol:30:10: Warning: Transaction-Ordering Dependency.
+
+Flow2
+wallet_03_wrong_constructor.sol:38:10: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to wallet_03_wrong_constructor.sol:Wallet.json.

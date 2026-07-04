@@ -1,0 +1,58 @@
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Analysis started at: 2026-06-21 07:10:31 PM
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Callgraph generation started!
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Callgraph generation finished!
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Value Range Analysis started
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Generating return summary for withdrawBalance
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Return summary generated for withdrawBalance
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Range graph generated
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Processed function withdrawBalance
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Value Range Analysis took 0.000330 seconds
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Value Range Analysis finished
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Dependency detection started!
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | TOD dependency detected in file mishandled.sol in contract SendBack in by composing functions withdrawBalance and withdrawBalance
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Dependency detection finished!
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Static Analysis took 0.055116 seconds
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Dependency exists
+[INFO] | 2026-06-21 07:10:31 PM | analyzer.mishandled | Invoking symbolic executor!
+[36m[#] Analysing started: mishandled.sol[0m
+[36m[#] Interprocedural CFG generation started for withdrawBalance[0m
+[36m[#] Interprocedural CFG generated for withdrawBalance[0m
+[36m[#] SDG generation started for withdrawBalance[0m
+[36m[#] SDG generated for withdrawBalance[0m
+[INFO] | 2026-06-21 07:10:32 PM | analyzer.mishandled | Symbolic execution took 0.656850 seconds
+[INFO] | 2026-06-21 07:10:32 PM | analyzer.mishandled | Symbolic execution finished!
+[INFO] | 2026-06-21 07:10:32 PM | analyzer.mishandled | Analysis finished!
+[INFO] | 2026-06-21 07:10:32 PM | analyzer.mishandled | Analysis took 0.712618 seconds
+[INFO] | 2026-06-21 07:10:32 PM | analyzer.mishandled | Analysis finished at: 2026-06-21 07:10:32 PM
+[36m[#] Analysis took 0.712618 seconds[0m
+[36m[#] Analysis completed: mishandled.sol [0m
+
+=== dependency_info.json ===
+{
+    "mishandled.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawBalance",
+                "withdrawBalance"
+            ],
+            "First_function": "withdrawBalance",
+            "Second_function": "withdrawBalance",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: withdrawBalance\nNode: \nEXPRESSION userBalances[msg.sender] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 3\nFunction: withdrawBalance\nNode: \nEXPRESSION msg.sender.send(amountToWithdraw)\nIRS: \nTMP_0 = SEND dest:msg.sender value:amountToWithdraw\""
+                    ],
+                    "state_variable": "userBalances"
+                }
+            ]
+        }
+    ]
+}

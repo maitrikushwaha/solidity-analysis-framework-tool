@@ -1,0 +1,48 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 14_DelegateCall_ree3.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.bbvDPAMveZ' running
+INFO:root:contract 14_DelegateCall_ree3.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 85.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:14_DelegateCall_ree3.sol:6:5: Warning: Integer Underflow.
+
+14_DelegateCall_ree3.sol:24:47: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 0
+14_DelegateCall_ree3.sol:10:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 3502456450258187060726851905073320549855753291229270859546458325120
+14_DelegateCall_ree3.sol:5:5: Warning: Integer Underflow.
+
+INFO:symExec:14_DelegateCall_ree3.sol:28:860: Warning: Integer Overflow.
+
+14_DelegateCall_ree3.sol:24:47: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 675831872
+14_DelegateCall_ree3.sol:28:3284: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 649037107316853453566312041152512
+14_DelegateCall_ree3.sol:25:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 649037107316853453566312041152512
+14_DelegateCall_ree3.sol:24:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 223007451985306231415357182726483615059804160
+14_DelegateCall_ree3.sol:28:2895: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 230897441865756
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 14_DelegateCall_ree3.sol:C.json.

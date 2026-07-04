@@ -1,0 +1,163 @@
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Analysis started at: 2026-06-21 07:04:31 PM
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Callgraph generation started!
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Callgraph generation finished!
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Value Range Analysis started
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Generating return summary for withdrawReward
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Return summary generated for withdrawReward
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Range graph generated
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Processed function withdrawReward
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Generating return summary for getFirstWithdrawalBonus
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Return summary generated for getFirstWithdrawalBonus
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Range graph generated
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Processed function getFirstWithdrawalBonus
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Value Range Analysis took 0.001877 seconds
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Value Range Analysis finished
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Dependency detection started!
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | DAO dependency detected in file reentrancy_bonus.sol in contract Reentrancy_bonus in by composing functions getFirstWithdrawalBonus and getFirstWithdrawalBonus
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | TOD dependency detected in file reentrancy_bonus.sol in contract Reentrancy_bonus in by composing functions withdrawReward and withdrawReward
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | TOD dependency detected in file reentrancy_bonus.sol in contract Reentrancy_bonus in by composing functions withdrawReward and getFirstWithdrawalBonus
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | TOD dependency detected in file reentrancy_bonus.sol in contract Reentrancy_bonus in by composing functions getFirstWithdrawalBonus and withdrawReward
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | TOD dependency detected in file reentrancy_bonus.sol in contract Reentrancy_bonus in by composing functions getFirstWithdrawalBonus and getFirstWithdrawalBonus
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Dependency detection finished!
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Static Analysis took 0.435873 seconds
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Dependency exists
+[INFO] | 2026-06-21 07:04:31 PM | analyzer.reentrancy_bonus | Invoking symbolic executor!
+[36m[#] Analysing started: reentrancy_bonus.sol[0m
+[36m[#] Interprocedural CFG generation started for withdrawReward[0m
+[36m[#] Interprocedural CFG generated for withdrawReward[0m
+[36m[#] Interprocedural CFG generation started for getFirstWithdrawalBonus[0m
+[36m[#] Interprocedural CFG generated for getFirstWithdrawalBonus[0m
+[36m[#] SDG generation started for withdrawReward[0m
+[36m[#] SDG generated for withdrawReward[0m
+[36m[#] SDG generation started for getFirstWithdrawalBonus[0m
+[36m[#] SDG generated for getFirstWithdrawalBonus[0m
+[INFO] | 2026-06-21 07:04:35 PM | analyzer.reentrancy_bonus | Symbolic execution took 3.354790 seconds
+[INFO] | 2026-06-21 07:04:35 PM | analyzer.reentrancy_bonus | Symbolic execution finished!
+[INFO] | 2026-06-21 07:04:35 PM | analyzer.reentrancy_bonus | Analysis finished!
+[INFO] | 2026-06-21 07:04:35 PM | analyzer.reentrancy_bonus | Analysis took 3.791816 seconds
+[INFO] | 2026-06-21 07:04:35 PM | analyzer.reentrancy_bonus | Analysis finished at: 2026-06-21 07:04:35 PM
+[36m[#] Analysis took 3.791816 seconds[0m
+[36m[#] Analysis completed: reentrancy_bonus.sol [0m
+
+=== dependency_info.json ===
+{
+    "reentrancy_bonus.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "getFirstWithdrawalBonus",
+                "getFirstWithdrawalBonus"
+            ],
+            "from_function": "getFirstWithdrawalBonus",
+            "to_function": "getFirstWithdrawalBonus",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: getFirstWithdrawalBonus\nNode: \nEXPRESSION require(bool)(! claimedBonus[recipient])\nIRS: \nTMP_4 = SOLIDITY_CALL require(bool)(TMP_3)\"",
+                        "\"BlockID: 7\nFunction: getFirstWithdrawalBonus\nNode: \nEXPRESSION claimedBonus[recipient] = true\nIRS: \nREF_6 := true\""
+                    ],
+                    "state_variable": "claimedBonus"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawReward",
+                "withdrawReward"
+            ],
+            "First_function": "withdrawReward",
+            "Second_function": "withdrawReward",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: withdrawReward\nNode: \nEXPRESSION rewardsForA[recipient] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 3\nFunction: withdrawReward\nNode: \nEXPRESSION (success) = recipient.call.value(amountToWithdraw)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "rewardsForA"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawReward",
+                "getFirstWithdrawalBonus"
+            ],
+            "First_function": "getFirstWithdrawalBonus",
+            "Second_function": "withdrawReward",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: withdrawReward\nNode: \nEXPRESSION rewardsForA[recipient] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 3\nFunction: withdrawReward\nNode: \nEXPRESSION (success) = recipient.call.value(amountToWithdraw)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "rewardsForA"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 11\nFunction: getFirstWithdrawalBonus\nNode: \nEXPRESSION rewardsForA[recipient] += 100\nIRS: \nREF_5 = REF_5 + 100\"",
+                        "\"BlockID: 3\nFunction: withdrawReward\nNode: \nEXPRESSION (success) = recipient.call.value(amountToWithdraw)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "rewardsForA"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getFirstWithdrawalBonus",
+                "withdrawReward"
+            ],
+            "First_function": "withdrawReward",
+            "Second_function": "getFirstWithdrawalBonus",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 2\nFunction: withdrawReward\nNode: \nEXPRESSION rewardsForA[recipient] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 9\nFunction: withdrawReward\nNode: \nEXPRESSION (success) = recipient.call.value(amountToWithdraw)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "rewardsForA"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "getFirstWithdrawalBonus",
+                "getFirstWithdrawalBonus"
+            ],
+            "First_function": "getFirstWithdrawalBonus",
+            "Second_function": "getFirstWithdrawalBonus",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: getFirstWithdrawalBonus\nNode: \nEXPRESSION claimedBonus[recipient] = true\nIRS: \nREF_6 := true\"",
+                        "\"BlockID: 6\nFunction: getFirstWithdrawalBonus\nNode: \nEXPRESSION require(bool)(! claimedBonus[recipient])\nIRS: \nTMP_4 = SOLIDITY_CALL require(bool)(TMP_3)\""
+                    ],
+                    "state_variable": "claimedBonus"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: withdrawReward\nNode: \nEXPRESSION rewardsForA[recipient] = 0\nIRS: \nREF_1 := 0\"",
+                        "\"BlockID: 9\nFunction: withdrawReward\nNode: \nEXPRESSION (success) = recipient.call.value(amountToWithdraw)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "rewardsForA"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 33\nFunction: getFirstWithdrawalBonus\nNode: \nEXPRESSION rewardsForA[recipient] += 100\nIRS: \nREF_5 = REF_5 + 100\"",
+                        "\"BlockID: 9\nFunction: withdrawReward\nNode: \nEXPRESSION (success) = recipient.call.value(amountToWithdraw)()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:recipient, function:call, arguments:[''] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "rewardsForA"
+                }
+            ]
+        }
+    ]
+}

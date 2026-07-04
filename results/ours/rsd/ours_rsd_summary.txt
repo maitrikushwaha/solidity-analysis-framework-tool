@@ -1,0 +1,166 @@
+=================================================================
+OUR TOOL RSD — PER-VULNERABILITY RESULTS
+=================================================================
+Total files  : 138 unique contracts
+Analysis OK  : 136  |  Partial: 2  |  Timeout: 0  |  Error: 0  |  Skipped: 0
+Batch time   : 77s (1 min)
+=================================================================
+
+  REENTRANCY
+  -------------------------------------------------------
+  Ground truth : 66 positive + 72 negative
+  Evaluated    : 138  |  Excluded (N/A): 0
+  TP=66  FP=23  TN=49  FN=0  N/A=0
+  Precision : 74.2%  [TP/(TP+FP) = 66/89]
+  Recall    : 100.0%  [TP/(TP+FN) = 66/66]
+  F1        : 85.2%
+  Accuracy  : 83.3%  [(TP+TN)/evaluated = 115/138]
+  FP files (23):
+    - 00_BasicFold_safe1.sol
+    - 00_BasicFold_safe2.sol
+    - 01_SingleMutexFoldUnderflow_safe1.sol
+    - 01_SingleMutexFold_safe1.sol
+    - 01_SingleMutex_safe1.sol
+    - 02_CrossMutexUnderflow_safe1.sol
+    - 02_CrossMutex_safe1.sol
+    - 03_SingleModFoldUnderflow_safe1.sol
+    - 03_SingleModFold_safe1.sol
+    - 03_SingleModUnderflow_safe1.sol
+    - 03_SingleMod_safe1.sol
+    - 04_CrossModFoldUnderflow_safe1.sol
+    - 04_CrossModFold_safe1.sol
+    - 04_CrossMod_safe2.sol
+    - 04_CrossMod_safe3.sol
+    - 07_MixedSendFoldEmit_safe1.sol
+    - 07_MixedSendFold_safe1.sol
+    - 09_ERC20OnlyOnce_safe1.sol
+    - 09_ERC20StakingPullMod_safe1.sol
+    - 10_OnlyOnce_safe2.sol
+    - 12_OnlyOwner_safe1.sol
+    - 13_LoopCrossMod_safe1.sol
+    - 13_LoopCrossMutex_safe2.sol
+
+  OVERFLOW / UNDERFLOW
+  -------------------------------------------------------
+  Ground truth : 0 positive + 138 negative
+  Evaluated    : 138  |  Excluded (N/A): 0
+  TP=0  FP=21  TN=117  FN=0  N/A=0
+  Precision : 0.0%  [TP/(TP+FP) = 0/21]
+  Recall    : N/A  [TP/(TP+FN) = 0/0]
+  F1        : N/A
+  Accuracy  : 84.8%  [(TP+TN)/evaluated = 117/138]
+  FP files (21):
+    - 09_ERC20InheritMod_ree1.sol
+    - 09_ERC20InheritMod_ree2.sol
+    - 09_ERC20InheritMod_ree3.sol
+    - 09_ERC20InheritMod_safe1.sol
+    - 09_ERC20Inherit_ree1.sol
+    - 09_ERC20Inherit_safe1.sol
+    - 09_ERC20Mod_ree1.sol
+    - 09_ERC20Mod_ree2.sol
+    - 09_ERC20Mod_ree3.sol
+    - 09_ERC20Mod_safe1.sol
+    - 09_ERC20StakingPullMod_ree1.sol
+    - 09_ERC20StakingPullMod_ree2.sol
+    - 09_ERC20StakingPullMod_safe1.sol
+    - 09_ERC20StakingPull_ree1.sol
+    - 09_ERC20StakingPull_safe1.sol
+    - 09_ERC20StakingPull_safe2.sol
+    - 09_ERC20_ree2.sol
+    - 09_ERC20_safe1.sol
+    - 09_ERC20_safe2.sol
+    - 09_ERC20_safe3.sol
+    - 09_ERC20_safe4.sol
+
+  TIMESTAMP DEPENDENCE
+  -------------------------------------------------------
+  Ground truth : 0 positive + 138 negative
+  Evaluated    : 136  |  Excluded (N/A): 2
+  TP=0  FP=0  TN=136  FN=0  N/A=2
+  Precision : N/A  [TP/(TP+FP) = 0/0]
+  Recall    : N/A  [TP/(TP+FN) = 0/0]
+  F1        : N/A
+  Accuracy  : 100.0%  [(TP+TN)/evaluated = 136/136]
+  N/A files (2) — excluded (tool could not decide):
+    - 12_OnlyOwner_ree1.sol
+    - 12_OnlyOwner_safe1.sol
+
+  TOD (FRONT-RUNNING)
+  -------------------------------------------------------
+  Ground truth : 0 positive + 138 negative
+  Evaluated    : 138  |  Excluded (N/A): 0
+  TP=0  FP=48  TN=90  FN=0  N/A=0
+  Precision : 0.0%  [TP/(TP+FP) = 0/48]
+  Recall    : N/A  [TP/(TP+FN) = 0/0]
+  F1        : N/A
+  Accuracy  : 65.2%  [(TP+TN)/evaluated = 90/138]
+  FP files (48):
+    - 00_BasicCross_ree1.sol
+    - 00_BasicEmit_ree1.sol
+    - 00_BasicEmit_safe1.sol
+    - 01_SingleMutexFold_ree2.sol
+    - 01_SingleMutex_ree1.sol
+    - 01_SingleMutex_ree2.sol
+    - 01_SingleMutex_safe1.sol
+    - 01_SingleMutex_safe2.sol
+    - 02_CrossMutexUnchecked_ree1.sol
+    - 02_CrossMutexUnchecked_safe1.sol
+    - 02_CrossMutexUnderflow_ree1.sol
+    - 02_CrossMutex_ree1.sol
+    - 02_CrossMutex_ree2.sol
+    - 02_CrossMutex_safe1.sol
+    - 02_CrossMutex_safe2.sol
+    - 03_SingleModUnderflow_safe1.sol
+    - 03_SingleMod_ree1.sol
+    - 03_SingleMod_ree3.sol
+    - 03_SingleMod_safe1.sol
+    - 05_SendEmitUnchecked_safe1.sol
+    - 05_SendEmit_safe1.sol
+    - 09_ERC20InheritMod_ree1.sol
+    - 09_ERC20InheritMod_ree2.sol
+    - 09_ERC20InheritMod_ree3.sol
+    - 09_ERC20InheritMod_safe1.sol
+    - 09_ERC20Inherit_ree1.sol
+    - 09_ERC20Inherit_safe1.sol
+    - 09_ERC20StakingPullMod_ree1.sol
+    - 09_ERC20StakingPullMod_ree2.sol
+    - 09_ERC20StakingPullMod_safe1.sol
+    - 09_ERC20StakingPull_ree1.sol
+    - 09_ERC20StakingPull_safe1.sol
+    - 09_ERC20StakingPull_safe2.sol
+    - 09_ERC20Staking_ree2.sol
+    - 09_ERC20Staking_ree3.sol
+    - 09_ERC20Staking_safe1.sol
+    - 09_ERC20Staking_safe2.sol
+    - 09_ERC20Staking_safe3.sol
+    - 09_ERC20_safe1.sol
+    - 09_ERC20_safe2.sol
+    - 13_LoopCrossMod_ree1.sol
+    - 13_LoopCrossMod_ree2.sol
+    - 13_LoopCrossMod_ree3.sol
+    - 13_LoopCrossMod_safe1.sol
+    - 13_LoopCrossMutex_ree1.sol
+    - 13_LoopCrossMutex_safe1.sol
+    - 13_LoopCrossMutex_safe2.sol
+    - 15_ReadOnly_safe2.sol
+
+=================================================================
+  AGGREGATE (all 4 vulnerabilities)
+=================================================================
+  TP=66  FP=92  TN=392  FN=0
+  Micro-Precision : 41.8%
+  Micro-Recall    : 100.0%
+  Micro-F1        : 58.9%
+  Micro-Accuracy  : 83.3%  [denominator = 550]
+
+  ─────────────────────────────────────────────────────────────
+  Vulnerability              TP   FP   TN   FN        P      R     F1
+  ─────────────────────────────────────────────────────────────
+  REENTRANCY                 66   23   49    0    74.2% 100.0%  85.2%
+  OVERFLOW / UNDERFLOW        0   21  117    0     0.0%    N/A    N/A
+  TIMESTAMP DEPENDENCE        0    0  136    0      N/A    N/A    N/A
+  TOD (FRONT-RUNNING)         0   48   90    0     0.0%    N/A    N/A
+  ─────────────────────────────────────────────────────────────
+  MICRO-AVERAGE              66   92  392    0    41.8% 100.0%  58.9%
+
+=================================================================

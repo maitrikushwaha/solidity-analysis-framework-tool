@@ -1,0 +1,77 @@
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Analysis started at: 2026-06-21 07:15:14 PM
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Callgraph generation started!
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Value Range Analysis started
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Generating return summary for reject
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Return summary generated for reject
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Range graph generated
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Processed function reject
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Value Range Analysis took 0.000383 seconds
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Dependency detection started!
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | DAO dependency detected in file 50015.sol in contract TelcoinSaleCapEscrow in by composing functions reject and reject
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | TOD dependency detected in file 50015.sol in contract TelcoinSaleCapEscrow in by composing functions reject and reject
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Dependency detection finished!
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Static Analysis took 0.058386 seconds
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Dependency exists
+[INFO] | 2026-06-21 07:15:14 PM | analyzer.50015  | Invoking symbolic executor!
+[36m[#] Analysing started: 50015.sol[0m
+[36m[#] Interprocedural CFG generation started for reject[0m
+[36m[#] Interprocedural CFG generated for reject[0m
+[36m[#] SDG generation started for reject[0m
+[36m[#] SDG generated for reject[0m
+[INFO] | 2026-06-21 07:15:15 PM | analyzer.50015  | Symbolic execution took 0.961814 seconds
+[INFO] | 2026-06-21 07:15:15 PM | analyzer.50015  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:15:15 PM | analyzer.50015  | Analysis finished!
+[INFO] | 2026-06-21 07:15:15 PM | analyzer.50015  | Analysis took 1.020670 seconds
+[INFO] | 2026-06-21 07:15:15 PM | analyzer.50015  | Analysis finished at: 2026-06-21 07:15:15 PM
+[36m[#] Analysis took 1.020670 seconds[0m
+[36m[#] Analysis completed: 50015.sol [0m
+
+=== dependency_info.json ===
+{
+    "50015.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "reject",
+                "reject"
+            ],
+            "from_function": "reject",
+            "to_function": "reject",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 6\nFunction: reject\nNode: \nEXPRESSION require(bool)(_participant.call.value(weiAmount)())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:_participant, function:call, arguments:[] value:weiAmount \"",
+                        "\"BlockID: 4\nFunction: reject\nNode: \nEXPRESSION deposited[_participant] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "deposited"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "reject",
+                "reject"
+            ],
+            "First_function": "reject",
+            "Second_function": "reject",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: reject\nNode: \nEXPRESSION deposited[_participant] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 2\nFunction: reject\nNode: \nEXPRESSION require(bool)(_participant.call.value(weiAmount)())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:_participant, function:call, arguments:[] value:weiAmount \""
+                    ],
+                    "state_variable": "deposited"
+                }
+            ]
+        }
+    ]
+}

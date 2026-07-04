@@ -1,0 +1,69 @@
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Analysis started at: 2026-06-21 07:12:58 PM
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Generating return summary for BankOwner_WithdrawDonations
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Return summary generated for BankOwner_WithdrawDonations
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Range graph generated
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Processed function BankOwner_WithdrawDonations
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Range graph generated
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Value Range Analysis took 0.000421 seconds
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | TOD dependency detected in file 40425.sol in contract MyEtherBank in by composing functions BankOwner_WithdrawDonations and BankOwner_WithdrawDonations
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Static Analysis took 0.050472 seconds
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Dependency exists
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Invoking symbolic executor!
+[36m[#] Analysing started: 40425.sol[0m
+[36m[#] Interprocedural CFG generation started for BankOwner_WithdrawDonations[0m
+[36m[#] Interprocedural CFG generated for BankOwner_WithdrawDonations[0m
+[36m[#] SDG generation started for BankOwner_WithdrawDonations[0m
+[36m[#] SDG generated for BankOwner_WithdrawDonations[0m
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Symbolic execution took 0.735996 seconds
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Analysis finished!
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Analysis took 0.786988 seconds
+[INFO] | 2026-06-21 07:12:58 PM | analyzer.40425  | Analysis finished at: 2026-06-21 07:12:58 PM
+[36m[#] Analysis took 0.786988 seconds[0m
+[36m[#] Analysis completed: 40425.sol [0m
+
+=== dependency_info.json ===
+{
+    "40425.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "BankOwner_WithdrawDonations",
+                "BankOwner_WithdrawDonations"
+            ],
+            "First_function": "BankOwner_WithdrawDonations",
+            "Second_function": "BankOwner_WithdrawDonations",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 15\nFunction: BankOwner_WithdrawDonations\nNode: \nEXPRESSION _bankDonationsBalance = 0\nIRS: \n_bankDonationsBalance := 0\"",
+                        "\"BlockID: 2\nFunction: BankOwner_WithdrawDonations\nNode: \nIF _bankDonationsBalance > 0\nIRS: \nCONDITION TMP_0\""
+                    ],
+                    "state_variable": "_bankDonationsBalance"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 15\nFunction: BankOwner_WithdrawDonations\nNode: \nEXPRESSION _bankDonationsBalance = 0\nIRS: \n_bankDonationsBalance := 0\"",
+                        "\"BlockID: 4\nFunction: BankOwner_WithdrawDonations\nNode: \nIF ! msg.sender.call.value(amount_)()\nIRS: \nTMP_2(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:amount_ \""
+                    ],
+                    "state_variable": "_bankDonationsBalance"
+                }
+            ]
+        }
+    ]
+}

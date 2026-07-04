@@ -1,0 +1,6 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract datasets/rsd/reentrancy/safe/14_ReadOnly_safe1.sol:A
+offset,opcode,detection
+
+# contract datasets/rsd/reentrancy/safe/14_ReadOnly_safe1.sol:B
+offset,opcode,detection

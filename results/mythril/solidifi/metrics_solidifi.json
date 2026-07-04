@@ -1,0 +1,78 @@
+{
+  "dataset": "solidifi",
+  "macro_average": {
+    "accuracy": 0.71,
+    "f1": 0.5915,
+    "precision": 1.0,
+    "recall": 0.42
+  },
+  "micro_average": {
+    "counts": {
+      "fn": 29,
+      "fp": 0,
+      "tn": 50,
+      "tp": 21
+    },
+    "metrics": {
+      "accuracy": 0.71,
+      "f1": 0.5915,
+      "precision": 1.0,
+      "recall": 0.42
+    }
+  },
+  "per_vulnerability": {
+    "tod": {
+      "accuracy": 0.71,
+      "counts": {
+        "fn": 29,
+        "fp": 0,
+        "tn": 50,
+        "tp": 21
+      },
+      "evaluated": 100,
+      "excluded_na": 0,
+      "excluded_na_files": [],
+      "f1": 0.5915,
+      "fn_files": [
+        "buggy_11.sol",
+        "buggy_12.sol",
+        "buggy_13.sol",
+        "buggy_14.sol",
+        "buggy_15.sol",
+        "buggy_16.sol",
+        "buggy_19.sol",
+        "buggy_2.sol",
+        "buggy_20.sol",
+        "buggy_21.sol",
+        "buggy_22.sol",
+        "buggy_23.sol",
+        "buggy_27.sol",
+        "buggy_3.sol",
+        "buggy_30.sol",
+        "buggy_31.sol",
+        "buggy_32.sol",
+        "buggy_33.sol",
+        "buggy_34.sol",
+        "buggy_35.sol",
+        "buggy_36.sol",
+        "buggy_37.sol",
+        "buggy_4.sol",
+        "buggy_40.sol",
+        "buggy_41.sol",
+        "buggy_42.sol",
+        "buggy_45.sol",
+        "buggy_47.sol",
+        "buggy_48.sol"
+      ],
+      "fp_files": [],
+      "precision": 1.0,
+      "recall": 0.42,
+      "total": 100
+    }
+  },
+  "summary": {
+    "excluded_na_total": 0,
+    "total_contracts": 100
+  },
+  "tool": "mythril"
+}

@@ -1,0 +1,464 @@
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Analysis started at: 2026-06-21 07:15:40 PM
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Callgraph generation started!
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Callgraph generation finished!
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Storage dependency graph generation started!
+[36m[#] Analysing started: 20.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyActive[0m
+[36m[#] Interprocedural CFG generated for modifer onlyActive[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyActive[0m
+[36m[#] Interprocedural CFG generated for modifer onlyActive[0m
+[36m[#] Interprocedural CFG generation started for modifier onlySwapsContract[0m
+[36m[#] Interprocedural CFG generated for modifer onlySwapsContract[0m
+[36m[#] Interprocedural CFG generation started for modifier isWithinLimits[0m
+[36m[#] Interprocedural CFG generated for modifer isWithinLimits[0m
+[36m[#] Interprocedural CFG generation started for modifier validateLimits[0m
+[36m[#] Interprocedural CFG generated for modifer validateLimits[0m
+[36m[#] Interprocedural CFG generation started for modifier validateSwapsContract[0m
+[36m[#] Interprocedural CFG generated for modifer validateSwapsContract[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyActive[0m
+[36m[#] Interprocedural CFG generated for modifer onlyActive[0m
+[36m[#] Interprocedural CFG generation started for modifier onlySwapsContract[0m
+[36m[#] Interprocedural CFG generated for modifer onlySwapsContract[0m
+[36m[#] Interprocedural CFG generation started for modifier isWithinLimits[0m
+[36m[#] Interprocedural CFG generated for modifer isWithinLimits[0m
+[36m[#] Interprocedural CFG generation started for modifier validateLimits[0m
+[36m[#] Interprocedural CFG generated for modifer validateLimits[0m
+[36m[#] Interprocedural CFG generation started for modifier validateSwapsContract[0m
+[36m[#] Interprocedural CFG generated for modifer validateSwapsContract[0m
+[36m[#] Interprocedural CFG generation started for changeOwner[0m
+[36m[#] Interprocedural CFG generated for changeOwner[0m
+[36m[#] Interprocedural CFG generation started for changeOwner[0m
+[36m[#] Interprocedural CFG generated for changeOwner[0m
+[36m[#] Interprocedural CFG generation started for setIsActive[0m
+[36m[#] Interprocedural CFG generated for setIsActive[0m
+[36m[#] Interprocedural CFG generation started for sendFundsToSwap[0m
+[36m[#] Interprocedural CFG generated for sendFundsToSwap[0m
+[36m[#] Interprocedural CFG generation started for release[0m
+[36m[#] Interprocedural CFG generated for release[0m
+[36m[#] Interprocedural CFG generation started for returnFunds[0m
+[36m[#] Interprocedural CFG generated for returnFunds[0m
+[36m[#] Interprocedural CFG generation started for sendFundsToSwap[0m
+[36m[#] Interprocedural CFG generated for sendFundsToSwap[0m
+[36m[#] Interprocedural CFG generation started for changeOwner[0m
+[36m[#] Interprocedural CFG generated for changeOwner[0m
+[36m[#] Interprocedural CFG generation started for setIsActive[0m
+[36m[#] Interprocedural CFG generated for setIsActive[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for availableFunds[0m
+[36m[#] Interprocedural CFG generated for availableFunds[0m
+[36m[#] Interprocedural CFG generation started for withdrawFunds[0m
+[36m[#] Interprocedural CFG generated for withdrawFunds[0m
+[36m[#] Interprocedural CFG generation started for withdrawAllFunds[0m
+[36m[#] Interprocedural CFG generated for withdrawAllFunds[0m
+[36m[#] Interprocedural CFG generation started for setLimits[0m
+[36m[#] Interprocedural CFG generated for setLimits[0m
+[36m[#] Interprocedural CFG generation started for setSwapsContract[0m
+[36m[#] Interprocedural CFG generated for setSwapsContract[0m
+[36m[#] Interprocedural CFG generation started for sendFundsToSwap[0m
+[36m[#] Interprocedural CFG generated for sendFundsToSwap[0m
+[36m[#] Interprocedural CFG generation started for releaseSwap[0m
+[36m[#] Interprocedural CFG generated for releaseSwap[0m
+[36m[#] Interprocedural CFG generation started for returnSwap[0m
+[36m[#] Interprocedural CFG generated for returnSwap[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for sendFundsToSwap[0m
+[36m[#] Interprocedural CFG generated for sendFundsToSwap[0m
+[36m[#] Interprocedural CFG generation started for changeOwner[0m
+[36m[#] Interprocedural CFG generated for changeOwner[0m
+[36m[#] Interprocedural CFG generation started for setIsActive[0m
+[36m[#] Interprocedural CFG generated for setIsActive[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for availableFunds[0m
+[36m[#] Interprocedural CFG generated for availableFunds[0m
+[36m[#] Interprocedural CFG generation started for withdrawFunds[0m
+[36m[#] Interprocedural CFG generated for withdrawFunds[0m
+[36m[#] Interprocedural CFG generation started for withdrawAllFunds[0m
+[36m[#] Interprocedural CFG generated for withdrawAllFunds[0m
+[36m[#] Interprocedural CFG generation started for setLimits[0m
+[36m[#] Interprocedural CFG generated for setLimits[0m
+[36m[#] Interprocedural CFG generation started for setSwapsContract[0m
+[36m[#] Interprocedural CFG generated for setSwapsContract[0m
+[36m[#] Interprocedural CFG generation started for sendFundsToSwap[0m
+[36m[#] Interprocedural CFG generated for sendFundsToSwap[0m
+[36m[#] Interprocedural CFG generation started for releaseSwap[0m
+[36m[#] Interprocedural CFG generated for releaseSwap[0m
+[36m[#] Interprocedural CFG generation started for returnSwap[0m
+[36m[#] Interprocedural CFG generated for returnSwap[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for availableFunds[0m
+[36m[#] Interprocedural CFG generated for availableFunds[0m
+[36m[#] Interprocedural CFG generation started for withdrawFunds[0m
+[36m[#] Interprocedural CFG generated for withdrawFunds[0m
+[36m[#] Interprocedural CFG generation started for sendFundsToSwap[0m
+[36m[#] Interprocedural CFG generated for sendFundsToSwap[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] SDG generation started for changeOwner[0m
+[36m[#] SDG generated for changeOwner[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for changeOwner[0m
+[36m[#] SDG generated for changeOwner[0m
+[36m[#] SDG generation started for setIsActive[0m
+[36m[#] SDG generated for setIsActive[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for modifier onlyActive[0m
+[36m[#] SDG generated for modifier onlyActive[0m
+[36m[#] SDG generation started for sendFundsToSwap[0m
+[36m[#] SDG generated for sendFundsToSwap[0m
+[36m[#] SDG generation started for release[0m
+[36m[#] SDG generated for release[0m
+[36m[#] SDG generation started for returnFunds[0m
+[36m[#] SDG generated for returnFunds[0m
+[36m[#] SDG generation started for sendFundsToSwap[0m
+[36m[#] SDG generated for sendFundsToSwap[0m
+[36m[#] SDG generation started for changeOwner[0m
+[36m[#] SDG generated for changeOwner[0m
+[36m[#] SDG generation started for setIsActive[0m
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Value Range Analysis started
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function onlyOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function onlyOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for release
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for release
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function release
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for returnFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for returnFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function returnFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for availableFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for availableFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function availableFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for withdrawFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for withdrawFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function withdrawFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for fallback
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for fallback
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function fallback
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function onlyOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for validateLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for validateLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function validateLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for validateSwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for validateSwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function validateSwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for availableFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for availableFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function availableFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for withdrawFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for withdrawFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function withdrawFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for fallback
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for fallback
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function fallback
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for availableFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for availableFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function availableFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for fallback
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for fallback
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function fallback
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function onlyOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for validateSwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for validateSwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function validateSwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for validateLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for validateLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function validateLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for onlyActive
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for onlyActive
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function onlyActive
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for isWithinLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for isWithinLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function isWithinLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for onlySwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for onlySwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function onlySwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for changeOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for changeOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function changeOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for changeOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for changeOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function changeOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for setIsActive
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for setIsActive
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function setIsActive
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for releaseSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for releaseSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function releaseSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for releaseSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for releaseSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function releaseSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for returnSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for returnSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function returnSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for returnSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for returnSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function returnSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for withdrawAllFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for withdrawFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for withdrawFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for withdrawAllFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function withdrawAllFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for changeOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for changeOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function changeOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for setIsActive
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for setIsActive
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function setIsActive
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for setLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for setLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function setLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for setSwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for setSwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function setSwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for changeOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for changeOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function changeOwner
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for setIsActive
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for setIsActive
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function setIsActive
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for setLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for setLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function setLimits
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for setSwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for setSwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function setSwapsContract
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for withdrawFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for withdrawFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function withdrawFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function sendFundsToSwap
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Range graph generated
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function constructor
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Generating return summary for withdrawAllFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Return summary generated for withdrawAllFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | State variable assignement do not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Processed function withdrawAllFunds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Value Range Analysis took 0.011116 seconds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Value Range Analysis finished
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Dependency detection started!
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Dependency detection finished!
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Static Analysis took 0.230549 seconds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Dependency does not exist
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Analysis finished!
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Analysis took 0.230676 seconds
+[INFO] | 2026-06-21 07:15:40 PM | analyzer.20     | Analysis finished at: 2026-06-21 07:15:40 PM
+[36m[#] SDG generated for setIsActive[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for availableFunds[0m
+[36m[#] SDG generated for availableFunds[0m
+[36m[#] SDG generation started for withdrawFunds[0m
+[36m[#] SDG generated for withdrawFunds[0m
+[36m[#] SDG generation started for withdrawAllFunds[0m
+[36m[#] SDG generated for withdrawAllFunds[0m
+[36m[#] SDG generation started for setLimits[0m
+[36m[#] SDG generated for setLimits[0m
+[36m[#] SDG generation started for setSwapsContract[0m
+[36m[#] SDG generated for setSwapsContract[0m
+[36m[#] SDG generation started for sendFundsToSwap[0m
+[36m[#] SDG generated for sendFundsToSwap[0m
+[36m[#] SDG generation started for releaseSwap[0m
+[36m[#] SDG generated for releaseSwap[0m
+[36m[#] SDG generation started for returnSwap[0m
+[36m[#] SDG generated for returnSwap[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for modifier onlyActive[0m
+[36m[#] SDG generated for modifier onlyActive[0m
+[36m[#] SDG generation started for modifier onlySwapsContract[0m
+[36m[#] SDG generated for modifier onlySwapsContract[0m
+[36m[#] SDG generation started for modifier isWithinLimits[0m
+[36m[#] SDG generated for modifier isWithinLimits[0m
+[36m[#] SDG generation started for modifier validateLimits[0m
+[36m[#] SDG generated for modifier validateLimits[0m
+[36m[#] SDG generation started for modifier validateSwapsContract[0m
+[36m[#] SDG generated for modifier validateSwapsContract[0m
+[36m[#] SDG generation started for sendFundsToSwap[0m
+[36m[#] SDG generated for sendFundsToSwap[0m
+[36m[#] SDG generation started for changeOwner[0m
+[36m[#] SDG generated for changeOwner[0m
+[36m[#] SDG generation started for setIsActive[0m
+[36m[#] SDG generated for setIsActive[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for availableFunds[0m
+[36m[#] SDG generated for availableFunds[0m
+[36m[#] SDG generation started for withdrawFunds[0m
+[36m[#] SDG generated for withdrawFunds[0m
+[36m[#] SDG generation started for withdrawAllFunds[0m
+[36m[#] SDG generated for withdrawAllFunds[0m
+[36m[#] SDG generation started for setLimits[0m
+[36m[#] SDG generated for setLimits[0m
+[36m[#] SDG generation started for setSwapsContract[0m
+[36m[#] SDG generated for setSwapsContract[0m
+[36m[#] SDG generation started for sendFundsToSwap[0m
+[36m[#] SDG generated for sendFundsToSwap[0m
+[36m[#] SDG generation started for releaseSwap[0m
+[36m[#] SDG generated for releaseSwap[0m
+[36m[#] SDG generation started for returnSwap[0m
+[36m[#] SDG generated for returnSwap[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for availableFunds[0m
+[36m[#] SDG generated for availableFunds[0m
+[36m[#] SDG generation started for withdrawFunds[0m
+[36m[#] SDG generated for withdrawFunds[0m
+[36m[#] SDG generation started for sendFundsToSwap[0m
+[36m[#] SDG generated for sendFundsToSwap[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for modifier onlyActive[0m
+[36m[#] SDG generated for modifier onlyActive[0m
+[36m[#] SDG generation started for modifier onlySwapsContract[0m
+[36m[#] SDG generated for modifier onlySwapsContract[0m
+[36m[#] SDG generation started for modifier isWithinLimits[0m
+[36m[#] SDG generated for modifier isWithinLimits[0m
+[36m[#] SDG generation started for modifier validateLimits[0m
+[36m[#] SDG generated for modifier validateLimits[0m
+[36m[#] SDG generation started for modifier validateSwapsContract[0m
+[36m[#] SDG generated for modifier validateSwapsContract[0m
+[36m[#] Analysis took 0.230676 seconds[0m
+[36m[#] Analysis completed: 20.sol [0m
+
+=== dependency_info.json ===
+{}

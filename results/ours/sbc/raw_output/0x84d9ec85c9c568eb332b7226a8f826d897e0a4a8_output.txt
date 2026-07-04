@@ -1,0 +1,47 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+[CFG] Reentrancy back-edge inserted: ExpressionStatement_4 → IfStatement_1
+Dependency analysis completed in 0.0234s.
+[DOMAIN] Reentrancy encoding detected → Box + Octagon + Polka
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] External calls target fixed addresses (not msg.sender) — reentrancy infeasible.
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW ==========
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+
+========== PIPELINE 3: TIMESTAMP DEPENDENCY ==========
+
+========== PIPELINE 4: TOD ==========
+
+===== VERDICTS (Box) =====
+[NO REENTRANCY] External calls target fixed/owner-controlled addresses; reentrancy by caller infeasible.
+[TIMESTAMP] State variable 'FunctionCall_0' at FunctionCall_0 depends on block.timestamp via dependency chain: now.
+[TIMESTAMP] State variable 'FunctionCall_1' at FunctionCall_1 depends on block.timestamp via dependency chain: now.
+[TIMESTAMP] State variable 'FunctionCall_2' at FunctionCall_2 depends on block.timestamp via dependency chain: now.
+
+===== VERDICTS (Octagon) =====
+[NO REENTRANCY] External calls target fixed/owner-controlled addresses; reentrancy by caller infeasible.
+[TIMESTAMP] State variable 'FunctionCall_0' at FunctionCall_0 depends on block.timestamp via dependency chain: now.
+[TIMESTAMP] State variable 'FunctionCall_1' at FunctionCall_1 depends on block.timestamp via dependency chain: now.
+[TIMESTAMP] State variable 'FunctionCall_2' at FunctionCall_2 depends on block.timestamp via dependency chain: now.
+
+===== VERDICTS (Polka) =====
+[NO REENTRANCY] External calls target fixed/owner-controlled addresses; reentrancy by caller infeasible.
+[TIMESTAMP] State variable 'FunctionCall_0' at FunctionCall_0 depends on block.timestamp via dependency chain: now.
+[TIMESTAMP] State variable 'FunctionCall_1' at FunctionCall_1 depends on block.timestamp via dependency chain: now.
+[TIMESTAMP] State variable 'FunctionCall_2' at FunctionCall_2 depends on block.timestamp via dependency chain: now.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: NOT VULNERABLE
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: VULNERABLE
+[SUMMARY] TOD: NOT VULNERABLE
+
+Total analysis time: 1.43s

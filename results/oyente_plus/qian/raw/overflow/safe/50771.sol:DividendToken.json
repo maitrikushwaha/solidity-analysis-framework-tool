@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "82.8",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "50771.sol:12:21: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    dividendsCollected = 115350381933151101609195691211306605058406870426244989743459862926943165420671\n    creditedPoints[msg.sender] = 46647184861365103088967984431158115192037368603322455165365912842582097996997"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

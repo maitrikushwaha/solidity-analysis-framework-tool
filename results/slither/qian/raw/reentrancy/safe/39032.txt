@@ -1,0 +1,58 @@
+
+'solc --version' running
+'solc /work/datasets/qian/reentrancy/safe/39032.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/reentrancy/safe' running
+Compilation warnings/errors on /work/datasets/qian/reentrancy/safe/39032.sol:
+/work/datasets/qian/reentrancy/safe/39032.sol:7:10: Warning: Return value of low-level calls not used.
+         _to.call.value(_value)(_data);
+         ^---------------------------^
+/work/datasets/qian/reentrancy/safe/39032.sol:6:5: Warning: No visibility specified. Defaulting to "public". 
+    function advSend(address _to, uint _value, bytes _data){
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+
+SmartexInvoice.advSend(address,uint256,bytes) (datasets/qian/reentrancy/safe/39032.sol#6-8) sends eth to arbitrary user
+	Dangerous calls:
+	- _to.call.value(_value)(_data) (datasets/qian/reentrancy/safe/39032.sol#7)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+SmartexInvoice.advSend(address,uint256,bytes) (datasets/qian/reentrancy/safe/39032.sol#6-8) ignores return value by _to.call.value(_value)(_data) (datasets/qian/reentrancy/safe/39032.sol#7)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-low-level-calls
+
+SmartexInvoice.advSend(address,uint256,bytes)._to (datasets/qian/reentrancy/safe/39032.sol#6) lacks a zero-check on :
+		- _to.call.value(_value)(_data) (datasets/qian/reentrancy/safe/39032.sol#7)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/reentrancy/safe/39032.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in SmartexInvoice.advSend(address,uint256,bytes) (datasets/qian/reentrancy/safe/39032.sol#6-8):
+	- _to.call.value(_value)(_data) (datasets/qian/reentrancy/safe/39032.sol#7)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Parameter SmartexInvoice.advSend(address,uint256,bytes)._to (datasets/qian/reentrancy/safe/39032.sol#6) is not in mixedCase
+Parameter SmartexInvoice.advSend(address,uint256,bytes)._value (datasets/qian/reentrancy/safe/39032.sol#6) is not in mixedCase
+Parameter SmartexInvoice.advSend(address,uint256,bytes)._data (datasets/qian/reentrancy/safe/39032.sol#6) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+advSend(address,uint256,bytes) should be declared external:
+	- SmartexInvoice.advSend(address,uint256,bytes) (datasets/qian/reentrancy/safe/39032.sol#6-8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external
+/work/datasets/qian/reentrancy/safe/39032.sol analyzed (1 contracts with 93 detectors), 10 result(s) found

@@ -1,0 +1,62 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/bad_randomness/smart_billions.sol:SafeMath
+offset,opcode,detection
+
+# contract /work/datasets/sbc/bad_randomness/smart_billions.sol:SmartBillions
+offset,opcode,detection
+4402,4402: SLOAD,Store read after unsafe call
+4503,4503: SLOAD,Store read after unsafe call
+4510,4510: SSTORE,Store write after unsafe call
+4675,4675: SLOAD,Store read after unsafe call
+4740,4740: SSTORE,Store write after unsafe call
+4772,4772: SLOAD,Store read after unsafe call
+4779,4779: SSTORE,Store write after unsafe call
+4947,4947: SLOAD,Store read after unsafe call
+5012,5012: SSTORE,Store write after unsafe call
+5146,5146: SLOAD,Store read after unsafe call
+5211,5211: SSTORE,Store write after unsafe call
+5290,5290: SLOAD,Store read after unsafe call
+5307,5307: SSTORE,Store write after unsafe call
+5696,5696: SSTORE,Store write after unsafe call
+5941,5941: SLOAD,Store read after unsafe call
+9973,9973: SLOAD,Store read after unsafe call
+10071,10071: SLOAD,Store read after unsafe call
+10113,10113: SLOAD,Store read after unsafe call
+10146,10146: SSTORE,Store write after unsafe call
+11041,11041: SLOAD,Store read after unsafe call
+11069,11069: SLOAD,Store read after unsafe call
+11095,11095: SLOAD,Store read after unsafe call
+11120,11120: SLOAD,Store read after unsafe call
+11127,11127: SSTORE,Store write after unsafe call
+11332,11332: SLOAD,Store read after unsafe call
+11397,11397: SSTORE,Store write after unsafe call
+11406,11406: SLOAD,Store read after unsafe call
+11428,11428: SSTORE,Store write after unsafe call
+11440,11440: SLOAD,Store read after unsafe call
+11452,11452: SLOAD,Store read after unsafe call
+11470,11470: SSTORE,Store write after unsafe call
+11484,11484: SLOAD,Store read after unsafe call
+11491,11491: SSTORE,Store write after unsafe call
+11786,11786: SSTORE,Store write after unsafe call
+11855,11855: SLOAD,Store read after unsafe call
+11904,11904: SLOAD,Store read after unsafe call
+15972,15972: SLOAD,Store read after unsafe call
+16028,16028: SLOAD,Store read after unsafe call
+16041,16041: SLOAD,Store read after unsafe call
+16102,16102: SLOAD,Store read after unsafe call
+16195,16195: SSTORE,Store write after unsafe call
+16212,16212: SLOAD,Store read after unsafe call
+16229,16229: SLOAD,Store read after unsafe call
+16246,16246: SSTORE,Store write after unsafe call
+16257,16257: SLOAD,Store read after unsafe call
+16272,16272: SLOAD,Store read after unsafe call
+16292,16292: SLOAD,Store read after unsafe call
+16312,16312: SLOAD,Store read after unsafe call
+16346,16346: SSTORE,Store write after unsafe call
+16351,16351: SLOAD,Store read after unsafe call
+16365,16365: SLOAD,Store read after unsafe call
+16386,16386: SLOAD,Store read after unsafe call
+16399,16399: SLOAD,Store read after unsafe call
+16410,16410: SSTORE,Store write after unsafe call
+18498,18498: SLOAD,Store read after unsafe call
+18519,18519: SSTORE,Store write after unsafe call

@@ -1,0 +1,31 @@
+{
+ "evm_code_coverage": "32.6",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "buggy_24.sol:1275:38: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    index = 65275536913288633538215533897507060416178005014484918788253722063626200748498\n    length = 58829167736912318587420531919853280343281424534128725364144518706030038654042\n    owner = 0",
+   "buggy_24.sol:1277:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    index = 0\n    length = 1\n    owner = 0",
+   "buggy_24.sol:1304:29: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    length = 12482163920388703199627202395092602019309340271027376237838347\n    index = 105312721724352094782921369398351482411755801996476659380562952192\n    owner = 0",
+   "buggy_24.sol:1323:41: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    length = 12482163920388703199627202395092602019309340271027376237838347\n    index = 105312721724352094782921369398351482411755801996476659380562952192\n    owner = 0",
+   "buggy_24.sol:1213:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    owner = 0\n    totalUserCount = 1",
+   "buggy_24.sol:1217:13: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    owner = 0\n    totalUserCount = 1",
+   "buggy_24.sol:1254:17: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    owner = 0\n    totalUserCount = 1",
+   "buggy_24.sol:1225:29: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    owner = 0\n    totalUserCount = 1",
+   "buggy_24.sol:1244:41: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    owner = 0\n    totalUserCount = 1"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "buggy_24.sol:927:9: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "buggy_24.sol:416:9: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

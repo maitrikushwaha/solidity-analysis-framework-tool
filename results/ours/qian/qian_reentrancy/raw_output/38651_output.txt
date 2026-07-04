@@ -1,0 +1,34 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+[CFG] Reentrancy back-edge inserted: ExpressionStatement_1 → IfStatement_0
+Dependency analysis completed in 0.0019s.
+[DOMAIN] Reentrancy encoding detected → Box + Octagon + Polka
+
+========== PIPELINE 1: REENTRANCY ==========
+[REENTRANCY] Running Box domain.
+[TIMING] reentrancy domain=Box fixpoint=0.0129s
+[REENTRANCY] Strategy A exception: State for Iteration 1 is not available for node FunctionExit_0!
+[REENTRANCY] Strategy D exception: State for Iteration 1 is not available for node FunctionExit_0!
+[REENTRANCY] Suppressing fixpoint verdict: original source is safe.
+
+===== VERDICTS (Box) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+
+===== VERDICTS (Octagon) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+
+===== VERDICTS (Polka) =====
+[NO REENTRANCY] Balance-preservation invariant maintained at claim.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: NOT VULNERABLE
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: NOT VULNERABLE
+[SUMMARY] TOD: NOT VULNERABLE
+
+Total analysis time: 0.15s

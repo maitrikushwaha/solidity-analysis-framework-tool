@@ -1,0 +1,49 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/vulnerable' running
+
+Reentrancy in StakableToken.unstake(address,uint256) (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#36-46):
+	External calls:
+	- success = IERC20(token).transfer(msg.sender,amount) (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#40)
+	State variables written after the call(s):
+	- stakedAmounts[msg.sender] -= amount (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#43)
+	StakableToken.stakedAmounts (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#20) can be used in cross function reentrancies:
+	- StakableToken.stake(address,uint256) (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#26-34)
+	- StakableToken.stakedAmounts (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#20)
+	- StakableToken.unstake(address,uint256) (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#36-46)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-1
+
+Reentrancy in StakableToken.stake(address,uint256) (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#26-34):
+	External calls:
+	- success = IERC20(token).transferFrom(msg.sender,address(this),amount) (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#29)
+	State variables written after the call(s):
+	- stakedAmounts[msg.sender] += amount (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#32)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2
+
+Reentrancy in StakableToken.stake(address,uint256) (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#26-34):
+	External calls:
+	- success = IERC20(token).transferFrom(msg.sender,address(this),amount) (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#29)
+	Event emitted after the call(s):
+	- Staked(msg.sender,amount) (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#33)
+Reentrancy in StakableToken.unstake(address,uint256) (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#36-46):
+	External calls:
+	- success = IERC20(token).transfer(msg.sender,amount) (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#40)
+	Event emitted after the call(s):
+	- Unstaked(msg.sender,amount) (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#44)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+StakableToken.balances (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#18) is never used in StakableToken (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#15-47)
+StakableToken.allowances (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#19) is never used in StakableToken (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#15-47)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-state-variable
+
+StakableToken.totalSupply (datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol#16) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/rsd/reentrancy/vulnerable/09_ERC20Staking_ree1.sol analyzed (2 contracts with 93 detectors), 8 result(s) found

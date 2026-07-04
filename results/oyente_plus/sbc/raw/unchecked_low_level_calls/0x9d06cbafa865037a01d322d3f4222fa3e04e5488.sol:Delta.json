@@ -1,0 +1,23 @@
+{
+ "evm_code_coverage": "74.5",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [],
+  "callstack": [
+   "0x9d06cbafa865037a01d322d3f4222fa3e04e5488.sol:54:9: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [
+   [
+    "0x9d06cbafa865037a01d322d3f4222fa3e04e5488.sol:65:11: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "0x9d06cbafa865037a01d322d3f4222fa3e04e5488.sol:65:11: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

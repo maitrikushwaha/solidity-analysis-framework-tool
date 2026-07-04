@@ -1,0 +1,21 @@
+{
+ "evm_code_coverage": "72.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "35257.sol:3:1: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    price = 1"
+  ],
+  "integer_overflow": [
+   "35257.sol:16:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lovemsg = 115792089237316195423570985008687907853269984665640564039457584007913129639932",
+   "35257.sol:18:35: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    price = 2",
+   "35257.sol:18:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    price = 1",
+   "35257.sol:3:1: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    price = 1"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

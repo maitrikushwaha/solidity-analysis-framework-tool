@@ -1,0 +1,5 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x70f9eddb3931491aab1aeafbc1e7f1ca2a012db4.sol:HomeyJar
+offset,opcode,detection
+584,584: SLOAD,Store read after unsafe call
+998,998: SLOAD,Store read after unsafe call

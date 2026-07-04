@@ -1,0 +1,24 @@
+{
+ "evm_code_coverage": "83.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "00_BasicEmit_safe1.sol:5:5: Warning: Integer Underflow.\n",
+   "00_BasicEmit_safe1.sol:14:14: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819970\n    balances[msg.sender] = 23945242826029513411849172299223580994042798784118784",
+   "00_BasicEmit_safe1.sol:21:2018: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0",
+   "00_BasicEmit_safe1.sol:10:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0"
+  ],
+  "integer_overflow": [
+   "00_BasicEmit_safe1.sol:21:942: Warning: Integer Overflow.\n",
+   "00_BasicEmit_safe1.sol:12:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819970\n    balances[msg.sender] = 23945242826029513411849172299223580994042798784118784"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "00_BasicEmit_safe1.sol:12:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

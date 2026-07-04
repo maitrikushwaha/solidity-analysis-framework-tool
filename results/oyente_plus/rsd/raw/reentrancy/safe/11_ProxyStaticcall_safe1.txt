@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 11_ProxyStaticcall_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.mecTFeSojH' running
+INFO:root:contract 11_ProxyStaticcall_safe1.sol:Proxy:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 89.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:11_ProxyStaticcall_safe1.sol:7:13: Warning: Integer Underflow.
+
+11_ProxyStaticcall_safe1.sol:22:3058: Warning: Integer Underflow.
+
+11_ProxyStaticcall_safe1.sol:5:5: Warning: Integer Underflow.
+
+11_ProxyStaticcall_safe1.sol:6:45: Warning: Integer Underflow.
+
+INFO:symExec:11_ProxyStaticcall_safe1.sol:22:1045: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 11_ProxyStaticcall_safe1.sol:Proxy.json.

@@ -1,0 +1,14 @@
+pragma solidity ^0.4.25;
+
+
+contract TokenBank {
+
+    mapping (address => uint) public Holders;
+    
+    function WithdrawToHolder(address _addr, uint _wei) public payable {
+        if(Holders[_addr] >= _wei) {
+            _addr.call.value(_wei)();
+            Holders[_addr] -= _wei;
+        }
+    }
+}

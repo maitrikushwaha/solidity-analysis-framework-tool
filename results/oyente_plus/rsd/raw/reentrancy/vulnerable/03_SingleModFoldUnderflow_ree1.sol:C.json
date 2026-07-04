@@ -1,0 +1,23 @@
+{
+ "evm_code_coverage": "82.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "03_SingleModFoldUnderflow_ree1.sol:6:5: Warning: Integer Underflow.\n",
+   "03_SingleModFoldUnderflow_ree1.sol:10:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 14482845389988416349594289613589703074237885502689448648769723192747982073088"
+  ],
+  "integer_overflow": [
+   "03_SingleModFoldUnderflow_ree1.sol:30:815: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [
+   "03_SingleModFoldUnderflow_ree1.sol:17:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "03_SingleModFoldUnderflow_ree1.sol:17:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

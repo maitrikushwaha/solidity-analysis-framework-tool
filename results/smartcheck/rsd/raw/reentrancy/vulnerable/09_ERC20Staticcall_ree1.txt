@@ -1,0 +1,30 @@
+/work/datasets/rsd/reentrancy/vulnerable/09_ERC20Staticcall_ree1.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlline 23:48 no viable alternative at input 'uint256bal=abi.decode(data,(uint256))'
+line 23:48 no viable alternative at input '.decode(data,(uint256))'
+line 23:48 no viable alternative at input '(uint256))'
+line 23:47 no viable alternative at input 'uint256)'
+line 23:48 extraneous input ')' expecting ';'
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 2
+column: 16
+content: ^
+
+ruleId: SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+patternId: 5616b2
+severity: 1
+line: 17
+column: 30
+content: private
+
+ruleId: SOLIDITY_UNCHECKED_CALL
+patternId: f39eed
+severity: 3
+line: 21
+column: 50
+content: staticcall(abi.encodeWithSignature("balanceOf(address)",msg.sender))
+
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA :1
+SOLIDITY_UNCHECKED_CALL :1

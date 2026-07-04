@@ -1,0 +1,22 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50007.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.Qq5biW3Bk9' running
+INFO:root:contract 50007.sol:DividendToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 83.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:50007.sol:19:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    creditedPoints[msg.sender] = 10631474674357576168339303701328104951779886252245125695593487005544799686712
+    owner = 0
+    dividendsCollected = 115737154574961831000067999692548826592955192149826338056546354423151217762308
+INFO:symExec:50007.sol:17:17: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50007.sol:DividendToken.json.

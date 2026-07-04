@@ -1,0 +1,19 @@
+{
+ "evm_code_coverage": "88.2",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "15_ReadOnlyStaticcall_ree1.sol:60:5: Warning: Integer Underflow.\n",
+   "15_ReadOnlyStaticcall_ree1.sol:59:5: Warning: Integer Underflow.\n",
+   "15_ReadOnlyStaticcall_ree1.sol:71:5: Warning: Integer Underflow.\n",
+   "15_ReadOnlyStaticcall_ree1.sol:68:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

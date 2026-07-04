@@ -1,0 +1,26 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/bad_randomness/lucky_doubler.sol:LuckyDoubler
+offset,opcode,detection
+2980,2980: SLOAD,Store read after unsafe call
+3112,3112: SLOAD,Store read after unsafe call
+3309,3309: SSTORE,Store write after unsafe call
+3364,3364: SLOAD,Store read after unsafe call
+3690,3690: SSTORE,Store write after unsafe call
+3696,3696: SLOAD,Store read after unsafe call
+3725,3725: SSTORE,Store write after unsafe call
+3732,3732: SLOAD,Store read after unsafe call
+3753,3753: SLOAD,Store read after unsafe call
+3770,3770: SLOAD,Store read after unsafe call
+3793,3793: SLOAD,Store read after unsafe call
+3827,3827: SLOAD,Store read after unsafe call
+4092,4092: SSTORE,Store write after unsafe call
+4099,4099: SLOAD,Store read after unsafe call
+4122,4122: SLOAD,Store read after unsafe call
+4148,4148: SLOAD,Store read after unsafe call
+4171,4171: SSTORE,Store write after unsafe call
+4177,4177: SLOAD,Store read after unsafe call
+4199,4199: SLOAD,Store read after unsafe call
+4240,4240: SLOAD,Store read after unsafe call
+4434,4434: SLOAD,Store read after unsafe call
+4437,4437: SSTORE,Store write after unsafe call
+4497,4497: SSTORE,Store write after unsafe call

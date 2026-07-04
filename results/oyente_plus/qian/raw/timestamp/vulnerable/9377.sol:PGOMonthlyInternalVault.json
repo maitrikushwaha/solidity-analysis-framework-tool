@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "77.2",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "9377.sol:14:22: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    cliff = 59697442580289573842515073431922729006425036581668169209974471958247112204254\n    vested = 115785199193470415864107063623073381620125568892557453189303113357509250777087"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

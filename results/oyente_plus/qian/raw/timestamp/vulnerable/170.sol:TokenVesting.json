@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "82.3",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "170.sol:11:29: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    duration = 25650671635628077330008020994425597968451114935058687386511328258514137670005\n    start = 90612310279450192762509999569073406819412893354215485307353007253607489118476"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

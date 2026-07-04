@@ -1,0 +1,60 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 09_ERC20Mod_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.3IojjjRfwn' running
+INFO:root:contract 09_ERC20Mod_safe1.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 62.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:09_ERC20Mod_safe1.sol:35:2803: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 57899799168670751778485857011533032628481125736101142710014800417134311636992
+    received[to] = 12554203470773361527671578846415332832204710888928069025792
+09_ERC20Mod_safe1.sol:22:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 12652283185388778414606513056152952621184506313156763582592
+09_ERC20Mod_safe1.sol:17:5: Warning: Integer Underflow.
+
+INFO:symExec:09_ERC20Mod_safe1.sol:30:24: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 32
+    received[to] = 0
+09_ERC20Mod_safe1.sol:35:3253: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 32
+    received[to] = 0
+09_ERC20Mod_safe1.sol:35:3415: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 32
+    received[to] = 0
+09_ERC20Mod_safe1.sol:29:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 57899799168670751778485857011533032628481125736101142710014800417134311636992
+    received[to] = 1809251394333065553493296640760748560207343510400633813116524750123642650624
+09_ERC20Mod_safe1.sol:35:2749: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 57899799168670751778485857011533032628481125736101142710014800417134311636992
+    received[to] = 1073741824
+09_ERC20Mod_safe1.sol:35:1017: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 57899799168670751778485857011533032628481125736101142710014800417134311636992
+    received[to] = 3369993333393829974333376885877453834204643052817571560137951281152
+09_ERC20Mod_safe1.sol:35:2536: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    flag = 86844066927987147371147285245635281496907872593002397129449567930567115145216
+    received[to] = 3369993333393829974333376885877453834204643052817571560137951281152
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 09_ERC20Mod_safe1.sol:C.json.

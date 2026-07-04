@@ -1,0 +1,27 @@
+{
+ "evm_code_coverage": "94.2",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "buggy_33.sol:365:38: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    minstakeTokens = 0\n    basePercent = 9498569820248594155839807363993929941088553429603327518861754938149123915776\n    stakeTokens = 0",
+   "buggy_33.sol:393:41: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 57896045589216177729208525112356497059341696583757481231788920506082094219265\n    staker[msg.sender].time = 57896044622054422346194132904578689129923645689681523620141202428338343247872\n    staker[msg.sender].redeem = 0",
+   "buggy_33.sol:393:68: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 57896045589216177729208525112356497059341696583757481231788920506082094219265\n    staker[msg.sender].time = 57896044622054422346194132904578689129923645689681523620141202428338343247872\n    staker[msg.sender].redeem = 0",
+   "buggy_33.sol:394:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 57896045589216177729208525112356497059341696583757481231788920506082094219265\n    staker[msg.sender].time = 57896044622054422346194132904578689129923645689681523620141202428338343247872\n    staker[msg.sender].redeem = 0",
+   "buggy_33.sol:395:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    lock = 0\n    stakeTime = 57896045589216177729208525112356497059341696583757481231788920506082094219265\n    staker[msg.sender].time = 57896044622054422346194132904578689129923645689681523620141202428338343247872\n    staker[msg.sender].redeem = 1048576"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "buggy_33.sol:23:9: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "buggy_33.sol:102:9: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

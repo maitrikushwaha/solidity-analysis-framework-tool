@@ -1,0 +1,66 @@
+
+'solc --version' running
+'solc /work/datasets/qian/timestamp/vulnerable/14928.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/timestamp/vulnerable' running
+Compilation warnings/errors on /work/datasets/qian/timestamp/vulnerable/14928.sol:
+/work/datasets/qian/timestamp/vulnerable/14928.sol:12:34: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        uint minedHashRel = uint(sha256(minedAtBlock + randomNumber + uint(msg.sender))) % 100000;
+                                 ^----------------------------------------------------^
+/work/datasets/qian/timestamp/vulnerable/14928.sol:12:34: Warning: The provided argument of type uint256 is not implicitly convertible to expected type bytes memory.
+        uint minedHashRel = uint(sha256(minedAtBlock + randomNumber + uint(msg.sender))) % 100000;
+                                 ^----------------------------------------------------^
+/work/datasets/qian/timestamp/vulnerable/14928.sol:11:34: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+        uint minedAtBlock = uint(block.blockhash(block.number - 1));
+                                 ^-------------^
+
+
+W4T.fallback() (datasets/qian/timestamp/vulnerable/14928.sol#9-18) uses a weak PRNG: "minedHashRel = uint256(sha256()(minedAtBlock + randomNumber + uint256(msg.sender))) % 100000 (datasets/qian/timestamp/vulnerable/14928.sol#12)" 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#weak-PRNG
+
+Contract locking ether found:
+	Contract W4T (datasets/qian/timestamp/vulnerable/14928.sol#3-20) has payable functions:
+	 - W4T.fallback() (datasets/qian/timestamp/vulnerable/14928.sol#9-18)
+	But does not have a function to withdraw the ether
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#contracts-that-lock-ether
+
+W4T.fallback() (datasets/qian/timestamp/vulnerable/14928.sol#9-18) uses timestamp for comparisons
+	Dangerous comparisons:
+	- minedHashRel < balanceRel (datasets/qian/timestamp/vulnerable/14928.sol#14)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Deprecated standard detected minedAtBlock = uint256(block.blockhash(block.number - 1)) (datasets/qian/timestamp/vulnerable/14928.sol#11):
+	- Usage of "block.blockhash()" should be replaced with "blockhash()"
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#deprecated-standards
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/timestamp/vulnerable/14928.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+W4T.fallback() (datasets/qian/timestamp/vulnerable/14928.sol#9-18) uses literals with too many digits:
+	- minedHashRel = uint256(sha256()(minedAtBlock + randomNumber + uint256(msg.sender))) % 100000 (datasets/qian/timestamp/vulnerable/14928.sol#12)
+W4T.fallback() (datasets/qian/timestamp/vulnerable/14928.sol#9-18) uses literals with too many digits:
+	- reward = miningReward + minedHashRel * 100000000000000 (datasets/qian/timestamp/vulnerable/14928.sol#15)
+W4T.slitherConstructorVariables() (datasets/qian/timestamp/vulnerable/14928.sol#3-20) uses literals with too many digits:
+	- miningReward = 1000000000000000000 (datasets/qian/timestamp/vulnerable/14928.sol#4)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#too-many-digits
+
+W4T.balanceRel (datasets/qian/timestamp/vulnerable/14928.sol#7) should be constant 
+W4T.miningReward (datasets/qian/timestamp/vulnerable/14928.sol#4) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/qian/timestamp/vulnerable/14928.sol analyzed (1 contracts with 93 detectors), 11 result(s) found

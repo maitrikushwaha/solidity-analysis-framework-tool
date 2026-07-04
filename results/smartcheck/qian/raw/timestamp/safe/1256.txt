@@ -1,0 +1,25 @@
+/work/datasets/qian/timestamp/safe/1256.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 3
+column: 0
+content: contractBetting{structchronus_info{uint32starting_time;uint32betting_duration;uint32race_duration;}chronus_infopublicchronus;addresspublicowner;modifieronlyOwner{require(owner==msg.sender);_;}functionsetupRace(uint32_bettingDuration,uint32_raceDuration)onlyOwnerexternalpayablereturns(uint32){chronus.starting_time=uint32(block.timestamp);chronus.betting_duration=_bettingDuration;chronus.race_duration=_raceDuration;returnchronus.starting_time;}}
+
+ruleId: SOLIDITY_OVERPOWERED_ROLE
+patternId: j83hf7
+severity: 2
+line: 16
+column: 4
+content: functionsetupRace(uint32_bettingDuration,uint32_raceDuration)onlyOwnerexternalpayablereturns(uint32){chronus.starting_time=uint32(block.timestamp);chronus.betting_duration=_bettingDuration;chronus.race_duration=_raceDuration;returnchronus.starting_time;}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+SOLIDITY_OVERPOWERED_ROLE :1
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_LOCKED_MONEY :1

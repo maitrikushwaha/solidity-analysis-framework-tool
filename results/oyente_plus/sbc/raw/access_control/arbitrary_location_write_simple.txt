@@ -1,0 +1,33 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc arbitrary_location_write_simple.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.jho3sZiFbC' running
+INFO:root:contract arbitrary_location_write_simple.sol:Wallet:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 87.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:arbitrary_location_write_simple.sol:28:10: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    bonusCodes.length = 0
+arbitrary_location_write_simple.sol:22:10: Warning: Integer Underflow.
+
+INFO:symExec:arbitrary_location_write_simple.sol:33:10: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    bonusCodes.length = 76189624550741644503551423152399723422768076887749655459090739549318933069819
+    idx = 43480424826355086054081184337208083592750205178177945329514723902259368034316
+arbitrary_location_write_simple.sol:9:2: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    bonusCodes.length = 66957485486206312693506576740988669971785621551100731008301585977930260942080
+arbitrary_location_write_simple.sol:2:21: Warning: Integer Overflow.
+
+arbitrary_location_write_simple.sol:22:10: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to arbitrary_location_write_simple.sol:Wallet.json.

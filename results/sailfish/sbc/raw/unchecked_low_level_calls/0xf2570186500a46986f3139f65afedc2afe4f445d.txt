@@ -1,0 +1,38 @@
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Analysis started at: 2026-06-21 07:09:59 PM
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Callgraph generation started!
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Callgraph generation finished!
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Value Range Analysis started
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Generating return summary for makeOldFucks
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Return summary generated for makeOldFucks
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Processed function makeOldFucks
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Range graph generated
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Value Range Analysis took 0.000572 seconds
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Value Range Analysis finished
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Dependency detection started!
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Dependency detection finished!
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Static Analysis took 0.043274 seconds
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Dependency does not exist
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Analysis finished!
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Analysis took 0.043473 seconds
+[INFO] | 2026-06-21 07:09:59 PM | analyzer.0xf2570186500a46986f3139f65afedc2afe4f445d | Analysis finished at: 2026-06-21 07:09:59 PM
+[36m[#] Analysing started: 0xf2570186500a46986f3139f65afedc2afe4f445d.sol[0m
+[36m[#] Interprocedural CFG generation started for makeOldFucks[0m
+[36m[#] Interprocedural CFG generated for makeOldFucks[0m
+[36m[#] SDG generation started for makeOldFucks[0m
+[36m[#] SDG generated for makeOldFucks[0m
+[36m[#] Analysis took 0.043473 seconds[0m
+[36m[#] Analysis completed: 0xf2570186500a46986f3139f65afedc2afe4f445d.sol [0m
+
+=== dependency_info.json ===
+{}

@@ -1,0 +1,42 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/access_control/proxy.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/access_control' running
+
+Proxy.forward(address,bytes) (datasets/sbc/access_control/proxy.sol#17-20) uses delegatecall to a input-controlled function id
+	- require(bool)(callee.delegatecall(_data)) (datasets/sbc/access_control/proxy.sol#19)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#controlled-delegatecall
+
+Version constraint ^0.4.24 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x
+	- ExpExponentCleanup
+	- EventStructWrongData.
+It is used by:
+	- ^0.4.24 (datasets/sbc/access_control/proxy.sol#7)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in Proxy.forward(address,bytes) (datasets/sbc/access_control/proxy.sol#17-20):
+	- require(bool)(callee.delegatecall(_data)) (datasets/sbc/access_control/proxy.sol#19)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Parameter Proxy.forward(address,bytes)._data (datasets/sbc/access_control/proxy.sol#17) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+forward(address,bytes) should be declared external:
+	- Proxy.forward(address,bytes) (datasets/sbc/access_control/proxy.sol#17-20)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external
+/work/datasets/sbc/access_control/proxy.sol analyzed (1 contracts with 93 detectors), 6 result(s) found

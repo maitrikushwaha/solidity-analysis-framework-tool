@@ -1,0 +1,25 @@
+{
+ "evm_code_coverage": "72.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "15_ReadOnlyStaticcall_ree1.sol:37:45: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 1",
+   "15_ReadOnlyStaticcall_ree1.sol:93:3077: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 1",
+   "15_ReadOnlyStaticcall_ree1.sol:41:27: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 0",
+   "15_ReadOnlyStaticcall_ree1.sol:93:2197: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 0",
+   "15_ReadOnlyStaticcall_ree1.sol:42:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 0",
+   "15_ReadOnlyStaticcall_ree1.sol:38:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 0",
+   "15_ReadOnlyStaticcall_ree1.sol:30:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 1461501637330902918203684832716283019655932542976",
+   "15_ReadOnlyStaticcall_ree1.sol:22:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [],
+  "callstack": [
+   "15_ReadOnlyStaticcall_ree1.sol:48:23: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

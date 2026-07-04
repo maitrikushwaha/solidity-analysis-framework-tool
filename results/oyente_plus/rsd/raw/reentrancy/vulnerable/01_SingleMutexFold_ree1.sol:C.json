@@ -1,0 +1,30 @@
+{
+ "evm_code_coverage": "85.2",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "01_SingleMutexFold_ree1.sol:6:5: Warning: Integer Underflow.\n",
+   "01_SingleMutexFold_ree1.sol:29:2827: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 0\n    flag = 162259276829213363391578010288408",
+   "01_SingleMutexFold_ree1.sol:13:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 448014753582324495121099962949220751228739633744864811584717848592",
+   "01_SingleMutexFold_ree1.sol:25:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 94747173848740859673904328477347569986310108484945578963648619006461795631104"
+  ],
+  "integer_overflow": [
+   "01_SingleMutexFold_ree1.sol:29:793: Warning: Integer Overflow.\n",
+   "01_SingleMutexFold_ree1.sol:17:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 68719476736\n    flag = 883538299746017202379602638820395888965613427802793287217553502954850304\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969",
+   "01_SingleMutexFold_ree1.sol:16:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 26334525777723274502097416945255447235438317519676133941473968600",
+   "01_SingleMutexFold_ree1.sol:29:2773: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 162259276829213363391578010288408",
+   "01_SingleMutexFold_ree1.sol:29:1054: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 162259276829213363391578010288128",
+   "01_SingleMutexFold_ree1.sol:29:2560: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 0\n    flag = 162259276829213363391578010288128"
+  ],
+  "callstack": [
+   "01_SingleMutexFold_ree1.sol:17:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "01_SingleMutexFold_ree1.sol:17:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

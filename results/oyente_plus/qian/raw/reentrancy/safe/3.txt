@@ -1,0 +1,36 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 3.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.CTor9Ag5nR' running
+INFO:root:contract 3.sol:NIZIGEN:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 75.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:3.sol:14:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+    owner = 0
+    _value = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+3.sol:19:18: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+    owner = 0
+    _value = 57896044618658097711785492504343953926634992332820282019728792003956564819969
+INFO:symExec:3.sol:14:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+3.sol:6:25: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 87413241928496742724406058474392351649541203496387829938721756900872241086529
+    owner = 0
+    _value = 87099052384987345042489248674441336386891570270055122983023392536420941828105
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 3.sol:NIZIGEN.json.

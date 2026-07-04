@@ -1,0 +1,10 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc etheraffle.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.zBC20ykObI' running
+INFO:root:contract etheraffle.sol:Ethraffle_v4b:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 37.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True

@@ -1,0 +1,29 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc mapping_write.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.ziB66QfFl5' running
+INFO:root:contract mapping_write.sol:Map:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 39.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:mapping_write.sol:20:10: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    key = 43480424826355086054081184337208083592750205178177945329514723902259368034316
+    map.length = 76189624550741644503551423152399723422768076887749655459090739549318933069819
+mapping_write.sol:17:27: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    key = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    map.length = 112167437841875290953848341355166452089305331615343066981355380533262117950558
+mapping_write.sol:11:2: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    key = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    map.length = 115791172706969298568679501338042366672981250478043184192980980231493457543165
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to mapping_write.sol:Map.json.

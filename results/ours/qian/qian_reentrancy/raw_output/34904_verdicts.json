@@ -1,0 +1,14 @@
+{
+  "filename": "34904.sol",
+  "reentrancy": -1,
+  "overflow": 0,
+  "timestamp": -1,
+  "tod": -1,
+  "duration_s": 0.04,
+  "error": "transform_failed: An error occurred during execution\n> command: `/home/maitri/.solcx/solc-v0.4.26 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc -`\n> return code: `1`\n> stdout:\n\n> stderr:\n<stdin>:16:3: Error: Undeclared identifier.\n\t\tTransactions.executed = true;\n\t\t^----------^\n<stdin>:17:17: Error: Undeclared identifier.\n        require(Transactions.destination.value(Transactions.value)(Transactions.data));\n                ^----------^\n<stdin>:17:48: Error: Undeclared identifier.\n        require(Transactions.destination.value(Transactions.value)(Transactions.data));\n                                               ^----------^\n<stdin>:17:68: Error: Undeclared identifier.\n        require(Transactions.destination.value(Transactions.value)(Transactions.data));\n                                                                   ^----------^",
+  "skipped_pipelines": [
+    "reentrancy",
+    "timestamp",
+    "tod"
+  ]
+}

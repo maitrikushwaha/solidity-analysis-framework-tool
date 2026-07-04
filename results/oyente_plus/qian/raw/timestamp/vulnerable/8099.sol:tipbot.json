@@ -1,0 +1,21 @@
+{
+ "evm_code_coverage": "89.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "8099.sol:14:9: Warning: Integer Underflow.\n",
+   "8099.sol:15:9: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "8099.sol:1:24: Warning: Integer Overflow.\n",
+   "8099.sol:14:9: Warning: Integer Overflow.\n",
+   "8099.sol:15:9: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

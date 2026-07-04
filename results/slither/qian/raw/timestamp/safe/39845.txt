@@ -1,0 +1,46 @@
+
+'solc --version' running
+'solc /work/datasets/qian/timestamp/safe/39845.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/timestamp/safe' running
+Compilation warnings/errors on /work/datasets/qian/timestamp/safe/39845.sol:
+/work/datasets/qian/timestamp/safe/39845.sol:19:26: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+    if (p.status != 1) { throw; }
+                         ^---^
+/work/datasets/qian/timestamp/safe/39845.sol:18:5: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+    Purse p = purses[purseId];
+    ^-----^
+/work/datasets/qian/timestamp/safe/39845.sol:17:3: Warning: No visibility specified. Defaulting to "public". 
+  function contributeToPurse(uint purseId) payable {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Contract locking ether found:
+	Contract Omnipurse (datasets/qian/timestamp/safe/39845.sol#3-24) has payable functions:
+	 - Omnipurse.contributeToPurse(uint256) (datasets/qian/timestamp/safe/39845.sol#17-22)
+	But does not have a function to withdraw the ether
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#contracts-that-lock-ether
+
+Deprecated standard detected THROW (datasets/qian/timestamp/safe/39845.sol#19):
+	- Usage of "throw" should be replaced with "revert()"
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#deprecated-standards
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/timestamp/safe/39845.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+/work/datasets/qian/timestamp/safe/39845.sol analyzed (1 contracts with 93 detectors), 4 result(s) found

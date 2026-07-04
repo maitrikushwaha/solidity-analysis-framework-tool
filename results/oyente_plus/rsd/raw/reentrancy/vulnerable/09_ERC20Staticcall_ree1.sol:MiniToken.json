@@ -1,0 +1,19 @@
+{
+ "evm_code_coverage": "26.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "09_ERC20Staticcall_ree1.sol:21:62: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    donated[msg.sender] = 0"
+  ],
+  "integer_overflow": [
+   "09_ERC20Staticcall_ree1.sol:21:62: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    donated[msg.sender] = 0",
+   "09_ERC20Staticcall_ree1.sol:30:726: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    donated[msg.sender] = 0"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

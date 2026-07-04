@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "74.9",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "34995.sol:11:8: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    timeLimit = 61966974620958956700613545647363778563455530453856521211904144552344496416258\n    lastKing = 72408089114664716902698690136660305954107292635268708640787665681798499116026"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

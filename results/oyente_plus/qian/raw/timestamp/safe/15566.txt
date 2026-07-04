@@ -1,0 +1,28 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 15566.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.CfBSqJ2mhk' running
+INFO:root:contract 15566.sol:VernamWhiteListDeposit:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 88.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:15566.sol:11:3: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    deadLine = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+INFO:symExec:15566.sol:1:24: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    deadLine = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+15566.sol:11:3: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    deadLine = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+15566.sol:4:2: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 15566.sol:VernamWhiteListDeposit.json.

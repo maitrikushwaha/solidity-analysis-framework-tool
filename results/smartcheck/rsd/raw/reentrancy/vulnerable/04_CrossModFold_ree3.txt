@@ -1,0 +1,27 @@
+/work/datasets/rsd/reentrancy/vulnerable/04_CrossModFold_ree3.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlline 31:42 no viable alternative at input '.call{'
+line 31:42 missing ';' at '{'
+ruleId: SOLIDITY_LOCKED_MONEY
+patternId: 30281d
+severity: 3
+line: 4
+column: 0
+content: contractC{boolflag=false;mapping(address=>uint256)publicbalances;modifiernonReentrant(){require(!flag,"Locked");flag=true;_;flag=false;}functionupdate(addressa,int256amt)internal{if(amt<0)balances[a]-=uint256(amt);elsebalances[a]+=uint256(amt);}functiontransfer(addressto,uint256amt)nonReentrantpublic{require(balances[msg.sender]>=amt,"Insufficient funds");update(to,int256(amt));update(msg.sender,-int256(amt));}functionwithdraw()public{require(balances[msg.sender]>0,"Insufficient funds");(boolsuccess,)=msg.sender.call<missing ';'>{value:balances[msg.sender]}("");require(success,"Call failed");update(msg.sender,-int256(balances[msg.sender]));}functiondeposit()nonReentrantpublicpayable{balances[msg.sender]+=msg.value;}}
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 5
+column: 4
+content: boolflag=false;
+
+SOLIDITY_VISIBILITY :1
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_LOCKED_MONEY :1

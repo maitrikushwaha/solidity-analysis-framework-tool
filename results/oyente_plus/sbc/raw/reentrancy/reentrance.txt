@@ -1,0 +1,27 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc reentrance.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.EYqeJo1bXW' running
+INFO:root:contract reentrance.sol:Reentrance:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 88.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:reentrance.sol:24:10: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    _amount = 1
+INFO:symExec:reentrance.sol:14:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[_to] = 62430443754550986833341874490453040835186626598089484379077938312255997685044
+INFO:symExec:reentrance.sol:24:10: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:reentrance.sol:24:10: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to reentrance.sol:Reentrance.json.

@@ -1,0 +1,157 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc etherpot_lotto.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.ojM7o6cqfk' running
+INFO:CryticCompile:Compilation warnings/errors on etherpot_lotto.sol:
+etherpot_lotto.sol:50:10: Warning: Use of the "var" keyword is deprecated.
+         var decisionBlockNumber = getDecisionBlockNumber(roundIndex,subpotIndex);
+         ^---------------------^
+etherpot_lotto.sol:56:10: Warning: Use of the "var" keyword is deprecated.
+         var decisionBlockHash = getHashOfBlock(decisionBlockNumber);
+         ^-------------------^
+etherpot_lotto.sol:57:10: Warning: Use of the "var" keyword is deprecated.
+         var winningTicketIndex = decisionBlockHash%rounds[roundIndex].ticketsCount;
+         ^--------------------^
+etherpot_lotto.sol:60:10: Warning: Use of the "var" keyword is deprecated.
+         var ticketIndex = uint256(0);
+         ^-------------^
+etherpot_lotto.sol:62:14: Warning: Use of the "var" keyword is deprecated.
+         for(var buyerIndex = 0; buyerIndex<rounds[roundIndex].buyers.length; buyerIndex++){
+             ^------------^
+etherpot_lotto.sol:63:14: Warning: Use of the "var" keyword is deprecated.
+             var buyer = rounds[roundIndex].buyers[buyerIndex];
+             ^-------^
+etherpot_lotto.sol:77:10: Warning: Use of the "var" keyword is deprecated.
+         var subpotsCount = rounds[roundIndex].pot/blockReward;
+         ^--------------^
+etherpot_lotto.sol:91:10: Warning: Use of the "var" keyword is deprecated.
+         var subpotsCount = getSubpotsCount(roundIndex);
+         ^--------------^
+etherpot_lotto.sol:96:10: Warning: Use of the "var" keyword is deprecated.
+         var decisionBlockNumber = getDecisionBlockNumber(roundIndex,subpotIndex);
+         ^---------------------^
+etherpot_lotto.sol:105:10: Warning: Use of the "var" keyword is deprecated.
+         var winner = calculateWinner(roundIndex,subpotIndex);
+         ^--------^
+etherpot_lotto.sol:106:10: Warning: Use of the "var" keyword is deprecated.
+         var subpot = getSubpot(roundIndex);
+         ^--------^
+etherpot_lotto.sol:134:10: Warning: Use of the "var" keyword is deprecated.
+         var roundIndex = getRoundIndex();
+         ^------------^
+etherpot_lotto.sol:135:10: Warning: Use of the "var" keyword is deprecated.
+         var value = msg.value-(msg.value%ticketPrice);
+         ^-------^
+etherpot_lotto.sol:145:10: Warning: Use of the "var" keyword is deprecated.
+         var ticketsCount = value/ticketPrice;
+         ^--------------^
+etherpot_lotto.sol:149:14: Warning: Use of the "var" keyword is deprecated.
+             var buyersLength = rounds[roundIndex].buyers.length++;
+             ^--------------^
+etherpot_lotto.sol:62:14: Warning: The type of this variable was inferred as uint8, which can hold values between 0 and 255. This is probably not desired. Use an explicit type to silence this warning.
+         for(var buyerIndex = 0; buyerIndex<rounds[roundIndex].buyers.length; buyerIndex++){
+             ^----------------^
+etherpot_lotto.sol:109:10: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+         winner.send(subpot);
+         ^-----------------^
+etherpot_lotto.sol:141:14: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+             msg.sender.send(msg.value-value);
+             ^------------------------------^
+etherpot_lotto.sol:20:6: Warning: No visibility specified. Defaulting to "public". 
+     function getBlocksPerRound() constant returns(uint){ return blocksPerRound; }
+     ^---------------------------------------------------------------------------^
+etherpot_lotto.sol:21:6: Warning: No visibility specified. Defaulting to "public". 
+     function getTicketPrice() constant returns(uint){ return ticketPrice; }
+     ^---------------------------------------------------------------------^
+etherpot_lotto.sol:34:6: Warning: No visibility specified. Defaulting to "public". 
+     function getRoundIndex() constant returns (uint){
+     ^ (Relevant source part starts here and spans across multiple lines).
+etherpot_lotto.sol:40:6: Warning: No visibility specified. Defaulting to "public". 
+     function getIsCashed(uint roundIndex,uint subpotIndex) constant returns (bool){
+     ^ (Relevant source part starts here and spans across multiple lines).
+etherpot_lotto.sol:47:6: Warning: No visibility specified. Defaulting to "public". 
+     function calculateWinner(uint roundIndex, uint subpotIndex) constant returns(address){
+     ^ (Relevant source part starts here and spans across multiple lines).
+etherpot_lotto.sol:72:6: Warning: No visibility specified. Defaulting to "public". 
+     function getDecisionBlockNumber(uint roundIndex,uint subpotIndex) constant returns (uint){
+     ^ (Relevant source part starts here and spans across multiple lines).
+etherpot_lotto.sol:76:6: Warning: No visibility specified. Defaulting to "public". 
+     function getSubpotsCount(uint roundIndex) constant returns(uint){
+     ^ (Relevant source part starts here and spans across multiple lines).
+etherpot_lotto.sol:85:6: Warning: No visibility specified. Defaulting to "public". 
+     function getSubpot(uint roundIndex) constant returns(uint){
+     ^ (Relevant source part starts here and spans across multiple lines).
+etherpot_lotto.sol:89:6: Warning: No visibility specified. Defaulting to "public". 
+     function cash(uint roundIndex, uint subpotIndex){
+     ^ (Relevant source part starts here and spans across multiple lines).
+etherpot_lotto.sol:115:6: Warning: No visibility specified. Defaulting to "public". 
+     function getHashOfBlock(uint blockIndex) constant returns(uint){
+     ^ (Relevant source part starts here and spans across multiple lines).
+etherpot_lotto.sol:116:22: Warning: "block.blockhash()" has been deprecated in favor of "blockhash()"
+         return uint(block.blockhash(blockIndex));
+                     ^-------------^
+etherpot_lotto.sol:119:6: Warning: No visibility specified. Defaulting to "public". 
+     function getBuyers(uint roundIndex,address buyer) constant returns (address[]){
+     ^ (Relevant source part starts here and spans across multiple lines).
+etherpot_lotto.sol:119:41: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+     function getBuyers(uint roundIndex,address buyer) constant returns (address[]){
+                                        ^-----------^
+etherpot_lotto.sol:123:6: Warning: No visibility specified. Defaulting to "public". 
+     function getTicketsCountByBuyer(uint roundIndex,address buyer) constant returns (uint){
+     ^ (Relevant source part starts here and spans across multiple lines).
+etherpot_lotto.sol:127:6: Warning: No visibility specified. Defaulting to "public". 
+     function getPot(uint roundIndex) constant returns(uint){
+     ^ (Relevant source part starts here and spans across multiple lines).
+etherpot_lotto.sol:131:6: Warning: No visibility specified. Defaulting to "public". 
+     function() {
+     ^ (Relevant source part starts here and spans across multiple lines).
+etherpot_lotto.sol:135:22: Warning: "msg.value" used in non-payable function. Do you want to add the "payable" modifier to this function?
+         var value = msg.value-(msg.value%ticketPrice);
+                     ^-------^
+etherpot_lotto.sol:135:33: Warning: "msg.value" used in non-payable function. Do you want to add the "payable" modifier to this function?
+         var value = msg.value-(msg.value%ticketPrice);
+                                ^-------^
+etherpot_lotto.sol:139:19: Warning: "msg.value" used in non-payable function. Do you want to add the "payable" modifier to this function?
+         if(value<msg.value){
+                  ^-------^
+etherpot_lotto.sol:141:30: Warning: "msg.value" used in non-payable function. Do you want to add the "payable" modifier to this function?
+             msg.sender.send(msg.value-value);
+                             ^-------^
+etherpot_lotto.sol:20:6: Warning: Function state mutability can be restricted to pure
+     function getBlocksPerRound() constant returns(uint){ return blocksPerRound; }
+     ^---------------------------------------------------------------------------^
+etherpot_lotto.sol:21:6: Warning: Function state mutability can be restricted to pure
+     function getTicketPrice() constant returns(uint){ return ticketPrice; }
+     ^---------------------------------------------------------------------^
+etherpot_lotto.sol:72:6: Warning: Function state mutability can be restricted to pure
+     function getDecisionBlockNumber(uint roundIndex,uint subpotIndex) constant returns (uint){
+     ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract etherpot_lotto.sol:Lotto:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 30.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:etherpot_lotto.sol:119:6: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    return rounds[roundIndex].buyers = 0
+INFO:symExec:etherpot_lotto.sol:128:17: Warning: Integer Overflow.
+
+etherpot_lotto.sol:124:17: Warning: Integer Overflow.
+
+etherpot_lotto.sol:43:17: Warning: Integer Overflow.
+
+etherpot_lotto.sol:120:10: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    return rounds[roundIndex].buyers = 3618502788666131106986593281521497120414687020801267626233049500247285301247
+INFO:symExec:etherpot_lotto.sol:141:14: Warning: Callstack Depth Attack Vulnerability.
+
+etherpot_lotto.sol:109:10: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to etherpot_lotto.sol:Lotto.json.

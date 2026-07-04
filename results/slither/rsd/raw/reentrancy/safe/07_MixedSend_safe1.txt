@@ -1,0 +1,23 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/07_MixedSend_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/07_MixedSend_safe1.sol#1)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in C.withdraw() (datasets/rsd/reentrancy/safe/07_MixedSend_safe1.sol#8-16):
+	- (success2,None) = msg.sender.call{value: 0}() (datasets/rsd/reentrancy/safe/07_MixedSend_safe1.sol#14)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Reentrancy in C.withdraw() (datasets/rsd/reentrancy/safe/07_MixedSend_safe1.sol#8-16):
+	External calls:
+	- success1 = address(msg.sender).send(balances[msg.sender]) (datasets/rsd/reentrancy/safe/07_MixedSend_safe1.sol#10)
+	State variables written after the call(s):
+	- balances[msg.sender] = 0 (datasets/rsd/reentrancy/safe/07_MixedSend_safe1.sol#12)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4
+/work/datasets/rsd/reentrancy/safe/07_MixedSend_safe1.sol analyzed (1 contracts with 93 detectors), 3 result(s) found

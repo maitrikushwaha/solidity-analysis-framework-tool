@@ -1,0 +1,22 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 9208.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.jTW2cd4KcB' running
+INFO:root:contract 9208.sol:Crowdsale:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 76.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:9208.sol:7:27: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    startsAt = 1
+INFO:symExec:9208.sol:8:26: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    startsAt = 9357710400807469101310923625686178102944106840933728154517245604120892391226
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 9208.sol:Crowdsale.json.

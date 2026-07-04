@@ -1,0 +1,80 @@
+
+'solc --version' running
+'solc /work/datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/sbc/time_manipulation' running
+Compilation warnings/errors on /work/datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol:
+/work/datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol:56:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function MY_BANK(address log) public{
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Log (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#62-86) contract sets array length with a user-controlled value:
+	- History.push(LastMsg) (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#83)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#array-length-assignment
+
+Reentrancy in MY_BANK.Collect(uint256) (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#21-35):
+	External calls:
+	- msg.sender.call.value(_am)() (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#29)
+	State variables written after the call(s):
+	- acc.balance -= _am (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#31)
+	MY_BANK.Acc (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#50) can be used in cross function reentrancies:
+	- MY_BANK.Acc (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#50)
+	- MY_BANK.Collect(uint256) (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#21-35)
+	- MY_BANK.Put(uint256) (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#11-19)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+MY_BANK.Put(uint256) (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#11-19) uses timestamp for comparisons
+	Dangerous comparisons:
+	- _unlockTime > now (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#17)
+MY_BANK.Collect(uint256) (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#21-35) uses timestamp for comparisons
+	Dangerous comparisons:
+	- acc.balance >= MinSum && acc.balance >= _am && now > acc.unlockTime (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#26)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#7)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in MY_BANK.Collect(uint256) (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#21-35):
+	- msg.sender.call.value(_am)() (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#29)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Contract MY_BANK (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#9-59) is not in CapWords
+Function MY_BANK.Put(uint256) (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#11-19) is not in mixedCase
+Parameter MY_BANK.Put(uint256)._unlockTime (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#11) is not in mixedCase
+Function MY_BANK.Collect(uint256) (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#21-35) is not in mixedCase
+Parameter MY_BANK.Collect(uint256)._am (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#21) is not in mixedCase
+Variable MY_BANK.Acc (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#50) is not in mixedCase
+Variable MY_BANK.LogFile (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#52) is not in mixedCase
+Variable MY_BANK.MinSum (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#54) is not in mixedCase
+Function Log.AddMessage(address,uint256,string) (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#76-84) is not in mixedCase
+Parameter Log.AddMessage(address,uint256,string)._adr (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#76) is not in mixedCase
+Parameter Log.AddMessage(address,uint256,string)._val (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#76) is not in mixedCase
+Parameter Log.AddMessage(address,uint256,string)._data (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#76) is not in mixedCase
+Variable Log.History (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#72) is not in mixedCase
+Variable Log.LastMsg (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#74) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+MY_BANK.MinSum (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#54) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+
+AddMessage(address,uint256,string) should be declared external:
+	- Log.AddMessage(address,uint256,string) (datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol#76-84)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#public-function-that-could-be-declared-external
+/work/datasets/sbc/time_manipulation/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol analyzed (2 contracts with 93 detectors), 23 result(s) found

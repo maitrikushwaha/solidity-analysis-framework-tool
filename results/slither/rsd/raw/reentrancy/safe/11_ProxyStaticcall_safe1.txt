@@ -1,0 +1,26 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/11_ProxyStaticcall_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+Proxy.forward(address,address).target (datasets/rsd/reentrancy/safe/11_ProxyStaticcall_safe1.sol#5) lacks a zero-check on :
+		- (success,data) = target.staticcall(abi.encodeWithSignature(getBalance(address),user)) (datasets/rsd/reentrancy/safe/11_ProxyStaticcall_safe1.sol#6-8)
+Proxy.forward(address,address).user (datasets/rsd/reentrancy/safe/11_ProxyStaticcall_safe1.sol#5) lacks a zero-check on :
+		- (success,data) = target.staticcall(abi.encodeWithSignature(getBalance(address),user)) (datasets/rsd/reentrancy/safe/11_ProxyStaticcall_safe1.sol#6-8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+Proxy.forward(address,address) (datasets/rsd/reentrancy/safe/11_ProxyStaticcall_safe1.sol#5-20) uses assembly
+	- INLINE ASM (datasets/rsd/reentrancy/safe/11_ProxyStaticcall_safe1.sol#11-16)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/11_ProxyStaticcall_safe1.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in Proxy.forward(address,address) (datasets/rsd/reentrancy/safe/11_ProxyStaticcall_safe1.sol#5-20):
+	- (success,data) = target.staticcall(abi.encodeWithSignature(getBalance(address),user)) (datasets/rsd/reentrancy/safe/11_ProxyStaticcall_safe1.sol#6-8)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/work/datasets/rsd/reentrancy/safe/11_ProxyStaticcall_safe1.sol analyzed (1 contracts with 93 detectors), 5 result(s) found

@@ -1,0 +1,4 @@
+=== Vandal reentrantCall relation (non-empty => reentrant) ===
+0x51f
+0x7a9
+verdict=1

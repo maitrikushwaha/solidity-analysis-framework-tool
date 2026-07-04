@@ -1,0 +1,4 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/access_control/incorrect_constructor_name3.sol:Missing
+offset,opcode,detection
+220,220: SLOAD,Store read after unsafe call

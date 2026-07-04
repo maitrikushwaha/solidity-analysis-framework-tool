@@ -1,0 +1,70 @@
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Analysis started at: 2026-06-21 07:01:54 PM
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Callgraph generation started!
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Callgraph generation finished!
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Value Range Analysis started
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Generating return summary for insertNnumbers
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Return summary generated for insertNnumbers
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Range graph generated
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Processed function insertNnumbers
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Generating return summary for clear
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Return summary generated for clear
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Range graph generated
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Processed function clear
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Generating return summary for clearDOS
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Return summary generated for clearDOS
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Range graph generated
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Processed function clearDOS
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Generating return summary for getLengthArray
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Return summary generated for getLengthArray
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Processed function getLengthArray
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Generating return summary for getRealLengthArray
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Return summary generated for getRealLengthArray
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Processed function getRealLengthArray
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Range graph generated
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Value Range Analysis took 0.002945 seconds
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Value Range Analysis finished
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Dependency detection started!
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Dependency detection finished!
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Static Analysis took 0.077145 seconds
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Dependency does not exist
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Analysis finished!
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Analysis took 0.077379 seconds
+[INFO] | 2026-06-21 07:01:54 PM | analyzer.dos_number | Analysis finished at: 2026-06-21 07:01:54 PM
+[36m[#] Analysing started: dos_number.sol[0m
+[36m[#] Interprocedural CFG generation started for insertNnumbers[0m
+[36m[#] Interprocedural CFG generated for insertNnumbers[0m
+[36m[#] Interprocedural CFG generation started for clear[0m
+[36m[#] Interprocedural CFG generated for clear[0m
+[36m[#] Interprocedural CFG generation started for clearDOS[0m
+[36m[#] Interprocedural CFG generated for clearDOS[0m
+[36m[#] Interprocedural CFG generation started for getLengthArray[0m
+[36m[#] Interprocedural CFG generated for getLengthArray[0m
+[36m[#] Interprocedural CFG generation started for getRealLengthArray[0m
+[36m[#] Interprocedural CFG generated for getRealLengthArray[0m
+[36m[#] SDG generation started for insertNnumbers[0m
+[36m[#] SDG generated for insertNnumbers[0m
+[36m[#] SDG generation started for clear[0m
+[36m[#] SDG generated for clear[0m
+[36m[#] SDG generation started for clearDOS[0m
+[36m[#] SDG generated for clearDOS[0m
+[36m[#] SDG generation started for getLengthArray[0m
+[36m[#] SDG generated for getLengthArray[0m
+[36m[#] SDG generation started for getRealLengthArray[0m
+[36m[#] SDG generated for getRealLengthArray[0m
+[36m[#] Analysis took 0.077379 seconds[0m
+[36m[#] Analysis completed: dos_number.sol [0m
+
+=== dependency_info.json ===
+{}

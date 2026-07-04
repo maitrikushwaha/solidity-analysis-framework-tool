@@ -1,0 +1,125 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 46.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.2vidP2OkGT' running
+INFO:root:contract 46.sol:ProofOfExistence:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 25.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:46.sol:48:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    filePathHash = 679680529
+    fileHash = 4034229872
+    fileExistenceProofs[dappBoxOrigin].length = 0
+46.sol:53:22: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    filePathHash = 679680529
+    fileHash = 4034229872
+    fileExistenceProofs[dappBoxOrigin].length = 107839786668602559178668060348078522694548577690162289924414440996864
+46.sol:75:52: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    filePathHash = 750979584
+    fileHash = 2710853180
+    fileExistenceProofs[dappBoxOrigin].length = 81129638414606681695789005144064
+46.sol:2:23: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    filePathHash = 750979584
+    fileHash = 2710853180
+    fileExistenceProofs[dappBoxOrigin].length = 81129638414606681695789005144064
+46.sol:75:24: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    filePathHash = 885206528
+    fileHash = 1879609001
+    fileExistenceProofs[dappBoxOrigin].length = 131072
+46.sol:54:11: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    fileExistenceProofs[dappBoxOrigin].length = 20282409603651670423947251286030
+    filePathHash = 641129161
+    fileHash = 1423098785
+INFO:symExec:46.sol:48:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    filePathHash = 268435481
+    fileHash = 545086489
+46.sol:5:15: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    filePathHash = 756748936
+    fileHash = 3224557341
+46.sol:9:28: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    filePathHash = 2891649688
+    fileHash = 3224557341
+46.sol:53:46: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    filePathHash = 679680529
+    fileHash = 4034229872
+    fileExistenceProofs[dappBoxOrigin].length = 107839786668602559178668060348078522694548577690162289924414440996864
+46.sol:53:22: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    filePathHash = 679680529
+    fileHash = 4036327024
+    fileExistenceProofs[dappBoxOrigin].length = 81129638414606681695789005144064
+46.sol:75:52: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    filePathHash = 679680529
+    fileHash = 4036327024
+    fileExistenceProofs[dappBoxOrigin].length = 81129638414606681695789005144064
+46.sol:75:42: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    filePathHash = 750979584
+    fileHash = 2710853180
+    fileExistenceProofs[dappBoxOrigin].length = 81129638414606681695789005144064
+46.sol:75:24: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    filePathHash = 750979584
+    fileHash = 2710853180
+    fileExistenceProofs[dappBoxOrigin].length = 81129638414606681695789005144064
+46.sol:75:14: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    filePathHash = 977473154
+    fileHash = 1619058467
+    fileExistenceProofs[dappBoxOrigin].length = 95780971304118053647396689196894323976171195136475136
+46.sol:53:46: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    fileExistenceProofs[dappBoxOrigin].length = 4611686018427387905
+    filePathHash = 1741126402
+    fileHash = 3490314928
+46.sol:54:39: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    fileExistenceProofs[dappBoxOrigin].length = 20282409603651670423947251286030
+    filePathHash = 641129161
+    fileHash = 1423098785
+46.sol:54:39: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    fileExistenceProofs[dappBoxOrigin].length = 20282409603651670423947251286030
+    filePathHash = 641129161
+    fileHash = 1423098785
+46.sol:54:11: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    fileExistenceProofs[dappBoxOrigin].length = 20282409603651670423947251286030
+    filePathHash = 641129161
+    fileHash = 1423098785
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 46.sol:ProofOfExistence.json.

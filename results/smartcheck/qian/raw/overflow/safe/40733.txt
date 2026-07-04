@@ -1,0 +1,49 @@
+/work/datasets/qian/overflow/safe/40733.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_CALL_WITHOUT_DATA
+patternId: om991k
+severity: 2
+line: 10
+column: 22
+content: call.value(amountToWithdraw)()
+
+ruleId: SOLIDITY_DEPRECATED_CONSTRUCTIONS
+patternId: 49bd2a
+severity: 1
+line: 10
+column: 65
+content: throw
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA
+patternId: 5616b2
+severity: 1
+line: 5
+column: 30
+content: private
+
+ruleId: SOLIDITY_REVERT_REQUIRE
+patternId: c56b12
+severity: 1
+line: 10
+column: 8
+content: if(recipient.call.value(amountToWithdraw)()==false){throw;}
+
+ruleId: SOLIDITY_UPGRADE_TO_050
+patternId: 83k1no
+severity: 1
+line: 10
+column: 22
+content: call.value(amountToWithdraw)()
+
+SOLIDITY_DEPRECATED_CONSTRUCTIONS :1
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_REVERT_REQUIRE :1
+SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA :1
+SOLIDITY_UPGRADE_TO_050 :1
+SOLIDITY_CALL_WITHOUT_DATA :1

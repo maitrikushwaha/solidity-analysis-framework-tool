@@ -1,0 +1,50 @@
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Analysis started at: 2026-06-21 06:59:05 PM
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Callgraph generation started!
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Callgraph generation finished!
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Value Range Analysis started
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Generating return summary for constructor
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Return summary generated for constructor
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Range graph generated
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Processed function constructor
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Generating return summary for fallback
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Return summary generated for fallback
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Processed function fallback
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Generating return summary for withdrawAll
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Return summary generated for withdrawAll
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Processed function withdrawAll
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Value Range Analysis took 0.001916 seconds
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Value Range Analysis finished
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Dependency detection started!
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Dependency detection finished!
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Static Analysis took 0.089083 seconds
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Dependency does not exist
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Symbolic execution is not needed!
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Analysis finished!
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Analysis took 0.089533 seconds
+[INFO] | 2026-06-21 06:59:05 PM | analyzer.phishable | Analysis finished at: 2026-06-21 06:59:05 PM
+[36m[#] Analysing started: phishable.sol[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for withdrawAll[0m
+[36m[#] Interprocedural CFG generated for withdrawAll[0m
+[36m[#] SDG generation started for constructor[0m
+[36m[#] SDG generated for constructor[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for withdrawAll[0m
+[36m[#] SDG generated for withdrawAll[0m
+[36m[#] Analysis took 0.089533 seconds[0m
+[36m[#] Analysis completed: phishable.sol [0m
+
+=== dependency_info.json ===
+{}

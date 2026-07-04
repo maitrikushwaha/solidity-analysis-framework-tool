@@ -1,0 +1,26 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/unchecked_low_level_calls/0x89c1b3807d4c67df034fffb62f3509561218d30b.sol:TownCrier
+offset,opcode,detection
+2530,2530: SLOAD,Store read after unsafe call
+3606,3606: SLOAD,Store read after unsafe call
+3620,3620: SSTORE,Store write after unsafe call
+3626,3626: SLOAD,Store read after unsafe call
+3839,3839: SLOAD,Store read after unsafe call
+3853,3853: SSTORE,Store write after unsafe call
+3898,3898: SLOAD,Store read after unsafe call
+4218,4218: SLOAD,Store read after unsafe call
+4232,4232: SSTORE,Store write after unsafe call
+4554,4554: SSTORE,Store write after unsafe call
+4581,4581: SLOAD,Store read after unsafe call
+4626,4626: SLOAD,Store read after unsafe call
+4640,4640: SSTORE,Store write after unsafe call
+4720,4720: SLOAD,Store read after unsafe call
+4790,4790: SLOAD,Store read after unsafe call
+5363,5363: SLOAD,Store read after unsafe call
+5377,5377: SSTORE,Store write after unsafe call
+5459,5459: SSTORE,Store write after unsafe call
+5471,5471: SLOAD,Store read after unsafe call
+5500,5500: SLOAD,Store read after unsafe call
+5514,5514: SSTORE,Store write after unsafe call
+5582,5582: SLOAD,Store read after unsafe call
+5596,5596: SSTORE,Store write after unsafe call

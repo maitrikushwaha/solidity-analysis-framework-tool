@@ -1,0 +1,34 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40611.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.Nq2JDX2lTO' running
+INFO:CryticCompile:Compilation warnings/errors on 40611.sol:
+40611.sol:10:13: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+            msg.sender.send(msg.value);
+            ^------------------------^
+40611.sol:7:3: Warning: No visibility specified. Defaulting to "public". 
+  function enter() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+40611.sol:9:13: Warning: "msg.value" used in non-payable function. Do you want to add the "payable" modifier to this function?
+        if (msg.value < 1 ether) {
+            ^-------^
+40611.sol:10:29: Warning: "msg.value" used in non-payable function. Do you want to add the "payable" modifier to this function?
+            msg.sender.send(msg.value);
+                            ^-------^
+
+INFO:root:contract 40611.sol:timegame:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 74.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 True
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:40611.sol:8:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    regeneration = 115792089237316195423570985008687907853269984665640564039457584007913129618560
+INFO:symExec:40611.sol:8:5: Warning: Timestamp Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40611.sol:timegame.json.

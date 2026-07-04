@@ -1,0 +1,27 @@
+Starting Solidity compilation and static analysis.
+solc 0.8.28 already installed at: /home/maitri/.solcx/solc-v0.8.28
+Using solc version 0.8.28
+Transformed CFG build failed: 'statements'
+Falling back: skipping reentrancy/timestamp/TOD analysis, running overflow only.
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW (fallback) ==========
+solc 0.8.28 already installed at: /home/maitri/.solcx/solc-v0.8.28
+Using solc version 0.8.28
+Overflow analysis also failed: 'statements'
+
+===== VERDICTS (Box) =====
+[REENTRANCY] State update after external call in function 'payAll'. Called function 'pay()' contains .call{value:} forwarding unlimited gas. State updated after return.
+[TIMESTAMP-SKIP] Transformed CFG unavailable.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: VULNERABLE
+[SUMMARY] Integer Overflow: NOT VULNERABLE
+[SUMMARY] Integer Underflow: NOT VULNERABLE
+[SUMMARY] Timestamp Dependency: ANALYSIS UNAVAILABLE (transformed CFG failed)
+[SUMMARY] TOD: NOT VULNERABLE
+
+NOTE: Some pipelines were SKIPPED because the mapping transformer could not process this contract.  These vulnerabilities are recorded as -1 (N/A) in the JSON verdict — they are excluded from TP/TN/FP/FN counts rather than counted as negatives.
+
+Total analysis time: 0.08s
+

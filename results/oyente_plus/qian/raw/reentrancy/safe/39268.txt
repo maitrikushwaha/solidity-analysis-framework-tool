@@ -1,0 +1,27 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39268.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.g98S2MyCFa' running
+INFO:CryticCompile:Compilation warnings/errors on 39268.sol:
+39268.sol:14:70: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+            if (!requests[0].requester.call.value(this.balance)()) { throw; }
+                                                                     ^---^
+39268.sol:14:51: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            if (!requests[0].requester.call.value(this.balance)()) { throw; }
+                                                  ^----------^
+39268.sol:10:5: Warning: Variable covers a large part of storage and thus makes collisions likely. Either use mappings or dynamic arrays and allow their size to be increased only in small quantities per transaction.
+    Request[2**64] public requests;
+    ^----------------------------^
+
+INFO:root:contract 39268.sol:TownCrier:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 82.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:39268.sol:14:18: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39268.sol:TownCrier.json.

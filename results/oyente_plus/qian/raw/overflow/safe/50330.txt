@@ -1,0 +1,25 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50330.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.SWXv9CunUC' running
+INFO:CryticCompile:Compilation warnings/errors on 50330.sol:
+50330.sol:13:5: Warning: No visibility specified. Defaulting to "public". 
+    function buy() returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+50330.sol:17:5: Warning: No visibility specified. Defaulting to "public". 
+    function setPrice(uint256 _price) onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+50330.sol:13:5: Warning: Function state mutability can be restricted to view
+    function buy() returns (uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 50330.sol:TransactionOrdering:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 76.1%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50330.sol:TransactionOrdering.json.

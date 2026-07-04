@@ -1,0 +1,13 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40737.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.nWxqj9KcYe' running
+INFO:CryticCompile:Compilation warnings/errors on 40737.sol:
+40737.sol:7:62: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function isAuthorised(address _wallet, address _spender, address _to) external view returns (bool) {
+                                                             ^---------^
+40737.sol:16:21: Warning: Unused local variable.
+                    address filter = address(uint160(auth >> 64));
+                    ^------------^
+
+INFO:root:contract 40737.sol:DappRegistry:
+INFO:symExec:	============ Results ===========
+timeout: the monitored command dumped core

@@ -1,0 +1,17 @@
+{
+  "filename": "169.sol",
+  "reentrancy": -1,
+  "overflow": -1,
+  "timestamp": 1,
+  "tod": -1,
+  "duration_s": 0.49,
+  "error": null,
+  "skipped_pipelines": [
+    "reentrancy",
+    "overflow",
+    "tod"
+  ],
+  "reentrancy_domains": [
+    "Box"
+  ]
+}

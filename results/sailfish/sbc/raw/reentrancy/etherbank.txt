@@ -1,0 +1,112 @@
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Analysis started at: 2026-06-21 07:04:14 PM
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Callgraph generation started!
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Callgraph generation finished!
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Value Range Analysis started
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Generating return summary for getBalance
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Return summary generated for getBalance
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | State variable assignement do not exist
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Processed function getBalance
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Generating return summary for addToBalance
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Return summary generated for addToBalance
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Range graph generated
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Processed function addToBalance
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Generating return summary for withdrawBalance
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Return summary generated for withdrawBalance
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Range graph generated
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Processed function withdrawBalance
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Value Range Analysis took 0.001153 seconds
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Value Range Analysis finished
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Dependency detection started!
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | DAO dependency detected in file etherbank.sol in contract EtherBank in by composing functions withdrawBalance and withdrawBalance
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | TOD dependency detected in file etherbank.sol in contract EtherBank in by composing functions withdrawBalance and addToBalance
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | TOD dependency detected in file etherbank.sol in contract EtherBank in by composing functions withdrawBalance and withdrawBalance
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Dependency detection finished!
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Static Analysis took 0.116916 seconds
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Dependency exists
+[INFO] | 2026-06-21 07:04:14 PM | analyzer.etherbank | Invoking symbolic executor!
+[36m[#] Analysing started: etherbank.sol[0m
+[36m[#] Interprocedural CFG generation started for getBalance[0m
+[36m[#] Interprocedural CFG generated for getBalance[0m
+[36m[#] Interprocedural CFG generation started for addToBalance[0m
+[36m[#] Interprocedural CFG generated for addToBalance[0m
+[36m[#] Interprocedural CFG generation started for withdrawBalance[0m
+[36m[#] Interprocedural CFG generated for withdrawBalance[0m
+[36m[#] SDG generation started for getBalance[0m
+[36m[#] SDG generated for getBalance[0m
+[36m[#] SDG generation started for addToBalance[0m
+[36m[#] SDG generated for addToBalance[0m
+[36m[#] SDG generation started for withdrawBalance[0m
+[36m[#] SDG generated for withdrawBalance[0m
+[INFO] | 2026-06-21 07:04:16 PM | analyzer.etherbank | Symbolic execution took 2.258795 seconds
+[INFO] | 2026-06-21 07:04:16 PM | analyzer.etherbank | Symbolic execution finished!
+[INFO] | 2026-06-21 07:04:16 PM | analyzer.etherbank | Analysis finished!
+[INFO] | 2026-06-21 07:04:16 PM | analyzer.etherbank | Analysis took 2.376417 seconds
+[INFO] | 2026-06-21 07:04:16 PM | analyzer.etherbank | Analysis finished at: 2026-06-21 07:04:16 PM
+[36m[#] Analysis took 2.376417 seconds[0m
+[36m[#] Analysis completed: etherbank.sol [0m
+
+=== dependency_info.json ===
+{
+    "etherbank.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdrawBalance",
+                "withdrawBalance"
+            ],
+            "from_function": "withdrawBalance",
+            "to_function": "withdrawBalance",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: withdrawBalance\nNode: \nIF ! (msg.sender.call.value(amountToWithdraw)())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:amountToWithdraw \"",
+                        "\"BlockID: 7\nFunction: withdrawBalance\nNode: \nEXPRESSION userBalances[msg.sender] = 0\nIRS: \nREF_5 := 0\""
+                    ],
+                    "state_variable": "userBalances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawBalance",
+                "addToBalance"
+            ],
+            "First_function": "addToBalance",
+            "Second_function": "withdrawBalance",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 3\nFunction: addToBalance\nNode: \nEXPRESSION userBalances[msg.sender] += msg.value\nIRS: \nREF_1 = REF_1 + msg.value\"",
+                        "\"BlockID: 5\nFunction: withdrawBalance\nNode: \nIF ! (msg.sender.call.value(amountToWithdraw)())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "userBalances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdrawBalance",
+                "withdrawBalance"
+            ],
+            "First_function": "withdrawBalance",
+            "Second_function": "withdrawBalance",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 15\nFunction: withdrawBalance\nNode: \nEXPRESSION userBalances[msg.sender] = 0\nIRS: \nREF_5 := 0\"",
+                        "\"BlockID: 5\nFunction: withdrawBalance\nNode: \nIF ! (msg.sender.call.value(amountToWithdraw)())\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:amountToWithdraw \""
+                    ],
+                    "state_variable": "userBalances"
+                }
+            ]
+        }
+    ]
+}

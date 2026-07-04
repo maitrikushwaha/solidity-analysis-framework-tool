@@ -1,0 +1,21 @@
+{
+ "evm_code_coverage": "80.8",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "reentrancy_dao.sol:25:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    credit[msg.sender] = 14475211338696831865149128085623162571367268291922308058656014176828169564853",
+   "reentrancy_dao.sol:26:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balance = 105981083245875735072581515911237207379087866796914542082848330067285313349732"
+  ],
+  "callstack": [
+   "reentrancy_dao.sol:18:31: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "reentrancy_dao.sol:18:31: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

@@ -1,0 +1,40 @@
+=================================================================
+MYTHRIL RSD SAFE SUBSET — RESULTS SUMMARY
+=================================================================
+Dataset      : RSD (Ressi et al., 2026), Solidity ^0.8.20
+Subset       : Safe contracts only (_safe*.sol)
+Total files  : 72
+Mythril ver  : Mythril version v0.24.8
+Config       : -t 5, --max-depth 50, --execution-timeout 300s, --solver-timeout 25000ms
+Batch time   : 36561s (609 min)
+=================================================================
+
+  FP    (safe, incorrectly flagged SWC-107) : 44
+  TN    (safe, correctly not flagged)       : 26
+  CRASH (timeout / compile error)           : 2
+
+  NOTE: All contracts have ground_truth = 0 (safe).
+  TP and FN are not applicable here.
+  Combine with reentrant results for full P/R/F1.
+
+  False Discovery Rate (FDR) : 62.9%  [FP/(FP+TN) = 44/70]
+  Specificity (TNR)          : 37.1%  [TN/(TN+FP) = 26/70]
+
+HOW TO COMPUTE FULL P/R/F1:
+  From reentrant summary get: TP, FN
+  From this summary get:      FP, TN
+  Precision = TP / (TP + FP)
+  Recall    = TP / (TP + FN)
+  F1        = 2 * P * R / (P + R)
+
+  OR run: python3 compute_combined_metrics.py
+  (reads both CSVs automatically)
+
+NEXT STEPS:
+  1. Review FP contracts — understand why Mythril false-alarmed:
+     grep ',FP,' rsd_experiment/results/mythril_rsd_safe_results.csv
+  2. For each FP, inspect the JSON for the specific finding:
+     cat rsd_experiment/mythril_output_safe/<filename>.json
+  3. Inspect CRASH/TIMEOUT rows:
+     grep 'CRASH\|TIMEOUT' rsd_experiment/results/mythril_rsd_safe_results.csv
+=================================================================

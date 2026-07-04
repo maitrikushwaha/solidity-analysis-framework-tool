@@ -1,0 +1,12 @@
+{
+  "filename": "09_ERC20Mod_ree1.sol",
+  "reentrancy": 1,
+  "overflow": 1,
+  "timestamp": 0,
+  "tod": 0,
+  "duration_s": 0.87,
+  "error": null,
+  "reentrancy_domains": [
+    "Box"
+  ]
+}

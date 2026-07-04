@@ -1,0 +1,25 @@
+/work/datasets/qian/timestamp/safe/2397.sol
+jar:file:/usr/local/lib/node_modules/@smartdec/smartcheck/jdeploy-bundle/smartcheck-2.0-jar-with-dependencies.jar!/solidity-rules.xmlruleId: SOLIDITY_ADDRESS_HARDCODED
+patternId: adc165
+severity: 1
+line: 5
+column: 36
+content: 0xa5a5f62BfA22b1E42A98Ce00131eA658D5E29B37
+
+ruleId: SOLIDITY_PRAGMAS_VERSION
+patternId: 23fc32
+severity: 1
+line: 1
+column: 16
+content: ^
+
+ruleId: SOLIDITY_VISIBILITY
+patternId: b51ce0
+severity: 1
+line: 5
+column: 4
+content: addressSIGN_ADDRESS1=address(0xa5a5f62BfA22b1E42A98Ce00131eA658D5E29B37);
+
+SOLIDITY_VISIBILITY :1
+SOLIDITY_PRAGMAS_VERSION :1
+SOLIDITY_ADDRESS_HARDCODED :1

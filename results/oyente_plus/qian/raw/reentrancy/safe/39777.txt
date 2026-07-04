@@ -1,0 +1,37 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39777.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.0EsXg7zhBC' running
+INFO:CryticCompile:Compilation warnings/errors on 39777.sol:
+39777.sol:14:35: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (!isOwner[msg.sender]) throw;
+                                  ^---^
+39777.sol:19:49: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (currentBankroll <= initialBankroll) throw;
+                                                ^---^
+39777.sol:21:51: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (!ADMIN_CONTRACT.call.value(profit)()) throw;
+                                                  ^---^
+39777.sol:18:5: Warning: No visibility specified. Defaulting to "public". 
+    function shareProfits() onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 39777.sol:Blockjack:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 91.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:39777.sol:23:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    isOwner[msg.sender] = 1
+    balances[ADMIN_CONTRACT] = 0
+    initialBankroll = 46919395587583236393449867064869097298744736684496088198560865498613269826304
+    currentBankroll = 75643136102840414963452290618510292515312764796248628020836087363725471288592
+INFO:symExec:39777.sol:21:14: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39777.sol:Blockjack.json.

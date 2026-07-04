@@ -1,0 +1,120 @@
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Analysis started at: 2026-06-21 06:59:23 PM
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Callgraph generation started!
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Callgraph generation finished!
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Value Range Analysis started
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Generating return summary for initWallet
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Return summary generated for initWallet
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Range graph generated
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Processed function initWallet
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Generating return summary for deposit
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Return summary generated for deposit
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Range graph generated
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Processed function deposit
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Generating return summary for withdraw
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Return summary generated for withdraw
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Range graph generated
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Processed function withdraw
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Generating return summary for migrateTo
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Return summary generated for migrateTo
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | State variable assignement do not exist
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Processed function migrateTo
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Value Range Analysis took 0.003316 seconds
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Value Range Analysis finished
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Dependency detection started!
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | TOD dependency detected in file wallet_03_wrong_constructor.sol in contract Wallet in by composing functions withdraw and deposit
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | TOD dependency detected in file wallet_03_wrong_constructor.sol in contract Wallet in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | TOD dependency detected in file wallet_03_wrong_constructor.sol in contract Wallet in by composing functions migrateTo and initWallet
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Dependency detection finished!
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Static Analysis took 0.204160 seconds
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Dependency exists
+[INFO] | 2026-06-21 06:59:23 PM | analyzer.wallet_03_wrong_constructor | Invoking symbolic executor!
+[36m[#] Analysing started: wallet_03_wrong_constructor.sol[0m
+[36m[#] Interprocedural CFG generation started for initWallet[0m
+[36m[#] Interprocedural CFG generated for initWallet[0m
+[36m[#] Interprocedural CFG generation started for deposit[0m
+[36m[#] Interprocedural CFG generated for deposit[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] Interprocedural CFG generation started for migrateTo[0m
+[36m[#] Interprocedural CFG generated for migrateTo[0m
+[36m[#] SDG generation started for initWallet[0m
+[36m[#] SDG generated for initWallet[0m
+[36m[#] SDG generation started for deposit[0m
+[36m[#] SDG generated for deposit[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[36m[#] SDG generation started for migrateTo[0m
+[36m[#] SDG generated for migrateTo[0m
+[INFO] | 2026-06-21 06:59:25 PM | analyzer.wallet_03_wrong_constructor | Symbolic execution took 1.976887 seconds
+[INFO] | 2026-06-21 06:59:25 PM | analyzer.wallet_03_wrong_constructor | Symbolic execution finished!
+[INFO] | 2026-06-21 06:59:25 PM | analyzer.wallet_03_wrong_constructor | Analysis finished!
+[INFO] | 2026-06-21 06:59:25 PM | analyzer.wallet_03_wrong_constructor | Analysis took 2.182545 seconds
+[INFO] | 2026-06-21 06:59:25 PM | analyzer.wallet_03_wrong_constructor | Analysis finished at: 2026-06-21 06:59:25 PM
+[36m[#] Analysis took 2.182545 seconds[0m
+[36m[#] Analysis completed: wallet_03_wrong_constructor.sol [0m
+
+=== dependency_info.json ===
+{
+    "wallet_03_wrong_constructor.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "deposit"
+            ],
+            "First_function": "deposit",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: deposit\nNode: \nEXPRESSION balances[msg.sender] += msg.value\nIRS: \nREF_2 = REF_2 + msg.value\"",
+                        "\"BlockID: 7\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount <= balances[msg.sender])\nIRS: \nTMP_4 = SOLIDITY_CALL require(bool)(TMP_3)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 16\nFunction: withdraw\nNode: \nEXPRESSION balances[msg.sender] -= amount\nIRS: \nREF_5 = REF_5 - amount\"",
+                        "\"BlockID: 7\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(amount <= balances[msg.sender])\nIRS: \nTMP_4 = SOLIDITY_CALL require(bool)(TMP_3)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "migrateTo",
+                "initWallet"
+            ],
+            "First_function": "initWallet",
+            "Second_function": "migrateTo",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 2\nFunction: initWallet\nNode: \nEXPRESSION creator = msg.sender\nIRS: \ncreator := msg.sender\"",
+                        "\"BlockID: 11\nFunction: migrateTo\nNode: \nEXPRESSION require(bool)(creator == msg.sender)\nIRS: \nTMP_7 = SOLIDITY_CALL require(bool)(TMP_6)\""
+                    ],
+                    "state_variable": "creator"
+                }
+            ]
+        }
+    ]
+}

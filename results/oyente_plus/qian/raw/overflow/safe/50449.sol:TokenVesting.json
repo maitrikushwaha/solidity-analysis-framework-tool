@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "86.9",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "50449.sol:15:21: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    released[_token] = 115792089237316195423570985008687907853269984665640564039457584007913125989899"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

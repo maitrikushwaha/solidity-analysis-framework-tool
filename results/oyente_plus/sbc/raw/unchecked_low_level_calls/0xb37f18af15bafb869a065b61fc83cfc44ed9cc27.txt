@@ -1,0 +1,31 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.T1yuTmzR28' running
+INFO:CryticCompile:Compilation warnings/errors on 0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol:
+0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol:33:9: Warning: Return value of low-level calls not used.
+        _target.call.value(_value)();
+        ^--------------------------^
+
+INFO:root:contract 0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol:SimpleWallet:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 88.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol:20:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    depositsCount = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:Flow1
+0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol:28:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol:28:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol:33:9: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol:SimpleWallet.json.

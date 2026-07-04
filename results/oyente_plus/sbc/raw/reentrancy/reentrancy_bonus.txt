@@ -1,0 +1,34 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc reentrancy_bonus.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.kWdcQ0GQia' running
+INFO:CryticCompile:Compilation warnings/errors on reentrancy_bonus.sol:
+reentrancy_bonus.sol:19:9: Warning: Different number of components on the left hand side (2) than on the right hand side (1).
+        (bool success, ) = recipient.call.value(amountToWithdraw)("");
+        ^-----------------------------------------------------------^
+
+INFO:root:contract reentrancy_bonus.sol:Reentrancy_bonus:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:reentrancy_bonus.sol:26:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    rewardsForA[recipient] = 115792089237316195423570985008687907853269984665640564039457584007913129639852
+    claimedBonus[recipient] = 0
+INFO:symExec:reentrancy_bonus.sol:19:28: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:Flow1
+reentrancy_bonus.sol:19:28: Warning: Transaction-Ordering Dependency.
+
+Flow2
+reentrancy_bonus.sol:19:28: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:reentrancy_bonus.sol:19:28: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to reentrancy_bonus.sol:Reentrancy_bonus.json.

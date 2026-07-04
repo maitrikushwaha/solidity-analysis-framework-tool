@@ -1,0 +1,19 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 40786.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.RdmTt9IpNw' running
+INFO:CryticCompile:Compilation warnings/errors on 40786.sol:
+40786.sol:16:66: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (recipient.call.value(amountToWithdraw)() == false) { throw; }
+                                                                 ^---^
+
+INFO:root:contract 40786.sol:Owner:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 78.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 40786.sol:Owner.json.

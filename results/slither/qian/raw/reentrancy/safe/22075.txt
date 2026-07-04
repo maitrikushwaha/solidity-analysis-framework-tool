@@ -1,0 +1,45 @@
+
+'solc --version' running
+'solc /work/datasets/qian/reentrancy/safe/22075.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/reentrancy/safe' running
+
+SIMPLE_PIGGY_BANK.owner (datasets/qian/reentrancy/safe/22075.sol#9) is never initialized. It is used in:
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+Contract locking ether found:
+	Contract SIMPLE_PIGGY_BANK (datasets/qian/reentrancy/safe/22075.sol#4-21) has payable functions:
+	 - SIMPLE_PIGGY_BANK.Collect(uint256) (datasets/qian/reentrancy/safe/22075.sol#15-20)
+	But does not have a function to withdraw the ether
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#contracts-that-lock-ether
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/reentrancy/safe/22075.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Contract SIMPLE_PIGGY_BANK (datasets/qian/reentrancy/safe/22075.sol#4-21) is not in CapWords
+Function SIMPLE_PIGGY_BANK.Collect(uint256) (datasets/qian/reentrancy/safe/22075.sol#15-20) is not in mixedCase
+Parameter SIMPLE_PIGGY_BANK.Collect(uint256)._am (datasets/qian/reentrancy/safe/22075.sol#15) is not in mixedCase
+Variable SIMPLE_PIGGY_BANK.Bal (datasets/qian/reentrancy/safe/22075.sol#6) is not in mixedCase
+Variable SIMPLE_PIGGY_BANK.MinSum (datasets/qian/reentrancy/safe/22075.sol#7) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+SIMPLE_PIGGY_BANK.MinSum (datasets/qian/reentrancy/safe/22075.sol#7) should be constant 
+SIMPLE_PIGGY_BANK.owner (datasets/qian/reentrancy/safe/22075.sol#9) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/qian/reentrancy/safe/22075.sol analyzed (1 contracts with 93 detectors), 11 result(s) found

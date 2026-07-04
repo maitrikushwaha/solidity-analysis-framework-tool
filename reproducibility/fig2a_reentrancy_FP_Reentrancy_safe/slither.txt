@@ -1,0 +1,19 @@
+'solc --version' running
+'solc /work/examples/reentrancysafe.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/examples' running
+INFO:Detectors:
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (../../work/examples/reentrancysafe.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+INFO:Detectors:
+Low level call in Reentrancy_safe.withdrawReward() (../../work/examples/reentrancysafe.sol#12-20):
+	- (success,None) = msg.sender.call{value: amountToWithdraw}() (../../work/examples/reentrancysafe.sol#16-17)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+INFO:Detectors:
+Contract Reentrancy_safe (../../work/examples/reentrancysafe.sol#3-21) is not in CapWords
+Parameter Reentrancy_safe.depositReward(address)._beneficiary (../../work/examples/reentrancysafe.sol#7) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+INFO:Slither:/work/examples/reentrancysafe.sol analyzed (1 contracts with 93 detectors), 4 result(s) found

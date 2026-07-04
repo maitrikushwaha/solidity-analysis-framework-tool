@@ -1,0 +1,33 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 33974.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.wkEwhaDDF8' running
+INFO:CryticCompile:Compilation warnings/errors on 33974.sol:
+33974.sol:15:15: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+    curhash = sha256(block.timestamp, block.coinbase, block.difficulty, curhash);
+              ^----------------------------------------------------------------^
+33974.sol:12:3: Warning: No visibility specified. Defaulting to "public". 
+  function addguess(uint guess) payable {
+  ^ (Relevant source part starts here and spans across multiple lines).
+33974.sol:12:21: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+  function addguess(uint guess) payable {
+                    ^--------^
+33974.sol:14:5: Warning: Unused local variable.
+    uint divideby = maxguess/stasticsarrayitems;
+    ^-----------^
+
+INFO:root:contract 33974.sol:bet_various_v2:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 78.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:33974.sol:15:15: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    bettingprice = 0
+    stasticsarrayitems = 1
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 33974.sol:bet_various_v2.json.

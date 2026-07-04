@@ -1,0 +1,19 @@
+
+'solc --version' running
+'solc /work/datasets/rsd/reentrancy/safe/06_TransferUnchecked_safe1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/work/datasets/rsd/reentrancy/safe' running
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (datasets/rsd/reentrancy/safe/06_TransferUnchecked_safe1.sol#1)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Reentrancy in C.withdraw() (datasets/rsd/reentrancy/safe/06_TransferUnchecked_safe1.sol#7-13):
+	External calls:
+	- address(msg.sender).transfer(balances[msg.sender]) (datasets/rsd/reentrancy/safe/06_TransferUnchecked_safe1.sol#9)
+	State variables written after the call(s):
+	- balances[msg.sender] = 0 (datasets/rsd/reentrancy/safe/06_TransferUnchecked_safe1.sol#11)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-4
+/work/datasets/rsd/reentrancy/safe/06_TransferUnchecked_safe1.sol analyzed (1 contracts with 93 detectors), 2 result(s) found

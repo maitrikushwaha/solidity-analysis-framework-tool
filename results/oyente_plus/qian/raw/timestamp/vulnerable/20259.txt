@@ -1,0 +1,23 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 20259.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.4rj0H886Tc' running
+INFO:root:contract 20259.sol:BurnupGameBase:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 83.5%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:20259.sol:7:31: Warning: Integer Underflow.
+
+INFO:symExec:20259.sol:11:31: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    activeTimesFrom[i] = 262017
+    activeTimesFrom.length = 7067388259113537318333190002971674063309935587502475832486424805170479105
+20259.sol:4:5: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 20259.sol:BurnupGameBase.json.

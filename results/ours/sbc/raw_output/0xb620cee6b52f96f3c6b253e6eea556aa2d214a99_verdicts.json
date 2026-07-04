@@ -1,0 +1,13 @@
+{
+  "filename": "0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol",
+  "reentrancy": -1,
+  "overflow": 1,
+  "timestamp": -1,
+  "tod": 1,
+  "duration_s": 1.14,
+  "error": "transform_failed: An error occurred during execution\n> command: `/home/maitri/.solcx/solc-v0.4.26 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc -`\n> return code: `1`\n> stdout:\n\n> stderr:\n<stdin>:87:5: Warning: This declaration shadows an existing declaration.\n    uint256 secret = uint256(hash);\n    ^------------^\n<stdin>:24:1: The shadowed declaration is here:\nuint256 public secret;\n^-------------------^\n\n<stdin>:79:16: Error: Operator >= not compatible with types bool and uint256\nif (BAL > 0 && approvedPlayers >= amount) {\n               ^-----------------------^\n<stdin>:86:20: Warning: This function only accepts a single \"bytes\" argument. Please use \"abi.encodePacked(...)\" or a similar function to encode the data.\n    bytes32 hash = keccak256(blockhash(block.number-1));\n                   ^----------------------------------^\n<stdin>:86:20: Warning: The provided argument of type bytes32 is not implicitly convertible to expected type bytes memory.\n    bytes32 hash = keccak256(blockhash(block.number-1));\n                   ^----------------------------------^\n<stdin>:100:17: Error: Operator >= not compatible with types bool and uint256\n\tif (BAL > 0 && approvedPlayers >= msg.value) {\n\t               ^--------------------------^\n<stdin>:108:17: Error: Operator >= not compatible with types bool and uint256\n\tif (BAL > 0 && approvedPlayers >= msg.value) {\n\t               ^--------------------------^\n<stdin>:137:2: Warning: Return value of low-level calls not used.\n\towner.call.value(1 wei)();\n\t^-----------------------^",
+  "skipped_pipelines": [
+    "reentrancy",
+    "timestamp"
+  ]
+}

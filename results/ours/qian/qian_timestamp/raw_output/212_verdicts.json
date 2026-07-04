@@ -1,0 +1,13 @@
+{
+  "filename": "212.sol",
+  "reentrancy": -1,
+  "overflow": 0,
+  "timestamp": 1,
+  "tod": -1,
+  "duration_s": 0.09,
+  "error": "transform_failed: An error occurred during execution\n> command: `/home/maitri/.solcx/solc-v0.4.26 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc -`\n> return code: `1`\n> stdout:\n\n> stderr:\n<stdin>:16:28: Error: Undeclared identifier.\n      for (uint j = 0; j < allocations.length; j++) {\n                           ^---------^\n<stdin>:17:15: Error: Undeclared identifier.\n          if (allocations[j].releaseTime < block.timestamp) {\n              ^---------^\n<stdin>:18:58: Error: Undeclared identifier.\n              total_unlockamount = total_unlockamount + (allocations[j].balance);\n                                                         ^---------^",
+  "skipped_pipelines": [
+    "reentrancy",
+    "tod"
+  ]
+}

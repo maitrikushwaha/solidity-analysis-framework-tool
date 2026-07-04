@@ -1,0 +1,20 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc insecure_transfer.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.8qTLeiUiBg' running
+INFO:root:contract insecure_transfer.sol:IntegerOverflowAdd:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 84.8%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:insecure_transfer.sol:18:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balanceOf[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819970
+    _value = 28985804283996535609424023491659493335988248472634317432459648560466680918146
+    balanceOf[_to] = 90485112614747491723693534199426699914452579031181003077195766920181059067273
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to insecure_transfer.sol:IntegerOverflowAdd.json.

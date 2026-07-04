@@ -1,0 +1,42 @@
+[INFO] | 2026-06-21 07:13:47 PM | analyzer.26743  | Analysis started at: 2026-06-21 07:13:47 PM
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Processed function onlyOwner
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Generating return summary for WithdrawToHolder
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Return summary generated for WithdrawToHolder
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Range graph generated
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Processed function WithdrawToHolder
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Value Range Analysis took 0.000612 seconds
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Static Analysis took 0.040160 seconds
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Dependency does not exist
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Analysis finished!
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Analysis took 0.040295 seconds
+[INFO] | 2026-06-21 07:13:48 PM | analyzer.26743  | Analysis finished at: 2026-06-21 07:13:48 PM
+[36m[#] Analysing started: 26743.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for WithdrawToHolder[0m
+[36m[#] Interprocedural CFG generated for WithdrawToHolder[0m
+[36m[#] SDG generation started for WithdrawToHolder[0m
+[36m[#] SDG generated for WithdrawToHolder[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.040295 seconds[0m
+[36m[#] Analysis completed: 26743.sol [0m
+
+=== dependency_info.json ===
+{}

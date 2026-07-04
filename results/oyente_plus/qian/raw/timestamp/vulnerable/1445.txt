@@ -1,0 +1,20 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 1445.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.Ng77opa9du' running
+INFO:root:contract 1445.sol:TokenVesting:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 90.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:1445.sol:17:22: Warning: Integer Overflow.
+
+1445.sol:18:20: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    released[token] = 64849456117563348969351635010322245927661247298536259384155211310018320138240
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 1445.sol:TokenVesting.json.

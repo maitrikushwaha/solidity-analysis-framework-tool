@@ -1,0 +1,57 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.Q0gKz7AaD0' running
+INFO:CryticCompile:Compilation warnings/errors on 0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol:
+0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol:17:5: Warning: No visibility specified. Defaulting to "public".
+    function PrivateBank(address _lib)
+    ^
+Spanning multiple lines.
+0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol:33:5: Warning: No visibility specified. Defaulting to "public".
+    function CashOut(uint _am)
+    ^
+Spanning multiple lines.
+
+INFO:root:contract 0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol:Log:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 53.4%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol:50:1: Warning: Integer Underflow.
+
+INFO:symExec:0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol:65:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol:50:1: Warning: Integer Overflow.
+
+0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol:72:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    History.push(LastMsg) = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol:Log.json.
+INFO:root:contract 0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol:PrivateBank:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 90.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol:38:16: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _am = 54277541829991966604798899222822456806220305312019014393495742503709279518721
+    balances[msg.sender] = 56086793224325032158292195863583205366427648822419648206612267253832922169344
+INFO:symExec:0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol:38:16: Warning: Re-Entrancy Vulnerability.
+
+0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol:41:17: Warning: Re-Entrancy Vulnerability.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol:PrivateBank.json.

@@ -1,0 +1,20 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50222.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.4lmlWacyeF' running
+INFO:root:contract 50222.sol:ShortingRewards:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 81.7%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:50222.sol:12:27: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    rewardRate = 80308537194368933183742867739658940410037076506062352150627162308768551831590
+    periodFinish = 1
+    reward = 40205756455672401253232246477221181172241368118324941384377268061224996358840
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50222.sol:ShortingRewards.json.

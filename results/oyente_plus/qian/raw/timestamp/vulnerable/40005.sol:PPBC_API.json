@@ -1,0 +1,16 @@
+{
+ "evm_code_coverage": "73.8",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "40005.sol:10:25: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    lastBlock = 0\n    lastRandom = 68778669511449316343673722668221480495344636449890724470959154851861705523483"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

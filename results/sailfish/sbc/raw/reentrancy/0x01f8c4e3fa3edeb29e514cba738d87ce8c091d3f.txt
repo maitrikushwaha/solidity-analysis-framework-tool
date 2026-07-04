@@ -1,0 +1,205 @@
+[INFO] | 2026-06-21 07:02:47 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Analysis started at: 2026-06-21 07:02:47 PM
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Callgraph generation started!
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Callgraph generation finished!
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Value Range Analysis started
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Generating return summary for SetMinSum
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Return summary generated for SetMinSum
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Range graph generated
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Processed function SetMinSum
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Generating return summary for SetLogFile
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Return summary generated for SetLogFile
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Range graph generated
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Processed function SetLogFile
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Generating return summary for Initialized
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Return summary generated for Initialized
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Range graph generated
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Processed function Initialized
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Range graph generated
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Generating return summary for AddMessage
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Return summary generated for AddMessage
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Range graph generated
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Processed function AddMessage
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Generating return summary for Deposit
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Return summary generated for Deposit
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Range graph generated
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Processed function Deposit
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Generating return summary for Collect
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Return summary generated for Collect
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Range graph generated
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Processed function Collect
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Generating return summary for fallback
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Return summary generated for fallback
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Range graph generated
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Processed function fallback
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Value Range Analysis took 0.003914 seconds
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Value Range Analysis finished
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Dependency detection started!
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | DAO dependency detected in file 0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol in contract PERSONAL_BANK in by composing functions Collect and SetLogFile
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | DAO dependency detected in file 0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol in contract PERSONAL_BANK in by composing functions Collect and Collect
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | TOD dependency detected in file 0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol in contract PERSONAL_BANK in by composing functions Collect and SetMinSum
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | TOD dependency detected in file 0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol in contract PERSONAL_BANK in by composing functions Collect and Deposit
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | TOD dependency detected in file 0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol in contract PERSONAL_BANK in by composing functions Collect and Collect
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | TOD dependency detected in file 0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol in contract PERSONAL_BANK in by composing functions Collect and fallback
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Dependency detection finished!
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Static Analysis took 0.298321 seconds
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Dependency exists
+[INFO] | 2026-06-21 07:02:48 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Invoking symbolic executor!
+[36m[#] Analysing started: 0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol[0m
+[36m[#] Interprocedural CFG generation started for SetMinSum[0m
+[36m[#] Interprocedural CFG generated for SetMinSum[0m
+[36m[#] Interprocedural CFG generation started for SetLogFile[0m
+[36m[#] Interprocedural CFG generated for SetLogFile[0m
+[36m[#] Interprocedural CFG generation started for Initialized[0m
+[36m[#] Interprocedural CFG generated for Initialized[0m
+[36m[#] Interprocedural CFG generation started for Deposit[0m
+[36m[#] Interprocedural CFG generated for Deposit[0m
+[36m[#] Interprocedural CFG generation started for Collect[0m
+[36m[#] Interprocedural CFG generated for Collect[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for AddMessage[0m
+[36m[#] Interprocedural CFG generated for AddMessage[0m
+[36m[#] SDG generation started for SetMinSum[0m
+[36m[#] SDG generated for SetMinSum[0m
+[36m[#] SDG generation started for SetLogFile[0m
+[36m[#] SDG generated for SetLogFile[0m
+[36m[#] SDG generation started for Initialized[0m
+[36m[#] SDG generated for Initialized[0m
+[36m[#] SDG generation started for Deposit[0m
+[36m[#] SDG generated for Deposit[0m
+[36m[#] SDG generation started for Collect[0m
+[36m[#] SDG generated for Collect[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for AddMessage[0m
+[36m[#] SDG generated for AddMessage[0m
+[INFO] | 2026-06-21 07:02:51 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Symbolic execution took 3.446095 seconds
+[INFO] | 2026-06-21 07:02:51 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Symbolic execution finished!
+[INFO] | 2026-06-21 07:02:51 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Analysis finished!
+[INFO] | 2026-06-21 07:02:51 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Analysis took 3.745665 seconds
+[INFO] | 2026-06-21 07:02:51 PM | analyzer.0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f | Analysis finished at: 2026-06-21 07:02:51 PM
+[36m[#] Analysis took 3.745665 seconds[0m
+[36m[#] Analysis completed: 0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol [0m
+
+=== dependency_info.json ===
+{
+    "0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "Collect",
+                "SetLogFile"
+            ],
+            "from_function": "SetLogFile",
+            "to_function": "Collect",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: SetLogFile\nNode: \nEXPRESSION Log = LogFile(_log)\nIRS: \nLog := TMP_2\"",
+                        "\"BlockID: 20\nFunction: Collect\nNode: \nEXPRESSION Log.AddMessage(msg.sender,_am,Collect)\nIRS: \nHIGH_LEVEL_CALL, dest:Log(LogFile), function:AddMessage, arguments:['msg.sender', '_am', 'Collect']  \""
+                    ],
+                    "state_variable": "Log"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "Collect",
+                "Collect"
+            ],
+            "from_function": "Collect",
+            "to_function": "Collect",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 35\nFunction: Collect\nNode: \nIF balances[msg.sender] >= MinSum && balances[msg.sender] >= _am\nIRS: \nCONDITION TMP_6\"",
+                        "\"BlockID: 19\nFunction: Collect\nNode: \nEXPRESSION balances[msg.sender] -= _am\nIRS: \nREF_6 = REF_6 - _am\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Collect",
+                "SetMinSum"
+            ],
+            "First_function": "SetMinSum",
+            "Second_function": "Collect",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 4\nFunction: SetMinSum\nNode: \nEXPRESSION MinSum = _val\nIRS: \nMinSum := _val\"",
+                        "\"BlockID: 15\nFunction: Collect\nNode: \nIF balances[msg.sender] >= MinSum && balances[msg.sender] >= _am\nIRS: \nCONDITION TMP_6\""
+                    ],
+                    "state_variable": "MinSum"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Collect",
+                "Deposit"
+            ],
+            "First_function": "Deposit",
+            "Second_function": "Collect",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 12\nFunction: Deposit\nNode: \nEXPRESSION balances[msg.sender] += msg.value\nIRS: \nREF_0 = REF_0 + msg.value\"",
+                        "\"BlockID: 15\nFunction: Collect\nNode: \nIF balances[msg.sender] >= MinSum && balances[msg.sender] >= _am\nIRS: \nCONDITION TMP_6\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Collect",
+                "Collect"
+            ],
+            "First_function": "Collect",
+            "Second_function": "Collect",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 55\nFunction: Collect\nNode: \nEXPRESSION balances[msg.sender] -= _am\nIRS: \nREF_6 = REF_6 - _am\"",
+                        "\"BlockID: 15\nFunction: Collect\nNode: \nIF balances[msg.sender] >= MinSum && balances[msg.sender] >= _am\nIRS: \nCONDITION TMP_6\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Collect",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "Collect",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 23\nFunction: Deposit\nNode: \nEXPRESSION balances[msg.sender] += msg.value\nIRS: \nREF_0 = REF_0 + msg.value\"",
+                        "\"BlockID: 15\nFunction: Collect\nNode: \nIF balances[msg.sender] >= MinSum && balances[msg.sender] >= _am\nIRS: \nCONDITION TMP_6\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        }
+    ]
+}

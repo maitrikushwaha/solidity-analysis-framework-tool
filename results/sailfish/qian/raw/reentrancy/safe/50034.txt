@@ -1,0 +1,42 @@
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Analysis started at: 2026-06-21 07:13:33 PM
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Callgraph generation started!
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Value Range Analysis started
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Processed function onlyOwner
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Generating return summary for mintETHRewards
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Return summary generated for mintETHRewards
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Processed function mintETHRewards
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Value Range Analysis took 0.000261 seconds
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Dependency detection started!
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Dependency detection finished!
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Static Analysis took 0.028517 seconds
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Dependency does not exist
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Analysis finished!
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Analysis took 0.028622 seconds
+[INFO] | 2026-06-21 07:13:33 PM | analyzer.50034  | Analysis finished at: 2026-06-21 07:13:33 PM
+[36m[#] Analysing started: 50034.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for mintETHRewards[0m
+[36m[#] Interprocedural CFG generated for mintETHRewards[0m
+[36m[#] SDG generation started for mintETHRewards[0m
+[36m[#] SDG generated for mintETHRewards[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] Analysis took 0.028622 seconds[0m
+[36m[#] Analysis completed: 50034.sol [0m
+
+=== dependency_info.json ===
+{}

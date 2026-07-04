@@ -1,0 +1,26 @@
+{
+ "evm_code_coverage": "62.4",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "09_ERC20InheritMod_safe1.sol:100:585: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 0\n    received[to] = 5316911983139663491615228241121378304",
+   "09_ERC20InheritMod_safe1.sol:87:9: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    flag = 57896127439614283302621821487602674134970079971188248707948839025353984843776",
+   "09_ERC20InheritMod_safe1.sol:82:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "09_ERC20InheritMod_safe1.sol:95:24: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 32\n    received[to] = 0",
+   "09_ERC20InheritMod_safe1.sol:100:1035: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 32\n    received[to] = 0",
+   "09_ERC20InheritMod_safe1.sol:100:1197: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 32\n    received[to] = 0",
+   "09_ERC20InheritMod_safe1.sol:94:9: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 56539106072908298546665520023773392506479484700019806659891398441363832832\n    received[to] = 73786976294838206464",
+   "09_ERC20InheritMod_safe1.sol:100:531: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 0\n    received[to] = 324518553658426726783156020576256",
+   "09_ERC20InheritMod_safe1.sol:60:7: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 0\n    received[to] = 70368744177664",
+   "09_ERC20InheritMod_safe1.sol:100:318: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    flag = 43422916887525962476003911027008336762676693352453248523511818114452493959168\n    received[to] = 288230376151711744"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

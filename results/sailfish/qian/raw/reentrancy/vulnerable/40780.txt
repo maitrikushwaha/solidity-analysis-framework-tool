@@ -1,0 +1,77 @@
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Analysis started at: 2026-06-21 07:14:48 PM
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Callgraph generation started!
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Value Range Analysis started
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Generating return summary for withdraw
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Return summary generated for withdraw
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Range graph generated
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Processed function withdraw
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Value Range Analysis took 0.000343 seconds
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Dependency detection started!
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | DAO dependency detected in file 40780.sol in contract Token in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | TOD dependency detected in file 40780.sol in contract Token in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Dependency detection finished!
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Static Analysis took 0.059281 seconds
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Dependency exists
+[INFO] | 2026-06-21 07:14:48 PM | analyzer.40780  | Invoking symbolic executor!
+[36m[#] Analysing started: 40780.sol[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[INFO] | 2026-06-21 07:14:49 PM | analyzer.40780  | Symbolic execution took 1.367821 seconds
+[INFO] | 2026-06-21 07:14:49 PM | analyzer.40780  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:14:49 PM | analyzer.40780  | Analysis finished!
+[INFO] | 2026-06-21 07:14:49 PM | analyzer.40780  | Analysis took 1.427660 seconds
+[INFO] | 2026-06-21 07:14:49 PM | analyzer.40780  | Analysis finished at: 2026-06-21 07:14:49 PM
+[36m[#] Analysis took 1.427660 seconds[0m
+[36m[#] Analysis completed: 40780.sol [0m
+
+=== dependency_info.json ===
+{
+    "40780.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "from_function": "withdraw",
+            "to_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 8\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(balances[msg.sender] >= _amount)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\"",
+                        "\"BlockID: 5\nFunction: withdraw\nNode: \nEXPRESSION balances[msg.sender] -= _amount\nIRS: \nREF_3 = REF_3 - _amount\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: withdraw\nNode: \nEXPRESSION balances[msg.sender] -= _amount\nIRS: \nREF_3 = REF_3 - _amount\"",
+                        "\"BlockID: 2\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(balances[msg.sender] >= _amount)\nIRS: \nTMP_1 = SOLIDITY_CALL require(bool)(TMP_0)\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        }
+    ]
+}

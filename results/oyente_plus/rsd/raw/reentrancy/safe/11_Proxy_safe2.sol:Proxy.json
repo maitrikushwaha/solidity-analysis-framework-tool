@@ -1,0 +1,29 @@
+{
+ "evm_code_coverage": "77.7",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "11_Proxy_safe2.sol:6:28: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "11_Proxy_safe2.sol:9:27: Warning: Integer Overflow.\n",
+   "11_Proxy_safe2.sol:6:28: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "11_Proxy_safe2.sol:6:28: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "11_Proxy_safe2.sol:6:28: Warning: Transaction-Ordering Dependency.\n",
+    "11_Proxy_safe2.sol:9:27: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [
+   "11_Proxy_safe2.sol:9:27: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

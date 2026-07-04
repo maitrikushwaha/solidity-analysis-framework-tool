@@ -1,0 +1,150 @@
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Analysis started at: 2026-06-21 07:09:38 PM
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Callgraph generation started!
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Callgraph generation finished!
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Value Range Analysis started
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Generating return summary for fallback
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Return summary generated for fallback
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Processed function fallback
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Generating return summary for Get
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Return summary generated for Get
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Processed function Get
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Generating return summary for withdraw
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Return summary generated for withdraw
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Range graph generated
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Processed function withdraw
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Generating return summary for Command
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Return summary generated for Command
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Processed function Command
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Range graph generated
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Value Range Analysis took 0.000847 seconds
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Value Range Analysis finished
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Dependency detection started!
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | TOD dependency detected in file 0xd2018bfaa266a9ec0a1a84b061640faa009def76.sol in contract Pie in by composing functions Get and withdraw
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | TOD dependency detected in file 0xd2018bfaa266a9ec0a1a84b061640faa009def76.sol in contract Pie in by composing functions Get and withdraw
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | TOD dependency detected in file 0xd2018bfaa266a9ec0a1a84b061640faa009def76.sol in contract Pie in by composing functions withdraw and withdraw
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | TOD dependency detected in file 0xd2018bfaa266a9ec0a1a84b061640faa009def76.sol in contract Pie in by composing functions Command and withdraw
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Dependency detection finished!
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Static Analysis took 0.093449 seconds
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Dependency exists
+[INFO] | 2026-06-21 07:09:38 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Invoking symbolic executor!
+[36m[#] Analysing started: 0xd2018bfaa266a9ec0a1a84b061640faa009def76.sol[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for Get[0m
+[36m[#] Interprocedural CFG generated for Get[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] Interprocedural CFG generation started for Command[0m
+[36m[#] Interprocedural CFG generated for Command[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for Get[0m
+[36m[#] SDG generated for Get[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[36m[#] SDG generation started for Command[0m
+[36m[#] SDG generated for Command[0m
+[INFO] | 2026-06-21 07:09:39 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Symbolic execution took 1.138919 seconds
+[INFO] | 2026-06-21 07:09:39 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Symbolic execution finished!
+[INFO] | 2026-06-21 07:09:39 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Analysis finished!
+[INFO] | 2026-06-21 07:09:39 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Analysis took 1.233094 seconds
+[INFO] | 2026-06-21 07:09:39 PM | analyzer.0xd2018bfaa266a9ec0a1a84b061640faa009def76 | Analysis finished at: 2026-06-21 07:09:39 PM
+[36m[#] Analysis took 1.233094 seconds[0m
+[36m[#] Analysis completed: 0xd2018bfaa266a9ec0a1a84b061640faa009def76.sol [0m
+
+=== dependency_info.json ===
+{
+    "0xd2018bfaa266a9ec0a1a84b061640faa009def76.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Get",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "Get",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: withdraw\nNode: \nEXPRESSION Owner = 0x1Fb3acdBa788CA50Ce165E5A4151f05187C67cd6\nIRS: \nOwner := 180985605343785956359124651641875257890221489366\"",
+                        "\"BlockID: 4\nFunction: Get\nNode: \nEXPRESSION Owner.transfer(this.balance)\nIRS: \nTransfer dest:Owner value:REF_1\""
+                    ],
+                    "state_variable": "Owner"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Get",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "Get",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: withdraw\nNode: \nEXPRESSION Owner = 0x1Fb3acdBa788CA50Ce165E5A4151f05187C67cd6\nIRS: \nOwner := 180985605343785956359124651641875257890221489366\"",
+                        "\"BlockID: 4\nFunction: Get\nNode: \nEXPRESSION Owner.transfer(this.balance)\nIRS: \nTransfer dest:Owner value:REF_1\""
+                    ],
+                    "state_variable": "Owner"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "withdraw",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "withdraw",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: withdraw\nNode: \nEXPRESSION Owner = 0x1Fb3acdBa788CA50Ce165E5A4151f05187C67cd6\nIRS: \nOwner := 180985605343785956359124651641875257890221489366\"",
+                        "\"BlockID: 11\nFunction: withdraw\nNode: \nEXPRESSION require(bool)(msg.sender == Owner)\nIRS: \nTMP_5 = SOLIDITY_CALL require(bool)(TMP_4)\""
+                    ],
+                    "state_variable": "Owner"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 28\nFunction: withdraw\nNode: \nEXPRESSION Owner = 0x1Fb3acdBa788CA50Ce165E5A4151f05187C67cd6\nIRS: \nOwner := 180985605343785956359124651641875257890221489366\"",
+                        "\"BlockID: 12\nFunction: withdraw\nNode: \nEXPRESSION Owner.transfer(this.balance)\nIRS: \nTransfer dest:Owner value:REF_5\""
+                    ],
+                    "state_variable": "Owner"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "Command",
+                "withdraw"
+            ],
+            "First_function": "withdraw",
+            "Second_function": "Command",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: withdraw\nNode: \nEXPRESSION Owner = 0x1Fb3acdBa788CA50Ce165E5A4151f05187C67cd6\nIRS: \nOwner := 180985605343785956359124651641875257890221489366\"",
+                        "\"BlockID: 14\nFunction: Command\nNode: \nEXPRESSION require(bool)(msg.sender == Owner)\nIRS: \nTMP_8 = SOLIDITY_CALL require(bool)(TMP_7)\""
+                    ],
+                    "state_variable": "Owner"
+                }
+            ]
+        }
+    ]
+}

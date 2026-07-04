@@ -1,0 +1,34 @@
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Analysis started at: 2026-06-21 07:07:36 PM
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Callgraph generation started!
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Callgraph generation finished!
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Value Range Analysis started
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Generating return summary for isSaleFinished
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Return summary generated for isSaleFinished
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | State variable assignement do not exist
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Processed function isSaleFinished
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Value Range Analysis took 0.000334 seconds
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Value Range Analysis finished
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Dependency detection started!
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Dependency detection finished!
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Static Analysis took 0.040199 seconds
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Dependency does not exist
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Analysis finished!
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Analysis took 0.040389 seconds
+[INFO] | 2026-06-21 07:07:36 PM | analyzer.timed_crowdsale | Analysis finished at: 2026-06-21 07:07:36 PM
+[36m[#] Analysing started: timed_crowdsale.sol[0m
+[36m[#] Interprocedural CFG generation started for isSaleFinished[0m
+[36m[#] Interprocedural CFG generated for isSaleFinished[0m
+[36m[#] SDG generation started for isSaleFinished[0m
+[36m[#] SDG generated for isSaleFinished[0m
+[36m[#] Analysis took 0.040389 seconds[0m
+[36m[#] Analysis completed: timed_crowdsale.sol [0m
+
+=== dependency_info.json ===
+{}

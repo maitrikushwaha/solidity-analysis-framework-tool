@@ -1,0 +1,25 @@
+{
+ "evm_code_coverage": "86.1",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "wallet_04_confused_sign.sol:32:10: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968\n    amount = 57896044618658097711785492504343953926634992332820282019728792003956564819969"
+  ],
+  "integer_overflow": [
+   "wallet_04_confused_sign.sol:24:17: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 75330192924713224967619494070566466192932062421080463386485572151689267069237"
+  ],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "wallet_04_confused_sign.sol:31:10: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "wallet_04_confused_sign.sol:39:10: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

@@ -1,0 +1,28 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 14_DelegateCall_ree4.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.mkWqovv84X' running
+INFO:root:contract 14_DelegateCall_ree4.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 62.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:14_DelegateCall_ree4.sol:6:5: Warning: Integer Underflow.
+
+14_DelegateCall_ree4.sol:25:47: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 383123885216472214589586756787577295904684780545900544
+14_DelegateCall_ree4.sol:10:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    flag = 113961635678205789258122688797918592720016438389464010522637730522966524032
+14_DelegateCall_ree4.sol:5:5: Warning: Integer Underflow.
+
+INFO:symExec:14_DelegateCall_ree4.sol:29:839: Warning: Integer Overflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 14_DelegateCall_ree4.sol:C.json.

@@ -1,0 +1,58 @@
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Analysis started at: 2026-06-21 06:57:24 PM
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Callgraph generation started!
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Callgraph generation finished!
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Storage dependency graph generation started!
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Value Range Analysis started
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Generating return summary for missing
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Return summary generated for missing
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Range graph generated
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Processed function missing
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Generating return summary for fallback
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Return summary generated for fallback
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | State variable assignement do not exist
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Processed function fallback
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Generating return summary for onlyowner
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Return summary generated for onlyowner
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | State variable assignement do not exist
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Processed function onlyowner
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Generating return summary for withdraw
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Return summary generated for withdraw
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | State variable assignement do not exist
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Processed function withdraw
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Value Range Analysis took 0.001375 seconds
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Value Range Analysis finished
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Dependency detection started!
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Dependency detection finished!
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Static Analysis took 0.071015 seconds
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Dependency does not exist
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Symbolic execution is not needed!
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Analysis finished!
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Analysis took 0.071273 seconds
+[INFO] | 2026-06-21 06:57:24 PM | analyzer.incorrect_constructor_name2 | Analysis finished at: 2026-06-21 06:57:24 PM
+[36m[#] Analysing started: incorrect_constructor_name2.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyowner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyowner[0m
+[36m[#] Interprocedural CFG generation started for missing[0m
+[36m[#] Interprocedural CFG generated for missing[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] SDG generation started for missing[0m
+[36m[#] SDG generated for missing[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for withdraw[0m
+[36m[#] SDG generated for withdraw[0m
+[36m[#] SDG generation started for modifier onlyowner[0m
+[36m[#] SDG generated for modifier onlyowner[0m
+[36m[#] Analysis took 0.071273 seconds[0m
+[36m[#] Analysis completed: incorrect_constructor_name2.sol [0m
+
+=== dependency_info.json ===
+{}

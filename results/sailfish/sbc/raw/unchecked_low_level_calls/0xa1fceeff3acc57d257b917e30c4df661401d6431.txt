@@ -1,0 +1,50 @@
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Analysis started at: 2026-06-21 07:09:20 PM
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Callgraph generation started!
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Callgraph generation finished!
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Value Range Analysis started
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Generating return summary for AirDropContract
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Return summary generated for AirDropContract
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Processed function AirDropContract
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Generating return summary for validAddress
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Return summary generated for validAddress
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Processed function validAddress
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Generating return summary for transfer
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Return summary generated for transfer
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Processed function transfer
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Value Range Analysis took 0.000548 seconds
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Value Range Analysis finished
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Dependency detection started!
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Dependency detection finished!
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Static Analysis took 0.052658 seconds
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Dependency does not exist
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Analysis finished!
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Analysis took 0.052814 seconds
+[INFO] | 2026-06-21 07:09:20 PM | analyzer.0xa1fceeff3acc57d257b917e30c4df661401d6431 | Analysis finished at: 2026-06-21 07:09:20 PM
+[36m[#] Analysing started: 0xa1fceeff3acc57d257b917e30c4df661401d6431.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier validAddress[0m
+[36m[#] Interprocedural CFG generated for modifer validAddress[0m
+[36m[#] Interprocedural CFG generation started for AirDropContract[0m
+[36m[#] Interprocedural CFG generated for AirDropContract[0m
+[36m[#] Interprocedural CFG generation started for transfer[0m
+[36m[#] Interprocedural CFG generated for transfer[0m
+[36m[#] SDG generation started for AirDropContract[0m
+[36m[#] SDG generated for AirDropContract[0m
+[36m[#] SDG generation started for transfer[0m
+[36m[#] SDG generated for transfer[0m
+[36m[#] SDG generation started for modifier validAddress[0m
+[36m[#] SDG generated for modifier validAddress[0m
+[36m[#] Analysis took 0.052814 seconds[0m
+[36m[#] Analysis completed: 0xa1fceeff3acc57d257b917e30c4df661401d6431.sol [0m
+
+=== dependency_info.json ===
+{}

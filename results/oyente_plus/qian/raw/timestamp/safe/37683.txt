@@ -1,0 +1,41 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 37683.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.xllomn37Mv' running
+INFO:CryticCompile:Compilation warnings/errors on 37683.sol:
+37683.sol:15:13: Warning: Invoking events without "emit" prefix is deprecated.
+            NeedRepeatCheck(true);
+            ^-------------------^
+37683.sol:10:5: Warning: No visibility specified. Defaulting to "public". 
+    function __callback(bytes32 queryId, string result) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+37683.sol:10:25: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function __callback(bytes32 queryId, string result) {
+                        ^-------------^
+
+INFO:root:contract 37683.sol:LastWillContractOraclize:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 86.8%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:37683.sol:15:13: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    accidentOccurs = 1
+37683.sol:12:32: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    lastActiveTs = 1
+INFO:symExec:37683.sol:10:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    result = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+37683.sol:15:13: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    accidentOccurs = 1
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 37683.sol:LastWillContractOraclize.json.

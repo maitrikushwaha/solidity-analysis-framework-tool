@@ -1,0 +1,52 @@
+
+'solc --version' running
+'solc /work/datasets/qian/timestamp/vulnerable/19714.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/timestamp/vulnerable' running
+
+TANDER.pre_startdate (datasets/qian/timestamp/vulnerable/19714.sol#4) is never initialized. It is used in:
+	- TANDER.bonuscalpre() (datasets/qian/timestamp/vulnerable/19714.sol#7-17)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+TANDER.bonuscalpre() (datasets/qian/timestamp/vulnerable/19714.sol#7-17) performs a multiplication on the result of a division:
+	- bonusCalculationFactor = (block.timestamp - (pre_startdate)) / (604800) (datasets/qian/timestamp/vulnerable/19714.sol#9)
+	- bon -= bonusCalculationFactor * 8 (datasets/qian/timestamp/vulnerable/19714.sol#14)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#divide-before-multiply
+
+TANDER.bonuscalpre() (datasets/qian/timestamp/vulnerable/19714.sol#7-17) uses a dangerous strict equality:
+	- bonusCalculationFactor == 0 (datasets/qian/timestamp/vulnerable/19714.sol#10)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+TANDER.bonuscalpre() (datasets/qian/timestamp/vulnerable/19714.sol#7-17) uses timestamp for comparisons
+	Dangerous comparisons:
+	- bonusCalculationFactor == 0 (datasets/qian/timestamp/vulnerable/19714.sol#10)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+TANDER.bonuscalpre() (datasets/qian/timestamp/vulnerable/19714.sol#7-17) is never used and should be removed
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dead-code
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/timestamp/vulnerable/19714.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Variable TANDER.pre_startdate (datasets/qian/timestamp/vulnerable/19714.sol#4) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+TANDER.pre_startdate (datasets/qian/timestamp/vulnerable/19714.sol#4) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/qian/timestamp/vulnerable/19714.sol analyzed (1 contracts with 93 detectors), 9 result(s) found

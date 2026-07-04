@@ -1,0 +1,1995 @@
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Analysis started at: 2026-06-21 07:01:58 PM
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Callgraph generation started!
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Callgraph generation finished!
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Value Range Analysis started
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Range graph generated
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Generating return summary for Government
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Return summary generated for Government
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Range graph generated
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Processed function Government
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Generating return summary for lendGovernmentMoney
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Return summary generated for lendGovernmentMoney
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Range graph generated
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Processed function lendGovernmentMoney
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Generating return summary for totalDebt
+[WARNING] | 2026-06-21 07:01:58 PM | analyzer.list_dos | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Return summary generated for totalDebt
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Processed function totalDebt
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Generating return summary for totalPayedOut
+[WARNING] | 2026-06-21 07:01:58 PM | analyzer.list_dos | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Return summary generated for totalPayedOut
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Processed function totalPayedOut
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Generating return summary for investInTheSystem
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Return summary generated for investInTheSystem
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Range graph generated
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Processed function investInTheSystem
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Generating return summary for inheritToNextGeneration
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Return summary generated for inheritToNextGeneration
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Range graph generated
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Processed function inheritToNextGeneration
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Generating return summary for getCreditorAddresses
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Return summary generated for getCreditorAddresses
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Processed function getCreditorAddresses
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Generating return summary for getCreditorAmounts
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Return summary generated for getCreditorAmounts
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | State variable assignement do not exist
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Processed function getCreditorAmounts
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Generating return summary for fallback
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Return summary generated for fallback
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Range graph generated
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Processed function fallback
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Value Range Analysis took 0.008984 seconds
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Value Range Analysis finished
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | Dependency detection started!
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and lendGovernmentMoney
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and lendGovernmentMoney
+[INFO] | 2026-06-21 07:01:58 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and lendGovernmentMoney
+[INFO] | 2026-06-21 07:01:59 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and lendGovernmentMoney
+[INFO] | 2026-06-21 07:02:00 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and lendGovernmentMoney
+[INFO] | 2026-06-21 07:02:00 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and lendGovernmentMoney
+[INFO] | 2026-06-21 07:02:00 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and lendGovernmentMoney
+[INFO] | 2026-06-21 07:02:00 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and fallback
+[INFO] | 2026-06-21 07:02:01 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and fallback
+[INFO] | 2026-06-21 07:02:01 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and fallback
+[INFO] | 2026-06-21 07:02:01 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and fallback
+[INFO] | 2026-06-21 07:02:02 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and fallback
+[INFO] | 2026-06-21 07:02:03 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and fallback
+[INFO] | 2026-06-21 07:02:03 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and fallback
+[INFO] | 2026-06-21 07:02:03 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and investInTheSystem
+[INFO] | 2026-06-21 07:02:03 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and investInTheSystem
+[INFO] | 2026-06-21 07:02:03 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and investInTheSystem
+[INFO] | 2026-06-21 07:02:03 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and investInTheSystem
+[INFO] | 2026-06-21 07:02:03 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and inheritToNextGeneration
+[INFO] | 2026-06-21 07:02:03 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and inheritToNextGeneration
+[INFO] | 2026-06-21 07:02:03 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and inheritToNextGeneration
+[INFO] | 2026-06-21 07:02:03 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions lendGovernmentMoney and inheritToNextGeneration
+[INFO] | 2026-06-21 07:02:04 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and lendGovernmentMoney
+[INFO] | 2026-06-21 07:02:04 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and lendGovernmentMoney
+[INFO] | 2026-06-21 07:02:04 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and lendGovernmentMoney
+[INFO] | 2026-06-21 07:02:04 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and lendGovernmentMoney
+[INFO] | 2026-06-21 07:02:05 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and lendGovernmentMoney
+[INFO] | 2026-06-21 07:02:06 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and lendGovernmentMoney
+[INFO] | 2026-06-21 07:02:06 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and lendGovernmentMoney
+[INFO] | 2026-06-21 07:02:06 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:02:06 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:02:06 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:02:06 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:02:08 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:02:08 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:02:09 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and fallback
+[INFO] | 2026-06-21 07:02:09 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and investInTheSystem
+[INFO] | 2026-06-21 07:02:09 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and investInTheSystem
+[INFO] | 2026-06-21 07:02:09 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and investInTheSystem
+[INFO] | 2026-06-21 07:02:09 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and investInTheSystem
+[INFO] | 2026-06-21 07:02:09 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and inheritToNextGeneration
+[INFO] | 2026-06-21 07:02:09 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and inheritToNextGeneration
+[INFO] | 2026-06-21 07:02:09 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and inheritToNextGeneration
+[INFO] | 2026-06-21 07:02:09 PM | analyzer.list_dos | TOD dependency detected in file list_dos.sol in contract Government in by composing functions fallback and inheritToNextGeneration
+[INFO] | 2026-06-21 07:02:09 PM | analyzer.list_dos | Dependency detection finished!
+[INFO] | 2026-06-21 07:02:09 PM | analyzer.list_dos | Static Analysis took 11.422277 seconds
+[INFO] | 2026-06-21 07:02:09 PM | analyzer.list_dos | Dependency exists
+[INFO] | 2026-06-21 07:02:09 PM | analyzer.list_dos | Invoking symbolic executor!
+[36m[#] Analysing started: list_dos.sol[0m
+[36m[#] Interprocedural CFG generation started for Government[0m
+[36m[#] Interprocedural CFG generated for Government[0m
+[36m[#] Interprocedural CFG generation started for lendGovernmentMoney[0m
+[36m[#] Interprocedural CFG generated for lendGovernmentMoney[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for totalDebt[0m
+[36m[#] Interprocedural CFG generated for totalDebt[0m
+[36m[#] Interprocedural CFG generation started for totalPayedOut[0m
+[36m[#] Interprocedural CFG generated for totalPayedOut[0m
+[36m[#] Interprocedural CFG generation started for investInTheSystem[0m
+[36m[#] Interprocedural CFG generated for investInTheSystem[0m
+[36m[#] Interprocedural CFG generation started for inheritToNextGeneration[0m
+[36m[#] Interprocedural CFG generated for inheritToNextGeneration[0m
+[36m[#] Interprocedural CFG generation started for getCreditorAddresses[0m
+[36m[#] Interprocedural CFG generated for getCreditorAddresses[0m
+[36m[#] Interprocedural CFG generation started for getCreditorAmounts[0m
+[36m[#] Interprocedural CFG generated for getCreditorAmounts[0m
+[36m[#] SDG generation started for Government[0m
+[36m[#] SDG generated for Government[0m
+[36m[#] SDG generation started for lendGovernmentMoney[0m
+[36m[#] SDG generated for lendGovernmentMoney[0m
+[36m[#] SDG generation started for fallback[0m
+[36m[#] SDG generated for fallback[0m
+[36m[#] SDG generation started for totalDebt[0m
+[36m[#] SDG generated for totalDebt[0m
+[36m[#] SDG generation started for totalPayedOut[0m
+[36m[#] SDG generated for totalPayedOut[0m
+[36m[#] SDG generation started for investInTheSystem[0m
+[36m[#] SDG generated for investInTheSystem[0m
+[36m[#] SDG generation started for inheritToNextGeneration[0m
+[36m[#] SDG generated for inheritToNextGeneration[0m
+[36m[#] SDG generation started for getCreditorAddresses[0m
+[36m[#] SDG generated for getCreditorAddresses[0m
+[36m[#] SDG generation started for getCreditorAmounts[0m
+[36m[#] SDG generated for getCreditorAmounts[0m
+[INFO] | 2026-06-21 07:02:23 PM | analyzer.list_dos | Symbolic execution took 13.663541 seconds
+[INFO] | 2026-06-21 07:02:23 PM | analyzer.list_dos | Symbolic execution finished!
+[INFO] | 2026-06-21 07:02:23 PM | analyzer.list_dos | Analysis finished!
+[INFO] | 2026-06-21 07:02:23 PM | analyzer.list_dos | Analysis took 25.086980 seconds
+[INFO] | 2026-06-21 07:02:23 PM | analyzer.list_dos | Analysis finished at: 2026-06-21 07:02:23 PM
+[36m[#] Analysis took 25.086980 seconds[0m
+[36m[#] Analysis completed: list_dos.sol [0m
+
+=== dependency_info.json ===
+{
+    "list_dos.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "lendGovernmentMoney"
+            ],
+            "First_function": "lendGovernmentMoney",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 80\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 100\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "lendGovernmentMoney"
+            ],
+            "First_function": "lendGovernmentMoney",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 109\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 129\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "lendGovernmentMoney"
+            ],
+            "First_function": "lendGovernmentMoney",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 138\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 158\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "lendGovernmentMoney"
+            ],
+            "First_function": "lendGovernmentMoney",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 167\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 187\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 169\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 190\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 173\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 14\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 188\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 14\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 178\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 182\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[creditorAddresses[lastCreditorPayedOut]] -= creditorAmounts[lastCreditorPayedOut]\nIRS: \nREF_18 = REF_18 - REF_19\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "lendGovernmentMoney"
+            ],
+            "First_function": "lendGovernmentMoney",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 196\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 216\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 197\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses.push(msg.sender)\nIRS: \nPUSH msg.sender in creditorAddresses\"",
+                        "\"BlockID: 22\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 218\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses = new address[](0)\nIRS: \ncreditorAddresses := TMP_7\"",
+                        "\"BlockID: 22\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 198\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 219\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 198\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 20\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 219\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 20\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 198\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 21\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 219\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 21\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 198\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 22\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 219\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 22\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 202\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 14\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 217\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 14\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 202\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 21\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 217\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 21\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 207\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 211\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[creditorAddresses[lastCreditorPayedOut]] -= creditorAmounts[lastCreditorPayedOut]\nIRS: \nREF_18 = REF_18 - REF_19\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "lendGovernmentMoney"
+            ],
+            "First_function": "lendGovernmentMoney",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 225\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 245\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 226\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses.push(msg.sender)\nIRS: \nPUSH msg.sender in creditorAddresses\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 247\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses = new address[](0)\nIRS: \ncreditorAddresses := TMP_7\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 231\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 246\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "lendGovernmentMoney"
+            ],
+            "First_function": "lendGovernmentMoney",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 254\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 274\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 255\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses.push(msg.sender)\nIRS: \nPUSH msg.sender in creditorAddresses\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 276\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses = new address[](0)\nIRS: \ncreditorAddresses := TMP_7\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 260\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 275\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 38\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 38\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 38\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 38\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 61\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 14\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 14\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 49\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 53\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[creditorAddresses[lastCreditorPayedOut]] -= creditorAmounts[lastCreditorPayedOut]\nIRS: \nREF_18 = REF_18 - REF_19\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 38\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 39\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses.push(msg.sender)\nIRS: \nPUSH msg.sender in creditorAddresses\"",
+                        "\"BlockID: 22\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses = new address[](0)\nIRS: \ncreditorAddresses := TMP_7\"",
+                        "\"BlockID: 22\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 61\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 20\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 61\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 20\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 21\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 61\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 21\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 22\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 61\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 22\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 14\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 14\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 21\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 21\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 49\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 53\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[creditorAddresses[lastCreditorPayedOut]] -= creditorAmounts[lastCreditorPayedOut]\nIRS: \nREF_18 = REF_18 - REF_19\"",
+                        "\"BlockID: 17\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 38\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 39\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses.push(msg.sender)\nIRS: \nPUSH msg.sender in creditorAddresses\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses = new address[](0)\nIRS: \ncreditorAddresses := TMP_7\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 38\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 6\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 39\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses.push(msg.sender)\nIRS: \nPUSH msg.sender in creditorAddresses\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 60\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses = new address[](0)\nIRS: \ncreditorAddresses := TMP_7\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "investInTheSystem"
+            ],
+            "First_function": "investInTheSystem",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: investInTheSystem\nNode: \nEXPRESSION profitFromCrash += msg.value\nIRS: \nprofitFromCrash = profitFromCrash + msg.value\"",
+                        "\"BlockID: 14\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "investInTheSystem"
+            ],
+            "First_function": "investInTheSystem",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: investInTheSystem\nNode: \nEXPRESSION profitFromCrash += msg.value\nIRS: \nprofitFromCrash = profitFromCrash + msg.value\"",
+                        "\"BlockID: 14\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: investInTheSystem\nNode: \nEXPRESSION profitFromCrash += msg.value\nIRS: \nprofitFromCrash = profitFromCrash + msg.value\"",
+                        "\"BlockID: 21\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "investInTheSystem"
+            ],
+            "First_function": "investInTheSystem",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: investInTheSystem\nNode: \nEXPRESSION profitFromCrash += msg.value\nIRS: \nprofitFromCrash = profitFromCrash + msg.value\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "investInTheSystem"
+            ],
+            "First_function": "investInTheSystem",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: investInTheSystem\nNode: \nEXPRESSION profitFromCrash += msg.value\nIRS: \nprofitFromCrash = profitFromCrash + msg.value\"",
+                        "\"BlockID: 26\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "inheritToNextGeneration"
+            ],
+            "First_function": "inheritToNextGeneration",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 72\nFunction: inheritToNextGeneration\nNode: \nEXPRESSION corruptElite = nextGeneration\nIRS: \ncorruptElite := nextGeneration\"",
+                        "\"BlockID: 12\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION corruptElite.send(amount * 5 \/ 100)\nIRS: \nTMP_18 = SEND dest:corruptElite value:TMP_17\""
+                    ],
+                    "state_variable": "corruptElite"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "inheritToNextGeneration"
+            ],
+            "First_function": "inheritToNextGeneration",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 72\nFunction: inheritToNextGeneration\nNode: \nEXPRESSION corruptElite = nextGeneration\nIRS: \ncorruptElite := nextGeneration\"",
+                        "\"BlockID: 12\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION corruptElite.send(amount * 5 \/ 100)\nIRS: \nTMP_18 = SEND dest:corruptElite value:TMP_17\""
+                    ],
+                    "state_variable": "corruptElite"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "inheritToNextGeneration"
+            ],
+            "First_function": "inheritToNextGeneration",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 72\nFunction: inheritToNextGeneration\nNode: \nEXPRESSION corruptElite = nextGeneration\nIRS: \ncorruptElite := nextGeneration\"",
+                        "\"BlockID: 12\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION corruptElite.send(amount * 5 \/ 100)\nIRS: \nTMP_18 = SEND dest:corruptElite value:TMP_17\""
+                    ],
+                    "state_variable": "corruptElite"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "lendGovernmentMoney",
+                "inheritToNextGeneration"
+            ],
+            "First_function": "inheritToNextGeneration",
+            "Second_function": "lendGovernmentMoney",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 72\nFunction: inheritToNextGeneration\nNode: \nEXPRESSION corruptElite = nextGeneration\nIRS: \ncorruptElite := nextGeneration\"",
+                        "\"BlockID: 27\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION corruptElite.send(this.balance)\nIRS: \nTMP_5 = SEND dest:corruptElite value:REF_5\""
+                    ],
+                    "state_variable": "corruptElite"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "lendGovernmentMoney"
+            ],
+            "First_function": "lendGovernmentMoney",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "lendGovernmentMoney"
+            ],
+            "First_function": "lendGovernmentMoney",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "lendGovernmentMoney"
+            ],
+            "First_function": "lendGovernmentMoney",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "lendGovernmentMoney"
+            ],
+            "First_function": "lendGovernmentMoney",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 11\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 32\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 15\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 43\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 43\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[creditorAddresses[lastCreditorPayedOut]] -= creditorAmounts[lastCreditorPayedOut]\nIRS: \nREF_18 = REF_18 - REF_19\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "lendGovernmentMoney"
+            ],
+            "First_function": "lendGovernmentMoney",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses.push(msg.sender)\nIRS: \nPUSH msg.sender in creditorAddresses\"",
+                        "\"BlockID: 51\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses = new address[](0)\nIRS: \ncreditorAddresses := TMP_7\"",
+                        "\"BlockID: 51\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 11\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 32\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 11\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 49\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 32\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 49\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 11\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 50\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 32\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 50\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 11\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 51\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 32\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 51\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 15\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 43\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 43\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 15\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 50\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 50\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 20\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 24\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[creditorAddresses[lastCreditorPayedOut]] -= creditorAmounts[lastCreditorPayedOut]\nIRS: \nREF_18 = REF_18 - REF_19\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "lendGovernmentMoney"
+            ],
+            "First_function": "lendGovernmentMoney",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses.push(msg.sender)\nIRS: \nPUSH msg.sender in creditorAddresses\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses = new address[](0)\nIRS: \ncreditorAddresses := TMP_7\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 15\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "lendGovernmentMoney"
+            ],
+            "First_function": "lendGovernmentMoney",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses.push(msg.sender)\nIRS: \nPUSH msg.sender in creditorAddresses\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses = new address[](0)\nIRS: \ncreditorAddresses := TMP_7\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 15\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 30\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 283\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 303\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 313\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 333\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 343\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 363\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 373\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 393\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 375\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 396\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 379\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 43\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 394\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 43\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 384\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 388\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[creditorAddresses[lastCreditorPayedOut]] -= creditorAmounts[lastCreditorPayedOut]\nIRS: \nREF_18 = REF_18 - REF_19\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 403\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 423\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 404\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses.push(msg.sender)\nIRS: \nPUSH msg.sender in creditorAddresses\"",
+                        "\"BlockID: 51\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 425\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses = new address[](0)\nIRS: \ncreditorAddresses := TMP_7\"",
+                        "\"BlockID: 51\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 405\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 426\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 405\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 49\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 426\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 49\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 405\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 50\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 426\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 50\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 405\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts.push(amount * 110 \/ 100)\nIRS: \nPUSH TMP_14 in creditorAmounts\"",
+                        "\"BlockID: 51\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 426\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAmounts = new uint256[](0)\nIRS: \ncreditorAmounts := TMP_9\"",
+                        "\"BlockID: 51\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[lastCreditorPayedOut].send(creditorAmounts[lastCreditorPayedOut])\nIRS: \nTMP_33 = SEND dest:REF_14 value:REF_16\""
+                    ],
+                    "state_variable": "creditorAmounts"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 409\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 43\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 424\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 43\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 409\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 50\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 424\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 50\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 414\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[msg.sender] += amount * 110 \/ 100\nIRS: \nREF_11 = REF_11 + TMP_29\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 418\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION buddies[creditorAddresses[lastCreditorPayedOut]] -= creditorAmounts[lastCreditorPayedOut]\nIRS: \nREF_18 = REF_18 - REF_19\"",
+                        "\"BlockID: 46\nFunction: lendGovernmentMoney\nNode: \nIF buddies[buddy] >= amount\nIRS: \nCONDITION TMP_24\""
+                    ],
+                    "state_variable": "buddies"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 433\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 453\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 434\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses.push(msg.sender)\nIRS: \nPUSH msg.sender in creditorAddresses\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 455\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses = new address[](0)\nIRS: \ncreditorAddresses := TMP_7\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 439\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 454\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "fallback"
+            ],
+            "First_function": "fallback",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 463\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 483\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION lastTimeOfNewCredit = block.timestamp\nIRS: \nlastTimeOfNewCredit := block.timestamp\"",
+                        "\"BlockID: 35\nFunction: lendGovernmentMoney\nNode: \nIF lastTimeOfNewCredit + TWELVE_HOURS < block.timestamp\nIRS: \nCONDITION TMP_1\""
+                    ],
+                    "state_variable": "lastTimeOfNewCredit"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 464\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses.push(msg.sender)\nIRS: \nPUSH msg.sender in creditorAddresses\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 485\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses = new address[](0)\nIRS: \ncreditorAddresses := TMP_7\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "creditorAddresses"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 469\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash += amount * 5 \/ 100\nIRS: \nprofitFromCrash = profitFromCrash + TMP_23\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 484\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION profitFromCrash = 0\nIRS: \nprofitFromCrash := 0\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "investInTheSystem"
+            ],
+            "First_function": "investInTheSystem",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: investInTheSystem\nNode: \nEXPRESSION profitFromCrash += msg.value\nIRS: \nprofitFromCrash = profitFromCrash + msg.value\"",
+                        "\"BlockID: 43\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "investInTheSystem"
+            ],
+            "First_function": "investInTheSystem",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: investInTheSystem\nNode: \nEXPRESSION profitFromCrash += msg.value\nIRS: \nprofitFromCrash = profitFromCrash + msg.value\"",
+                        "\"BlockID: 43\nFunction: lendGovernmentMoney\nNode: \nIF profitFromCrash < 10000 * 10 ** 18\nIRS: \nCONDITION TMP_21\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: investInTheSystem\nNode: \nEXPRESSION profitFromCrash += msg.value\nIRS: \nprofitFromCrash = profitFromCrash + msg.value\"",
+                        "\"BlockID: 50\nFunction: lendGovernmentMoney\nNode: \nIF creditorAmounts[lastCreditorPayedOut] <= address(this).balance - profitFromCrash\nIRS: \nCONDITION TMP_32\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "investInTheSystem"
+            ],
+            "First_function": "investInTheSystem",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: investInTheSystem\nNode: \nEXPRESSION profitFromCrash += msg.value\nIRS: \nprofitFromCrash = profitFromCrash + msg.value\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "investInTheSystem"
+            ],
+            "First_function": "investInTheSystem",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 69\nFunction: investInTheSystem\nNode: \nEXPRESSION profitFromCrash += msg.value\nIRS: \nprofitFromCrash = profitFromCrash + msg.value\"",
+                        "\"BlockID: 55\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION creditorAddresses[creditorAddresses.length - 1].send(profitFromCrash)\nIRS: \nTMP_4 = SEND dest:REF_2 value:profitFromCrash\""
+                    ],
+                    "state_variable": "profitFromCrash"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "inheritToNextGeneration"
+            ],
+            "First_function": "inheritToNextGeneration",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 72\nFunction: inheritToNextGeneration\nNode: \nEXPRESSION corruptElite = nextGeneration\nIRS: \ncorruptElite := nextGeneration\"",
+                        "\"BlockID: 41\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION corruptElite.send(amount * 5 \/ 100)\nIRS: \nTMP_18 = SEND dest:corruptElite value:TMP_17\""
+                    ],
+                    "state_variable": "corruptElite"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "inheritToNextGeneration"
+            ],
+            "First_function": "inheritToNextGeneration",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 72\nFunction: inheritToNextGeneration\nNode: \nEXPRESSION corruptElite = nextGeneration\nIRS: \ncorruptElite := nextGeneration\"",
+                        "\"BlockID: 41\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION corruptElite.send(amount * 5 \/ 100)\nIRS: \nTMP_18 = SEND dest:corruptElite value:TMP_17\""
+                    ],
+                    "state_variable": "corruptElite"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "inheritToNextGeneration"
+            ],
+            "First_function": "inheritToNextGeneration",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 72\nFunction: inheritToNextGeneration\nNode: \nEXPRESSION corruptElite = nextGeneration\nIRS: \ncorruptElite := nextGeneration\"",
+                        "\"BlockID: 41\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION corruptElite.send(amount * 5 \/ 100)\nIRS: \nTMP_18 = SEND dest:corruptElite value:TMP_17\""
+                    ],
+                    "state_variable": "corruptElite"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "fallback",
+                "inheritToNextGeneration"
+            ],
+            "First_function": "inheritToNextGeneration",
+            "Second_function": "fallback",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 72\nFunction: inheritToNextGeneration\nNode: \nEXPRESSION corruptElite = nextGeneration\nIRS: \ncorruptElite := nextGeneration\"",
+                        "\"BlockID: 56\nFunction: lendGovernmentMoney\nNode: \nEXPRESSION corruptElite.send(this.balance)\nIRS: \nTMP_5 = SEND dest:corruptElite value:REF_5\""
+                    ],
+                    "state_variable": "corruptElite"
+                }
+            ]
+        }
+    ]
+}

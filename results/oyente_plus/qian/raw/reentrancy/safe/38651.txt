@@ -1,0 +1,25 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 38651.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.5dGt4XtFG6' running
+INFO:CryticCompile:Compilation warnings/errors on 38651.sol:
+38651.sol:12:47: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (!msg.sender.call.value(remain)()) throw;
+                                              ^---^
+38651.sol:9:21: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        bytes32 h = sha256(token, price, msg.sender);
+                    ^------------------------------^
+38651.sol:8:5: Warning: No visibility specified. Defaulting to "public". 
+    function cancelBuyOrder(address token, uint price) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+INFO:root:contract 38651.sol:Ethex:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 85.6%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 38651.sol:Ethex.json.

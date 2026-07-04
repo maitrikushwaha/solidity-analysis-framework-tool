@@ -1,0 +1,23 @@
+{
+ "evm_code_coverage": "77.2",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "00_BasicNoChecks_ree1.sol:5:5: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "00_BasicNoChecks_ree1.sol:18:1046: Warning: Integer Overflow.\n",
+   "00_BasicNoChecks_ree1.sol:9:28: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    balances[msg.sender] = 1"
+  ],
+  "callstack": [
+   "00_BasicNoChecks_ree1.sol:9:28: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "00_BasicNoChecks_ree1.sol:9:28: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

@@ -1,0 +1,22 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 39912.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.nWTkraVsvZ' running
+INFO:CryticCompile:Compilation warnings/errors on 39912.sol:
+39912.sol:10:56: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+        if (!Resilience.call.value(msg.value)(buySig)) throw;
+                                                       ^---^
+39912.sol:9:32: Warning: "sha3" has been deprecated in favour of "keccak256"
+        bytes4 buySig = bytes4(sha3("buy()"));
+                               ^-----------^
+
+INFO:root:contract 39912.sol:CampaignBeneficiary:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 77.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 39912.sol:CampaignBeneficiary.json.

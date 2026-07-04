@@ -1,0 +1,44 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 19925.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.PCQLX6ztb1' running
+INFO:CryticCompile:Compilation warnings/errors on 19925.sol:
+19925.sol:12:6: Warning: Return value of low-level calls not used.
+	    msg.sender.call.value(_value)(_data);
+	    ^----------------------------------^
+
+INFO:root:contract 19925.sol:ERC223TokenCompatible:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 88.2%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:19925.sol:8:2: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 1
+    _value = 1
+19925.sol:12:6: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    balances[msg.sender] = 1
+    _value = 1
+INFO:symExec:19925.sol:8:2: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _data = 115792089237316195423570985008687907853269984665640564039457584007913129639932
+19925.sol:11:25: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    balances[_to] = 108632557717535104564096925623227917171871067664332347950084764315658942186497
+    _value = 7261860562399637766612020250998547527728294337784445942429108264398905637887
+19925.sol:6:11: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    balances[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819968
+    _value = 1
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 19925.sol:ERC223TokenCompatible.json.

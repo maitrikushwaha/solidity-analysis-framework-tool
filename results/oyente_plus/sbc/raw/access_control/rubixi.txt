@@ -1,0 +1,87 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc rubixi.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.YQIY18x2zZ' running
+INFO:CryticCompile:Compilation warnings/errors on rubixi.sol:
+rubixi.sol:83:42: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+                 if (collectedFees == 0) throw;
+                                         ^---^
+rubixi.sol:93:42: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+                 if (collectedFees == 0) throw;
+                                         ^---^
+rubixi.sol:100:58: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+                 if (collectedFees == 0 || _pcent > 100) throw;
+                                                         ^---^
+rubixi.sol:113:50: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+                 if (_mult > 300 || _mult < 120) throw;
+                                                 ^---^
+rubixi.sol:119:33: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+                 if (_fee > 10) throw;
+                                ^---^
+rubixi.sol:74:26: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+                         participants[payoutOrder].etherAddress.send(payoutToSend);
+                         ^-------------------------------------------------------^
+rubixi.sol:85:18: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+                 creator.send(collectedFees);
+                 ^-------------------------^
+rubixi.sol:95:18: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+                 creator.send(_amt);
+                 ^----------------^
+rubixi.sol:103:18: Warning: Failure condition of 'send' ignored. Consider using 'transfer' instead.
+                 creator.send(feesToCollect);
+                 ^-------------------------^
+
+INFO:root:contract rubixi.sol:Rubixi:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 56.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:rubixi.sol:153:26: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    payoutOrder = 1
+    participants.length = 0
+INFO:symExec:rubixi.sol:141:34: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    participants[payoutOrder] = 51343952033128413042497933911847902270502836040668240916351069703745354841983
+    payoutOrder = 51060814329193816323244965903946432034034849012582868084099846931738439556822
+rubixi.sol:141:34: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    participants[payoutOrder] = 51393534178883756452746865197962500421353244807524312973363357277769128984447
+    payoutOrder = 51110396474949159733495429685601896073743616126466090450295753244884397301462
+rubixi.sol:158:36: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    orderInPyramid = 14481301125930427735536001674052696052536313812295581847072018120581308219521
+    participants.length = 88653761786489986105288001688001034095428932954918830414231183061485512294400
+rubixi.sol:159:35: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    orderInPyramid = 14481302872444745233951990563854139807471482427934220942502539787420647358594
+    participants.length = 30757720634723382352660638989838448768430158224154741205178983533224952660099
+rubixi.sol:159:35: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    orderInPyramid = 14481302872444745233951990563854139818360518169404251773330527225237230125186
+    participants.length = 30757720634723382352660638989838448766728746389550048887862110496066111602819
+INFO:symExec:rubixi.sol:103:18: Warning: Callstack Depth Attack Vulnerability.
+
+rubixi.sol:85:18: Warning: Callstack Depth Attack Vulnerability.
+
+rubixi.sol:95:18: Warning: Callstack Depth Attack Vulnerability.
+
+rubixi.sol:74:26: Warning: Callstack Depth Attack Vulnerability.
+
+INFO:symExec:Flow1
+rubixi.sol:85:18: Warning: Transaction-Ordering Dependency.
+
+Flow2
+rubixi.sol:95:18: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to rubixi.sol:Rubixi.json.

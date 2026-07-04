@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "84.9",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "37707.sol:13:11: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    bountyAmount[msg.sender] = 57896044618658097711785492504343953926634992332820282019728792003956564819969\n    totalBountyAmount = 0"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "37707.sol:12:13: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

@@ -1,0 +1,84 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc buggy_33.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.TReYBdLb1o' running
+INFO:root:contract buggy_33.sol:Owned:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 92.9%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:Flow1
+buggy_33.sol:23:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_33.sol:102:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_33.sol:Owned.json.
+INFO:root:contract buggy_33.sol:SafeMath:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_33.sol:SafeMath.json.
+INFO:root:contract buggy_33.sol:Staking:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 94.2%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:buggy_33.sol:365:38: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    minstakeTokens = 0
+    basePercent = 9498569820248594155839807363993929941088553429603327518861754938149123915776
+    stakeTokens = 0
+buggy_33.sol:393:41: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    lock = 0
+    stakeTime = 57896045589216177729208525112356497059341696583757481231788920506082094219265
+    staker[msg.sender].time = 57896044622054422346194132904578689129923645689681523620141202428338343247872
+    staker[msg.sender].redeem = 0
+buggy_33.sol:393:68: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    lock = 0
+    stakeTime = 57896045589216177729208525112356497059341696583757481231788920506082094219265
+    staker[msg.sender].time = 57896044622054422346194132904578689129923645689681523620141202428338343247872
+    staker[msg.sender].redeem = 0
+buggy_33.sol:394:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    lock = 0
+    stakeTime = 57896045589216177729208525112356497059341696583757481231788920506082094219265
+    staker[msg.sender].time = 57896044622054422346194132904578689129923645689681523620141202428338343247872
+    staker[msg.sender].redeem = 0
+buggy_33.sol:395:9: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    lock = 0
+    stakeTime = 57896045589216177729208525112356497059341696583757481231788920506082094219265
+    staker[msg.sender].time = 57896044622054422346194132904578689129923645689681523620141202428338343247872
+    staker[msg.sender].redeem = 1048576
+INFO:symExec:Flow1
+buggy_33.sol:23:9: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_33.sol:102:9: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_33.sol:Staking.json.

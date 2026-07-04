@@ -1,0 +1,77 @@
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Analysis started at: 2026-06-21 07:14:46 PM
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Callgraph generation started!
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Value Range Analysis started
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Generating return summary for redeem
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Return summary generated for redeem
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Range graph generated
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Processed function redeem
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Value Range Analysis took 0.000274 seconds
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Dependency detection started!
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | DAO dependency detected in file 40779.sol in contract Vault in by composing functions redeem and redeem
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | TOD dependency detected in file 40779.sol in contract Vault in by composing functions redeem and redeem
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Dependency detection finished!
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Static Analysis took 0.052339 seconds
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Dependency exists
+[INFO] | 2026-06-21 07:14:46 PM | analyzer.40779  | Invoking symbolic executor!
+[36m[#] Analysing started: 40779.sol[0m
+[36m[#] Interprocedural CFG generation started for redeem[0m
+[36m[#] Interprocedural CFG generated for redeem[0m
+[36m[#] SDG generation started for redeem[0m
+[36m[#] SDG generated for redeem[0m
+[INFO] | 2026-06-21 07:14:47 PM | analyzer.40779  | Symbolic execution took 0.856505 seconds
+[INFO] | 2026-06-21 07:14:47 PM | analyzer.40779  | Symbolic execution finished!
+[INFO] | 2026-06-21 07:14:47 PM | analyzer.40779  | Analysis finished!
+[INFO] | 2026-06-21 07:14:47 PM | analyzer.40779  | Analysis took 0.909466 seconds
+[INFO] | 2026-06-21 07:14:47 PM | analyzer.40779  | Analysis finished at: 2026-06-21 07:14:47 PM
+[36m[#] Analysis took 0.909466 seconds[0m
+[36m[#] Analysis completed: 40779.sol [0m
+
+=== dependency_info.json ===
+{
+    "40779.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "redeem",
+                "redeem"
+            ],
+            "from_function": "redeem",
+            "to_function": "redeem",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: redeem\nNode: \nEXPRESSION msg.sender.call.value(balances[msg.sender])()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:REF_2 \"",
+                        "\"BlockID: 3\nFunction: redeem\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_3 := 0\""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "redeem",
+                "redeem"
+            ],
+            "First_function": "redeem",
+            "Second_function": "redeem",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 9\nFunction: redeem\nNode: \nEXPRESSION balances[msg.sender] = 0\nIRS: \nREF_3 := 0\"",
+                        "\"BlockID: 2\nFunction: redeem\nNode: \nEXPRESSION msg.sender.call.value(balances[msg.sender])()\nIRS: \nTMP_1(bool) = LOW_LEVEL_CALL, dest:msg.sender, function:call, arguments:[] value:REF_2 \""
+                    ],
+                    "state_variable": "balances"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+
+'solc --version' running
+'solc /work/datasets/qian/overflow/safe/50030.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/work/datasets/qian/overflow/safe' running
+Compilation warnings/errors on /work/datasets/qian/overflow/safe/50030.sol:
+/work/datasets/qian/overflow/safe/50030.sol:16:9: Warning: Return value of low-level calls not used.
+        msg.sender.call.value(balance)();
+        ^------------------------------^
+/work/datasets/qian/overflow/safe/50030.sol:14:5: Warning: No visibility specified. Defaulting to "public". 
+    function claim() onlyOwner {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+
+Reentrancy in Escrow.claim() (datasets/qian/overflow/safe/50030.sol#14-18):
+	External calls:
+	- msg.sender.call.value(balance)() (datasets/qian/overflow/safe/50030.sol#16)
+	State variables written after the call(s):
+	- balances[msg.sender] = 0 (datasets/qian/overflow/safe/50030.sol#17)
+	Escrow.balances (datasets/qian/overflow/safe/50030.sol#6) can be used in cross function reentrancies:
+	- Escrow.balances (datasets/qian/overflow/safe/50030.sol#6)
+	- Escrow.claim() (datasets/qian/overflow/safe/50030.sol#14-18)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+Escrow.owner (datasets/qian/overflow/safe/50030.sol#8) is never initialized. It is used in:
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#uninitialized-state-variables
+
+Escrow.claim() (datasets/qian/overflow/safe/50030.sol#14-18) ignores return value by msg.sender.call.value(balance)() (datasets/qian/overflow/safe/50030.sol#16)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unchecked-low-level-calls
+
+Version constraint ^0.4.25 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- ABIDecodeTwoDimensionalArrayMemory
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- ABIEncoderV2StorageArrayWithMultiSlotElement
+	- DynamicConstructorArgumentsClippedABIV2
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ABIEncoderV2PackedStorage_0.4.x.
+It is used by:
+	- ^0.4.25 (datasets/qian/overflow/safe/50030.sol#1)
+solc-0.4.26 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in Escrow.claim() (datasets/qian/overflow/safe/50030.sol#14-18):
+	- msg.sender.call.value(balance)() (datasets/qian/overflow/safe/50030.sol#16)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Escrow.owner (datasets/qian/overflow/safe/50030.sol#8) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/work/datasets/qian/overflow/safe/50030.sol analyzed (1 contracts with 93 detectors), 7 result(s) found

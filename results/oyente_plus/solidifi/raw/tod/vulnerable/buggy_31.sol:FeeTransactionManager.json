@@ -1,0 +1,24 @@
+{
+ "evm_code_coverage": "95.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "buggy_31.sol:80:19: Warning: Integer Underflow.\n",
+   "buggy_31.sol:415:12: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [],
+  "callstack": [],
+  "money_concurrency": [
+   [
+    "buggy_31.sol:292:12: Warning: Transaction-Ordering Dependency.\n"
+   ],
+   [
+    "buggy_31.sol:110:12: Warning: Transaction-Ordering Dependency.\n"
+   ]
+  ],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

@@ -1,0 +1,30 @@
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Analysis started at: 2026-06-21 07:15:26 PM
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Callgraph generation started!
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Value Range Analysis started
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Generating return summary for calcRefund
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Return summary generated for calcRefund
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Range graph generated
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Processed function calcRefund
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Value Range Analysis took 0.000617 seconds
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Dependency detection started!
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Dependency detection finished!
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Static Analysis took 0.025920 seconds
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Dependency does not exist
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Analysis finished!
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Analysis took 0.026030 seconds
+[INFO] | 2026-06-21 07:15:26 PM | analyzer.50023  | Analysis finished at: 2026-06-21 07:15:26 PM
+[36m[#] Analysing started: 50023.sol[0m
+[36m[#] Analysis took 0.026030 seconds[0m
+[36m[#] Analysis completed: 50023.sol [0m
+
+=== dependency_info.json ===
+{}

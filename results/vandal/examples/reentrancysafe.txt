@@ -1,0 +1,7 @@
+=== Vandal reentrantCall relation on reentrancysafe.sol (Fig. 2 reentrancy figure) ===
+Runtime bytecode compiled with solc 0.8.20; analysed with demo_analyses.dl.
+reentrantCall.csv: 1 row (program point 0x1e9)  => relation NON-EMPTY.
+=> verdict = 1 (reentrant).
+Meaning: FALSE POSITIVE — Vandal flags the checks-effects-interactions-safe
+contract (it detects the external call pattern without modelling that the
+balance is zeroed first), the same failure mode as Oyente+/Osiris.

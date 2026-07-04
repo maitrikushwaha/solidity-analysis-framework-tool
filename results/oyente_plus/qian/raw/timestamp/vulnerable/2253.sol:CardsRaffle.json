@@ -1,0 +1,18 @@
+{
+ "evm_code_coverage": "68.6",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "2253.sol:9:58: Warning: Integer Underflow.\n\nInteger Underflow occurs if:\n    raffleTicketsBought = 1"
+  ],
+  "integer_overflow": [
+   "2253.sol:8:20: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    raffleTicketsBought = 95235721736379883315001763940616669011307430545820611921043079414295449969311"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

@@ -1,0 +1,41 @@
+Starting Solidity compilation and static analysis.
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+Transformed CFG build failed: An error occurred during execution
+> command: `/home/maitri/.solcx/solc-v0.4.26 --combined-json abi,asm,ast,bin,bin-runtime,clone-bin,compact-format,devdoc,hashes,interface,metadata,opcodes,srcmap,srcmap-runtime,userdoc -`
+> return code: `1`
+> stdout:
+
+> stderr:
+<stdin>:109:1: Error: Expected identifier but got 'if'
+if (BAL > 0 && BAL >= valuePaid) {
+^^
+Falling back: skipping reentrancy/timestamp/TOD analysis, running overflow only.
+
+========== PIPELINE 2: OVERFLOW / UNDERFLOW (fallback) ==========
+solc 0.4.26 already installed at: /home/maitri/.solcx/solc-v0.4.26
+Using solc version 0.4.26
+[OVERFLOW] Abstract fixpoint incomplete (unsupported node in source); no vulnerabilities detected by structural fallback.
+
+===== VERDICTS (Box) =====
+[REENTRANCY-SKIP] Transformed CFG unavailable.
+[UNDERFLOW] Variable valuePaid (uint) in claimThrone(): unguarded '-' over external input can underflow below 0 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable wizardCommission (uint) in claimThrone(): unguarded '*' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[UNDERFLOW] Variable compensation (uint) in claimThrone(): unguarded '-' over external input can underflow below 0 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable rawNewClaimPrice (uint) in claimThrone(): unguarded '*' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[OVERFLOW] Variable currentClaimPrice (uint) in claimThrone(): unguarded '*' over external input can exceed type max 115792089237316195423570985008687907853269984665640564039457584007913129639935 (augmented data-flow Algorithm 3).
+[TIMESTAMP-SKIP] Transformed CFG unavailable.
+[TOD] Variable 'wizardAddress' is assigned in transferOwnership() and used as ether transfer recipient in sweepCommission(). Transaction reordering may change the transfer target.
+
+
+========== FINAL VULNERABILITY SUMMARY ==========
+[SUMMARY] Reentrancy: ANALYSIS UNAVAILABLE (transformed CFG failed)
+[SUMMARY] Integer Overflow: VULNERABLE
+[SUMMARY] Integer Underflow: VULNERABLE
+[SUMMARY] Timestamp Dependency: ANALYSIS UNAVAILABLE (transformed CFG failed)
+[SUMMARY] TOD: VULNERABLE
+
+NOTE: Some pipelines were SKIPPED because the mapping transformer could not process this contract.  These vulnerabilities are recorded as -1 (N/A) in the JSON verdict — they are excluded from TP/TN/FP/FN counts rather than counted as negatives.
+
+Total analysis time: 0.40s
+

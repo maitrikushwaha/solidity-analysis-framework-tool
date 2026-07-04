@@ -1,0 +1,194 @@
+[INFO] | 2026-06-21 07:09:17 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Analysis started at: 2026-06-21 07:09:17 PM
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Callgraph generation started!
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Callgraph generation finished!
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Value Range Analysis started
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for Owned
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for Owned
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Range graph generated
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function Owned
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for acceptOwnership
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for acceptOwnership
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Range graph generated
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function acceptOwnership
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function onlyOwner
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for Owned
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for Owned
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Range graph generated
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function Owned
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for acceptOwnership
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for acceptOwnership
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Range graph generated
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function acceptOwnership
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for Marriage
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for Marriage
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Range graph generated
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function Marriage
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for numberOfMajorEvents
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for numberOfMajorEvents
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function numberOfMajorEvents
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for numberOfMessages
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for numberOfMessages
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function numberOfMessages
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for onlyOwner
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for onlyOwner
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function onlyOwner
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for areMarried
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for areMarried
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function areMarried
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for changeOwner
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for changeOwner
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Range graph generated
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function changeOwner
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for execute
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for execute
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function execute
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for changeOwner
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for changeOwner
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Range graph generated
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function changeOwner
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for execute
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for execute
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | State variable assignement do not exist
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function execute
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for createMarriage
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for createMarriage
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Range graph generated
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function createMarriage
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for setMajorEvent
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for setMajorEvent
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Range graph generated
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function setMajorEvent
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for sendMessage
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for sendMessage
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Range graph generated
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function sendMessage
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Generating return summary for setStatus
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Return summary generated for setStatus
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Range graph generated
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Processed function setStatus
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Value Range Analysis took 0.006264 seconds
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Value Range Analysis finished
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Dependency detection started!
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | TOD dependency detected in file 0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol in contract Marriage in by composing functions sendMessage and acceptOwnership
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Dependency detection finished!
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Static Analysis took 0.202366 seconds
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Dependency exists
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Invoking symbolic executor!
+[36m[#] Analysing started: 0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier onlyOwner[0m
+[36m[#] Interprocedural CFG generated for modifer onlyOwner[0m
+[36m[#] Interprocedural CFG generation started for modifier areMarried[0m
+[36m[#] Interprocedural CFG generated for modifer areMarried[0m
+[36m[#] Interprocedural CFG generation started for Owned[0m
+[36m[#] Interprocedural CFG generated for Owned[0m
+[36m[#] Interprocedural CFG generation started for changeOwner[0m
+[36m[#] Interprocedural CFG generated for changeOwner[0m
+[36m[#] Interprocedural CFG generation started for acceptOwnership[0m
+[36m[#] Interprocedural CFG generated for acceptOwnership[0m
+[36m[#] Interprocedural CFG generation started for execute[0m
+[36m[#] Interprocedural CFG generated for execute[0m
+[36m[#] Interprocedural CFG generation started for Owned[0m
+[36m[#] Interprocedural CFG generated for Owned[0m
+[36m[#] Interprocedural CFG generation started for changeOwner[0m
+[36m[#] Interprocedural CFG generated for changeOwner[0m
+[36m[#] Interprocedural CFG generation started for acceptOwnership[0m
+[36m[#] Interprocedural CFG generated for acceptOwnership[0m
+[36m[#] Interprocedural CFG generation started for execute[0m
+[36m[#] Interprocedural CFG generated for execute[0m
+[36m[#] Interprocedural CFG generation started for Marriage[0m
+[36m[#] Interprocedural CFG generated for Marriage[0m
+[36m[#] Interprocedural CFG generation started for numberOfMajorEvents[0m
+[36m[#] Interprocedural CFG generated for numberOfMajorEvents[0m
+[36m[#] Interprocedural CFG generation started for numberOfMessages[0m
+[36m[#] Interprocedural CFG generated for numberOfMessages[0m
+[36m[#] Interprocedural CFG generation started for createMarriage[0m
+[36m[#] Interprocedural CFG generated for createMarriage[0m
+[36m[#] Interprocedural CFG generation started for setStatus[0m
+[36m[#] Interprocedural CFG generated for setStatus[0m
+[36m[#] Interprocedural CFG generation started for setMajorEvent[0m
+[36m[#] Interprocedural CFG generated for setMajorEvent[0m
+[36m[#] Interprocedural CFG generation started for sendMessage[0m
+[36m[#] Interprocedural CFG generated for sendMessage[0m
+[36m[#] SDG generation started for Owned[0m
+[36m[#] SDG generated for Owned[0m
+[36m[#] SDG generation started for changeOwner[0m
+[36m[#] SDG generated for changeOwner[0m
+[36m[#] SDG generation started for acceptOwnership[0m
+[36m[#] SDG generated for acceptOwnership[0m
+[36m[#] SDG generation started for execute[0m
+[36m[#] SDG generated for execute[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for Owned[0m
+[36m[#] SDG generated for Owned[0m
+[36m[#] SDG generation started for changeOwner[0m
+[36m[#] SDG generated for changeOwner[0m
+[36m[#] SDG generation started for acceptOwnership[0m
+[36m[#] SDG generated for acceptOwnership[0m
+[36m[#] SDG generation started for execute[0m
+[36m[#] SDG generated for execute[0m
+[36m[#] SDG generation started for Marriage[0m
+[36m[#] SDG generated for Marriage[0m
+[36m[#] SDG generation started for numberOfMajorEvents[0m
+[36m[#] SDG generated for numberOfMajorEvents[0m
+[36m[#] SDG generation started for numberOfMessages[0m
+[36m[#] SDG generated for numberOfMessages[0m
+[36m[#] SDG generation started for createMarriage[0m
+[36m[#] SDG generated for createMarriage[0m
+[36m[#] SDG generation started for setStatus[0m
+[36m[#] SDG generated for setStatus[0m
+[36m[#] SDG generation started for setMajorEvent[0m
+[36m[#] SDG generated for setMajorEvent[0m
+[36m[#] SDG generation started for sendMessage[0m
+[36m[#] SDG generated for sendMessage[0m
+[36m[#] SDG generation started for modifier onlyOwner[0m
+[36m[#] SDG generated for modifier onlyOwner[0m
+[36m[#] SDG generation started for modifier areMarried[0m
+[36m[#] SDG generated for modifier areMarried[0m
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Symbolic execution took 0.654857 seconds
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Symbolic execution finished!
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Analysis finished!
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Analysis took 0.857861 seconds
+[INFO] | 2026-06-21 07:09:18 PM | analyzer.0x958a8f594101d2c0485a52319f29b2647f2ebc06 | Analysis finished at: 2026-06-21 07:09:18 PM
+[36m[#] Analysis took 0.857861 seconds[0m
+[36m[#] Analysis completed: 0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol [0m
+
+=== dependency_info.json ===
+{
+    "0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "sendMessage",
+                "acceptOwnership"
+            ],
+            "First_function": "acceptOwnership",
+            "Second_function": "sendMessage",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 22\nFunction: acceptOwnership\nNode: \nEXPRESSION owner = newOwner\nIRS: \nowner := newOwner\"",
+                        "\"BlockID: 58\nFunction: sendMessage\nNode: \nEXPRESSION owner.transfer(this.balance)\nIRS: \nTransfer dest:owner value:REF_10\""
+                    ],
+                    "state_variable": "owner"
+                }
+            ]
+        }
+    ]
+}

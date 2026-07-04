@@ -1,0 +1,46 @@
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Analysis started at: 2026-06-21 07:12:53 PM
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Callgraph generation started!
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Callgraph generation finished!
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Value Range Analysis started
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Generating return summary for forked
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Return summary generated for forked
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Processed function forked
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Range graph generated
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Processed function slitherConstructorVariables
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Generating return summary for split
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Return summary generated for split
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | State variable assignement do not exist
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Processed function split
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Value Range Analysis took 0.000608 seconds
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Value Range Analysis finished
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Dependency detection started!
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Dependency detection finished!
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Static Analysis took 0.030146 seconds
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Dependency does not exist
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Symbolic execution is not needed!
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Analysis finished!
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Analysis took 0.030247 seconds
+[INFO] | 2026-06-21 07:12:53 PM | analyzer.40342  | Analysis finished at: 2026-06-21 07:12:53 PM
+[36m[#] Analysing started: 40342.sol[0m
+[36m[#] Interprocedural CFG generation started for forked[0m
+[36m[#] Interprocedural CFG generated for forked[0m
+[36m[#] Interprocedural CFG generation started for split[0m
+[36m[#] Interprocedural CFG generated for split[0m
+[36m[#] SDG generation started for forked[0m
+[36m[#] SDG generated for forked[0m
+[36m[#] SDG generation started for split[0m
+[36m[#] SDG generated for split[0m
+[36m[#] Analysis took 0.030247 seconds[0m
+[36m[#] Analysis completed: 40342.sol [0m
+
+=== dependency_info.json ===
+{}

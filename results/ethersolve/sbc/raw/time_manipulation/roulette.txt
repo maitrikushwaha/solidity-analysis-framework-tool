@@ -1,0 +1,3 @@
+=== EtherSolve --re-entrancy findings (non-empty => reentrant) ===
+# contract /work/datasets/sbc/time_manipulation/roulette.sol:Roulette
+offset,opcode,detection

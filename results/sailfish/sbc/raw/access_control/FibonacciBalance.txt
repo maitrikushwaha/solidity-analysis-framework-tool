@@ -1,0 +1,26 @@
+[INFO] | 2026-06-21 06:57:18 PM | analyzer.FibonacciBalance | Analysis started at: 2026-06-21 06:57:18 PM
+[INFO] | 2026-06-21 06:57:18 PM | analyzer.FibonacciBalance | Callgraph generation started!
+[INFO] | 2026-06-21 06:57:18 PM | analyzer.FibonacciBalance | Callgraph generation finished!
+[INFO] | 2026-06-21 06:57:18 PM | analyzer.FibonacciBalance | Interprocedural CFG generation started!
+Traceback (most recent call last):
+  File "contractlint.py", line 77, in analyze_contracts
+    generated_icfg, icfg_objects = generate_icfg(slither_obj, callgraph, graph_dir, dump_graph, log)
+  File "/root/sailfish/code/static_analysis/analysis/main_helper.py", line 412, in generate_icfg
+    function_cfg = ICFG(slither_obj, contract, function, callgraph, graph_dir, dump_graph, log)
+  File "/root/sailfish/code/static_analysis/analysis/icfg.py", line 54, in __init__
+    self.setup()
+  File "/root/sailfish/code/static_analysis/analysis/icfg.py", line 76, in setup
+    self.add_backedge_for_recusive_call()
+  File "/root/sailfish/code/static_analysis/analysis/icfg.py", line 118, in add_backedge_for_recusive_call
+    to_node = from_to[key][1]
+IndexError: list index out of range
+[36m[#] Analysing started: FibonacciBalance.sol[0m
+[36m[#] Interprocedural CFG generation started for constructor[0m
+[36m[#] Interprocedural CFG generated for constructor[0m
+[36m[#] Interprocedural CFG generation started for withdraw[0m
+[36m[#] Interprocedural CFG generated for withdraw[0m
+[36m[#] Interprocedural CFG generation started for fallback[0m
+[36m[#] Interprocedural CFG generated for fallback[0m
+[36m[#] Interprocedural CFG generation started for setStart[0m
+[36m[#] Interprocedural CFG generated for setStart[0m
+[36m[#] Interprocedural CFG generation started for setFibonacci[0m

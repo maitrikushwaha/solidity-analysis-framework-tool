@@ -1,0 +1,28 @@
+{
+ "evm_code_coverage": "12.0",
+ "vulnerabilities": {
+  "integer_underflow": [
+   "blackjack.sol:135:47: Warning: Integer Underflow.\n",
+   "blackjack.sol:138:1: Warning: Integer Underflow.\n"
+  ],
+  "integer_overflow": [
+   "blackjack.sol:69:84: Warning: Integer Overflow.\n",
+   "blackjack.sol:135:15: Warning: Integer Overflow.\n",
+   "blackjack.sol:135:47: Warning: Integer Overflow.\n",
+   "blackjack.sol:2:21: Warning: Integer Overflow.\n",
+   "blackjack.sol:135:47: Warning: Integer Overflow.\n",
+   "blackjack.sol:136:47: Warning: Integer Overflow.\n",
+   "blackjack.sol:137:58: Warning: Integer Overflow.\n",
+   "blackjack.sol:138:1: Warning: Integer Overflow.\n",
+   "blackjack.sol:137:58: Warning: Integer Overflow.\n",
+   "blackjack.sol:139:2: Warning: Integer Overflow.\n"
+  ],
+  "callstack": [],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 0
+}

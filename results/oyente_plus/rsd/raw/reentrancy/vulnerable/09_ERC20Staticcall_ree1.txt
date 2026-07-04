@@ -1,0 +1,26 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 09_ERC20Staticcall_ree1.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.6KrkarISVv' running
+INFO:root:contract 09_ERC20Staticcall_ree1.sol:MiniToken:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 26.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:09_ERC20Staticcall_ree1.sol:21:62: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    donated[msg.sender] = 0
+INFO:symExec:09_ERC20Staticcall_ree1.sol:21:62: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    donated[msg.sender] = 0
+09_ERC20Staticcall_ree1.sol:30:726: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    donated[msg.sender] = 0
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 09_ERC20Staticcall_ree1.sol:MiniToken.json.

@@ -1,0 +1,20 @@
+{
+ "evm_code_coverage": "89.5",
+ "vulnerabilities": {
+  "integer_underflow": [],
+  "integer_overflow": [
+   "simple_dao.sol:13:5: Warning: Integer Overflow.\n\nInteger Overflow occurs if:\n    credit[to] = 62430443754550986833341874490453040835186626598089484379077938312255997685044"
+  ],
+  "callstack": [
+   "simple_dao.sol:19:18: Warning: Callstack Depth Attack Vulnerability.\n"
+  ],
+  "money_concurrency": [],
+  "time_dependency": [],
+  "reentrancy": [
+   "simple_dao.sol:19:18: Warning: Re-Entrancy Vulnerability.\n"
+  ],
+  "assertion_failure": [],
+  "parity_multisig_bug_2": []
+ },
+ "vulnerability_count": 1
+}

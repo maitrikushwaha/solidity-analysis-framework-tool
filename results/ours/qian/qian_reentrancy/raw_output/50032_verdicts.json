@@ -1,0 +1,22 @@
+{
+  "filename": "50032.sol",
+  "reentrancy": 0,
+  "overflow": -1,
+  "timestamp": -1,
+  "tod": -1,
+  "duration_s": 10.35,
+  "error": null,
+  "skipped_pipelines": [
+    "tod",
+    "timestamp",
+    "overflow"
+  ],
+  "reentrancy_domains": [
+    "Box",
+    "Octagon",
+    "Polka"
+  ],
+  "reentrancy_fixpoint_times": {
+    "Box": 10.2077
+  }
+}

@@ -1,0 +1,63 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc open_address_lottery.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.IHKSO7RyV7' running
+INFO:CryticCompile:Compilation warnings/errors on open_address_lottery.sol:
+open_address_lottery.sol:41:5: Warning: No visibility specified. Defaulting to "public".
+    function OpenAddressLottery() {
+    ^
+Spanning multiple lines.
+open_address_lottery.sol:46:5: Warning: No visibility specified. Defaulting to "public".
+    function participate() payable {
+    ^
+Spanning multiple lines.
+open_address_lottery.sol:67:5: Warning: No visibility specified. Defaulting to "public".
+    function luckyNumberOfAddress(address addr) constant returns(uint n){
+    ^
+Spanning multiple lines.
+open_address_lottery.sol:82:5: Warning: No visibility specified. Defaulting to "public".
+    function kill() {
+    ^
+Spanning multiple lines.
+open_address_lottery.sol:88:5: Warning: No visibility specified. Defaulting to "public".
+    function forceReseed() { //reseed initiated by the owner - for testing purposes
+    ^
+Spanning multiple lines.
+open_address_lottery.sol:100:5: Warning: No visibility specified. Defaulting to "public".
+    function () payable { //if someone sends money without any function call, just assume he wanted to participate
+    ^
+Spanning multiple lines.
+open_address_lottery.sol:91:9: Warning: Variable is declared as a storage pointer. Use an explicit "storage" keyword to silence this warning.
+        SeedComponents s;
+        ^--------------^
+open_address_lottery.sol:91:9: Warning: Uninitialized storage pointer. Did you mean '<type> memory s'?
+        SeedComponents s;
+        ^--------------^
+
+INFO:root:contract open_address_lottery.sol:OpenAddressLottery:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 92.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:open_address_lottery.sol:63:12: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    owner = 0
+    LuckyNumber = 4096
+    lastReseed = 1
+    winner[msg.sender] = 0
+open_address_lottery.sol:93:48: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    owner = 1
+INFO:symExec:Flow1
+open_address_lottery.sol:60:13: Warning: Transaction-Ordering Dependency.
+
+Flow2
+open_address_lottery.sol:60:13: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to open_address_lottery.sol:OpenAddressLottery.json.

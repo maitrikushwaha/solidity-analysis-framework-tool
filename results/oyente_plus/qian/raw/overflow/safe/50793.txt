@@ -1,0 +1,24 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 50793.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.q4CCvKe0ef' running
+INFO:CryticCompile:Compilation warnings/errors on 50793.sol:
+50793.sol:6:48: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function setupDisbursement(uint256 _value, uint256 _timestamp) external returns (uint) {
+                                               ^----------------^
+
+INFO:root:contract 50793.sol:Ownable:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 78.4%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:50793.sol:7:23: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _value = 25650671635628077330008020994425597968451114935058687386511328258514137670005
+    totalAmount = 90612310279450192762509999569073406819412893354215485307353007253607489118476
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 50793.sol:Ownable.json.

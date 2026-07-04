@@ -1,0 +1,52 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc buggy_10.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/tmp/tmp.hI3yR1Mpjg' running
+INFO:root:contract buggy_10.sol:DocumentSigner:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 31.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): True
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:buggy_10.sol:11:14: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _doc = 469762305
+buggy_10.sol:2:23: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _doc = 3283707890
+buggy_10.sol:141:5: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    _doc = 1208197184
+INFO:symExec:buggy_10.sol:102:9: Warning: Integer Overflow.
+
+buggy_10.sol:100:16: Warning: Integer Overflow.
+
+buggy_10.sol:142:26: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _doc = 469762305
+buggy_10.sol:142:16: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _doc = 3283707890
+buggy_10.sol:141:5: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _doc = 3283707890
+buggy_10.sol:3:6: Warning: Integer Overflow.
+
+Integer Overflow occurs if:
+    _doc = 1208197184
+INFO:symExec:Flow1
+buggy_10.sol:58:8: Warning: Transaction-Ordering Dependency.
+
+Flow2
+buggy_10.sol:155:8: Warning: Transaction-Ordering Dependency.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to buggy_10.sol:DocumentSigner.json.

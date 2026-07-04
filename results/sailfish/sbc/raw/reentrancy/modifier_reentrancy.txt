@@ -1,0 +1,102 @@
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Analysis started at: 2026-06-21 07:04:23 PM
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Callgraph generation started!
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Callgraph generation finished!
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Interprocedural CFG generation started!
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Interprocedural CFG generation finished!
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Storage dependency graph generation started!
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Storage dependency graph generation finished!
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Value Range Analysis started
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Range graph generated
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Generating return summary for hasNoBalance
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Return summary generated for hasNoBalance
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | State variable assignement do not exist
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Processed function hasNoBalance
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Generating return summary for supportsToken
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Return summary generated for supportsToken
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | State variable assignement do not exist
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Processed function supportsToken
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Generating return summary for supportsToken
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Return summary generated for supportsToken
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | State variable assignement do not exist
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Processed function supportsToken
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Generating return summary for airDrop
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Return summary generated for airDrop
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Range graph generated
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Processed function airDrop
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Generating return summary for supportsToken
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Return summary generated for supportsToken
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Range graph generated
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Processed function supportsToken
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Generating return summary for call
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Return summary generated for call
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Range graph generated
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Processed function call
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Value Range Analysis took 0.005643 seconds
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Value Range Analysis finished
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Storage dependency graph compostion started!
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Storage dependency graph compostion finished!
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Dependency detection started!
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | DAO dependency detected in file modifier_reentrancy.sol in contract ModifierEntrancy in by composing functions airDrop and airDrop
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Dependency detection finished!
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Static Analysis took 0.251637 seconds
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Dependency exists
+[INFO] | 2026-06-21 07:04:23 PM | analyzer.modifier_reentrancy | Invoking symbolic executor!
+[36m[#] Analysing started: modifier_reentrancy.sol[0m
+[36m[#] Interprocedural CFG generation started for modifier supportsToken[0m
+[36m[#] Interprocedural CFG generated for modifer supportsToken[0m
+[36m[#] Interprocedural CFG generation started for modifier hasNoBalance[0m
+[36m[#] Interprocedural CFG generated for modifer hasNoBalance[0m
+[36m[#] Interprocedural CFG generation started for airDrop[0m
+[36m[#] Interprocedural CFG generated for airDrop[0m
+[36m[#] Interprocedural CFG generation started for supportsToken[0m
+[36m[#] Interprocedural CFG generated for supportsToken[0m
+[36m[#] Interprocedural CFG generation started for supportsToken[0m
+[36m[#] Interprocedural CFG generated for supportsToken[0m
+[36m[#] Interprocedural CFG generation started for call[0m
+[36m[#] Interprocedural CFG generated for call[0m
+[36m[#] SDG generation started for airDrop[0m
+[36m[#] SDG generated for airDrop[0m
+[36m[#] SDG generation started for modifier supportsToken[0m
+[36m[#] SDG generated for modifier supportsToken[0m
+[36m[#] SDG generation started for modifier hasNoBalance[0m
+[36m[#] SDG generated for modifier hasNoBalance[0m
+[36m[#] SDG generation started for supportsToken[0m
+[36m[#] SDG generated for supportsToken[0m
+[36m[#] SDG generation started for supportsToken[0m
+[36m[#] SDG generated for supportsToken[0m
+[36m[#] SDG generation started for call[0m
+[36m[#] SDG generated for call[0m
+[INFO] | 2026-06-21 07:04:24 PM | analyzer.modifier_reentrancy | Symbolic execution took 0.854094 seconds
+[INFO] | 2026-06-21 07:04:24 PM | analyzer.modifier_reentrancy | Symbolic execution finished!
+[INFO] | 2026-06-21 07:04:24 PM | analyzer.modifier_reentrancy | Analysis finished!
+[INFO] | 2026-06-21 07:04:24 PM | analyzer.modifier_reentrancy | Analysis took 1.106969 seconds
+[INFO] | 2026-06-21 07:04:24 PM | analyzer.modifier_reentrancy | Analysis finished at: 2026-06-21 07:04:24 PM
+[36m[#] Analysis took 1.106969 seconds[0m
+[36m[#] Analysis completed: modifier_reentrancy.sol [0m
+
+=== dependency_info.json ===
+{
+    "modifier_reentrancy.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "airDrop",
+                "airDrop"
+            ],
+            "from_function": "airDrop",
+            "to_function": "airDrop",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: hasNoBalance\nNode: \nEXPRESSION require(bool)(tokenBalance[msg.sender] == 0)\nIRS: \nTMP_11 = SOLIDITY_CALL require(bool)(TMP_10)\"",
+                        "\"BlockID: 1\nFunction: airDrop\nNode: \nEXPRESSION tokenBalance[msg.sender] += 20\nIRS: \nREF_0 = REF_0 + 20\""
+                    ],
+                    "state_variable": "tokenBalance"
+                }
+            ]
+        }
+    ]
+}

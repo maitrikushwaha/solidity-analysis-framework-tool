@@ -1,0 +1,39 @@
+INFO:CryticCompile:'solc --version' running
+INFO:CryticCompile:'solc 09_ERC20_safe4.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --allow-paths .,/tmp/tmp.4bvYvhNzUw' running
+INFO:root:contract 09_ERC20_safe4.sol:C:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 91.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 False
+INFO:symExec:09_ERC20_safe4.sol:28:3519: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 5720065804792497994211877349809687211912956479813257111937398938630896526878
+    received[to] = 0
+09_ERC20_safe4.sol:28:4565: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 0
+    received[to] = 5719633635573778331284668246461949231960697565022549530110541404895340811934
+09_ERC20_safe4.sol:25:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 0
+    received[to] = 25952677434633823454255450456231443931740127185011200165155541624365780371708
+09_ERC20_safe4.sol:28:2040: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 3213876088517980551083924184682325205044405987565585670602752
+09_ERC20_safe4.sol:22:9: Warning: Integer Underflow.
+
+Integer Underflow occurs if:
+    received[to] = 19342813113834066795298816
+09_ERC20_safe4.sol:17:5: Warning: Integer Underflow.
+
+INFO:symExec:	====== Analysis Completed ======
+INFO:symExec:Wrote results to 09_ERC20_safe4.sol:C.json.
