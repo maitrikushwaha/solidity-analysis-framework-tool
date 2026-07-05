@@ -1,14 +1,14 @@
 # A Sound Semantics Approximation of Solidity for Enhanced Vulnerability Detection
 
 Our tool is a **semantics-aware smart-contract vulnerability detection (SCVD)
-framework** that extends the theory of **Abstract Interpretation** to Solidity —
-a unifying framework for computing sound over-approximations of a contract's
-dynamic behaviour at different levels of abstraction. By formally modelling both
-concrete and abstract semantics over several numerical domains — **Interval
-(Box)**, **Octagon**, and **Polyhedra (Polka)** — it detects **reentrancy**,
-**integer overflow/underflow**, **timestamp dependence**, and
+framework** that extends the theory of **Abstract Interpretation** to Solidity.
+It provides a unifying framework for computing sound over-approximations of a
+contract's dynamic behaviour at different levels of abstraction. By formally
+modelling both concrete and abstract semantics over several numerical domains,
+namely **Interval (Box)**, **Octagon**, and **Polyhedra (Polka)**, it detects
+**reentrancy**, **integer overflow/underflow**, **timestamp dependence**, and
 **transaction-ordering dependence (TOD)**, capturing semantic dependencies that
-symbolic- or rule-based tools often miss.
+symbolic or rule-based tools often miss.
 
 This repository is the **replication package** for the accompanying paper. It
 contains the analyzer, the scripts that reproduce every reported number, the four
@@ -85,39 +85,31 @@ mutable state crossing pipeline boundaries:
 ## Architecture
 
 ```
-                          Solidity source (.sol)
-                                   │
-                ┌──────────────────▼───────────────────┐
-                │  compiler/      pragma → solc select  │
-                │                 compile → AST         │
-                └──────────────────┬───────────────────┘
-                                   │ AST
-              ┌────────────────────▼─────────────────────┐
-              │ mapping_transformer.py                    │
-              │  mappings/structs → scalars,              │
-              │  balances & call-back edge injected       │
-              └────────────────────┬─────────────────────┘
-                                   │ transformed source / AST
-                ┌──────────────────▼───────────────────┐
-                │ control_flow_graph/   AST → CFG       │
-                │  (one node-processor per AST node)    │
-                └──────────────────┬───────────────────┘
-                                   │ CFG
-                ┌──────────────────┴──────────────────┐
-                ▼                                     ▼
-      ┌─────────────────┐               ┌────────────────────────┐
-      │ static_analysis │               │ dependency_analysis.py │
-      │ abstract fix-   │               │ data/control deps,     │
-      │ point over      │               │ timestamp & TOD        │
-      │ Box/Oct/Polka   │               │ detection + semantic   │
-      │ (via APRON)     │               │ refinement             │
-      └────────┬────────┘               └───────────┬────────────┘
-               │                                    │
-               └─────────────────┬──────────────────┘
-                                 ▼
-        java_wrapper/  ──►  APRON numerical domains (JVM via JPype)
-                      ▼
-              per-contract verdicts  (JSON + human-readable report)
+   Smart Contract  (.sol)
+        │
+        ▼
+   [1] AST Extraction
+        SolcSelector → SolCompiler → AST Builder (ast.json)
+        │
+        ▼
+   [2] CFG Generation & Augmentation
+        Node Processor · CFG Metadata · Graph Builder
+        Semantic CFG → Augmented CFG (fallback re-entry edges)
+        │
+        ▼
+   [3] Fixpoint Abstract Semantics Engine
+        APRON Domain Manager: Interval · Octagon · Polyhedra (via JPype)
+        Transfer-Function Engine · Fixpoint Computation (join / widening)
+        │
+        ▼
+   [4] Dependency Analysis Engine
+        Syntactic Dependency Analyzer: intra/inter-data + control deps
+        Semantic Refinement Engine: feasible-path check · abstract-state filter
+        │
+        ▼
+   [5] Semantics Vulnerability Detection
+        Reentrancy (balance-invariant) · Integer Overflow/Underflow (interval-bound)
+        Timestamp (timestamp-gated control) · TOD (ordering-sensitive state)
 ```
 
 ### Modules inside `src/`
@@ -125,11 +117,11 @@ mutable state crossing pipeline boundaries:
 | Module                                                  | Responsibility                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [`compiler/`](src/compiler/)                           | Front-end.`SolCompiler` extracts the `pragma`, and `SolcSelector` installs/selects the matching `solc` (every release from 0.4.11 to 0.8.28 is supported) via `py-solc-x`; `CompiledOutputGenerator` produces the AST consumed downstream.                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [`mapping_transformer.py`](src/mapping_transformer.py) | Front-end semantic normalization — a**preprocessing prerequisite**, not a detector. Complex Solidity constructs (mappings and structs → scalar proxies; balance transfers and low-level calls → explicit conditional logic) are rewritten into an equivalent scalar form so the numerical domains can reason about them; for reentrancy it additionally injects the balance/credit variables and the re-entrant back-edge. The rewrite is a **sound over-approximation**: it only ever adds behaviour, never removes a feasible path, so it *cannot* introduce a false negative. All detection and feasibility-confirmation happen in the modules downstream — this stage only prepares their input. |
-| [`control_flow_graph/`](src/control_flow_graph/)       | `ControlFlowGraph` builds an augmented CFG recursively from the AST. There is one *node processor* per AST construct (`IfStatement`, `ForStatement`, `WhileStatement`, `FunctionDefinition`, `Assignment`, `FunctionCall`, …) under `node_processor/nodes/`, plus explicit entry/exit nodes. The CFG is the common substrate for every analysis and can be rendered with Graphviz.                                                                                                                                                                                                                                                                                                                  |
+| [`mapping_transformer.py`](src/mapping_transformer.py) | Front-end semantic normalization — a**preprocessing prerequisite**, not a detector. Complex Solidity constructs (mappings and structs → scalar proxies; balance transfers and low-level calls → explicit conditional logic) are rewritten into an equivalent scalar form so the numerical domains can reason about them; for reentrancy it additionally injects the balance/credit variables and the re-entrant back-edge. The rewrite is a **sound over-approximation**: it only ever adds behaviour rather than removing feasible paths, which helps avoid introducing false negatives. |
+| [`control_flow_graph/`](src/control_flow_graph/)       | `ControlFlowGraph` builds an augmented CFG recursively from the AST. There is one *node processor* per AST construct (`IfStatement`, `ForStatement`, `WhileStatement`, `FunctionDefinition`, `Assignment`, `FunctionCall`, …) under `node_processor/nodes/`, plus explicit entry/exit nodes.                                                                                                                                                                                                                                                                                                                                                                                                       |
 | [`static_analysis/`](src/static_analysis/)             | The abstract interpreter.`abstract_collecting_semantics/` runs the iterative **fixpoint with widening** over a chosen APRON domain (`Box`, `Octagon`, or `Polka`), tracking a per-program-point abstract state (`PointState`, `VariableRegistry`). `collecting_semantics/` provides the concrete reference semantics, and `dataflow_analysis/` supplies the reaching-definition / available-expression machinery used by dependency analysis.                                                                                                                                                                                                                                                    |
 | [`dependency_analysis.py`](src/dependency_analysis.py) | `DependencyAnalysisEngine` computes flow- and context-sensitive data and control dependencies over the CFG and uses them to detect timestamp dependence and TOD. `SemanticRefinementEngine` performs the feasibility refinement that backs sound false-positive suppression.                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [`java_wrapper/`](src/java_wrapper/)                   | Thin bridge to**APRON**. Starts the JVM via **JPype**, loads `apron.jar` / `gmp.jar` from `$APRON_HOME`, and exposes the `Box`, `Octagon`, and `Polka` managers (and the APRON expression API) to Python.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [`java_wrapper/`](src/java_wrapper/)                   | Thin bridge to **APRON**. Starts the JVM via **JPype**, loads `apron.jar` / `gmp.jar` from `$APRON_HOME`, and exposes the `Box`, `Octagon`, and `Polka` managers (and the APRON expression API) to Python.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | [`utils/`](src/utils/)                                 | Shared expression helpers.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | [`main.py`](src/main.py)                               | Orchestrator. Compiles, transforms, builds the CFG(s), runs the four pipelines, and writes the verdicts. The module docstring documents exactly which source, CFG, and domain each pipeline uses.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
