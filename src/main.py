@@ -3550,6 +3550,24 @@ def _structural_timestamp_fallback(source_code):
     else:
         AP = r'\b(?:' + TS + r')\b'
 
+    def _neutralize_constant_ts_modulo(text):
+        """Neutralize (k*ts)%m with m|k (always 0, timestamp-independent; Example 5.16)."""
+        _pat = re.compile(
+            r'\(\s*(\d+)\s*\*\s*(?:' + AP + r')\s*\)\s*%\s*(\d+)'
+            r'|\(\s*(?:' + AP + r')\s*\*\s*(\d+)\s*\)\s*%\s*(\d+)'
+        )
+
+        def _repl(_mo):
+            if _mo.group(1) is not None:
+                _coeff, _mod = int(_mo.group(1)), int(_mo.group(2))
+            else:
+                _coeff, _mod = int(_mo.group(3)), int(_mo.group(4))
+            return ' 0 ' if (_mod and _coeff % _mod == 0) else _mo.group(0)
+
+        return _pat.sub(_repl, text)
+
+    stripped = _neutralize_constant_ts_modulo(stripped)
+
     def _extract_balanced(text, o='(', c=')'):
         """Return (inner_content, close_index) for the first balanced pair."""
         depth = 0

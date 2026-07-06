@@ -37,7 +37,7 @@ abstract-state analysis (Example 5.17) reports it.
 ## Reproduce our result
 ```bash
 conda run -n safpy python src/main.py \
-  reproducibility/fig2b_timestamp_FN_Governmental/governmental_survey.sol \
+  case_studies/fig2b_timestamp_FN_Governmental/governmental_survey.sol \
   --pipelines reentrancy,overflow,timestamp,tod
 ```
 Baseline images/versions and exact commands: manuscript **Table 9**;

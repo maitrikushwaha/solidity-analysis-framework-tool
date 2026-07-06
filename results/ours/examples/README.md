@@ -85,5 +85,5 @@ conda run -n safpy python src/main.py \
 
 The verdict summary is deterministic and matches the committed `<name>.txt`
 (timing lines vary run to run). The same three contracts, with every baseline's
-output side by side, are also under `reproducibility/` (Fig. 1, Fig. 2a,
+output side by side, are also under `case_studies/` (Fig. 1, Fig. 2a,
 Fig. 2d).

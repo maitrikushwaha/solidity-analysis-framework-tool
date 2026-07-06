@@ -144,7 +144,7 @@ tables/                  result tables reported in the paper (regenerated from r
   ├─ comparison_table.pdf      human-readable cross-tool comparison
   └─ table8_timing_median.csv  Table 8 — median per-contract detection time
 figure/                  paper figures: fig16_roc.pdf (Fig 16 ROC), vuln_f1_heatmap.pdf (Fig 15 F1)
-reproducibility/         worked examples behind Figs 1–2 and §7.2 case studies (per-tool FP/FN outputs)
+case_studies/            worked examples behind Figs 1–2 and §7.2 case studies (per-tool FP/FN outputs)
 environment.yml          conda environment specification
 ```
 

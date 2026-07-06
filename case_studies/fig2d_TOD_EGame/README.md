@@ -25,7 +25,7 @@ reports the TOD.
 ## Reproduce our result
 ```bash
 conda run -n safpy python src/main.py \
-  reproducibility/fig2d_TOD_EGame/EGame.sol \
+  case_studies/fig2d_TOD_EGame/EGame.sol \
   --pipelines reentrancy,overflow,timestamp,tod
 ```
 Baseline images/versions and exact commands: manuscript **Table 9** and `results/<tool>/examples/`.

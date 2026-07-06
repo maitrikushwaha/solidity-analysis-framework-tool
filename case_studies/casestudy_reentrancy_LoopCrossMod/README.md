@@ -33,7 +33,7 @@ external call and applies the balance-preservation invariant (Algorithm 2).
 ## Reproduce our result
 ```bash
 conda run -n safpy python src/main.py \
-  reproducibility/casestudy_reentrancy_LoopCrossMod/LoopCrossMod.sol \
+  case_studies/casestudy_reentrancy_LoopCrossMod/LoopCrossMod.sol \
   --pipelines reentrancy,overflow,timestamp,tod
 ```
 Baseline images/versions and exact commands: manuscript **Table 9**;

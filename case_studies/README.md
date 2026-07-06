@@ -1,4 +1,4 @@
-# Reproducibility — worked examples behind Figures 1–2 and the §7.2 case studies
+# Case studies — worked examples behind Figures 1–2 and the §7.2 case studies
 
 This directory collects, **per figure / case-study contract**, the raw output of our
 tool and every baseline, so the false-positive (FP) and false-negative (FN) claims made

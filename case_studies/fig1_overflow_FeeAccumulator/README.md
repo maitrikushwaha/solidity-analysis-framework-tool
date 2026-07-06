@@ -21,7 +21,7 @@ the declared `uint8` bound, so the overflow is reported. See manuscript §7.2.
 ## Reproduce our result
 ```bash
 conda run -n safpy python src/main.py \
-  reproducibility/fig1_overflow_FeeAccumulator/FeeAccumulator.sol \
+  case_studies/fig1_overflow_FeeAccumulator/FeeAccumulator.sol \
   --pipelines reentrancy,overflow,timestamp,tod
 ```
 Baseline images/versions and exact commands: manuscript **Table 9** and `results/<tool>/examples/`.

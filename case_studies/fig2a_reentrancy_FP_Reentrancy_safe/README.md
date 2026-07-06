@@ -32,7 +32,7 @@ not flag it.
 ## Reproduce our result
 ```bash
 conda run -n safpy python src/main.py \
-  reproducibility/fig2a_reentrancy_FP_Reentrancy_safe/Reentrancy_safe.sol \
+  case_studies/fig2a_reentrancy_FP_Reentrancy_safe/Reentrancy_safe.sol \
   --pipelines reentrancy,overflow,timestamp,tod
 ```
 Baseline images/versions and exact commands: manuscript **Table 9** and `results/<tool>/examples/`.
